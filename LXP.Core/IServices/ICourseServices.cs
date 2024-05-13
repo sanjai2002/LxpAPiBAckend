@@ -22,7 +22,8 @@ namespace LXP.Core.IServices
 
         Task<bool> Updatecourse(CourseUpdateModel course);
 
-        
+        IEnumerable<CourseViewModel> GetAllCourse();
+        IEnumerable<CourseViewModel> GetLimitedCourse();
 
 
     }

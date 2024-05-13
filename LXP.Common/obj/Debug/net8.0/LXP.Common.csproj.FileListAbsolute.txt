@@ -11,3 +11,16 @@ D:\Review LXP\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
 D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
 D:\Review LXP\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
 D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\LXP-Admin Course(Backend)\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\LXP-Admin Course(Backend)\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll

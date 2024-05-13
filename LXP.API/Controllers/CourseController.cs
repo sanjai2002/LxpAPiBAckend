@@ -102,7 +102,20 @@ namespace LXP.Api.Controllers
 
         }
 
+        [HttpGet("lxp/GetAllCourse")]
+        public IActionResult GetAllCourse()
+        {
+            var courses = _courseServices.GetAllCourse();
+            return Ok(CreateSuccessResponse(courses));
+        }
+
+        [HttpGet("lxp/Getninecourse")]
+        public IActionResult GetLimitedCourse()
+        {
+            var course = _courseServices.GetLimitedCourse();
+            return Ok(CreateSuccessResponse(course));
+        }
 
 
-}
+    }
 }

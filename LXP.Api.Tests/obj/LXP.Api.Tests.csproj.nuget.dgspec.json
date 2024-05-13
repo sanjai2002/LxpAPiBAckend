@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Review LXP\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {}
+    "D:\\LXP-Admin Course(Backend)\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Review LXP\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {
+    "D:\\LXP-Admin Course(Backend)\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Review LXP\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+        "projectUniqueName": "D:\\LXP-Admin Course(Backend)\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
         "projectName": "LXP.Api.Tests",
-        "projectPath": "D:\\Review LXP\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
-        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
-        "outputPath": "D:\\Review LXP\\LXP.Api.Tests\\obj\\",
+        "projectPath": "D:\\LXP-Admin Course(Backend)\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP-Admin Course(Backend)\\LXP.Api.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Review LXP\\LXP.Api\\LXP.Api.csproj": {
-                "projectPath": "D:\\Review LXP\\LXP.Api\\LXP.Api.csproj"
+              "D:\\LXP-Admin Course(Backend)\\LXP.Api\\LXP.Api.csproj": {
+                "projectPath": "D:\\LXP-Admin Course(Backend)\\LXP.Api\\LXP.Api.csproj"
               }
             }
           }
@@ -89,20 +89,20 @@
         }
       }
     },
-    "D:\\Review LXP\\LXP.Api\\LXP.Api.csproj": {
+    "D:\\LXP-Admin Course(Backend)\\LXP.Api\\LXP.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Review LXP\\LXP.Api\\LXP.Api.csproj",
+        "projectUniqueName": "D:\\LXP-Admin Course(Backend)\\LXP.Api\\LXP.Api.csproj",
         "projectName": "LXP.Api",
-        "projectPath": "D:\\Review LXP\\LXP.Api\\LXP.Api.csproj",
-        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
-        "outputPath": "D:\\Review LXP\\LXP.Api\\obj\\",
+        "projectPath": "D:\\LXP-Admin Course(Backend)\\LXP.Api\\LXP.Api.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP-Admin Course(Backend)\\LXP.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -117,8 +117,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Review LXP\\LXP.Core\\LXP.Core.csproj": {
-                "projectPath": "D:\\Review LXP\\LXP.Core\\LXP.Core.csproj"
+              "D:\\LXP-Admin Course(Backend)\\LXP.Core\\LXP.Core.csproj": {
+                "projectPath": "D:\\LXP-Admin Course(Backend)\\LXP.Core\\LXP.Core.csproj"
               }
             }
           }
@@ -161,20 +161,20 @@
         }
       }
     },
-    "D:\\Review LXP\\LXP.Common\\LXP.Common.csproj": {
+    "D:\\LXP-Admin Course(Backend)\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Review LXP\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "D:\\LXP-Admin Course(Backend)\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\Review LXP\\LXP.Common\\LXP.Common.csproj",
-        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
-        "outputPath": "D:\\Review LXP\\LXP.Common\\obj\\",
+        "projectPath": "D:\\LXP-Admin Course(Backend)\\LXP.Common\\LXP.Common.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP-Admin Course(Backend)\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -226,20 +226,20 @@
         }
       }
     },
-    "D:\\Review LXP\\LXP.Core\\LXP.Core.csproj": {
+    "D:\\LXP-Admin Course(Backend)\\LXP.Core\\LXP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Review LXP\\LXP.Core\\LXP.Core.csproj",
+        "projectUniqueName": "D:\\LXP-Admin Course(Backend)\\LXP.Core\\LXP.Core.csproj",
         "projectName": "LXP.Core",
-        "projectPath": "D:\\Review LXP\\LXP.Core\\LXP.Core.csproj",
-        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
-        "outputPath": "D:\\Review LXP\\LXP.Core\\obj\\",
+        "projectPath": "D:\\LXP-Admin Course(Backend)\\LXP.Core\\LXP.Core.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP-Admin Course(Backend)\\LXP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -254,8 +254,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Review LXP\\LXP.Data\\LXP.Data.csproj": {
-                "projectPath": "D:\\Review LXP\\LXP.Data\\LXP.Data.csproj"
+              "D:\\LXP-Admin Course(Backend)\\LXP.Data\\LXP.Data.csproj": {
+                "projectPath": "D:\\LXP-Admin Course(Backend)\\LXP.Data\\LXP.Data.csproj"
               }
             }
           }
@@ -289,20 +289,20 @@
         }
       }
     },
-    "D:\\Review LXP\\LXP.Data\\LXP.Data.csproj": {
+    "D:\\LXP-Admin Course(Backend)\\LXP.Data\\LXP.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Review LXP\\LXP.Data\\LXP.Data.csproj",
+        "projectUniqueName": "D:\\LXP-Admin Course(Backend)\\LXP.Data\\LXP.Data.csproj",
         "projectName": "LXP.Data",
-        "projectPath": "D:\\Review LXP\\LXP.Data\\LXP.Data.csproj",
-        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
-        "outputPath": "D:\\Review LXP\\LXP.Data\\obj\\",
+        "projectPath": "D:\\LXP-Admin Course(Backend)\\LXP.Data\\LXP.Data.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP-Admin Course(Backend)\\LXP.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -317,8 +317,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Review LXP\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "D:\\Review LXP\\LXP.Common\\LXP.Common.csproj"
+              "D:\\LXP-Admin Course(Backend)\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "D:\\LXP-Admin Course(Backend)\\LXP.Common\\LXP.Common.csproj"
               }
             }
           }

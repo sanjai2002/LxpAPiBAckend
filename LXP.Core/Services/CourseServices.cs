@@ -1,4 +1,5 @@
-﻿using LXP.Common;
+﻿using AutoMapper;
+using LXP.Common;
 using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
@@ -15,12 +16,18 @@ namespace LXP.Core.Services
     {
         private readonly ICourseRepository _courseRepository;
         private readonly IWebHostEnvironment _environment;
+        private Mapper _courseMapper;
         public CourseServices(ICourseRepository courseRepository, IWebHostEnvironment environment)
         {
             _courseRepository = courseRepository; ;
             _environment = environment;
+            var _configCourse = new MapperConfiguration(cfg => cfg.CreateMap<Course, CourseViewModel>().ReverseMap());
+            _courseMapper = new Mapper(_configCourse);
+
          
         }
+
+
 
         public Course GetCourseByCourseId(Guid courseId)
         {
@@ -33,7 +40,7 @@ namespace LXP.Core.Services
                 Title = course.Title,
                 Description = course.Description,
                 Duration = course.Duration,
-               Thumbnail=course.Thumbnail,
+                Thumbnail=course.Thumbnail,
 
             };
 
@@ -114,7 +121,6 @@ namespace LXP.Core.Services
             var course = _courseRepository.FindCourseid(courseupdate.CourseId);
             if (course != null)
             {
-
                 course!.Title = courseupdate.Title;
                 course.Description = courseupdate.Description;
                 course.Duration = courseupdate.Duration;
@@ -127,9 +133,16 @@ namespace LXP.Core.Services
             return false;
         }
 
+        public IEnumerable<CourseViewModel> GetAllCourse()
+        {
+            return _courseRepository.GetAllCourse();
 
+        }
 
-
+        public IEnumerable<CourseViewModel> GetLimitedCourse()
+        {
+            return _courseRepository.GetLimitedCourse();
+        }
 
 
     }
