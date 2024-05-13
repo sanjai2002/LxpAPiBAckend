@@ -16,9 +16,14 @@ namespace LXP.Api.Controllers
         private readonly ICourseLevelServices _courseLevelServices;
         public CourseLevelController(ICourseLevelServices courseLevelServices)
         {
-            this._courseLevelServices = courseLevelServices;
+            _courseLevelServices = courseLevelServices;
         }
 
+        ///<summary>
+        ///Getting all Course level and  id
+        ///</summary>
+        ///<response code="200">Success</response>
+        ///<response code="404">Internal server Error</response>
         [HttpGet("/lxp/course/courselevel/{id}")]
         public async Task<IActionResult> GetAllCourseLevel(string id)
         {

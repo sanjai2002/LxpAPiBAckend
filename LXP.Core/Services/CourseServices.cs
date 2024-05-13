@@ -11,20 +11,21 @@ using static Mysqlx.Notice.Warning.Types;
 
 namespace LXP.Core.Services
 {
-
     public class CourseServices : ICourseServices
     {
         private readonly ICourseRepository _courseRepository;
         private readonly IWebHostEnvironment _environment;
+        private readonly IHttpContextAccessor _contextAccessor;
         private Mapper _courseMapper;
-        public CourseServices(ICourseRepository courseRepository, IWebHostEnvironment environment)
+        public CourseServices(ICourseRepository courseRepository, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
         {
             _courseRepository = courseRepository; ;
             _environment = environment;
+            _contextAccessor = httpContextAccessor;
             var _configCourse = new MapperConfiguration(cfg => cfg.CreateMap<Course, CourseViewModel>().ReverseMap());
             _courseMapper = new Mapper(_configCourse);
 
-         
+
         }
 
 
@@ -40,8 +41,11 @@ namespace LXP.Core.Services
                 Title = course.Title,
                 Description = course.Description,
                 Duration = course.Duration,
-                Thumbnail=course.Thumbnail,
-
+                Thumbnail = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
+                                             _contextAccessor.HttpContext.Request.Scheme,
+                                             _contextAccessor.HttpContext.Request.Host,
+                                             _contextAccessor.HttpContext.Request.PathBase,
+                                             course.Thumbnail)
             };
 
             return courseView;
@@ -49,37 +53,7 @@ namespace LXP.Core.Services
         }
 
 
-        //public void UpdateCourseusingid(CourseUpdateModel courseupdate)
-        //{
-
-        //    if (courseupdate == null)
-        //    {
-        //        throw new ArgumentNullException(nameof(courseupdate));
-        //    }
-        //    //var uniqueFileName = $"{Guid.NewGuid()}_{courseupdate.Thumbnailimage.FileName}";
-        //    ////    // Save the image to a designated folder (e.g., wwwroot/images)
-        //    //var uploadsFolder = Path.Combine(_environment.WebRootPath, "CourseThumbnailImages"); // Use WebRootPath
-        //    //var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-        //    //using (var stream = new FileStream(filePath, FileMode.Create))
-        //    //{
-        //    //    courseupdate.Thumbnailimage.CopyTo(stream); // Use await
-        //    //}
-        //    //CourseUpdateModel updatecourse = new CourseUpdateModel
-        //    //{
-        //    //    CourseId = courseupdate.CourseId,
-        //    //    CatagoryId = courseupdate.CatagoryId,
-        //    //    LevelId = courseupdate.LevelId,
-        //    //    Title = courseupdate.Title,
-        //    //    Description = courseupdate.Description,
-        //    //    Duration = courseupdate.Duration,
-        //    //    ModifiedBy = courseupdate.ModifiedBy
-        //    //};
-        //    _courseRepository.Update(courseupdate);
-        //}
-
-
-        public bool Deletecourse(Guid courseid)
+        public async Task <bool> Deletecourse(Guid courseid)
         {
             var Course = _courseRepository.FindCourseid(courseid);
             if (Course != null)
@@ -106,7 +80,7 @@ namespace LXP.Core.Services
             return false;
         }
 
-        
+ 
         public async Task<bool> Updatecourse(CourseUpdateModel courseupdate)
         {
             var uniqueFileName = $"{Guid.NewGuid()}_{courseupdate.Thumbnailimage.FileName}";

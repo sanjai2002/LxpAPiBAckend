@@ -1,16 +1,18 @@
-﻿using LXP.Common.Entities;
+﻿using LXP.Common.Constants;
+using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace LXP.Api.Controllers
 {
     [Route("api/[controller]/[Action]")]
     [ApiController]
     ///<summary>
-    /// Update the course
+    ///course list
     ///</summary>
     public class CourseController : BaseController
     {
@@ -22,43 +24,28 @@ namespace LXP.Api.Controllers
             _courseServices = courseServices;
         }
 
+
+        ///<summary>
+        ///Getting all Course name and its id
+        ///</summary>
+        ///<response code="200">Success</response>
+        ///<response code="404">Internal server Error</response>
         [HttpGet("get/course/{courseId}")]
         public ActionResult<Course> GetById(Guid courseId) 
         {
             var course = _courseServices.GetCourseByCourseId(courseId);
             if(course == null)
             {
-                return Ok(CreateFailureResponse("Not available", 404));
+                return Ok(CreateFailureResponse(MessageConstants.MsgGetbyid,(int)HttpStatusCode.NotFound));
             }
             return Ok(CreateSuccessResponse(course));
         }
 
-        //[HttpPut("/lxp/courseupdate/{guid}")]
-        //////public ActionResult<Course> UpdateCourse([FromBody] CourseUpdateModel CourseUpdate)
-        //public async Task<IActionResult> UpdateCourse(Guid CourseId, CourseUpdateModel CourseUpdate)
-        //{
-        //    var isCourseUpdated = _courseServices.UpdateCourse(CourseUpdate);
-        //    if (isCourseUpdated)
-        //    {
-        //        return Ok(CreateSuccessResponse(null!));
-        //    }
-        //    return Ok(CreateFailureResponse("Not Updated", 422));
-        //}
-
-        //[HttpPut("lxp/courseupdate")]
-        //public async Task<IActionResult> Updatecourse(CourseUpdateModel course)
-        //{
-        //    var existingcourse = _courseServices.GetCourseByCourseId(course.CourseId);
-
-        //    if (existingcourse == null)
-        //    {
-        //        return Ok(CreateFailureResponse("not available",422));
-        //    }
-        //    _courseServices.UpdateCourseusingid(course);
-
-        //    return Ok(CreateSuccessResponse("updated"));
-        //}
-
+        ///<summary>
+        ///Update the course
+        ///</summary>
+        ///<response code="200">Success</response>
+        ///<response code="405">Internal server Error</response>
         [HttpPut("lxp/courseupdate")]
         public async Task<IActionResult> Updatecourse(CourseUpdateModel course)
         {
@@ -69,27 +56,35 @@ namespace LXP.Api.Controllers
                 return Ok(CreateSuccessResponse(updatecourse));
             }
 
-            return Ok(CreateFailureResponse("Not updated",422));
+            return Ok(CreateFailureResponse(MessageConstants.MsgNotUpdated,(int)HttpStatusCode.MethodNotAllowed));
         }
 
 
-
-
-
+        ///<summary>
+        ///Delete the course
+        ///</summary>
+        ///<response code="200">Success</response>
+        ///<response code="405">Internal server Error</response>
         [HttpDelete("/lxp/coursedelete/{id}")]
         public async Task<IActionResult> DeleteCourse(Guid id)
         {
-            var course = _courseServices.Deletecourse(id);
+            bool course = await _courseServices.Deletecourse(id);
 
             if (course == true)
             {
                 return Ok(CreateSuccessResponse(course));
             }
-            return Ok(CreateFailureResponse("Course didn't allow to delete",422));
+            return Ok(CreateFailureResponse(MessageConstants.MsgNotDeleted,(int)HttpStatusCode.MethodNotAllowed));
         }
 
 
-        [HttpPost("/lxp/coursestatus")]
+
+        ///<summary>
+        ///Update the course status 
+        ///</summary>
+        ///<response code="200">Success</response>
+        ///<response code="405">Internal server Error</response>
+        [HttpPut("/lxp/coursestatus")]
         public async Task<IActionResult> Coursestatus(Coursestatus CourseStatus)
         {
             bool Coursestatus =await _courseServices.Changecoursestatus(CourseStatus);
@@ -98,7 +93,7 @@ namespace LXP.Api.Controllers
             {
                 return Ok(CreateSuccessResponse(Coursestatus));
             }
-            return Ok(CreateFailureResponse("status not update", 422));
+            return Ok(CreateFailureResponse(MessageConstants.MsgNotUpdated,(int)HttpStatusCode.MethodNotAllowed));
 
         }
 
@@ -117,5 +112,5 @@ namespace LXP.Api.Controllers
         }
 
 
-    }
+}
 }
