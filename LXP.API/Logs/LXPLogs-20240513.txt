@@ -722,3 +722,19 @@ System.InvalidOperationException: No database provider has been configured for t
 2024-05-13 14:59:46.619 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.DeleteCourse (LXP.Api)'
 2024-05-13 14:59:46.620 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5199/lxp/coursedelete/ee591ae5-8a08-4ea7-9f88-da15c154301e - 200 null application/json; charset=utf-8 51.1694ms
 >>>>>>> 6cd333fac26d46f63886b3726783c89c03be97a8
+2024-05-13 17:02:29.779 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-13 17:02:29.902 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-13 17:02:29.921 +05:30 [INF] Hosting environment: Development
+2024-05-13 17:02:29.924 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 2\Backend\LXP.Api
+2024-05-13 17:02:34.165 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-13 17:02:35.188 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1042.7002ms
+2024-05-13 17:02:35.227 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-13 17:02:35.227 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-13 17:02:35.244 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 17.0819ms
+2024-05-13 17:02:35.388 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 161.2075ms
+2024-05-13 17:02:35.509 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-13 17:02:35.884 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 374.3822ms
+2024-05-13 17:02:40.470 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/GetAllCourse/lxp/GetAllCourse - null null
+2024-05-13 17:02:40.501 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-13 17:02:40.511 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-05-13 17:02:40.559 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
