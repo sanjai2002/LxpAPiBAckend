@@ -1,0 +1,276 @@
+2024-05-10 15:23:38.908 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5199: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-05-10 15:24:17.780 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-10 15:24:17.824 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 15:24:17.827 +05:30 [INF] Hosting environment: Development
+2024-05-10 15:24:17.828 +05:30 [INF] Content root path: D:\Review LXP\LXP.Api
+2024-05-10 15:24:21.782 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 15:24:22.401 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 625.7103ms
+2024-05-10 15:24:22.435 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 15:24:22.446 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 15:24:22.463 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 27.6588ms
+2024-05-10 15:24:22.529 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.443ms
+2024-05-10 15:24:22.600 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 15:24:22.711 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 111.1639ms
+2024-05-10 15:24:35.478 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 15:24:35.492 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 14.122ms
+2024-05-10 15:24:35.499 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 15:24:35.499 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 15:24:35.503 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 4.0798ms
+2024-05-10 15:24:35.512 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.651ms
+2024-05-10 15:24:35.560 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 15:24:35.570 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.2447ms
+2024-05-10 15:24:35.653 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 15:24:35.663 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 10.0612ms
+2024-05-10 15:24:35.673 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 15:24:35.673 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 15:24:35.676 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 3.4769ms
+2024-05-10 15:24:35.697 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.2068ms
+2024-05-10 15:24:35.732 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 15:24:35.738 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.6859ms
+2024-05-10 15:24:35.832 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 15:24:35.840 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 7.5242ms
+2024-05-10 15:24:35.850 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 15:24:35.850 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 15:24:35.853 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 3.2626ms
+2024-05-10 15:24:35.862 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.9066ms
+2024-05-10 15:24:35.914 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 15:24:35.923 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.5471ms
+2024-05-10 15:24:50.538 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 15:24:50.552 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 13.6124ms
+2024-05-10 15:24:50.561 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 15:24:50.561 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 15:24:50.568 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.7801ms
+2024-05-10 15:24:50.568 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.6893ms
+2024-05-10 15:24:50.614 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 15:24:50.620 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.1158ms
+2024-05-10 15:24:50.738 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 15:24:50.744 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 6.8235ms
+2024-05-10 15:24:50.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 15:24:50.752 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 15:24:50.759 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.1616ms
+2024-05-10 15:24:50.761 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.699ms
+2024-05-10 15:24:50.807 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 15:24:50.812 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.5573ms
+2024-05-10 15:26:04.413 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetTotalCourses - null null
+2024-05-10 15:26:04.437 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-10 15:26:04.442 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetTotalCourses (LXP.Api)'
+2024-05-10 15:26:04.459 +05:30 [INF] Route matched with {action = "GetTotalCourses", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetTotalCourses() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-05-10 15:26:06.098 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-10 15:26:06.114 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetTotalCourses (LXP.Api) in 1646.8282ms
+2024-05-10 15:26:06.116 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetTotalCourses (LXP.Api)'
+2024-05-10 15:26:06.117 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetTotalCourses - 200 null application/json; charset=utf-8 1704.6826ms
+2024-05-10 15:26:12.918 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 15:26:12.932 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 14.5926ms
+2024-05-10 15:26:12.956 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 15:26:12.956 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 15:26:12.972 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 15.6385ms
+2024-05-10 15:26:12.972 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.6407ms
+2024-05-10 15:26:13.014 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 15:26:13.023 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 9.3032ms
+2024-05-10 15:26:13.114 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 15:26:13.121 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 7.4402ms
+2024-05-10 15:26:13.131 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 15:26:13.131 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 15:26:13.144 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.0149ms
+2024-05-10 15:26:13.146 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.9697ms
+2024-05-10 15:26:13.191 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 15:26:13.196 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 4.3981ms
+2024-05-10 15:26:13.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 15:26:13.288 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 8.6026ms
+2024-05-10 15:26:13.297 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 15:26:13.297 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 15:26:13.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.0832ms
+2024-05-10 15:26:13.312 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.2707ms
+2024-05-10 15:26:13.356 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 15:26:13.362 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.3629ms
+2024-05-10 20:26:11.002 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-10 20:26:11.038 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 20:26:11.041 +05:30 [INF] Hosting environment: Development
+2024-05-10 20:26:11.042 +05:30 [INF] Content root path: D:\Review LXP\LXP.Api
+2024-05-10 20:26:14.996 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 20:26:15.775 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 786.6486ms
+2024-05-10 20:26:15.829 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 20:26:15.834 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 20:26:15.855 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 25.9575ms
+2024-05-10 20:26:15.920 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 86.5882ms
+2024-05-10 20:26:16.006 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 20:26:16.236 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 229.9701ms
+2024-05-10 20:26:21.640 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-10 20:26:21.650 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-10 20:26:21.655 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:26:21.674 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-10 20:26:21.684 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 2.8616ms
+2024-05-10 20:26:21.686 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:26:21.688 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.ICategoryServices' while attempting to activate 'LXP.Api.Controllers.CategoryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 20:26:21.720 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 500 null text/plain; charset=utf-8 80.0819ms
+2024-05-10 20:26:47.961 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetTotalLearners - null null
+2024-05-10 20:26:47.971 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetTotalLearners (LXP.Api)'
+2024-05-10 20:26:47.981 +05:30 [INF] Route matched with {action = "GetTotalLearners", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetTotalLearners() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-05-10 20:26:49.410 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-10 20:26:49.419 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetTotalLearners (LXP.Api) in 1435.4213ms
+2024-05-10 20:26:49.420 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetTotalLearners (LXP.Api)'
+2024-05-10 20:26:49.421 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetTotalLearners - 200 null application/json; charset=utf-8 1460.3006ms
+2024-05-10 20:27:00.591 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-10 20:27:00.594 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:27:00.595 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-10 20:27:00.598 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 0.5145ms
+2024-05-10 20:27:00.599 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:27:00.601 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.ICategoryServices' while attempting to activate 'LXP.Api.Controllers.CategoryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 20:27:00.607 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 500 null text/plain; charset=utf-8 16.1248ms
+2024-05-10 20:31:26.166 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-10 20:31:26.200 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 20:31:26.200 +05:30 [INF] Hosting environment: Development
+2024-05-10 20:31:26.201 +05:30 [INF] Content root path: D:\Review LXP\LXP.Api
+2024-05-10 20:31:27.387 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 20:31:27.955 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 575.7328ms
+2024-05-10 20:31:27.976 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 20:31:27.981 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 20:31:27.984 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.5139ms
+2024-05-10 20:31:28.035 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.432ms
+2024-05-10 20:31:28.104 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 20:31:28.237 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.0072ms
+2024-05-10 20:31:33.625 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-10 20:31:33.634 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-10 20:31:33.637 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:31:33.652 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-10 20:31:33.658 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 1.6842ms
+2024-05-10 20:31:33.659 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:31:33.661 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.ICategoryServices' while attempting to activate 'LXP.Api.Controllers.CategoryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 20:31:33.682 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 500 null text/plain; charset=utf-8 57.0384ms
+2024-05-10 20:35:25.314 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-10 20:35:25.375 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 20:35:25.377 +05:30 [INF] Hosting environment: Development
+2024-05-10 20:35:25.379 +05:30 [INF] Content root path: D:\Review LXP\LXP.Api
+2024-05-10 20:35:29.624 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 20:35:30.412 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 798.3825ms
+2024-05-10 20:35:30.435 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 20:35:30.445 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 20:35:30.449 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.4787ms
+2024-05-10 20:35:30.518 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.5585ms
+2024-05-10 20:35:30.618 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 20:35:30.773 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 154.7635ms
+2024-05-10 20:35:35.031 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-10 20:35:35.042 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-10 20:35:35.048 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:35:35.070 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-10 20:35:35.079 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 2.7634ms
+2024-05-10 20:35:35.083 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:35:35.086 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.ICategoryServices' while attempting to activate 'LXP.Api.Controllers.CategoryController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method10(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-10 20:35:35.118 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 500 null text/plain; charset=utf-8 87.5244ms
+2024-05-10 20:36:55.261 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-10 20:36:55.336 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-10 20:36:55.338 +05:30 [INF] Hosting environment: Development
+2024-05-10 20:36:55.341 +05:30 [INF] Content root path: D:\Review LXP\LXP.Api
+2024-05-10 20:36:56.862 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 20:36:57.590 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 738.1251ms
+2024-05-10 20:36:57.641 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 20:36:57.649 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.4129ms
+2024-05-10 20:36:57.657 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 20:36:57.722 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.7738ms
+2024-05-10 20:36:57.829 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 20:36:58.000 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 171.5649ms
+2024-05-10 20:37:01.002 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-10 20:37:01.014 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-10 20:37:01.020 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:37:01.051 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-10 20:37:02.970 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-10 20:37:02.985 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 1925.4977ms
+2024-05-10 20:37:02.988 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-10 20:37:02.990 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 1988.2132ms
+2024-05-10 20:38:16.626 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-10 20:38:16.642 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 15.4788ms
+2024-05-10 20:38:16.652 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-10 20:38:16.652 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-10 20:38:16.654 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 2.5426ms
+2024-05-10 20:38:16.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.4122ms
+2024-05-10 20:38:16.754 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-10 20:38:16.768 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 14.4364ms

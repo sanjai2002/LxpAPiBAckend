@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Review LXP\\LXP.Api\\wwwroot\\CourseThumbnailImages\\eaa9cbca-9440-46f3-a71a-26d7831ad935_Milo.jpg",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\eaa9cbca-9440-46f3-a71a-26d7831ad935_Milo.jpg"
+    },
+    {
+      "Id": "D:\\Review LXP\\LXP.Api\\wwwroot\\CourseThumbnailImages\\ebb0860e-98ca-4e72-9409-1e55fbb4a7eb_Eco education-rafiki.png",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\ebb0860e-98ca-4e72-9409-1e55fbb4a7eb_Eco education-rafiki.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LXP.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LXP.Api.props",
+      "PackagePath": "build\\LXP.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LXP.Api.props",
+      "PackagePath": "buildMultiTargeting\\LXP.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LXP.Api.props",
+      "PackagePath": "buildTransitive\\LXP.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
