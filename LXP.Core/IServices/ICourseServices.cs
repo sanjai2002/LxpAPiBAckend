@@ -12,10 +12,6 @@ namespace LXP.Core.IServices
     {
         Course GetCourseByCourseId(Guid courseId);
 
-        //bool UpdateCourse(CourseUpdateModel course);
-        //void UpdateCourseusingid(CourseUpdateModel course);
-        //IEnumerable<CourseUpdateModel> GetIndividualCourse(Guid id);
-        
         Task<bool> Deletecourse(Guid courseId);
 
         Task<bool> Changecoursestatus(Coursestatus status);
