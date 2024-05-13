@@ -25,8 +25,8 @@ namespace LXP.Data.IRepository
 
         Task Updatecourse(Course course);
 
-
-
+        IEnumerable<CourseViewModel> GetAllCourse();
+        IEnumerable<CourseViewModel> GetLimitedCourse();
 
 
     }

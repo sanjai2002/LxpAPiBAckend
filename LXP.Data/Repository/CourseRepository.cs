@@ -4,8 +4,10 @@ using LXP.Common.ViewModels;
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using System;
 using System.Data.Entity;
+using Microsoft.AspNetCore.Http;
 
 namespace LXP.Data.Repository
 {
@@ -13,10 +15,12 @@ namespace LXP.Data.Repository
     {
         private readonly LXPDbContext _lXPDbContext;
         private readonly IWebHostEnvironment _environment;
-        public CourseRepository(LXPDbContext lXPDbContext, IWebHostEnvironment environment)
+        private readonly IHttpContextAccessor _contextAccessor;
+        public CourseRepository(LXPDbContext lXPDbContext, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
         {
             _lXPDbContext = lXPDbContext;
             _environment = environment;
+            _contextAccessor = httpContextAccessor;
         }
         public Course GetCourseDetailsByCourseId(Guid CourseId)
         {
@@ -85,6 +89,44 @@ namespace LXP.Data.Repository
             await _lXPDbContext.SaveChangesAsync();
         }
 
+        public IEnumerable<CourseViewModel> GetAllCourse()
+        {
+            return _lXPDbContext.Courses
+                      .Select(c => new CourseViewModel
+                      {
+                          CourseId = c.CourseId,
+                          Title = c.Title,
+                          Level = c.Level.Level,
+                          Category = c.Catagory.Category,
+                          Duration = c.Duration,
+                          CreatedAt = c.CreatedAt,
+                      })
+
+                      .ToList();
+
+        }
+
+        public IEnumerable<CourseViewModel> GetLimitedCourse()
+        {
+            return _lXPDbContext.Courses
+              .OrderByDescending(c => c.CreatedAt)
+              .Select(c => new CourseViewModel
+              {
+                  CourseId = c.CourseId,
+                  Title = c.Title,
+                  Level = c.Level.Level,
+                  Category = c.Catagory.Category,
+                  Duration = c.Duration,
+                  Thumbnailimage = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
+                             _contextAccessor.HttpContext.Request.Scheme,
+                             _contextAccessor.HttpContext.Request.Host,
+                             _contextAccessor.HttpContext.Request.PathBase,
+                             c.Thumbnail)
+
+              })
+              .Take(9)
+              .ToList();
+        }
 
 
 
