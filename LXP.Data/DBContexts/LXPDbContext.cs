@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using LXP.Common.Entities;
+using LXP.Data;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
-namespace LXP.Common;
+namespace LXP.Data.DBContexts;
 
 public partial class LXPDbContext : DbContext
 {
@@ -71,7 +71,7 @@ public partial class LXPDbContext : DbContext
 
             entity.ToTable("course");
 
-            entity.HasIndex(e => e.CatagoryId, "IX_course_catagory_id");
+            entity.HasIndex(e => e.CategoryId, "IX_course_catagory_id");
 
             entity.HasIndex(e => e.LevelId, "IX_course_level_id");
 
@@ -79,8 +79,8 @@ public partial class LXPDbContext : DbContext
                 .HasColumnName("course_id")
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
-            entity.Property(e => e.CatagoryId)
-                .HasColumnName("catagory_id")
+            entity.Property(e => e.CategoryId)
+                .HasColumnName("category_id")
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
             entity.Property(e => e.CreatedAt)
@@ -104,19 +104,21 @@ public partial class LXPDbContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("title");
 
-            entity.HasOne(d => d.Catagory).WithMany(p => p.Courses).HasForeignKey(d => d.CatagoryId);
+            entity.HasOne(d => d.Category).WithMany(p => p.Courses)
+                .HasForeignKey(d => d.CategoryId)
+                .OnDelete(DeleteBehavior.ClientSetNull);
 
             entity.HasOne(d => d.Level).WithMany(p => p.Courses).HasForeignKey(d => d.LevelId);
         });
 
         modelBuilder.Entity<CourseCategory>(entity =>
         {
-            entity.HasKey(e => e.CatagoryId).HasName("PRIMARY");
+            entity.HasKey(e => e.CategoryId).HasName("PRIMARY");
 
             entity.ToTable("course_category");
 
-            entity.Property(e => e.CatagoryId)
-                .HasColumnName("catagory_id")
+            entity.Property(e => e.CategoryId)
+                .HasColumnName("category_id")
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
             entity.Property(e => e.Category)
@@ -440,9 +442,7 @@ public partial class LXPDbContext : DbContext
 
             entity.ToTable("learner_profiles");
 
-            entity.HasIndex(e => e.LearnerId, "IX_learner_profiles_learner_id");
-
-            entity.HasIndex(e => e.ProfileId, "profile_id_UNIQUE").IsUnique();
+            entity.HasIndex(e => e.LearnerId, "IX_learner_profiles_learner_id").IsUnique();
 
             entity.Property(e => e.ProfileId)
                 .HasColumnName("profile_id")
@@ -478,7 +478,7 @@ public partial class LXPDbContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("stream");
 
-            entity.HasOne(d => d.Learner).WithMany(p => p.LearnerProfiles).HasForeignKey(d => d.LearnerId);
+            entity.HasOne(d => d.Learner).WithOne(p => p.LearnerProfile).HasForeignKey<LearnerProfile>(d => d.LearnerId);
         });
 
         modelBuilder.Entity<LearnerProgress>(entity =>

@@ -7,7 +7,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using LXP.Data.DBContexts;
 namespace LXP.Data.Repository
 {
     public class UpdatePasswordRepository:IUpdatePasswordRepository

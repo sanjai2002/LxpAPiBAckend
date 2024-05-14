@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LXP.Common.Entities;
+namespace LXP.Data;
 
 public partial class Learner
 {
@@ -33,7 +33,7 @@ public partial class Learner
 
     public virtual ICollection<LearnerAttempt> LearnerAttempts { get; set; } = new List<LearnerAttempt>();
 
-    public virtual ICollection<LearnerProfile> LearnerProfiles { get; set; } = new List<LearnerProfile>();
+    public virtual LearnerProfile? LearnerProfile { get; set; }
 
     public virtual ICollection<LearnerProgress> LearnerProgresses { get; set; } = new List<LearnerProgress>();
 

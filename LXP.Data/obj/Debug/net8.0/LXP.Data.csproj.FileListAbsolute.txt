@@ -52,3 +52,21 @@ D:\SKV\Capstone\Sprint 2\Backend\LXP.Data\obj\Debug\net8.0\refint\LXP.Data.dll
 D:\SKV\Capstone\Sprint 2\Backend\LXP.Data\obj\Debug\net8.0\LXP.Data.pdb
 D:\SKV\Capstone\Sprint 2\Backend\LXP.Data\obj\Debug\net8.0\LXP.Data.genruntimeconfig.cache
 D:\SKV\Capstone\Sprint 2\Backend\LXP.Data\obj\Debug\net8.0\ref\LXP.Data.dll
+D:\Adminnewcode\LXP.Data\bin\Debug\net8.0\LXP.Data.deps.json
+D:\Adminnewcode\LXP.Data\bin\Debug\net8.0\LXP.Data.runtimeconfig.json
+D:\Adminnewcode\LXP.Data\bin\Debug\net8.0\LXP.Data.dll
+D:\Adminnewcode\LXP.Data\bin\Debug\net8.0\LXP.Data.pdb
+D:\Adminnewcode\LXP.Data\bin\Debug\net8.0\LXP.Common.dll
+D:\Adminnewcode\LXP.Data\bin\Debug\net8.0\LXP.Common.pdb
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.AssemblyReference.cache
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.AssemblyInfoInputs.cache
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.AssemblyInfo.cs
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.CoreCompileInputs.cache
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.sourcelink.json
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.CopyComplete
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.dll
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\refint\LXP.Data.dll
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.pdb
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\LXP.Data.genruntimeconfig.cache
+D:\Adminnewcode\LXP.Data\obj\Debug\net8.0\ref\LXP.Data.dll

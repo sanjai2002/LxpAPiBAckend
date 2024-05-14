@@ -32,7 +32,7 @@ namespace LXP.Common.ViewModels
         ///Course Category
         ///</Summary>
         ///<example>Technical</example>
-        public Guid CatagoryId { get; set; }
+        public Guid CategoryId { get; set; }
 
         ///<Summary>
         ///Course Description

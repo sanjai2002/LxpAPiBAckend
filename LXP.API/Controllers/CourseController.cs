@@ -6,7 +6,8 @@ using LXP.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
-
+using LXP.Data.DBContexts;
+using LXP.Data;
 namespace LXP.Api.Controllers
 {
     [Route("api/[controller]/[Action]")]

@@ -2,6 +2,7 @@
 using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
+using LXP.Data;
 using LXP.Data.IRepository;
 using System;
 using System.Collections.Generic;

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LXP.Common.Entities;
+namespace LXP.Data;
 
 public partial class Quiz
 {

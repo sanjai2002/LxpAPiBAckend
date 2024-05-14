@@ -13,6 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using LXP.Core.IServices;
+using LXP.Data;
 namespace LXP.Core.Services
 {
     public class LoginService : ILoginService

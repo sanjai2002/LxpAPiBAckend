@@ -8,7 +8,7 @@ using LXP.Common.ViewModels;
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using LXP.Data.DBContexts;
 namespace LXP.Data.Repository
 {
     public class Repository:IRepository.IRepository

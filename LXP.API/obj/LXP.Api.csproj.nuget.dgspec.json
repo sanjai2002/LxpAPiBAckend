@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Api\\LXP.Api.csproj": {}
+    "D:\\Adminnewcode\\LXP.Api\\LXP.Api.csproj": {}
   },
   "projects": {
-    "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Api\\LXP.Api.csproj": {
+    "D:\\Adminnewcode\\LXP.Api\\LXP.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Api\\LXP.Api.csproj",
+        "projectUniqueName": "D:\\Adminnewcode\\LXP.Api\\LXP.Api.csproj",
         "projectName": "LXP.Api",
-        "projectPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Api\\LXP.Api.csproj",
-        "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
-        "outputPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Api\\obj\\",
+        "projectPath": "D:\\Adminnewcode\\LXP.Api\\LXP.Api.csproj",
+        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+        "outputPath": "D:\\Adminnewcode\\LXP.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kathirvel.selvam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Core\\LXP.Core.csproj": {
-                "projectPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Core\\LXP.Core.csproj"
+              "D:\\Adminnewcode\\LXP.Core\\LXP.Core.csproj": {
+                "projectPath": "D:\\Adminnewcode\\LXP.Core\\LXP.Core.csproj"
               }
             }
           }
@@ -76,20 +76,20 @@
         }
       }
     },
-    "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Common\\LXP.Common.csproj": {
+    "D:\\Adminnewcode\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "D:\\Adminnewcode\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Common\\LXP.Common.csproj",
-        "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
-        "outputPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Common\\obj\\",
+        "projectPath": "D:\\Adminnewcode\\LXP.Common\\LXP.Common.csproj",
+        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+        "outputPath": "D:\\Adminnewcode\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kathirvel.selvam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -141,20 +141,20 @@
         }
       }
     },
-    "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Core\\LXP.Core.csproj": {
+    "D:\\Adminnewcode\\LXP.Core\\LXP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Core\\LXP.Core.csproj",
+        "projectUniqueName": "D:\\Adminnewcode\\LXP.Core\\LXP.Core.csproj",
         "projectName": "LXP.Core",
-        "projectPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Core\\LXP.Core.csproj",
-        "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
-        "outputPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Core\\obj\\",
+        "projectPath": "D:\\Adminnewcode\\LXP.Core\\LXP.Core.csproj",
+        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+        "outputPath": "D:\\Adminnewcode\\LXP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kathirvel.selvam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -169,8 +169,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Data\\LXP.Data.csproj": {
-                "projectPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Data\\LXP.Data.csproj"
+              "D:\\Adminnewcode\\LXP.Data\\LXP.Data.csproj": {
+                "projectPath": "D:\\Adminnewcode\\LXP.Data\\LXP.Data.csproj"
               }
             }
           }
@@ -204,20 +204,20 @@
         }
       }
     },
-    "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Data\\LXP.Data.csproj": {
+    "D:\\Adminnewcode\\LXP.Data\\LXP.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Data\\LXP.Data.csproj",
+        "projectUniqueName": "D:\\Adminnewcode\\LXP.Data\\LXP.Data.csproj",
         "projectName": "LXP.Data",
-        "projectPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Data\\LXP.Data.csproj",
-        "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
-        "outputPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Data\\obj\\",
+        "projectPath": "D:\\Adminnewcode\\LXP.Data\\LXP.Data.csproj",
+        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+        "outputPath": "D:\\Adminnewcode\\LXP.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kathirvel.selvam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -232,8 +232,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "D:\\SKV\\Capstone\\Sprint 2\\Backend\\LXP.Common\\LXP.Common.csproj"
+              "D:\\Adminnewcode\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "D:\\Adminnewcode\\LXP.Common\\LXP.Common.csproj"
               }
             }
           }

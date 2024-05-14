@@ -1,0 +1,40 @@
+2024-05-14 10:52:40.505 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-14 10:52:40.556 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-14 10:52:40.559 +05:30 [INF] Hosting environment: Development
+2024-05-14 10:52:40.560 +05:30 [INF] Content root path: D:\Adminnewcode\LXP.Api
+2024-05-14 10:52:44.891 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-14 10:52:45.679 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 799.5031ms
+2024-05-14 10:52:45.686 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-14 10:52:45.699 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-14 10:52:45.721 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 35.1528ms
+2024-05-14 10:52:45.805 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.5273ms
+2024-05-14 10:52:46.273 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-14 10:52:46.449 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 176.5071ms
+2024-05-14 10:52:51.543 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-14 10:52:51.552 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-14 10:52:51.556 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-14 10:52:51.574 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-14 10:52:53.195 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-14 10:52:53.210 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 1629.6334ms
+2024-05-14 10:52:53.213 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-14 10:52:53.217 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 1673.9179ms
+2024-05-14 10:53:38.661 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-14 10:53:38.731 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-14 10:53:38.733 +05:30 [INF] Hosting environment: Development
+2024-05-14 10:53:38.734 +05:30 [INF] Content root path: D:\Adminnewcode\LXP.Api
+2024-05-14 10:53:44.239 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-14 10:53:44.845 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 615.7619ms
+2024-05-14 10:53:44.858 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-14 10:53:44.866 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-14 10:53:44.878 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 19.9537ms
+2024-05-14 10:53:44.931 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.4834ms
+2024-05-14 10:53:45.027 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-14 10:53:45.197 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 169.6101ms
+2024-05-14 10:53:56.287 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-14 10:53:56.302 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-14 10:53:56.308 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-14 10:53:56.327 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-14 10:53:57.907 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-14 10:53:57.921 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 1587.9219ms
+2024-05-14 10:53:57.924 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-14 10:53:57.926 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 1639.4947ms

@@ -3,6 +3,7 @@ using LXP.Common;
 using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
+using LXP.Data;
 using LXP.Data.IRepository;
 using LXP.Data.Repository;
 using Microsoft.AspNetCore.Hosting;
@@ -37,7 +38,7 @@ namespace LXP.Core.Services
             {
                 CourseId = courseId,
                 LevelId = course.LevelId,
-                CatagoryId = course.CatagoryId,
+                CategoryId = course.CategoryId,
                 Title = course.Title,
                 Description = course.Description,
                 Duration = course.Duration,

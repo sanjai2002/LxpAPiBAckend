@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System;
 using System.Data.Entity;
 using Microsoft.AspNetCore.Http;
+using LXP.Data.DBContexts;
 
 namespace LXP.Data.Repository
 {
@@ -65,7 +66,7 @@ namespace LXP.Data.Repository
                           CourseId = c.CourseId,
                           Title = c.Title,
                           Level = c.Level.Level,
-                          Category = c.Catagory.Category,
+                          Category = c.Category.Category,
                           Duration = c.Duration,
                           CreatedAt = c.CreatedAt,
                       })
@@ -83,7 +84,7 @@ namespace LXP.Data.Repository
                   CourseId = c.CourseId,
                   Title = c.Title,
                   Level = c.Level.Level,
-                  Category = c.Catagory.Category,
+                  Category = c.Category.Category,
                   Duration = c.Duration,
                   Thumbnailimage = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
                              _contextAccessor.HttpContext.Request.Scheme,
