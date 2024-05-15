@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Adminnewcode\\LXP.Common\\LXP.Common.csproj": {}
+    "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\LXP.Common.csproj": {}
   },
   "projects": {
-    "D:\\Adminnewcode\\LXP.Common\\LXP.Common.csproj": {
+    "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Adminnewcode\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\Adminnewcode\\LXP.Common\\LXP.Common.csproj",
-        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
-        "outputPath": "D:\\Adminnewcode\\LXP.Common\\obj\\",
+        "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\LXP.Common.csproj",
+        "packagesPath": "C:\\Users\\kavin.senthil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kavin.senthil\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

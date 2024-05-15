@@ -48,7 +48,7 @@ namespace LXP.Api.Controllers
         ///<response code="200">Success</response>
         ///<response code="405">Internal server Error</response>
         [HttpPut("lxp/courseupdate")]
-        public async Task<IActionResult> Updatecourse(CourseUpdateModel course)
+        public async Task<IActionResult> Updatecourse([FromForm]CourseUpdateModel course)
         {
             bool updatecourse = await _courseServices.Updatecourse(course);
 

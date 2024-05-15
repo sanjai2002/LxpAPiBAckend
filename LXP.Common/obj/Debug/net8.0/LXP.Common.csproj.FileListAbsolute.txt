@@ -50,3 +50,16 @@ D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
 D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
 D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
 D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
