@@ -4999,23 +4999,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\": {},
+    "C:\\Users\\kavin.senthil\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Adminnewcode\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
       "projectName": "LXP.Core.Tests",
-      "projectPath": "D:\\Adminnewcode\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
-      "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
-      "outputPath": "D:\\Adminnewcode\\LXP.Core.Tests\\obj\\",
+      "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+      "packagesPath": "C:\\Users\\kavin.senthil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kavin.senthil\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5024,14 +5024,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Adminnewcode\\LXP.Core\\LXP.Core.csproj": {
-              "projectPath": "D:\\Adminnewcode\\LXP.Core\\LXP.Core.csproj"
+            "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core\\LXP.Core.csproj": {
+              "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core\\LXP.Core.csproj"
             }
           }
         }
