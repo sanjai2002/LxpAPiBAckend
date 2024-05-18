@@ -1,0 +1,533 @@
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\appsettings.Development.json
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\appsettings.json
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Api.exe
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Api.deps.json
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Api.runtimeconfig.json
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Api.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Api.pdb
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\AutoMapper.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\EntityFramework.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Google.Protobuf.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\MySql.Data.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\MySqlConnector.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Serilog.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\System.CodeDom.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\ZstdSharp.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Common.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Core.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Data.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Core.pdb
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Common.pdb
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Data.pdb
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.AssemblyReference.cache
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfoInputs.cache
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfo.cs
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CoreCompileInputs.cache
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.sourcelink.json
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\staticwebassets.development.json
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.LXP.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.LXP.Api.props
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LXP.Api.props
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LXP.Api.props
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\scopedcss\bundle\LXP.Api.styles.css
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CopyComplete
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.dll
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\refint\LXP.Api.dll
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.pdb
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\LXP.Api.genruntimeconfig.cache
+D:\Review LXP\LXP.Api\obj\Debug\net8.0\ref\LXP.Api.dll
+D:\Review LXP\LXP.Api\bin\Debug\net8.0\LXP.Api.staticwebassets.runtime.json
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\appsettings.Development.json
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\appsettings.json
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Api.staticwebassets.runtime.json
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Api.exe
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Api.deps.json
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Api.runtimeconfig.json
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Api.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Api.pdb
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\AutoMapper.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\EntityFramework.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Google.Protobuf.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\MySql.Data.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\MySqlConnector.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Serilog.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\System.CodeDom.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\ZstdSharp.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Core.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Data.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Core.pdb
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Common.pdb
+D:\LXP-Admin Course(Backend)\LXP.Api\bin\Debug\net8.0\LXP.Data.pdb
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.AssemblyReference.cache
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfoInputs.cache
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfo.cs
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CoreCompileInputs.cache
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.sourcelink.json
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\staticwebassets.development.json
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.LXP.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.LXP.Api.props
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LXP.Api.props
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LXP.Api.props
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\staticwebassets.pack.json
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\scopedcss\bundle\LXP.Api.styles.css
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CopyComplete
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\refint\LXP.Api.dll
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.pdb
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\LXP.Api.genruntimeconfig.cache
+D:\LXP-Admin Course(Backend)\LXP.Api\obj\Debug\net8.0\ref\LXP.Api.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\appsettings.Development.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\appsettings.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.staticwebassets.runtime.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.exe
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.deps.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.runtimeconfig.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.pdb
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\AutoMapper.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\EntityFramework.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Google.Protobuf.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\MySql.Data.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\MySqlConnector.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Serilog.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\System.CodeDom.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\ZstdSharp.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Common.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Core.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Data.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Core.pdb
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Common.pdb
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\bin\Debug\net8.0\LXP.Data.pdb
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.AssemblyReference.cache
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfoInputs.cache
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfo.cs
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CoreCompileInputs.cache
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.sourcelink.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\staticwebassets.development.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.LXP.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.LXP.Api.props
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LXP.Api.props
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LXP.Api.props
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\staticwebassets.pack.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\scopedcss\bundle\LXP.Api.styles.css
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CopyComplete
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\refint\LXP.Api.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.pdb
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.genruntimeconfig.cache
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Api\obj\Debug\net8.0\ref\LXP.Api.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\appsettings.Development.json
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\appsettings.json
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Api.staticwebassets.runtime.json
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Api.exe
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Api.deps.json
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Api.runtimeconfig.json
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Api.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Api.pdb
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\AutoMapper.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\EntityFramework.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Google.Protobuf.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\MySql.Data.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\MySqlConnector.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Serilog.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\System.CodeDom.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\ZstdSharp.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Common.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Core.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Data.dll
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Core.pdb
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Common.pdb
+D:\Adminnewcode\LXP.Api\bin\Debug\net8.0\LXP.Data.pdb
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.AssemblyReference.cache
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfoInputs.cache
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfo.cs
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CoreCompileInputs.cache
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.sourcelink.json
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\staticwebassets.development.json
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.LXP.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.LXP.Api.props
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LXP.Api.props
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LXP.Api.props
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\scopedcss\bundle\LXP.Api.styles.css
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CopyComplete
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.dll
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\refint\LXP.Api.dll
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.pdb
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\LXP.Api.genruntimeconfig.cache
+D:\Adminnewcode\LXP.Api\obj\Debug\net8.0\ref\LXP.Api.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\appsettings.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Api.staticwebassets.runtime.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Api.exe
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Api.deps.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Api.runtimeconfig.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Api.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Api.pdb
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\EntityFramework.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Serilog.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Serilog.AspNetCore.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Core.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Data.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Core.pdb
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Common.pdb
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\bin\Debug\net8.0\LXP.Data.pdb
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.AssemblyReference.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfoInputs.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfo.cs
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CoreCompileInputs.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.sourcelink.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.LXP.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.LXP.Api.props
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LXP.Api.props
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LXP.Api.props
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\scopedcss\bundle\LXP.Api.styles.css
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CopyComplete
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\refint\LXP.Api.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.pdb
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\LXP.Api.genruntimeconfig.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Api\obj\Debug\net8.0\ref\LXP.Api.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\appsettings.Development.json
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\appsettings.json
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.staticwebassets.runtime.json
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.exe
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.deps.json
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.runtimeconfig.json
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Api.pdb
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\AutoMapper.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\EntityFramework.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Google.Protobuf.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\MySql.Data.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\MySqlConnector.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Serilog.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Serilog.AspNetCore.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Hosting.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Serilog.Formatting.Compact.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Serilog.Settings.Configuration.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Console.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.Debug.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Serilog.Sinks.File.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\System.CodeDom.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\System.Data.SqlClient.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\ZstdSharp.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Core.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Data.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Core.pdb
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Common.pdb
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\bin\Debug\net8.0\LXP.Data.pdb
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.AssemblyReference.cache
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfoInputs.cache
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.AssemblyInfo.cs
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CoreCompileInputs.cache
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\staticwebassets.build.json
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\staticwebassets.development.json
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.LXP.Api.Microsoft.AspNetCore.StaticWebAssets.props
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.LXP.Api.props
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LXP.Api.props
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LXP.Api.props
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\staticwebassets.pack.json
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\scopedcss\bundle\LXP.Api.styles.css
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.csproj.CopyComplete
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\refint\LXP.Api.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.pdb
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\LXP.Api.genruntimeconfig.cache
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Api\obj\Debug\net8.0\ref\LXP.Api.dll
