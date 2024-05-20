@@ -34,8 +34,6 @@ namespace LXP.Api.Controllers
             return Ok(CreateSuccessResponse(learners));
         }
 
-
-
         ///<summary>
         ///Learner profile by learner id 
         ///</summary>

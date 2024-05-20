@@ -29,8 +29,9 @@ namespace LXP.Data.Repository
             return _lXPDbContext.LearnerProfiles
                            .Select(c => new AllLearnersViewModel
                            {
+
                                LearnerID = c.LearnerId,
-                               LearnerName = $"{c.FirstName}{c.LastName}",
+                               LearnerName =c.FirstName+" "+c.LastName,
                                Email = c.Learner.Email,
                                LastLogin = c.Learner.UserLastLogin,
                            }
