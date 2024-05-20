@@ -75,3 +75,4 @@ D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.d
 D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
 D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
 D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json

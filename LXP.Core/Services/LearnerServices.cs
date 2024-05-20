@@ -27,6 +27,13 @@ namespace LXP.Core.Services
 
         }
 
+        public IEnumerable<AllLearnersViewModel> GetLearners()
+        {
+
+            var result = _LearnerRepository.GetLearners();
+            return result;
+        }
+
         public object GetAllLearnerDetailsByLearnerId(Guid LearnerId)
         {
             return _LearnerRepository.GetAllLearnerDetailsByLearnerId(LearnerId);

@@ -1,4 +1,5 @@
-﻿using LXP.Data.DBContexts;
+﻿using LXP.Common.ViewModels;
+using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -23,6 +24,20 @@ namespace LXP.Data.Repository
             _contextAccessor = httpContextAccessor;
         }
 
+        public IEnumerable<AllLearnersViewModel> GetLearners()
+        {
+            return _lXPDbContext.LearnerProfiles
+                           .Select(c => new AllLearnersViewModel
+                           {
+                               LearnerID = c.LearnerId,
+                               LearnerName = $"{c.FirstName}{c.LastName}",
+                               Email = c.Learner.Email,
+                               LastLogin = c.Learner.UserLastLogin,
+                           }
+
+           ).ToList();
+        }
+
         public object GetAllLearnerDetailsByLearnerId(Guid learnerid)
         {
             var result = from learner in _lXPDbContext.Learners
@@ -42,7 +57,7 @@ namespace LXP.Data.Repository
                                            LearnerContactNumber = learnerprofile.ContactNumber,
                                            LearnerStream = learnerprofile.Stream,
                                            Learnerprofile = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
-                                                            _contextAccessor.HttpContext.Request.Scheme,
+                                                            _contextAccessor.HttpContext!.Request.Scheme,
                                                             _contextAccessor.HttpContext.Request.Host,
                                                             _contextAccessor.HttpContext.Request.PathBase,
                                                             learnerprofile.ProfilePhoto)

@@ -117,3 +117,4 @@ D:\LXP_Capstrone project\Sprint3Backend\LXP.Core\obj\Debug\net8.0\refint\LXP.Cor
 D:\LXP_Capstrone project\Sprint3Backend\LXP.Core\obj\Debug\net8.0\LXP.Core.pdb
 D:\LXP_Capstrone project\Sprint3Backend\LXP.Core\obj\Debug\net8.0\LXP.Core.genruntimeconfig.cache
 D:\LXP_Capstrone project\Sprint3Backend\LXP.Core\obj\Debug\net8.0\ref\LXP.Core.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Core\obj\Debug\net8.0\LXP.Core.sourcelink.json

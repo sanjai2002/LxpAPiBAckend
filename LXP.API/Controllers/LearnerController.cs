@@ -21,6 +21,20 @@ namespace LXP.Api.Controllers
             _learnerServices = learnerServices;
         }
 
+        ///<summary>
+        ///Getting All learners 
+        ///</summary>
+        ///<response code="200">Success</response>
+        ///<response code="404">Internal server Error</response>   
+        [HttpGet("/lxp/learner/getalllearnerdetails")]
+        public IActionResult GetAllLearners()
+        {
+            var learners = _learnerServices.GetLearners();
+
+            return Ok(CreateSuccessResponse(learners));
+        }
+
+
 
         ///<summary>
         ///Learner profile by learner id 
@@ -32,6 +46,8 @@ namespace LXP.Api.Controllers
             var learner = _learnerServices.GetAllLearnerDetailsByLearnerId(learnerid);
             return Ok(CreateSuccessResponse(learner));
         }
+
+
         ///<summary>
         ///Enrolled course details by learner id
         ///</summary>

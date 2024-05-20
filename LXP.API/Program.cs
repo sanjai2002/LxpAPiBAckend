@@ -20,8 +20,8 @@ builder.Services.AddCors(options =>
 
     );
 });
-#endregion
 
+#endregion
 // Add services to the container.
 // Add services to the container.
 builder.Services.AddScoped<ILoginService, LoginService>();

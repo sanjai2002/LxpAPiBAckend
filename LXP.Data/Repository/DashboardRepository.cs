@@ -107,6 +107,8 @@ namespace LXP.Data.Repository
             DateTime OneMonthAgo = DateTime.Now.AddMonths(-1);
             return _lXPDbContext.Learners.Where(Learner => Learner.UserLastLogin > OneMonthAgo).ToList();
         }
+
+
         public List<string> GetHighestEnrolledCourse()
         {
             var TopEnrolledCourses = _lXPDbContext.Enrollments
@@ -129,5 +131,7 @@ namespace LXP.Data.Repository
             }
             return courseNames;
         }
+
+
     }
 }
