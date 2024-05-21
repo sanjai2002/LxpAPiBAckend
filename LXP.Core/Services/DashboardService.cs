@@ -79,6 +79,7 @@ namespace LXP.Core.Services
                 NoOfCourse = _dashboardRepository.GetNoOfCourse().Count(),
                 NoOfActiveLearners = _dashboardRepository.GetNoOfActiveLearners().Count(),
                 HighestEnrolledCourse = _dashboardRepository.GetHighestEnrolledCourse(),
+                GetTopLearners = _dashboardRepository.GetTopLearners(),
             };
             return AdminDashboard;
 

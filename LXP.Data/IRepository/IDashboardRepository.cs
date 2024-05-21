@@ -22,5 +22,7 @@ namespace LXP.Data.IRepository
         public List<Course> GetNoOfCourse();
         public List<Learner> GetNoOfActiveLearners();
         public List<string> GetHighestEnrolledCourse();
+
+        public List<string> GetTopLearners();
     }
 }

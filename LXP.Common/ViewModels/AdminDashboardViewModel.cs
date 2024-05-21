@@ -16,6 +16,8 @@ namespace LXP.Common.ViewModels
 
         public List<string> HighestEnrolledCourse {  get; set; }
 
-       
+        public List<string> GetTopLearners { get; set; }
+
+
     }
 }

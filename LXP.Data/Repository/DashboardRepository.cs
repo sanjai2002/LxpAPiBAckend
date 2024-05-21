@@ -94,7 +94,7 @@ namespace LXP.Data.Repository
 
         public List<Learner> GetNoOfLearners()
         {
-            return _lXPDbContext.Learners.Where(Learner => Learner.Role == "Learner").ToList();
+            return _lXPDbContext.Learners.Where(Learner => Learner.Role != "Admin").ToList();
         }
 
         public List<Course> GetNoOfCourse()
@@ -108,6 +108,23 @@ namespace LXP.Data.Repository
             return _lXPDbContext.Learners.Where(Learner => Learner.UserLastLogin > OneMonthAgo).ToList();
         }
 
+        public List<string> GetTopLearners()
+        {
+            var topLearners = _lXPDbContext.Enrollments
+               .GroupBy(e => e.LearnerId)
+               .OrderByDescending(g => g.Count())
+               .Take(3)
+               .Select(g => g.Key)
+               .ToList();
+            var topLearnersWithNames = _lXPDbContext.LearnerProfiles
+                .Where(p => topLearners.Contains(p.LearnerId))
+                 .Select(p => new { p.FirstName, p.LastName })
+                   .ToList()
+                 .Select(p => ($"{p.FirstName} {p.LastName}"))
+                .ToList();
+
+            return topLearnersWithNames;
+        }
 
         public List<string> GetHighestEnrolledCourse()
         {

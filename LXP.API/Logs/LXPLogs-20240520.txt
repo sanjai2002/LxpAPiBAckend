@@ -218,3 +218,23 @@
 2024-05-20 13:51:20.760 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2042.0531ms
 2024-05-20 13:51:20.762 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
 2024-05-20 13:51:20.763 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 2073.1614ms
+2024-05-20 15:22:54.500 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-20 15:22:54.535 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-20 15:22:54.536 +05:30 [INF] Hosting environment: Development
+2024-05-20 15:22:54.537 +05:30 [INF] Content root path: D:\LXP_Capstrone project\Sprint3Backend\LXP.Api
+2024-05-20 15:22:57.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-20 15:22:57.956 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 532.8893ms
+2024-05-20 15:22:57.989 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-20 15:22:57.995 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.4333ms
+2024-05-20 15:22:58.000 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-20 15:22:58.040 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.1813ms
+2024-05-20 15:22:58.101 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-20 15:22:58.313 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 212.8586ms
+2024-05-20 15:23:04.408 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-05-20 15:23:04.416 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-20 15:23:04.420 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-20 15:23:04.433 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-05-20 15:23:06.562 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-20 15:23:06.571 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 2133.4455ms
+2024-05-20 15:23:06.572 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-20 15:23:06.573 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 2164.787ms
