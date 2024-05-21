@@ -39,6 +39,35 @@ namespace LXP.Data.Repository
            ).ToList();
         }
 
+        //public object GetAllLearnerDetailsByLearnerId(Guid learnerid)
+        //{
+        //    var result = from learner in _lXPDbContext.Learners
+        //                 where learner.LearnerId == learnerid
+        //                 select new
+        //                 {
+        //                     LearnerEmail = learner.Email,
+        //                     LearnerLastlogin=learner.UserLastLogin,
+        //                     learnerprofile = (from learnerprofile in _lXPDbContext.LearnerProfiles
+        //                               where learnerprofile.LearnerId == learner.LearnerId 
+        //                               select new
+        //                               {
+        //                                   LearnerFirstName = learnerprofile.FirstName,
+        //                                   LearnerLastName = learnerprofile.LastName,
+        //                                   LearnerDob = learnerprofile.Dob,
+        //                                   LearnerGender = learnerprofile.Gender,
+        //                                   LearnerContactNumber = learnerprofile.ContactNumber,
+        //                                   LearnerStream = learnerprofile.Stream,
+        //                                   Learnerprofile = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
+        //                                                    _contextAccessor.HttpContext!.Request.Scheme,
+        //                                                    _contextAccessor.HttpContext.Request.Host,
+        //                                                    _contextAccessor.HttpContext.Request.PathBase,
+        //                                                    learnerprofile.ProfilePhoto)
+        //                               }).ToList()
+        //                 };
+        //    return result;
+        //}
+
+
         public object GetAllLearnerDetailsByLearnerId(Guid learnerid)
         {
             var result = from learner in _lXPDbContext.Learners
@@ -46,23 +75,20 @@ namespace LXP.Data.Repository
                          select new
                          {
                              LearnerEmail = learner.Email,
-                             LearnerLastlogin=learner.UserLastLogin,
-                             learnerprofile = (from learnerprofile in _lXPDbContext.LearnerProfiles
-                                       where learnerprofile.LearnerId == learner.LearnerId 
-                                       select new
-                                       {
-                                           LearnerFirstName = learnerprofile.FirstName,
-                                           LearnerLastName = learnerprofile.LastName,
-                                           LearnerDob = learnerprofile.Dob,
-                                           LearnerGender = learnerprofile.Gender,
-                                           LearnerContactNumber = learnerprofile.ContactNumber,
-                                           LearnerStream = learnerprofile.Stream,
-                                           Learnerprofile = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
-                                                            _contextAccessor.HttpContext!.Request.Scheme,
-                                                            _contextAccessor.HttpContext.Request.Host,
-                                                            _contextAccessor.HttpContext.Request.PathBase,
-                                                            learnerprofile.ProfilePhoto)
-                                       }).ToList()
+                             LearnerLastlogin = learner.UserLastLogin,
+                             LearnerFirstName = learner.LearnerProfile!.FirstName,
+                             LearnerLastName =learner.LearnerProfile.LastName,
+                             LearnerDob=learner.LearnerProfile.Dob,
+                             LearnerGender= learner.LearnerProfile.Gender,
+                             LearnerContactNumber= learner.LearnerProfile.ContactNumber,
+                             LearnerStream= learner.LearnerProfile.Stream,
+                             Learnerprofile= String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
+                                                                                _contextAccessor.HttpContext!.Request.Scheme,
+                                                                                _contextAccessor.HttpContext.Request.Host,
+                                                                                _contextAccessor.HttpContext.Request.PathBase,
+                                                                                learner.LearnerProfile.ProfilePhoto)
+                           
+
                          };
             return result;
         }

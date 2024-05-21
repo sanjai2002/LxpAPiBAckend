@@ -23,10 +23,6 @@ namespace LXP.Core.Services
             _courseRepository = courseRepository; ;
             _environment = environment;
             _contextAccessor = httpContextAccessor;
-            var _configCourse = new MapperConfiguration(cfg => cfg.CreateMap<Course, CourseViewModel>().ReverseMap());
-            _courseMapper = new Mapper(_configCourse);
-
-
         }
 
         public Course GetCourseByCourseId(Guid courseId)
