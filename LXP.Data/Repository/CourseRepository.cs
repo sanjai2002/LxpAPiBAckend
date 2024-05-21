@@ -72,7 +72,6 @@ namespace LXP.Data.Repository
                       })
 
                       .ToList();
-
         }
 
         public IEnumerable<CourseViewModel> GetLimitedCourse()

@@ -86,11 +86,12 @@ namespace LXP.Core.Services
             {
                 courseupdate.Thumbnailimage.CopyTo(stream); 
             }
-
             var course = _courseRepository.FindCourseid(courseupdate.CourseId);
             if (course != null)
             {
                 course!.Title = courseupdate.Title;
+                course.CategoryId= courseupdate.CategoryId;
+                course.LevelId= courseupdate.LevelId;   
                 course.Description = courseupdate.Description;
                 course.Duration = courseupdate.Duration;
                 course.Thumbnail = uniqueFileName;

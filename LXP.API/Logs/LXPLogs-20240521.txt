@@ -3719,3 +3719,24 @@ System.InvalidOperationException: A second operation was started on this context
 2024-05-21 14:36:56.458 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api) in 2631.5264ms
 2024-05-21 14:36:56.461 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
 2024-05-21 14:36:56.468 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/dce1e89b-38e7-4a89-895c-dc7d40d1713f/learnerdetails - 200 null application/json; charset=utf-8 2687.1966ms
+2024-05-21 21:58:17.323 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-21 21:58:17.372 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-21 21:58:17.375 +05:30 [INF] Hosting environment: Development
+2024-05-21 21:58:17.376 +05:30 [INF] Content root path: D:\LXP_Capstrone project\Sprint3Backend\LXP.Api
+2024-05-21 21:58:19.948 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-21 21:58:20.686 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 752.913ms
+2024-05-21 21:58:20.695 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-21 21:58:20.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.3301ms
+2024-05-21 21:58:20.706 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-21 21:58:20.795 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.187ms
+2024-05-21 21:58:20.872 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-21 21:58:21.066 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 193.7474ms
+2024-05-21 22:01:39.144 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/api/Course/Updatecourse/lxp/courseupdate - multipart/form-data; boundary=----WebKitFormBoundaryIBz7FgvdWzBXm7me 381614
+2024-05-21 22:01:39.165 +05:30 [INF] CORS policy execution successful.
+2024-05-21 22:01:39.167 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-21 22:01:39.172 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.Updatecourse (LXP.Api)'
+2024-05-21 22:01:39.196 +05:30 [INF] Route matched with {action = "Updatecourse", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Updatecourse(LXP.Common.ViewModels.CourseUpdateModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-21 22:01:41.751 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-21 22:01:41.762 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.Updatecourse (LXP.Api) in 2560.7082ms
+2024-05-21 22:01:41.765 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.Updatecourse (LXP.Api)'
+2024-05-21 22:01:41.770 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/api/Course/Updatecourse/lxp/courseupdate - 200 null application/json; charset=utf-8 2626.0776ms
