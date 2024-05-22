@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gr2THJRJea0nf6k5OL5bDnS+AoPw7wKyIL0NcXYRud4=",
+  "Hash": "k3U1WUG5Rc7mYQRMV/kto7ul1VT5qzyYpCG1XEWyF7M=",
   "Source": "LXP.Api",
   "BasePath": "_content/LXP.Api",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\0e6e14d9-1b7a-4786-af04-54c669a5db58_test.png"
+    },
+    {
+      "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png"
     },
     {
       "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0ecfc1ce-0ab3-4387-8470-c92501dec2eb_js.jfif",

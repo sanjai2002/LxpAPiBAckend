@@ -58,6 +58,7 @@ namespace LXP.Data.Repository
             await _lXPDbContext.SaveChangesAsync();
         }
 
+
         public IEnumerable<CourseViewModel> GetAllCourse()
         {
             return _lXPDbContext.Courses
@@ -69,10 +70,13 @@ namespace LXP.Data.Repository
                           Category = c.Category.Category,
                           Duration = c.Duration,
                           CreatedAt = c.CreatedAt,
+                          Status=c.IsAvailable
                       })
 
                       .ToList();
         }
+
+
 
         public IEnumerable<CourseViewModel> GetLimitedCourse()
         {

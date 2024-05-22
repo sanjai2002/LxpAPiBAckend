@@ -17,6 +17,8 @@ namespace LXP.Common.ViewModels
 
         public bool AccountStatus { get; set;}
 
+        public DateTime LastLogin { get; set; }
+
 
 
     }

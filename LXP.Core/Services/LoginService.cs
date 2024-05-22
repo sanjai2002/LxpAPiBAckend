@@ -20,6 +20,7 @@ namespace LXP.Core.Services
     {
 
         private readonly ILoginRepository _repository;
+
         private Mapper _moviemapper;
 
         public LoginService(ILoginRepository repository)
@@ -30,8 +31,6 @@ namespace LXP.Core.Services
 
             _moviemapper = new Mapper(_configlogin);
         }
-
-
 
 
 
@@ -76,7 +75,13 @@ namespace LXP.Core.Services
                     message.AccountStatus = getlearners.AccountStatus;
 
                     if (checkpassword)
+
+
                     {
+
+                        await _repository.UpdateLearnerLastLogin(loginmodel.Email);
+
+
                         loginRole = new LoginRole();
 
                         {
@@ -87,6 +92,10 @@ namespace LXP.Core.Services
                             loginRole.Role = message.Role;
 
                             loginRole.AccountStatus = message.AccountStatus;
+
+                            loginRole.LastLogin = DateTime.Now;
+
+
 
                         }
 
@@ -136,7 +145,6 @@ namespace LXP.Core.Services
         //    var getleareremail = await _repository.AnyUserByEmail(Email);
 
 
-
         //    if (getleareremail == true)
         //    {
 
@@ -157,13 +165,12 @@ namespace LXP.Core.Services
         //}
 
 
-    
+
 
         //public async Task<ResultUpdatePassword> UpdatePassword(UpdatePassword updatePassword)
         //{
         //    var learner = await _repository.LearnerByEmailAndPassword(updatePassword.Email, Encryption.ComputePasswordToSha256Hash(updatePassword.OldPassword));
         //    var result = new ResultUpdatePassword();
-            
         //    if (learner.Password== Encryption.ComputePasswordToSha256Hash(updatePassword.OldPassword))
         //    {
         //        string encryptNewPassword = Encryption.ComputePasswordToSha256Hash(updatePassword.NewPassword);
@@ -182,8 +189,6 @@ namespace LXP.Core.Services
         //}
 
 
-
     }
 
 }
-

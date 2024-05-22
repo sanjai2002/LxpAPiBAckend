@@ -39,7 +39,7 @@ namespace LXP.Core.Services
             return _LearnerRepository.GetAllLearnerDetailsByLearnerId(LearnerId);
 
         }
-
+            
         public object GetLearnerEnrolledcourseByLearnerId(Guid LearnerId)
         {
             return _LearnerRepository.GetLearnerEnrolledcourseByLearnerId(LearnerId);

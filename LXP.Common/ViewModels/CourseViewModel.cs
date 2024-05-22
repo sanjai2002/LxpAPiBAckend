@@ -49,6 +49,12 @@ namespace LXP.Common.ViewModels
 
         public DateTime CreatedAt { get; set; }
 
+        ///<summary>
+        ///Course status 
+        ///</summary>
+        ///<example>true</example>
+        public bool Status { get; set; }
+
         ///<Summary>
         ///Course Thumbnail
         ///</Summary>
