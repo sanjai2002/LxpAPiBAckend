@@ -69,6 +69,7 @@ namespace LXP.Core.Services
             if (course != null)
             {
                 course.IsAvailable = courseStatus.IsAvailable;
+                course.ModifiedAt= DateTime.Now;
                 await _courseRepository.Changecoursestatus(course);
                 return true;
             }
