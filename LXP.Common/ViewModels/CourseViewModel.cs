@@ -11,6 +11,7 @@ namespace LXP.Common.ViewModels
     public class CourseViewModel
     {
 
+
         ///<summary>
         ///CourseId
         /// </summary>
@@ -35,12 +36,17 @@ namespace LXP.Common.ViewModels
         ///<example>Technical</example>
 
         public string Category { get; set; }
+
+
         ///<Summary>
         ///Course Duration
         ///</Summary>
         ///<example>10.00</example>
 
         public decimal Duration { get; set; }
+
+
+        public string Description { get; set; }
 
         ///<summary>
         ///Created date
@@ -49,17 +55,20 @@ namespace LXP.Common.ViewModels
 
         public DateTime CreatedAt { get; set; }
 
-        ///<summary>
-        ///Course status 
-        ///</summary>
-        ///<example>true</example>
-        public bool Status { get; set; }
-
         ///<Summary>
         ///Course Thumbnail
         ///</Summary>
         ///<example>Image with filesize less than 250kb and file extension jpeg or png</example>
         [NotMapped]
         public string Thumbnailimage { get; set; }
+
+
+        public Guid LevelId { get; set; }
+
+
+        public Guid CategoryId { get; set; }
+
+        public bool Status {  get; set; }
     }
+
 }

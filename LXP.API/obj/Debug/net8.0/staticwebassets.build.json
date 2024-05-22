@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k3U1WUG5Rc7mYQRMV/kto7ul1VT5qzyYpCG1XEWyF7M=",
+  "Hash": "Rthh2rVlRYlZspFfu9E20WIilmvdpy93NxDa0uU/edI=",
   "Source": "LXP.Api",
   "BasePath": "_content/LXP.Api",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png"
+    },
     {
       "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0e6e14d9-1b7a-4786-af04-54c669a5db58_test.png",
       "SourceId": "LXP.Api",
@@ -169,6 +188,25 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\3e1680ce-bf1c-4b65-9c9e-d39cd7c2e023_C#.jfif"
     },
     {
+      "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png"
+    },
+    {
       "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\4d7a27af-0827-4dce-ba22-c138b6c4d937_C#sss.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
@@ -186,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\4d7a27af-0827-4dce-ba22-c138b6c4d937_C#sss.jfif"
+    },
+    {
+      "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png"
     },
     {
       "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\783266c6-23f4-4f38-867d-e70cbb69c495_test.png",
@@ -283,6 +340,25 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\9a68b3b0-e3b5-4577-8473-62c669245a85_C#.jfif"
     },
     {
+      "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png"
+    },
+    {
       "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a67c9519-28e1-4ffa-8440-3c0b4e86ea3c_js.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
@@ -378,6 +454,25 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\b3ac4c46-1a09-4c69-b1b0-050c2014df5e_C#.jfif"
     },
     {
+      "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png"
+    },
+    {
       "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c3428ad2-9ffa-4808-8988-18ea22acda73_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
@@ -414,6 +509,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\c6167da4-fef9-4b12-bcbc-268d45d2c3ad_test.png"
+    },
+    {
+      "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png"
     },
     {
       "Identity": "D:\\LXP_Capstrone project\\Sprint3Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d84810d7-4b96-47b0-8c2c-66f4761d4cd5_images.png",

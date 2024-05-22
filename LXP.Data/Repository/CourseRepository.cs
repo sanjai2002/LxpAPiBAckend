@@ -65,15 +65,24 @@ namespace LXP.Data.Repository
                       .Select(c => new CourseViewModel
                       {
                           CourseId = c.CourseId,
+                          Status= c.IsAvailable,
                           Title = c.Title,
                           Level = c.Level.Level,
                           Category = c.Category.Category,
                           Duration = c.Duration,
+                          Description = c.Description,
                           CreatedAt = c.CreatedAt,
-                          Status=c.IsAvailable
-                      })
+                          CategoryId = c.CategoryId,
+                          LevelId = c.LevelId,
+                          Thumbnailimage = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
 
+                                           _contextAccessor.HttpContext.Request.Scheme,
+                                           _contextAccessor.HttpContext.Request.Host,
+                                           _contextAccessor.HttpContext.Request.PathBase, c.Thumbnail)
+
+                      })
                       .ToList();
+
         }
 
         public IEnumerable<CourseViewModel> GetLimitedCourse()
