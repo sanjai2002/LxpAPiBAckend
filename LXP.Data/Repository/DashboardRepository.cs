@@ -102,10 +102,11 @@ namespace LXP.Data.Repository
             return _lXPDbContext.Courses.ToList();
         }
 
+
         public List<Learner> GetNoOfActiveLearners()
         {
             DateTime OneMonthAgo = DateTime.Now.AddMonths(-1);
-            return _lXPDbContext.Learners.Where(Learner => Learner.UserLastLogin > OneMonthAgo).ToList();
+            return _lXPDbContext.Learners.Where(Learner => Learner.Role!= "Admin" && Learner.UserLastLogin > OneMonthAgo).ToList();
         }
 
         public List<string> GetTopLearners()
