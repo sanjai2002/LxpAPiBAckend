@@ -1,0 +1,118 @@
+Name:Yuvaraj Bharath
+Emp_id:11998
+
+     Technical Lab assessment [Automated testing (Selenium)]
+
+Functional Testing (Automated Testing)
+  ● Write the Automated Test cases by using Selenium for your application.
+    And generate the test report using NUnit report/Selenium IDE.
+
+Algorithm [Selenium]:
+  ● First we need to open the console app for the project in visual studio than
+    open the testing file and type the code .
+  ● Then install the responsible packages are selenium,nunit 3 and nunit test
+    adapter
+  ● Run the folder the page automatically works in another browser.
+
+Selenium code :
+
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+namespace SeleniumTest
+{
+class Program
+{
+static void Main(string[] args)
+{
+Console.Write("test case started ");
+//create the reference for the browser
+IWebDriver driver = new ChromeDriver();
+// navigate to URL
+driver.Navigate().GoToUrl("CRUD App");
+Thread.Sleep(2000);
+// identify the Google search text box
+IWebElement ele = driver.FindElement(By.Name("q"));
+//enter the value in the google search text box
+const { Builder, By, Key, until } = require('selenium-webdriver')
+const assert = require('assert')
+
+describe('selenium run', function() {
+ this.timeout(30000)
+ let driver
+ let vars
+ beforeEach(async function() {
+   driver = await new Builder().forBrowser('chrome').build()
+   vars = {}
+ })
+ afterEach(async function() {
+   await driver.quit();
+ })
+ it('selenium run', async function() {
+   driver.navigate().to("http://localhost:3000/crud-app");
+
+  await driver.get("http://localhost:3000/crud-app")
+  await driver.manage().window().setRect({ width: 1536, height: 824 })
+  await driver.findElement(By.css("div > button:nth-child(1)")).click()
+  await driver.findElement(By.id("firstName")).click()
+  await driver.findElement(By.id("firstName")).sendKeys("Yuva")
+  await driver.findElement(By.id("lastName")).click()
+  await driver.findElement(By.id("lastName")).sendKeys("Bharath")
+  await driver.findElement(By.id("email")).click()
+  await driver.findElement(By.id("email")).sendKeys("admin@example.com")
+  await driver.findElement(By.id("salary")).click()
+  await driver.findElement(By.id("salary")).sendKeys("34500")
+  await driver.findElement(By.id("date")).click()
+  await driver.findElement(By.id("date")).click()
+  await driver.findElement(By.id("date")).click()
+  await driver.findElement(By.id("date")).click()
+  await driver.findElement(By.id("firstName")).click()
+    await driver.findElement(By.id("firstName")).sendKeys("aswin")
+    await driver.findElement(By.id("lastName")).click()
+    await driver.findElement(By.id("lastName")).sendKeys("kumar")
+    await driver.findElement(By.id("email")).click()
+    await driver.findElement(By.id("email")).sendKeys("aswin@gmail.com")
+    await driver.findElement(By.id("salary")).click()
+    await driver.findElement(By.id("salary")).sendKeys("45000")
+    await driver.findElement(By.id("firstName")).click()
+    await driver.findElement(By.id("firstName")).sendKeys("sanjai")
+    await driver.findElement(By.id("lastName")).click()
+    await driver.findElement(By.id("lastName")).sendKeys("hari")
+    await driver.findElement(By.id("email")).click()
+    await driver.findElement(By.id("email")).sendKeys("sanjai@gmail.com")
+    await driver.findElement(By.id("salary")).click()
+    await driver.findElement(By.id("salary")).sendKeys("345000")
+    {
+      const element = await driver.findElement(By.id("date"))
+      await driver.actions({ bridge: true}).doubleClick(element).perform()
+    }
+    await driver.findElement(By.id("date")).click()
+    await driver.findElement(By.id("date")).sendKeys("0002-06-06")
+    await driver.findElement(By.id("date")).sendKeys("0020-06-06")
+    await driver.findElement(By.id("date")).sendKeys("0200-06-06")
+    await driver.findElement(By.id("date")).sendKeys("2002-06-06")
+    await driver.findElement(By.css("input:nth-child(1)")).click()
+    await driver.findElement(By.css("tr:nth-child(5) > td:nth-child(3)")).click()
+    await driver.findElement(By.id("edit")).click()
+    await driver.findElement(By.id("salary")).click()
+    await driver.findElement(By.id("salary")).sendKeys("450000")
+    await driver.findElement(By.css("input:nth-child(1)")).click()
+    await driver.findElement(By.css("tr:nth-child(2) #delete")).click()
+    await driver.findElement(By.css(".swal2-confirm")).click()
+    await driver.findElement(By.css(".muted-button:nth-child(2)")).click()
+    await driver.findElement(By.css(".swal2-confirm")).click()
+  })
+})
+driver.Close();
+Console.Write("test case ended ");
+}
+}
+}
+
+Output is included in video format
+

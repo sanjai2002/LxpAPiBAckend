@@ -10,13 +10,6 @@ namespace LXP.Common.ViewModels
 {
     public class CourseViewModel
     {
-
-
-        ///<summary>
-        ///CourseId
-        /// </summary>
-
-        public Guid CourseId { get; set; }
         ///<Summary>
         ///CourseTitle
         ///</Summary>
@@ -35,10 +28,15 @@ namespace LXP.Common.ViewModels
         ///</Summary>
         ///<example>Technical</example>
 
-        public string Category { get; set; }
+        public string? Catagory { get; set; }
 
-       
+        ///<Summary>
+        ///Course Description
+        ///</Summary>
+        ///<example>This course contains the detailed explanation about the Html structure</example>
 
+        public string Description { get; set; }
+        public string CreatedBy {  get; set; }
         ///<Summary>
         ///Course Duration
         ///</Summary>
@@ -46,18 +44,11 @@ namespace LXP.Common.ViewModels
 
         public decimal Duration { get; set; }
 
-        ///<summary>
-        ///Created date
-        ///</summary>
-        ///<example>11/05/2024</example>
-
-        public DateTime CreatedAt { get; set; }
-
         ///<Summary>
         ///Course Thumbnail
         ///</Summary>
         ///<example>Image with filesize less than 250kb and file extension jpeg or png</example>
         [NotMapped]
-        public string Thumbnailimage { get; set; }
+        public IFormFile Thumbnailimage { get; set; }
     }
 }

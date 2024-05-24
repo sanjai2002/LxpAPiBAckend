@@ -1,5 +1,4 @@
 ﻿using LXP.Common.Entities;
-using LXP.Common.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,21 +9,9 @@ namespace LXP.Data.IRepository
 {
     public interface ICourseRepository
     {
-        Course GetCourseDetailsByCourseId(Guid CourseId);
-     
-        Course FindCourseid(Guid courseid);
-
-        public Enrollment FindEntrollmentcourse(Guid Courseid);
-       
-        Task Deletecourse(Course course);
-
-        Task Changecoursestatus(Course course);
-
-        Task Updatecourse(Course course);
-
-        IEnumerable<CourseViewModel> GetAllCourse();
-        IEnumerable<CourseViewModel> GetLimitedCourse();
-
-
+        void AddCourse(Course course);
+        bool AnyCourseByCourseTitle(string courseTitle);
+        Course GetCourseDetailsByCourseName(string courseName);
+        Course GetCourseDetailsByCourseId(Guid courseId);
     }
 }

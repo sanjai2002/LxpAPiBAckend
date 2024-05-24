@@ -1,5 +1,4 @@
-﻿using LXP.Common;
-using LXP.Common.Entities;
+﻿using LXP.Common.Entities;
 using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 using System;
@@ -11,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace LXP.Data.Repository
 {
-    public class CourseLevelRepository : ICourseLevelRepository
+    public class CourseLevelRepository:ICourseLevelRepository
     {
         private readonly LXPDbContext _lXPDbContext;
-        public CourseLevelRepository(LXPDbContext lXPDbContext)
+        public CourseLevelRepository(LXPDbContext lXPDbContext) 
         {
             this._lXPDbContext = lXPDbContext;
         }
@@ -34,5 +33,4 @@ namespace LXP.Data.Repository
             return _lXPDbContext.CourseLevels.Find(courseLevelId);
         }
     }
-
 }

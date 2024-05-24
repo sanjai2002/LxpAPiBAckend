@@ -1,105 +1,40 @@
-﻿using LXP.Common;
-using LXP.Common.Entities;
-using LXP.Common.ViewModels;
-using LXP.Data.IRepository;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System;
-using System.Data.Entity;
-using Microsoft.AspNetCore.Http;
+﻿using LXP.Common.Entities;
 using LXP.Data.DBContexts;
+using LXP.Data.IRepository;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LXP.Data.Repository
 {
-    public class CourseRepository : ICourseRepository
+    public class CourseRepository:ICourseRepository
     {
         private readonly LXPDbContext _lXPDbContext;
-        private readonly IWebHostEnvironment _environment;
-        private readonly IHttpContextAccessor _contextAccessor;
-        public CourseRepository(LXPDbContext lXPDbContext, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
+        public CourseRepository(LXPDbContext lXPDbContext) 
         {
-            _lXPDbContext = lXPDbContext;
-            _environment = environment;
-            _contextAccessor = httpContextAccessor;
+            this._lXPDbContext = lXPDbContext;
         }
-        public Course GetCourseDetailsByCourseId(Guid CourseId)
+        public Course GetCourseDetailsByCourseId(Guid courseId)
         {
-            return _lXPDbContext.Courses.Find(CourseId);
+            return _lXPDbContext.Courses.Include(course=>course.Catagory).Include(course=>course.Level).Single(course=>course.CourseId==courseId);  
         }
-
-        public Course FindCourseid(Guid courseid)
+        public Course GetCourseDetailsByCourseName(string courseName)
         {
-            return _lXPDbContext.Courses.Find(courseid);
-
+            return _lXPDbContext.Courses.Include(course => course.Level).Include(course => course.Catagory).FirstOrDefault(course => course.Title == courseName);
         }
-
-        public Enrollment FindEntrollmentcourse(Guid Courseid)
+        public void AddCourse(Course course)
         {
-            return _lXPDbContext.Enrollments.FirstOrDefault(Course => Course.CourseId == Courseid);
+            _lXPDbContext.Courses.Add(course);
+            _lXPDbContext.SaveChanges();
         }
-
-        public async Task Deletecourse(Course course)
+        public bool AnyCourseByCourseTitle(string courseTitle)
         {
-            _lXPDbContext.Courses.Remove(course);
-            await _lXPDbContext.SaveChangesAsync();
-        }
-
-        public async Task Changecoursestatus(Course course)
-        {
-             _lXPDbContext.Courses.Update(course);
-            await _lXPDbContext.SaveChangesAsync();
+            return _lXPDbContext.Courses.Any(course=>course.Title== courseTitle);
         }
         
-
-        public async Task Updatecourse(Course course)
-        {
-            _lXPDbContext.Courses.Update(course);
-            await _lXPDbContext.SaveChangesAsync();
-        }
-
-        public IEnumerable<CourseViewModel> GetAllCourse()
-        {
-            return _lXPDbContext.Courses
-                      .Select(c => new CourseViewModel
-                      {
-                          CourseId = c.CourseId,
-                          Title = c.Title,
-                          Level = c.Level.Level,
-                          Category = c.Category.Category,
-                          Duration = c.Duration,
-                          CreatedAt = c.CreatedAt,
-                      })
-
-                      .ToList();
-
-        }
-
-        public IEnumerable<CourseViewModel> GetLimitedCourse()
-        {
-            return _lXPDbContext.Courses
-              .OrderByDescending(c => c.CreatedAt)
-              .Select(c => new CourseViewModel
-              {
-                  CourseId = c.CourseId,
-                  Title = c.Title,
-                  Level = c.Level.Level,
-                  Category = c.Category.Category,
-                  Duration = c.Duration,
-                  Thumbnailimage = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
-                             _contextAccessor.HttpContext.Request.Scheme,
-                             _contextAccessor.HttpContext.Request.Host,
-                             _contextAccessor.HttpContext.Request.PathBase,
-                             c.Thumbnail)
-
-              })
-              .Take(9)
-              .ToList();
-        }
-
-
-
-       
-
     }
 }

@@ -1,0 +1,692 @@
+2024-05-16 00:02:03.352 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - null null
+2024-05-16 00:02:03.392 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:02:03.401 +05:30 [INF] HTTP OPTIONS /lxp/course/topic responded 204 in 8.7263 ms
+2024-05-16 00:02:03.406 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - 204 null null 53.79ms
+2024-05-16 00:02:03.413 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 87
+2024-05-16 00:02:03.417 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:02:03.420 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:02:03.424 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 00:02:03.431 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 00:02:03.435 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 5.5568ms
+2024-05-16 00:02:03.437 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:02:03.438 +05:30 [INF] HTTP POST /lxp/course/topic responded 400 in 20.9746 ms
+2024-05-16 00:02:03.441 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 400 null application/problem+json; charset=utf-8 28.4083ms
+2024-05-16 00:10:44.878 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - null null
+2024-05-16 00:10:44.896 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:10:44.899 +05:30 [INF] HTTP OPTIONS /lxp/course/topic responded 204 in 3.1955 ms
+2024-05-16 00:10:44.915 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - 204 null null 37.6014ms
+2024-05-16 00:10:44.949 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 74
+2024-05-16 00:10:44.961 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:10:44.964 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:10:44.969 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 00:10:44.981 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 00:10:44.990 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 10.7673ms
+2024-05-16 00:10:45.000 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:10:45.008 +05:30 [INF] HTTP POST /lxp/course/topic responded 400 in 47.0569 ms
+2024-05-16 00:10:45.022 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 400 null application/problem+json; charset=utf-8 73.4238ms
+2024-05-16 00:12:39.789 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - null null
+2024-05-16 00:12:39.831 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:12:39.832 +05:30 [INF] HTTP OPTIONS /lxp/course/topic responded 204 in 1.2109 ms
+2024-05-16 00:12:39.837 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - 204 null null 47.5712ms
+2024-05-16 00:12:39.842 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 74
+2024-05-16 00:12:39.847 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:12:39.849 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:12:39.850 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 00:12:39.856 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 00:12:39.860 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 5.8328ms
+2024-05-16 00:12:39.863 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:12:39.865 +05:30 [INF] HTTP POST /lxp/course/topic responded 400 in 18.1693 ms
+2024-05-16 00:12:39.867 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 400 null application/problem+json; charset=utf-8 24.8819ms
+2024-05-16 00:13:06.419 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - null null
+2024-05-16 00:13:06.470 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:13:06.471 +05:30 [INF] HTTP OPTIONS /lxp/course/topic responded 204 in 1.2215 ms
+2024-05-16 00:13:06.474 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - 204 null null 67.7671ms
+2024-05-16 00:13:06.519 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 73
+2024-05-16 00:13:06.521 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:13:06.522 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:13:06.524 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 00:13:06.527 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 00:13:06.532 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 6.2419ms
+2024-05-16 00:13:06.540 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:13:06.546 +05:30 [INF] HTTP POST /lxp/course/topic responded 400 in 24.4157 ms
+2024-05-16 00:13:06.548 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 400 null application/problem+json; charset=utf-8 32.0431ms
+2024-05-16 00:14:13.628 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - null null
+2024-05-16 00:14:13.634 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:14:13.636 +05:30 [INF] HTTP OPTIONS /lxp/course/topic responded 204 in 1.5998 ms
+2024-05-16 00:14:13.640 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - 204 null null 11.7028ms
+2024-05-16 00:14:13.656 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 73
+2024-05-16 00:14:13.662 +05:30 [INF] CORS policy execution successful.
+2024-05-16 00:14:13.664 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:14:13.667 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 00:14:13.674 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 00:14:13.679 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 5.488ms
+2024-05-16 00:14:13.681 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 00:14:13.683 +05:30 [INF] HTTP POST /lxp/course/topic responded 400 in 20.4189 ms
+2024-05-16 00:14:13.686 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 400 null application/problem+json; charset=utf-8 29.7809ms
+2024-05-16 09:26:19.065 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-16 09:26:19.198 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 09:26:19.201 +05:30 [INF] Hosting environment: Development
+2024-05-16 09:26:19.203 +05:30 [INF] Content root path: D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api
+2024-05-16 09:26:28.669 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-16 09:26:30.177 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1519.5991ms
+2024-05-16 09:26:30.240 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 09:26:30.250 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-16 09:26:30.251 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.2182ms
+2024-05-16 09:26:30.727 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 476.4794ms
+2024-05-16 09:26:30.786 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-16 09:26:31.194 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 407.7906ms
+2024-05-16 09:34:01.913 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-16 09:34:01.968 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 09:34:01.971 +05:30 [INF] Hosting environment: Development
+2024-05-16 09:34:01.972 +05:30 [INF] Content root path: D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api
+2024-05-16 09:34:09.280 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-16 09:34:09.909 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 635.2392ms
+2024-05-16 09:34:09.978 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 09:34:09.978 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-16 09:34:09.987 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.2392ms
+2024-05-16 09:34:10.312 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 333.7819ms
+2024-05-16 09:34:10.380 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-16 09:34:10.528 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 147.3145ms
+2024-05-16 09:34:33.941 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-16 09:34:34.019 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-16 09:34:34.024 +05:30 [INF] CORS policy execution successful.
+2024-05-16 09:34:34.035 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 09:34:34.071 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-16 09:34:37.078 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 09:34:37.110 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 3023.0686ms
+2024-05-16 09:34:37.116 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 09:34:37.125 +05:30 [INF] HTTP GET /lxp/course/category responded 200 in 3108.2178 ms
+2024-05-16 09:34:37.148 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 3206.3841ms
+2024-05-16 09:34:37.161 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-05-16 09:34:37.178 +05:30 [INF] CORS policy execution successful.
+2024-05-16 09:34:37.184 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 09:34:37.208 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-16 09:34:37.521 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 09:34:37.528 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 277.3822ms
+2024-05-16 09:34:37.535 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 09:34:37.542 +05:30 [INF] HTTP GET /lxp/course/courselevel/ash responded 200 in 364.0520 ms
+2024-05-16 09:34:37.549 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 387.3584ms
+2024-05-16 09:35:06.810 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundaryKqd1z6Gq5uIx4tV7 81896
+2024-05-16 09:35:06.823 +05:30 [INF] CORS policy execution successful.
+2024-05-16 09:35:06.827 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 09:35:06.839 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-16 09:35:08.629 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 09:35:08.647 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 1803.5991ms
+2024-05-16 09:35:08.649 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 09:35:08.650 +05:30 [INF] HTTP POST /lxp/course responded 200 in 1828.1569 ms
+2024-05-16 09:35:08.656 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 200 null application/json; charset=utf-8 1846.2288ms
+2024-05-16 09:35:34.619 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - null null
+2024-05-16 09:35:34.627 +05:30 [INF] CORS policy execution successful.
+2024-05-16 09:35:34.632 +05:30 [INF] HTTP OPTIONS /lxp/course/topic responded 204 in 5.2320 ms
+2024-05-16 09:35:34.642 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - 204 null null 23.0404ms
+2024-05-16 09:35:34.652 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 135
+2024-05-16 09:35:34.672 +05:30 [INF] CORS policy execution successful.
+2024-05-16 09:35:34.678 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 09:35:34.689 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 09:35:34.811 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 09:35:34.820 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 115.5631ms
+2024-05-16 09:35:34.825 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 09:35:34.830 +05:30 [INF] HTTP POST /lxp/course/topic responded 200 in 158.3452 ms
+2024-05-16 09:35:34.834 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 200 null application/json; charset=utf-8 181.2962ms
+2024-05-16 10:04:39.320 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-16 10:04:39.334 +05:30 [INF] CORS policy execution successful.
+2024-05-16 10:04:39.338 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 10:04:39.344 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-16 10:04:39.438 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 10:04:39.442 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 89.8563ms
+2024-05-16 10:04:39.449 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 10:04:39.452 +05:30 [INF] HTTP GET /lxp/course/category responded 200 in 118.5966 ms
+2024-05-16 10:04:39.454 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 163.9694ms
+2024-05-16 10:04:39.457 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-05-16 10:04:39.458 +05:30 [INF] CORS policy execution successful.
+2024-05-16 10:04:39.459 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 10:04:39.460 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-16 10:04:39.472 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 10:04:39.477 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 14.7022ms
+2024-05-16 10:04:39.480 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 10:04:39.482 +05:30 [INF] HTTP GET /lxp/course/courselevel/ash responded 200 in 23.5292 ms
+2024-05-16 10:04:39.486 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 29.082ms
+2024-05-16 10:58:48.435 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-16 10:58:48.491 +05:30 [INF] CORS policy execution successful.
+2024-05-16 10:58:48.498 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 10:58:48.503 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-16 10:58:48.591 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 10:58:48.593 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 78.4282ms
+2024-05-16 10:58:48.596 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 10:58:48.597 +05:30 [INF] HTTP GET /lxp/course/category responded 200 in 106.8805 ms
+2024-05-16 10:58:48.600 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 164.5026ms
+2024-05-16 10:58:48.606 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-05-16 10:58:48.610 +05:30 [INF] CORS policy execution successful.
+2024-05-16 10:58:48.611 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 10:58:48.623 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-16 10:58:48.641 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 10:58:48.643 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 14.1704ms
+2024-05-16 10:58:48.644 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 10:58:48.645 +05:30 [INF] HTTP GET /lxp/course/courselevel/ash responded 200 in 35.2302 ms
+2024-05-16 10:58:48.648 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 41.3951ms
+2024-05-16 10:58:54.182 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-16 10:58:54.185 +05:30 [INF] CORS policy execution successful.
+2024-05-16 10:58:54.186 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 10:58:54.187 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-16 10:58:54.202 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 10:58:54.204 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 13.8818ms
+2024-05-16 10:58:54.205 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 10:58:54.206 +05:30 [INF] HTTP GET /lxp/course/category responded 200 in 21.1317 ms
+2024-05-16 10:58:54.208 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 26.0376ms
+2024-05-16 10:58:54.212 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-05-16 10:58:54.214 +05:30 [INF] CORS policy execution successful.
+2024-05-16 10:58:54.215 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 10:58:54.217 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-16 10:58:54.226 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 10:58:54.228 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 9.4164ms
+2024-05-16 10:58:54.230 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 10:58:54.231 +05:30 [INF] HTTP GET /lxp/course/courselevel/ash responded 200 in 16.8876 ms
+2024-05-16 10:58:54.233 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 21.0888ms
+2024-05-16 10:58:59.647 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-16 10:58:59.651 +05:30 [INF] CORS policy execution successful.
+2024-05-16 10:58:59.653 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 10:58:59.655 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-16 10:58:59.681 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 10:58:59.684 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 25.3425ms
+2024-05-16 10:58:59.685 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 10:58:59.686 +05:30 [INF] HTTP GET /lxp/course/category responded 200 in 35.1802 ms
+2024-05-16 10:58:59.689 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 41.7134ms
+2024-05-16 10:58:59.693 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-05-16 10:58:59.697 +05:30 [INF] CORS policy execution successful.
+2024-05-16 10:58:59.697 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 10:58:59.699 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-16 10:58:59.706 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 10:58:59.708 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 6.8134ms
+2024-05-16 10:58:59.709 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 10:58:59.711 +05:30 [INF] HTTP GET /lxp/course/courselevel/ash responded 200 in 14.1038 ms
+2024-05-16 10:58:59.713 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 19.1666ms
+2024-05-16 11:33:51.618 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundaryBqOHJAbUHzDlKqqy 81897
+2024-05-16 11:33:51.633 +05:30 [INF] CORS policy execution successful.
+2024-05-16 11:33:51.636 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 11:33:51.642 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-16 11:33:51.761 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 11:33:51.774 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 121.1323ms
+2024-05-16 11:33:51.787 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 11:33:51.795 +05:30 [INF] HTTP POST /lxp/course responded 200 in 162.7480 ms
+2024-05-16 11:33:51.810 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 200 null application/json; charset=utf-8 194.7368ms
+2024-05-16 11:34:02.392 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - null null
+2024-05-16 11:34:02.402 +05:30 [INF] CORS policy execution successful.
+2024-05-16 11:34:02.405 +05:30 [INF] HTTP OPTIONS /lxp/course/topic responded 204 in 2.3306 ms
+2024-05-16 11:34:02.416 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - 204 null null 23.8339ms
+2024-05-16 11:34:02.431 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 129
+2024-05-16 11:34:02.436 +05:30 [INF] CORS policy execution successful.
+2024-05-16 11:34:02.437 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 11:34:02.438 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 11:34:02.454 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 11:34:02.462 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 21.2521ms
+2024-05-16 11:34:02.469 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 11:34:02.471 +05:30 [INF] HTTP POST /lxp/course/topic responded 200 in 34.4802 ms
+2024-05-16 11:34:02.472 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 200 null application/json; charset=utf-8 41.122ms
+2024-05-16 12:05:36.066 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - null null
+2024-05-16 12:05:36.090 +05:30 [INF] CORS policy execution successful.
+2024-05-16 12:05:36.092 +05:30 [INF] HTTP OPTIONS /lxp/course/topic responded 204 in 1.6840 ms
+2024-05-16 12:05:36.100 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/topic - 204 null null 36.2904ms
+2024-05-16 12:05:36.121 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 100
+2024-05-16 12:05:36.132 +05:30 [INF] CORS policy execution successful.
+2024-05-16 12:05:36.136 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 12:05:36.137 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 12:05:36.147 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-05-16 12:05:36.164 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 25.9463ms
+2024-05-16 12:05:36.170 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 12:05:36.174 +05:30 [INF] HTTP POST /lxp/course/topic responded 400 in 41.5694 ms
+2024-05-16 12:05:36.175 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 400 null application/problem+json; charset=utf-8 53.7348ms
+2024-05-16 14:18:28.467 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-16 14:18:28.512 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 14:18:28.514 +05:30 [INF] Hosting environment: Development
+2024-05-16 14:18:28.516 +05:30 [INF] Content root path: D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api
+2024-05-16 14:18:42.091 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-16 14:18:45.074 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 2991.023ms
+2024-05-16 14:18:45.550 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-16 14:18:45.938 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:18:45.957 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 19.4872ms
+2024-05-16 14:18:46.737 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1186.5919ms
+2024-05-16 14:18:46.848 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-16 14:18:47.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 325.5494ms
+2024-05-16 14:19:20.854 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-05-16 14:19:20.884 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-16 14:19:20.890 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 14:19:20.917 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-16 14:19:23.339 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:19:23.362 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 2436.4283ms
+2024-05-16 14:19:23.364 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-16 14:19:23.367 +05:30 [INF] HTTP GET /lxp/course/category responded 200 in 2484.8545 ms
+2024-05-16 14:19:23.382 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 2528.5335ms
+2024-05-16 14:20:04.295 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/category - application/json 54
+2024-05-16 14:20:04.312 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:20:04.321 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.AddCategory (LXP.Api)'
+2024-05-16 14:20:04.343 +05:30 [INF] Route matched with {action = "AddCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCategory(LXP.Common.ViewModels.CourseCategoryViewModel) on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-16 14:20:04.953 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:20:04.965 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.AddCategory (LXP.Api) in 605.4614ms
+2024-05-16 14:20:04.969 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.AddCategory (LXP.Api)'
+2024-05-16 14:20:04.974 +05:30 [INF] HTTP POST /lxp/course/category responded 200 in 665.3026 ms
+2024-05-16 14:20:04.980 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 684.5065ms
+2024-05-16 14:22:31.166 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course?Title=Python2&Level=b144fd6f-889c-47ab-bc25-5e887bda3147&Catagory=649e0eb7-3f50-4ae9-a706-4b1b9e596547&Description=dhjfyedkvwqhdxi%3Bwyf&CreatedBy=kareni&Duration=8.0 - multipart/form-data; boundary=----WebKitFormBoundary1sCcS4d563VK5o7A 34724
+2024-05-16 14:22:31.185 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:22:31.194 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 14:22:31.210 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-16 14:22:32.527 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:22:32.549 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 1317.6604ms
+2024-05-16 14:22:32.553 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 14:22:32.555 +05:30 [INF] HTTP POST /lxp/course responded 200 in 1372.4624 ms
+2024-05-16 14:22:32.559 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course?Title=Python2&Level=b144fd6f-889c-47ab-bc25-5e887bda3147&Catagory=649e0eb7-3f50-4ae9-a706-4b1b9e596547&Description=dhjfyedkvwqhdxi%3Bwyf&CreatedBy=kareni&Duration=8.0 - 200 null application/json; charset=utf-8 1395.2876ms
+2024-05-16 14:23:02.279 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b - null null
+2024-05-16 14:23:02.305 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-05-16 14:23:02.313 +05:30 [INF] Route matched with {action = "GetCourseDetailsByCourseId", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseDetailsByCourseId(System.String) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-16 14:23:02.669 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api) in 351.5241ms
+2024-05-16 14:23:02.680 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-05-16 14:23:02.686 +05:30 [ERR] HTTP GET /lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b responded 500 in 381.0228 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LXP.Core.Services.CourseServices.GetCourseDetailsByCourseId(String courseId) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Core\Services\CourseServices.cs:line 89
+   at LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId(String id) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api\Controllers\CourseController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-16 14:23:02.834 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LXP.Core.Services.CourseServices.GetCourseDetailsByCourseId(String courseId) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Core\Services\CourseServices.cs:line 89
+   at LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId(String id) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api\Controllers\CourseController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-16 14:23:02.854 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b - 500 null text/plain; charset=utf-8 575.0426ms
+2024-05-16 14:23:35.288 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/1 - null null
+2024-05-16 14:23:35.310 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 14:23:35.314 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-16 14:23:35.335 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:23:35.339 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 19.5679ms
+2024-05-16 14:23:35.342 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 14:23:35.342 +05:30 [INF] HTTP GET /lxp/course/courselevel/1 responded 200 in 32.2414 ms
+2024-05-16 14:23:35.344 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/1 - 200 null application/json; charset=utf-8 57.486ms
+2024-05-16 14:24:06.809 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 127
+2024-05-16 14:24:06.837 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:24:06.841 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 14:24:06.849 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 14:24:07.027 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:24:07.037 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 179.863ms
+2024-05-16 14:24:07.044 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 14:24:07.049 +05:30 [INF] HTTP POST /lxp/course/topic responded 200 in 212.4378 ms
+2024-05-16 14:24:07.057 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 200 null application/json; charset=utf-8 248.4039ms
+2024-05-16 14:25:12.171 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/course/topic - application/json 131
+2024-05-16 14:25:12.199 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:25:12.205 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.UpdateCourseTopic (LXP.Api)'
+2024-05-16 14:25:12.223 +05:30 [INF] Route matched with {action = "UpdateCourseTopic", controller = "CourseTopic"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCourseTopic(LXP.Common.ViewModels.CourseTopicUpdateModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 14:25:12.399 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:25:12.405 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.UpdateCourseTopic (LXP.Api) in 171.563ms
+2024-05-16 14:25:12.409 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.UpdateCourseTopic (LXP.Api)'
+2024-05-16 14:25:12.416 +05:30 [INF] HTTP PUT /lxp/course/topic responded 200 in 216.4112 ms
+2024-05-16 14:25:12.427 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/course/topic - 200 null application/json; charset=utf-8 256.3168ms
+2024-05-16 14:25:30.423 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b/topic - null null
+2024-05-16 14:25:30.436 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.GetAllCourseTopicByCourseId (LXP.Api)'
+2024-05-16 14:25:30.440 +05:30 [INF] Route matched with {action = "GetAllCourseTopicByCourseId", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourseTopicByCourseId(System.String) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 14:25:30.456 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:25:30.572 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.GetAllCourseTopicByCourseId (LXP.Api) in 126.0865ms
+2024-05-16 14:25:30.577 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.GetAllCourseTopicByCourseId (LXP.Api)'
+2024-05-16 14:25:30.578 +05:30 [INF] HTTP GET /lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b/topic responded 200 in 142.7730 ms
+2024-05-16 14:25:30.580 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b/topic - 200 null application/json; charset=utf-8 158.6987ms
+2024-05-16 14:26:23.135 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5199/lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75 - null null
+2024-05-16 14:26:23.160 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:26:23.161 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.DeleteCourseTopic (LXP.Api)'
+2024-05-16 14:26:23.165 +05:30 [INF] Route matched with {action = "DeleteCourseTopic", controller = "CourseTopic"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteCourseTopic(System.String) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 14:26:23.231 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:26:23.233 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.DeleteCourseTopic (LXP.Api) in 66.5762ms
+2024-05-16 14:26:23.235 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.DeleteCourseTopic (LXP.Api)'
+2024-05-16 14:26:23.235 +05:30 [INF] HTTP DELETE /lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75 responded 200 in 75.4432 ms
+2024-05-16 14:26:23.237 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5199/lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75 - 200 null application/json; charset=utf-8 102.3605ms
+2024-05-16 14:27:33.997 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/material - multipart/form-data; boundary=----WebKitFormBoundaryVPlqqOys8i2tF42R 170439
+2024-05-16 14:27:34.025 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:27:34.028 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-05-16 14:27:34.034 +05:30 [INF] Route matched with {action = "AddMaterial", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddMaterial(LXP.Common.ViewModels.MaterialViewModel) on controller LXP.Api.Controllers.MaterialController (LXP.Api).
+2024-05-16 14:27:34.164 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:27:34.167 +05:30 [INF] Executed action LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api) in 129.916ms
+2024-05-16 14:27:34.168 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-05-16 14:27:34.169 +05:30 [INF] HTTP POST /lxp/course/material responded 200 in 143.9318 ms
+2024-05-16 14:27:34.173 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/material - 200 null application/json; charset=utf-8 176.3388ms
+2024-05-16 14:28:23.989 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75/materialtype/b144fd6f-889c-47ab-bc25-5e887bda3148 - null null
+2024-05-16 14:28:24.023 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.MaterialController.GetAllMaterialDetailsByTopicAndMaterialType (LXP.Api)'
+2024-05-16 14:28:24.030 +05:30 [INF] Route matched with {action = "GetAllMaterialDetailsByTopicAndMaterialType", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[LXP.Common.ViewModels.MaterialListViewModel]] GetAllMaterialDetailsByTopicAndMaterialType(System.String, System.String) on controller LXP.Api.Controllers.MaterialController (LXP.Api).
+2024-05-16 14:28:24.134 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LXP.Common.ViewModels.MaterialListViewModel, LXP.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 14:28:24.155 +05:30 [INF] Executed action LXP.Api.Controllers.MaterialController.GetAllMaterialDetailsByTopicAndMaterialType (LXP.Api) in 120.8269ms
+2024-05-16 14:28:24.159 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.MaterialController.GetAllMaterialDetailsByTopicAndMaterialType (LXP.Api)'
+2024-05-16 14:28:24.165 +05:30 [INF] HTTP GET /lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75/materialtype/b144fd6f-889c-47ab-bc25-5e887bda3148 responded 200 in 142.6278 ms
+2024-05-16 14:28:24.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75/materialtype/b144fd6f-889c-47ab-bc25-5e887bda3148 - 200 null application/json; charset=utf-8 185.4803ms
+2024-05-16 14:42:55.359 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-16 14:42:55.479 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 14:42:55.484 +05:30 [INF] Hosting environment: Development
+2024-05-16 14:42:55.487 +05:30 [INF] Content root path: D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api
+2024-05-16 14:43:04.176 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-16 14:43:05.514 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1358.3875ms
+2024-05-16 14:43:05.554 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:43:05.561 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-16 14:43:05.564 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.9842ms
+2024-05-16 14:43:05.653 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.9448ms
+2024-05-16 14:43:05.761 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-16 14:43:06.068 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 306.7677ms
+2024-05-16 14:44:03.008 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/material - multipart/form-data; boundary=----WebKitFormBoundaryGFbTv08mXsHjvow1 170438
+2024-05-16 14:44:03.041 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-16 14:44:03.048 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:44:03.060 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-05-16 14:44:03.160 +05:30 [INF] Route matched with {action = "AddMaterial", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddMaterial(LXP.Common.ViewModels.MaterialViewModel) on controller LXP.Api.Controllers.MaterialController (LXP.Api).
+2024-05-16 14:44:10.565 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:44:10.669 +05:30 [INF] Executed action LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api) in 7488.4726ms
+2024-05-16 14:44:10.676 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-05-16 14:44:10.687 +05:30 [INF] HTTP POST /lxp/course/material responded 200 in 7650.5213 ms
+2024-05-16 14:44:10.732 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/material - 200 null application/json; charset=utf-8 7724.2755ms
+2024-05-16 14:44:24.121 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-16 14:44:24.164 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 43.5051ms
+2024-05-16 14:44:24.194 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:44:24.195 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-16 14:44:24.202 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.2356ms
+2024-05-16 14:44:24.233 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.3553ms
+2024-05-16 14:44:24.309 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-16 14:44:24.335 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 26.2879ms
+2024-05-16 14:44:48.905 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-16 14:44:48.955 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 14:44:48.958 +05:30 [INF] Hosting environment: Development
+2024-05-16 14:44:48.959 +05:30 [INF] Content root path: D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api
+2024-05-16 14:44:56.248 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-16 14:44:57.195 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 960.3481ms
+2024-05-16 14:44:57.230 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:44:57.236 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-16 14:44:57.241 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.9855ms
+2024-05-16 14:44:57.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.5294ms
+2024-05-16 14:44:57.379 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-16 14:44:57.668 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 288.8829ms
+2024-05-16 14:55:38.428 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-16 14:55:38.603 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 14:55:38.678 +05:30 [INF] Hosting environment: Development
+2024-05-16 14:55:38.690 +05:30 [INF] Content root path: D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api
+2024-05-16 14:55:47.768 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-16 14:55:49.383 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1625.7465ms
+2024-05-16 14:55:49.423 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-16 14:55:49.466 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 14:55:49.494 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 27.855ms
+2024-05-16 14:55:49.677 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 254.5383ms
+2024-05-16 14:55:49.766 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-16 14:55:50.020 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 254.1363ms
+2024-05-16 14:56:47.823 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/material - multipart/form-data; boundary=----WebKitFormBoundaryOsd2W1AdZdZaSe01 170437
+2024-05-16 14:56:47.863 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-16 14:56:47.869 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:56:47.883 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-05-16 14:56:47.961 +05:30 [INF] Route matched with {action = "AddMaterial", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddMaterial(LXP.Common.ViewModels.MaterialViewModel) on controller LXP.Api.Controllers.MaterialController (LXP.Api).
+2024-05-16 14:56:56.265 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:56:56.362 +05:30 [INF] Executed action LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api) in 8386.1228ms
+2024-05-16 14:56:56.369 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-05-16 14:56:56.380 +05:30 [INF] HTTP POST /lxp/course/material responded 200 in 8523.6250 ms
+2024-05-16 14:56:56.417 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/material - 200 null application/json; charset=utf-8 8608.0364ms
+2024-05-16 14:57:31.396 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75/materialtype/b144fd6f-889c-47ab-bc25-5e887bda3148 - null null
+2024-05-16 14:57:31.433 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.MaterialController.GetAllMaterialDetailsByTopicAndMaterialType (LXP.Api)'
+2024-05-16 14:57:31.455 +05:30 [INF] Route matched with {action = "GetAllMaterialDetailsByTopicAndMaterialType", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[LXP.Common.ViewModels.MaterialListViewModel]] GetAllMaterialDetailsByTopicAndMaterialType(System.String, System.String) on controller LXP.Api.Controllers.MaterialController (LXP.Api).
+2024-05-16 14:57:31.734 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LXP.Common.ViewModels.MaterialListViewModel, LXP.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 14:57:31.743 +05:30 [INF] Executed action LXP.Api.Controllers.MaterialController.GetAllMaterialDetailsByTopicAndMaterialType (LXP.Api) in 273.1724ms
+2024-05-16 14:57:31.748 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.MaterialController.GetAllMaterialDetailsByTopicAndMaterialType (LXP.Api)'
+2024-05-16 14:57:31.752 +05:30 [INF] HTTP GET /lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75/materialtype/b144fd6f-889c-47ab-bc25-5e887bda3148 responded 200 in 320.2478 ms
+2024-05-16 14:57:31.760 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75/materialtype/b144fd6f-889c-47ab-bc25-5e887bda3148 - 200 null application/json; charset=utf-8 364.0789ms
+2024-05-16 14:58:51.442 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/topic - application/json 136
+2024-05-16 14:58:51.485 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:58:51.492 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 14:58:51.500 +05:30 [INF] Route matched with {action = "AddCourseTopic", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseTopic(LXP.Common.ViewModels.CourseTopicViewModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 14:58:52.129 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:58:52.145 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api) in 611.0071ms
+2024-05-16 14:58:52.151 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.AddCourseTopic (LXP.Api)'
+2024-05-16 14:58:52.162 +05:30 [INF] HTTP POST /lxp/course/topic responded 200 in 679.9578 ms
+2024-05-16 14:58:52.174 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/topic - 200 null application/json; charset=utf-8 735.0494ms
+2024-05-16 14:59:53.969 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/course/topic - application/json 127
+2024-05-16 14:59:54.001 +05:30 [INF] CORS policy execution successful.
+2024-05-16 14:59:54.006 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.UpdateCourseTopic (LXP.Api)'
+2024-05-16 14:59:54.028 +05:30 [INF] Route matched with {action = "UpdateCourseTopic", controller = "CourseTopic"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCourseTopic(LXP.Common.ViewModels.CourseTopicUpdateModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 14:59:54.242 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 14:59:54.330 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.UpdateCourseTopic (LXP.Api) in 290.703ms
+2024-05-16 14:59:54.336 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.UpdateCourseTopic (LXP.Api)'
+2024-05-16 14:59:54.344 +05:30 [INF] HTTP PUT /lxp/course/topic responded 200 in 342.9539 ms
+2024-05-16 14:59:54.349 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/course/topic - 200 null application/json; charset=utf-8 380.5125ms
+2024-05-16 15:00:25.514 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b/topic - null null
+2024-05-16 15:00:25.523 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.GetAllCourseTopicByCourseId (LXP.Api)'
+2024-05-16 15:00:25.529 +05:30 [INF] Route matched with {action = "GetAllCourseTopicByCourseId", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourseTopicByCourseId(System.String) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 15:00:25.569 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 15:00:25.873 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.GetAllCourseTopicByCourseId (LXP.Api) in 332.4092ms
+2024-05-16 15:00:25.882 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.GetAllCourseTopicByCourseId (LXP.Api)'
+2024-05-16 15:00:25.890 +05:30 [INF] HTTP GET /lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b/topic responded 200 in 367.0177 ms
+2024-05-16 15:00:25.904 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b/topic - 200 null application/json; charset=utf-8 390.4596ms
+2024-05-16 15:01:01.062 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5199/lxp/course/topic/1f9a757b-4f39-4863-9b8a-b3ab9a73de4a - null null
+2024-05-16 15:01:01.094 +05:30 [INF] CORS policy execution successful.
+2024-05-16 15:01:01.100 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.DeleteCourseTopic (LXP.Api)'
+2024-05-16 15:01:01.118 +05:30 [INF] Route matched with {action = "DeleteCourseTopic", controller = "CourseTopic"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteCourseTopic(System.String) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 15:01:01.267 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 15:01:01.276 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.DeleteCourseTopic (LXP.Api) in 145.7309ms
+2024-05-16 15:01:01.287 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.DeleteCourseTopic (LXP.Api)'
+2024-05-16 15:01:01.296 +05:30 [INF] HTTP DELETE /lxp/course/topic/1f9a757b-4f39-4863-9b8a-b3ab9a73de4a responded 200 in 202.8101 ms
+2024-05-16 15:01:01.308 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5199/lxp/course/topic/1f9a757b-4f39-4863-9b8a-b3ab9a73de4a - 200 null application/json; charset=utf-8 245.6167ms
+2024-05-16 15:01:31.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/a - null null
+2024-05-16 15:01:31.068 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 15:01:31.086 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-16 15:01:31.554 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 15:01:31.576 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 474.6349ms
+2024-05-16 15:01:31.587 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-16 15:01:31.605 +05:30 [INF] HTTP GET /lxp/course/courselevel/a responded 200 in 537.3754 ms
+2024-05-16 15:01:31.617 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/a - 200 null application/json; charset=utf-8 563.7053ms
+2024-05-16 15:02:32.727 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course?Title=htmll&Level=b144fd6f-889c-47ab-bc25-5e887bda3147&Catagory=649e0eb7-3f50-4ae9-a706-4b1b9e596547&Description=xkjfvdifvguys&CreatedBy=karni&Duration=5.0 - multipart/form-data; boundary=----WebKitFormBoundaryAJ60V5kqiP8L7Buk 34724
+2024-05-16 15:02:32.754 +05:30 [INF] CORS policy execution successful.
+2024-05-16 15:02:32.757 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 15:02:32.771 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-16 15:02:33.239 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 15:02:33.256 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 476.0144ms
+2024-05-16 15:02:33.261 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 15:02:33.269 +05:30 [INF] HTTP POST /lxp/course responded 200 in 514.7978 ms
+2024-05-16 15:02:33.277 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course?Title=htmll&Level=b144fd6f-889c-47ab-bc25-5e887bda3147&Catagory=649e0eb7-3f50-4ae9-a706-4b1b9e596547&Description=xkjfvdifvguys&CreatedBy=karni&Duration=5.0 - 200 null application/json; charset=utf-8 550.1726ms
+2024-05-16 15:02:53.739 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/649e0eb7-3f50-4ae9-a706-4b1b9e596547 - null null
+2024-05-16 15:02:53.766 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-05-16 15:02:53.780 +05:30 [INF] Route matched with {action = "GetCourseDetailsByCourseId", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseDetailsByCourseId(System.String) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-16 15:02:54.101 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api) in 314.3533ms
+2024-05-16 15:02:54.110 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-05-16 15:02:54.122 +05:30 [ERR] HTTP GET /lxp/course/649e0eb7-3f50-4ae9-a706-4b1b9e596547 responded 500 in 355.7860 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LXP.Core.Services.CourseServices.GetCourseDetailsByCourseId(String courseId) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Core\Services\CourseServices.cs:line 89
+   at LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId(String id) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api\Controllers\CourseController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-16 15:02:54.347 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LXP.Core.Services.CourseServices.GetCourseDetailsByCourseId(String courseId) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Core\Services\CourseServices.cs:line 89
+   at LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId(String id) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api\Controllers\CourseController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-16 15:02:54.444 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/649e0eb7-3f50-4ae9-a706-4b1b9e596547 - 500 null text/plain; charset=utf-8 705.0196ms
+2024-05-16 15:04:45.378 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-16 15:04:45.428 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-16 15:04:45.430 +05:30 [INF] Hosting environment: Development
+2024-05-16 15:04:45.432 +05:30 [INF] Content root path: D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api
+2024-05-16 15:04:50.564 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-16 15:04:51.860 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1314.5583ms
+2024-05-16 15:04:51.897 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-16 15:04:51.898 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-16 15:04:51.908 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.1565ms
+2024-05-16 15:04:51.979 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.3019ms
+2024-05-16 15:04:52.043 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-16 15:04:52.361 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 317.7706ms
+2024-05-16 15:06:37.036 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/material - multipart/form-data; boundary=----WebKitFormBoundary2C8AXddJktkR79QH 170439
+2024-05-16 15:06:37.074 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-16 15:06:37.084 +05:30 [INF] CORS policy execution successful.
+2024-05-16 15:06:37.103 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-05-16 15:06:37.174 +05:30 [INF] Route matched with {action = "AddMaterial", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddMaterial(LXP.Common.ViewModels.MaterialViewModel) on controller LXP.Api.Controllers.MaterialController (LXP.Api).
+2024-05-16 15:06:46.702 +05:30 [INF] Executed action LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api) in 9504.3836ms
+2024-05-16 15:06:46.709 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-05-16 15:06:46.721 +05:30 [ERR] HTTP POST /lxp/course/material responded 500 in 9653.1272 ms
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.MaterialRepository.GetMaterialByMaterialNameAndTopic(String materialName, Topic topic) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Data\Repository\MaterialRepository.cs:line 33
+   at LXP.Core.Services.MaterialServices.GetMaterialByMaterialNameAndTopic(String materialName, String topicId) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Core\Services\MaterialServices.cs:line 117
+   at LXP.Api.Controllers.MaterialController.AddMaterial(MaterialViewModel material) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api\Controllers\MaterialController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-16 15:06:46.888 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at LXP.Data.Repository.MaterialRepository.GetMaterialByMaterialNameAndTopic(String materialName, Topic topic) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Data\Repository\MaterialRepository.cs:line 33
+   at LXP.Core.Services.MaterialServices.GetMaterialByMaterialNameAndTopic(String materialName, String topicId) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Core\Services\MaterialServices.cs:line 117
+   at LXP.Api.Controllers.MaterialController.AddMaterial(MaterialViewModel material) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api\Controllers\MaterialController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-16 15:06:46.975 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/material - 500 null text/plain; charset=utf-8 9938.9879ms
+2024-05-16 15:09:47.330 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75/materialtype/b144fd6f-889c-47ab-bc25-5e887bda3148 - null null
+2024-05-16 15:09:47.362 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.MaterialController.GetAllMaterialDetailsByTopicAndMaterialType (LXP.Api)'
+2024-05-16 15:09:47.380 +05:30 [INF] Route matched with {action = "GetAllMaterialDetailsByTopicAndMaterialType", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[LXP.Common.ViewModels.MaterialListViewModel]] GetAllMaterialDetailsByTopicAndMaterialType(System.String, System.String) on controller LXP.Api.Controllers.MaterialController (LXP.Api).
+2024-05-16 15:09:47.681 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[LXP.Common.ViewModels.MaterialListViewModel, LXP.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-05-16 15:09:47.768 +05:30 [INF] Executed action LXP.Api.Controllers.MaterialController.GetAllMaterialDetailsByTopicAndMaterialType (LXP.Api) in 379.7443ms
+2024-05-16 15:09:47.775 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.MaterialController.GetAllMaterialDetailsByTopicAndMaterialType (LXP.Api)'
+2024-05-16 15:09:47.780 +05:30 [INF] HTTP GET /lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75/materialtype/b144fd6f-889c-47ab-bc25-5e887bda3148 responded 200 in 419.0283 ms
+2024-05-16 15:09:47.788 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/topic/27457049-3996-4ce8-820c-8cc29669da75/materialtype/b144fd6f-889c-47ab-bc25-5e887bda3148 - 200 null application/json; charset=utf-8 458.787ms
+2024-05-16 15:13:56.572 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course?Title=Html%20version&Level=b144fd6f-889c-47ab-bc25-5e887bda3147&Catagory=649e0eb7-3f50-4ae9-a706-4b1b9e596547&Description=smdnskhfu&CreatedBy=jcbjhdfucy&Duration=8.0 - multipart/form-data; boundary=----WebKitFormBoundaryxtyRFNpOTqbxOiiU 34724
+2024-05-16 15:13:56.594 +05:30 [INF] CORS policy execution successful.
+2024-05-16 15:13:56.598 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 15:13:56.610 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-16 15:13:57.483 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 15:13:57.503 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 883.096ms
+2024-05-16 15:13:57.508 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-05-16 15:13:57.510 +05:30 [INF] HTTP POST /lxp/course responded 200 in 918.7756 ms
+2024-05-16 15:13:57.516 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course?Title=Html%20version&Level=b144fd6f-889c-47ab-bc25-5e887bda3147&Catagory=649e0eb7-3f50-4ae9-a706-4b1b9e596547&Description=smdnskhfu&CreatedBy=jcbjhdfucy&Duration=8.0 - 200 null application/json; charset=utf-8 943.5527ms
+2024-05-16 15:14:27.638 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b - null null
+2024-05-16 15:14:27.667 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-05-16 15:14:27.685 +05:30 [INF] Route matched with {action = "GetCourseDetailsByCourseId", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseDetailsByCourseId(System.String) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-05-16 15:14:27.977 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api) in 286.184ms
+2024-05-16 15:14:27.985 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-05-16 15:14:27.990 +05:30 [ERR] HTTP GET /lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b responded 500 in 323.1777 ms
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LXP.Core.Services.CourseServices.GetCourseDetailsByCourseId(String courseId) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Core\Services\CourseServices.cs:line 89
+   at LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId(String id) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api\Controllers\CourseController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-16 15:14:28.046 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at LXP.Core.Services.CourseServices.GetCourseDetailsByCourseId(String courseId) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Core\Services\CourseServices.cs:line 89
+   at LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId(String id) in D:\LXP_Backend-15-5-Final Review\motta\LXP\LXP.Api\Controllers\CourseController.cs:line 43
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-16 15:14:28.109 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b - 500 null text/plain; charset=utf-8 471.769ms
+2024-05-16 15:18:37.093 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5199/lxp/course/topic - application/json 128
+2024-05-16 15:18:37.136 +05:30 [INF] CORS policy execution successful.
+2024-05-16 15:18:37.138 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.UpdateCourseTopic (LXP.Api)'
+2024-05-16 15:18:37.152 +05:30 [INF] Route matched with {action = "UpdateCourseTopic", controller = "CourseTopic"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UpdateCourseTopic(LXP.Common.ViewModels.CourseTopicUpdateModel) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 15:18:37.363 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 15:18:37.503 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.UpdateCourseTopic (LXP.Api) in 344.7578ms
+2024-05-16 15:18:37.512 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.UpdateCourseTopic (LXP.Api)'
+2024-05-16 15:18:37.518 +05:30 [INF] HTTP PUT /lxp/course/topic responded 200 in 381.7239 ms
+2024-05-16 15:18:37.529 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5199/lxp/course/topic - 200 null application/json; charset=utf-8 436.7702ms
+2024-05-16 15:18:57.003 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b/topic - null null
+2024-05-16 15:18:57.042 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseTopicController.GetAllCourseTopicByCourseId (LXP.Api)'
+2024-05-16 15:18:57.057 +05:30 [INF] Route matched with {action = "GetAllCourseTopicByCourseId", controller = "CourseTopic"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourseTopicByCourseId(System.String) on controller LXP.Api.Controllers.CourseTopicController (LXP.Api).
+2024-05-16 15:18:57.086 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-16 15:18:57.496 +05:30 [INF] Executed action LXP.Api.Controllers.CourseTopicController.GetAllCourseTopicByCourseId (LXP.Api) in 432.3569ms
+2024-05-16 15:18:57.501 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseTopicController.GetAllCourseTopicByCourseId (LXP.Api)'
+2024-05-16 15:18:57.505 +05:30 [INF] HTTP GET /lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b/topic responded 200 in 464.2697 ms
+2024-05-16 15:18:57.510 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/273a1881-adb6-498c-9c35-5ba7d4b0c64b/topic - 200 null application/json; charset=utf-8 507.7766ms

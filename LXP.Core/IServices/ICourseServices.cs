@@ -1,6 +1,5 @@
-﻿using LXP.Common.Entities;
-using LXP.Common.ViewModels;
-using LXP.Data;
+﻿using LXP.Common.ViewModels;
+using LXP.Common.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +10,8 @@ namespace LXP.Core.IServices
 {
     public interface ICourseServices
     {
-        Course GetCourseByCourseId(Guid courseId);
-
-        Task<bool> Deletecourse(Guid courseId);
-
-        Task<bool> Changecoursestatus(Coursestatus status);
-
-        Task<bool> Updatecourse(CourseUpdateModel course);
-
-        IEnumerable<CourseViewModel> GetAllCourse();
-        IEnumerable<CourseViewModel> GetLimitedCourse();
-
-
+        Task<CourseListViewModel> GetCourseDetailsByCourseId(string courseId);
+        CourseListViewModel GetCourseDetailsByCourseName(string courseName);
+        CourseListViewModel AddCourse(CourseViewModel course);
     }
 }

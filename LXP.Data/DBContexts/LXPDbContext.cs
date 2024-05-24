@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using LXP.Data;
+using LXP.Common.Entities;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
@@ -56,8 +57,8 @@ public partial class LXPDbContext : DbContext
     public virtual DbSet<Topic> Topics { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseMySql("server=localhost;database=lxp;uid=root;pwd=Password@12345", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.33-mysql"));
+    #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+    => optionsBuilder.UseMySql("server=localhost;database=lxp;uid=root;pwd=Password@12345", Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.33-mysql"));
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -71,7 +72,7 @@ public partial class LXPDbContext : DbContext
 
             entity.ToTable("course");
 
-            entity.HasIndex(e => e.CategoryId, "IX_course_catagory_id");
+            entity.HasIndex(e => e.CatagoryId, "IX_course_catagory_id");
 
             entity.HasIndex(e => e.LevelId, "IX_course_level_id");
 
@@ -79,8 +80,8 @@ public partial class LXPDbContext : DbContext
                 .HasColumnName("course_id")
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
-            entity.Property(e => e.CategoryId)
-                .HasColumnName("category_id")
+            entity.Property(e => e.CatagoryId)
+                .HasColumnName("catagory_id")
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
             entity.Property(e => e.CreatedAt)
@@ -104,21 +105,19 @@ public partial class LXPDbContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("title");
 
-            entity.HasOne(d => d.Category).WithMany(p => p.Courses)
-                .HasForeignKey(d => d.CategoryId)
-                .OnDelete(DeleteBehavior.ClientSetNull);
+            entity.HasOne(d => d.Catagory).WithMany(p => p.Courses).HasForeignKey(d => d.CatagoryId);
 
             entity.HasOne(d => d.Level).WithMany(p => p.Courses).HasForeignKey(d => d.LevelId);
         });
 
         modelBuilder.Entity<CourseCategory>(entity =>
         {
-            entity.HasKey(e => e.CategoryId).HasName("PRIMARY");
+            entity.HasKey(e => e.CatagoryId).HasName("PRIMARY");
 
             entity.ToTable("course_category");
 
-            entity.Property(e => e.CategoryId)
-                .HasColumnName("category_id")
+            entity.Property(e => e.CatagoryId)
+                .HasColumnName("catagory_id")
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
             entity.Property(e => e.Category)
@@ -231,7 +230,7 @@ public partial class LXPDbContext : DbContext
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
 
-            entity.HasOne(d => d.Topic).WithMany(p => p.FeedbackQuestions).HasForeignKey(d => d.TopicId);
+           entity.HasOne(d => d.Topic).WithMany(p => p.FeedbackQuestions).HasForeignKey(d => d.TopicId);
         });
 
         modelBuilder.Entity<FeedbackQuestionOption>(entity =>
@@ -337,7 +336,7 @@ public partial class LXPDbContext : DbContext
                 .HasColumnName("modified_at");
             entity.Property(e => e.ModifiedBy).HasColumnName("modified_by");
             entity.Property(e => e.Password)
-                .HasMaxLength(120)
+                .HasMaxLength(30)
                 .HasColumnName("password");
             entity.Property(e => e.Role)
                 .HasMaxLength(10)
@@ -442,7 +441,7 @@ public partial class LXPDbContext : DbContext
 
             entity.ToTable("learner_profiles");
 
-            entity.HasIndex(e => e.LearnerId, "IX_learner_profiles_learner_id").IsUnique();
+            entity.HasIndex(e => e.LearnerId, "IX_learner_profiles_learner_id");
 
             entity.Property(e => e.ProfileId)
                 .HasColumnName("profile_id")
@@ -478,7 +477,7 @@ public partial class LXPDbContext : DbContext
                 .HasMaxLength(50)
                 .HasColumnName("stream");
 
-            entity.HasOne(d => d.Learner).WithOne(p => p.LearnerProfile).HasForeignKey<LearnerProfile>(d => d.LearnerId);
+            entity.HasOne(d => d.Learner).WithMany(p => p.LearnerProfiles).HasForeignKey(d => d.LearnerId);
         });
 
         modelBuilder.Entity<LearnerProgress>(entity =>
@@ -615,10 +614,10 @@ public partial class LXPDbContext : DbContext
                 .HasColumnName("modified_at");
             entity.Property(e => e.ModifiedBy).HasColumnName("modified_by");
             entity.Property(e => e.NewPassword)
-                .HasMaxLength(120)
+                .HasMaxLength(30)
                 .HasColumnName("new_password");
             entity.Property(e => e.OldPassword)
-                .HasMaxLength(120)
+                .HasMaxLength(30)
                 .HasColumnName("old_password");
 
             entity.HasOne(d => d.Learner).WithMany(p => p.PasswordHistories).HasForeignKey(d => d.LearnerId);
@@ -760,7 +759,7 @@ public partial class LXPDbContext : DbContext
 
             entity.HasOne(d => d.Course).WithMany(p => p.Topics).HasForeignKey(d => d.CourseId);
         });
-
+        
         OnModelCreatingPartial(modelBuilder);
     }
 

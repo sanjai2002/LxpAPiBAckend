@@ -1,174 +1,188 @@
-﻿//using NUnit.Framework;
-//using Microsoft.EntityFrameworkCore;
-//using LXP.Data.Repository;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using LXP.Common.Entities;
+using LXP.Data.DBContexts;
+using LXP.Data.IRepository;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.EntityFrameworkCore;
+using NUnit.Framework;
 
-//using System;
-//using System.Linq;
-//using System.Threading.Tasks;
-//using LXP.Common.Entities;
-//using LXP.Common.ViewModels;
-//using LXP.Common;
+namespace LXP.Data.Repository.Tests
+{
+    [TestFixture]
+    public class CourseRepositoryTests
+    {
+        private DbContextOptions<LXPDbContext> _options;
 
-//namespace LXP.Data.Tests
-//{
-//    [TestFixture]
-//    public class CourseRepositoryTests
-//    {
-//        private DbContextOptions<LXPDbContext> _options;
-//        private LXPDbContext _context;
+        [SetUp]
+        public void Setup()
+        {
+            _options = new DbContextOptionsBuilder<LXPDbContext>()
+                .UseInMemoryDatabase(databaseName: "lxp")
+                .Options;
 
-//        [SetUp]
-//        public void Setup()
-//        {
-//            _options = new DbContextOptionsBuilder<LXPDbContext>()
-//                .UseInMemoryDatabase(databaseName: "lxp")
-//                .Options;
+            using (var context = new LXPDbContext(_options))
+            {
+                context.Courses.AddRange(
+                    new Course
+                    {
+                        CourseId = Guid.NewGuid(),
+                        Title = "Course 1",
+                        Description = "Description",
+                        Thumbnail = "image",
+                        CreatedBy = "Karni",
+                        CreatedAt = DateTime.Now,
+                        ModifiedBy = "karikalan",
+                        ModifiedAt = DateTime.Now
+                    },
 
-//            _context = new LXPDbContext(_options);
-//            SeedData(_context);
-//        }
 
-//        [TearDown]
-//        public void TearDown()
-//        {
-//            _context.Dispose();
-//        }
 
-//        private void SeedData(LXPDbContext context)
-//        {
-//            // Seed some test data for Courses and Enrollments
-//            var course1 = new Course {
-//                CourseId = Guid.NewGuid(),
-//                Title = "Course 1",
-//                Description = "Description",
-//                Thumbnail = "image",
-//                CreatedBy = "Laevi",
-//                CreatedAt = DateTime.Now,
-//                ModifiedBy = "Sanjai",
-//                ModifiedAt = DateTime.Now
-//            };
-//            var course2 = new Course { 
-//                CourseId = Guid.NewGuid(),
-//                Title = "Course 2", 
-//                Description = "Description",
-//                Thumbnail = "image",
-//                CreatedBy = "kavin", 
-//                CreatedAt = DateTime.Now,
-//                ModifiedBy = "sanjai",
-//                ModifiedAt = DateTime.Now };
-//            var enrollment1 = new Enrollment { EnrollmentId = Guid.NewGuid(), CourseId = course1.CourseId, LearnerId = Guid.NewGuid(),
-//                CreatedBy = "kavin",
-//                CreatedAt = DateTime.Now,
-//                ModifiedBy = "sanjai",
-//                ModifiedAt = DateTime.Now
-//            };
-//            var enrollment2 = new Enrollment { EnrollmentId = Guid.NewGuid(), CourseId = course2.CourseId, LearnerId = Guid.NewGuid(),
-//                CreatedBy = "sanjai",
-//                CreatedAt = DateTime.Now,
-//                ModifiedBy = "kavin",
-//                ModifiedAt = DateTime.Now
-//            };
+                    new Course
+                    {
+                        CourseId = Guid.NewGuid(),
+                        Title = "Course 2",
+                        CreatedBy = "Karni",
+                        Description = "Description",
+                        Thumbnail = "image",
+                        CreatedAt = DateTime.Now,
+                        ModifiedBy = "karikalan",
+                        ModifiedAt = DateTime.Now
+                    }
+                );
+                context.SaveChanges();
+            }
+        }
 
-//            context.Courses.AddRange(course1, course2);
-//            context.Enrollments.AddRange(enrollment1, enrollment2);
-//            context.SaveChanges();
-//        }
+        [Test]
+        public async Task AddCourse_ValidCourse_AddsCourseToContextAndSavesChanges()
+        {
+            // Arrange
+            using (var context = new LXPDbContext(_options))
+            {
+                var repository = new CourseRepository(context);
+                var courseToAdd = new Course
+                {
+                    CourseId = Guid.NewGuid(),
+                    Title = "Course 1",
+                    Description = "Description",
+                    Thumbnail = "image",
+                    CreatedBy = "Karni",
+                    CreatedAt = DateTime.Now,
+                    ModifiedBy = "karikalan",
+                    ModifiedAt = DateTime.Now
+                };
 
-//        [Test]
-//        public void GetCourseDetailsByCourseId_ValidCourseId_ReturnsCourse()
-//        {
-//            // Arrange
-//            var repository = new CourseRepository(_context, null);
-//            var courseId = _context.Courses.First().CourseId;
+                // Act
+                repository.AddCourse(courseToAdd);
 
-//            // Act
-//            var result = repository.GetCourseDetailsByCourseId(courseId);
+                // Assert
+                var addedCourse = await context.Courses.FindAsync(courseToAdd.CourseId);
+                Assert.IsNotNull(addedCourse);
+                Assert.AreEqual(courseToAdd.Title, addedCourse.Title);
+            }
+        }
 
-//            // Assert
-//            Assert.IsNotNull(result);
-//            Assert.AreEqual(courseId, result.CourseId);
-//        }
+        [Test]
+        public void GetCourseDetailsByCourseId_ExistingCourseId_ReturnsCourse()
+        {
+            // Arrange
+            using (var context = new LXPDbContext(_options))
+            {
+                var repository = new CourseRepository(context);
+                var courseId = context.Courses.First().CourseId;
 
-//        [Test]
-//        public void FindCourseid_ValidCourseId_ReturnsCourse()
-//        {
-//            // Arrange
-//            var repository = new CourseRepository(_context, null);
-//            var courseId = _context.Courses.First().CourseId;
+                // Act
+                var result = repository.GetCourseDetailsByCourseId(courseId);
 
-//            // Act
-//            var result = repository.FindCourseid(courseId);
+                // Assert
+                Assert.IsNotNull(result);
+                Assert.AreEqual(courseId, result.CourseId);
+            }
+        }
 
-//            // Assert
-//            Assert.IsNotNull(result);
-//            Assert.AreEqual(courseId, result.CourseId);
-//        }
+        [Test]
+        public void GetCourseDetailsByCourseId_NonExistingCourseId_ReturnsNull()
+        {
+            // Arrange
+            using (var context = new LXPDbContext(_options))
+            {
+                var repository = new CourseRepository(context);
+                var nonExistingCourseId = Guid.NewGuid();
 
-//        [Test]
-//        public void FindEntrollmentcourse_ValidCourseId_ReturnsEnrollment()
-//        {
-//            // Arrange
-//            var repository = new CourseRepository(_context, null);
-//            var courseId = _context.Courses.First().CourseId;
+                // Act
+                var result = repository.GetCourseDetailsByCourseId(nonExistingCourseId);
 
-//            // Act
-//            var result = repository.FindEntrollmentcourse(courseId);
+                // Assert
+                Assert.IsNull(result);
+            }
+        }
 
-//            // Assert
-//            Assert.IsNotNull(result);
-//            Assert.AreEqual(courseId, result.CourseId);
-//        }
+        [Test]
+        public void GetCourseDetailsByCourseName_ExistingCourseName_ReturnsCourse()
+        {
+            // Arrange
+            using (var context = new LXPDbContext(_options))
+            {
+                var repository = new CourseRepository(context);
 
-//        [Test]
-//        public async Task Deletecourse_ValidCourse_DeletesCourse()
-//        {
-//            // Arrange
-//            var repository = new CourseRepository(_context, null);
-//            var course = _context.Courses.First();
+                // Act
+                var result = repository.GetCourseDetailsByCourseName("Course 1");
 
-//            // Act
-//            await repository.Deletecourse(course);
-//            var result = _context.Courses.Find(course.CourseId);
+                // Assert
+                Assert.IsNotNull(result);
+                Assert.AreEqual("Course 1", result.Title);
+            }
+        }
 
-//            // Assert
-//            Assert.IsNull(result);
-//        }
+        [Test]
+        public void GetCourseDetailsByCourseName_NonExistingCourseName_ReturnsNull()
+        {
+            // Arrange
+            using (var context = new LXPDbContext(_options))
+            {
+                var repository = new CourseRepository(context);
 
-//        [Test]
-//        public async Task Changecoursestatus_ValidCourse_UpdatesCourseStatus()
-//        {
-//            // Arrange
-//            var repository = new CourseRepository(_context, null);
-//            var course = _context.Courses.First();
+                // Act
+                var result = repository.GetCourseDetailsByCourseName("Non-existing Course");
 
-//            // Act
-//            course.IsAvailable = course.IsAvailable;
-//            await repository.Changecoursestatus(course);
-//            var result = _context.Courses.Find(course.CourseId);
+                // Assert
+                Assert.IsNull(result);
+            }
+        }
 
-//            // Assert
-//            Assert.IsNotNull(result);
-//            Assert.AreEqual(course.IsAvailable, result.IsAvailable);
-//        }
+        [Test]
+        public void AnyCourseByCourseTitle_ExistingCourseTitle_ReturnsTrue()
+        {
+            // Arrange
+            using (var context = new LXPDbContext(_options))
+            {
+                var repository = new CourseRepository(context);
 
-//        [Test]
-//        public async Task Updatecourse_ValidCourse_UpdatesCourse()
-//        {
-//            // Arrange
-//            var repository = new CourseRepository(_context, null);
-//            var course = _context.Courses.First();
-//            var originalName = course.Title;
-//            var newName = "New Course Name";
+                // Act
+                var result = repository.AnyCourseByCourseTitle("Course 1");
 
-//            // Act
-//            course.Title = newName;
-//            await repository.Updatecourse(course);
-//            var result = _context.Courses.Find(course.CourseId);
+                // Assert
+                Assert.IsTrue(result);
+            }
+        }
 
-//            // Assert
-//            Assert.IsNotNull(result);
-//            Assert.AreEqual(newName, result.Title);
-//            Assert.AreNotEqual(originalName, result.Title);
-//        }
-//    }
-//}
+        [Test]
+        public void AnyCourseByCourseTitle_NonExistingCourseTitle_ReturnsFalse()
+        {
+            // Arrange
+            using (var context = new LXPDbContext(_options))
+            {
+                var repository = new CourseRepository(context);
+
+                // Act
+                var result = repository.AnyCourseByCourseTitle("Non-existing Course");
+
+                // Assert
+                Assert.IsFalse(result);
+            }
+        }
+    }
+}

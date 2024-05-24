@@ -1,5 +1,7 @@
-﻿using LXP.Common.Constants;
-using LXP.Common.ViewModels;
+﻿using LXP.Common.ViewModels;
+using LXP.Common.Constants;
+
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
@@ -10,7 +12,7 @@ namespace LXP.Api.Controllers
     public class BaseController : ControllerBase
     {
         [NonAction]
-        public APIResponse CreateSuccessResponse(dynamic result)
+        public APIResponse CreateSuccessResponse(dynamic result=null)
         {
             return new APIResponse()
             {
@@ -19,7 +21,6 @@ namespace LXP.Api.Controllers
                 Data = result
             };
         }
-
 
         [NonAction]
         public APIResponse CreateFailureResponse(string message, int statusCode)
@@ -32,5 +33,26 @@ namespace LXP.Api.Controllers
             };
         }
 
+        [NonAction]
+        public APIResponse CreateInsertResponse(dynamic result)
+        {
+            return new APIResponse()
+            {
+                StatusCode = (int)HttpStatusCode.Created,
+                Message = MessageConstants.MsgCreated,
+                Data = result
+            };
+        }
+
+        [NonAction]
+        public APIResponse CreateNoContentResponse(dynamic result)
+        {
+            return new APIResponse()
+            {
+                StatusCode = (int)HttpStatusCode.NoContent,
+              //  Message = MessageConstants.MsgCreated,
+                Data = result
+            };
+        }
     }
 }

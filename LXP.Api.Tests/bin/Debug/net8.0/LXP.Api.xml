@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LXP.Api</name>
+    </assembly>
+    <members>
+        <member name="M:LXP.Api.Controllers.CategoryController.GetAllCategory">
+            <summary>
+            getting all category name and its id
+            </summary>
+            <response code="200">Success</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.CategoryController.AddCategory(LXP.Common.ViewModels.CourseCategoryViewModel)">
+            <summary>
+            adding new category
+            </summary>
+            <response code="200">Success</response>
+            <response code="422">Sourse is already exists</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="T:LXP.Api.Interceptors.ApiExceptionInterceptor">
+            <summary>
+            API Exception Interceptor
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Interceptors.ApiExceptionInterceptor.#ctor(Microsoft.Extensions.Logging.ILogger{LXP.Api.Interceptors.ApiExceptionInterceptor})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:LXP.Api.Interceptors.ApiExceptionInterceptor.OnExceptionAsync(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            On Exception Implementation
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,583 @@
+2024-05-06 09:11:17.961 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 09:11:19.212 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 09:11:19.214 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 09:11:19.219 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 09:11:19.221 +05:30 [INF] Hosting environment: Development
+2024-05-06 09:11:19.223 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 09:11:30.314 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 09:11:30.927 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 09:11:30.929 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 09:11:30.934 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 09:11:30.936 +05:30 [INF] Hosting environment: Development
+2024-05-06 09:11:30.937 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 09:11:36.213 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 09:11:36.640 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 435.2027ms
+2024-05-06 09:11:36.666 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 09:11:36.666 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 09:11:36.690 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 24.3846ms
+2024-05-06 09:11:36.753 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.0139ms
+2024-05-06 09:11:36.809 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 09:11:36.918 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 109.424ms
+2024-05-06 09:11:43.943 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/category - null null
+2024-05-06 09:11:43.955 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-06 09:11:43.975 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-06 09:11:46.862 +05:30 [ERR] LXP.Api.Interceptors.ApiExceptionInterceptor Exception: Access denied for user 'root'@'localhost' (using password: YES) Inner Exception: None Stack Trace:    at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ServerSession.SendClearPasswordAsync(String password, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 743
+   at MySqlConnector.Core.ServerSession.SwitchAuthenticationAsync(ConnectionSettings cs, String password, PayloadData payload, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 712
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 537
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.CategoryRepository.GetAllCategory() in D:\LXP\LXP\LXP.Data\Repository\CategoryRepository.cs:line 27
+   at LXP.Core.Services.CategoryServices.GetAllCategory() in D:\LXP\LXP\LXP.Core\Services\CategoryServices.cs:line 52
+   at LXP.Api.Controllers.CategoryController.GetAllCategory() in D:\LXP\LXP\LXP.Api\Controllers\CategoryController.cs:line 28
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-05-06 09:11:46.872 +05:30 [INF] Executing JsonResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 09:11:46.882 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 2900.0384ms
+2024-05-06 09:11:46.884 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-06 09:11:46.887 +05:30 [ERR] HTTP GET /lxp/course/category responded 500 in 2934.3403 ms
+2024-05-06 09:11:46.889 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/category - 500 null application/json; charset=utf-8 2947.1373ms
+2024-05-06 09:13:01.115 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 09:13:01.161 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 09:13:01.165 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 09:13:01.166 +05:30 [INF] Hosting environment: Development
+2024-05-06 09:13:01.166 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 09:13:02.967 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 09:13:03.473 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 520.5934ms
+2024-05-06 09:13:03.510 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 09:13:03.510 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 09:13:03.547 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 37.9624ms
+2024-05-06 09:13:03.589 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.0164ms
+2024-05-06 09:13:03.675 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 09:13:03.799 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 123.9725ms
+2024-05-06 09:13:08.790 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/category - null null
+2024-05-06 09:13:08.805 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-06 09:13:08.824 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-06 09:13:11.234 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 2402.2223ms
+2024-05-06 09:13:11.301 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-06 09:13:11.353 +05:30 [ERR] HTTP GET /lxp/course/category responded 500 in 2551.0969 ms
+MySqlConnector.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ServerSession.SendClearPasswordAsync(String password, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 743
+   at MySqlConnector.Core.ServerSession.SwitchAuthenticationAsync(ConnectionSettings cs, String password, PayloadData payload, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 712
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 537
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.CategoryRepository.GetAllCategory() in D:\LXP\LXP\LXP.Data\Repository\CategoryRepository.cs:line 27
+   at LXP.Core.Services.CategoryServices.GetAllCategory() in D:\LXP\LXP\LXP.Core\Services\CategoryServices.cs:line 52
+   at LXP.Api.Controllers.CategoryController.GetAllCategory() in D:\LXP\LXP\LXP.Api\Controllers\CategoryController.cs:line 28
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-06 09:13:11.559 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+MySqlConnector.MySqlException (0x80004005): Access denied for user 'root'@'localhost' (using password: YES)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ServerSession.SendClearPasswordAsync(String password, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 743
+   at MySqlConnector.Core.ServerSession.SwitchAuthenticationAsync(ConnectionSettings cs, String password, PayloadData payload, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 712
+   at MySqlConnector.Core.ServerSession.ConnectAsync(ConnectionSettings cs, MySqlConnection connection, Int64 startingTimestamp, ILoadBalancer loadBalancer, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 537
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 428
+   at MySqlConnector.Core.ConnectionPool.ConnectSessionAsync(MySqlConnection connection, Action`4 logMessage, Int64 startingTimestamp, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 433
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 111
+   at MySqlConnector.Core.ConnectionPool.GetSessionAsync(MySqlConnection connection, Int64 startingTimestamp, Int32 timeoutMilliseconds, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ConnectionPool.cs:line 144
+   at MySqlConnector.MySqlConnection.CreateSessionAsync(ConnectionPool pool, Int64 startingTimestamp, Activity activity, Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 919
+   at MySqlConnector.MySqlConnection.OpenAsync(Nullable`1 ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlConnection.cs:line 419
+   at MySqlConnector.MySqlConnection.Open() in /_/src/MySqlConnector/MySqlConnection.cs:line 381
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlRelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.CategoryRepository.GetAllCategory() in D:\LXP\LXP\LXP.Data\Repository\CategoryRepository.cs:line 27
+   at LXP.Core.Services.CategoryServices.GetAllCategory() in D:\LXP\LXP\LXP.Core\Services\CategoryServices.cs:line 52
+   at LXP.Api.Controllers.CategoryController.GetAllCategory() in D:\LXP\LXP\LXP.Api\Controllers\CategoryController.cs:line 28
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-06 09:13:11.596 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/category - 500 null text/plain; charset=utf-8 2807.1812ms
+2024-05-06 09:26:28.106 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 09:26:28.137 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 09:26:28.140 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 09:26:28.141 +05:30 [INF] Hosting environment: Development
+2024-05-06 09:26:28.142 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 09:26:32.084 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 09:26:32.417 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 341.4288ms
+2024-05-06 09:26:32.429 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 09:26:32.429 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 09:26:32.449 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 20.6263ms
+2024-05-06 09:26:32.481 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.8042ms
+2024-05-06 09:26:32.533 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 09:26:32.614 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.0216ms
+2024-05-06 09:47:32.533 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 09:47:32.562 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 09:47:32.565 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 09:47:32.566 +05:30 [INF] Hosting environment: Development
+2024-05-06 09:47:32.566 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 09:47:36.585 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 09:47:37.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 464.191ms
+2024-05-06 09:47:37.065 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 09:47:37.065 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 09:47:37.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 12.9737ms
+2024-05-06 09:47:37.109 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.3755ms
+2024-05-06 09:47:37.157 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 09:47:37.237 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.4845ms
+2024-05-06 09:47:42.787 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/category - null null
+2024-05-06 09:47:42.799 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-06 09:47:42.815 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-06 09:47:44.239 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 09:47:44.253 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 1432.0305ms
+2024-05-06 09:47:44.255 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-06 09:47:44.257 +05:30 [INF] HTTP GET /lxp/course/category responded 200 in 1461.3799 ms
+2024-05-06 09:47:44.260 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/category - 200 null application/json; charset=utf-8 1473.1098ms
+2024-05-06 09:47:51.936 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7005/lxp/course/category - application/json 51
+2024-05-06 09:47:51.939 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.PostCategory (LXP.Api)'
+2024-05-06 09:47:51.948 +05:30 [INF] Route matched with {action = "PostCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostCategory(LXP.Common.ViewModels.CourseCategoryViewModel) on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-06 09:47:52.105 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 09:47:52.107 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.PostCategory (LXP.Api) in 157.4998ms
+2024-05-06 09:47:52.108 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.PostCategory (LXP.Api)'
+2024-05-06 09:47:52.109 +05:30 [INF] HTTP POST /lxp/course/category responded 200 in 170.4739 ms
+2024-05-06 09:47:52.111 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7005/lxp/course/category - 200 null application/json; charset=utf-8 175.5227ms
+2024-05-06 10:34:22.181 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 10:34:22.223 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 10:34:22.227 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 10:34:22.228 +05:30 [INF] Hosting environment: Development
+2024-05-06 10:34:22.230 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 10:34:26.547 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 10:34:27.106 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 569.0626ms
+2024-05-06 10:34:27.126 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 10:34:27.126 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 10:34:27.149 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 23.0445ms
+2024-05-06 10:34:27.215 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.0897ms
+2024-05-06 10:34:27.275 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 10:34:27.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.7647ms
+2024-05-06 12:17:34.880 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:17:34.915 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:17:34.918 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:17:34.919 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:17:34.919 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:17:39.145 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:17:39.613 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 473.0291ms
+2024-05-06 12:17:39.646 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:17:39.655 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.2783ms
+2024-05-06 12:17:39.658 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:17:39.692 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.6474ms
+2024-05-06 12:17:39.740 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:17:39.827 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.3749ms
+2024-05-06 12:18:35.657 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:18:35.878 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:18:35.880 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:18:35.881 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:18:35.882 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:18:36.848 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:18:37.177 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 333.806ms
+2024-05-06 12:18:37.197 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:18:37.197 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:18:37.210 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.7785ms
+2024-05-06 12:18:37.240 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.0616ms
+2024-05-06 12:18:37.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:18:37.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.9576ms
+2024-05-06 12:18:49.568 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano Selvaraj - null null
+2024-05-06 12:18:49.578 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:18:49.596 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-06 12:18:49.699 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 98.2715ms
+2024-05-06 12:18:49.747 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:18:49.780 +05:30 [ERR] HTTP GET /lxp/course/courselevel/Mano Selvaraj responded 500 in 204.0861 ms
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.ICourseLevelServices' while attempting to activate 'LXP.Api.Controllers.CourseLevelController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-06 12:18:49.888 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.ICourseLevelServices' while attempting to activate 'LXP.Api.Controllers.CourseLevelController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-06 12:18:49.895 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano Selvaraj - 500 null text/plain; charset=utf-8 327.452ms
+2024-05-06 12:19:41.535 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:19:41.667 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:19:41.669 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:19:41.670 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:19:41.671 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:19:42.558 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:19:42.830 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 278.7432ms
+2024-05-06 12:19:42.846 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:19:42.846 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:19:42.858 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 12.2666ms
+2024-05-06 12:19:42.889 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.0629ms
+2024-05-06 12:19:42.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:19:43.054 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 111.5673ms
+2024-05-06 12:19:53.143 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano Selvaraj - null null
+2024-05-06 12:19:53.152 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:19:53.169 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-06 12:19:53.755 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 581.3551ms
+2024-05-06 12:19:53.803 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:19:53.838 +05:30 [ERR] HTTP GET /lxp/course/courselevel/Mano Selvaraj responded 500 in 687.0505 ms
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<LXP.Common.Entities.CourseLevel>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at LXP.Data.Repository.CourseLevelRepository.GetAllCourseLevel() in D:\LXP\LXP\LXP.Data\Repository\CourseLevelRepository.cs:line 29
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in D:\LXP\LXP\LXP.Core\Services\CourseLevelServices.cs:line 28
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String id) in D:\LXP\LXP\LXP.Api\Controllers\CourseLevelController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-05-06 12:19:53.946 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The source IQueryable doesn't implement IDbAsyncEnumerable<LXP.Common.Entities.CourseLevel>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068.
+   at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at LXP.Data.Repository.CourseLevelRepository.GetAllCourseLevel() in D:\LXP\LXP\LXP.Data\Repository\CourseLevelRepository.cs:line 29
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in D:\LXP\LXP\LXP.Core\Services\CourseLevelServices.cs:line 28
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String id) in D:\LXP\LXP\LXP.Api\Controllers\CourseLevelController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-06 12:19:53.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano Selvaraj - 500 null text/plain; charset=utf-8 814.8488ms
+2024-05-06 12:22:23.901 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 12:22:24.246 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:22:24.247 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:22:24.249 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:22:24.250 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:22:24.250 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:22:28.404 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:22:28.674 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 275.9781ms
+2024-05-06 12:22:28.685 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:22:28.685 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:22:28.699 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.7891ms
+2024-05-06 12:22:28.731 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.3371ms
+2024-05-06 12:22:28.779 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:22:28.857 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.7047ms
+2024-05-06 12:22:40.869 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano Selvaraj - null null
+2024-05-06 12:22:40.877 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:22:40.897 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-06 12:22:41.378 +05:30 [ERR] LXP.Api.Interceptors.ApiExceptionInterceptor Exception: The source IQueryable doesn't implement IDbAsyncEnumerable<LXP.Common.Entities.CourseLevel>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. Inner Exception: None Stack Trace:    at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at LXP.Data.Repository.CourseLevelRepository.GetAllCourseLevel() in D:\LXP\LXP\LXP.Data\Repository\CourseLevelRepository.cs:line 29
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in D:\LXP\LXP\LXP.Core\Services\CourseLevelServices.cs:line 28
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String id) in D:\LXP\LXP\LXP.Api\Controllers\CourseLevelController.cs:line 18
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-05-06 12:22:41.381 +05:30 [INF] Executing JsonResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 12:22:41.389 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 486.1974ms
+2024-05-06 12:22:41.392 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:22:41.394 +05:30 [ERR] HTTP GET /lxp/course/courselevel/Mano Selvaraj responded 500 in 517.7468 ms
+2024-05-06 12:22:41.395 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano Selvaraj - 500 null application/json; charset=utf-8 526.9735ms
+2024-05-06 12:24:57.830 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 12:24:58.173 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:24:58.174 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:24:58.176 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:24:58.177 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:24:58.178 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:25:02.593 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:25:02.863 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 277.5122ms
+2024-05-06 12:25:02.878 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:25:02.878 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:25:02.895 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 16.8179ms
+2024-05-06 12:25:02.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.4459ms
+2024-05-06 12:25:02.963 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:25:03.045 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 82.4413ms
+2024-05-06 12:25:13.780 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano - null null
+2024-05-06 12:25:13.789 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:25:13.805 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-06 12:25:22.741 +05:30 [ERR] LXP.Api.Interceptors.ApiExceptionInterceptor Exception: The source IQueryable doesn't implement IDbAsyncEnumerable<LXP.Common.Entities.CourseLevel>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. Inner Exception: None Stack Trace:    at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at LXP.Data.Repository.CourseLevelRepository.GetAllCourseLevel() in D:\LXP\LXP\LXP.Data\Repository\CourseLevelRepository.cs:line 29
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in D:\LXP\LXP\LXP.Core\Services\CourseLevelServices.cs:line 28
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String id) in D:\LXP\LXP\LXP.Api\Controllers\CourseLevelController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-05-06 12:25:22.745 +05:30 [INF] Executing JsonResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 12:25:22.752 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 8942.0165ms
+2024-05-06 12:25:22.753 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:25:22.755 +05:30 [ERR] HTTP GET /lxp/course/courselevel/Mano responded 500 in 8967.8155 ms
+2024-05-06 12:25:22.756 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano - 500 null application/json; charset=utf-8 8977.4355ms
+2024-05-06 12:28:53.215 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 12:28:53.531 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:28:53.532 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:28:53.534 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:28:53.535 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:28:53.535 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:28:57.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:28:57.968 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 271.0101ms
+2024-05-06 12:28:57.987 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:28:57.987 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:28:57.994 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.7495ms
+2024-05-06 12:28:58.024 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.5718ms
+2024-05-06 12:28:58.078 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:28:58.153 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.8731ms
+2024-05-06 12:31:43.355 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7005/lxp/course/category - application/json 51
+2024-05-06 12:31:43.367 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.PostCategory (LXP.Api)'
+2024-05-06 12:31:43.387 +05:30 [INF] Route matched with {action = "PostCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] PostCategory(LXP.Common.ViewModels.CourseCategoryViewModel) on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-06 12:31:44.871 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 12:31:44.878 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.PostCategory (LXP.Api) in 1486.2382ms
+2024-05-06 12:31:44.879 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.PostCategory (LXP.Api)'
+2024-05-06 12:31:44.881 +05:30 [INF] HTTP POST /lxp/course/category responded 200 in 1515.8958 ms
+2024-05-06 12:31:44.883 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7005/lxp/course/category - 200 null application/json; charset=utf-8 1528.4757ms
+2024-05-06 12:31:52.361 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/category - null null
+2024-05-06 12:31:52.366 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-06 12:31:52.371 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-05-06 12:31:52.466 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 12:31:52.474 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 100.9637ms
+2024-05-06 12:31:52.477 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-05-06 12:31:52.478 +05:30 [INF] HTTP GET /lxp/course/category responded 200 in 112.1055 ms
+2024-05-06 12:31:52.479 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/category - 200 null application/json; charset=utf-8 118.4744ms
+2024-05-06 12:32:13.543 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 12:32:14.045 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:32:14.047 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:32:14.050 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:32:14.051 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:32:14.053 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:32:18.348 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:32:18.738 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 393.7718ms
+2024-05-06 12:32:18.755 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:32:18.755 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:32:18.773 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 18.1203ms
+2024-05-06 12:32:18.795 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.0947ms
+2024-05-06 12:32:18.842 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:32:18.919 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.1703ms
+2024-05-06 12:32:37.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano - null null
+2024-05-06 12:32:37.199 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:32:37.216 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-06 12:32:42.929 +05:30 [ERR] LXP.Api.Interceptors.ApiExceptionInterceptor Exception: The source IQueryable doesn't implement IDbAsyncEnumerable<LXP.Common.Entities.CourseLevel>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. Inner Exception: None Stack Trace:    at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at LXP.Data.Repository.CourseLevelRepository.GetAllCourseLevel() in D:\LXP\LXP\LXP.Data\Repository\CourseLevelRepository.cs:line 29
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in D:\LXP\LXP\LXP.Core\Services\CourseLevelServices.cs:line 28
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String id) in D:\LXP\LXP\LXP.Api\Controllers\CourseLevelController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-05-06 12:32:42.933 +05:30 [INF] Executing JsonResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 12:32:42.940 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 5719.3222ms
+2024-05-06 12:32:42.941 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:32:42.943 +05:30 [ERR] HTTP GET /lxp/course/courselevel/Mano responded 500 in 5746.5559 ms
+2024-05-06 12:32:42.945 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano - 500 null application/json; charset=utf-8 5756.3421ms
+2024-05-06 12:33:40.789 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 12:33:41.100 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:33:41.101 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:33:41.103 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:33:41.104 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:33:41.104 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:33:45.271 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:33:45.526 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 259.269ms
+2024-05-06 12:33:45.544 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:33:45.544 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:33:45.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.0806ms
+2024-05-06 12:33:45.583 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 39.1832ms
+2024-05-06 12:33:45.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:33:45.704 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 76.8183ms
+2024-05-06 12:33:54.901 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mnao - null null
+2024-05-06 12:33:54.910 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:33:54.929 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-06 12:34:16.099 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 12:34:16.114 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 21178.3532ms
+2024-05-06 12:34:16.115 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:34:16.117 +05:30 [INF] HTTP GET /lxp/course/courselevel/Mnao responded 200 in 21207.6248 ms
+2024-05-06 12:34:16.120 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mnao - 200 null application/json; charset=utf-8 21218.6526ms
+2024-05-06 12:35:12.832 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 12:35:13.166 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:35:13.168 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:35:13.169 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:35:13.170 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:35:13.171 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:35:17.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:35:17.653 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 277.0197ms
+2024-05-06 12:35:17.671 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:35:17.671 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:35:17.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.5207ms
+2024-05-06 12:35:17.707 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.6998ms
+2024-05-06 12:35:17.755 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:35:17.834 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.2335ms
+2024-05-06 12:35:24.177 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano - null null
+2024-05-06 12:35:24.186 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:35:24.204 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-06 12:35:29.150 +05:30 [ERR] LXP.Api.Interceptors.ApiExceptionInterceptor Exception: The source IQueryable doesn't implement IDbAsyncEnumerable<LXP.Common.Entities.CourseLevel>. Only sources that implement IDbAsyncEnumerable can be used for Entity Framework asynchronous operations. For more details see http://go.microsoft.com/fwlink/?LinkId=287068. Inner Exception: None Stack Trace:    at System.Data.Entity.QueryableExtensions.AsDbAsyncEnumerable[T](IQueryable`1 source)
+   at System.Data.Entity.QueryableExtensions.ToListAsync[TSource](IQueryable`1 source)
+   at LXP.Data.Repository.CourseLevelRepository.GetAllCourseLevel() in D:\LXP\LXP\LXP.Data\Repository\CourseLevelRepository.cs:line 29
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in D:\LXP\LXP\LXP.Core\Services\CourseLevelServices.cs:line 28
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String id) in D:\LXP\LXP\LXP.Api\Controllers\CourseLevelController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2024-05-06 12:35:29.154 +05:30 [INF] Executing JsonResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 12:35:29.161 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 4951.334ms
+2024-05-06 12:35:29.162 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:35:29.164 +05:30 [ERR] HTTP GET /lxp/course/courselevel/Mano responded 500 in 4979.5214 ms
+2024-05-06 12:35:29.165 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano - 500 null application/json; charset=utf-8 4989.4573ms
+2024-05-06 12:37:06.958 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 12:37:07.295 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 12:37:07.297 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 12:37:07.299 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 12:37:07.300 +05:30 [INF] Hosting environment: Development
+2024-05-06 12:37:07.300 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 12:37:08.554 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 12:37:08.829 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 283.7583ms
+2024-05-06 12:37:08.846 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 12:37:08.846 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 12:37:08.858 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 12.9583ms
+2024-05-06 12:37:08.886 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.725ms
+2024-05-06 12:37:08.936 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 12:37:09.011 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 75.6743ms
+2024-05-06 12:37:17.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano - null null
+2024-05-06 12:37:17.575 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:37:17.594 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-05-06 12:37:26.058 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-06 12:37:26.072 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 8473.1247ms
+2024-05-06 12:37:26.073 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-05-06 12:37:26.075 +05:30 [INF] HTTP GET /lxp/course/courselevel/Mano responded 200 in 8500.4339 ms
+2024-05-06 12:37:26.076 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/lxp/course/courselevel/Mano - 200 null application/json; charset=utf-8 8510.0996ms
+2024-05-06 16:40:33.279 +05:30 [INF] User profile is available. Using 'C:\Users\mano.selvaraj\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-06 16:40:33.867 +05:30 [INF] Now listening on: https://localhost:7005
+2024-05-06 16:40:33.868 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-06 16:40:33.870 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-06 16:40:33.871 +05:30 [INF] Hosting environment: Development
+2024-05-06 16:40:33.872 +05:30 [INF] Content root path: D:\LXP\LXP\LXP.Api
+2024-05-06 16:40:38.050 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/index.html - null null
+2024-05-06 16:40:38.522 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/index.html - 200 null text/html;charset=utf-8 477.8545ms
+2024-05-06 16:40:38.563 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-06 16:40:38.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.0731ms
+2024-05-06 16:40:38.574 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/_vs/browserLink - null null
+2024-05-06 16:40:38.645 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.5469ms
+2024-05-06 16:40:38.702 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - null null
+2024-05-06 16:40:38.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7005/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 123.1624ms

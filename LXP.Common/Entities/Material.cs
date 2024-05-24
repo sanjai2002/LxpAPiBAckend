@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LXP.Data;
+namespace LXP.Common.Entities;
 
 public partial class Material
 {
@@ -25,9 +25,9 @@ public partial class Material
 
     public DateTime CreatedAt { get; set; }
 
-    public string? ModifiedBy { get; set; }
+    public string? ModifiedBy { get; set; } 
 
-    public DateTime? ModifiedAt { get; set; }
+    public DateTime? ModifiedAt { get; set; } 
 
     public virtual ICollection<LearnerProgress> LearnerProgresses { get; set; } = new List<LearnerProgress>();
 

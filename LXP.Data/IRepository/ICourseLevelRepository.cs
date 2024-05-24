@@ -12,8 +12,6 @@ namespace LXP.Data.IRepository
         Task AddCourseLevel(CourseLevel level);
 
         Task<List<CourseLevel>> GetAllCourseLevel();
-
         CourseLevel GetCourseLevelByCourseLevelId(Guid courseLevelId);
-
     }
 }

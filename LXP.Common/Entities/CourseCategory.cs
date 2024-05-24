@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LXP.Data;
+namespace LXP.Common.Entities;
 
 public partial class CourseCategory
 {
-    public Guid CategoryId { get; set; }
+    public Guid CatagoryId { get; set; }
 
     public string Category { get; set; } = null!;
 

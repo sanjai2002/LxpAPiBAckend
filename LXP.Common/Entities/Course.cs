@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LXP.Data;
+namespace LXP.Common.Entities;
 
 public partial class Course
 {
@@ -9,7 +9,7 @@ public partial class Course
 
     public Guid LevelId { get; set; }
 
-    public Guid CategoryId { get; set; }
+    public Guid CatagoryId { get; set; }
 
     public string Title { get; set; } = null!;
 
@@ -27,11 +27,11 @@ public partial class Course
 
     public DateTime CreatedAt { get; set; }
 
-    public string? ModifiedBy { get; set; }
+    public string? ModifiedBy { get; set; } = null!;
 
-    public DateTime? ModifiedAt { get; set; }
+    public DateTime? ModifiedAt { get; set; } = null!;
 
-    public virtual CourseCategory Category { get; set; } = null!;
+    public virtual CourseCategory Catagory { get; set; } = null!;
 
     public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
 
@@ -39,7 +39,7 @@ public partial class Course
 
     public virtual CourseLevel Level { get; set; } = null!;
 
-    public virtual ICollection<Quiz> Quizzes { get; set; } = new List<Quiz>();
+   public virtual ICollection<Quiz> Quizzes { get; set; } = new List<Quiz>();
 
     public virtual ICollection<Topic> Topics { get; set; } = new List<Topic>();
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Api\\LXP.Api.csproj": {}
+    "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Api\\LXP.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Api\\LXP.Api.csproj": {
+    "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Api\\LXP.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Api\\LXP.Api.csproj",
+        "projectUniqueName": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Api\\LXP.Api.csproj",
         "projectName": "LXP.Api",
-        "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Api\\LXP.Api.csproj",
-        "packagesPath": "C:\\Users\\kavin.senthil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Api\\obj\\",
+        "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Api\\LXP.Api.csproj",
+        "packagesPath": "C:\\Users\\asha.dharmaraj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kavin.senthil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asha.dharmaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core\\LXP.Core.csproj": {
-                "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core\\LXP.Core.csproj"
+              "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Core\\LXP.Core.csproj": {
+                "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Core\\LXP.Core.csproj"
               }
             }
           }
@@ -49,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -73,24 +77,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\LXP.Common.csproj": {
+    "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\LXP.Common.csproj",
-        "packagesPath": "C:\\Users\\kavin.senthil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\obj\\",
+        "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Common\\LXP.Common.csproj",
+        "packagesPath": "C:\\Users\\asha.dharmaraj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kavin.senthil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asha.dharmaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -118,6 +122,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.2.2, )"
@@ -139,24 +147,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core\\LXP.Core.csproj": {
+    "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Core\\LXP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core\\LXP.Core.csproj",
+        "projectUniqueName": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Core\\LXP.Core.csproj",
         "projectName": "LXP.Core",
-        "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core\\LXP.Core.csproj",
-        "packagesPath": "C:\\Users\\kavin.senthil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Core\\obj\\",
+        "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Core\\LXP.Core.csproj",
+        "packagesPath": "C:\\Users\\asha.dharmaraj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kavin.senthil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asha.dharmaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -172,72 +180,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Data\\LXP.Data.csproj": {
-                "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Data\\LXP.Data.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Data\\LXP.Data.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Data\\LXP.Data.csproj",
-        "projectName": "LXP.Data",
-        "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Data\\LXP.Data.csproj",
-        "packagesPath": "C:\\Users\\kavin.senthil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Data\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\kavin.senthil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "C:\\Users\\kavin.senthil\\Desktop\\GitTestLXP\\Updatetwo\\LXP.Common\\LXP.Common.csproj"
+              "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Data\\LXP.Data.csproj": {
+                "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Data\\LXP.Data.csproj"
               }
             }
           }
@@ -256,35 +200,13 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
-            "EntityFramework": {
+            "Microsoft.AspNetCore.Http": {
               "target": "Package",
-              "version": "[6.4.4, )"
+              "version": "[2.2.2, )"
             },
-            "Microsoft.EntityFrameworkCore": {
+            "Moq": {
               "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "MySql.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "Serilog.AspNetCore": {
-              "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[4.20.70, )"
             }
           },
           "imports": [
@@ -303,7 +225,110 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Data\\LXP.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Data\\LXP.Data.csproj",
+        "projectName": "LXP.Data",
+        "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Data\\LXP.Data.csproj",
+        "packagesPath": "C:\\Users\\asha.dharmaraj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\asha.dharmaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\Mano_lxp7\\Backend_Spirint_3\\LXP\\LXP.Common\\LXP.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
