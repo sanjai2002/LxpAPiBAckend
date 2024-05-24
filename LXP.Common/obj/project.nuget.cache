@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Y/pBAtWdaHe2e3DBXlUABIzob/mXtZLfstml5KbdFzZ6bmcs8mw4gVIpR1QOu/Be2TbegBplEqxp9qtLN7sHXg==",
+  "dgSpecHash": "k2Sg/sTW+UrvXUDTSO6kAMHvfZrd2hI2zPE8OSKSTu0/2cT0NnXFO7ZB2Tba9a1EoekqzZVWMwCf3pEk3rqakA==",
   "success": true,
-  "projectFilePath": "D:\\FixCourseBackend\\LXP.Common\\LXP.Common.csproj",
+  "projectFilePath": "D:\\Course\\QuizAdmin\\LXP.Common\\LXP.Common.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

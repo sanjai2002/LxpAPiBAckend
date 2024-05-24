@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LXP.Common.DTO
+namespace LXP.Common.ViewModels
 {
     public class QuizFeedbackQuestionDto
     {
         public Guid QuizId { get; set; }
 
-      
+
 
         public string Question { get; set; } = null!;
 

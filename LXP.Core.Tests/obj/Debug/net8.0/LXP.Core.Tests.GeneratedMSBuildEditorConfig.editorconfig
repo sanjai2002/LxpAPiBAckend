@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LXP.Core.Tests
-build_property.ProjectDir = D:\FixCourseBackend\LXP.Core.Tests\
+build_property.ProjectDir = D:\Course\QuizAdmin\LXP.Core.Tests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

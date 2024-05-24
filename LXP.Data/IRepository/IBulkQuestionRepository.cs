@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using LXP.Common.DTO;
+using LXP.Common.Entities;
 
 namespace LXP.Data.IRepository
 {

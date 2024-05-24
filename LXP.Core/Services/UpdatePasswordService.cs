@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LXP.Data;
+using LXP.Common.Entities;
 
 namespace LXP.Core.Services
 {

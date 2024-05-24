@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "kgq0HqqDlg11tpP/lG2HkjUaHJegZDKlgcVtCK598S4HG9TezkTz8JUWPURWlillAtCUIOz0+BAFrHUOpj/a7g==",
+  "dgSpecHash": "ZK8Siqg7kRdoDs/mnBGodqsEoG4/gWzdXt03LQ+sfEdh2rq7Mk1e8Izp9LD+Ez7AEBLy7nno22StJgzu5aPhDw==",
   "success": true,
-  "projectFilePath": "D:\\FixCourseBackend\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
+  "projectFilePath": "D:\\Course\\QuizAdmin\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laevi.antony\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

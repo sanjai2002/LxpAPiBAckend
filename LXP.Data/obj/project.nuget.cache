@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ZPaY6EtyZdPDHSMBKAhGeQrOAxW4+oQtQ9wyUkdHF7NkDMT9LvhesHxBG8IwE/Qog0W3HUilEXL0P3GRQuxkug==",
+  "dgSpecHash": "32q5JWg5XIO9HaH/cWfyr1RCfHhzhaIVmZN92rNtuANKl5Lld4JxM5DOlEtxwhbCAfXBV5gpPfehV6QMffr8kQ==",
   "success": true,
-  "projectFilePath": "D:\\FixCourseBackend\\LXP.Data\\LXP.Data.csproj",
+  "projectFilePath": "D:\\Course\\QuizAdmin\\LXP.Data\\LXP.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laevi.antony\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\google.protobuf\\3.25.1\\google.protobuf.3.25.1.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\k4os.compression.lz4\\1.3.5\\k4os.compression.lz4.1.3.5.nupkg.sha512",

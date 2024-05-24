@@ -1,4 +1,4 @@
-﻿using LXP.Common.DTO;
+﻿using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,7 +10,7 @@ using System;
 using System.Collections.Generic;
 
 using System.Linq;
- 
+
 namespace LXP.Api.Controllers
 
 {

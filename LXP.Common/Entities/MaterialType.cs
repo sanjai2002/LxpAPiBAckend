@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LXP.Data;
+namespace LXP.Common.Entities;
 
 public partial class MaterialType
 {

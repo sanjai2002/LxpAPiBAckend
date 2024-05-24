@@ -1,4 +1,4 @@
-﻿using LXP.Common.DTO;
+﻿using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
 using System;

@@ -8,6 +8,7 @@ using LXP.Data.Repository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using static Mysqlx.Notice.Warning.Types;
+using LXP.Common.Entities;
 
 namespace LXP.Core.Services
 {

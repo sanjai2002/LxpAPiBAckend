@@ -8,6 +8,8 @@ using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using LXP.Data.DBContexts;
+using LXP.Common.Entities;
+
 namespace LXP.Data.Repository
 {
 

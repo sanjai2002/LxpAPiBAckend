@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FixCourseBackend\\LXP.Api\\LXP.Api.csproj": {}
+    "D:\\Course\\QuizAdmin\\LXP.Api\\LXP.Api.csproj": {}
   },
   "projects": {
-    "D:\\FixCourseBackend\\LXP.Api\\LXP.Api.csproj": {
+    "D:\\Course\\QuizAdmin\\LXP.Api\\LXP.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FixCourseBackend\\LXP.Api\\LXP.Api.csproj",
+        "projectUniqueName": "D:\\Course\\QuizAdmin\\LXP.Api\\LXP.Api.csproj",
         "projectName": "LXP.Api",
-        "projectPath": "D:\\FixCourseBackend\\LXP.Api\\LXP.Api.csproj",
+        "projectPath": "D:\\Course\\QuizAdmin\\LXP.Api\\LXP.Api.csproj",
         "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\FixCourseBackend\\LXP.Api\\obj\\",
+        "outputPath": "D:\\Course\\QuizAdmin\\LXP.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FixCourseBackend\\LXP.Core\\LXP.Core.csproj": {
-                "projectPath": "D:\\FixCourseBackend\\LXP.Core\\LXP.Core.csproj"
+              "D:\\Course\\QuizAdmin\\LXP.Core\\LXP.Core.csproj": {
+                "projectPath": "D:\\Course\\QuizAdmin\\LXP.Core\\LXP.Core.csproj"
               }
             }
           }
@@ -118,14 +118,14 @@
         }
       }
     },
-    "D:\\FixCourseBackend\\LXP.Common\\LXP.Common.csproj": {
+    "D:\\Course\\QuizAdmin\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FixCourseBackend\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "D:\\Course\\QuizAdmin\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\FixCourseBackend\\LXP.Common\\LXP.Common.csproj",
+        "projectPath": "D:\\Course\\QuizAdmin\\LXP.Common\\LXP.Common.csproj",
         "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\FixCourseBackend\\LXP.Common\\obj\\",
+        "outputPath": "D:\\Course\\QuizAdmin\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -158,6 +158,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.2.2, )"
@@ -183,14 +187,14 @@
         }
       }
     },
-    "D:\\FixCourseBackend\\LXP.Core\\LXP.Core.csproj": {
+    "D:\\Course\\QuizAdmin\\LXP.Core\\LXP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FixCourseBackend\\LXP.Core\\LXP.Core.csproj",
+        "projectUniqueName": "D:\\Course\\QuizAdmin\\LXP.Core\\LXP.Core.csproj",
         "projectName": "LXP.Core",
-        "projectPath": "D:\\FixCourseBackend\\LXP.Core\\LXP.Core.csproj",
+        "projectPath": "D:\\Course\\QuizAdmin\\LXP.Core\\LXP.Core.csproj",
         "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\FixCourseBackend\\LXP.Core\\obj\\",
+        "outputPath": "D:\\Course\\QuizAdmin\\LXP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -211,8 +215,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FixCourseBackend\\LXP.Data\\LXP.Data.csproj": {
-                "projectPath": "D:\\FixCourseBackend\\LXP.Data\\LXP.Data.csproj"
+              "D:\\Course\\QuizAdmin\\LXP.Data\\LXP.Data.csproj": {
+                "projectPath": "D:\\Course\\QuizAdmin\\LXP.Data\\LXP.Data.csproj"
               }
             }
           }
@@ -260,14 +264,14 @@
         }
       }
     },
-    "D:\\FixCourseBackend\\LXP.Data\\LXP.Data.csproj": {
+    "D:\\Course\\QuizAdmin\\LXP.Data\\LXP.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FixCourseBackend\\LXP.Data\\LXP.Data.csproj",
+        "projectUniqueName": "D:\\Course\\QuizAdmin\\LXP.Data\\LXP.Data.csproj",
         "projectName": "LXP.Data",
-        "projectPath": "D:\\FixCourseBackend\\LXP.Data\\LXP.Data.csproj",
+        "projectPath": "D:\\Course\\QuizAdmin\\LXP.Data\\LXP.Data.csproj",
         "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\FixCourseBackend\\LXP.Data\\obj\\",
+        "outputPath": "D:\\Course\\QuizAdmin\\LXP.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -288,8 +292,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\FixCourseBackend\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "D:\\FixCourseBackend\\LXP.Common\\LXP.Common.csproj"
+              "D:\\Course\\QuizAdmin\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "D:\\Course\\QuizAdmin\\LXP.Common\\LXP.Common.csproj"
               }
             }
           }

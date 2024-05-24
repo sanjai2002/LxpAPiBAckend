@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using LXP.Common.DTO;
+using LXP.Common.ViewModels;
 using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
+using LXP.Common.Entities;
+
 
 namespace LXP.Data.Repository
 {

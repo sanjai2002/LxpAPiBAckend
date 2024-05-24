@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using LXP.Common.Entities;
 using System.Threading.Tasks;
 
 namespace LXP.Data.Repository

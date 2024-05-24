@@ -44,6 +44,8 @@ builder.Services.AddScoped<ICourseLevelRepository, CourseLevelRepository>();
 
 builder.Services.AddScoped<ICourseServices, CourseServices>();
 builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+builder.Services.AddScoped<IMaterialTypeRepository,MaterialTypeRepository>();
+builder.Services.AddScoped<IMaterialTypeServices,MaterialTypeServices>();
 
 //Learner
 builder.Services.AddScoped<ILearnerServices, LearnerServices>();

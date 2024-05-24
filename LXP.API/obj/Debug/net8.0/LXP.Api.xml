@@ -11,13 +11,6 @@
             <response code="200">Success</response>
             <response code="500">Internal server Error</response>
         </member>
-        <member name="M:LXP.Api.Controllers.CourseController.GetById(System.Guid)">
-            <summary>
-            Getting all Course name and its id
-            </summary>
-            <response code="200">Success</response>
-            <response code="404">Internal server Error</response>
-        </member>
         <member name="M:LXP.Api.Controllers.CourseController.Updatecourse(LXP.Common.ViewModels.CourseUpdateModel)">
             <summary>
             Update the course

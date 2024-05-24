@@ -1,8 +1,6 @@
-﻿
-using LXP.Common.DTO;
+﻿using LXP.Common.ViewModels;
 using System;
 using System.Collections.Generic;
-
 namespace LXP.Data.IRepository
 {
     public interface IQuizQuestionRepository

@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LXP.Common.DTO
+namespace LXP.Common.ViewModels
 {
     public class QuizQuestionNoDto
     {
-        public Guid QuizQuestionId { get; set; } 
+        public Guid QuizQuestionId { get; set; }
         public Guid QuizId { get; set; }
         public int QuestionNo { get; set; }
         public string Question { get; set; } = null!;
-        public string QuestionType { get; set; } = null!; 
+        public string QuestionType { get; set; } = null!;
         public List<QuestionOptionDto> Options { get; set; } = new List<QuestionOptionDto>();
     }
 }

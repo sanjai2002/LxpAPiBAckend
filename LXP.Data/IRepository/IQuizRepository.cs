@@ -1,7 +1,8 @@
-﻿using LXP.Common.DTO;
+﻿using LXP.Common.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using LXP.Common.Entities;
 
 namespace LXP.Data.IRepository
 {

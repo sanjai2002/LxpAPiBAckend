@@ -31,6 +31,26 @@ namespace LXP.Api.Controllers
                 Data = null
             };
         }
+        [NonAction]
+        public APIResponse CreateInsertResponse(dynamic result)
+        {
+            return new APIResponse()
+            {
+                StatusCode = (int)HttpStatusCode.Created,
+                Message = MessageConstants.MsgCreated,
+                Data = result
+            };
+        }
 
+        [NonAction]
+        public APIResponse CreateNoContentResponse(dynamic result)
+        {
+            return new APIResponse()
+            {
+                StatusCode = (int)HttpStatusCode.NoContent,
+                //  Message = MessageConstants.MsgCreated,
+                Data = result
+            };
+        }
     }
 }

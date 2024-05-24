@@ -101,3 +101,16 @@ D:\FixCourseBackend\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
 D:\FixCourseBackend\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
 D:\FixCourseBackend\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
 D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\Course\QuizAdmin\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\Course\QuizAdmin\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\Course\QuizAdmin\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\Course\QuizAdmin\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll

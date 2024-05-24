@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using LXP.Common.DTO;
 using LXP.Data;
 using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 using Microsoft.EntityFrameworkCore;
+using LXP.Common.Entities;
 
 namespace LXP.Core.Repositories
 {

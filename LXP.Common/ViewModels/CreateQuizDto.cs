@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LXP.Common.DTO
+namespace LXP.Common.ViewModels
 {
 
-  public class CreateQuizDto
-  {
-    public string NameOfQuiz { get; set; }
-    public int Duration { get; set; }
-    public int PassMark { get; set; }
-    public int? AttemptsAllowed { get; set; }
-    public Guid TopicId { get; set; } // Add TopicId property
-                                                                      //  public Guid CourseId { get; set; }
+    public class CreateQuizDto
+    {
+        public string NameOfQuiz { get; set; }
+        public int Duration { get; set; }
+        public int PassMark { get; set; }
+        public int? AttemptsAllowed { get; set; }
+        public Guid TopicId { get; set; } // Add TopicId property
+                                          //  public Guid CourseId { get; set; }
     }
 
 }

@@ -1,4 +1,4 @@
-﻿using LXP.Common.DTO;
+﻿using LXP.Common.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

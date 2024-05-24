@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using LXP.Common.DTO;
+using LXP.Common.ViewModels;
 
 namespace LXP.Data.IRepository
 {

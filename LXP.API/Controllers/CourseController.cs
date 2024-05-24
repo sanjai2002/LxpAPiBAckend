@@ -25,21 +25,21 @@ namespace LXP.Api.Controllers
         }
 
 
-        ///<summary>
-        ///Getting all Course name and its id
-        ///</summary>
-        ///<response code="200">Success</response>
-        ///<response code="404">Internal server Error</response>
-        [HttpGet("get/course/{courseId}")]
-        public ActionResult<Course> GetById(Guid courseId) 
-        {
-            var course = _courseServices.GetCourseByCourseId(courseId);
-            if(course == null)
-            {
-                return Ok(CreateFailureResponse(MessageConstants.MsgGetbyid,(int)HttpStatusCode.NotFound));
-            }
-            return Ok(CreateSuccessResponse(course));
-        }
+        /////<summary>
+        /////Getting all Course name and its id
+        /////</summary>
+        /////<response code="200">Success</response>
+        /////<response code="404">Internal server Error</response>
+        //[HttpGet("get/course/{courseId}")]
+        //public ActionResult<Course> GetById(Guid courseId) 
+        //{
+        //    var course = _courseServices.GetCourseByCourseId(courseId);
+        //    if(course == null)
+        //    {
+        //        return Ok(CreateFailureResponse(MessageConstants.MsgGetbyid,(int)HttpStatusCode.NotFound));
+        //    }
+        //    return Ok(CreateSuccessResponse(course));
+        //}
 
         ///<summary>
         ///Update the course
@@ -74,7 +74,7 @@ namespace LXP.Api.Controllers
             {
                 return Ok(CreateSuccessResponse(course));
             }
-            return Ok(CreateFailureResponse(MessageConstants.MsgNotDeleted,(int)HttpStatusCode.MethodNotAllowed));
+            return Ok(CreateFailureResponse(MessageConstants.MsgCourseNotDeleted, (int)HttpStatusCode.MethodNotAllowed));
         }
 
 
