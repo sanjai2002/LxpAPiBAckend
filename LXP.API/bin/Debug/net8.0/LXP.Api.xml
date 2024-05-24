@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LXP.Api</name>
+    </assembly>
+    <members>
+        <member name="M:LXP.Api.Controllers.CategoryController.GetAllCategory">
+            <summary>
+            getting all category name and its id
+            </summary>
+            <response code="200">Success</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.CourseController.GetById(System.Guid)">
+            <summary>
+            Getting all Course name and its id
+            </summary>
+            <response code="200">Success</response>
+            <response code="404">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.CourseController.Updatecourse(LXP.Common.ViewModels.CourseUpdateModel)">
+            <summary>
+            Update the course
+            </summary>
+            <response code="200">Success</response>
+            <response code="405">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.CourseController.DeleteCourse(System.Guid)">
+            <summary>
+            Delete the course
+            </summary>
+            <response code="200">Success</response>
+            <response code="405">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.CourseController.Coursestatus(LXP.Common.ViewModels.Coursestatus)">
+            <summary>
+            Update the course status 
+            </summary>
+            <response code="200">Success</response>
+            <response code="405">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(System.String)">
+            <summary>
+            Getting all Course level and  id
+            </summary>
+            <response code="200">Success</response>
+            <response code="404">Internal server Error</response>
+            
+        </member>
+        <member name="M:LXP.Api.Controllers.DashboardController.GetTotalLearners">
+            <summary>
+            getting total number of learners
+            </summary>
+            <response code="200">Success</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.DashboardController.GetTotalCourses">
+            <summary>
+            getting total number of courses
+            </summary>
+            <response code="200">Success</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.DashboardController.GetTotalEnrollments">
+            <summary>
+            getting total number of enrollments
+            </summary>
+            <response code="200">Success</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.DashboardController.GetEnrollmentMonth">
+            <summary>
+            getting total number of enrollments according to month
+            </summary>
+            <response code="200">Success</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.DashboardController.GetCourseCreated">
+            <summary>
+            getting total number of course creation according to year
+            </summary>
+            <response code="200">Success</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.DashboardController.AdminDashboard">
+            <summary>
+            getting total number of course creation according to year
+            </summary>
+            <response code="200">Success</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.ForgetPasswordController.ForgetPassword(LXP.Common.ViewModels.RandomPasswordEmail)">
+            <summary>
+            Forget Password with Random passwordgenerator that sends to user Email 
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.LearnerController.GetAllLearners">
+            <summary>
+            Getting All learners 
+            </summary>
+            <response code="200">Success</response>
+            <response code="404">Internal server Error</response>   
+        </member>
+        <member name="M:LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId(System.Guid)">
+            <summary>
+            Learner profile by learner id 
+            </summary>
+            <response code="200">Success</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId(System.Guid)">
+            <summary>
+            Enrolled course details by learner id
+            </summary>
+            <response code="200">Success</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.LoginController.LoginLearner(LXP.Common.ViewModels.LoginModel)">
+            <summary>
+            Login for Leaners along with their Role (Admin and User)
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.UpdatePasswordController.LeanerUpdatePassword(LXP.Common.ViewModels.UpdatePassword)">
+            <summary>
+            Update Password once user use the Forgot Password operation
+            </summary>
+        </member>
+        <member name="T:LXP.Api.Interceptors.ApiExceptionInterceptor">
+            <summary>
+            API Exception Interceptor
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Interceptors.ApiExceptionInterceptor.#ctor(Microsoft.Extensions.Logging.ILogger{LXP.Api.Interceptors.ApiExceptionInterceptor})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:LXP.Api.Interceptors.ApiExceptionInterceptor.OnExceptionAsync(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)">
+            <summary>
+            On Exception Implementation
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

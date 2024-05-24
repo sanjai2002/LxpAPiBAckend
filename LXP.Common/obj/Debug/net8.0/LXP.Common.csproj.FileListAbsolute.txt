@@ -1,0 +1,103 @@
+D:\Review LXP\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\Review LXP\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\Review LXP\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\Review LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\LXP-Admin Course(Backend)\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\LXP-Admin Course(Backend)\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\LXP-Admin Course(Backend)\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\SKV\Capstone\Sprint 2\Backend\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\Adminnewcode\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\Adminnewcode\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\Adminnewcode\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\Adminnewcode\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+C:\Users\kavin.senthil\Desktop\GitTestLXP\Updatetwo\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\LXP_Capstrone project\Sprint3Backend\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\FixBackend\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\FixBackend\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\FixBackend\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\FixBackend\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\FixCourseBackend\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\FixCourseBackend\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\FixCourseBackend\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\FixCourseBackend\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
