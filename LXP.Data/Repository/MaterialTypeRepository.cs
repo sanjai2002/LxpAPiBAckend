@@ -1,11 +1,6 @@
 ﻿using LXP.Common.Entities;
 using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LXP.Data.Repository
 {
@@ -24,6 +19,6 @@ namespace LXP.Data.Repository
         {
             return _lXPDbContext.MaterialTypes.ToList();
         }
-        
+
     }
 }

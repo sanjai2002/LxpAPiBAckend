@@ -1,16 +1,9 @@
-﻿using LXP.Common.ViewModels;
+﻿using LXP.Common.Entities;
+using LXP.Common.ViewModels;
 using LXP.Core.IServices;
+using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Http;
 using OfficeOpenXml;
-using LXP.Data.IRepository;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using LXP.Data;
-using LXP.Common.Entities;
-
 
 namespace LXP.Core.Services
 {
@@ -47,7 +40,7 @@ namespace LXP.Core.Services
                         if (worksheet == null)
                             throw new ArgumentException("Worksheet not found.");
 
-                        List<QuizQuestionViewModel> quizQuestions = new List<QuizQuestionViewModel>();
+                        List<BulkQuizQuestionViewModel> quizQuestions = new List<BulkQuizQuestionViewModel>();
 
                         // Loop through each row in the worksheet
                         for (int row = 3; row <= worksheet.Dimension.End.Row; row++)
@@ -56,7 +49,7 @@ namespace LXP.Core.Services
 
                             if (type == "MCQ" || type == "TF" || type == "MSQ")
                             {
-                                QuizQuestionViewModel quizQuestion = new QuizQuestionViewModel
+                                BulkQuizQuestionViewModel quizQuestion = new BulkQuizQuestionViewModel
                                 {
                                     QuestionType = type,
                                     Question = worksheet.Cells[row, 3].Value.ToString(),
@@ -151,13 +144,13 @@ namespace LXP.Core.Services
         }
 
         // Validate question type
-        private bool ValidateQuestionType(QuizQuestionViewModel quizQuestion)
+        private bool ValidateQuestionType(BulkQuizQuestionViewModel quizQuestion)
         {
             return quizQuestion.QuestionType == "MCQ" || quizQuestion.QuestionType == "TF" || quizQuestion.QuestionType == "MSQ";
         }
 
         // Validate T/F options
-        private bool ValidateTFOptions(QuizQuestionViewModel quizQuestion)
+        private bool ValidateTFOptions(BulkQuizQuestionViewModel quizQuestion)
         {
             return quizQuestion.Options.Length == 2 &&
                    !string.IsNullOrEmpty(quizQuestion.Options[0]) &&
@@ -167,7 +160,7 @@ namespace LXP.Core.Services
         }
 
         // Validate MCQ options
-        private bool ValidateMCQOptions(QuizQuestionViewModel quizQuestion)
+        private bool ValidateMCQOptions(BulkQuizQuestionViewModel quizQuestion)
         {
             return quizQuestion.Options.Length == 4 &&
                    quizQuestion.Options.Distinct().Count() == 4 &&
@@ -176,7 +169,7 @@ namespace LXP.Core.Services
         }
 
         // Validate MSQ options
-        private bool ValidateMSQOptions(QuizQuestionViewModel quizQuestion)
+        private bool ValidateMSQOptions(BulkQuizQuestionViewModel quizQuestion)
         {
             int optionCount = quizQuestion.Options.Length;
             int correctOptionCount = quizQuestion.CorrectOptions.Length;

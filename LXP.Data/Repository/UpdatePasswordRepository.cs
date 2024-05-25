@@ -1,17 +1,9 @@
-﻿using LXP.Common;
-using LXP.Data.IRepository;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LXP.Common.Entities;
-
+﻿using LXP.Common.Entities;
 using LXP.Data.DBContexts;
+using LXP.Data.IRepository;
 namespace LXP.Data.Repository
 {
-    public class UpdatePasswordRepository:IUpdatePasswordRepository
+    public class UpdatePasswordRepository : IUpdatePasswordRepository
     {
 
         private readonly LXPDbContext _dbcontext;
@@ -37,7 +29,7 @@ namespace LXP.Data.Repository
         {
             _dbcontext.Learners.Update(learner);
 
-             _dbcontext.SaveChangesAsync();
+            _dbcontext.SaveChangesAsync();
         }
 
 

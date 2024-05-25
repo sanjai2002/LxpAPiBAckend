@@ -1,14 +1,7 @@
-﻿using LXP.Common;
-
+﻿using LXP.Common.Entities;
 using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using LXP.Common.Entities;
-using System.Threading.Tasks;
 
 namespace LXP.Data.Repository
 {

@@ -1,17 +1,15 @@
-﻿using LXP.Common.ViewModels;
-using System;
-using System.Collections.Generic;
+﻿using LXP.Common.DTO;
 
 namespace LXP.Core.IServices
 {
     public interface IQuizQuestionService
     {
-        Guid AddQuestion(QuizQuestionDto quizQuestionDto, List<QuestionOptionDto> options);
-        bool UpdateQuestion(Guid quizQuestionId, QuizQuestionDto quizQuestionDto, List<QuestionOptionDto> options);
+        Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
+        bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
         bool DeleteQuestion(Guid quizQuestionId);
-        List<QuizQuestionNoDto> GetAllQuestionsByQuizId(Guid quizId);
-        List<QuizQuestionNoDto> GetAllQuestions();
-        QuizQuestionNoDto GetQuestionById(Guid quizQuestionId);
+        List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId);
+        List<QuizQuestionNoViewModel> GetAllQuestions();
+        QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId);
     }
 }
 

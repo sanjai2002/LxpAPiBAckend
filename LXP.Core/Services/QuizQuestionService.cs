@@ -1,8 +1,7 @@
-﻿using LXP.Common.ViewModels;
+﻿
+using LXP.Common.DTO;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
-using System;
-using System.Collections.Generic;
 
 namespace LXP.Core.Services
 {
@@ -15,12 +14,12 @@ namespace LXP.Core.Services
             _quizQuestionRepository = quizQuestionRepository;
         }
 
-        public Guid AddQuestion(QuizQuestionDto quizQuestionDto, List<QuestionOptionDto> options)
+        public Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
         {
             return _quizQuestionRepository.AddQuestion(quizQuestionDto, options);
         }
 
-        public bool UpdateQuestion(Guid quizQuestionId, QuizQuestionDto quizQuestionDto, List<QuestionOptionDto> options)
+        public bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
         {
             return _quizQuestionRepository.UpdateQuestion(quizQuestionId, quizQuestionDto, options);
         }
@@ -30,19 +29,19 @@ namespace LXP.Core.Services
             return _quizQuestionRepository.DeleteQuestion(quizQuestionId);
         }
 
-        public List<QuizQuestionNoDto> GetAllQuestions()
+        public List<QuizQuestionNoViewModel> GetAllQuestions()
         {
             return _quizQuestionRepository.GetAllQuestions();
         }
 
-        public List<QuizQuestionNoDto> GetAllQuestionsByQuizId(Guid quizId)
+        public List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId)
         {
             return _quizQuestionRepository.GetAllQuestionsByQuizId(quizId);
         }
 
 
 
-        public QuizQuestionNoDto GetQuestionById(Guid quizQuestionId)
+        public QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId)
         {
             return _quizQuestionRepository.GetQuestionById(quizQuestionId);
         }

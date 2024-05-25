@@ -1,13 +1,9 @@
-﻿using LXP.Common;
+﻿using LXP.Common.Entities;
 using LXP.Common.ViewModels;
+using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System;
 using Microsoft.AspNetCore.Http;
-using LXP.Data.DBContexts;
-using LXP.Common.Entities;
 using Microsoft.EntityFrameworkCore;
 namespace LXP.Data.Repository
 {
@@ -24,7 +20,7 @@ namespace LXP.Data.Repository
         }
         public Course GetCourseDetailsByCourseName(string courseName)
         {
-            return _lXPDbContext.Courses.Include(course=>course.Level).Include(course=>course.Category).FirstOrDefault(course=>course.Title == courseName);
+            return _lXPDbContext.Courses.Include(course => course.Level).Include(course => course.Category).FirstOrDefault(course => course.Title == courseName);
         }
         public void AddCourse(Course course)
         {
@@ -37,7 +33,7 @@ namespace LXP.Data.Repository
         }
         public Course GetCourseDetailsByCourseId(Guid CourseId)
         {
-            return _lXPDbContext.Courses.Find(CourseId);
+            return _lXPDbContext.Courses.Include(course => course.Level).Include(course => course.Category).FirstOrDefault(course => course.CourseId == CourseId);
         }
 
         public Course FindCourseid(Guid courseid)
@@ -59,10 +55,10 @@ namespace LXP.Data.Repository
 
         public async Task Changecoursestatus(Course course)
         {
-             _lXPDbContext.Courses.Update(course);
+            _lXPDbContext.Courses.Update(course);
             await _lXPDbContext.SaveChangesAsync();
         }
-        
+
 
         public async Task Updatecourse(Course course)
         {
@@ -77,7 +73,7 @@ namespace LXP.Data.Repository
                       .Select(c => new CourseDetailsViewModel
                       {
                           CourseId = c.CourseId,
-                          Status= c.IsAvailable,
+                          Status = c.IsAvailable,
                           Title = c.Title,
                           Level = c.Level.Level,
                           Category = c.Category.Category,
@@ -109,7 +105,7 @@ namespace LXP.Data.Repository
                   Category = c.Category.Category,
                   Duration = c.Duration,
                   Thumbnailimage = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
-                             _contextAccessor.HttpContext.Request.Scheme,       
+                             _contextAccessor.HttpContext.Request.Scheme,
                              _contextAccessor.HttpContext.Request.Host,
                              _contextAccessor.HttpContext.Request.PathBase,
                              c.Thumbnail)
@@ -120,7 +116,7 @@ namespace LXP.Data.Repository
 
 
 
-       
+
 
     }
 }

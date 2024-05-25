@@ -1,8 +1,6 @@
-﻿using LXP.Common.ViewModels;
+﻿using LXP.Common.DTO;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
-using System;
-using System.Collections.Generic;
 
 namespace LXP.Core.Services
 {
@@ -15,23 +13,23 @@ namespace LXP.Core.Services
             _quizFeedbackRepository = quizFeedbackRepository;
         }
 
-        public Guid AddFeedbackQuestion(QuizFeedbackQuestionDto quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionDto> options)
-        {            
+        public Guid AddFeedbackQuestion(QuizfeedbackquestionViewModel quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionViewModel> options)
+        {
             return _quizFeedbackRepository.AddFeedbackQuestion(quizfeedbackquestionDto, options);
         }
 
-        public List<QuizFeedbackQuestionNoDto> GetAllFeedbackQuestions()
-        {           
+        public List<QuizfeedbackquestionNoViewModel> GetAllFeedbackQuestions()
+        {
             return _quizFeedbackRepository.GetAllFeedbackQuestions();
         }
 
-        public QuizFeedbackQuestionNoDto GetFeedbackQuestionById(Guid quizFeedbackQuestionId)
-        {          
+        public QuizfeedbackquestionNoViewModel GetFeedbackQuestionById(Guid quizFeedbackQuestionId)
+        {
             return _quizFeedbackRepository.GetFeedbackQuestionById(quizFeedbackQuestionId);
         }
 
-        public bool UpdateFeedbackQuestion(Guid quizFeedbackQuestionId, QuizFeedbackQuestionDto quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionDto> options)
-        {        
+        public bool UpdateFeedbackQuestion(Guid quizFeedbackQuestionId, QuizfeedbackquestionViewModel quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionViewModel> options)
+        {
             return _quizFeedbackRepository.UpdateFeedbackQuestion(quizFeedbackQuestionId, quizfeedbackquestionDto, options);
         }
 
@@ -39,12 +37,12 @@ namespace LXP.Core.Services
         {
             return _quizFeedbackRepository.DeleteFeedbackQuestion(quizFeedbackQuestionId);
         }
-        public List<QuizFeedbackQuestionNoDto> GetFeedbackQuestionsByQuizId(Guid quizId)
+        public List<QuizfeedbackquestionNoViewModel> GetFeedbackQuestionsByQuizId(Guid quizId)
         {
             return _quizFeedbackRepository.GetFeedbackQuestionsByQuizId(quizId);
         }
 
-        public bool DeleteFeedbackQuestionsByQuizId(Guid quizId) 
+        public bool DeleteFeedbackQuestionsByQuizId(Guid quizId)
         {
             try
             {

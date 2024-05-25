@@ -1,14 +1,10 @@
 ﻿using AutoMapper;
-using LXP.Common;
+using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
-using LXP.Data;
 using LXP.Data.IRepository;
-using LXP.Data.Repository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using static Mysqlx.Notice.Warning.Types;
-using LXP.Common.Entities;
 
 namespace LXP.Core.Services
 {
@@ -165,7 +161,7 @@ namespace LXP.Core.Services
         }
 
 
-        public async Task <bool> Deletecourse(Guid courseid)
+        public async Task<bool> Deletecourse(Guid courseid)
         {
             var Course = _courseRepository.FindCourseid(courseid);
             if (Course != null)
@@ -182,18 +178,18 @@ namespace LXP.Core.Services
 
         public async Task<bool> Changecoursestatus(Coursestatus courseStatus)
         {
-            var course =  _courseRepository.FindCourseid(courseStatus.CourseId);
+            var course = _courseRepository.FindCourseid(courseStatus.CourseId);
             if (course != null)
             {
                 course.IsAvailable = courseStatus.IsAvailable;
-                course.ModifiedAt= DateTime.Now;
+                course.ModifiedAt = DateTime.Now;
                 await _courseRepository.Changecoursestatus(course);
                 return true;
             }
             return false;
         }
 
- 
+
         public async Task<bool> Updatecourse(CourseUpdateModel courseupdate)
         {
             var uniqueFileName = $"{Guid.NewGuid()}_{courseupdate.Thumbnailimage.FileName}";
@@ -202,14 +198,14 @@ namespace LXP.Core.Services
 
             using (var stream = new FileStream(filePath, FileMode.Create))
             {
-                courseupdate.Thumbnailimage.CopyTo(stream); 
+                courseupdate.Thumbnailimage.CopyTo(stream);
             }
             var course = _courseRepository.FindCourseid(courseupdate.CourseId);
             if (course != null)
             {
                 course!.Title = courseupdate.Title;
-                course.CategoryId= courseupdate.CategoryId;
-                course.LevelId= courseupdate.LevelId;   
+                course.CategoryId = courseupdate.CategoryId;
+                course.LevelId = courseupdate.LevelId;
                 course.Description = courseupdate.Description;
                 course.Duration = courseupdate.Duration;
                 course.Thumbnail = uniqueFileName;

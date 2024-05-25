@@ -1,17 +1,10 @@
 ﻿using AutoMapper;
-using Google.Protobuf.WellKnownTypes;
-using LXP.Common.ViewModels;
 using LXP.Common.Entities;
-
+using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LXP.Core.Services
 {
@@ -26,7 +19,7 @@ namespace LXP.Core.Services
 
 
 
-        public MaterialServices(IMaterialTypeRepository materialTypeRepository,IMaterialRepository materialRepository,ICourseTopicRepository courseTopicRepository, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
+        public MaterialServices(IMaterialTypeRepository materialTypeRepository, IMaterialRepository materialRepository, ICourseTopicRepository courseTopicRepository, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
         {
             _materialRepository = materialRepository;
             _courseTopicRepository = courseTopicRepository;
@@ -42,7 +35,7 @@ namespace LXP.Core.Services
         {
             Topic topic = await _courseTopicRepository.GetTopicByTopicId(Guid.Parse(material.TopicId));
             MaterialType materialType = _materialTypeRepository.GetMaterialTypeByMaterialTypeId(Guid.Parse(material.MaterialTypeId));
-            bool isMaterialExists = await _materialRepository.AnyMaterialByMaterialNameAndTopic(material.Name,topic);
+            bool isMaterialExists = await _materialRepository.AnyMaterialByMaterialNameAndTopic(material.Name, topic);
             if (!isMaterialExists)
             {
                 // Generate a unique file name
@@ -60,17 +53,17 @@ namespace LXP.Core.Services
                 {
                     MaterialId = Guid.NewGuid(),
                     Name = material.Name,
-                    MaterialType= materialType,
-                   
-                    CreatedBy=material.CreatedBy,
-                    CreatedAt=DateTime.Now,
-                    FilePath=uniqueFileName,
-                    IsActive=true,
-                    IsAvailable=true,
-                    Duration=material.Duration,
-                    Topic=topic,
-                    ModifiedAt=null,
-                    ModifiedBy=null
+                    MaterialType = materialType,
+
+                    CreatedBy = material.CreatedBy,
+                    CreatedAt = DateTime.Now,
+                    FilePath = uniqueFileName,
+                    IsActive = true,
+                    IsAvailable = true,
+                    Duration = material.Duration,
+                    Topic = topic,
+                    ModifiedAt = null,
+                    ModifiedBy = null
                 };
                 await _materialRepository.AddMaterial(materialCreation);
                 return _courseMaterialMapper.Map<Material, MaterialListViewModel>(materialCreation);
@@ -81,12 +74,12 @@ namespace LXP.Core.Services
             }
         }
 
-        public async Task<List<MaterialListViewModel>> GetAllMaterialDetailsByTopicAndType(string topicId,string materialTypeId)
+        public async Task<List<MaterialListViewModel>> GetAllMaterialDetailsByTopicAndType(string topicId, string materialTypeId)
         {
             Topic topic = await _courseTopicRepository.GetTopicByTopicId(Guid.Parse(topicId));
             MaterialType materialType = _materialTypeRepository.GetMaterialTypeByMaterialTypeId(Guid.Parse(materialTypeId));
 
-            List<Material> material= _materialRepository.GetAllMaterialDetailsByTopicAndType(topic,materialType);
+            List<Material> material = _materialRepository.GetAllMaterialDetailsByTopicAndType(topic, materialType);
 
             List<MaterialListViewModel> materialLists = new List<MaterialListViewModel>();
 
@@ -120,29 +113,29 @@ namespace LXP.Core.Services
         public async Task<MaterialListViewModel> GetMaterialByMaterialNameAndTopic(string materialName, string topicId)
         {
             Topic topic = await _courseTopicRepository.GetTopicByTopicId(Guid.Parse(topicId));
-            Material material= await _materialRepository.GetMaterialByMaterialNameAndTopic(materialName, topic);
+            Material material = await _materialRepository.GetMaterialByMaterialNameAndTopic(materialName, topic);
             MaterialListViewModel materialView = new MaterialListViewModel()
             {
-                MaterialId=material.MaterialId,
-                TopicName= material.Topic.Name,
-                MaterialType=material.MaterialType.Type,
-                Name= material.Name,
-                FilePath=material.FilePath,
-                Duration=material.Duration,
-                IsActive=material.IsActive,
-                IsAvailable=material.IsAvailable,
-                CreatedAt=material.CreatedAt,
-                ModifiedAt=material.ModifiedAt,
-                ModifiedBy=material.ModifiedBy,
-                CreatedBy=material.CreatedBy
+                MaterialId = material.MaterialId,
+                TopicName = material.Topic.Name,
+                MaterialType = material.MaterialType.Type,
+                Name = material.Name,
+                FilePath = material.FilePath,
+                Duration = material.Duration,
+                IsActive = material.IsActive,
+                IsAvailable = material.IsAvailable,
+                CreatedAt = material.CreatedAt,
+                ModifiedAt = material.ModifiedAt,
+                ModifiedBy = material.ModifiedBy,
+                CreatedBy = material.CreatedBy
 
-                   
 
-        
 
-       
 
-    };
+
+
+
+            };
             return materialView;
         }
     }

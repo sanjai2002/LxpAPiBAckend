@@ -1,18 +1,12 @@
-﻿using LXP.Common.ViewModels;
+﻿using LXP.Common.Entities;
+using LXP.Common.ViewModels;
 using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using LXP.Data;
 namespace LXP.Data.Repository
 {
-    public  class LearnerRepository:ILearnerRepository
+    public class LearnerRepository : ILearnerRepository
     {
         private readonly LXPDbContext _lXPDbContext;
         private readonly IWebHostEnvironment _environment;
@@ -31,7 +25,7 @@ namespace LXP.Data.Repository
                            {
 
                                LearnerID = c.LearnerId,
-                               LearnerName =c.FirstName+" "+c.LastName,
+                               LearnerName = c.FirstName + " " + c.LastName,
                                Email = c.Learner.Email,
                                LastLogin = c.Learner.UserLastLogin,
                            }
@@ -112,7 +106,53 @@ namespace LXP.Data.Repository
         }
 
 
-      
+        public async Task AddLearner(Learner learner)
+        {
+
+            _lXPDbContext.Learners.Add(learner);
+
+
+           _lXPDbContext.SaveChanges();
+
+
+        }
+        //public Task<bool> AnyLearnerByEmail(string email)
+        //{
+        //    return _lXPDbContext.Learners.AnyAsync(learner=>learner.Email==email);
+        //}
+
+
+
+        public async Task<bool> AnyLearnerByEmail(string email)
+        {
+            return _lXPDbContext.Learners.Any(l => l.Email == email);
+        }
+
+
+        public Learner GetLearnerByLearnerEmail(string email)
+        {
+            return _lXPDbContext.Learners.FirstOrDefault(learner => learner.Email == email);
+        }
+
+        public async Task<List<Learner>> GetAllLearner()
+        {
+            return _lXPDbContext.Learners.ToList();
+        }
+
+        public Learner GetLearnerDetailsByLearnerId(Guid LearnerId)
+
+        {
+
+            return _lXPDbContext.Learners.Find(LearnerId);
+
+
+        }
+
+        public async Task UpdateLearner(Learner learner)
+        {
+            _lXPDbContext.Learners.Update(learner);
+            await _lXPDbContext.SaveChangesAsync();
+        }
 
     }
 }

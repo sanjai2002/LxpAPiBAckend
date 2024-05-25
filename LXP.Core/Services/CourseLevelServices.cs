@@ -1,15 +1,8 @@
 ﻿using AutoMapper;
+using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
-using LXP.Data;
 using LXP.Data.IRepository;
-using LXP.Data.Repository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LXP.Common.Entities;
 
 namespace LXP.Core.Services
 {

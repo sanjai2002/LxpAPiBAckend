@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using LXP.Common.Entities;
-using System.Threading.Tasks;
+﻿using LXP.Common.Entities;
 
 namespace LXP.Data.IRepository
 {
@@ -11,7 +6,7 @@ namespace LXP.Data.IRepository
     {
         List<Material> GetAllMaterialDetailsByTopicAndType(Topic topic, MaterialType materialType);
         Task AddMaterial(Material material);
-        Task<bool> AnyMaterialByMaterialNameAndTopic(string materialName,Topic topic);
+        Task<bool> AnyMaterialByMaterialNameAndTopic(string materialName, Topic topic);
         Task<Material> GetMaterialByMaterialNameAndTopic(string materialName, Topic topic);
 
     }

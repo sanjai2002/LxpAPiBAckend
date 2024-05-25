@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LXP.Common.ViewModels
+﻿namespace LXP.Common.ViewModels
 {
 
     ////<summary>
@@ -16,18 +10,18 @@ namespace LXP.Common.ViewModels
         ////Status Code
         ///</summary>
         ///<example>404</example>
-       public int StatusCode {  get; set; }
+        public int StatusCode { get; set; }
 
         ////<summary>
         ////Status Message
         ///</summary>
         ///<example>Not Found</example>
-        public string Message{ get; set; }
+        public string Message { get; set; }
 
         ////<summary>
         ////API Response Data
         ///</summary>
-       
+
         public object Data { get; set; }
 
 

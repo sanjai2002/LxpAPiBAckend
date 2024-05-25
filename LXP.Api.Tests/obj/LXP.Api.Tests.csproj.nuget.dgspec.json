@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Integration\\whole\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {}
+    "D:\\ManoMergedCode\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Integration\\whole\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {
+    "D:\\ManoMergedCode\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Integration\\whole\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+        "projectUniqueName": "D:\\ManoMergedCode\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
         "projectName": "LXP.Api.Tests",
-        "projectPath": "D:\\Integration\\whole\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
-        "packagesPath": "C:\\Users\\mano.selvaraj\\.nuget\\packages\\",
-        "outputPath": "D:\\Integration\\whole\\LXP.Api.Tests\\obj\\",
+        "projectPath": "D:\\ManoMergedCode\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\ManoMergedCode\\LXP.Api.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mano.selvaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Integration\\whole\\LXP.Api\\LXP.Api.csproj": {
-                "projectPath": "D:\\Integration\\whole\\LXP.Api\\LXP.Api.csproj"
+              "D:\\ManoMergedCode\\LXP.Api\\LXP.Api.csproj": {
+                "projectPath": "D:\\ManoMergedCode\\LXP.Api\\LXP.Api.csproj"
               }
             }
           }
@@ -90,20 +89,20 @@
         }
       }
     },
-    "D:\\Integration\\whole\\LXP.Api\\LXP.Api.csproj": {
+    "D:\\ManoMergedCode\\LXP.Api\\LXP.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Integration\\whole\\LXP.Api\\LXP.Api.csproj",
+        "projectUniqueName": "D:\\ManoMergedCode\\LXP.Api\\LXP.Api.csproj",
         "projectName": "LXP.Api",
-        "projectPath": "D:\\Integration\\whole\\LXP.Api\\LXP.Api.csproj",
-        "packagesPath": "C:\\Users\\mano.selvaraj\\.nuget\\packages\\",
-        "outputPath": "D:\\Integration\\whole\\LXP.Api\\obj\\",
+        "projectPath": "D:\\ManoMergedCode\\LXP.Api\\LXP.Api.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\ManoMergedCode\\LXP.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mano.selvaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -112,15 +111,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Integration\\whole\\LXP.Core\\LXP.Core.csproj": {
-                "projectPath": "D:\\Integration\\whole\\LXP.Core\\LXP.Core.csproj"
+              "D:\\ManoMergedCode\\LXP.Core\\LXP.Core.csproj": {
+                "projectPath": "D:\\ManoMergedCode\\LXP.Core\\LXP.Core.csproj"
               }
             }
           }
@@ -205,20 +203,20 @@
         }
       }
     },
-    "D:\\Integration\\whole\\LXP.Common\\LXP.Common.csproj": {
+    "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Integration\\whole\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\Integration\\whole\\LXP.Common\\LXP.Common.csproj",
-        "packagesPath": "C:\\Users\\mano.selvaraj\\.nuget\\packages\\",
-        "outputPath": "D:\\Integration\\whole\\LXP.Common\\obj\\",
+        "projectPath": "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\ManoMergedCode\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mano.selvaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -227,7 +225,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -275,20 +272,20 @@
         }
       }
     },
-    "D:\\Integration\\whole\\LXP.Core\\LXP.Core.csproj": {
+    "D:\\ManoMergedCode\\LXP.Core\\LXP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Integration\\whole\\LXP.Core\\LXP.Core.csproj",
+        "projectUniqueName": "D:\\ManoMergedCode\\LXP.Core\\LXP.Core.csproj",
         "projectName": "LXP.Core",
-        "projectPath": "D:\\Integration\\whole\\LXP.Core\\LXP.Core.csproj",
-        "packagesPath": "C:\\Users\\mano.selvaraj\\.nuget\\packages\\",
-        "outputPath": "D:\\Integration\\whole\\LXP.Core\\obj\\",
+        "projectPath": "D:\\ManoMergedCode\\LXP.Core\\LXP.Core.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\ManoMergedCode\\LXP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mano.selvaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -297,15 +294,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Integration\\whole\\LXP.Data\\LXP.Data.csproj": {
-                "projectPath": "D:\\Integration\\whole\\LXP.Data\\LXP.Data.csproj"
+              "D:\\ManoMergedCode\\LXP.Data\\LXP.Data.csproj": {
+                "projectPath": "D:\\ManoMergedCode\\LXP.Data\\LXP.Data.csproj"
               }
             }
           }
@@ -353,20 +349,20 @@
         }
       }
     },
-    "D:\\Integration\\whole\\LXP.Data\\LXP.Data.csproj": {
+    "D:\\ManoMergedCode\\LXP.Data\\LXP.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Integration\\whole\\LXP.Data\\LXP.Data.csproj",
+        "projectUniqueName": "D:\\ManoMergedCode\\LXP.Data\\LXP.Data.csproj",
         "projectName": "LXP.Data",
-        "projectPath": "D:\\Integration\\whole\\LXP.Data\\LXP.Data.csproj",
-        "packagesPath": "C:\\Users\\mano.selvaraj\\.nuget\\packages\\",
-        "outputPath": "D:\\Integration\\whole\\LXP.Data\\obj\\",
+        "projectPath": "D:\\ManoMergedCode\\LXP.Data\\LXP.Data.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\ManoMergedCode\\LXP.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mano.selvaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -375,15 +371,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Integration\\whole\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "D:\\Integration\\whole\\LXP.Common\\LXP.Common.csproj"
+              "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj"
               }
             }
           }

@@ -1,9 +1,4 @@
-﻿
-
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using LXP.Common.Entities;
+﻿using LXP.Common.Entities;
 
 namespace LXP.Data.IRepository
 {
@@ -11,7 +6,7 @@ namespace LXP.Data.IRepository
     {
         Task<List<QuizQuestion>> AddQuestionsAsync(List<QuizQuestion> quizQuestions);
         Task AddOptionsAsync(List<QuestionOption> questionOptions, Guid quizQuestionId);
-       
+
         Task<int> GetNextQuestionNoAsync(Guid quizId);
         // Add other repository methods as needed
     }

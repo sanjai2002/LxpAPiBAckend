@@ -1,11 +1,8 @@
-﻿using LXP.Data.IRepository;
-using LXP.Data.DBContexts;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using System.Runtime.InteropServices;
-using LXP.Common.ViewModels;
+﻿using LXP.Common.DTO;
 using LXP.Common.Entities;
+using LXP.Data.DBContexts;
+using LXP.Data.IRepository;
+using Microsoft.EntityFrameworkCore;
 
 
 namespace LXP.Data.Repository
@@ -28,7 +25,7 @@ namespace LXP.Data.Repository
                 ?? throw new ArgumentNullException(nameof(dbContext), "DB context cannot be null.");
         }
 
-        public Guid AddQuestion(QuizQuestionDto quizQuestionDto, List<QuestionOptionDto> options)
+        public Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
         {
             try
             {
@@ -116,7 +113,7 @@ namespace LXP.Data.Repository
         }
 
 
-        public bool UpdateQuestion(Guid quizQuestionId, QuizQuestionDto quizQuestionDto, List<QuestionOptionDto> options)
+        public bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
         {
             try
             {
@@ -214,14 +211,14 @@ namespace LXP.Data.Repository
         }
 
 
-        public List<QuizQuestionNoDto> GetAllQuestions()
+        public List<QuizQuestionNoViewModel> GetAllQuestions()
         {
             try
             {
                 return _LXPDbContext.QuizQuestions
                     .Select(
                         q =>
-                            new QuizQuestionNoDto
+                            new QuizQuestionNoViewModel
                             {
                                 QuizId = q.QuizId,
                                 QuizQuestionId = q.QuizQuestionId,
@@ -233,7 +230,7 @@ namespace LXP.Data.Repository
                                     .Where(o => o.QuizQuestionId == q.QuizQuestionId)
                                     .Select(
                                         o =>
-                                            new QuestionOptionDto
+                                            new QuestionOptionViewModel
                                             {
                                                 Option = o.Option,
                                                 IsCorrect = o.IsCorrect
@@ -252,7 +249,7 @@ namespace LXP.Data.Repository
                 );
             }
         }
-        public List<QuizQuestionNoDto> GetAllQuestionsByQuizId(Guid quizId)
+        public List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId)
         {
             try
             {
@@ -260,7 +257,7 @@ namespace LXP.Data.Repository
                     .Where(q => q.QuizId == quizId)
                     .Select(
                         q =>
-                            new QuizQuestionNoDto
+                            new QuizQuestionNoViewModel
                             {
                                 QuizId = q.QuizId,
                                 QuizQuestionId = q.QuizQuestionId,
@@ -272,7 +269,7 @@ namespace LXP.Data.Repository
                                     .Where(o => o.QuizQuestionId == q.QuizQuestionId)
                                     .Select(
                                         o =>
-                                            new QuestionOptionDto
+                                            new QuestionOptionViewModel
                                             {
                                                 Option = o.Option,
                                                 IsCorrect = o.IsCorrect
@@ -296,7 +293,7 @@ namespace LXP.Data.Repository
 
 
 
-        public QuizQuestionNoDto GetQuestionById(Guid quizQuestionId)
+        public QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId)
         {
             try
             {
@@ -311,7 +308,7 @@ namespace LXP.Data.Repository
                         q.QuestionNo,
                         Options = _LXPDbContext.QuestionOptions
                             .Where(o => o.QuizQuestionId == q.QuizQuestionId)
-                            .Select(o => new QuestionOptionDto
+                            .Select(o => new QuestionOptionViewModel
                             {
                                 Option = o.Option,
                                 IsCorrect = o.IsCorrect
@@ -325,14 +322,14 @@ namespace LXP.Data.Repository
                     return null;
                 }
 
-                return new QuizQuestionNoDto
+                return new QuizQuestionNoViewModel
                 {
                     QuizId = quizQuestion.QuizId,
                     QuizQuestionId = quizQuestion.QuizQuestionId,
                     Question = quizQuestion.Question,
                     QuestionType = quizQuestion.QuestionType,
                     QuestionNo = quizQuestion.QuestionNo,
-                    Options = quizQuestion.Options ?? new List<QuestionOptionDto>()
+                    Options = quizQuestion.Options ?? new List<QuestionOptionViewModel>()
                 };
             }
             catch (Exception ex)
@@ -390,7 +387,7 @@ namespace LXP.Data.Repository
             }
         }
 
-        public Guid AddQuestionOption(QuestionOptionDto questionOptionDto, Guid quizQuestionId)
+        public Guid AddQuestionOption(QuestionOptionViewModel questionOptionDto, Guid quizQuestionId)
         {
             try
             {
@@ -417,14 +414,14 @@ namespace LXP.Data.Repository
             }
         }
 
-        public List<QuestionOptionDto> GetQuestionOptionsById(Guid quizQuestionId)
+        public List<QuestionOptionViewModel> GetQuestionOptionsById(Guid quizQuestionId)
         {
             try
             {
                 return _LXPDbContext.QuestionOptions
                     .Where(o => o.QuizQuestionId == quizQuestionId)
                     .Select(
-                        o => new QuestionOptionDto { Option = o.Option, IsCorrect = o.IsCorrect }
+                        o => new QuestionOptionViewModel { Option = o.Option, IsCorrect = o.IsCorrect }
                     )
                     .ToList();
             }
@@ -459,7 +456,7 @@ namespace LXP.Data.Repository
 
         public bool ValidateOptionsByQuestionType(
             string questionType,
-            List<QuestionOptionDto> options
+            List<QuestionOptionViewModel> options
         )
         {
             switch (questionType)
@@ -477,7 +474,7 @@ namespace LXP.Data.Repository
                     return false;
             }
         }
-        public bool ValidateOptions(string questionType, List<QuestionOptionDto> options)
+        public bool ValidateOptions(string questionType, List<QuestionOptionViewModel> options)
         {
             if (questionType == QuestionTypes.TrueFalseQuestion)
             {
@@ -490,7 +487,7 @@ namespace LXP.Data.Repository
             }
         }
 
-        private bool ValidateTrueFalseOptions(List<QuestionOptionDto> options)
+        private bool ValidateTrueFalseOptions(List<QuestionOptionViewModel> options)
         {
             // Check if there are exactly two options
             if (options.Count != 2)
@@ -503,7 +500,7 @@ namespace LXP.Data.Repository
             return trueOption && falseOption;
         }
 
-        private bool ValidateUniqueOptions(List<QuestionOptionDto> options)
+        private bool ValidateUniqueOptions(List<QuestionOptionViewModel> options)
         {
             // Check if all options are unique (case-insensitive)
             var distinctOptions = options.Select(o => o.Option.ToLower()).Distinct().Count();

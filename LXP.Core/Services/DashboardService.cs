@@ -1,7 +1,6 @@
 ﻿using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
-using LXP.Data.Repository;
 
 namespace LXP.Core.Services
 {

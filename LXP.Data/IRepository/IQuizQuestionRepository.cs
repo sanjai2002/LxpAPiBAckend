@@ -1,22 +1,22 @@
-﻿using LXP.Common.ViewModels;
-using System;
-using System.Collections.Generic;
+﻿
+using LXP.Common.DTO;
+
 namespace LXP.Data.IRepository
 {
     public interface IQuizQuestionRepository
     {
-        Guid AddQuestion(QuizQuestionDto quizQuestionDto, List<QuestionOptionDto> options);
-        bool UpdateQuestion(Guid quizQuestionId, QuizQuestionDto quizQuestionDto, List<QuestionOptionDto> options);
+        Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
+        bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
         bool DeleteQuestion(Guid quizQuestionId);
-        List<QuizQuestionNoDto> GetAllQuestions();
+        List<QuizQuestionNoViewModel> GetAllQuestions();
         void DecrementQuestionNos(Guid deletedQuestionId);
         int GetNextQuestionNo(Guid quizId);
-        Guid AddQuestionOption(QuestionOptionDto questionOptionDto, Guid quizQuestionId);
-        List<QuestionOptionDto> GetQuestionOptionsById(Guid quizQuestionId);
-        QuizQuestionNoDto GetQuestionById(Guid quizQuestionId);
-        bool ValidateOptionsByQuestionType(string questionType, List<QuestionOptionDto> options);
+        Guid AddQuestionOption(QuestionOptionViewModel questionOptionDto, Guid quizQuestionId);
+        List<QuestionOptionViewModel> GetQuestionOptionsById(Guid quizQuestionId);
+        QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId);
+        bool ValidateOptionsByQuestionType(string questionType, List<QuestionOptionViewModel> options);
         Task<int> GetNextQuestionNoAsync(Guid quizId);
-        List<QuizQuestionNoDto> GetAllQuestionsByQuizId(Guid quizId);
+        List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId);
     }
 }
 ////using System;

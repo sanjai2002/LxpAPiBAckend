@@ -1,12 +1,7 @@
-﻿using LXP.Data.IRepository;
-using LXP.Data.DBContexts;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using LXP.Common.ViewModels;
+﻿using LXP.Common.DTO;
 using LXP.Common.Entities;
+using LXP.Data.DBContexts;
+using LXP.Data.IRepository;
 
 namespace LXP.Data.Repository
 {
@@ -19,13 +14,19 @@ namespace LXP.Data.Repository
             _LXPDbContext = dbContext;
         }
 
-        public void CreateQuiz(QuizDto quiz, Guid TopicId)
+
+        public void CreateQuiz(QuizViewModel quiz, Guid topicId)
         {
-            var topic = _LXPDbContext.Topics.FirstOrDefault(t => t.TopicId == TopicId);
+            var topic = _LXPDbContext.Topics.FirstOrDefault(t => t.TopicId == topicId);
             if (topic == null)
-                throw new Exception($"Topic with id {TopicId} not found.");
+                throw new Exception($"Topic with id {topicId} not found.");
 
             var courseId = topic.CourseId;
+
+            // Check if a quiz already exists for the given topic
+            var existingQuiz = _LXPDbContext.Quizzes.FirstOrDefault(q => q.TopicId == topicId);
+            if (existingQuiz != null)
+                throw new Exception($"A quiz already exists for the topic with id {topicId}.");
 
             if (string.IsNullOrWhiteSpace(quiz.NameOfQuiz))
                 throw new Exception("NameOfQuiz cannot be null or empty.");
@@ -40,7 +41,7 @@ namespace LXP.Data.Repository
             {
                 QuizId = quiz.QuizId,
                 CourseId = courseId,
-                TopicId = TopicId,
+                TopicId = topicId,
                 NameOfQuiz = quiz.NameOfQuiz,
                 Duration = quiz.Duration,
                 PassMark = quiz.PassMark,
@@ -52,27 +53,14 @@ namespace LXP.Data.Repository
             _LXPDbContext.Quizzes.Add(quizEntity);
             _LXPDbContext.SaveChanges();
         }
-        //public IEnumerable<QuizDto> GetQuizzesByTopicId(Guid topicId)
-        //{
-        //    return _LXPDbContext.Quizzes
-        //        .Where(q => q.TopicId == topicId)
-        //        .Select(q => new QuizDto
-        //        {
-        //            QuizId = q.QuizId,
-        //            //NameOfQuiz = q.NameOfQuiz,
-        //            //Duration = q.Duration,
-        //            //PassMark = q.PassMark,
-        //            //AttemptsAllowed = q.AttemptsAllowed
-        //        })
-        //        .ToList();
-        //}
+
         public Guid? GetQuizIdByTopicId(Guid topicId)
         {
             var quizId = _LXPDbContext?.Quizzes.Where(q => q.TopicId == topicId).Select(q => q.QuizId).FirstOrDefault();
             return quizId != Guid.Empty ? quizId : (Guid?)null;
         }
 
-        public void UpdateQuiz(QuizDto quiz)
+        public void UpdateQuiz(QuizViewModel quiz)
         {
             if (string.IsNullOrWhiteSpace(quiz.NameOfQuiz))
                 throw new Exception("NameOfQuiz cannot be null or empty.");
@@ -105,10 +93,10 @@ namespace LXP.Data.Repository
             }
         }
 
-        public IEnumerable<QuizDto> GetAllQuizzes()
+        public IEnumerable<QuizViewModel> GetAllQuizzes()
         {
             return _LXPDbContext.Quizzes
-                .Select(q => new QuizDto
+                .Select(q => new QuizViewModel
                 {
                     QuizId = q.QuizId,
                     NameOfQuiz = q.NameOfQuiz,
@@ -119,11 +107,11 @@ namespace LXP.Data.Repository
                 .ToList();
         }
 
-        public QuizDto GetQuizById(Guid quizId)
+        public QuizViewModel GetQuizById(Guid quizId)
         {
             var quiz = _LXPDbContext.Quizzes
                 .Where(q => q.QuizId == quizId)
-                .Select(q => new QuizDto
+                .Select(q => new QuizViewModel
                 {
                     QuizId = q.QuizId,
                     NameOfQuiz = q.NameOfQuiz,
@@ -140,13 +128,64 @@ namespace LXP.Data.Repository
 
             return quiz;
         }
-
-        public async Task<Quiz> GetQuizByNameAsync(string name)
-        {
-            return await _LXPDbContext.Quizzes.FirstOrDefaultAsync(q => q.NameOfQuiz == name);
-        }
     }
 }
+
+
+//public void CreateQuiz(QuizDto quiz, Guid TopicId)
+//{
+//    var topic = _LXPDbContext.Topics.FirstOrDefault(t => t.TopicId == TopicId);
+//    if (topic == null)
+//        throw new Exception($"Topic with id {TopicId} not found.");
+
+//    var courseId = topic.CourseId;
+
+//    if (string.IsNullOrWhiteSpace(quiz.NameOfQuiz))
+//        throw new Exception("NameOfQuiz cannot be null or empty.");
+//    if (quiz.Duration <= 0)
+//        throw new Exception("Duration must be a positive integer.");
+//    if (quiz.PassMark <= 0)
+//        throw new Exception("PassMark must be a positive integer.");
+//    if (quiz.AttemptsAllowed.HasValue && quiz.AttemptsAllowed <= 0)
+//        throw new Exception("AttemptsAllowed must be null or a positive integer.");
+
+//    var quizEntity = new Quiz
+//    {
+//        QuizId = quiz.QuizId,
+//        CourseId = courseId,
+//        TopicId = TopicId,
+//        NameOfQuiz = quiz.NameOfQuiz,
+//        Duration = quiz.Duration,
+//        PassMark = quiz.PassMark,
+//        AttemptsAllowed = quiz.AttemptsAllowed,
+//        CreatedBy = quiz.CreatedBy,
+//        CreatedAt = quiz.CreatedAt
+//    };
+
+//    _LXPDbContext.Quizzes.Add(quizEntity);
+//    _LXPDbContext.SaveChanges();
+//}
+
+
+
+
+
+
+
+//public IEnumerable<QuizDto> GetQuizzesByTopicId(Guid topicId)
+//{
+//    return _LXPDbContext.Quizzes
+//        .Where(q => q.TopicId == topicId)
+//        .Select(q => new QuizDto
+//        {
+//            QuizId = q.QuizId,
+//            //NameOfQuiz = q.NameOfQuiz,
+//            //Duration = q.Duration,
+//            //PassMark = q.PassMark,
+//            //AttemptsAllowed = q.AttemptsAllowed
+//        })
+//        .ToList();
+//}
 
 //using LXP.Common.DTO;
 //using LXP.Data.DBContexts;

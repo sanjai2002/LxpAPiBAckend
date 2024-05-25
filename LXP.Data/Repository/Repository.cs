@@ -1,28 +1,20 @@
-﻿using System;
-using System.Collections;
-using System.Globalization;
-using System.Threading.Tasks;
-using LXP.Common;
-using LXP.Common.ViewModels;
-using LXP.Data.IRepository;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using LXP.Common.Entities;
 using LXP.Data.DBContexts;
-using LXP.Common.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace LXP.Data.Repository
 {
-    public class Repository:IRepository.IRepository
+    public class Repository : IRepository.IRepository
     {
 
         private readonly LXPDbContext _dbcontext;
 
 
-        public Repository (LXPDbContext dbcontext)
+        public Repository(LXPDbContext dbcontext)
         {
             _dbcontext = dbcontext;
         }
-        
+
 
         public async Task CheckLearner(Learner learner)
         {
@@ -31,7 +23,7 @@ namespace LXP.Data.Repository
 
             await db.Learners.AddAsync(learner);
 
-            await  db.SaveChangesAsync();
+            await db.SaveChangesAsync();
 
         }
 
@@ -39,9 +31,9 @@ namespace LXP.Data.Repository
         {
             return _dbcontext.Learners.Any(learner => learner.Email == loginmodel);
         }
-        public async Task<bool> AnyLearnerByEmailAndPassword(string Email,string Password)
+        public async Task<bool> AnyLearnerByEmailAndPassword(string Email, string Password)
         {
-            return await _dbcontext.Learners.AnyAsync(learner => learner.Email == Email && learner.Password==Password);
+            return await _dbcontext.Learners.AnyAsync(learner => learner.Email == Email && learner.Password == Password);
         }
         public async Task<Learner> GetLearnerByEmail(string Email)
         {
@@ -51,8 +43,8 @@ namespace LXP.Data.Repository
 
         public async Task UpdateLearnerPassword(string Email, string Password)
         {
-            Learner learner=await GetLearnerByEmail(Email);
-            learner.Password=Password;
+            Learner learner = await GetLearnerByEmail(Email);
+            learner.Password = Password;
             _dbcontext.Learners.Update(learner);
             await _dbcontext.SaveChangesAsync();
         }

@@ -1,15 +1,13 @@
-﻿using LXP.Common.ViewModels;
-using System;
-using System.Collections.Generic;
+﻿using LXP.Common.DTO;
 
 namespace LXP.Core.IServices
 {
     public interface IQuizService
     {
-        QuizDto GetQuizById(Guid quizId);
-        IEnumerable<QuizDto> GetAllQuizzes();
-        void CreateQuiz(QuizDto quiz, Guid TopicId);
-        void UpdateQuiz(QuizDto quiz);
+        QuizViewModel GetQuizById(Guid quizId);
+        IEnumerable<QuizViewModel> GetAllQuizzes();
+        void CreateQuiz(QuizViewModel quiz, Guid TopicId);
+        void UpdateQuiz(QuizViewModel quiz);
         void DeleteQuiz(Guid quizId);
         Guid? GetQuizIdByTopicId(Guid topicId);
 

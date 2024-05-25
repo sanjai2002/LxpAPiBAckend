@@ -1,14 +1,9 @@
 ﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LXP.Common.ViewModels
 {
-    public  class CourseUpdateModel
+    public class CourseUpdateModel
     {
         ///<Summary>
         ///CourseId
@@ -52,7 +47,7 @@ namespace LXP.Common.ViewModels
         ///Course Thumbnail
         ///</Summary>
         ///<example>Image with filesize less than 250kb and file extension jpeg or png</example>
-        
+
         [NotMapped]
         public IFormFile Thumbnailimage { get; set; }
         ///<Summary>

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LXP.Common.ViewModels
+﻿namespace LXP.Common.ViewModels
 {
     public class CourseListViewModel
     {
@@ -20,21 +14,21 @@ namespace LXP.Common.ViewModels
 
         public decimal Duration { get; set; }
 
-        public string Thumbnail { get; set; } 
+        public string Thumbnail { get; set; }
 
         public bool IsActive { get; set; }
 
         public bool IsAvailable { get; set; }
 
-        public string CreatedBy { get; set; } 
+        public string CreatedBy { get; set; }
 
         public DateTime CreatedAt { get; set; }
 
-        public string? ModifiedBy { get; set; } 
+        public string? ModifiedBy { get; set; }
 
         public DateTime? ModifiedAt { get; set; }
 
-        
+
 
     }
 }

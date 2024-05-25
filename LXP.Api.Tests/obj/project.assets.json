@@ -8010,23 +8010,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mano.selvaraj\\.nuget\\packages\\": {},
+    "C:\\Users\\laevi.antony\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Integration\\whole\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+      "projectUniqueName": "D:\\ManoMergedCode\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
       "projectName": "LXP.Api.Tests",
-      "projectPath": "D:\\Integration\\whole\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
-      "packagesPath": "C:\\Users\\mano.selvaraj\\.nuget\\packages\\",
-      "outputPath": "D:\\Integration\\whole\\LXP.Api.Tests\\obj\\",
+      "projectPath": "D:\\ManoMergedCode\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+      "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+      "outputPath": "D:\\ManoMergedCode\\LXP.Api.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mano.selvaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8035,15 +8035,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Integration\\whole\\LXP.Api\\LXP.Api.csproj": {
-              "projectPath": "D:\\Integration\\whole\\LXP.Api\\LXP.Api.csproj"
+            "D:\\ManoMergedCode\\LXP.Api\\LXP.Api.csproj": {
+              "projectPath": "D:\\ManoMergedCode\\LXP.Api\\LXP.Api.csproj"
             }
           }
         }

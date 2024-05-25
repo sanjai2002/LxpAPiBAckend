@@ -1,250 +1,629 @@
-﻿using LXP.Common.ViewModels;
+﻿using LXP.Common.DTO;
 using LXP.Core.IServices;
 using Microsoft.AspNetCore.Mvc;
-
-
-
-
 using System;
-
 using System.Collections.Generic;
-
 using System.Linq;
 
 namespace LXP.Api.Controllers
-
 {
-
+    /// <summary>
+    /// Manages quizzes within the application.
+    /// </summary>
     [Route("api/[controller]")]
-
     [ApiController]
-
-    public class QuizController : ControllerBase
-
+    public class QuizController : BaseController // Inherit from BaseController
     {
-
         private readonly IQuizService _quizService;
-
         private readonly IQuizFeedbackService _quizFeedbackService;
 
         public QuizController(IQuizService quizService, IQuizFeedbackService quizFeedbackService)
-
         {
-
             _quizService = quizService;
-
             _quizFeedbackService = quizFeedbackService;
-
         }
 
+        /// <summary>
+        /// Retrieves a specific quiz by its ID.
+        /// </summary>
+        /// <param name="id">The unique identifier of the quiz to retrieve.</param>
+        /// <response code="200">Success on finding the quiz. The response body contains a basic representation of the quiz data.</response>
+        /// <response code="404">Not found if no quiz exists with the provided ID.</response>
+
         [HttpGet("{id}")]
-
-        public ActionResult<QuizDto> GetQuizById(Guid id)
-
+        public IActionResult GetQuizById(Guid id)
         {
-
             var quiz = _quizService.GetQuizById(id);
 
             if (quiz == null)
-
-                throw new Exception($"Quiz with id {id} not found.");
+                return NotFound(CreateFailureResponse($"Quiz with id {id} not found.", 404));
 
             var quizResponse = new
-
             {
-
                 quiz.QuizId,
-
                 quiz.NameOfQuiz,
-
                 quiz.Duration,
-
                 quiz.PassMark,
-
-                quiz.AttemptsAllowed // Include AttemptsAllowed in the response
-
+                quiz.AttemptsAllowed
             };
 
-            return Ok(quizResponse);
-
+            return Ok(CreateSuccessResponse(quizResponse));
         }
 
+        /// <summary>
+        /// Retrieves a list of all available quizzes.
+        /// </summary>
+        /// <response code="200">Success. The response body contains a collection of basic quiz representations.</response>
+
         [HttpGet]
-
-        public ActionResult<IEnumerable<QuizDto>> GetAllQuizzes()
-
+        public IActionResult GetAllQuizzes()
         {
-
             var quizzes = _quizService.GetAllQuizzes();
 
             var quizResponse = quizzes.Select(quiz => new
-
             {
-
                 quiz.QuizId,
-
                 quiz.NameOfQuiz,
-
                 quiz.Duration,
-
                 quiz.PassMark,
-
-                quiz.AttemptsAllowed // Include AttemptsAllowed in the response
-
+                quiz.AttemptsAllowed
             });
 
-            return Ok(quizResponse);
-
+            return Ok(CreateSuccessResponse(quizResponse));
         }
 
+        /// <summary>
+        /// Creates a new quiz.
+        /// </summary>
+        /// <param name="request">Data representing the new quiz to be created, provided in the request body.</param>
+        /// <response code="201">Created on successful quiz creation. The response body includes a location header pointing to the newly created quiz and a basic representation of the quiz data.</response>
+        /// <response code="400">Bad request due to invalid input (e.g., missing or invalid name, negative duration, etc.).</response>
+
         [HttpPost]
-
         [ProducesResponseType(StatusCodes.Status201Created)]
-
-        public ActionResult CreateQuiz([FromBody] CreateQuizDto request)
-
+        public IActionResult CreateQuiz([FromBody] CreateQuizViewModel request)
         {
+            var quizId = Guid.NewGuid();
+            var createdBy = "System";
+            var createdAt = DateTime.UtcNow;
 
-            var quizId = Guid.NewGuid(); // Generate QuizId
-
-            var createdBy = "System"; // Set createdBy
-
-            var createdAt = DateTime.UtcNow; // Set createdAt
-
-            var quiz = new QuizDto
-
+            var quiz = new QuizViewModel
             {
-
                 QuizId = quizId,
-
                 NameOfQuiz = request.NameOfQuiz,
-
                 Duration = request.Duration,
-
                 PassMark = request.PassMark,
-
                 AttemptsAllowed = request.AttemptsAllowed,
-
                 CreatedBy = createdBy,
-
                 CreatedAt = createdAt
-
             };
 
             _quizService.CreateQuiz(quiz, request.TopicId);
 
-            return CreatedAtAction(nameof(GetQuizById), new { id = quizId }, new
-
+            var response = new
             {
-
                 quiz.NameOfQuiz,
-
                 quiz.Duration,
-
                 quiz.PassMark,
-
                 quiz.AttemptsAllowed
+            };
 
-            });
-
+            return CreatedAtAction(nameof(GetQuizById), new { id = quizId }, CreateSuccessResponse(response));
         }
 
+        /// <summary>
+        /// Updates an existing quiz.
+        /// </summary>
+        /// <param name="id">The unique identifier of the quiz to update.</param>
+        /// <param name="request">Data representing the updated quiz properties, provided in the request body.</param>
+        /// <response code="204">No content on successful update.</response>
+        /// <response code="400">Bad request due to invalid input (e.g., missing or empty name, negative duration, etc.).</response>
+        /// <response code="404">Not found if no quiz exists with the provided ID.</response>
+
         [HttpPut("{id}")]
-
-        public ActionResult UpdateQuiz(Guid id, [FromBody] UpdateQuizDto request)
-
+        public IActionResult UpdateQuiz(Guid id, [FromBody] UpdateQuizViewModel request)
         {
-
             var existingQuiz = _quizService.GetQuizById(id);
 
             if (existingQuiz == null)
-
-                throw new Exception($"Quiz with id {id} not found.");
+                return NotFound(CreateFailureResponse($"Quiz with id {id} not found.", 404));
 
             if (request.AttemptsAllowed.HasValue && request.AttemptsAllowed <= 0)
-
-                throw new Exception("AttemptsAllowed must be null or a positive integer.");
+                return BadRequest(CreateFailureResponse("AttemptsAllowed must be null or a positive integer.", 400));
 
             if (string.IsNullOrWhiteSpace(request.NameOfQuiz))
-
-                throw new Exception("NameOfQuiz cannot be null or empty.");
+                return BadRequest(CreateFailureResponse("NameOfQuiz cannot be null or empty.", 400));
 
             if (request.Duration <= 0)
-
-                throw new Exception("Duration must be a positive integer.");
+                return BadRequest(CreateFailureResponse("Duration must be a positive integer.", 400));
 
             if (request.PassMark <= 0)
-
-                throw new Exception("PassMark must be a positive integer.");
+                return BadRequest(CreateFailureResponse("PassMark must be a positive integer.", 400));
 
             existingQuiz.NameOfQuiz = request.NameOfQuiz;
-
             existingQuiz.Duration = request.Duration;
-
             existingQuiz.PassMark = request.PassMark;
-
             existingQuiz.AttemptsAllowed = request.AttemptsAllowed;
 
             _quizService.UpdateQuiz(existingQuiz);
 
             return NoContent();
-
         }
+
+
+        /// <summary>
+        /// Retrieves the ID of a quiz associated with a specific topic.
+        /// </summary>
+        /// <param name="topicId">The unique identifier of the topic.</param>
+        /// <response code="200">Success on finding a quiz associated with the topic. The response body contains the quiz ID.</response>
+        /// <response code="204">No content if no quiz is associated with the topic.</response>
 
         [HttpGet("topic/{topicId}")]
-
-        public ActionResult<Guid?> GetQuizIdByTopicId(Guid topicId)
-
+        public IActionResult GetQuizIdByTopicId(Guid topicId)
         {
-
             var quizId = _quizService.GetQuizIdByTopicId(topicId);
 
-            if (quizId == null)
-
-            {
-
-                return Ok(null);
-
-            }
-
-            else
-
-            {
-
-                return Ok(quizId);
-
-            }
-
+            return Ok(CreateSuccessResponse(quizId));
         }
 
 
+        /// <summary>
+        /// Deletes a quiz by its ID.
+        /// </summary>
+        /// <param name="id">The unique identifier of the quiz to delete.</param>
+        /// <response code="204">No content on successful deletion.</response>
+        /// <response code="404">Not found if no quiz exists with the provided ID.</response>
+
         [HttpDelete("{id}")]
-
-        public ActionResult DeleteQuiz(Guid id)
-
+        public IActionResult DeleteQuiz(Guid id)
         {
-
             var existingQuiz = _quizService.GetQuizById(id);
 
             if (existingQuiz == null)
-
-                throw new Exception($"Quiz with id {id} not found.");
-
-            // Delete related feedback questions first
+                return NotFound(CreateFailureResponse($"Quiz with id {id} not found.", 404));
 
             _quizFeedbackService.DeleteFeedbackQuestionsByQuizId(id);
-
-            // Then delete the main quiz record
-
             _quizService.DeleteQuiz(id);
 
             return NoContent();
-
         }
-
     }
-
 }
+//using LXP.Common.DTO;
+//using LXP.Core.IServices;
+//using Microsoft.AspNetCore.Mvc;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+
+//namespace LXP.Api.Controllers
+//{
+//    /// <summary>
+//    /// Manages quizzes within the application.
+//    /// </summary>
+//    [Route("api/[controller]")]
+//    [ApiController]
+//    public class QuizController : BaseController // Inherit from BaseController
+//    {
+//        private readonly IQuizService _quizService;
+//        private readonly IQuizFeedbackService _quizFeedbackService;
+
+//        /// <summary>
+//        /// Initializes a new instance of the <see cref="QuizController"/> class.
+//        /// </summary>
+//        public QuizController(IQuizService quizService, IQuizFeedbackService quizFeedbackService)
+//        {
+//            _quizService = quizService;
+//            _quizFeedbackService = quizFeedbackService;
+//        }
+
+//        /// <summary>
+//        /// Retrieves a specific quiz by its ID.
+//        /// </summary>
+//        /// <param name="id">The unique identifier of the quiz to retrieve.</param>
+//        /// <response code="200">Success on finding the quiz. The response body contains a basic representation of the quiz data.</response>
+//        /// <response code="404">Not found if no quiz exists with the provided ID.</response>
+
+//        [HttpGet("{id}")]
+//        public IActionResult GetQuizById(Guid id)
+//        {
+//            var quiz = _quizService.GetQuizById(id);
+
+//            if (quiz == null)
+//                return NotFound(CreateFailureResponse($"Quiz with id {id} not found.", 404));
+
+//            var quizResponse = new
+//            {
+//                quiz.QuizId,
+//                quiz.NameOfQuiz,
+//                quiz.Duration,
+//                quiz.PassMark,
+//                quiz.AttemptsAllowed
+//            };
+
+//            return Ok(CreateSuccessResponse(quizResponse));
+//        }
+
+//        /// <summary>
+//        /// Retrieves a list of all available quizzes.
+//        /// </summary>
+//        /// <response code="200">Success. The response body contains a collection of basic quiz representations.</response>
+
+//        [HttpGet]
+//        public IActionResult GetAllQuizzes()
+//        {
+//            var quizzes = _quizService.GetAllQuizzes();
+
+//            var quizResponse = quizzes.Select(quiz => new
+//            {
+//                quiz.QuizId,
+//                quiz.NameOfQuiz,
+//                quiz.Duration,
+//                quiz.PassMark,
+//                quiz.AttemptsAllowed
+//            });
+
+//            return Ok(CreateSuccessResponse(quizResponse));
+//        }
+
+//        /// <summary>
+//        /// Creates a new quiz.
+//        /// </summary>
+//        /// <param name="request">Data representing the new quiz to be created, provided in the request body.</param>
+//        /// <response code="201">Created on successful quiz creation. The response body includes a location header pointing to the newly created quiz and a basic representation of the quiz data.</response>
+//        /// <response code="400">Bad request due to invalid input (e.g., missing or invalid name, negative duration, etc.).</response>
+
+//        [HttpPost]
+//        [ProducesResponseType(StatusCodes.Status201Created)]
+//        public IActionResult CreateQuiz([FromBody] CreateQuizViewModel request)
+//        {
+//            var validationResult = ValidateModel(request);
+//            if (validationResult != null) return validationResult;
+
+//            var quizId = Guid.NewGuid();
+//            var createdBy = "System";
+//            var createdAt = DateTime.UtcNow;
+
+//            var quiz = new QuizViewModel
+//            {
+//                QuizId = quizId,
+//                NameOfQuiz = request.NameOfQuiz,
+//                Duration = request.Duration,
+//                PassMark = request.PassMark,
+//                AttemptsAllowed = request.AttemptsAllowed,
+//                CreatedBy = createdBy,
+//                CreatedAt = createdAt
+//            };
+
+//            _quizService.CreateQuiz(quiz, request.TopicId);
+
+//            var response = new
+//            {
+//                quiz.NameOfQuiz,
+//                quiz.Duration,
+//                quiz.PassMark,
+//                quiz.AttemptsAllowed
+//            };
+
+//            return CreatedAtAction(nameof(GetQuizById), new { id = quizId }, CreateSuccessResponse(response));
+//        }
+
+//        /// <summary>
+//        /// Updates an existing quiz.
+//        /// </summary>
+//        /// <param name="id">The unique identifier of the quiz to update.</param>
+//        /// <param name="request">Data representing the updated quiz properties, provided in the request body.</param>
+//        /// <response code="204">No content on successful update.</response>
+//        /// <response code="400">Bad request due to invalid input (e.g., missing or empty name, negative duration, etc.).</response>
+//        /// <response code="404">Not found if no quiz exists with the provided ID.</response>
+
+//        [HttpPut("{id}")]
+//        public IActionResult UpdateQuiz(Guid id, [FromBody] UpdateQuizViewModel request)
+//        {
+//            var existingQuiz = _quizService.GetQuizById(id);
+
+//            if (existingQuiz == null)
+//                return NotFound(CreateFailureResponse($"Quiz with id {id} not found.", 404));
+
+//            if (request.AttemptsAllowed.HasValue && request.AttemptsAllowed <= 0)
+//                return BadRequest(CreateFailureResponse("AttemptsAllowed must be null or a positive integer.", 400));
+
+//            if (string.IsNullOrWhiteSpace(request.NameOfQuiz))
+//                return BadRequest(CreateFailureResponse("NameOfQuiz cannot be null or empty.", 400));
+
+//            if (request.Duration <= 0)
+//                return BadRequest(CreateFailureResponse("Duration must be a positive integer.", 400));
+
+//            if (request.PassMark <= 0)
+//                return BadRequest(CreateFailureResponse("PassMark must be a positive integer.", 400));
+
+//            existingQuiz.NameOfQuiz = request.NameOfQuiz;
+//            existingQuiz.Duration = request.Duration;
+//            existingQuiz.PassMark = request.PassMark;
+//            existingQuiz.AttemptsAllowed = request.AttemptsAllowed;
+
+//            _quizService.UpdateQuiz(existingQuiz);
+
+//            return NoContent();
+//        }
+
+
+//        /// <summary>
+//        /// Retrieves the ID of a quiz associated with a specific topic.
+//        /// </summary>
+//        /// <param name="topicId">The unique identifier of the topic.</param>
+//        /// <response code="200">Success on finding a quiz associated with the topic. The response body contains the quiz ID.</response>
+//        /// <response code="204">No content if no quiz is associated with the topic.</response>
+
+//        [HttpGet("topic/{topicId}")]
+//        public IActionResult GetQuizIdByTopicId(Guid topicId)
+//        {
+//            var quizId = _quizService.GetQuizIdByTopicId(topicId);
+
+//            return Ok(CreateSuccessResponse(quizId));
+//        }
+
+
+//        /// <summary>
+//        /// Deletes a quiz by its ID.
+//        /// </summary>
+//        /// <param name="id">The unique identifier of the quiz to delete.</param>
+//        /// <response code="204">No content on successful deletion.</response>
+//        /// <response code="404">Not found if no quiz exists with the provided ID.</response>
+
+//        [HttpDelete("{id}")]
+//        public IActionResult DeleteQuiz(Guid id)
+//        {
+//            var existingQuiz = _quizService.GetQuizById(id);
+
+//            if (existingQuiz == null)
+//                return NotFound(CreateFailureResponse($"Quiz with id {id} not found.", 404));
+
+//            _quizFeedbackService.DeleteFeedbackQuestionsByQuizId(id);
+//            _quizService.DeleteQuiz(id);
+
+//            return NoContent();
+//        }
+//    }
+//}
+
+//using LXP.Common.DTO;
+//using LXP.Core.IServices;
+//using Microsoft.AspNetCore.Mvc;
+//namespace LXP.Api.Controllers
+
+//{
+
+//    [Route("api/[controller]")]
+
+//    [ApiController]
+
+//    public class QuizController : ControllerBase
+
+//    {
+
+//        private readonly IQuizService _quizService;
+
+//        private readonly IQuizFeedbackService _quizFeedbackService;
+
+//        public QuizController(IQuizService quizService, IQuizFeedbackService quizFeedbackService)
+
+//        {
+
+//            _quizService = quizService;
+
+//            _quizFeedbackService = quizFeedbackService;
+
+//        }
+
+//        [HttpGet("{id}")]
+
+//        public ActionResult<QuizDto> GetQuizById(Guid id)
+
+//        {
+
+//            var quiz = _quizService.GetQuizById(id);
+
+//            if (quiz == null)
+
+//                throw new Exception($"Quiz with id {id} not found.");
+
+//            var quizResponse = new
+
+//            {
+
+//                quiz.QuizId,
+
+//                quiz.NameOfQuiz,
+
+//                quiz.Duration,
+
+//                quiz.PassMark,
+
+//                quiz.AttemptsAllowed // Include AttemptsAllowed in the response
+
+//            };
+
+//            return Ok(quizResponse);
+
+//        }
+
+//        [HttpGet]
+
+//        public ActionResult<IEnumerable<QuizDto>> GetAllQuizzes()
+
+//        {
+
+//            var quizzes = _quizService.GetAllQuizzes();
+
+//            var quizResponse = quizzes.Select(quiz => new
+
+//            {
+
+//                quiz.QuizId,
+
+//                quiz.NameOfQuiz,
+
+//                quiz.Duration,
+
+//                quiz.PassMark,
+
+//                quiz.AttemptsAllowed // Include AttemptsAllowed in the response
+
+//            });
+
+//            return Ok(quizResponse);
+
+//        }
+
+//        [HttpPost]
+
+//        [ProducesResponseType(StatusCodes.Status201Created)]
+
+//        public ActionResult CreateQuiz([FromBody] CreateQuizDto request)
+
+//        {
+
+//            var quizId = Guid.NewGuid(); // Generate QuizId
+
+//            var createdBy = "System"; // Set createdBy
+
+//            var createdAt = DateTime.UtcNow; // Set createdAt
+
+//            var quiz = new QuizDto
+
+//            {
+
+//                QuizId = quizId,
+
+//                NameOfQuiz = request.NameOfQuiz,
+
+//                Duration = request.Duration,
+
+//                PassMark = request.PassMark,
+
+//                AttemptsAllowed = request.AttemptsAllowed,
+
+//                CreatedBy = createdBy,
+
+//                CreatedAt = createdAt
+
+//            };
+
+//            _quizService.CreateQuiz(quiz, request.TopicId);
+
+//            return CreatedAtAction(nameof(GetQuizById), new { id = quizId }, new
+
+//            {
+
+//                quiz.NameOfQuiz,
+
+//                quiz.Duration,
+
+//                quiz.PassMark,
+
+//                quiz.AttemptsAllowed
+
+//            });
+
+//        }
+
+//        [HttpPut("{id}")]
+
+//        public ActionResult UpdateQuiz(Guid id, [FromBody] UpdateQuizDto request)
+
+//        {
+
+//            var existingQuiz = _quizService.GetQuizById(id);
+
+//            if (existingQuiz == null)
+
+//                throw new Exception($"Quiz with id {id} not found.");
+
+//            if (request.AttemptsAllowed.HasValue && request.AttemptsAllowed <= 0)
+
+//                throw new Exception("AttemptsAllowed must be null or a positive integer.");
+
+//            if (string.IsNullOrWhiteSpace(request.NameOfQuiz))
+
+//                throw new Exception("NameOfQuiz cannot be null or empty.");
+
+//            if (request.Duration <= 0)
+
+//                throw new Exception("Duration must be a positive integer.");
+
+//            if (request.PassMark <= 0)
+
+//                throw new Exception("PassMark must be a positive integer.");
+
+//            existingQuiz.NameOfQuiz = request.NameOfQuiz;
+
+//            existingQuiz.Duration = request.Duration;
+
+//            existingQuiz.PassMark = request.PassMark;
+
+//            existingQuiz.AttemptsAllowed = request.AttemptsAllowed;
+
+//            _quizService.UpdateQuiz(existingQuiz);
+
+//            return NoContent();
+
+//        }
+
+//        [HttpGet("topic/{topicId}")]
+
+//        public ActionResult<Guid?> GetQuizIdByTopicId(Guid topicId)
+
+//        {
+
+//            var quizId = _quizService.GetQuizIdByTopicId(topicId);
+
+//            if (quizId == null)
+
+//            {
+
+//                return Ok(null);
+
+//            }
+
+//            else
+
+//            {
+
+//                return Ok(quizId);
+
+//            }
+
+//        }
+
+
+//        [HttpDelete("{id}")]
+
+//        public ActionResult DeleteQuiz(Guid id)
+
+//        {
+
+//            var existingQuiz = _quizService.GetQuizById(id);
+
+//            if (existingQuiz == null)
+
+//                throw new Exception($"Quiz with id {id} not found.");
+
+//            // Delete related feedback questions first
+
+//            _quizFeedbackService.DeleteFeedbackQuestionsByQuizId(id);
+
+//            // Then delete the main quiz record
+
+//            _quizService.DeleteQuiz(id);
+
+//            return NoContent();
+
+//        }
+
+//    }
+
+//}
 
 //using Microsoft.AspNetCore.Http;
 //using Microsoft.AspNetCore.Mvc;

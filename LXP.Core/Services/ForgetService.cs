@@ -1,16 +1,10 @@
-﻿using AutoMapper;
-using LXP.Common.Utils;
+﻿using LXP.Common.Utils;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LXP.Core.Services
 {
-    public class ForgetService:IForgetService
+    public class ForgetService : IForgetService
 
 
     {
@@ -28,7 +22,7 @@ namespace LXP.Core.Services
         {
             var getleareremail = _repository.AnyUserByEmail(Email);
 
-            if (getleareremail!=null)
+            if (getleareremail != null)
             {
 
                 string password = RandomPassword.Randompasswordgenerator();

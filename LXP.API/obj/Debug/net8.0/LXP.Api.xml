@@ -4,6 +4,66 @@
         <name>LXP.Api</name>
     </assembly>
     <members>
+        <member name="T:LXP.Api.Controllers.BaseController">
+            <summary>
+            Base controller providing common functionalities and responses for API controllers.
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.BaseController.CreateSuccessResponse(System.Object)">
+            <summary>
+            Creates a success response with optional data.
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.BaseController.CreateFailureResponse(System.String,System.Int32)">
+            <summary>
+            Creates a failure response with specified message and status code.
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.BaseController.CreateInsertResponse(System.Object)">
+            <summary>
+            Creates a response for successful data insertion with optional data.
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.BaseController.CreateNoContentResponse(System.Object)">
+            <summary>
+            Creates a response for successful request with no content and optional data.
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.BaseController.ValidateModel(System.Object)">
+            <summary>
+            Validates the given model and returns appropriate response if validation fails.
+            </summary>
+        </member>
+        <member name="T:LXP.Api.Controllers.BulkQuestionController">
+            <summary>
+            Manages bulk question import operations.
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.BulkQuestionController.#ctor(LXP.Core.IServices.IBulkQuestionService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LXP.Api.Controllers.BulkQuestionController"/> class.
+            </summary>
+            <param name="excelService">The bulk question service.</param>
+        </member>
+        <member name="M:LXP.Api.Controllers.BulkQuestionController.ImportQuizData(Microsoft.AspNetCore.Http.IFormFile,System.Guid)">
+            <summary>
+            Imports quiz data from an Excel file.
+            </summary>
+            <param name="file">The Excel file containing quiz data.</param>
+            <param name="quizId">The unique identifier of the quiz to which the data belongs.</param>
+            <returns>A response indicating the result of the import operation.</returns>
+            <response code="200">Quiz data imported successfully.</response>
+            <response code="400">Bad request due to invalid input.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.BulkQuestionController.ValidateImportQuizData(Microsoft.AspNetCore.Http.IFormFile,System.Guid)">
+            <summary>
+            Validates the import quiz data request.
+            </summary>
+            <param name="file">The Excel file containing quiz data.</param>
+            <param name="quizId">The unique identifier of the quiz to which the data belongs.</param>
+            <returns>A validation response if validation fails, otherwise null.</returns>
+        </member>
         <member name="M:LXP.Api.Controllers.CategoryController.GetAllCategory">
             <summary>
             getting all category name and its id
@@ -90,6 +150,16 @@
             <response code="200">Success</response>
             <response code="500">Internal server Error</response>
         </member>
+        <member name="M:LXP.Api.Controllers.EmailController.GenerateOTP(System.String)">
+            <summary>
+            Generating email to the repected mail they entered
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.EmailController.VerifyOTP(LXP.Common.ViewModels.OTPVerificationViewModel)">
+            <summary>
+            Validating the OTP
+            </summary>
+        </member>
         <member name="M:LXP.Api.Controllers.ForgetPasswordController.ForgetPassword(LXP.Common.ViewModels.RandomPasswordEmail)">
             <summary>
             Forget Password with Random passwordgenerator that sends to user Email 
@@ -118,6 +188,271 @@
             <summary>
             Login for Leaners along with their Role (Admin and User)
             </summary>
+        </member>
+        <member name="T:LXP.Api.Controllers.QuizController">
+            <summary>
+            Manages quizzes within the application.
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizController.GetQuizById(System.Guid)">
+            <summary>
+            Retrieves a specific quiz by its ID.
+            </summary>
+            <param name="id">The unique identifier of the quiz to retrieve.</param>
+            <response code="200">Success on finding the quiz. The response body contains a basic representation of the quiz data.</response>
+            <response code="404">Not found if no quiz exists with the provided ID.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizController.GetAllQuizzes">
+            <summary>
+            Retrieves a list of all available quizzes.
+            </summary>
+            <response code="200">Success. The response body contains a collection of basic quiz representations.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizController.CreateQuiz(LXP.Common.DTO.CreateQuizViewModel)">
+            <summary>
+            Creates a new quiz.
+            </summary>
+            <param name="request">Data representing the new quiz to be created, provided in the request body.</param>
+            <response code="201">Created on successful quiz creation. The response body includes a location header pointing to the newly created quiz and a basic representation of the quiz data.</response>
+            <response code="400">Bad request due to invalid input (e.g., missing or invalid name, negative duration, etc.).</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizController.UpdateQuiz(System.Guid,LXP.Common.DTO.UpdateQuizViewModel)">
+            <summary>
+            Updates an existing quiz.
+            </summary>
+            <param name="id">The unique identifier of the quiz to update.</param>
+            <param name="request">Data representing the updated quiz properties, provided in the request body.</param>
+            <response code="204">No content on successful update.</response>
+            <response code="400">Bad request due to invalid input (e.g., missing or empty name, negative duration, etc.).</response>
+            <response code="404">Not found if no quiz exists with the provided ID.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizController.GetQuizIdByTopicId(System.Guid)">
+            <summary>
+            Retrieves the ID of a quiz associated with a specific topic.
+            </summary>
+            <param name="topicId">The unique identifier of the topic.</param>
+            <response code="200">Success on finding a quiz associated with the topic. The response body contains the quiz ID.</response>
+            <response code="204">No content if no quiz is associated with the topic.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizController.DeleteQuiz(System.Guid)">
+            <summary>
+            Deletes a quiz by its ID.
+            </summary>
+            <param name="id">The unique identifier of the quiz to delete.</param>
+            <response code="204">No content on successful deletion.</response>
+            <response code="404">Not found if no quiz exists with the provided ID.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion(LXP.Common.DTO.QuizfeedbackquestionViewModel)">
+            <summary>
+            Add a new feedback question
+            </summary>
+            <param name="quizfeedbackquestionDto">Feedback question details</param>
+            <response code="200">Feedback question added successfully</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizFeedbackController.GetAllFeedbackQuestions">
+            <summary>
+            Retrieve all feedback questions
+            </summary>
+            <response code="200">List of feedback questions</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizFeedbackController.GetFeedbackQuestionById(System.Guid)">
+            <summary>
+            Get a feedback question by its ID
+            </summary>
+            <param name="quizFeedbackQuestionId">Feedback question ID</param>
+            <response code="200">Feedback question details</response>
+            <response code="404">Feedback question not found</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizFeedbackController.UpdateFeedbackQuestion(System.Guid,LXP.Common.DTO.QuizfeedbackquestionViewModel)">
+            <summary>
+            Update a feedback question
+            </summary>
+            <param name="quizFeedbackQuestionId">Feedback question ID</param>
+            <param name="quizfeedbackquestionDto">Updated feedback question details</param>
+            <response code="204">Feedback question updated successfully</response>
+            <response code="404">Feedback question not found</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizFeedbackController.DeleteFeedbackQuestion(System.Guid)">
+            <summary>
+            Delete a feedback question
+            </summary>
+            <param name="quizFeedbackQuestionId">Feedback question ID</param>
+            <response code="204">Feedback question deleted successfully</response>
+            <response code="404">Feedback question not found</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizFeedbackController.GetFeedbackQuestionsByQuizId(System.Guid)">
+            <summary>
+            Get feedback questions by quiz ID
+            </summary>
+            <param name="quizId">Quiz ID</param>
+            <response code="200">List of feedback questions</response>
+            <response code="404">Feedback questions not found</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizFeedbackController.DeleteFeedbackQuestionsByQuizId(System.Guid)">
+            <summary>
+            Delete feedback questions by quiz ID
+            </summary>
+            <param name="quizId">Quiz ID</param>
+            <response code="204">Feedback questions deleted successfully</response>
+            <response code="404">Feedback questions not found</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizQuestionsController.AddQuestion(LXP.Common.DTO.QuizQuestionViewModel)">
+            <summary>
+            Add a new quiz question.
+            </summary>
+            <param name="quizQuestionDto">The details of the quiz question to add.</param>
+            <response code="200">Quiz question added successfully.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizQuestionsController.UpdateQuestion(System.Guid,LXP.Common.DTO.QuizQuestionViewModel)">
+            <summary>
+            Update an existing quiz question.
+            </summary>
+            <param name="quizQuestionId">The ID of the quiz question to update.</param>
+            <param name="quizQuestionDto">The updated details of the quiz question.</param>
+            <response code="200">Quiz question updated successfully.</response>
+            <response code="404">Quiz question not found.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizQuestionsController.DeleteQuestion(System.Guid)">
+            <summary>
+            Delete a quiz question.
+            </summary>
+            <param name="quizQuestionId">The ID of the quiz question to delete.</param>
+            <response code="200">Quiz question deleted successfully.</response>
+            <response code="404">Quiz question not found.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizQuestionsController.GetAllQuestions">
+            <summary>
+            Retrieve all quiz questions.
+            </summary>
+            <response code="200">List of all quiz questions.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizQuestionsController.GetAllQuestionsByQuizId(System.Guid)">
+            <summary>
+            Retrieve all quiz questions for a specific quiz.
+            </summary>
+            <param name="quizId">The ID of the quiz.</param>
+            <response code="200">List of quiz questions for the specified quiz.</response>
+            <response code="404">Quiz questions not found.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizQuestionsController.GetQuestionById(System.Guid)">
+            <summary>
+            Retrieve a quiz question by its ID.
+            </summary>
+            <param name="quizQuestionId">The ID of the quiz question.</param>
+            <response code="200">Quiz question details.</response>
+            <response code="404">Quiz question not found.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.Registration(LXP.Common.ViewModels.RegisterUserViewModel)">
+            <summary>
+            Post the learner and profile details 
+            </summary>
+            
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.GetAllCategory">
+            <summary>
+            Fetch all the learner details 
+            </summary>
+            
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.GetAllLearnerProfile">
+            <summary>
+            Fetch all the learner profle details
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.GetLearnerProfileById(System.String)">
+            <summary>
+            Fetching particular Learner profile details using Id
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.GetLearnerById(System.String)">
+            <summary>
+            Fetching particular Learner details using Learner Id
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.GenerateOTP(System.String)">
+            <summary>
+            Generating email to the repected mail they entered
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.VerifyOTP(System.String,System.String)">
+            <summary>
+            verifying the OTP by entering the email Id
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.TopicFeedbackController.AddFeedbackQuestion(LXP.Common.DTO.TopicFeedbackQuestionViewModel)">
+            <summary>
+            Add a new feedback question.
+            </summary>
+            <param name="question">The feedback question to add.</param>
+            <response code="200">Question added successfully.</response>
+            <response code="400">Question object is null.</response>
+            <response code="500">Failed to add question.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.TopicFeedbackController.GetAllFeedbackQuestions">
+            <summary>
+            Retrieve all feedback questions.
+            </summary>
+            <response code="200">List of all feedback questions.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.TopicFeedbackController.GetFeedbackQuestionById(System.Guid)">
+            <summary>
+            Retrieve a feedback question by its ID.
+            </summary>
+            <param name="id">The ID of the feedback question.</param>
+            <response code="200">Feedback question details.</response>
+            <response code="404">Feedback question not found.</response>
+            <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.TopicFeedbackController.SubmitFeedbackResponse(LXP.Common.DTO.TopicFeedbackResponseViewModel)">
+            <summary>
+            Submit a feedback response.
+            </summary>
+            <param name="feedbackResponse">The feedback response to submit.</param>
+            <response code="200">Feedback response submitted successfully.</response>
+            <response code="500">Failed to submit feedback response.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.TopicFeedbackController.UpdateFeedbackQuestion(System.Guid,LXP.Common.DTO.TopicFeedbackQuestionViewModel)">
+            <summary>
+            Update an existing feedback question.
+            </summary>
+            <param name="id">The ID of the feedback question to update.</param>
+            <param name="question">The updated feedback question.</param>
+            <response code="200">Feedback question updated successfully.</response>
+            <response code="400">Question object is null.</response>
+            <response code="404">Feedback question not found.</response>
+            <response code="500">Failed to update feedback question.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.TopicFeedbackController.DeleteFeedbackQuestion(System.Guid)">
+            <summary>
+            Delete a feedback question.
+            </summary>
+            <param name="id">The ID of the feedback question to delete.</param>
+            <response code="200">Feedback question deleted successfully.</response>
+            <response code="404">Feedback question not found.</response>
+            <response code="500">Failed to delete feedback question.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.TopicFeedbackController.GetFeedbackQuestionsByTopicId(System.Guid)">
+            <summary>
+            Retrieve feedback questions by topic ID.
+            </summary>
+            <param name="topicId">The ID of the topic.</param>
+            <response code="200">List of feedback questions for the specified topic.</response>
+            <response code="404">No questions found for the given topic.</response>
+            <response code="500">Internal server error.</response>
         </member>
         <member name="M:LXP.Api.Controllers.UpdatePasswordController.LeanerUpdatePassword(LXP.Common.ViewModels.UpdatePassword)">
             <summary>

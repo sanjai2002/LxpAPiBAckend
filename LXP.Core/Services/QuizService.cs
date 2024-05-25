@@ -1,8 +1,6 @@
-﻿using LXP.Common.ViewModels;
+﻿using LXP.Common.DTO;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
-using System;
-using System.Collections.Generic;
 
 namespace LXP.Core.Services
 {
@@ -15,12 +13,12 @@ namespace LXP.Core.Services
             _quizRepository = quizRepository;
         }
 
-        public void CreateQuiz(QuizDto quiz, Guid TopicId)
+        public void CreateQuiz(QuizViewModel quiz, Guid TopicId)
         {
             _quizRepository.CreateQuiz(quiz, TopicId);
         }
 
-        public void UpdateQuiz(QuizDto quiz)
+        public void UpdateQuiz(QuizViewModel quiz)
         {
             _quizRepository.UpdateQuiz(quiz);
         }
@@ -30,12 +28,12 @@ namespace LXP.Core.Services
             _quizRepository.DeleteQuiz(quizId);
         }
 
-        public IEnumerable<QuizDto> GetAllQuizzes()
+        public IEnumerable<QuizViewModel> GetAllQuizzes()
         {
             return _quizRepository.GetAllQuizzes();
         }
 
-        public QuizDto GetQuizById(Guid quizId)
+        public QuizViewModel GetQuizById(Guid quizId)
         {
             return _quizRepository.GetQuizById(quizId);
         }

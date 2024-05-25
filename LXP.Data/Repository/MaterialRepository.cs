@@ -1,12 +1,7 @@
-﻿using LXP.Data.DBContexts;
+﻿using LXP.Common.Entities;
+using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LXP.Common.Entities;
 
 
 namespace LXP.Data.Repository
@@ -20,14 +15,14 @@ namespace LXP.Data.Repository
         }
         public async Task AddMaterial(Material material)
         {
-           await _lXPDbContext.Materials.AddAsync(material);
-           await _lXPDbContext.SaveChangesAsync();
-                 
+            await _lXPDbContext.Materials.AddAsync(material);
+            await _lXPDbContext.SaveChangesAsync();
+
         }
 
-        public async Task<bool> AnyMaterialByMaterialNameAndTopic(string materialName,Topic topic)
+        public async Task<bool> AnyMaterialByMaterialNameAndTopic(string materialName, Topic topic)
         {
-            return await _lXPDbContext.Materials.AnyAsync(material=>material.Name==materialName&&material.Topic==topic);
+            return await _lXPDbContext.Materials.AnyAsync(material => material.Name == materialName && material.Topic == topic);
         }
         public async Task<Material> GetMaterialByMaterialNameAndTopic(string materialName, Topic topic)
         {
@@ -35,15 +30,15 @@ namespace LXP.Data.Repository
         }
         public List<Material> GetAllMaterialDetailsByTopicAndType(Topic topic, MaterialType materialType)
         {
-            return _lXPDbContext.Materials.Where(material=>material.IsActive==true&&material.Topic==topic&& material.MaterialType==materialType).Include(material => material.Topic).Include(material => material.MaterialType).OrderBy(material => material.CreatedAt).ToList();
+            return _lXPDbContext.Materials.Where(material => material.IsActive == true && material.Topic == topic && material.MaterialType == materialType).Include(material => material.Topic).Include(material => material.MaterialType).OrderBy(material => material.CreatedAt).ToList();
 
         }
 
-        
 
-        
 
-      
+
+
+
 
 
     }

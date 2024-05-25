@@ -1,14 +1,18 @@
-﻿using LXP.Common.ViewModels;
+﻿using LXP.Common.DTO;
 using LXP.Core.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 
 namespace LXP.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class QuizQuestionsController : ControllerBase
+    ///<summary>
+    ///Handles operations related to quiz questions.
+    ///</summary>
+    public class QuizQuestionsController : BaseController
     {
         private readonly IQuizQuestionService _quizQuestionService;
 
@@ -17,52 +21,169 @@ namespace LXP.Api.Controllers
             _quizQuestionService = quizQuestionService;
         }
 
+        ///<summary>
+        ///Add a new quiz question.
+        ///</summary>
+        ///<param name="quizQuestionDto">The details of the quiz question to add.</param>
+        ///<response code="200">Quiz question added successfully.</response>
+        ///<response code="500">Internal server error.</response>
         [HttpPost("AddQuestion")]
-        public IActionResult AddQuestion([FromBody] QuizQuestionDto quizQuestionDto)
+        public IActionResult AddQuestion([FromBody] QuizQuestionViewModel quizQuestionDto)
         {
             var result = _quizQuestionService.AddQuestion(quizQuestionDto, quizQuestionDto.Options);
-            return Ok(result);
-        }        
-        [HttpPut("UpdateQuestion")]
-        public IActionResult UpdateQuestion(Guid quizQuestionId, [FromBody] QuizQuestionDto quizQuestionDto)
-        {
-            var result = _quizQuestionService.UpdateQuestion(quizQuestionId, quizQuestionDto, quizQuestionDto.Options);
-            return Ok(result);
+            return Ok(CreateSuccessResponse(result));
         }
 
+        ///<summary>
+        ///Update an existing quiz question.
+        ///</summary>
+        ///<param name="quizQuestionId">The ID of the quiz question to update.</param>
+        ///<param name="quizQuestionDto">The updated details of the quiz question.</param>
+        ///<response code="200">Quiz question updated successfully.</response>
+        ///<response code="404">Quiz question not found.</response>
+        ///<response code="500">Internal server error.</response>
+        [HttpPut("UpdateQuestion")]
+        public IActionResult UpdateQuestion(Guid quizQuestionId, [FromBody] QuizQuestionViewModel quizQuestionDto)
+        {
+            var existingQuestion = _quizQuestionService.GetQuestionById(quizQuestionId);
+            if (existingQuestion == null)
+                return NotFound(CreateFailureResponse($"Quiz question with ID {quizQuestionId} not found.", 404));
+
+            var result = _quizQuestionService.UpdateQuestion(quizQuestionId, quizQuestionDto, quizQuestionDto.Options);
+            return Ok(CreateSuccessResponse(result));
+        }
+
+        ///<summary>
+        ///Delete a quiz question.
+        ///</summary>
+        ///<param name="quizQuestionId">The ID of the quiz question to delete.</param>
+        ///<response code="200">Quiz question deleted successfully.</response>
+        ///<response code="404">Quiz question not found.</response>
+        ///<response code="500">Internal server error.</response>
         [HttpDelete("DeleteQuestion")]
         public IActionResult DeleteQuestion(Guid quizQuestionId)
         {
+            var existingQuestion = _quizQuestionService.GetQuestionById(quizQuestionId);
+            if (existingQuestion == null)
+                return NotFound(CreateFailureResponse($"Quiz question with ID {quizQuestionId} not found.", 404));
+
             var result = _quizQuestionService.DeleteQuestion(quizQuestionId);
-            return Ok(result);
+            return Ok(CreateSuccessResponse(result));
         }
 
+        ///<summary>
+        ///Retrieve all quiz questions.
+        ///</summary>
+        ///<response code="200">List of all quiz questions.</response>
+        ///<response code="500">Internal server error.</response>
         [HttpGet("GetAllQuestions")]
         public IActionResult GetAllQuestions()
         {
             var result = _quizQuestionService.GetAllQuestions();
-            return Ok(result);
+            return Ok(CreateSuccessResponse(result));
         }
-       
-[HttpGet("GetAllQuestionsByQuizId")]
+
+        ///<summary>
+        ///Retrieve all quiz questions for a specific quiz.
+        ///</summary>
+        ///<param name="quizId">The ID of the quiz.</param>
+        ///<response code="200">List of quiz questions for the specified quiz.</response>
+        ///<response code="404">Quiz questions not found.</response>
+        ///<response code="500">Internal server error.</response>
+        [HttpGet("GetAllQuestionsByQuizId")]
         public IActionResult GetAllQuestionsByQuizId(Guid quizId)
         {
             var result = _quizQuestionService.GetAllQuestionsByQuizId(quizId);
-            return Ok(result);
+            if (result == null || !result.Any())
+                return NotFound(CreateFailureResponse($"No quiz questions found for quiz ID {quizId}.", 404));
+            return Ok(CreateSuccessResponse(result));
         }
 
+        ///<summary>
+        ///Retrieve a quiz question by its ID.
+        ///</summary>
+        ///<param name="quizQuestionId">The ID of the quiz question.</param>
+        ///<response code="200">Quiz question details.</response>
+        ///<response code="404">Quiz question not found.</response>
+        ///<response code="500">Internal server error.</response>
         [HttpGet("GetQuestionById")]
         public IActionResult GetQuestionById(Guid quizQuestionId)
         {
             var result = _quizQuestionService.GetQuestionById(quizQuestionId);
             if (result == null)
-            {
-                return NotFound(); 
-            }
-            return Ok(result);
+                return NotFound(CreateFailureResponse($"Quiz question with ID {quizQuestionId} not found.", 404));
+            return Ok(CreateSuccessResponse(result));
         }
     }
 }
+
+
+
+//using LXP.Common.DTO;
+//using LXP.Core.IServices;
+//using Microsoft.AspNetCore.Http;
+//using Microsoft.AspNetCore.Mvc;
+//using System.Collections.Generic;
+
+//namespace LXP.Api.Controllers
+//{
+//    [Route("api/[controller]")]
+//    [ApiController]
+//    public class QuizQuestionsController : ControllerBase
+//    {
+//        private readonly IQuizQuestionService _quizQuestionService;
+
+//        public QuizQuestionsController(IQuizQuestionService quizQuestionService)
+//        {
+//            _quizQuestionService = quizQuestionService;
+//        }
+
+//        [HttpPost("AddQuestion")]
+//        public IActionResult AddQuestion([FromBody] QuizQuestionDto quizQuestionDto)
+//        {
+//            var result = _quizQuestionService.AddQuestion(quizQuestionDto, quizQuestionDto.Options);
+//            return Ok(result);
+//        }        
+//        [HttpPut("UpdateQuestion")]
+//        public IActionResult UpdateQuestion(Guid quizQuestionId, [FromBody] QuizQuestionDto quizQuestionDto)
+//        {
+//            var result = _quizQuestionService.UpdateQuestion(quizQuestionId, quizQuestionDto, quizQuestionDto.Options);
+//            return Ok(result);
+//        }
+
+//        [HttpDelete("DeleteQuestion")]
+//        public IActionResult DeleteQuestion(Guid quizQuestionId)
+//        {
+//            var result = _quizQuestionService.DeleteQuestion(quizQuestionId);
+//            return Ok(result);
+//        }
+
+//        [HttpGet("GetAllQuestions")]
+//        public IActionResult GetAllQuestions()
+//        {
+//            var result = _quizQuestionService.GetAllQuestions();
+//            return Ok(result);
+//        }
+
+//[HttpGet("GetAllQuestionsByQuizId")]
+//        public IActionResult GetAllQuestionsByQuizId(Guid quizId)
+//        {
+//            var result = _quizQuestionService.GetAllQuestionsByQuizId(quizId);
+//            return Ok(result);
+//        }
+
+//        [HttpGet("GetQuestionById")]
+//        public IActionResult GetQuestionById(Guid quizQuestionId)
+//        {
+//            var result = _quizQuestionService.GetQuestionById(quizQuestionId);
+//            if (result == null)
+//            {
+//                return NotFound(); 
+//            }
+//            return Ok(result);
+//        }
+//    }
+//}
 ////////using Microsoft.AspNetCore.Http;
 ////////using Microsoft.AspNetCore.Mvc;
 

@@ -1,3 +1,5 @@
+using FluentValidation.AspNetCore;
+using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Core.Repositories;
 using LXP.Core.Services;
@@ -5,11 +7,9 @@ using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 using LXP.Data.Repository;
 using Microsoft.Extensions.FileProviders;
+using OfficeOpenXml;
 using Serilog;
 using System.Reflection;
-using LXP.Api.Interceptors;
-using OfficeOpenXml;
-using FluentValidation.AspNetCore;
 var builder = WebApplication.CreateBuilder(args);
 
 #region CORS setting for API
@@ -49,8 +49,8 @@ builder.Services.AddScoped<ICourseTopicServices, CourseTopicServices>();
 
 builder.Services.AddScoped<ICourseServices, CourseServices>();
 builder.Services.AddScoped<ICourseRepository, CourseRepository>();
-builder.Services.AddScoped<IMaterialTypeRepository,MaterialTypeRepository>();
-builder.Services.AddScoped<IMaterialTypeServices,MaterialTypeServices>();
+builder.Services.AddScoped<IMaterialTypeRepository, MaterialTypeRepository>();
+builder.Services.AddScoped<IMaterialTypeServices, MaterialTypeServices>();
 builder.Services.AddScoped<IMaterialRepository, MaterialRepository>();
 builder.Services.AddScoped<IMaterialServices, MaterialServices>();
 
@@ -76,6 +76,39 @@ builder.Services.AddScoped<IQuizFeedbackService, QuizFeedbackService>();
 builder.Services.AddScoped<ITopicFeedbackService, TopicFeedbackService>();
 builder.Services.AddScoped<IQuizService, QuizService>();
 
+
+// Learner 
+
+builder.Services.AddScoped<ICategoryServices, CategoryServices>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddSingleton<LXPDbContext>();
+builder.Services.AddScoped<ILearnerRepository, LearnerRepository>();
+builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
+builder.Services.AddScoped<ILearnerService, LearnerService>();
+builder.Services.AddScoped<IProfileService, ProfileService>();
+builder.Services.AddScoped<IPasswordHistoryService, PasswordHistoryService>();
+builder.Services.AddScoped<IPasswordHistoryRepository, PasswordHistoryRepository>();
+
+builder.Services.AddScoped<IMaterialServices, MaterialServices>();
+builder.Services.AddScoped<IMaterialRepository, MaterialRepository>();
+builder.Services.AddScoped<IMaterialTypeRepository, MaterialTypeRepository>();
+builder.Services.AddScoped<IMaterialTypeServices, MaterialTypeServices>();
+
+
+
+
+builder.Services.AddScoped<IProfilePasswordHistoryRepository, ProfilePasswordHistoryRepository>();
+builder.Services.AddScoped<ICourseLevelServices, CourseLevelServices>();
+builder.Services.AddScoped<ICourseLevelRepository, CourseLevelRepository>();
+builder.Services.AddScoped<ICourseTopicRepository, CourseTopicRepository>();
+builder.Services.AddScoped<ICourseTopicServices, CourseTopicServices>();
+builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
+builder.Services.AddScoped<IEnrollmentRepository, EnrollmentRepository>();
+builder.Services.AddScoped<ICourseServices, CourseServices>();
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddScoped<IEmailService, EmailService>();
+
 builder.Services.AddSwaggerGen(options =>
 {
     options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"));
@@ -87,10 +120,10 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-builder.Services.AddMvc(options =>
-{
-    options.Filters.Add<ApiExceptionInterceptor>();
-});
+//builder.Services.AddMvc(options =>
+//{
+//    options.Filters.Add<ApiExceptionInterceptor>();
+//});
 
 builder.Services.AddControllers()
     .AddFluentValidation(v =>
@@ -126,6 +159,11 @@ app.UseStaticFiles(new StaticFileOptions
     RequestPath = "/wwwroot/LearnerProfileImages"
 });
 
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(Path.Combine(app.Environment.WebRootPath, "CourseMaterial")),
+    RequestPath = "/wwwroot/CourseMaterial"
+});
 app.UseCors("_myAllowSpecificOrigins");
 app.UseHttpsRedirection();
 
