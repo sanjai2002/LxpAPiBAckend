@@ -152,3 +152,16 @@ D:\ManoMergedCode\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
 D:\ManoMergedCode\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
 D:\ManoMergedCode\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
 D:\ManoMergedCode\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\Capstone LXP\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\Capstone LXP\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\Capstone LXP\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll

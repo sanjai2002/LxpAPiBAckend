@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WFzY/0k5W7wBLZ0A4ccs0MO2wcmgPXFIpTitAmKClYvRcS+nRiktFPycQj/91C7D7TSah0vovMngJyPN04NdsA==",
+  "dgSpecHash": "yt7atZ2U/6H/hRFscgFfDANKDGYNlEo5ERiA6z3GhCklRuFqEtwV0HRpFTmRnQBRjQzenjLGz/ND9V5BlydzSw==",
   "success": true,
-  "projectFilePath": "D:\\ManoMergedCode\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
+  "projectFilePath": "D:\\Capstone LXP\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\laevi.antony\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\laevi.antony\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",

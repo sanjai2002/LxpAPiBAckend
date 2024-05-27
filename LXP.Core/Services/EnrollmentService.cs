@@ -49,7 +49,7 @@ namespace LXP.Core.Services
                     CourseId = enrollment.CourseId,
                     EnrollmentDate = DateTime.Now,
                     EnrollStatus = true,
-                    EnrollRequestStatus = true,
+                    CompletedStatus = 0,
                     CreatedBy = "Admin",
                     CreatedAt = DateTime.Now,
                     ModifiedAt = DateTime.Now,

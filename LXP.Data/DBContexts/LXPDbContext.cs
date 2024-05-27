@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using LXP.Common.Entities;
+using LXP.Data;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
@@ -171,6 +172,7 @@ public partial class LXPDbContext : DbContext
                 .HasColumnName("enrollment_id")
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
+            entity.Property(e => e.CompletedStatus).HasColumnName("completed_status");
             entity.Property(e => e.CourseId)
                 .HasColumnName("course_id")
                 .UseCollation("ascii_general_ci")
@@ -179,7 +181,6 @@ public partial class LXPDbContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("created_at");
             entity.Property(e => e.CreatedBy).HasColumnName("created_by");
-            entity.Property(e => e.EnrollRequestStatus).HasColumnName("enroll_request_status");
             entity.Property(e => e.EnrollStatus).HasColumnName("enroll_status");
             entity.Property(e => e.EnrollmentDate)
                 .HasColumnType("datetime")

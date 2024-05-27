@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ManoMergedCode\\LXP.Common.Tests\\LXP.Common.Tests.csproj": {}
+    "D:\\Capstone LXP\\LXP.Common.Tests\\LXP.Common.Tests.csproj": {}
   },
   "projects": {
-    "D:\\ManoMergedCode\\LXP.Common.Tests\\LXP.Common.Tests.csproj": {
+    "D:\\Capstone LXP\\LXP.Common.Tests\\LXP.Common.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ManoMergedCode\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
+        "projectUniqueName": "D:\\Capstone LXP\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
         "projectName": "LXP.Common.Tests",
-        "projectPath": "D:\\ManoMergedCode\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
+        "projectPath": "D:\\Capstone LXP\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
         "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\ManoMergedCode\\LXP.Common.Tests\\obj\\",
+        "outputPath": "D:\\Capstone LXP\\LXP.Common.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj"
+              "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj": {
+    "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\ManoMergedCode\\LXP.Common\\LXP.Common.csproj",
+        "projectPath": "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj",
         "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\ManoMergedCode\\LXP.Common\\obj\\",
+        "outputPath": "D:\\Capstone LXP\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

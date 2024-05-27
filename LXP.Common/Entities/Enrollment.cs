@@ -15,7 +15,7 @@ public partial class Enrollment
 
     public bool EnrollStatus { get; set; }
 
-    public bool EnrollRequestStatus { get; set; }
+    public sbyte CompletedStatus { get; set; }
 
     public string CreatedBy { get; set; } = null!;
 
