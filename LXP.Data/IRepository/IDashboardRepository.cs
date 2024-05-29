@@ -19,5 +19,6 @@ namespace LXP.Data.IRepository
         public List<string> GetHighestEnrolledCourse();
 
         public List<string> GetTopLearners();
+        public List<string> GetFeedbackresponses();
     }
 }

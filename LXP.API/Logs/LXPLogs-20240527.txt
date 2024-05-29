@@ -60,3 +60,740 @@
 2024-05-27 14:48:44.528 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.2416ms
 2024-05-27 14:48:44.595 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
 2024-05-27 14:48:44.679 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.4194ms
+2024-05-27 16:46:11.575 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 16:46:11.609 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 16:46:11.612 +05:30 [INF] Hosting environment: Development
+2024-05-27 16:46:11.613 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 16:46:12.781 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 16:46:13.426 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 645.4898ms
+2024-05-27 16:46:13.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 16:46:13.436 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 16:46:13.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.4831ms
+2024-05-27 16:46:13.483 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.41ms
+2024-05-27 16:46:13.534 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 16:46:13.661 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 127.7898ms
+2024-05-27 16:46:27.463 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 16:46:27.477 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 16:46:27.483 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:46:27.499 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 16:46:30.008 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 2501.4425ms
+2024-05-27 16:46:30.011 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:46:30.013 +05:30 [ERR] Nullable object must have a value.
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method45(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.QuizReportRepository.GetQuizReports() in D:\Capstone LXP\LXP.Data\Repository\QuizReportRepository.cs:line 33
+   at LXP.Core.Services.QuizReportServices.GetQuizReports() in D:\Capstone LXP\LXP.Core\Services\QuizReportServices.cs:line 22
+   at LXP.Api.Controllers.QuizController.GetQuizReport() in D:\Capstone LXP\LXP.Api\Controllers\QuizController.cs:line 176
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 16:46:30.280 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 2817.82ms
+2024-05-27 16:57:22.063 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 16:57:22.079 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 15.8835ms
+2024-05-27 16:57:22.088 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 16:57:22.089 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 16:57:22.092 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 3.1179ms
+2024-05-27 16:57:22.105 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 16.4188ms
+2024-05-27 16:57:22.204 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 16:57:22.258 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 53.7309ms
+2024-05-27 16:57:33.681 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 16:57:33.698 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:57:33.701 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 16:57:33.739 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 36.168ms
+2024-05-27 16:57:33.743 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:57:33.746 +05:30 [ERR] Nullable object must have a value.
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method45(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.QuizReportRepository.GetQuizReports() in D:\Capstone LXP\LXP.Data\Repository\QuizReportRepository.cs:line 33
+   at LXP.Core.Services.QuizReportServices.GetQuizReports() in D:\Capstone LXP\LXP.Core\Services\QuizReportServices.cs:line 22
+   at LXP.Api.Controllers.QuizController.GetQuizReport() in D:\Capstone LXP\LXP.Api\Controllers\QuizController.cs:line 176
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 16:57:33.761 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 80.6304ms
+2024-05-27 16:57:42.809 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 16:57:42.826 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 17.4699ms
+2024-05-27 16:57:42.916 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 16:57:42.917 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 16:57:42.948 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 28.808ms
+2024-05-27 16:57:42.964 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.9441ms
+2024-05-27 16:57:43.316 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 16:57:43.509 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 193.1636ms
+2024-05-27 16:57:53.024 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 16:57:53.029 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:57:53.032 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 16:57:53.050 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 14.4414ms
+2024-05-27 16:57:53.052 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:57:53.053 +05:30 [ERR] Nullable object must have a value.
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method45(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.QuizReportRepository.GetQuizReports() in D:\Capstone LXP\LXP.Data\Repository\QuizReportRepository.cs:line 33
+   at LXP.Core.Services.QuizReportServices.GetQuizReports() in D:\Capstone LXP\LXP.Core\Services\QuizReportServices.cs:line 22
+   at LXP.Api.Controllers.QuizController.GetQuizReport() in D:\Capstone LXP\LXP.Api\Controllers\QuizController.cs:line 176
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 16:57:53.075 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 51.6234ms
+2024-05-27 16:58:21.747 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 16:58:21.756 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 8.768ms
+2024-05-27 16:58:21.773 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 16:58:21.774 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 16:58:21.778 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 4.4703ms
+2024-05-27 16:58:21.787 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 12.8092ms
+2024-05-27 16:58:21.882 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 16:58:21.921 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.6354ms
+2024-05-27 16:58:34.749 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 16:58:34.767 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 17.5022ms
+2024-05-27 16:58:34.838 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 16:58:34.850 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 16:58:34.862 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 23.5094ms
+2024-05-27 16:58:34.869 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.3482ms
+2024-05-27 16:58:34.962 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 16:58:35.002 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.5784ms
+2024-05-27 16:58:45.539 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 16:58:45.551 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:58:45.553 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 16:58:45.560 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 3.5015ms
+2024-05-27 16:58:45.565 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:58:45.567 +05:30 [ERR] Nullable object must have a value.
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method45(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.QuizReportRepository.GetQuizReports() in D:\Capstone LXP\LXP.Data\Repository\QuizReportRepository.cs:line 33
+   at LXP.Core.Services.QuizReportServices.GetQuizReports() in D:\Capstone LXP\LXP.Core\Services\QuizReportServices.cs:line 22
+   at LXP.Api.Controllers.QuizController.GetQuizReport() in D:\Capstone LXP\LXP.Api\Controllers\QuizController.cs:line 176
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 16:58:45.583 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 44.0264ms
+2024-05-27 16:59:06.586 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 16:59:06.591 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:59:06.594 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 16:59:06.600 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 3.1477ms
+2024-05-27 16:59:06.602 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 16:59:06.604 +05:30 [ERR] Nullable object must have a value.
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method45(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.QuizReportRepository.GetQuizReports() in D:\Capstone LXP\LXP.Data\Repository\QuizReportRepository.cs:line 33
+   at LXP.Core.Services.QuizReportServices.GetQuizReports() in D:\Capstone LXP\LXP.Core\Services\QuizReportServices.cs:line 22
+   at LXP.Api.Controllers.QuizController.GetQuizReport() in D:\Capstone LXP\LXP.Api\Controllers\QuizController.cs:line 176
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 16:59:06.614 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 28.7911ms
+2024-05-27 17:00:22.202 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 17:00:22.242 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 17:00:22.244 +05:30 [INF] Hosting environment: Development
+2024-05-27 17:00:22.245 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 17:00:23.377 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 17:00:23.934 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 559.7532ms
+2024-05-27 17:00:23.944 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 17:00:23.950 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 17:00:23.953 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.6125ms
+2024-05-27 17:00:24.002 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.4276ms
+2024-05-27 17:00:24.047 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 17:00:24.182 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.1706ms
+2024-05-27 17:00:34.882 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 17:00:34.900 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 17:00:34.908 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 17:00:34.926 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 17:03:05.150 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 150214.6136ms
+2024-05-27 17:03:05.163 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 17:03:07.506 +05:30 [ERR] This MySqlConnection is already in use. See https://fl.vu/mysql-conn-reuse
+System.InvalidOperationException: This MySqlConnection is already in use. See https://fl.vu/mysql-conn-reuse
+   at MySqlConnector.Core.ServerSession.StartQuerying(ICancellableCommand command) in /_/src/MySqlConnector/Core/ServerSession.cs:line 289
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 51
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in /_/src/MySqlConnector/MySqlCommand.cs:line 290
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__21_0(DbContext _, Enumerator enumerator)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.QuizReportRepository.GetQuizReports() in D:\Capstone LXP\LXP.Data\Repository\QuizReportRepository.cs:line 33
+   at LXP.Core.Services.QuizReportServices.GetQuizReports() in D:\Capstone LXP\LXP.Core\Services\QuizReportServices.cs:line 22
+   at LXP.Api.Controllers.QuizController.GetQuizReport() in D:\Capstone LXP\LXP.Api\Controllers\QuizController.cs:line 176
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 17:03:13.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 158789.0973ms
+2024-05-27 17:03:27.702 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 17:03:27.742 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 17:03:27.747 +05:30 [INF] Hosting environment: Development
+2024-05-27 17:03:27.752 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 17:03:28.490 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 17:03:28.777 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 288.2863ms
+2024-05-27 17:03:28.795 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 17:03:28.800 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 17:03:28.804 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 3.6837ms
+2024-05-27 17:03:28.822 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.7933ms
+2024-05-27 17:03:28.877 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 17:03:28.976 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.6802ms
+2024-05-27 17:03:42.430 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 17:03:42.445 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 17:03:42.450 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 17:03:42.465 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 17:03:44.605 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 2132.6264ms
+2024-05-27 17:03:44.610 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 17:03:44.612 +05:30 [ERR] Nullable object must have a value.
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method45(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.QuizReportRepository.GetQuizReports() in D:\Capstone LXP\LXP.Data\Repository\QuizReportRepository.cs:line 33
+   at LXP.Core.Services.QuizReportServices.GetQuizReports() in D:\Capstone LXP\LXP.Core\Services\QuizReportServices.cs:line 22
+   at LXP.Api.Controllers.QuizController.GetQuizReport() in D:\Capstone LXP\LXP.Api\Controllers\QuizController.cs:line 176
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 17:03:44.756 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 2325.8987ms
+2024-05-27 17:05:59.842 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 17:05:59.891 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 17:05:59.893 +05:30 [INF] Hosting environment: Development
+2024-05-27 17:05:59.894 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 17:06:00.714 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 17:06:01.019 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 311.0983ms
+2024-05-27 17:06:01.036 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 17:06:01.046 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 17:06:01.054 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.598ms
+2024-05-27 17:06:01.089 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.85ms
+2024-05-27 17:06:01.126 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 17:06:01.268 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 141.9696ms
+2024-05-27 17:06:17.486 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 17:06:17.507 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 17:06:17.512 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 17:06:17.533 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 17:08:54.556 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 17:08:54.594 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 17:08:54.596 +05:30 [INF] Hosting environment: Development
+2024-05-27 17:08:54.597 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 17:08:55.431 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 17:08:55.674 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 243.7234ms
+2024-05-27 17:08:55.688 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 17:08:55.692 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 17:08:55.698 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.6211ms
+2024-05-27 17:08:55.713 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.5394ms
+2024-05-27 17:08:55.760 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 17:08:55.878 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 118.3315ms
+2024-05-27 17:09:08.513 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 17:09:08.529 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 17:09:08.535 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 17:09:08.555 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 17:09:10.712 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-27 17:09:10.747 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 2182.7876ms
+2024-05-27 17:09:10.749 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 17:09:10.752 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 2239.4109ms
+2024-05-27 17:20:18.156 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 17:20:18.207 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 17:20:18.210 +05:30 [INF] Hosting environment: Development
+2024-05-27 17:20:18.211 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 17:20:19.205 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 17:20:19.517 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 313.1988ms
+2024-05-27 17:20:19.545 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 17:20:19.562 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 17:20:19.567 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 4.8026ms
+2024-05-27 17:20:19.585 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.4352ms
+2024-05-27 17:20:19.641 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 17:20:19.801 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 159.888ms
+2024-05-27 17:23:50.300 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 17:23:50.335 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 17:23:50.338 +05:30 [INF] Hosting environment: Development
+2024-05-27 17:23:50.339 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 17:23:51.264 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 17:23:51.661 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 397.3472ms
+2024-05-27 17:23:51.679 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 17:23:51.686 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 17:23:51.707 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 21.4451ms
+2024-05-27 17:23:51.738 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.9986ms
+2024-05-27 17:23:51.789 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 17:23:51.929 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 140.0751ms
+2024-05-27 17:31:04.930 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 17:31:04.969 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 17:31:04.971 +05:30 [INF] Hosting environment: Development
+2024-05-27 17:31:04.974 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 17:31:05.959 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 17:31:06.613 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 659.9884ms
+2024-05-27 17:31:06.632 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 17:31:06.633 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 17:31:06.640 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.5235ms
+2024-05-27 17:31:06.678 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.0455ms
+2024-05-27 17:31:06.723 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 17:31:06.855 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 132.7094ms
+2024-05-27 17:31:25.090 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 17:31:25.110 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 17:31:25.120 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 17:31:25.152 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 17:31:28.446 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-27 17:31:28.498 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 3336.0206ms
+2024-05-27 17:31:28.502 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 17:31:28.505 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 3414.4886ms
+2024-05-27 17:41:01.072 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 17:41:01.127 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 17:41:01.130 +05:30 [INF] Hosting environment: Development
+2024-05-27 17:41:01.133 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 17:41:02.383 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 17:41:02.897 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 519.7424ms
+2024-05-27 17:41:02.912 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 17:41:02.918 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 17:41:02.931 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.4159ms
+2024-05-27 17:41:02.961 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.9023ms
+2024-05-27 17:41:03.016 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 17:41:03.177 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 160.697ms
+2024-05-27 18:03:21.383 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 18:03:21.417 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 18:03:21.420 +05:30 [INF] Hosting environment: Development
+2024-05-27 18:03:21.422 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 18:03:22.774 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 18:03:23.262 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 489.3993ms
+2024-05-27 18:03:23.270 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 18:03:23.285 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 18:03:23.286 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 15.3346ms
+2024-05-27 18:03:23.319 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.8977ms
+2024-05-27 18:03:23.385 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 18:03:23.529 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 143.3463ms
+2024-05-27 18:04:13.231 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 18:04:13.263 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 18:04:13.264 +05:30 [INF] Hosting environment: Development
+2024-05-27 18:04:13.266 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 18:04:14.456 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 18:04:14.831 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 374.378ms
+2024-05-27 18:04:14.831 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 18:04:14.881 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 18:04:14.891 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.2175ms
+2024-05-27 18:04:14.910 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79ms
+2024-05-27 18:04:14.954 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 18:04:15.099 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 144.6481ms
+2024-05-27 18:04:30.319 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 18:04:30.338 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 18:04:30.345 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 18:04:30.366 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 18:04:32.728 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 2353.6285ms
+2024-05-27 18:04:32.734 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 18:04:32.739 +05:30 [ERR] Nullable object must have a value.
+System.InvalidOperationException: Nullable object must have a value.
+   at lambda_method45(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.Repository.QuizReportRepository.GetQuizReports() in D:\Capstone LXP\LXP.Data\Repository\QuizReportRepository.cs:line 44
+   at LXP.Core.Services.QuizReportServices.GetQuizReports() in D:\Capstone LXP\LXP.Core\Services\QuizReportServices.cs:line 22
+   at LXP.Api.Controllers.QuizController.GetQuizReport() in D:\Capstone LXP\LXP.Api\Controllers\QuizController.cs:line 176
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 18:04:32.943 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 2623.2557ms
+2024-05-27 23:48:20.872 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 23:48:20.904 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 23:48:20.906 +05:30 [INF] Hosting environment: Development
+2024-05-27 23:48:20.906 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 23:48:23.604 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 23:48:24.480 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 883.5928ms
+2024-05-27 23:48:24.490 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 23:48:24.493 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 23:48:24.496 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.4232ms
+2024-05-27 23:48:24.740 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 247.0686ms
+2024-05-27 23:48:24.794 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 23:48:25.025 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 231.8411ms
+2024-05-27 23:49:24.988 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 23:49:25.019 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 23:49:25.037 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 23:49:25.140 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 23:49:27.661 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-27 23:49:28.113 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 2961.3629ms
+2024-05-27 23:49:28.116 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 23:49:28.191 +05:30 [ERR] The LINQ expression 'DbSet<Quiz>()
+    .Where(q => EF.Property<Guid?>(StructuralTypeShaperExpression: 
+        LXP.Common.Entities.Course
+        ValueBufferExpression: 
+            ProjectionBindingExpression: EmptyProjectionMember
+        IsNullable: False
+    , "CourseId") != null && object.Equals(
+        objA: (object)EF.Property<Guid?>(StructuralTypeShaperExpression: 
+            LXP.Common.Entities.Course
+            ValueBufferExpression: 
+                ProjectionBindingExpression: EmptyProjectionMember
+            IsNullable: False
+        , "CourseId"), 
+        objB: (object)EF.Property<Guid?>(q, "CourseId")))
+    .SelectMany(
+        collectionSelector: q => DbSet<LearnerAttempt>()
+            .Where(l => EF.Property<Guid?>(q, "QuizId") != null && object.Equals(
+                objA: (object)EF.Property<Guid?>(q, "QuizId"), 
+                objB: (object)EF.Property<Guid?>(l, "QuizId"))), 
+        resultSelector: (q, c) => new TransparentIdentifier<Quiz, LearnerAttempt>(
+            Outer = q, 
+            Inner = c
+        ))
+    .GroupBy(ti => ti.Inner.LearnerId)
+    .Select(g => g
+        .AsQueryable()
+        .OrderByDescending(e => e.Inner.Score)
+        .Select(e => e.Inner)
+        .First())
+    .Count(e0 => e0.Score >= (float)e0.Quiz.PassMark)' could not be translated. Additional information: Translation of member 'Quiz' on entity type 'LearnerAttempt' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+System.InvalidOperationException: The LINQ expression 'DbSet<Quiz>()
+    .Where(q => EF.Property<Guid?>(StructuralTypeShaperExpression: 
+        LXP.Common.Entities.Course
+        ValueBufferExpression: 
+            ProjectionBindingExpression: EmptyProjectionMember
+        IsNullable: False
+    , "CourseId") != null && object.Equals(
+        objA: (object)EF.Property<Guid?>(StructuralTypeShaperExpression: 
+            LXP.Common.Entities.Course
+            ValueBufferExpression: 
+                ProjectionBindingExpression: EmptyProjectionMember
+            IsNullable: False
+        , "CourseId"), 
+        objB: (object)EF.Property<Guid?>(q, "CourseId")))
+    .SelectMany(
+        collectionSelector: q => DbSet<LearnerAttempt>()
+            .Where(l => EF.Property<Guid?>(q, "QuizId") != null && object.Equals(
+                objA: (object)EF.Property<Guid?>(q, "QuizId"), 
+                objB: (object)EF.Property<Guid?>(l, "QuizId"))), 
+        resultSelector: (q, c) => new TransparentIdentifier<Quiz, LearnerAttempt>(
+            Outer = q, 
+            Inner = c
+        ))
+    .GroupBy(ti => ti.Inner.LearnerId)
+    .Select(g => g
+        .AsQueryable()
+        .OrderByDescending(e => e.Inner.Score)
+        .Select(e => e.Inner)
+        .First())
+    .Count(e0 => e0.Score >= (float)e0.Quiz.PassMark)' could not be translated. Additional information: Translation of member 'Quiz' on entity type 'LearnerAttempt' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.TranslateSubquery(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Pomelo.EntityFrameworkCore.MySql.Query.ExpressionVisitors.Internal.MySqlSqlTranslatingExpressionVisitor.CallBaseVisitMethodCall(MethodCallExpression methodCallExpression)
+   at Pomelo.EntityFrameworkCore.MySql.Query.ExpressionVisitors.Internal.MySqlSqlTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor.TranslateInternal(Expression expression, Boolean applyDefaultTypeMapping)
+   at Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor.TranslateProjection(Expression expression, Boolean applyDefaultTypeMapping)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.Visit(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.VisitMemberAssignment(MemberAssignment memberAssignment)
+   at System.Linq.Expressions.ExpressionVisitor.VisitMemberBinding(MemberBinding node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.VisitMemberInit(MemberInitExpression memberInitExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.Visit(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.Translate(SelectExpression selectExpression, Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.TranslateSelect(ShapedQueryExpression source, LambdaExpression selector)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 23:49:28.574 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 3587.1313ms
+2024-05-27 23:50:06.931 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 23:50:06.964 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 23:50:06.967 +05:30 [INF] Hosting environment: Development
+2024-05-27 23:50:06.967 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 23:50:08.056 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 23:50:08.378 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 328.5519ms
+2024-05-27 23:50:08.385 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 23:50:08.387 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 23:50:08.390 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.1517ms
+2024-05-27 23:50:08.421 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.17ms
+2024-05-27 23:50:08.475 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 23:50:08.606 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 131.8232ms
+2024-05-27 23:50:25.634 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 23:50:25.657 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 23:50:25.664 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 23:50:25.684 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 23:51:05.619 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 23:51:05.658 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 23:51:05.661 +05:30 [INF] Hosting environment: Development
+2024-05-27 23:51:05.662 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 23:51:06.619 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 23:51:06.915 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 303.0163ms
+2024-05-27 23:51:06.922 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 23:51:06.924 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 23:51:06.934 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.6329ms
+2024-05-27 23:51:06.967 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.411ms
+2024-05-27 23:51:07.012 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 23:51:07.138 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.0588ms
+2024-05-27 23:51:19.162 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 23:51:19.177 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 23:51:19.183 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 23:51:19.205 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 23:51:39.095 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-27 23:51:39.136 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-27 23:51:39.139 +05:30 [INF] Hosting environment: Development
+2024-05-27 23:51:39.141 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-27 23:51:43.451 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-27 23:51:43.766 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 322.8688ms
+2024-05-27 23:51:43.771 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-27 23:51:43.775 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-27 23:51:43.779 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.2561ms
+2024-05-27 23:51:43.814 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.719ms
+2024-05-27 23:51:43.858 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-27 23:51:44.054 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 195.3869ms
+2024-05-27 23:52:21.325 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-27 23:52:21.360 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-27 23:52:21.367 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 23:52:21.393 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-27 23:52:23.237 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-27 23:52:23.720 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 2316.5128ms
+2024-05-27 23:52:23.723 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-27 23:52:23.784 +05:30 [ERR] The LINQ expression 'DbSet<Quiz>()
+    .Where(q => EF.Property<Guid?>(StructuralTypeShaperExpression: 
+        LXP.Common.Entities.Course
+        ValueBufferExpression: 
+            ProjectionBindingExpression: EmptyProjectionMember
+        IsNullable: False
+    , "CourseId") != null && object.Equals(
+        objA: (object)EF.Property<Guid?>(StructuralTypeShaperExpression: 
+            LXP.Common.Entities.Course
+            ValueBufferExpression: 
+                ProjectionBindingExpression: EmptyProjectionMember
+            IsNullable: False
+        , "CourseId"), 
+        objB: (object)EF.Property<Guid?>(q, "CourseId")))
+    .SelectMany(
+        collectionSelector: q => DbSet<LearnerAttempt>()
+            .Where(l => EF.Property<Guid?>(q, "QuizId") != null && object.Equals(
+                objA: (object)EF.Property<Guid?>(q, "QuizId"), 
+                objB: (object)EF.Property<Guid?>(l, "QuizId"))), 
+        resultSelector: (q, c) => new TransparentIdentifier<Quiz, LearnerAttempt>(
+            Outer = q, 
+            Inner = c
+        ))
+    .GroupBy(ti => ti.Inner.LearnerId)
+    .Select(g => g
+        .AsQueryable()
+        .OrderByDescending(e => e.Inner.Score)
+        .Select(e => e.Inner)
+        .First())
+    .Count(e0 => e0.Score >= (float)e0.Quiz.PassMark)' could not be translated. Additional information: Translation of member 'Quiz' on entity type 'LearnerAttempt' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+System.InvalidOperationException: The LINQ expression 'DbSet<Quiz>()
+    .Where(q => EF.Property<Guid?>(StructuralTypeShaperExpression: 
+        LXP.Common.Entities.Course
+        ValueBufferExpression: 
+            ProjectionBindingExpression: EmptyProjectionMember
+        IsNullable: False
+    , "CourseId") != null && object.Equals(
+        objA: (object)EF.Property<Guid?>(StructuralTypeShaperExpression: 
+            LXP.Common.Entities.Course
+            ValueBufferExpression: 
+                ProjectionBindingExpression: EmptyProjectionMember
+            IsNullable: False
+        , "CourseId"), 
+        objB: (object)EF.Property<Guid?>(q, "CourseId")))
+    .SelectMany(
+        collectionSelector: q => DbSet<LearnerAttempt>()
+            .Where(l => EF.Property<Guid?>(q, "QuizId") != null && object.Equals(
+                objA: (object)EF.Property<Guid?>(q, "QuizId"), 
+                objB: (object)EF.Property<Guid?>(l, "QuizId"))), 
+        resultSelector: (q, c) => new TransparentIdentifier<Quiz, LearnerAttempt>(
+            Outer = q, 
+            Inner = c
+        ))
+    .GroupBy(ti => ti.Inner.LearnerId)
+    .Select(g => g
+        .AsQueryable()
+        .OrderByDescending(e => e.Inner.Score)
+        .Select(e => e.Inner)
+        .First())
+    .Count(e0 => e0.Score >= (float)e0.Quiz.PassMark)' could not be translated. Additional information: Translation of member 'Quiz' on entity type 'LearnerAttempt' failed. This commonly occurs when the specified member is unmapped. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.TranslateSubquery(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Pomelo.EntityFrameworkCore.MySql.Query.ExpressionVisitors.Internal.MySqlSqlTranslatingExpressionVisitor.CallBaseVisitMethodCall(MethodCallExpression methodCallExpression)
+   at Pomelo.EntityFrameworkCore.MySql.Query.ExpressionVisitors.Internal.MySqlSqlTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor.TranslateInternal(Expression expression, Boolean applyDefaultTypeMapping)
+   at Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor.TranslateProjection(Expression expression, Boolean applyDefaultTypeMapping)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.Visit(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.VisitMemberAssignment(MemberAssignment memberAssignment)
+   at System.Linq.Expressions.ExpressionVisitor.VisitMemberBinding(MemberBinding node)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.VisitMemberInit(MemberInitExpression memberInitExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.Visit(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalProjectionBindingExpressionVisitor.Translate(SelectExpression selectExpression, Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.TranslateSelect(ShapedQueryExpression source, LambdaExpression selector)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-27 23:52:24.030 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 500 null application/json 2706.6724ms

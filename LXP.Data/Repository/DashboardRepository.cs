@@ -151,6 +151,28 @@ namespace LXP.Data.Repository
             return courseNames;
         }
 
+        public List<string> GetFeedbackresponses()
+        {
+            var TopEnrolledCourses = _lXPDbContext.Feedbackresponses
+              .GroupBy(e => e.FeedbackresponseId)
+              .OrderByDescending(g => g.Count())
+              .Select(g => new { CourseId = g.Key, Count = g.Count() })
+              .Take(3)
+              .ToList();
+            var feedbacks = new List<string>();
+            foreach (var course in TopEnrolledCourses)
+            {
+                var courseName = _lXPDbContext.Courses
+                    .Where(c => c.CourseId == course.CourseId)
+                    .Select(c => c.Title)
+                    .FirstOrDefault();
+                if (!string.IsNullOrEmpty(courseName))
+                {
+                    feedbacks.Add(courseName);
+                }
+            }
+            return feedbacks;
+        }
 
     }
 }

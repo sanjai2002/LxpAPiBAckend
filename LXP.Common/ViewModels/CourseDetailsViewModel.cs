@@ -63,6 +63,7 @@ namespace LXP.Common.ViewModels
         public Guid CategoryId { get; set; }
 
         public bool Status { get; set; }
+        public string ModifiedAt { get; set; }
     }
 
 }

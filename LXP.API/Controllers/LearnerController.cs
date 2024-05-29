@@ -15,10 +15,12 @@ namespace LXP.Api.Controllers
     public class LearnerController : BaseController
     {
         private readonly ILearnerServices _learnerServices;
+        private readonly IUserReportServices _userReportServices;
 
-        public LearnerController(ILearnerServices learnerServices)
+        public LearnerController(ILearnerServices learnerServices, IUserReportServices userReportServices )
         {
             _learnerServices = learnerServices;
+            _userReportServices = userReportServices;
         }
 
         ///<summary>
@@ -58,6 +60,12 @@ namespace LXP.Api.Controllers
             return Ok(CreateSuccessResponse(learner));
         }
 
+        [HttpGet("/lxp/learnerReport")]
+        public IActionResult GetLearnerReport()
+        {
+            var report= _userReportServices.GetUserReport();
+            return Ok(CreateSuccessResponse(report));
+        }
 
   }
 }

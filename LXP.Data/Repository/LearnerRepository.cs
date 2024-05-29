@@ -147,7 +147,6 @@ namespace LXP.Data.Repository
 
 
         }
-
         public async Task UpdateLearner(Learner learner)
         {
             _lXPDbContext.Learners.Update(learner);

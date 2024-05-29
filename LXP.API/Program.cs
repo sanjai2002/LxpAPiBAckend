@@ -53,7 +53,8 @@ builder.Services.AddScoped<IMaterialTypeRepository, MaterialTypeRepository>();
 builder.Services.AddScoped<IMaterialTypeServices, MaterialTypeServices>();
 builder.Services.AddScoped<IMaterialRepository, MaterialRepository>();
 builder.Services.AddScoped<IMaterialServices, MaterialServices>();
-
+builder.Services.AddScoped<IUserReportServices, UserReportServices>();
+builder.Services.AddScoped<IUserReportRepository, UserReportRepository>();
 //Learner
 builder.Services.AddScoped<ILearnerServices, LearnerServices>();
 builder.Services.AddScoped<ILearnerRepository, LearnerRepository>();
@@ -75,8 +76,8 @@ builder.Services.AddScoped<ITopicFeedbackRepository, TopicFeedbackRepository>();
 builder.Services.AddScoped<IQuizFeedbackService, QuizFeedbackService>();
 builder.Services.AddScoped<ITopicFeedbackService, TopicFeedbackService>();
 builder.Services.AddScoped<IQuizService, QuizService>();
-
-
+builder.Services.AddScoped<IQuizReportServices, QuizReportServices>();
+builder.Services.AddScoped<IQuizReportRepository, QuizReportRepository>();
 // Learner 
 
 builder.Services.AddScoped<ICategoryServices, CategoryServices>();

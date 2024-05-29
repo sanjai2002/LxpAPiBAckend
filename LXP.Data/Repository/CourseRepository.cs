@@ -86,8 +86,8 @@ namespace LXP.Data.Repository
 
                                            _contextAccessor.HttpContext.Request.Scheme,
                                            _contextAccessor.HttpContext.Request.Host,
-                                           _contextAccessor.HttpContext.Request.PathBase, c.Thumbnail)
-
+                                           _contextAccessor.HttpContext.Request.PathBase, c.Thumbnail),
+                          ModifiedAt = c.ModifiedAt.ToString(),
                       })
                       .ToList();
 

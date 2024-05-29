@@ -1,5 +1,6 @@
 ﻿using LXP.Common.DTO;
 using LXP.Core.IServices;
+using LXP.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -16,11 +17,13 @@ namespace LXP.Api.Controllers
     {
         private readonly IQuizService _quizService;
         private readonly IQuizFeedbackService _quizFeedbackService;
+        private readonly IQuizReportServices _quizReportServices;
 
-        public QuizController(IQuizService quizService, IQuizFeedbackService quizFeedbackService)
+        public QuizController(IQuizService quizService, IQuizFeedbackService quizFeedbackService, IQuizReportServices quizReportServices)
         {
             _quizService = quizService;
             _quizFeedbackService = quizFeedbackService;
+            _quizReportServices = quizReportServices;
         }
 
         /// <summary>
@@ -166,6 +169,13 @@ namespace LXP.Api.Controllers
             return Ok(CreateSuccessResponse(quizId));
         }
 
+        [HttpGet("QuizReport")]
+
+        public IActionResult GetQuizReport()
+        {
+            var report = _quizReportServices.GetQuizReports();
+            return Ok(CreateSuccessResponse(report));
+        }
 
         /// <summary>
         /// Deletes a quiz by its ID.
