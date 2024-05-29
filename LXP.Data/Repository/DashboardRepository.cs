@@ -152,25 +152,14 @@ namespace LXP.Data.Repository
 
         public List<string> GetFeedbackresponses()
         {
-            var TopEnrolledCourses = _lXPDbContext.Feedbackresponses
-              .GroupBy(e => e.FeedbackresponseId)
-              .OrderByDescending(g => g.Count())
-              .Select(g => new { CourseId = g.Key, Count = g.Count() })
-              .Take(3)
-              .ToList();
-            var feedbacks = new List<string>();
-            foreach (var course in TopEnrolledCourses)
-            {
-                var courseName = _lXPDbContext.Courses
-                    .Where(c => c.CourseId == course.CourseId)
-                    .Select(c => c.Title)
-                    .FirstOrDefault();
-                if (!string.IsNullOrEmpty(courseName))
-                {
-                    feedbacks.Add(courseName);
-                }
-            }
-            return feedbacks;
+            var feedbackResponses = _lXPDbContext.Feedbackresponses
+          .OrderByDescending(e => e.GeneratedAt)
+          .Where(p=>p.Response!=null)
+          .Select(p => p.Response)// Select only the 'Response' property
+          .Take(3)
+          .ToList(); // Convert the result to a list of strings
+
+            return feedbackResponses;
         }
 
     }

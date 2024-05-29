@@ -259,3 +259,131 @@
 2024-05-29 11:36:14.606 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 3078.0636ms
 2024-05-29 11:36:14.609 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
 2024-05-29 11:36:14.611 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 3159.3636ms
+2024-05-29 12:05:28.986 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-29 12:05:29.021 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-29 12:05:29.025 +05:30 [INF] Hosting environment: Development
+2024-05-29 12:05:29.030 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-29 12:05:32.994 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-29 12:05:33.916 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 931.0101ms
+2024-05-29 12:05:33.925 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-29 12:05:33.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-29 12:05:33.932 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.3887ms
+2024-05-29 12:05:33.977 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.8985ms
+2024-05-29 12:05:34.029 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-29 12:05:34.361 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 331.9408ms
+2024-05-29 12:07:28.476 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/QuizFeedback/AddFeedbackQuestion - application/json 345
+2024-05-29 12:07:28.518 +05:30 [INF] CORS policy execution successful.
+2024-05-29 12:07:28.522 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-29 12:07:28.530 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion (LXP.Api)'
+2024-05-29 12:07:28.567 +05:30 [INF] Route matched with {action = "AddFeedbackQuestion", controller = "QuizFeedback"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddFeedbackQuestion(LXP.Common.DTO.QuizfeedbackquestionViewModel) on controller LXP.Api.Controllers.QuizFeedbackController (LXP.Api).
+2024-05-29 12:07:37.404 +05:30 [INF] Executed action LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion (LXP.Api) in 8827.3277ms
+2024-05-29 12:07:37.408 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion (LXP.Api)'
+2024-05-29 12:07:37.429 +05:30 [ERR] An error occurred while adding the feedback question.
+System.InvalidOperationException: An error occurred while adding the feedback question.
+ ---> System.ArgumentException: Invalid options for the given question type. (Parameter 'options')
+   at LXP.Data.Repository.QuizFeedbackRepository.AddFeedbackQuestion(QuizfeedbackquestionViewModel quizfeedbackquestionDto, List`1 options) in D:\Capstone LXP\LXP.Data\Repository\QuizFeedbackRepository.cs:line 38
+   --- End of inner exception stack trace ---
+   at LXP.Data.Repository.QuizFeedbackRepository.AddFeedbackQuestion(QuizfeedbackquestionViewModel quizfeedbackquestionDto, List`1 options) in D:\Capstone LXP\LXP.Data\Repository\QuizFeedbackRepository.cs:line 82
+   at LXP.Core.Services.QuizFeedbackService.AddFeedbackQuestion(QuizfeedbackquestionViewModel quizfeedbackquestionDto, List`1 options) in D:\Capstone LXP\LXP.Core\Services\QuizFeedbackService.cs:line 18
+   at LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion(QuizfeedbackquestionViewModel quizfeedbackquestionDto) in D:\Capstone LXP\LXP.Api\Controllers\QuizFeedbackController.cs:line 33
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\Capstone LXP\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-05-29 12:07:37.817 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/QuizFeedback/AddFeedbackQuestion - 500 null application/json 9343.2655ms
+2024-05-29 12:07:46.141 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/QuizFeedback/AddFeedbackQuestion - application/json 306
+2024-05-29 12:07:46.155 +05:30 [INF] CORS policy execution successful.
+2024-05-29 12:07:46.157 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion (LXP.Api)'
+2024-05-29 12:07:46.159 +05:30 [INF] Route matched with {action = "AddFeedbackQuestion", controller = "QuizFeedback"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddFeedbackQuestion(LXP.Common.DTO.QuizfeedbackquestionViewModel) on controller LXP.Api.Controllers.QuizFeedbackController (LXP.Api).
+2024-05-29 12:31:48.573 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-29 12:31:48.622 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-29 12:31:48.627 +05:30 [INF] Hosting environment: Development
+2024-05-29 12:31:48.628 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-29 12:31:49.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-29 12:31:50.031 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 532.9643ms
+2024-05-29 12:31:50.062 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-29 12:31:50.063 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-29 12:31:50.068 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.3954ms
+2024-05-29 12:31:50.133 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 70.3255ms
+2024-05-29 12:31:50.182 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-29 12:31:50.361 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 178.5362ms
+2024-05-29 12:31:57.456 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-05-29 12:31:57.478 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-29 12:31:57.486 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-29 12:31:57.521 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-05-29 12:32:01.005 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-29 12:32:01.052 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 3514.4995ms
+2024-05-29 12:32:01.057 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-29 12:32:01.059 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 3603.2515ms
+2024-05-29 13:06:21.772 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-29 13:06:21.870 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-29 13:06:21.873 +05:30 [INF] Hosting environment: Development
+2024-05-29 13:06:21.874 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-29 13:06:26.147 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-29 13:06:27.002 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 864.1442ms
+2024-05-29 13:06:27.016 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-29 13:06:27.022 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-29 13:06:27.032 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.7183ms
+2024-05-29 13:06:27.075 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.6634ms
+2024-05-29 13:06:27.139 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-29 13:06:27.447 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 307.7647ms
+2024-05-29 13:06:32.769 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-05-29 13:06:32.790 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-29 13:06:32.798 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-29 13:06:32.831 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-05-29 13:06:36.407 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-29 13:06:36.457 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 3615.7502ms
+2024-05-29 13:06:36.463 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-29 13:06:36.466 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 3697.2772ms
+2024-05-29 13:46:25.688 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-29 13:46:25.752 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-29 13:46:25.756 +05:30 [INF] Hosting environment: Development
+2024-05-29 13:46:25.760 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-29 13:46:29.723 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-29 13:46:30.591 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 875.7862ms
+2024-05-29 13:46:30.598 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-29 13:46:30.601 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-29 13:46:30.625 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 24.399ms
+2024-05-29 13:46:30.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.0053ms
+2024-05-29 13:46:30.722 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-29 13:46:30.983 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 260.7468ms
+2024-05-29 13:46:46.633 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-05-29 13:46:46.660 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-29 13:46:46.669 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-29 13:46:46.696 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-05-29 13:46:49.982 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-29 13:46:50.026 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 3319.8311ms
+2024-05-29 13:46:50.036 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-29 13:46:50.041 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 3408.7487ms
+2024-05-29 13:49:36.294 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-29 13:49:36.340 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-29 13:49:36.348 +05:30 [INF] Hosting environment: Development
+2024-05-29 13:49:36.349 +05:30 [INF] Content root path: D:\Capstone LXP\LXP.Api
+2024-05-29 13:49:37.295 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-29 13:49:37.722 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 430.2706ms
+2024-05-29 13:49:37.749 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-29 13:49:37.757 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-29 13:49:37.775 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 27.945ms
+2024-05-29 13:49:37.822 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.2332ms
+2024-05-29 13:49:37.868 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-29 13:49:38.050 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 181.5914ms
+2024-05-29 13:49:51.755 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-05-29 13:49:51.775 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-29 13:49:51.783 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-29 13:49:51.807 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-05-29 13:49:54.717 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-29 13:49:54.766 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 2948.5499ms
+2024-05-29 13:49:54.776 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-05-29 13:49:54.782 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 3028.5414ms
