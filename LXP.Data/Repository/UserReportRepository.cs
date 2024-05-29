@@ -20,24 +20,21 @@ namespace LXP.Data.Repository
         }
         public IEnumerable<UserReportViewModel> GetUserReport()
         {
-            //var learnerId = _lXPDbContext.Enrollments
-            //   .GroupBy(e => e.LearnerId)
-            //   .Select(g => g.Key)
-            //   .ToList();
-
-
-
-            var query = _lXPDbContext.Enrollments
+            var query = _lXPDbContext.Learners
+                .Where(e=>e.Role!="Admin")
              .GroupBy(e => e.LearnerId)
                  .Select(grouped => new UserReportViewModel
           {
               UserName = $"{_lXPDbContext.LearnerProfiles.Where(x => x.LearnerId.Equals(grouped.Key)).First().FirstName} {_lXPDbContext.LearnerProfiles.Where(x => x.LearnerId.Equals(grouped.Key)).First().LastName}",
               LearnerId = grouped.Key.ToString(),
-              EnrolledCourse = grouped.Count(),
-              CompletedCourse = grouped.Count(x => x.CompletedStatus == 1),
+              EnrolledCourse = _lXPDbContext.Enrollments
+              .Where(e => e.LearnerId.Equals(grouped.Key)).Count(),
+              CompletedCourse = _lXPDbContext.Enrollments
+              .Where(e => e.LearnerId.Equals(grouped.Key)).Count(x => x.CompletedStatus == 1),
               LastLogin= _lXPDbContext.Learners.Where(x => x.LearnerId.Equals(grouped.Key)).First().UserLastLogin
           });
 
+           
             var userReports = query.ToList();
             return userReports;
 
