@@ -26,19 +26,21 @@ namespace LXP.Data.Repository
             //   .ToList();
 
 
+
             var query = _lXPDbContext.Enrollments
-                .GroupBy(e => e.LearnerId)
-                    .Select(grouped => new UserReportViewModel
-                    {
-                       
-                        EnrolledCourse = grouped.Count(),
-                        CompletedCourse = grouped.Count(x => x.CompletedStatus == 1),
-
-
-                    }); ;
+             .GroupBy(e => e.LearnerId)
+                 .Select(grouped => new UserReportViewModel
+          {
+              UserName = $"{_lXPDbContext.LearnerProfiles.Where(x => x.LearnerId.Equals(grouped.Key)).First().FirstName} {_lXPDbContext.LearnerProfiles.Where(x => x.LearnerId.Equals(grouped.Key)).First().LastName}",
+              LearnerId = grouped.Key.ToString(),
+              EnrolledCourse = grouped.Count(),
+              CompletedCourse = grouped.Count(x => x.CompletedStatus == 1),
+              LastLogin= _lXPDbContext.Learners.Where(x => x.LearnerId.Equals(grouped.Key)).First().UserLastLogin
+          });
 
             var userReports = query.ToList();
             return userReports;
+
 
         }
     }
