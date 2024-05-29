@@ -1,5 +1,4 @@
 ﻿using LXP.Common.Entities;
-using LXP.Data.DBContexts;
 using Microsoft.EntityFrameworkCore;
 
 namespace LXP.Data.Repository

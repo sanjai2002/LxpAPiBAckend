@@ -2,7 +2,6 @@
 using LXP.Common.ViewModels;
 using LXP.Data.IRepository;
 using System.Data.Entity;
-using LXP.Data.DBContexts;
 using LXP.Common.Entities;
 
 namespace LXP.Data.Repository

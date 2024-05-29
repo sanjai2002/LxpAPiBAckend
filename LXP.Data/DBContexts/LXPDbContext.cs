@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using LXP.Common.Entities;
-using LXP.Data;
 using Microsoft.EntityFrameworkCore;
 using Pomelo.EntityFrameworkCore.MySql.Scaffolding.Internal;
 
-namespace LXP.Data.DBContexts;
+namespace LXP.Common.Entities;
 
 public partial class LXPDbContext : DbContext
 {
@@ -572,10 +570,10 @@ public partial class LXPDbContext : DbContext
                 .HasColumnName("modified_at");
             entity.Property(e => e.ModifiedBy).HasColumnName("modified_by");
             entity.Property(e => e.NewPassword)
-                .HasMaxLength(30)
+                .HasMaxLength(120)
                 .HasColumnName("new_password");
             entity.Property(e => e.OldPassword)
-                .HasMaxLength(30)
+                .HasMaxLength(120)
                 .HasColumnName("old_password");
 
             entity.HasOne(d => d.Learner).WithMany(p => p.PasswordHistories).HasForeignKey(d => d.LearnerId);

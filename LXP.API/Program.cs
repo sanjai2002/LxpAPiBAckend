@@ -1,9 +1,9 @@
 using FluentValidation.AspNetCore;
+using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Core.Repositories;
 using LXP.Core.Services;
-using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 using LXP.Data.Repository;
 using Microsoft.Extensions.FileProviders;

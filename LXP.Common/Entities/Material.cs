@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-namespace LXP.Common.Entities;
 
+namespace LXP.Common.Entities;
 public partial class Material
 {
     public Guid MaterialId { get; set; }

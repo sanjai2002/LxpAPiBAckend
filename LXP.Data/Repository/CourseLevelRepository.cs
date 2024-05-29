@@ -1,8 +1,7 @@
 ﻿using LXP.Common.Entities;
-using LXP.Data.DBContexts;
 using LXP.Data.IRepository;
 
-namespace LXP.Data.Repository
+namespace LXP.Data.IRepository
 {
     public class CourseLevelRepository : ICourseLevelRepository
     {
