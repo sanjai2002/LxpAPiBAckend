@@ -25,7 +25,6 @@ namespace LXP.Api.Controllers
         [HttpPost("EmailVerification")]
         public async Task<IActionResult> GenerateOTP([FromBody] string email)
         {
-
             // Generate a random OTP
             string[] saAllowedCharacters = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
             string sOTP = "";

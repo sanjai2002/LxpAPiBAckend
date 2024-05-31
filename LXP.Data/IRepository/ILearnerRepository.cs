@@ -1,11 +1,16 @@
-﻿using LXP.Common.Entities;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 
 namespace LXP.Data.IRepository
 {
     public interface ILearnerRepository
     {
-        Task  AddLearner(Learner learner);
+        void AddLearner(Learner learner);
         Task<bool> AnyLearnerByEmail(string email);
         Learner GetLearnerByLearnerEmail(string email);
 
@@ -17,11 +22,11 @@ namespace LXP.Data.IRepository
 
         Task UpdateLearner(Learner learner);
 
+
         public IEnumerable<AllLearnersViewModel> GetLearners();
 
         object GetAllLearnerDetailsByLearnerId(Guid learnerId);
 
         object GetLearnerEnrolledcourseByLearnerId(Guid learnerId);
-
     }
 }

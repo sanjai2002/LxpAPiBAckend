@@ -1,18 +1,26 @@
-﻿namespace LXP.Common.ViewModels
+﻿using System;
+using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace LXP.Common.ViewModels
 {
     public class EnrollmentViewModel
     {
         ///<summary>
         ///Course Name
         ///</summary>
-
+        
         public Guid CourseId { get; set; }
 
         ///<summary>
         ///Learner Name
         ///</summary>
-
-        public Guid LearnerId { get; set; }
+        
+        public Guid LearnerId { get; set; }    
 
         ///<summary>
         ///EnrollmentDate

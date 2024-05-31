@@ -1,30 +1,18 @@
-﻿
-using LXP.Common.Entities;
 using LXP.Common.ViewModels;
+using LXP.Common.Entities;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LXP.Core.IServices
 {
     public interface ICourseServices
     {
-        // check simi
-        Task<CourseListViewModel> GetCourseDetailsByCourseId(string courseId);
-        Course GetCourseByCourseId(Guid courseId);
+        Course GetCourseByCourseId(string courseId);
+        bool AddCourse(CourseViewModel course);
 
-
-        CourseListViewModel GetCourseDetailsByCourseName(string courseName);
-        CourseListViewModel AddCourse(CourseViewModel course);
-
-        //Course GetCourseByCourseId(Guid courseId);
-
-        Task<bool> Deletecourse(Guid courseId);
-
-        Task<bool> Changecoursestatus(Coursestatus status);
-
-        Task<bool> Updatecourse(CourseUpdateModel course);
-
-        IEnumerable<CourseDetailsViewModel> GetAllCourse();
-        IEnumerable<CourseDetailsViewModel> GetLimitedCourse();
-
-
+        IEnumerable<CourseListViewModel> GetAllCourseDetails();
     }
 }

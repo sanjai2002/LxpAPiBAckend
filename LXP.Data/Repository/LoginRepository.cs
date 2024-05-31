@@ -1,10 +1,15 @@
-﻿using LXP.Common.Entities;
+﻿using System;
+using System.Collections;
+using System.Globalization;
+using System.Threading.Tasks;
+using LXP.Common;
+using LXP.Common.Entities;
+using LXP.Common.ViewModels;
 using LXP.Data.IRepository;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
 namespace LXP.Data.Repository
 {
-
     public class LoginRepository : ILoginRepository
     {
 
@@ -48,22 +53,24 @@ namespace LXP.Data.Repository
             learner.Password = Password;
             _dbcontext.Learners.Update(learner);
             await _dbcontext.SaveChangesAsync();
-
         }
 
 
-        public async Task UpdateLearnerLastLogin(string Email)
-        {
-            var learners = await _dbcontext.Learners.FirstOrDefaultAsync(learners => learners.Email == Email);
+        //public async Task UpdatePassword(Learner learner)
+        //{
+        //    _dbcontext.Learners.Update(learner);
 
-            if (learners != null)
-            {
-                learners.UserLastLogin = DateTime.Now;
-                _dbcontext.Learners.Update(learners);
-                await _dbcontext.SaveChangesAsync();
-            }
+        //    await _dbcontext.SaveChangesAsync();
+        //}
 
-        }
+
+
+        //public async Task<Learner> LearnerByEmailAndPassword(string Email, string Password)
+
+        //{
+        //    return await _dbcontext.Learners.FirstOrDefaultAsync(learner => learner.Email == Email && learner.Password == Password);
+        //}
+
 
     }
 }

@@ -1,26 +1,38 @@
 ﻿using AutoMapper;
 using LXP.Common.Entities;
+using LXP.Common.Utils;
 using LXP.Common.ViewModels;
-using LXP.Core.IServices;
 using LXP.Data.IRepository;
+using Mysqlx;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
+
+using LXP.Core.IServices;
+using LXP.Data;
 namespace LXP.Core.Services
 {
     public class LoginService : ILoginService
     {
 
         private readonly ILoginRepository _repository;
-
         private Mapper _moviemapper;
 
-        public LoginService(ILoginRepository repository)
+        private readonly LXPDbContext _dbcontext;
+
+        public LoginService(ILoginRepository repository, LXPDbContext dbcontext)
         {
             _repository = repository;
 
             var _configlogin = new MapperConfiguration(cfg => cfg.CreateMap<Learner, LoginModel>());
 
             _moviemapper = new Mapper(_configlogin);
+
+            _dbcontext = dbcontext;
         }
 
 
@@ -64,15 +76,10 @@ namespace LXP.Core.Services
                     message.Role = getlearners.Role;
 
                     message.AccountStatus = getlearners.AccountStatus;
+                    message.GetLearnerId = getlearners.LearnerId;
 
                     if (checkpassword)
-
-
                     {
-
-                        await _repository.UpdateLearnerLastLogin(loginmodel.Email);
-
-
                         loginRole = new LoginRole();
 
                         {
@@ -84,7 +91,8 @@ namespace LXP.Core.Services
 
                             loginRole.AccountStatus = message.AccountStatus;
 
-                            loginRole.LastLogin = DateTime.Now;
+                            loginRole.GetLearnerId = message.GetLearnerId;
+
 
 
 
@@ -127,6 +135,18 @@ namespace LXP.Core.Services
 
         }
 
+        //public async Task<Guid> GetLearnerId(EmailViewModel emailViewModel)
+        //{
+
+        //    Guid learner =  _repository.FindLearnerId(emailViewModel);
+
+        //    return learner;
+
+
+        //}
+
+
+
 
         //public async Task<bool> ForgetPassword(string Email)
 
@@ -157,11 +177,11 @@ namespace LXP.Core.Services
 
 
 
-
         //public async Task<ResultUpdatePassword> UpdatePassword(UpdatePassword updatePassword)
         //{
         //    var learner = await _repository.LearnerByEmailAndPassword(updatePassword.Email, Encryption.ComputePasswordToSha256Hash(updatePassword.OldPassword));
         //    var result = new ResultUpdatePassword();
+
         //    if (learner.Password== Encryption.ComputePasswordToSha256Hash(updatePassword.OldPassword))
         //    {
         //        string encryptNewPassword = Encryption.ComputePasswordToSha256Hash(updatePassword.NewPassword);

@@ -1,4 +1,4 @@
-﻿using FluentValidation;
+using FluentValidation;
 using LXP.Common.ViewModels;
 using Microsoft.AspNetCore.Http;
 
@@ -12,7 +12,7 @@ public class CourseViewModelValidator : AbstractValidator<CourseViewModel>
         RuleFor(course => course.Level)
             .NotEmpty().WithMessage("Level is required");
 
-        RuleFor(course => course.Category)
+        RuleFor(course => course.Catagory)
             .NotEmpty().WithMessage("Category is required");
 
         RuleFor(course => course.Description)
@@ -22,9 +22,9 @@ public class CourseViewModelValidator : AbstractValidator<CourseViewModel>
              .GreaterThan(0).WithMessage("Duration must be greater than 0")
              .Must(BeInDecimalForm).WithMessage("Duration must be in decimal form");
 
-        //RuleFor(course => course.Thumbnailimage)
-        //    .Must(BeAValidSize).WithMessage("Image must be less than 250kb")
-        //    .Must(BeAValidFileType).WithMessage("File must be jpeg or png");
+        RuleFor(course => course.Thumbnailimage)
+            .Must(BeAValidSize).WithMessage("Image must be less than 250kb")
+            .Must(BeAValidFileType).WithMessage("File must be jpeg or png");
     }
 
     private bool BeAValidSize(IFormFile file)

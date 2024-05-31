@@ -1,4 +1,10 @@
-﻿namespace LXP.Common.ViewModels
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LXP.Common.ViewModels
 {
     public class MaterialListViewModel
     {
@@ -18,12 +24,12 @@
 
         public bool IsAvailable { get; set; }
 
-        public string? CreatedBy { get; set; } = null!;
+        public string? CreatedBy { get; set; } = null;
 
         public DateTime CreatedAt { get; set; }
 
-        public string? ModifiedBy { get; set; } = null!;
+        public string? ModifiedBy { get; set; } = null;
 
-        public DateTime? ModifiedAt { get; set; } = null!;
+        public string? ModifiedAt { get; set; } = null!;
     }
 }

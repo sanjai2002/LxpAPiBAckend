@@ -19,7 +19,7 @@
 
 //        public ProfileService( IProfileRepository profileRepository)
 //        {
-
+            
 //            this._profileRepository = profileRepository;
 //            var _configCategory = new MapperConfiguration(cfg => cfg.CreateMap<LearnerProfile, GetProfileViewModel>().ReverseMap());
 //            _learnerProfileMapper = new Mapper(_configCategory);
@@ -35,7 +35,7 @@
 //        public LearnerProfile GetLearnerProfileById(string id) {
 
 //            return _profileRepository.GetLearnerprofileDetailsByLearnerprofileId(Guid.Parse(id));
-
+        
 //        }
 
 //    }
@@ -55,8 +55,15 @@ using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
+using LXP.Data.Repository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LXP.Core.Services
 {

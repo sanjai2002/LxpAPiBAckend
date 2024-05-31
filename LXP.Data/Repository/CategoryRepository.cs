@@ -1,7 +1,11 @@
 ﻿using LXP.Common.Entities;
-
-using LXP.Data.IRepository;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using LXP.Data.IRepository;
 
 namespace LXP.Data.Repository
 {
@@ -12,15 +16,14 @@ namespace LXP.Data.Repository
         {
             _lXPDbContext = lXPDbContext;
         }
-
-        public async Task<List<CourseCategory>> GetAllCategory()
-        {
-            return await _lXPDbContext.CourseCategories.ToListAsync();
-        }
         public async Task AddCategory(CourseCategory category)
         {
             await _lXPDbContext.CourseCategories.AddAsync(category);
             await _lXPDbContext.SaveChangesAsync();
+        }
+        public async Task<List<CourseCategory>> GetAllCategory()
+        {
+            return await _lXPDbContext.CourseCategories.ToListAsync();
         }
         public async Task<bool> AnyCategoryByCategoryName(string Category)
         {
@@ -30,11 +33,6 @@ namespace LXP.Data.Repository
         {
             return _lXPDbContext.CourseCategories.Find(categoryId);
         }
-        public CourseCategory GetCategoryByCategoryName(string categoryName)
-        {
-            return _lXPDbContext.CourseCategories.First(category => category.Category == categoryName);
-        }
-
 
     }
 }

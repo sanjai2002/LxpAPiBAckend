@@ -19,8 +19,8 @@
 //        }
 //        public void AddProfile(LearnerProfile learnerprofile)
 //        {
-
-
+            
+            
 //            _LXPDbContext.LearnerProfiles.Add(learnerprofile);
 //            _LXPDbContext.SaveChanges();
 //        }
@@ -55,8 +55,14 @@
 
 
 
-using LXP.Common.Entities;
 using LXP.Data.IRepository;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using LXP.Common.Entities;
+using System.Runtime.InteropServices;
 
 namespace LXP.Data.Repository
 {
@@ -67,7 +73,7 @@ namespace LXP.Data.Repository
         {
             _LXPDbContext = context;
         }
-        public  void AddProfile(LearnerProfile learnerprofile)
+        public void AddProfile(LearnerProfile learnerprofile)
         {
 
 

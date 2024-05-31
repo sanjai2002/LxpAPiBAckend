@@ -1,7 +1,13 @@
 ﻿using LXP.Common.Entities;
 using LXP.Data.IRepository;
+using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace LXP.Data.IRepository
+namespace LXP.Data.Repository
 {
     public class CourseLevelRepository : ICourseLevelRepository
     {
@@ -26,5 +32,4 @@ namespace LXP.Data.IRepository
             return _lXPDbContext.CourseLevels.Find(courseLevelId);
         }
     }
-
 }

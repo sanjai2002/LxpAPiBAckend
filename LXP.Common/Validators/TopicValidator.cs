@@ -1,4 +1,4 @@
-﻿using FluentValidation;
+using FluentValidation;
 using LXP.Common.ViewModels;
 
 public class CourseTopicViewModelValidator : AbstractValidator<CourseTopicViewModel>

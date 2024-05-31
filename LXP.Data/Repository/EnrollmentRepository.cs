@@ -2,6 +2,11 @@
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LXP.Data.Repository
 {
@@ -42,13 +47,14 @@ namespace LXP.Data.Repository
                              enrolledCourseId = enrollment.CourseId,
                              enrolledCoursename = enrollment.Course.Title,
                              enrolledcoursedescription = enrollment.Course.Description,
-                             enrolledcoursecategory = enrollment.Course.Category.CategoryId,
-                             enrolledcourselevels = enrollment.Course.Level.LevelId,
+                             enrolledcoursecategory = enrollment.Course.Category.Category,
+                             enrolledcourselevels = enrollment.Course.Level.Level,
                              Thumbnailimage = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
                              _contextAccessor.HttpContext.Request.Scheme,
                              _contextAccessor.HttpContext.Request.Host,
                              _contextAccessor.HttpContext.Request.PathBase,
                              enrollment.Course.Thumbnail),
+
                              Topics = (from topic in _lXPDbContext.Topics
                                        where topic.CourseId == enrollment.CourseId && topic.IsActive == true
                                        select new
@@ -60,7 +66,7 @@ namespace LXP.Data.Repository
                                            Materials = (from material in _lXPDbContext.Materials
                                                         join materialType in _lXPDbContext.MaterialTypes on material.MaterialTypeId equals materialType.MaterialTypeId
 
-                                                        where material.TopicId == topic.TopicId
+                                                        where material.TopicId == topic.TopicId 
                                                         select new
                                                         {
                                                             MaterialId = material.MaterialId,
@@ -77,9 +83,9 @@ namespace LXP.Data.Repository
                                            //{
                                            //    MaterialType=materialType.Type,
                                            //    MaterialTypeId=materialType.MaterialTypeId,
-
+                                               
                                            //}).ToList(),
-
+                                          
                                        }).ToList()
                          };
             return result;

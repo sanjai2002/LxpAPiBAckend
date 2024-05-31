@@ -1,32 +1,40 @@
-﻿using AutoMapper;
-using LXP.Common.Entities;
 using LXP.Common.ViewModels;
+using LXP.Common.Entities;
 using LXP.Core.IServices;
+using Microsoft.Extensions.Hosting;
 using LXP.Data.IRepository;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Hosting;
+using LXP.Data.Repository;
+using Org.BouncyCastle.Asn1.Ocsp;
+using Microsoft.AspNetCore.Http.HttpResults;
+using System.Reflection.Metadata.Ecma335;
+using AutoMapper;
 
 namespace LXP.Core.Services
 {
     public class CourseServices : ICourseServices
     {
         private readonly ICourseRepository _courseRepository;
-        private readonly IWebHostEnvironment _environment;
-        private readonly IHttpContextAccessor _contextAccessor;
         private readonly ICategoryRepository _categoryRepository;
         private readonly ICourseLevelRepository _courseLevelRepository;
+        private readonly IWebHostEnvironment _environment;
+        private readonly IHttpContextAccessor _contextAccessor;
+        private Mapper _courseMapper; //Mapper1
 
-        private Mapper _courseMapper;
+
         public CourseServices(ICourseRepository courseRepository, ICategoryRepository categoryRepository, ICourseLevelRepository courseLevelRepository, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
         {
-            _courseRepository = courseRepository; ;
-            _environment = environment;
+            _courseRepository = courseRepository;
             _courseLevelRepository = courseLevelRepository;
             _categoryRepository = categoryRepository;
-
+            _environment = environment;
             _contextAccessor = httpContextAccessor;
+            var _configCategory = new MapperConfiguration(cfg => cfg.CreateMap<Course, CourseViewModel>().ReverseMap());// mapper 2
+            _courseMapper = new Mapper(_configCategory);//mapper 3
+
         }
-        public CourseListViewModel AddCourse(CourseViewModel course)
+        public bool AddCourse(CourseViewModel course)
         {
             bool isCourseExists = _courseRepository.AnyCourseByCourseTitle(course.Title);
 
@@ -36,7 +44,7 @@ namespace LXP.Core.Services
 
                 Guid levelId = Guid.Parse(course.Level);
                 CourseLevel level = _courseLevelRepository.GetCourseLevelByCourseLevelId(levelId);
-                Guid categoryId = Guid.Parse(course.Category);
+                Guid categoryId = Guid.Parse(course.Catagory);
                 CourseCategory category = _categoryRepository.GetCategoryByCategoryId(categoryId);
 
                 // Generate a unique file name
@@ -51,7 +59,7 @@ namespace LXP.Core.Services
                     course.Thumbnailimage.CopyTo(stream); // Use await
                 }
 
-                Course newCourse = new Course
+                Course newcourse = new Course
                 {
                     CourseId = Guid.NewGuid(),
                     Category = category,
@@ -60,174 +68,53 @@ namespace LXP.Core.Services
                     Description = course.Description,
                     Duration = course.Duration,
                     Thumbnail = uniqueFileName,
-                    CreatedBy = course.CreatedBy,
-                    CreatedAt = DateTime.Now,
+                    CreatedBy = "Admin",
+                    CreatedAt = new DateTime(),
                     IsActive = true,
                     IsAvailable = true,
-                    ModifiedAt = null,
-                    ModifiedBy = null
+                    ModifiedAt = new DateTime(),
+                    ModifiedBy = "Admin"
 
 
                 };
-                _courseRepository.AddCourse(newCourse);
+                _courseRepository.AddCourse(newcourse);
 
-                return GetCourseDetailsByCourseName(newCourse.Title);
+                return true;
             }
             else
             {
-                return null;
+                return false;
             }
         }
-        public async Task<CourseListViewModel> GetCourseDetailsByCourseId(string courseId)
+
+        public Course GetCourseByCourseId(string courseId)
         {
-            Course course = _courseRepository.GetCourseDetailsByCourseId(Guid.Parse(courseId));
-
-            CourseListViewModel courseDetails = new CourseListViewModel()
-            {
-                CourseId = course.CourseId,
-                Title = course.Title,
-                Description = course.Description,
-                Catagory = course.Category.Category,
-                Level = course.Level.Level,
-                Duration = course.Duration,
-                Thumbnail = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
-                                             _contextAccessor.HttpContext.Request.Scheme,
-                                             _contextAccessor.HttpContext.Request.Host,
-                                             _contextAccessor.HttpContext.Request.PathBase,
-                                             course.Thumbnail),
-                CreatedAt = course.CreatedAt,
-                IsActive = course.IsActive,
-                IsAvailable = course.IsAvailable,
-                ModifiedAt = course.ModifiedAt,
-                CreatedBy = course.CreatedBy,
-                ModifiedBy = course.ModifiedBy,
-
-            };
-
-            return courseDetails;
-        }
-        public CourseListViewModel GetCourseDetailsByCourseName(string courseName)
-        {
-            var course = _courseRepository.GetCourseDetailsByCourseName(courseName);
-            var courseDetails = new CourseListViewModel
-            {
-                CourseId = course.CourseId,
-                Title = course.Title,
-                Description = course.Description,
-                Catagory = course.Category.Category,
-                Level = course.Level.Level,
-                Duration = course.Duration,
-                Thumbnail = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
-                                             _contextAccessor.HttpContext.Request.Scheme,
-                                             _contextAccessor.HttpContext.Request.Host,
-                                             _contextAccessor.HttpContext.Request.PathBase,
-                                             course.Thumbnail),
-                CreatedAt = course.CreatedAt,
-                IsActive = course.IsActive,
-                IsAvailable = course.IsAvailable,
-                ModifiedAt = course.ModifiedAt,
-                CreatedBy = course.CreatedBy,
-                ModifiedBy = course.ModifiedBy,
-
-
-            };
-            return courseDetails;
-
-
-
-        }
-
-
-        public Course GetCourseByCourseId(Guid courseId)
-        {
-            var course = _courseRepository.GetCourseDetailsByCourseId(courseId);
-
+            Guid CourseId = Guid.Parse(courseId);
+            var course = _courseRepository.GetCourseDetailsByCourseId(CourseId);
             var courseView = new Course
             {
-                CourseId = courseId,
-                LevelId = course.LevelId,
-                CategoryId = course.CategoryId,
+    
                 Title = course.Title,
                 Description = course.Description,
+                Category = course.Category,
+                Level = course.Level,
                 Duration = course.Duration,
                 Thumbnail = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
                                              _contextAccessor.HttpContext.Request.Scheme,
                                              _contextAccessor.HttpContext.Request.Host,
                                              _contextAccessor.HttpContext.Request.PathBase,
                                              course.Thumbnail)
+
             };
             return courseView;
 
+
+
         }
 
-
-        public async Task<bool> Deletecourse(Guid courseid)
+        public IEnumerable<CourseListViewModel> GetAllCourseDetails()
         {
-            var Course = _courseRepository.FindCourseid(courseid);
-            if (Course != null)
-            {
-                var Enrollentcourse = _courseRepository.FindEntrollmentcourse(courseid);
-                if (Enrollentcourse == null)
-                {
-                    _courseRepository.Deletecourse(Course);
-                    return true;
-                }
-            }
-            return false;
+            return _courseRepository.GetAllCourseDetails();
         }
-
-        public async Task<bool> Changecoursestatus(Coursestatus courseStatus)
-        {
-            var course = _courseRepository.FindCourseid(courseStatus.CourseId);
-            if (course != null)
-            {
-                course.IsAvailable = courseStatus.IsAvailable;
-                course.ModifiedAt = DateTime.Now;
-                await _courseRepository.Changecoursestatus(course);
-                return true;
-            }
-            return false;
-        }
-
-
-        public async Task<bool> Updatecourse(CourseUpdateModel courseupdate)
-        {
-            var uniqueFileName = $"{Guid.NewGuid()}_{courseupdate.Thumbnailimage.FileName}";
-            var uploadsFolder = Path.Combine(_environment.WebRootPath, "CourseThumbnailImages"); // Use WebRootPath
-            var filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-            using (var stream = new FileStream(filePath, FileMode.Create))
-            {
-                courseupdate.Thumbnailimage.CopyTo(stream);
-            }
-            var course = _courseRepository.FindCourseid(courseupdate.CourseId);
-            if (course != null)
-            {
-                course!.Title = courseupdate.Title;
-                course.CategoryId = courseupdate.CategoryId;
-                course.LevelId = courseupdate.LevelId;
-                course.Description = courseupdate.Description;
-                course.Duration = courseupdate.Duration;
-                course.Thumbnail = uniqueFileName;
-                course.ModifiedBy = courseupdate.ModifiedBy;
-                course.ModifiedAt = DateTime.Now;
-                await _courseRepository.Updatecourse(course);
-                return true;
-            }
-            return false;
-        }
-
-        public IEnumerable<CourseDetailsViewModel> GetAllCourse()
-        {
-            return _courseRepository.GetAllCourse();
-
-        }
-
-        public IEnumerable<CourseDetailsViewModel> GetLimitedCourse()
-        {
-            return _courseRepository.GetLimitedCourse();
-        }
-
-
     }
 }

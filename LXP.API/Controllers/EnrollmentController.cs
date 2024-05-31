@@ -54,6 +54,6 @@ namespace LXP.Api.Controllers
             return Ok(CreateSuccessResponse(learner));
         }
 
-        
+
     }
 }

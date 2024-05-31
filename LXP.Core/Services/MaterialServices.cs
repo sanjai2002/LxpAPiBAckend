@@ -1,10 +1,16 @@
 ﻿using AutoMapper;
+using Google.Protobuf.WellKnownTypes;
 using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LXP.Core.Services
 {
@@ -12,14 +18,14 @@ namespace LXP.Core.Services
     {
         private readonly IMaterialRepository _materialRepository;
         private readonly ICourseTopicRepository _courseTopicRepository;
-        private readonly IMaterialTypeRepository _materialTypeRepository;
+       private readonly IMaterialTypeRepository _materialTypeRepository;
         private readonly IWebHostEnvironment _environment;
         private readonly IHttpContextAccessor _contextAccessor;
         private Mapper _courseMaterialMapper;
 
 
 
-        public MaterialServices(IMaterialTypeRepository materialTypeRepository, IMaterialRepository materialRepository, ICourseTopicRepository courseTopicRepository, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
+        public MaterialServices(IMaterialTypeRepository materialTypeRepository,IMaterialRepository materialRepository,ICourseTopicRepository courseTopicRepository, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
         {
             _materialRepository = materialRepository;
             _courseTopicRepository = courseTopicRepository;
@@ -58,6 +64,7 @@ namespace LXP.Core.Services
                     CreatedBy = material.CreatedBy,
                     CreatedAt = DateTime.Now,
                     FilePath = uniqueFileName,
+
                     IsActive = true,
                     IsAvailable = true,
                     Duration = material.Duration,
@@ -74,30 +81,41 @@ namespace LXP.Core.Services
             }
         }
 
-        public async Task<List<MaterialListViewModel>> GetAllMaterialDetailsByTopicAndType(string topicId, string materialTypeId)
+        public async Task<List<MaterialListViewModel>> GetAllMaterialDetailsByTopicAndType(string topicId,string materialTypeId)
         {
             Topic topic = await _courseTopicRepository.GetTopicByTopicId(Guid.Parse(topicId));
             MaterialType materialType = _materialTypeRepository.GetMaterialTypeByMaterialTypeId(Guid.Parse(materialTypeId));
 
-            List<Material> material = _materialRepository.GetAllMaterialDetailsByTopicAndType(topic, materialType);
+            List<Material> material= _materialRepository.GetAllMaterialDetailsByTopicAndType(topic,materialType);
 
             List<MaterialListViewModel> materialLists = new List<MaterialListViewModel>();
 
             foreach (var item in material)
             {
+
+                
                 MaterialListViewModel materialList = new MaterialListViewModel()
                 {
                     MaterialId = item.MaterialId,
                     TopicName = item.Topic.Name,
                     MaterialType = item.MaterialType.Type,
                     Name = item.Name,
-                    FilePath = item.FilePath,
+                   // FilePath = item.FilePath,
+
+
+                    FilePath = String.Format("{0}://{1}{2}/wwwroot/CourseMaterial/{3}",
+                                             _contextAccessor.HttpContext.Request.Scheme,
+                                             _contextAccessor.HttpContext.Request.Host,
+                                             _contextAccessor.HttpContext.Request.PathBase,
+                                             item.FilePath),
+
+
                     Duration = item.Duration,
                     IsActive = item.IsActive,
                     IsAvailable = item.IsAvailable,
                     CreatedAt = item.CreatedAt,
                     CreatedBy = item.CreatedBy,
-                    ModifiedAt = item.ModifiedAt,
+                    ModifiedAt = item.ModifiedAt.ToString(),
                     ModifiedBy = item.ModifiedBy
 
 
@@ -125,7 +143,7 @@ namespace LXP.Core.Services
                 IsActive = material.IsActive,
                 IsAvailable = material.IsAvailable,
                 CreatedAt = material.CreatedAt,
-                ModifiedAt = material.ModifiedAt,
+                ModifiedAt = material.ModifiedAt.ToString(),
                 ModifiedBy = material.ModifiedBy,
                 CreatedBy = material.CreatedBy
 

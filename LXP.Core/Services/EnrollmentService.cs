@@ -1,10 +1,20 @@
-﻿using LXP.Common.Entities;
+﻿using System;
 using LXP.Common.ViewModels;
+using LXP.Common.Entities;
 using LXP.Core.IServices;
+using Microsoft.Extensions.Hosting;
 using LXP.Data.IRepository;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Hosting;
+using LXP.Data.Repository;
+using Org.BouncyCastle.Asn1.Ocsp;
+using Microsoft.AspNetCore.Http.HttpResults;
+using System.Reflection.Metadata.Ecma335;
 //using AutoMapper;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LXP.Core.Services
 {
@@ -74,7 +84,6 @@ namespace LXP.Core.Services
             return _enrollmentRepository.GetCourseandTopicsByLearnerId(learnerId);
 
         }
-
     }
 
 

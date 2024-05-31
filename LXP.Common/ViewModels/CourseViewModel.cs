@@ -1,5 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LXP.Common.ViewModels
 {
@@ -23,7 +28,7 @@ namespace LXP.Common.ViewModels
         ///</Summary>
         ///<example>Technical</example>
 
-        public string? Category { get; set; }
+        public string? Catagory { get; set; }
 
         ///<Summary>
         ///Course Description
@@ -31,7 +36,7 @@ namespace LXP.Common.ViewModels
         ///<example>This course contains the detailed explanation about the Html structure</example>
 
         public string Description { get; set; }
-        public string CreatedBy { get; set; }
+
         ///<Summary>
         ///Course Duration
         ///</Summary>

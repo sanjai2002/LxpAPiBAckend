@@ -1,4 +1,10 @@
-﻿namespace LXP.Common.ViewModels
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LXP.Common.ViewModels
 {
     public class LoginRole
     {
@@ -11,8 +17,7 @@
 
         public bool AccountStatus { get; set; }
 
-        public DateTime LastLogin { get; set; }
-
+        public Guid GetLearnerId {  get; set; }
 
 
     }

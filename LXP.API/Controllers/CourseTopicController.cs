@@ -1,10 +1,8 @@
-﻿using LXP.Common.Constants;
-using LXP.Common.ViewModels;
+﻿using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Core.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Net;
 
 namespace LXP.Api.Controllers
 {
@@ -21,52 +19,35 @@ namespace LXP.Api.Controllers
         [HttpPost("/lxp/course/topic")]
         public async Task<IActionResult> AddCourseTopic(CourseTopicViewModel courseTopic)
         {
-            CourseTopicListViewModel CreatedTopic = await _courseTopicServices.AddCourseTopic(courseTopic);
-            if (CreatedTopic!=null)
+            bool isTopicCreated = await _courseTopicServices.AddCourseTopic(courseTopic);
+            if (isTopicCreated)
             {
-                return Ok(CreateInsertResponse(CreatedTopic));
+                object topic = _courseTopicServices.GetTopicDetails(courseTopic.CourseId);
+                return Ok(CreateSuccessResponse(topic));
             }
             else
             {
-                return Ok(CreateFailureResponse(MessageConstants.MsgAlreadyExists, (int)HttpStatusCode.PreconditionFailed));
+                return Ok(CreateFailureResponse("Topic not created", 400));
             }
-            
+
         }
 
-        [HttpGet("/lxp/course/{courseId}/topic")]
-        public IActionResult GetAllCourseTopicByCourseId(string courseId)
+        [HttpGet("/lxp/course/{id}/topic")]
+        public async Task<IActionResult> GetCourseTopicByCourseId(string id)
         {
-            var CourseTopic= _courseTopicServices.GetAllTopicDetailsByCourseId(courseId);
+            var CourseTopic = _courseTopicServices.GetTopicDetails(id);
             return Ok(CreateSuccessResponse(CourseTopic));
         }
 
-        [HttpPut("/lxp/course/topic")]
-        public async Task<IActionResult> UpdateCourseTopic(CourseTopicUpdateModel courseTopic)
+        [HttpPut("")]
+        public async Task<IActionResult> UpdateCourseTopic()
         {
-            bool updatedStatus = await _courseTopicServices.UpdateCourseTopic(courseTopic);
-            if (updatedStatus)
-            {
-                return Ok(CreateSuccessResponse(_courseTopicServices.GetTopicDetailsByTopicId(courseTopic.TopicId)));
-            }
-            return Ok(CreateFailureResponse(MessageConstants.MsgNotUpdated, (int)HttpStatusCode.MethodNotAllowed));
-            
+            return Ok();
         }
-        [HttpDelete("/lxp/course/topic/{topicId}")]
-        public async Task<IActionResult> DeleteCourseTopic(string topicId)
+        [HttpDelete("/lxp/course/topic/{id}")]
+        public async Task<IActionResult> DeleteCourseTopic(string id)
         {
-            bool deletedStatus = await _courseTopicServices.SoftDeleteTopic(topicId);
-            if (deletedStatus)
-            {
-                return Ok(CreateSuccessResponse());
-            }
-            return Ok(CreateFailureResponse(MessageConstants.MsgNotDeleted, (int)HttpStatusCode.MethodNotAllowed));
-        }
-
-        [HttpGet("/lxp/course/topic/{topicId}")]
-        public async Task<IActionResult> GetAllCourseTopicByTopicId(string topicId)
-        {
-            var CourseTopic = await _courseTopicServices.GetTopicDetailsByTopicId(topicId);
-            return Ok(CreateSuccessResponse(CourseTopic));
+            return Ok();
         }
     }
 }

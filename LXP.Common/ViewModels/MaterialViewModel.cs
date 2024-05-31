@@ -1,4 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using LXP.Common.Entities;
+using Microsoft.AspNetCore.Http;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace LXP.Common.ViewModels
 {
@@ -15,9 +21,9 @@ namespace LXP.Common.ViewModels
 
         public decimal Duration { get; set; }
 
+        
+        public string CreatedBy { get; set; } 
 
-        public string CreatedBy { get; set; }
-
-
+      
     }
 }

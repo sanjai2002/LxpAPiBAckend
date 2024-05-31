@@ -1,4 +1,11 @@
 ﻿using LXP.Common.Entities;
+using LXP.Common.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace LXP.Data.IRepository
 {
     public interface ILoginRepository
@@ -16,8 +23,10 @@ namespace LXP.Data.IRepository
 
         public Task UpdateLearnerPassword(string Email, string Password);
 
+        //public  Task UpdatePassword(Learner learner);
 
-        public Task UpdateLearnerLastLogin(string Email);
+
+        //public Task<Learner> LearnerByEmailAndPassword(string Email, string Password);
 
 
 

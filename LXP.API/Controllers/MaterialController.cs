@@ -7,8 +7,7 @@ using LXP.Common.ViewModels;
 
 using LXP.Common.Constants;
 using System.Net;
-using LXP.Common.ViewModels;
-
+using LXP.Common.Entities;
 namespace LXP.Api.Controllers
 {
     [Route("api/[controller]")]
@@ -20,6 +19,9 @@ namespace LXP.Api.Controllers
         {
             _materialService = materialService;
         }
+
+
+
 
         [HttpPost("/lxp/course/material")]
         public async Task<IActionResult> AddMaterial([FromForm]MaterialViewModel material)
@@ -35,6 +37,8 @@ namespace LXP.Api.Controllers
 
             }
         }
+
+
 
         [HttpGet("/lxp/course/topic/{topicId}/materialtype/{materialTypeId}/")]
         public async Task<List<MaterialListViewModel>> GetAllMaterialDetailsByTopicAndMaterialType(string topicId,string materialTypeId)
