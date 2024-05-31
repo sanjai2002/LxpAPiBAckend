@@ -1,5 +1,6 @@
 ﻿using LXP.Common.ViewModels.QuizViewModel;
 using LXP.Core.IServices;
+using LXP.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -14,11 +15,12 @@ namespace LXP.Api.Controllers
     {
         private readonly IQuizService _quizService;
         private readonly IQuizFeedbackService _quizFeedbackService;
-
-        public QuizController(IQuizService quizService, IQuizFeedbackService quizFeedbackService)
+        private readonly IQuizReportServices _quizReportServices;
+        public QuizController(IQuizService quizService, IQuizFeedbackService quizFeedbackService, IQuizReportServices quizReportServices)
         {
             _quizService = quizService;
             _quizFeedbackService = quizFeedbackService;
+            _quizReportServices = quizReportServices;
         }
 
         /// <summary>
@@ -144,7 +146,7 @@ namespace LXP.Api.Controllers
             return NoContent();
         }
 
-        
+
         [HttpGet("topic/{topicId}")]
         public IActionResult GetQuizIdByTopicId(Guid topicId)
         {
@@ -171,6 +173,17 @@ namespace LXP.Api.Controllers
             _quizService.DeleteQuiz(quizId);
 
             return NoContent();
+        }
+
+        /// <summary>
+        /// Report for Quiz
+        /// </summary>
+        [HttpGet("QuizReport")]
+
+        public IActionResult GetQuizReport()
+        {
+            var report = _quizReportServices.GetQuizReports();
+            return Ok(CreateSuccessResponse(report));
         }
     }
 }

@@ -210,6 +210,11 @@
             <response code="204">No content on successful deletion.</response>
             <response code="404">Not found if no quiz exists with the provided ID.</response>
         </member>
+        <member name="M:LXP.Api.Controllers.QuizController.GetQuizReport">
+            <summary>
+            Report for Quiz
+            </summary>
+        </member>
         <member name="M:LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion(LXP.Common.ViewModels.QuizFeedbackQuestionViewModel.QuizfeedbackquestionViewModel)">
             <summary>
             Add a new feedback question

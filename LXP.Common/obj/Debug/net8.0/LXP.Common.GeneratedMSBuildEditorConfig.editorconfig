@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LXP.Common
-build_property.ProjectDir = D:\SKV\Capstone\Sprint 5\BackEnd\Admin Module\LXP.Common\
+build_property.ProjectDir = D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Common\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -907,3 +907,59 @@ System.InvalidOperationException: Unable to resolve service for type 'LXP.Servic
 2024-05-31 17:15:38.226 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourseDetails (LXP.Api) in 42.2312ms
 2024-05-31 17:15:38.231 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourseDetails (LXP.Api)'
 2024-05-31 17:15:38.232 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/view/course - 200 null application/json; charset=utf-8 60.0373ms
+2024-05-31 17:43:48.659 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-31 17:43:48.736 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-31 17:43:48.738 +05:30 [INF] Hosting environment: Development
+2024-05-31 17:43:48.738 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Api
+2024-05-31 17:43:52.920 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-31 17:43:53.283 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 370.1616ms
+2024-05-31 17:43:53.313 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-31 17:43:53.318 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.8522ms
+2024-05-31 17:43:53.324 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-31 17:43:53.361 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.8154ms
+2024-05-31 17:43:53.519 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-31 17:43:53.645 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 126.4403ms
+2024-05-31 17:44:39.271 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/api/Login/LoginLearner - application/json 76
+2024-05-31 17:44:39.283 +05:30 [INF] CORS policy execution successful.
+2024-05-31 17:44:39.285 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-31 17:44:39.289 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LoginController.LoginLearner (LXP.Api)'
+2024-05-31 17:44:39.313 +05:30 [INF] Route matched with {action = "LoginLearner", controller = "Login"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] LoginLearner(LXP.Common.ViewModels.LoginModel) on controller LXP.Api.Controllers.LoginController (LXP.Api).
+2024-05-31 17:44:41.672 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.LoginRole'.
+2024-05-31 17:44:41.693 +05:30 [INF] Executed action LXP.Api.Controllers.LoginController.LoginLearner (LXP.Api) in 2373.046ms
+2024-05-31 17:44:41.696 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LoginController.LoginLearner (LXP.Api)'
+2024-05-31 17:44:41.701 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/Login/LoginLearner - 200 null application/json; charset=utf-8 2430.3442ms
+2024-05-31 17:45:24.312 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-05-31 17:45:24.319 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-05-31 17:45:24.326 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-05-31 17:45:24.457 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-31 17:45:24.473 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 143.3036ms
+2024-05-31 17:45:24.476 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-05-31 17:45:24.477 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 165.7018ms
+2024-05-31 17:52:00.110 +05:30 [INF] Now listening on: http://localhost:5199
+2024-05-31 17:52:00.181 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-31 17:52:00.182 +05:30 [INF] Hosting environment: Development
+2024-05-31 17:52:00.184 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Api
+2024-05-31 17:52:06.616 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-31 17:52:07.876 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1272.5718ms
+2024-05-31 17:52:07.909 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-31 17:52:07.909 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-31 17:52:07.928 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 18.5977ms
+2024-05-31 17:52:07.999 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 90.2571ms
+2024-05-31 17:52:08.111 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-31 17:52:08.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 484.7116ms
+2024-05-31 17:52:20.198 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-05-31 17:52:20.236 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-05-31 17:52:20.248 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-31 17:52:20.297 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-05-31 17:52:23.878 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-05-31 17:52:26.027 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 5711.6707ms
+2024-05-31 17:52:26.034 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-05-31 17:52:26.045 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 5847.3407ms
+2024-05-31 17:52:47.605 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-05-31 17:52:47.683 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 78.0379ms
+2024-05-31 17:52:47.708 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-05-31 17:52:47.708 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-31 17:52:47.750 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 41.9005ms
+2024-05-31 17:52:47.787 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 79.4069ms
+2024-05-31 17:52:47.834 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-05-31 17:52:47.964 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.6788ms
