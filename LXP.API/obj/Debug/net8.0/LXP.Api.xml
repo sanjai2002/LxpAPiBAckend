@@ -198,7 +198,7 @@
             <summary>
             Retrieves a specific quiz by its ID.
             </summary>
-            <param name="id">The unique identifier of the quiz to retrieve.</param>
+            <param name="quizId">The unique identifier of the quiz to retrieve.</param>
             <response code="200">Success on finding the quiz. The response body contains a basic representation of the quiz data.</response>
             <response code="404">Not found if no quiz exists with the provided ID.</response>
         </member>
@@ -208,7 +208,7 @@
             </summary>
             <response code="200">Success. The response body contains a collection of basic quiz representations.</response>
         </member>
-        <member name="M:LXP.Api.Controllers.QuizController.CreateQuiz(LXP.Common.DTO.CreateQuizViewModel)">
+        <member name="M:LXP.Api.Controllers.QuizController.CreateQuiz(LXP.Common.ViewModels.QuizViewModel.CreateQuizViewModel)">
             <summary>
             Creates a new quiz.
             </summary>
@@ -216,33 +216,25 @@
             <response code="201">Created on successful quiz creation. The response body includes a location header pointing to the newly created quiz and a basic representation of the quiz data.</response>
             <response code="400">Bad request due to invalid input (e.g., missing or invalid name, negative duration, etc.).</response>
         </member>
-        <member name="M:LXP.Api.Controllers.QuizController.UpdateQuiz(System.Guid,LXP.Common.DTO.UpdateQuizViewModel)">
+        <member name="M:LXP.Api.Controllers.QuizController.UpdateQuiz(System.Guid,LXP.Common.ViewModels.QuizViewModel.UpdateQuizViewModel)">
             <summary>
             Updates an existing quiz.
             </summary>
-            <param name="id">The unique identifier of the quiz to update.</param>
+            <param name="quizId">The unique identifier of the quiz to update.</param>
             <param name="request">Data representing the updated quiz properties, provided in the request body.</param>
             <response code="204">No content on successful update.</response>
             <response code="400">Bad request due to invalid input (e.g., missing or empty name, negative duration, etc.).</response>
             <response code="404">Not found if no quiz exists with the provided ID.</response>
         </member>
-        <member name="M:LXP.Api.Controllers.QuizController.GetQuizIdByTopicId(System.Guid)">
-            <summary>
-            Retrieves the ID of a quiz associated with a specific topic.
-            </summary>
-            <param name="topicId">The unique identifier of the topic.</param>
-            <response code="200">Success on finding a quiz associated with the topic. The response body contains the quiz ID.</response>
-            <response code="204">No content if no quiz is associated with the topic.</response>
-        </member>
         <member name="M:LXP.Api.Controllers.QuizController.DeleteQuiz(System.Guid)">
             <summary>
             Deletes a quiz by its ID.
             </summary>
-            <param name="id">The unique identifier of the quiz to delete.</param>
+            <param name="quizId">The unique identifier of the quiz to delete.</param>
             <response code="204">No content on successful deletion.</response>
             <response code="404">Not found if no quiz exists with the provided ID.</response>
         </member>
-        <member name="M:LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion(LXP.Common.DTO.QuizfeedbackquestionViewModel)">
+        <member name="M:LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion(LXP.Common.ViewModels.QuizFeedbackQuestionViewModel.QuizfeedbackquestionViewModel)">
             <summary>
             Add a new feedback question
             </summary>
@@ -266,7 +258,7 @@
             <response code="404">Feedback question not found</response>
             <response code="500">Internal server error</response>
         </member>
-        <member name="M:LXP.Api.Controllers.QuizFeedbackController.UpdateFeedbackQuestion(System.Guid,LXP.Common.DTO.QuizfeedbackquestionViewModel)">
+        <member name="M:LXP.Api.Controllers.QuizFeedbackController.UpdateFeedbackQuestion(System.Guid,LXP.Common.ViewModels.QuizFeedbackQuestionViewModel.QuizfeedbackquestionViewModel)">
             <summary>
             Update a feedback question
             </summary>
@@ -303,7 +295,7 @@
             <response code="404">Feedback questions not found</response>
             <response code="500">Internal server error</response>
         </member>
-        <member name="M:LXP.Api.Controllers.QuizQuestionsController.AddQuestion(LXP.Common.DTO.QuizQuestionViewModel)">
+        <member name="M:LXP.Api.Controllers.QuizQuestionsController.AddQuestion(LXP.Common.ViewModels.QuizQuestionViewModel.QuizQuestionViewModel)">
             <summary>
             Add a new quiz question.
             </summary>
@@ -311,7 +303,7 @@
             <response code="200">Quiz question added successfully.</response>
             <response code="500">Internal server error.</response>
         </member>
-        <member name="M:LXP.Api.Controllers.QuizQuestionsController.UpdateQuestion(System.Guid,LXP.Common.DTO.QuizQuestionViewModel)">
+        <member name="M:LXP.Api.Controllers.QuizQuestionsController.UpdateQuestion(System.Guid,LXP.Common.ViewModels.QuizQuestionViewModel.QuizQuestionViewModel)">
             <summary>
             Update an existing quiz question.
             </summary>
@@ -392,7 +384,7 @@
             verifying the OTP by entering the email Id
             </summary>
         </member>
-        <member name="M:LXP.Api.Controllers.TopicFeedbackController.AddFeedbackQuestion(LXP.Common.DTO.TopicFeedbackQuestionViewModel)">
+        <member name="M:LXP.Api.Controllers.TopicFeedbackController.AddFeedbackQuestion(LXP.Common.ViewModels.TopicFeedbackQuestionViemModel.TopicFeedbackQuestionViewModel)">
             <summary>
             Add a new feedback question.
             </summary>
@@ -412,24 +404,16 @@
             <summary>
             Retrieve a feedback question by its ID.
             </summary>
-            <param name="id">The ID of the feedback question.</param>
+            <param name="topicFeedbackQuestionId">The ID of the feedback question.</param>
             <response code="200">Feedback question details.</response>
             <response code="404">Feedback question not found.</response>
             <response code="500">Internal server error.</response>
         </member>
-        <member name="M:LXP.Api.Controllers.TopicFeedbackController.SubmitFeedbackResponse(LXP.Common.DTO.TopicFeedbackResponseViewModel)">
-            <summary>
-            Submit a feedback response.
-            </summary>
-            <param name="feedbackResponse">The feedback response to submit.</param>
-            <response code="200">Feedback response submitted successfully.</response>
-            <response code="500">Failed to submit feedback response.</response>
-        </member>
-        <member name="M:LXP.Api.Controllers.TopicFeedbackController.UpdateFeedbackQuestion(System.Guid,LXP.Common.DTO.TopicFeedbackQuestionViewModel)">
+        <member name="M:LXP.Api.Controllers.TopicFeedbackController.UpdateFeedbackQuestion(System.Guid,LXP.Common.ViewModels.TopicFeedbackQuestionViemModel.TopicFeedbackQuestionViewModel)">
             <summary>
             Update an existing feedback question.
             </summary>
-            <param name="id">The ID of the feedback question to update.</param>
+            <param name="topicFeedbackQuestionId">The ID of the feedback question to update.</param>
             <param name="question">The updated feedback question.</param>
             <response code="200">Feedback question updated successfully.</response>
             <response code="400">Question object is null.</response>
@@ -440,7 +424,7 @@
             <summary>
             Delete a feedback question.
             </summary>
-            <param name="id">The ID of the feedback question to delete.</param>
+            <param name="topicFeedbackQuestionId">The ID of the feedback question to delete.</param>
             <response code="200">Feedback question deleted successfully.</response>
             <response code="404">Feedback question not found.</response>
             <response code="500">Failed to delete feedback question.</response>
@@ -476,6 +460,35 @@
             </summary>
             <param name="context"></param>
             <returns></returns>
+        </member>
+        <member name="T:LXP.API.Controllers.FeedbackResponseController">
+            <summary>
+            Manages feedback response operations.
+            </summary>
+        </member>
+        <member name="M:LXP.API.Controllers.FeedbackResponseController.#ctor(LXP.Services.IServices.IFeedbackResponseService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:LXP.API.Controllers.FeedbackResponseController"/> class.
+            </summary>
+            <param name="feedbackResponseService">The feedback response service.</param>
+        </member>
+        <member name="M:LXP.API.Controllers.FeedbackResponseController.AddQuizFeedbackResponse(LXP.Common.ViewModels.FeedbackResponseViewModel.QuizFeedbackResponseViewModel)">
+            <summary>
+            Adds a new quiz feedback response.
+            </summary>
+            <param name="feedbackResponse">The quiz feedback response model.</param>
+            <returns>A response indicating the result of the feedback submission.</returns>
+            <response code="201">Quiz feedback response added successfully.</response>
+            <response code="400">Bad request due to invalid input.</response>
+        </member>
+        <member name="M:LXP.API.Controllers.FeedbackResponseController.AddTopicFeedbackResponse(LXP.Common.ViewModels.FeedbackResponseViewModel.TopicFeedbackResponseViewModel)">
+            <summary>
+            Adds a new topic feedback response.
+            </summary>
+            <param name="feedbackResponse">The topic feedback response model.</param>
+            <returns>A response indicating the result of the feedback submission.</returns>
+            <response code="201">Topic feedback response added successfully.</response>
+            <response code="400">Bad request due to invalid input.</response>
         </member>
     </members>
 </doc>

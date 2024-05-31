@@ -1,6 +1,8 @@
-﻿using LXP.Common.DTO;
-using LXP.Common.Entities;
+﻿
 using LXP.Data.IRepository;
+
+using LXP.Common.ViewModels.QuizViewModel;
+using LXP.Common.Entities;
 
 namespace LXP.Data.Repository
 {
@@ -129,7 +131,6 @@ namespace LXP.Data.Repository
         }
     }
 }
-
 
 //public void CreateQuiz(QuizDto quiz, Guid TopicId)
 //{

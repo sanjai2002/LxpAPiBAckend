@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mP8YpjD0dBitoa3cbf0uajz78lgl74zVTAVFGueHhac=",
+  "Hash": "s9EvuMPO4SD8xi2ra9Wi5uHzmD5OOOTsIrgW+tVmrvY=",
   "Source": "LXP.Api",
   "BasePath": "_content/LXP.Api",
   "Mode": "Default",
@@ -1174,6 +1174,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png"
+    },
+    {
+      "Identity": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api\\wwwroot\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "Images/7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png"
     },
     {
       "Identity": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api\\wwwroot\\LearnerProfileImages\\12000.jpg",

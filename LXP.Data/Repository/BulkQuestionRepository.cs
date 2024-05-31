@@ -1,5 +1,6 @@
-﻿using LXP.Common.Entities;
-
+﻿
+using LXP.Common.Entities;
+using LXP.Data;
 using LXP.Data.IRepository;
 using Microsoft.EntityFrameworkCore;
 

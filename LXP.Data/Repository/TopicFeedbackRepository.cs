@@ -1,5 +1,6 @@
-﻿using LXP.Common.DTO;
+﻿
 using LXP.Common.Entities;
+using LXP.Common.ViewModels.TopicFeedbackQuestionViemModel;
 using LXP.Data.IRepository;
 
 namespace LXP.Data.Repository
@@ -78,10 +79,10 @@ namespace LXP.Data.Repository
             }
         }
 
-        public IEnumerable<TopicFeedbackQuestionNoDTO> GetAllFeedbackQuestions()
+        public IEnumerable<TopicFeedbackQuestionNoViewModel> GetAllFeedbackQuestions()
         {
             return _context.Topicfeedbackquestions
-                .Select(q => new TopicFeedbackQuestionNoDTO
+                .Select(q => new TopicFeedbackQuestionNoViewModel
                 {
                     TopicFeedbackId = q.TopicFeedbackQuestionId,
                     TopicId = q.TopicId,
@@ -97,11 +98,11 @@ namespace LXP.Data.Repository
                         .ToList()
                 }).ToList();
         }
-        public IEnumerable<TopicFeedbackQuestionNoDTO> GetFeedbackQuestionsByTopicId(Guid topicId)
+        public IEnumerable<TopicFeedbackQuestionNoViewModel> GetFeedbackQuestionsByTopicId(Guid topicId)
         {
             return _context.Topicfeedbackquestions
                 .Where(q => q.TopicId == topicId)
-                .Select(q => new TopicFeedbackQuestionNoDTO
+                .Select(q => new TopicFeedbackQuestionNoViewModel
                 {
                     TopicFeedbackId = q.TopicFeedbackQuestionId,
                     TopicId = q.TopicId,
@@ -119,11 +120,11 @@ namespace LXP.Data.Repository
                 .ToList();
         }
 
-        public TopicFeedbackQuestionNoDTO GetFeedbackQuestionById(Guid id)
+        public TopicFeedbackQuestionNoViewModel GetFeedbackQuestionById(Guid id)
         {
             var question = _context.Topicfeedbackquestions
                 .Where(q => q.TopicFeedbackQuestionId == id)
-                .Select(q => new TopicFeedbackQuestionNoDTO
+                .Select(q => new TopicFeedbackQuestionNoViewModel
                 {
                     TopicFeedbackId = q.TopicFeedbackQuestionId,
                     TopicId = q.TopicId,
@@ -141,20 +142,6 @@ namespace LXP.Data.Repository
                 .FirstOrDefault();
 
             return question;
-        }
-
-        public void AddFeedbackResponse(TopicFeedbackResponseViewModel feedbackResponse)
-        {
-            var response = new Feedbackresponse
-            {
-                TopicFeedbackQuestionId = feedbackResponse.TopicFeedbackQuestionId,
-                LearnerId = feedbackResponse.LearnerId,
-                Response = feedbackResponse.Response,
-                OptionId = feedbackResponse.OptionId,
-            };
-
-            _context.Feedbackresponses.Add(response);
-            _context.SaveChanges();
         }
 
         public bool UpdateFeedbackQuestion(Guid id, TopicFeedbackQuestionViewModel question, List<FeedbackOptionDTO> options)
@@ -285,6 +272,51 @@ namespace LXP.Data.Repository
     }
 }
 
+
+
+
+
+//private Guid? GetOptionIdByText(Guid questionId, string optionText)
+//{
+//    var option = _context.Feedbackquestionsoptions
+//        .FirstOrDefault(o => o.TopicFeedbackQuestionId == questionId && o.OptionText.ToLower() == optionText.ToLower());
+
+//    return option?.FeedbackQuestionOptionId;
+//}
+
+
+
+//public void AddFeedbackResponse(TopicFeedbackResponseViewModel feedbackResponse)
+//{
+//    if (feedbackResponse == null)
+//        throw new ArgumentNullException(nameof(feedbackResponse));
+
+//    var question = _context.Topicfeedbackquestions
+//        .FirstOrDefault(q => q.TopicFeedbackQuestionId == feedbackResponse.TopicFeedbackQuestionId);
+
+//    if (question == null)
+//        throw new ArgumentException("Invalid question ID.", nameof(feedbackResponse.TopicFeedbackQuestionId));
+
+//    // Validate the response based on question type
+//    if (question.QuestionType == TopicFeedbackQuestionTypes.MultiChoiceQuestion && feedbackResponse.OptionId == null)
+//        throw new ArgumentException("OptionId must be provided for MCQ responses.");
+
+//    if (question.QuestionType == TopicFeedbackQuestionTypes.DescriptiveQuestion && string.IsNullOrEmpty(feedbackResponse.Response))
+//        throw new ArgumentException("Response must be provided for descriptive questions.");
+
+//    var response = new Feedbackresponse
+//    {
+//        TopicFeedbackQuestionId = feedbackResponse.TopicFeedbackQuestionId,
+//        LearnerId = feedbackResponse.LearnerId,
+//        Response = question.QuestionType == TopicFeedbackQuestionTypes.DescriptiveQuestion ? feedbackResponse.Response : null,
+//        OptionId = question.QuestionType == TopicFeedbackQuestionTypes.MultiChoiceQuestion ? feedbackResponse.OptionId : null,
+//        GeneratedAt = DateTime.UtcNow,
+//        GeneratedBy = "User" 
+//    };
+
+//    _context.Feedbackresponses.Add(response);
+//    _context.SaveChanges();
+//}
 
 /*using LXP.Common.DTO;
 using LXP.Data.DBContexts;

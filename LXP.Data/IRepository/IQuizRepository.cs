@@ -1,4 +1,6 @@
-﻿using LXP.Common.DTO;
+﻿
+using LXP.Common.ViewModels.QuizViewModel;
+
 
 namespace LXP.Data.IRepository
 {
@@ -9,7 +11,7 @@ namespace LXP.Data.IRepository
         void CreateQuiz(QuizViewModel quiz, Guid TopicId);
         void UpdateQuiz(QuizViewModel quiz);
         void DeleteQuiz(Guid quizId);
-
+      
         Guid? GetQuizIdByTopicId(Guid topicId);
     }
 }

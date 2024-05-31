@@ -6,11 +6,14 @@ namespace LXP.Data.IRepository
     {
         Task<List<QuizQuestion>> AddQuestionsAsync(List<QuizQuestion> quizQuestions);
         Task AddOptionsAsync(List<QuestionOption> questionOptions, Guid quizQuestionId);
-
+       
         Task<int> GetNextQuestionNoAsync(Guid quizId);
-        // Add other repository methods as needed
+        
     }
 }
+
+
+
 
 // Task<Quiz> GetQuizByNameAsync(string name);
 
@@ -29,3 +32,4 @@ namespace LXP.Data.IRepository
 //        // Add other repository methods as needed
 //    }
 //}
+// Add other repository methods as needed

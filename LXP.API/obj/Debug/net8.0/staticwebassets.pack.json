@@ -245,6 +245,10 @@
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png"
     },
     {
+      "Id": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api\\wwwroot\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png",
+      "PackagePath": "staticwebassets\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png"
+    },
+    {
       "Id": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api\\wwwroot\\LearnerProfileImages\\12000.jpg",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\12000.jpg"
     },

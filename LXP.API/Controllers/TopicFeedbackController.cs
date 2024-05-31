@@ -1,8 +1,9 @@
-﻿using LXP.Common.DTO;
+﻿
+using LXP.Common.ViewModels.TopicFeedbackQuestionViemModel;
 using LXP.Core.IServices;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Linq;
+
+
 
 namespace LXP.Api.Controllers
 {
@@ -56,53 +57,42 @@ namespace LXP.Api.Controllers
         ///<summary>
         ///Retrieve a feedback question by its ID.
         ///</summary>
-        ///<param name="id">The ID of the feedback question.</param>
+        ///<param name="topicFeedbackQuestionId">The ID of the feedback question.</param>
         ///<response code="200">Feedback question details.</response>
         ///<response code="404">Feedback question not found.</response>
         ///<response code="500">Internal server error.</response>
-        [HttpGet("{id}")]
-        public IActionResult GetFeedbackQuestionById(Guid id)
+        [HttpGet("{topicFeedbackQuestionId}")]
+        public IActionResult GetFeedbackQuestionById(Guid topicFeedbackQuestionId)
         {
-            var question = _service.GetFeedbackQuestionById(id);
+            var question = _service.GetFeedbackQuestionById(topicFeedbackQuestionId);
             if (question == null)
                 return NotFound(CreateFailureResponse("Feedback question not found", 404));
 
             return Ok(CreateSuccessResponse(question));
         }
 
-        ///<summary>
-        ///Submit a feedback response.
-        ///</summary>
-        ///<param name="feedbackResponse">The feedback response to submit.</param>
-        ///<response code="200">Feedback response submitted successfully.</response>
-        ///<response code="500">Failed to submit feedback response.</response>
-        [HttpPost("response")]
-        public IActionResult SubmitFeedbackResponse(TopicFeedbackResponseViewModel feedbackResponse)
-        {
-            _service.SubmitFeedbackResponse(feedbackResponse);
-            return Ok(CreateSuccessResponse("Feedback response submitted successfully"));
-        }
+       
 
         ///<summary>
         ///Update an existing feedback question.
         ///</summary>
-        ///<param name="id">The ID of the feedback question to update.</param>
+        ///<param name="topicFeedbackQuestionId">The ID of the feedback question to update.</param>
         ///<param name="question">The updated feedback question.</param>
         ///<response code="200">Feedback question updated successfully.</response>
         ///<response code="400">Question object is null.</response>
         ///<response code="404">Feedback question not found.</response>
         ///<response code="500">Failed to update feedback question.</response>
-        [HttpPut("{id}")]
-        public IActionResult UpdateFeedbackQuestion(Guid id, TopicFeedbackQuestionViewModel question)
+        [HttpPut("{topicFeedbackQuestionId}")]
+        public IActionResult UpdateFeedbackQuestion(Guid topicFeedbackQuestionId, TopicFeedbackQuestionViewModel question)
         {
             if (question == null)
                 return BadRequest(CreateFailureResponse("Question object is null", 400));
 
-            var existingQuestion = _service.GetFeedbackQuestionById(id);
+            var existingQuestion = _service.GetFeedbackQuestionById(topicFeedbackQuestionId);
             if (existingQuestion == null)
                 return NotFound(CreateFailureResponse("Feedback question not found", 404));
 
-            var result = _service.UpdateFeedbackQuestion(id, question, question.Options);
+            var result = _service.UpdateFeedbackQuestion(topicFeedbackQuestionId, question, question.Options);
 
             if (result)
                 return Ok(CreateSuccessResponse("Feedback question updated successfully"));
@@ -113,18 +103,18 @@ namespace LXP.Api.Controllers
         ///<summary>
         ///Delete a feedback question.
         ///</summary>
-        ///<param name="id">The ID of the feedback question to delete.</param>
+        ///<param name="topicFeedbackQuestionId">The ID of the feedback question to delete.</param>
         ///<response code="200">Feedback question deleted successfully.</response>
         ///<response code="404">Feedback question not found.</response>
         ///<response code="500">Failed to delete feedback question.</response>
-        [HttpDelete("{id}")]
-        public IActionResult DeleteFeedbackQuestion(Guid id)
+        [HttpDelete("{topicFeedbackQuestionId}")]
+        public IActionResult DeleteFeedbackQuestion(Guid topicFeedbackQuestionId)
         {
-            var existingQuestion = _service.GetFeedbackQuestionById(id);
+            var existingQuestion = _service.GetFeedbackQuestionById(topicFeedbackQuestionId);
             if (existingQuestion == null)
                 return NotFound(CreateFailureResponse("Feedback question not found", 404));
 
-            var result = _service.DeleteFeedbackQuestion(id);
+            var result = _service.DeleteFeedbackQuestion(topicFeedbackQuestionId);
 
             if (result)
                 return Ok(CreateSuccessResponse("Feedback question deleted successfully"));

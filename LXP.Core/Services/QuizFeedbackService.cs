@@ -1,6 +1,8 @@
-﻿using LXP.Common.DTO;
+﻿
+using LXP.Common.ViewModels.QuizFeedbackQuestionViewModel;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
+
 
 namespace LXP.Core.Services
 {
@@ -14,22 +16,25 @@ namespace LXP.Core.Services
         }
 
         public Guid AddFeedbackQuestion(QuizfeedbackquestionViewModel quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionViewModel> options)
-        {
+        {            
             return _quizFeedbackRepository.AddFeedbackQuestion(quizfeedbackquestionDto, options);
         }
 
         public List<QuizfeedbackquestionNoViewModel> GetAllFeedbackQuestions()
-        {
+        {           
             return _quizFeedbackRepository.GetAllFeedbackQuestions();
         }
 
+        
+        
+
         public QuizfeedbackquestionNoViewModel GetFeedbackQuestionById(Guid quizFeedbackQuestionId)
-        {
+        {          
             return _quizFeedbackRepository.GetFeedbackQuestionById(quizFeedbackQuestionId);
         }
 
         public bool UpdateFeedbackQuestion(Guid quizFeedbackQuestionId, QuizfeedbackquestionViewModel quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionViewModel> options)
-        {
+        {        
             return _quizFeedbackRepository.UpdateFeedbackQuestion(quizFeedbackQuestionId, quizfeedbackquestionDto, options);
         }
 
@@ -42,7 +47,7 @@ namespace LXP.Core.Services
             return _quizFeedbackRepository.GetFeedbackQuestionsByQuizId(quizId);
         }
 
-        public bool DeleteFeedbackQuestionsByQuizId(Guid quizId)
+        public bool DeleteFeedbackQuestionsByQuizId(Guid quizId) 
         {
             try
             {
@@ -63,3 +68,4 @@ namespace LXP.Core.Services
         }
     }
 }
+

@@ -1,4 +1,7 @@
-﻿using LXP.Common.DTO;
+﻿using System;
+using System.Collections.Generic;
+
+using LXP.Common.ViewModels.QuizFeedbackQuestionViewModel;
 
 namespace LXP.Data.IRepository
 {
@@ -6,7 +9,6 @@ namespace LXP.Data.IRepository
     {
         Guid AddFeedbackQuestion(QuizfeedbackquestionViewModel quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionViewModel> options);
         List<QuizfeedbackquestionNoViewModel> GetAllFeedbackQuestions();
-
         int GetNextFeedbackQuestionNo(Guid quizId);
         Guid AddFeedbackQuestionOption(QuizFeedbackQuestionsOptionViewModel feedbackquestionsoptionDto, Guid QuizFeedbackQuestionId);
         List<QuizFeedbackQuestionsOptionViewModel> GetFeedbackQuestionOptionsById(Guid QuizFeedbackQuestionId);
@@ -15,8 +17,8 @@ namespace LXP.Data.IRepository
         bool UpdateFeedbackQuestion(Guid QuizFeedbackQuestionId, QuizfeedbackquestionViewModel quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionViewModel> options);
         bool DeleteFeedbackQuestion(Guid QuizFeedbackQuestionId);
         List<QuizfeedbackquestionNoViewModel> GetFeedbackQuestionsByQuizId(Guid quizId);
-
         bool DeleteFeedbackQuestionsByQuizId(Guid quizId);
+        
 
     }
 }

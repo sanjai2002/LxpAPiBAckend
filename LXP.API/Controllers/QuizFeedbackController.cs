@@ -1,9 +1,8 @@
-﻿using LXP.Common.DTO;
+﻿
+using LXP.Common.ViewModels.QuizFeedbackQuestionViewModel;
 using LXP.Core.IServices;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+
 
 namespace LXP.Api.Controllers
 {
@@ -45,6 +44,7 @@ namespace LXP.Api.Controllers
             var questions = _quizFeedbackService.GetAllFeedbackQuestions();
             return Ok(CreateSuccessResponse(questions));
         }
+
 
         ///<summary>
         ///Get a feedback question by its ID
@@ -120,6 +120,9 @@ namespace LXP.Api.Controllers
                 return NotFound(CreateFailureResponse($"No feedback questions found for quiz ID {quizId}.", 404));
             return Ok(CreateSuccessResponse(questions));
         }
+
+
+     
 
         ///<summary>
         ///Delete feedback questions by quiz ID

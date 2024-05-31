@@ -1,6 +1,9 @@
-﻿using LXP.Common.DTO;
+﻿
+using LXP.Common.ViewModels.QuizViewModel;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
+using System;
+using System.Collections.Generic;
 
 namespace LXP.Core.Services
 {

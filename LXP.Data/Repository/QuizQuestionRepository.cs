@@ -1,7 +1,8 @@
-﻿using LXP.Common.DTO;
-using LXP.Common.Entities;
+﻿
 using LXP.Data.IRepository;
 using Microsoft.EntityFrameworkCore;
+using LXP.Common.ViewModels.QuizQuestionViewModel;
+using LXP.Common.Entities;
 
 
 namespace LXP.Data.Repository
@@ -23,55 +24,39 @@ namespace LXP.Data.Repository
                 dbContext
                 ?? throw new ArgumentNullException(nameof(dbContext), "DB context cannot be null.");
         }
-
-        public Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
+        public async Task<Guid> AddQuestionAsync(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
         {
             try
             {
                 if (string.IsNullOrWhiteSpace(quizQuestionDto.Question))
-                    throw new ArgumentException(
-                        "Question cannot be null or empty.",
-                        nameof(quizQuestionDto.Question)
-                    );
+                    throw new ArgumentException("Question cannot be null or empty.", nameof(quizQuestionDto.Question));
 
                 if (string.IsNullOrWhiteSpace(quizQuestionDto.QuestionType))
-                    throw new ArgumentException(
-                        "QuestionType cannot be null or empty.",
-                        nameof(quizQuestionDto.QuestionType)
-                    );
+                    throw new ArgumentException("QuestionType cannot be null or empty.", nameof(quizQuestionDto.QuestionType));
 
                 quizQuestionDto.QuestionType = quizQuestionDto.QuestionType.ToUpper();
 
                 if (!IsValidQuestionType(quizQuestionDto.QuestionType))
-                    throw new ArgumentException(
-                        "Invalid question type.",
-                        nameof(quizQuestionDto.QuestionType)
-                    );
+                    throw new ArgumentException("Invalid question type.", nameof(quizQuestionDto.QuestionType));
 
                 if (!ValidateOptionsByQuestionType(quizQuestionDto.QuestionType, options))
-                    throw new ArgumentException(
-                        "Invalid options for the given question type.",
-                        nameof(options)
-                    );
+                    throw new ArgumentException("Invalid options for the given question type.", nameof(options));
+
                 if (!ValidateOptions(quizQuestionDto.QuestionType, options))
-                    throw new ArgumentException(
-                        "Invalid options for the given question type.",
-                        nameof(options)
-                    );
+                    throw new ArgumentException("Invalid options for the given question type.", nameof(options));
 
                 var quizQuestionEntity = new QuizQuestion
                 {
                     QuizId = quizQuestionDto.QuizId,
-                    //QuizId = Guid.Parse("4db699e3-6867-47f9-9bf6-841c221038a3"),
                     Question = quizQuestionDto.Question,
                     QuestionType = quizQuestionDto.QuestionType,
-                    QuestionNo = GetNextQuestionNo(quizQuestionDto.QuizId),
+                    QuestionNo = await GetNextQuestionNoAsync(quizQuestionDto.QuizId),
                     CreatedBy = "SystemUser",
                     CreatedAt = DateTime.UtcNow
                 };
 
-                _LXPDbContext.QuizQuestions.Add(quizQuestionEntity);
-                _LXPDbContext.SaveChanges();
+                await _LXPDbContext.QuizQuestions.AddAsync(quizQuestionEntity);
+                await _LXPDbContext.SaveChangesAsync();
 
                 foreach (var option in options)
                 {
@@ -84,10 +69,10 @@ namespace LXP.Data.Repository
                         CreatedAt = DateTime.UtcNow
                     };
 
-                    _LXPDbContext.QuestionOptions.Add(questionOptionEntity);
+                    await _LXPDbContext.QuestionOptions.AddAsync(questionOptionEntity);
                 }
 
-                _LXPDbContext.SaveChanges();
+                await _LXPDbContext.SaveChangesAsync();
 
                 return quizQuestionEntity.QuizQuestionId;
             }
@@ -97,12 +82,12 @@ namespace LXP.Data.Repository
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException(
-                    "An error occurred while adding the quiz question.",
-                    ex
-                );
+                throw new InvalidOperationException("An error occurred while adding the quiz question.", ex);
             }
         }
+
+
+        
 
         private bool IsValidQuestionType(string questionType)
         {
@@ -112,11 +97,12 @@ namespace LXP.Data.Repository
         }
 
 
-        public bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
+        
+        public async Task<bool> UpdateQuestionAsync(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
         {
             try
             {
-                var quizQuestionEntity = _LXPDbContext.QuizQuestions.Find(quizQuestionId);
+                var quizQuestionEntity = await _LXPDbContext.QuizQuestions.FindAsync(quizQuestionId);
                 if (quizQuestionEntity == null)
                     return false;
 
@@ -125,16 +111,11 @@ namespace LXP.Data.Repository
                     throw new InvalidOperationException("Question type cannot be updated.");
                 }
 
-
-                // Update the question and question type
+                // Update the question
                 quizQuestionEntity.Question = quizQuestionDto.Question;
 
-                _LXPDbContext.SaveChanges();
-
                 // Remove existing options
-                var existingOptions = _LXPDbContext.QuestionOptions
-                    .Where(o => o.QuizQuestionId == quizQuestionId)
-                    .ToList();
+                var existingOptions = _LXPDbContext.QuestionOptions.Where(o => o.QuizQuestionId == quizQuestionId).ToList();
                 _LXPDbContext.QuestionOptions.RemoveRange(existingOptions);
 
                 // Add new options
@@ -149,54 +130,46 @@ namespace LXP.Data.Repository
                         CreatedAt = quizQuestionEntity.CreatedAt
                     };
 
-                    _LXPDbContext.QuestionOptions.Add(questionOptionEntity);
+                    await _LXPDbContext.QuestionOptions.AddAsync(questionOptionEntity);
                 }
 
                 // Validate options based on the existing question type
                 if (!ValidateOptionsByQuestionType(quizQuestionEntity.QuestionType, options))
-                    throw new ArgumentException(
-                        "Invalid options for the given question type.",
-                        nameof(options)
-                    );
+                    throw new ArgumentException("Invalid options for the given question type.", nameof(options));
 
-                _LXPDbContext.SaveChanges();
+                await _LXPDbContext.SaveChangesAsync();
 
                 return true;
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException(
-                    "An error occurred while updating the quiz question.",
-                    ex
-                );
+                throw new InvalidOperationException("An error occurred while updating the quiz question.", ex);
             }
         }
-
-        public bool DeleteQuestion(Guid quizQuestionId)
+        public async Task<bool> DeleteQuestionAsync(Guid quizQuestionId)
         {
             try
             {
-                var quizQuestionEntity = _LXPDbContext.QuizQuestions.Find(quizQuestionId);
+                var quizQuestionEntity = await _LXPDbContext.QuizQuestions.FindAsync(quizQuestionId);
                 if (quizQuestionEntity == null)
                     return false;
 
-                _LXPDbContext.QuestionOptions.RemoveRange(
-                    _LXPDbContext.QuestionOptions.Where(o => o.QuizQuestionId == quizQuestionId)
-                );
+                _LXPDbContext.QuestionOptions.RemoveRange(_LXPDbContext.QuestionOptions.Where(o => o.QuizQuestionId == quizQuestionId));
                 _LXPDbContext.QuizQuestions.Remove(quizQuestionEntity);
-                _LXPDbContext.SaveChanges();
+                await _LXPDbContext.SaveChangesAsync();
 
                 ReorderQuestionNos(quizQuestionEntity.QuizId, quizQuestionEntity.QuestionNo);
                 return true;
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException(
-                    "An error occurred while deleting the quiz question.",
-                    ex
-                );
+                throw new InvalidOperationException("An error occurred while deleting the quiz question.", ex);
             }
         }
+
+
+
+        
         private void ReorderQuestionNos(Guid quizId, int deletedQuestionNo)
         {
             var subsequentQuestions = _LXPDbContext.QuizQuestions
@@ -248,55 +221,67 @@ namespace LXP.Data.Repository
                 );
             }
         }
-        public List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId)
+        
+
+        public async Task<List<QuizQuestionNoViewModel>> GetAllQuestionsByQuizIdAsync(Guid quizId)
         {
             try
             {
-                return _LXPDbContext.QuizQuestions
+                return await _LXPDbContext.QuizQuestions
                     .Where(q => q.QuizId == quizId)
-                    .Select(
-                        q =>
-                            new QuizQuestionNoViewModel
-                            {
-                                QuizId = q.QuizId,
-                                QuizQuestionId = q.QuizQuestionId,
-                                Question = q.Question,
-                                QuestionType = q.QuestionType,
-                                QuestionNo = q.QuestionNo,
-
-                                Options = _LXPDbContext.QuestionOptions // Assuming the DbSet name is QuestionOptions
-                                    .Where(o => o.QuizQuestionId == q.QuizQuestionId)
-                                    .Select(
-                                        o =>
-                                            new QuestionOptionViewModel
-                                            {
-                                                Option = o.Option,
-                                                IsCorrect = o.IsCorrect
-                                            }
-                                    )
-                                    .ToList()
-                            }
-                    )
-                    .ToList();
+                    .Select(q => new QuizQuestionNoViewModel
+                    {
+                        QuizId = q.QuizId,
+                        QuizQuestionId = q.QuizQuestionId,
+                        Question = q.Question,
+                        QuestionType = q.QuestionType,
+                        QuestionNo = q.QuestionNo,
+                        Options = _LXPDbContext.QuestionOptions
+                            .Where(o => o.QuizQuestionId == q.QuizQuestionId)
+                            .Select(o => new QuestionOptionViewModel { Option = o.Option, IsCorrect = o.IsCorrect })
+                            .ToList()
+                    })
+                    .ToListAsync();
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException(
-                    "An error occurred while retrieving all quiz questions by quiz ID.",
-                    ex
-                );
+                throw new InvalidOperationException("An error occurred while retrieving all quiz questions by quiz ID.", ex);
             }
         }
 
 
 
-
-
-        public QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId)
+        public async Task<List<QuizQuestionNoViewModel>> GetAllQuestionsAsync()
         {
             try
             {
-                var quizQuestion = _LXPDbContext.QuizQuestions
+                return await _LXPDbContext.QuizQuestions
+                    .Select(q => new QuizQuestionNoViewModel
+                    {
+                        QuizId = q.QuizId,
+                        QuizQuestionId = q.QuizQuestionId,
+                        Question = q.Question,
+                        QuestionType = q.QuestionType,
+                        QuestionNo = q.QuestionNo,
+                        Options = _LXPDbContext.QuestionOptions
+                            .Where(o => o.QuizQuestionId == q.QuizQuestionId)
+                            .Select(o => new QuestionOptionViewModel { Option = o.Option, IsCorrect = o.IsCorrect })
+                            .ToList()
+                    })
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException("An error occurred while retrieving all quiz questions.", ex);
+            }
+        }
+
+
+        public async Task<QuizQuestionNoViewModel> GetQuestionByIdAsync(Guid quizQuestionId)
+        {
+            try
+            {
+                var quizQuestion = await _LXPDbContext.QuizQuestions
                     .Where(q => q.QuizQuestionId == quizQuestionId)
                     .Select(q => new
                     {
@@ -307,14 +292,10 @@ namespace LXP.Data.Repository
                         q.QuestionNo,
                         Options = _LXPDbContext.QuestionOptions
                             .Where(o => o.QuizQuestionId == q.QuizQuestionId)
-                            .Select(o => new QuestionOptionViewModel
-                            {
-                                Option = o.Option,
-                                IsCorrect = o.IsCorrect
-                            })
+                            .Select(o => new QuestionOptionViewModel { Option = o.Option, IsCorrect = o.IsCorrect })
                             .ToList()
                     })
-                    .FirstOrDefault();
+                    .FirstOrDefaultAsync();
 
                 if (quizQuestion == null)
                 {
@@ -333,12 +314,10 @@ namespace LXP.Data.Repository
             }
             catch (Exception ex)
             {
-                throw new InvalidOperationException(
-                    "An error occurred while retrieving the quiz question by ID.",
-                    ex
-                );
+                throw new InvalidOperationException("An error occurred while retrieving the quiz question by ID.", ex);
             }
         }
+
 
         public int GetNextQuestionNo(Guid quizId)
         {
@@ -507,6 +486,267 @@ namespace LXP.Data.Repository
         }
     }
 }
+
+
+//public List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId)
+//{
+//    try
+//    {
+//        return _LXPDbContext.QuizQuestions
+//            .Where(q => q.QuizId == quizId)
+//            .Select(
+//                q =>
+//                    new QuizQuestionNoViewModel
+//                    {
+//                        QuizId = q.QuizId,
+//                        QuizQuestionId = q.QuizQuestionId,
+//                        Question = q.Question,
+//                        QuestionType = q.QuestionType,
+//                        QuestionNo = q.QuestionNo,
+
+//                        Options = _LXPDbContext.QuestionOptions // Assuming the DbSet name is QuestionOptions
+//                            .Where(o => o.QuizQuestionId == q.QuizQuestionId)
+//                            .Select(
+//                                o =>
+//                                    new QuestionOptionViewModel
+//                                    {
+//                                        Option = o.Option,
+//                                        IsCorrect = o.IsCorrect
+//                                    }
+//                            )
+//                            .ToList()
+//                    }
+//            )
+//            .ToList();
+//    }
+//    catch (Exception ex)
+//    {
+//        throw new InvalidOperationException(
+//            "An error occurred while retrieving all quiz questions by quiz ID.",
+//            ex
+//        );
+//    }
+//}
+
+
+//public QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId)
+//{
+//    try
+//    {
+//        var quizQuestion = _LXPDbContext.QuizQuestions
+//            .Where(q => q.QuizQuestionId == quizQuestionId)
+//            .Select(q => new
+//            {
+//                q.QuizId,
+//                q.QuizQuestionId,
+//                q.Question,
+//                q.QuestionType,
+//                q.QuestionNo,
+//                Options = _LXPDbContext.QuestionOptions
+//                    .Where(o => o.QuizQuestionId == q.QuizQuestionId)
+//                    .Select(o => new QuestionOptionViewModel
+//                    {
+//                        Option = o.Option,
+//                        IsCorrect = o.IsCorrect
+//                    })
+//                    .ToList()
+//            })
+//            .FirstOrDefault();
+
+//        if (quizQuestion == null)
+//        {
+//            return null;
+//        }
+
+//        return new QuizQuestionNoViewModel
+//        {
+//            QuizId = quizQuestion.QuizId,
+//            QuizQuestionId = quizQuestion.QuizQuestionId,
+//            Question = quizQuestion.Question,
+//            QuestionType = quizQuestion.QuestionType,
+//            QuestionNo = quizQuestion.QuestionNo,
+//            Options = quizQuestion.Options ?? new List<QuestionOptionViewModel>()
+//        };
+//    }
+//    catch (Exception ex)
+//    {
+//        throw new InvalidOperationException(
+//            "An error occurred while retrieving the quiz question by ID.",
+//            ex
+//        );
+//    }
+//}
+
+
+//public bool DeleteQuestion(Guid quizQuestionId)
+//{
+//    try
+//    {
+//        var quizQuestionEntity = _LXPDbContext.QuizQuestions.Find(quizQuestionId);
+//        if (quizQuestionEntity == null)
+//            return false;
+
+//        _LXPDbContext.QuestionOptions.RemoveRange(
+//            _LXPDbContext.QuestionOptions.Where(o => o.QuizQuestionId == quizQuestionId)
+//        );
+//        _LXPDbContext.QuizQuestions.Remove(quizQuestionEntity);
+//        _LXPDbContext.SaveChanges();
+
+//        ReorderQuestionNos(quizQuestionEntity.QuizId, quizQuestionEntity.QuestionNo);
+//        return true;
+//    }
+//    catch (Exception ex)
+//    {
+//        throw new InvalidOperationException(
+//            "An error occurred while deleting the quiz question.",
+//            ex
+//        );
+//    }
+//}
+
+
+
+//public bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
+//{
+//    try
+//    {
+//        var quizQuestionEntity = _LXPDbContext.QuizQuestions.Find(quizQuestionId);
+//        if (quizQuestionEntity == null)
+//            return false;
+
+//        if (quizQuestionDto.QuestionType.ToUpper() != quizQuestionEntity.QuestionType)
+//        {
+//            throw new InvalidOperationException("Question type cannot be updated.");
+//        }
+
+
+//        // Update the question and question type
+//        quizQuestionEntity.Question = quizQuestionDto.Question;
+
+//        _LXPDbContext.SaveChanges();
+
+//        // Remove existing options
+//        var existingOptions = _LXPDbContext.QuestionOptions
+//            .Where(o => o.QuizQuestionId == quizQuestionId)
+//            .ToList();
+//        _LXPDbContext.QuestionOptions.RemoveRange(existingOptions);
+
+//        // Add new options
+//        foreach (var option in options)
+//        {
+//            var questionOptionEntity = new QuestionOption
+//            {
+//                QuizQuestionId = quizQuestionEntity.QuizQuestionId,
+//                Option = option.Option,
+//                IsCorrect = option.IsCorrect,
+//                CreatedBy = quizQuestionEntity.CreatedBy,
+//                CreatedAt = quizQuestionEntity.CreatedAt
+//            };
+
+//            _LXPDbContext.QuestionOptions.Add(questionOptionEntity);
+//        }
+
+//        // Validate options based on the existing question type
+//        if (!ValidateOptionsByQuestionType(quizQuestionEntity.QuestionType, options))
+//            throw new ArgumentException(
+//                "Invalid options for the given question type.",
+//                nameof(options)
+//            );
+
+//        _LXPDbContext.SaveChanges();
+
+//        return true;
+//    }
+//    catch (Exception ex)
+//    {
+//        throw new InvalidOperationException(
+//            "An error occurred while updating the quiz question.",
+//            ex
+//        );
+//    }
+//}
+
+
+
+//public Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
+//{
+//    try
+//    {
+//        if (string.IsNullOrWhiteSpace(quizQuestionDto.Question))
+//            throw new ArgumentException(
+//                "Question cannot be null or empty.",
+//                nameof(quizQuestionDto.Question)
+//            );
+
+//        if (string.IsNullOrWhiteSpace(quizQuestionDto.QuestionType))
+//            throw new ArgumentException(
+//                "QuestionType cannot be null or empty.",
+//                nameof(quizQuestionDto.QuestionType)
+//            );
+
+//        quizQuestionDto.QuestionType = quizQuestionDto.QuestionType.ToUpper();
+
+//        if (!IsValidQuestionType(quizQuestionDto.QuestionType))
+//            throw new ArgumentException(
+//                "Invalid question type.",
+//                nameof(quizQuestionDto.QuestionType)
+//            );
+
+//        if (!ValidateOptionsByQuestionType(quizQuestionDto.QuestionType, options))
+//            throw new ArgumentException(
+//                "Invalid options for the given question type.",
+//                nameof(options)
+//            );
+//        if (!ValidateOptions(quizQuestionDto.QuestionType, options))
+//            throw new ArgumentException(
+//                "Invalid options for the given question type.",
+//                nameof(options)
+//            );
+
+//        var quizQuestionEntity = new QuizQuestion
+//        {
+//            QuizId = quizQuestionDto.QuizId,
+//            //QuizId = Guid.Parse("4db699e3-6867-47f9-9bf6-841c221038a3"),
+//            Question = quizQuestionDto.Question,
+//            QuestionType = quizQuestionDto.QuestionType,
+//            QuestionNo = GetNextQuestionNo(quizQuestionDto.QuizId),
+//            CreatedBy = "SystemUser",
+//            CreatedAt = DateTime.UtcNow
+//        };
+
+//        _LXPDbContext.QuizQuestions.Add(quizQuestionEntity);
+//        _LXPDbContext.SaveChanges();
+
+//        foreach (var option in options)
+//        {
+//            var questionOptionEntity = new QuestionOption
+//            {
+//                QuizQuestionId = quizQuestionEntity.QuizQuestionId,
+//                Option = option.Option,
+//                IsCorrect = option.IsCorrect,
+//                CreatedBy = "SystemUser",
+//                CreatedAt = DateTime.UtcNow
+//            };
+
+//            _LXPDbContext.QuestionOptions.Add(questionOptionEntity);
+//        }
+
+//        _LXPDbContext.SaveChanges();
+
+//        return quizQuestionEntity.QuizQuestionId;
+//    }
+//    catch (ArgumentException ex)
+//    {
+//        throw;
+//    }
+//    catch (Exception ex)
+//    {
+//        throw new InvalidOperationException(
+//            "An error occurred while adding the quiz question.",
+//            ex
+//        );
+//    }
+//}
 
 //public QuizQuestionNoDto GetQuestionById(Guid quizQuestionId)
 //{

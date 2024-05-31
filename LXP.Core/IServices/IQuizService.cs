@@ -1,4 +1,6 @@
-﻿using LXP.Common.DTO;
+﻿
+using LXP.Common.ViewModels.QuizViewModel;
+
 
 namespace LXP.Core.IServices
 {

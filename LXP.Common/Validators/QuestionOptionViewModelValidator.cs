@@ -1,6 +1,7 @@
 ﻿using FluentValidation;
+using LXP.Common.ViewModels.QuizQuestionViewModel;
 
-namespace LXP.Common.DTO
+namespace LXP.Common.Validators
 {
     public class QuestionOptionViewModelValidator : AbstractValidator<QuestionOptionViewModel>
     {

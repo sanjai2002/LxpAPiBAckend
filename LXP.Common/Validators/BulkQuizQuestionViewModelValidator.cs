@@ -1,8 +1,9 @@
 ﻿using FluentValidation;
 using LXP.Common.ViewModels;
+using LXP.Common.ViewModels.QuizQuestionViewModel;
 using System.Linq;
 
-namespace LXP.Common.DTO
+namespace LXP.Common.Validators
 {
     public class BulkQuizQuestionViewModelValidator : AbstractValidator<BulkQuizQuestionViewModel>
     {

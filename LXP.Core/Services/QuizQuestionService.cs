@@ -1,52 +1,100 @@
-﻿
-using LXP.Common.DTO;
+﻿using LXP.Common.ViewModels.QuizQuestionViewModel;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
 
-namespace LXP.Core.Services
+public class QuizQuestionService : IQuizQuestionService
 {
-    public class QuizQuestionService : IQuizQuestionService
+    private readonly IQuizQuestionRepository _quizQuestionRepository;
+
+    public QuizQuestionService(IQuizQuestionRepository quizQuestionRepository)
     {
-        private readonly IQuizQuestionRepository _quizQuestionRepository;
+        _quizQuestionRepository = quizQuestionRepository;
+    }
 
-        public QuizQuestionService(IQuizQuestionRepository quizQuestionRepository)
-        {
-            _quizQuestionRepository = quizQuestionRepository;
-        }
+    public async Task<Guid> AddQuestionAsync(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
+    {
+        return await _quizQuestionRepository.AddQuestionAsync(quizQuestionDto, options);
+    }
 
-        public Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
-        {
-            return _quizQuestionRepository.AddQuestion(quizQuestionDto, options);
-        }
+    public async Task<bool> UpdateQuestionAsync(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
+    {
+        return await _quizQuestionRepository.UpdateQuestionAsync(quizQuestionId, quizQuestionDto, options);
+    }
 
-        public bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
-        {
-            return _quizQuestionRepository.UpdateQuestion(quizQuestionId, quizQuestionDto, options);
-        }
+    public async Task<bool> DeleteQuestionAsync(Guid quizQuestionId)
+    {
+        return await _quizQuestionRepository.DeleteQuestionAsync(quizQuestionId);
+    }
 
-        public bool DeleteQuestion(Guid quizQuestionId)
-        {
-            return _quizQuestionRepository.DeleteQuestion(quizQuestionId);
-        }
+    public async Task<List<QuizQuestionNoViewModel>> GetAllQuestionsAsync()
+    {
+        return await _quizQuestionRepository.GetAllQuestionsAsync();
+    }
 
-        public List<QuizQuestionNoViewModel> GetAllQuestions()
-        {
-            return _quizQuestionRepository.GetAllQuestions();
-        }
+    public async Task<List<QuizQuestionNoViewModel>> GetAllQuestionsByQuizIdAsync(Guid quizId)
+    {
+        return await _quizQuestionRepository.GetAllQuestionsByQuizIdAsync(quizId);
+    }
 
-        public List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId)
-        {
-            return _quizQuestionRepository.GetAllQuestionsByQuizId(quizId);
-        }
-
-
-
-        public QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId)
-        {
-            return _quizQuestionRepository.GetQuestionById(quizQuestionId);
-        }
+    public async Task<QuizQuestionNoViewModel> GetQuestionByIdAsync(Guid quizQuestionId)
+    {
+        return await _quizQuestionRepository.GetQuestionByIdAsync(quizQuestionId);
     }
 }
+
+
+//without async
+
+//using LXP.Common.ViewModels.QuizQuestionViewModel;
+//using LXP.Core.IServices;
+//using LXP.Data.IRepository;
+//using System;
+//using System.Collections.Generic;
+
+//namespace LXP.Core.Services
+//{
+//    public class QuizQuestionService : IQuizQuestionService
+//    {
+//        private readonly IQuizQuestionRepository _quizQuestionRepository;
+
+//        public QuizQuestionService(IQuizQuestionRepository quizQuestionRepository)
+//        {
+//            _quizQuestionRepository = quizQuestionRepository;
+//        }
+
+//        public Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
+//        {
+//            return _quizQuestionRepository.AddQuestion(quizQuestionDto, options);
+//        }
+
+//        public bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options)
+//        {
+//            return _quizQuestionRepository.UpdateQuestion(quizQuestionId, quizQuestionDto, options);
+//        }
+
+//        public bool DeleteQuestion(Guid quizQuestionId)
+//        {
+//            return _quizQuestionRepository.DeleteQuestion(quizQuestionId);
+//        }
+
+//        public List<QuizQuestionNoViewModel> GetAllQuestions()
+//        {
+//            return _quizQuestionRepository.GetAllQuestions();
+//        }
+
+//        public List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId)
+//        {
+//            return _quizQuestionRepository.GetAllQuestionsByQuizId(quizId);
+//        }
+
+
+
+//        public QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId)
+//        {
+//            return _quizQuestionRepository.GetQuestionById(quizQuestionId);
+//        }
+//    }
+//}
 
 
 //using LXP.Common.DTO;

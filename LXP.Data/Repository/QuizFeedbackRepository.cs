@@ -1,6 +1,7 @@
 ﻿
-using LXP.Common.DTO;
 using LXP.Common.Entities;
+using LXP.Common.ViewModels.QuizFeedbackQuestionViewModel;
+
 using LXP.Data.IRepository;
 
 namespace LXP.Data.Repository
@@ -100,7 +101,7 @@ namespace LXP.Data.Repository
                                             new QuizFeedbackQuestionsOptionViewModel
                                             {
                                                 OptionText = o.OptionText,
-
+                                              
                                             }
                                     )
                                     .ToList()
@@ -137,27 +138,7 @@ namespace LXP.Data.Repository
         }
 
 
-        private void ValidateFeedbackQuestion(QuizfeedbackquestionViewModel quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionViewModel> options)
-        {
-            if (quizfeedbackquestionDto.QuestionType == FeedbackQuestionTypes.MultiChoiceQuestion)
-            {
-                if (options == null || options.Count == 0)
-                {
-                    throw new ArgumentException("MCQ questions must have at least one option.");
-                }
-            }
-            else if (quizfeedbackquestionDto.QuestionType == FeedbackQuestionTypes.DescriptiveQuestion)
-            {
-                if (options != null && options.Count > 0)
-                {
-                    throw new ArgumentException("Descriptive questions should not have options.");
-                }
-            }
-            else
-            {
-                throw new ArgumentException("Invalid question type.");
-            }
-        }
+
 
 
 
@@ -186,6 +167,10 @@ namespace LXP.Data.Repository
                     OptionText = o.OptionText
                 }).ToList();
         }
+
+      
+
+
 
 
         public QuizfeedbackquestionNoViewModel GetFeedbackQuestionById(Guid quizFeedbackQuestionId)
@@ -392,6 +377,40 @@ namespace LXP.Data.Repository
 
 
 
+
+
+//private Guid? GetOptionIdByText(Guid questionId, string optionText)
+//{
+//    var option = _dbContext.Feedbackquestionsoptions
+//        .FirstOrDefault(o => o.QuizFeedbackQuestionId == questionId && o.OptionText.ToLower() == optionText.ToLower());
+
+//    return option?.FeedbackQuestionOptionId;
+//}
+
+
+
+
+//private void ValidateFeedbackQuestion(QuizfeedbackquestionViewModel quizfeedbackquestionDto, List<QuizFeedbackQuestionsOptionViewModel> options)
+//{
+//    if (quizfeedbackquestionDto.QuestionType == FeedbackQuestionTypes.MultiChoiceQuestion)
+//    {
+//        if (options == null || options.Count == 0)
+//        {
+//            throw new ArgumentException("MCQ questions must have at least one option.");
+//        }
+//    }
+//    else if (quizfeedbackquestionDto.QuestionType == FeedbackQuestionTypes.DescriptiveQuestion)
+//    {
+//        if (options != null && options.Count > 0)
+//        {
+//            throw new ArgumentException("Descriptive questions should not have options.");
+//        }
+//    }
+//    else
+//    {
+//        throw new ArgumentException("Invalid question type.");
+//    }
+//}
 
 
 

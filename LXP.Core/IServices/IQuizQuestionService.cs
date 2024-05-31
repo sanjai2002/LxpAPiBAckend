@@ -1,17 +1,38 @@
-﻿using LXP.Common.DTO;
+﻿
+using LXP.Common.ViewModels.QuizQuestionViewModel;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace LXP.Core.IServices
 {
     public interface IQuizQuestionService
     {
-        Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
-        bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
-        bool DeleteQuestion(Guid quizQuestionId);
-        List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId);
-        List<QuizQuestionNoViewModel> GetAllQuestions();
-        QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId);
+        Task<Guid> AddQuestionAsync(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
+        Task<bool> UpdateQuestionAsync(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
+        Task<bool> DeleteQuestionAsync(Guid quizQuestionId);
+        Task<List<QuizQuestionNoViewModel>> GetAllQuestionsByQuizIdAsync(Guid quizId);
+        Task<List<QuizQuestionNoViewModel>> GetAllQuestionsAsync();
+        Task<QuizQuestionNoViewModel> GetQuestionByIdAsync(Guid quizQuestionId);
     }
 }
+
+
+//using LXP.Common.ViewModels.QuizQuestionViewModel;
+
+
+//namespace LXP.Core.IServices
+//{
+//    public interface IQuizQuestionService
+//    {
+//        Guid AddQuestion(QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
+//        bool UpdateQuestion(Guid quizQuestionId, QuizQuestionViewModel quizQuestionDto, List<QuestionOptionViewModel> options);
+//        bool DeleteQuestion(Guid quizQuestionId);
+//        List<QuizQuestionNoViewModel> GetAllQuestionsByQuizId(Guid quizId);
+//        List<QuizQuestionNoViewModel> GetAllQuestions();
+//        QuizQuestionNoViewModel GetQuestionById(Guid quizQuestionId);
+//    }
+//}
 
 
 

@@ -1,11 +1,14 @@
 using FluentValidation.AspNetCore;
 using LXP.Common.Entities;
+using LXP.Common.Validators;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Core.Repositories;
 using LXP.Core.Services;
 using LXP.Data.IRepository;
 using LXP.Data.Repository;
+using LXP.Services;
+using LXP.Services.IServices;
 using Microsoft.Extensions.FileProviders;
 using OfficeOpenXml;
 using Serilog;
@@ -73,12 +76,15 @@ builder.Services.AddScoped<IBulkQuestionService, BulkQuestionService>();
 builder.Services.AddScoped<IQuizFeedbackService, QuizFeedbackService>();
 builder.Services.AddScoped<IQuizFeedbackRepository, QuizFeedbackRepository>();
 builder.Services.AddScoped<ITopicFeedbackRepository, TopicFeedbackRepository>();
+builder.Services.AddScoped<IQuizEngineRepository, QuizEngineRepository>();
+builder.Services.AddScoped<IQuizEngineService, QuizEngineService>();
 builder.Services.AddScoped<IQuizFeedbackService, QuizFeedbackService>();
 builder.Services.AddScoped<ITopicFeedbackService, TopicFeedbackService>();
 builder.Services.AddScoped<IQuizService, QuizService>();
 builder.Services.AddScoped<IQuizReportServices, QuizReportServices>();
 builder.Services.AddScoped<IQuizReportRepository, QuizReportRepository>();
-// Learner 
+builder.Services.AddScoped<IFeedbackResponseRepository, FeedbackResponseRepository>();
+builder.Services.AddScoped<IFeedbackResponseService,FeedbackResponseService>();
 
 builder.Services.AddScoped<ICategoryServices, CategoryServices>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
@@ -131,6 +137,13 @@ builder.Services.AddControllers()
     {
         v.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
     });
+
+
+
+builder.Services.AddTransient<BulkQuizQuestionViewModelValidator>();
+builder.Services.AddTransient<TopicFeedbackResponseViewModelValidator>();
+builder.Services.AddTransient<QuizFeedbackResponseViewModelValidator>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

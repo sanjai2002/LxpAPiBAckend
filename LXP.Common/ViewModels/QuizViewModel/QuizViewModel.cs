@@ -8,11 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LXP.Common.DTO
+namespace LXP.Common.ViewModels.QuizViewModel
 {
-
-
-
     public class QuizViewModel
     {
         public Guid QuizId { get; set; }
@@ -20,14 +17,11 @@ namespace LXP.Common.DTO
         public Guid TopicId { get; set; }
         public string NameOfQuiz { get; set; } = null!;
         public int Duration { get; set; }
-
         public int? AttemptsAllowed { get; set; }
-
         public int PassMark { get; set; }
         public string CreatedBy { get; set; } = "System";
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-      //  public string ModifiedBy { get; set; } = null!;
-      //  public DateTime ModifiedAt { get; set; } = DateTime.UtcNow;
+     
 
     }
 }
@@ -65,3 +59,5 @@ namespace LXP.Common.DTO
 //     public int Duration { get; set; }
 //     public int PassMark { get; set; }
 // }
+//  public string ModifiedBy { get; set; } = null!;
+//  public DateTime ModifiedAt { get; set; } = DateTime.UtcNow;

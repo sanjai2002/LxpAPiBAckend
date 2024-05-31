@@ -1,19 +1,20 @@
 ﻿
 
 
-using LXP.Common.DTO;
+using LXP.Common.ViewModels.TopicFeedbackQuestionViemModel;
+
 
 namespace LXP.Data.IRepository
 {
     public interface ITopicFeedbackRepository
     {
-        IEnumerable<TopicFeedbackQuestionNoDTO> GetAllFeedbackQuestions();
-        TopicFeedbackQuestionNoDTO GetFeedbackQuestionById(Guid id);
-        void AddFeedbackResponse(TopicFeedbackResponseViewModel feedbackResponse);
+        IEnumerable<TopicFeedbackQuestionNoViewModel> GetAllFeedbackQuestions();
+        TopicFeedbackQuestionNoViewModel GetFeedbackQuestionById(Guid id);
+
         bool AddFeedbackQuestion(TopicFeedbackQuestionViewModel question, List<FeedbackOptionDTO> options);
         bool DeleteFeedbackQuestion(Guid id);
         bool UpdateFeedbackQuestion(Guid id, TopicFeedbackQuestionViewModel question, List<FeedbackOptionDTO> options);
-        IEnumerable<TopicFeedbackQuestionNoDTO> GetFeedbackQuestionsByTopicId(Guid topicId);
+        IEnumerable<TopicFeedbackQuestionNoViewModel> GetFeedbackQuestionsByTopicId(Guid topicId);
 
     }
 }
