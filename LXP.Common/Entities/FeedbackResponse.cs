@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 
 namespace LXP.Common.Entities;
-
 public partial class Feedbackresponse
 {
     public Guid FeedbackresponseId { get; set; }

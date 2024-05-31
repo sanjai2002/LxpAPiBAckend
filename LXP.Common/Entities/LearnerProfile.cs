@@ -19,7 +19,7 @@ public partial class LearnerProfile
 
     public string Stream { get; set; } = null!;
 
-    public string ProfilePhoto { get; set; } = null!;
+    public string? ProfilePhoto { get; set; }
 
     public Guid LearnerId { get; set; }
 

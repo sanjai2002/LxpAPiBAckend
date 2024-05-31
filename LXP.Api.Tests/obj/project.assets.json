@@ -8010,23 +8010,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\laevi.antony\\.nuget\\packages\\": {},
+    "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Capstone LXP\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+      "projectUniqueName": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
       "projectName": "LXP.Api.Tests",
-      "projectPath": "D:\\Capstone LXP\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
-      "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-      "outputPath": "D:\\Capstone LXP\\LXP.Api.Tests\\obj\\",
+      "projectPath": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+      "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
+      "outputPath": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kathirvel.selvam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8041,8 +8041,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Capstone LXP\\LXP.Api\\LXP.Api.csproj": {
-              "projectPath": "D:\\Capstone LXP\\LXP.Api\\LXP.Api.csproj"
+            "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api\\LXP.Api.csproj": {
+              "projectPath": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Admin Module\\LXP.Api\\LXP.Api.csproj"
             }
           }
         }

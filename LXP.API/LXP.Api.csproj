@@ -36,6 +36,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\CourseThumbnailImages\" />
     <Folder Include="wwwroot\CourseMaterial\" />
+    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 </Project>

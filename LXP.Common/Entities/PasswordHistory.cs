@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-
 namespace LXP.Common.Entities;
 
 public partial class PasswordHistory
@@ -9,7 +8,7 @@ public partial class PasswordHistory
 
     public Guid LearnerId { get; set; }
 
-    public string OldPassword { get; set; } = null!;
+    public string? OldPassword { get; set; }
 
     public string NewPassword { get; set; } = null!;
 
