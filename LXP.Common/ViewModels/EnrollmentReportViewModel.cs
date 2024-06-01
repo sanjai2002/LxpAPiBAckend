@@ -9,10 +9,15 @@ namespace LXP.Common.ViewModels
     public class EnrollmentReportViewModel
     {
         ///<summary>
-        ///Course Name
+        ///Course Id
         ///</summary>
 
         public Guid CourseId { get; set; }
+        ///<summary>
+        ///Learner Id
+        ///</summary>
+
+        public Guid LearnerId { get; set; }
         ///<summary>
         ///Course Name
         /// </summary>
@@ -35,5 +40,15 @@ namespace LXP.Common.ViewModels
         /// </summary>
 
         public int CompletedUsers { get; set; }
+
+        ///<summary>
+        ///Profile photo
+        /// </summary>
+        public string? ProfilePhoto { get; set; }
+
+        ///<summary>
+        ///LearnerName
+        /// </summary>
+        public string LearnerName { get; set; }
     }
 }

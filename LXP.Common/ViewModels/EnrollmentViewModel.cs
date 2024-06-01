@@ -20,8 +20,9 @@ namespace LXP.Common.ViewModels
         ///Learner Name
         ///</summary>
         
-        public Guid LearnerId { get; set; }    
+        public Guid LearnerId { get; set; }
 
+        
         ///<summary>
         ///EnrollmentDate
         ///</summary>
