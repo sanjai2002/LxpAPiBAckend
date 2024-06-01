@@ -64,6 +64,7 @@ namespace LXP.Common.ViewModels
 
         public bool Status { get; set; }
         public string ModifiedAt { get; set; }
+
     }
 
 }

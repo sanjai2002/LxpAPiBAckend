@@ -128,6 +128,12 @@ namespace LXP.Data.Repository
                              EnrolledCourseCategory = enrollment.Course.Category.Category,
                              EnrolledCourselevels = enrollment.Course.Level.Level,
                              Enrollmentdate = enrollment.EnrollmentDate,
+                             CourseImage = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
+                                             _contextAccessor.HttpContext.Request.Scheme,
+                                             _contextAccessor.HttpContext.Request.Host,
+                                             _contextAccessor.HttpContext.Request.PathBase,
+                                             enrollment.Course.Thumbnail),
+                             Status = enrollment.CompletedStatus,
                          };
             return result;
         }

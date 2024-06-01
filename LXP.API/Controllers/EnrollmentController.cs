@@ -53,7 +53,26 @@ namespace LXP.Api.Controllers
             var learner = _enrollmentService.GetCourseandTopicsByLearnerId(learnerId);
             return Ok(CreateSuccessResponse(learner));
         }
+        [HttpGet("lxp/enrollment/report")]
+        public IActionResult GetAllEnrollemet()
+        {
+            var report = _enrollmentService.GetEnrollmentsReport();
+            return Ok(CreateSuccessResponse(report));
+        }
 
+        [HttpGet("lxp/enrollment/course/{courseId}")]
+        public IActionResult GetEnrolledUsers(Guid courseId)
+        {
+            var enrolledusers = _enrollmentService.GetEnrolledUsers(courseId);
+            return Ok(CreateSuccessResponse(enrolledusers));
+        }
+
+        [HttpGet("lxp/enrollment/course/complete/{courseId}")]
+        public IActionResult GetCompletedUsers(Guid courseId)
+        {
+            var enrolledusers = _enrollmentService.GetCompletedUsers(courseId);
+            return Ok(CreateSuccessResponse(enrolledusers));
+        }
 
     }
 }

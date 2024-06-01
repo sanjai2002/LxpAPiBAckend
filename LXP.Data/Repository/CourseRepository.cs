@@ -113,7 +113,8 @@ namespace LXP.Data.Repository
                              _contextAccessor.HttpContext.Request.Scheme,
                              _contextAccessor.HttpContext.Request.Host,
                              _contextAccessor.HttpContext.Request.PathBase,
-                             c.Thumbnail)
+                             c.Thumbnail),
+                  CreatedAt = c.CreatedAt,
               })
               .Take(9)
               .ToList();

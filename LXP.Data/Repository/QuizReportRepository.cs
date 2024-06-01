@@ -1,11 +1,6 @@
 ﻿using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Data.IRepository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace LXP.Data.Repository
 {
@@ -28,6 +23,7 @@ namespace LXP.Data.Repository
                     quizName = q.NameOfQuiz,
                     QuizId = q.QuizId,
                     PassMark = q.PassMark,
+                    LearnerId = q.LearnerAttempts.First().LearnerId,
                 })
                 .Select(q => new QuizReportViewModel
                 {
@@ -48,7 +44,7 @@ namespace LXP.Data.Repository
                         .Select(group => group.Max(attempt => attempt.Score))
                         .DefaultIfEmpty()
                         .Average()
-                });
+                }); ;
 
             return quizReports;
         }

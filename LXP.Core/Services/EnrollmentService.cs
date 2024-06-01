@@ -78,11 +78,27 @@ namespace LXP.Core.Services
 
         }
 
+  
+
         public object GetCourseandTopicsByLearnerId(Guid learnerId)
         {
 
             return _enrollmentRepository.GetCourseandTopicsByLearnerId(learnerId);
 
+        }
+
+        public IEnumerable<EnrolledUserViewModel> GetEnrolledUsers(Guid courseId)
+        {
+            return _enrollmentRepository.GetEnrolledUser(courseId);
+        }
+
+        public IEnumerable<EnrollmentReportViewModel> GetEnrollmentsReport()
+        {
+            return _enrollmentRepository.GetEnrollmentReport();
+        }
+        public IEnumerable<EnrolledUserViewModel> GetCompletedUsers(Guid courseId)
+        {
+            return _enrollmentRepository.GetCompletedUser(courseId);
         }
     }
 

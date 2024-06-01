@@ -115,6 +115,7 @@ namespace LXP.Api.Controllers
 
         }
 
+
         [HttpGet("lxp/GetAllCourse")]
         public IActionResult GetAllCourse()
         {
