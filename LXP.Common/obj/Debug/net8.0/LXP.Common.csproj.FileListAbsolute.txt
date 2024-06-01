@@ -191,3 +191,16 @@ D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Common\obj\Debug\net8.0\LXP.
 D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
 D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
 D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\Sprint5Admin-Lxp\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\Sprint5Admin-Lxp\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\Sprint5Admin-Lxp\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\Sprint5Admin-Lxp\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll

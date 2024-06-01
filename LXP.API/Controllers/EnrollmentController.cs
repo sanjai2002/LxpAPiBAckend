@@ -54,6 +54,12 @@ namespace LXP.Api.Controllers
             return Ok(CreateSuccessResponse(learner));
         }
 
+        [HttpGet("lxp/enrollment/report")]
 
+        public IActionResult GetAllEnrollemet()
+        {
+            var report = _enrollmentService.GetEnrollmentsReport();
+            return Ok(CreateSuccessResponse(report));
+        }
     }
 }

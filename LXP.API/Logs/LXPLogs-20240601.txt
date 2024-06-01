@@ -25,3 +25,67 @@
 2024-06-01 11:01:43.387 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetLimitedCourse (LXP.Api) in 235.8195ms
 2024-06-01 11:01:43.391 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetLimitedCourse (LXP.Api)'
 2024-06-01 11:01:43.397 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/Getninecourse - 200 null application/json; charset=utf-8 304.8001ms
+2024-06-01 11:26:45.260 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-01 11:26:45.290 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-01 11:26:45.291 +05:30 [INF] Hosting environment: Development
+2024-06-01 11:26:45.291 +05:30 [INF] Content root path: D:\Sprint5Admin-Lxp\LXP.Api
+2024-06-01 11:26:49.113 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-01 11:26:50.012 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 908.0726ms
+2024-06-01 11:26:50.022 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-01 11:26:50.033 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.0349ms
+2024-06-01 11:26:50.035 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-01 11:26:50.133 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.5523ms
+2024-06-01 11:26:50.167 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-01 11:26:50.428 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 261.0917ms
+2024-06-01 11:45:52.742 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-01 11:45:52.786 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-01 11:45:52.787 +05:30 [INF] Hosting environment: Development
+2024-06-01 11:45:52.788 +05:30 [INF] Content root path: D:\Sprint5Admin-Lxp\LXP.Api
+2024-06-01 11:45:53.801 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-01 11:45:54.440 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 647.2658ms
+2024-06-01 11:45:54.444 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-01 11:45:54.453 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-01 11:45:54.469 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 16.3913ms
+2024-06-01 11:45:54.507 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.6135ms
+2024-06-01 11:45:54.557 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-01 11:45:54.746 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 189.2774ms
+2024-06-01 11:46:25.106 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Enrollment/lxp/enrollment/report - null null
+2024-06-01 11:46:25.142 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-01 11:46:25.151 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.GetAllEnrollemet (LXP.Api)'
+2024-06-01 11:46:25.184 +05:30 [INF] Route matched with {action = "GetAllEnrollemet", controller = "Enrollment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEnrollemet() on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-06-01 11:46:29.166 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-01 11:46:29.237 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.GetAllEnrollemet (LXP.Api) in 4043.8002ms
+2024-06-01 11:46:29.241 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.GetAllEnrollemet (LXP.Api)'
+2024-06-01 11:46:29.244 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Enrollment/lxp/enrollment/report - 200 null application/json; charset=utf-8 4138.4485ms
+2024-06-01 11:51:06.410 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-01 11:51:06.443 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-01 11:51:06.448 +05:30 [INF] Hosting environment: Development
+2024-06-01 11:51:06.453 +05:30 [INF] Content root path: D:\Sprint5Admin-Lxp\LXP.Api
+2024-06-01 11:51:10.267 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-01 11:51:11.081 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 819.6395ms
+2024-06-01 11:51:11.086 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-01 11:51:11.097 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-01 11:51:11.112 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 14.6704ms
+2024-06-01 11:51:11.158 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 71.7845ms
+2024-06-01 11:51:11.181 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-01 11:51:11.520 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 339.6642ms
+2024-06-01 11:51:19.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Enrollment/lxp/enrollment/report - null null
+2024-06-01 11:51:19.447 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-01 11:51:19.457 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.GetAllEnrollemet (LXP.Api)'
+2024-06-01 11:51:19.492 +05:30 [INF] Route matched with {action = "GetAllEnrollemet", controller = "Enrollment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllEnrollemet() on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-06-01 11:51:22.859 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-01 11:51:22.919 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.GetAllEnrollemet (LXP.Api) in 3416.0019ms
+2024-06-01 11:51:22.927 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.GetAllEnrollemet (LXP.Api)'
+2024-06-01 11:51:22.931 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Enrollment/lxp/enrollment/report - 200 null application/json; charset=utf-8 3506.5171ms
+2024-06-01 14:57:51.798 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-01 14:57:51.848 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-01 14:57:51.852 +05:30 [INF] Hosting environment: Development
+2024-06-01 14:57:51.856 +05:30 [INF] Content root path: D:\Sprint5Admin-Lxp\LXP.Api
+2024-06-01 14:57:53.157 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-01 14:57:54.105 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 957.2809ms
+2024-06-01 14:57:54.137 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-01 14:57:54.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-01 14:57:54.151 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.9213ms
+2024-06-01 14:57:54.213 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.9453ms
+2024-06-01 14:57:54.247 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-01 14:57:54.616 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 369.3574ms

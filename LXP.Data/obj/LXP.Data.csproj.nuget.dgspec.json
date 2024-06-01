@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Data\\LXP.Data.csproj": {}
+    "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj": {}
   },
   "projects": {
-    "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Common\\LXP.Common.csproj": {
+    "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Common\\LXP.Common.csproj",
-        "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
-        "outputPath": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Common\\obj\\",
+        "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\Sprint5Admin-Lxp\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kathirvel.selvam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -73,20 +73,20 @@
         }
       }
     },
-    "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Data\\LXP.Data.csproj": {
+    "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Data\\LXP.Data.csproj",
+        "projectUniqueName": "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj",
         "projectName": "LXP.Data",
-        "projectPath": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Data\\LXP.Data.csproj",
-        "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
-        "outputPath": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Data\\obj\\",
+        "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj",
+        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
+        "outputPath": "D:\\Sprint5Admin-Lxp\\LXP.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\kathirvel.selvam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -101,8 +101,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "D:\\SKV\\Capstone\\Sprint 5\\BackEnd\\Merge with old\\LXP.Common\\LXP.Common.csproj"
+              "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj"
               }
             }
           }

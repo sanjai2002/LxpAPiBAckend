@@ -41,6 +41,9 @@ namespace LXP.Common.ViewModels
 
         public bool EnrollRequestStatus { get; set; }
 
+        ///<summary>
+        ///LearName
+        /// </summary>
 
     }
 }

@@ -1,4 +1,5 @@
 ﻿using LXP.Common.Entities;
+using LXP.Common.ViewModels;
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -92,5 +93,24 @@ namespace LXP.Data.Repository
 
 
         }
+
+        public IEnumerable<EnrollmentReportViewModel> GetEnrollmentReport()
+        {
+            var course = _lXPDbContext.Enrollments
+                .GroupBy(x => x.CourseId)
+
+                .Select(x => new EnrollmentReportViewModel
+                {
+                    CourseId = x.First().CourseId,
+                    CourseName = x.First().Course.Title,
+                    EnrolledUsers = x.GroupBy(x => x.LearnerId).Count(),
+                    InprogressUsers = x.Where(x => x.CompletedStatus == 0).Count(),
+                    CompletedUsers = x.Where(x => x.CompletedStatus == 1).Count(),
+                })
+                .ToList();
+            return course;
+        }
+
+
     }
 }

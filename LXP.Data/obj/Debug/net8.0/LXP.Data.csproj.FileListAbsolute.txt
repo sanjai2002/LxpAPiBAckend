@@ -266,3 +266,21 @@ D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Data\obj\Debug\net8.0\refint
 D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Data\obj\Debug\net8.0\LXP.Data.pdb
 D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Data\obj\Debug\net8.0\LXP.Data.genruntimeconfig.cache
 D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Data\obj\Debug\net8.0\ref\LXP.Data.dll
+D:\Sprint5Admin-Lxp\LXP.Data\bin\Debug\net8.0\LXP.Data.deps.json
+D:\Sprint5Admin-Lxp\LXP.Data\bin\Debug\net8.0\LXP.Data.runtimeconfig.json
+D:\Sprint5Admin-Lxp\LXP.Data\bin\Debug\net8.0\LXP.Data.dll
+D:\Sprint5Admin-Lxp\LXP.Data\bin\Debug\net8.0\LXP.Data.pdb
+D:\Sprint5Admin-Lxp\LXP.Data\bin\Debug\net8.0\LXP.Common.dll
+D:\Sprint5Admin-Lxp\LXP.Data\bin\Debug\net8.0\LXP.Common.pdb
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.AssemblyReference.cache
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.AssemblyInfoInputs.cache
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.AssemblyInfo.cs
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.CoreCompileInputs.cache
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.sourcelink.json
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.CopyComplete
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.dll
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\refint\LXP.Data.dll
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.pdb
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\LXP.Data.genruntimeconfig.cache
+D:\Sprint5Admin-Lxp\LXP.Data\obj\Debug\net8.0\ref\LXP.Data.dll
