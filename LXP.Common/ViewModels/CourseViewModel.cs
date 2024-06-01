@@ -28,7 +28,7 @@ namespace LXP.Common.ViewModels
         ///</Summary>
         ///<example>Technical</example>
 
-        public string? Catagory { get; set; }
+        public string? Category { get; set; }
 
         ///<Summary>
         ///Course Description
@@ -50,5 +50,7 @@ namespace LXP.Common.ViewModels
         ///<example>Image with filesize less than 250kb and file extension jpeg or png</example>
         [NotMapped]
         public IFormFile Thumbnailimage { get; set; }
+
+        public string CreatedBy { get; set; }
     }
 }

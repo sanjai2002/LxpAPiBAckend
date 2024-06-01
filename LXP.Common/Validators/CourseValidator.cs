@@ -12,7 +12,7 @@ public class CourseViewModelValidator : AbstractValidator<CourseViewModel>
         RuleFor(course => course.Level)
             .NotEmpty().WithMessage("Level is required");
 
-        RuleFor(course => course.Catagory)
+        RuleFor(course => course.Category)
             .NotEmpty().WithMessage("Category is required");
 
         RuleFor(course => course.Description)

@@ -1,0 +1,27 @@
+2024-06-01 11:00:26.064 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-01 11:00:26.355 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-01 11:00:26.362 +05:30 [INF] Hosting environment: Development
+2024-06-01 11:00:26.364 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\BackEnd\Merge with old\LXP.Api
+2024-06-01 11:00:31.024 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-01 11:00:31.841 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 828.6936ms
+2024-06-01 11:00:31.863 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-01 11:00:31.863 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-01 11:00:31.872 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.8474ms
+2024-06-01 11:00:31.950 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 87.6533ms
+2024-06-01 11:00:32.072 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-01 11:00:32.576 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 504.0708ms
+2024-06-01 11:00:38.551 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-01 11:00:38.594 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-01 11:00:38.609 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-01 11:00:38.667 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-01 11:00:44.412 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-01 11:00:44.551 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 5862.7899ms
+2024-06-01 11:00:44.560 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-01 11:00:44.564 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 6013.1276ms
+2024-06-01 11:01:43.092 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/Getninecourse - null null
+2024-06-01 11:01:43.129 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetLimitedCourse (LXP.Api)'
+2024-06-01 11:01:43.142 +05:30 [INF] Route matched with {action = "GetLimitedCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLimitedCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-01 11:01:43.382 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-01 11:01:43.387 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetLimitedCourse (LXP.Api) in 235.8195ms
+2024-06-01 11:01:43.391 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetLimitedCourse (LXP.Api)'
+2024-06-01 11:01:43.397 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/Getninecourse - 200 null application/json; charset=utf-8 304.8001ms
