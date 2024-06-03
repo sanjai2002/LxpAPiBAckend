@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\CourseMaterial\\37afa81b-cb40-4626-b8b8-2b6630491b26_1757800-sd_640_360_25fps 2.mp4"
     },
     {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\4b128658-d5de-43cc-b1ab-61f5c023b52c_1757800-sd_640_360_25fps 2.mp4",
+      "PackagePath": "staticwebassets\\CourseMaterial\\4b128658-d5de-43cc-b1ab-61f5c023b52c_1757800-sd_640_360_25fps 2.mp4"
+    },
+    {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png",
       "PackagePath": "staticwebassets\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png"
     },
@@ -35,6 +39,10 @@
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\16dfea6c-5531-4772-ad75-7c421f8357b3_thumbnai.jpeg",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\16dfea6c-5531-4772-ad75-7c421f8357b3_thumbnai.jpeg"
     },
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1bbee7b0-e5a5-4ad9-bcf6-d83f967eeed9_test.png",
@@ -251,6 +259,10 @@
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg"
     },
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\LearnerProfileImages\\12000.jpg",

@@ -12,6 +12,8 @@ namespace LXP.Core.IServices
     {
         Task Progress(LearnerProgressViewModel learnerProgress);
         Task materialCompletion(Guid learnerId,Guid materialId);
-       // Task<LearnerProgressViewModel> GetProgressById(Guid learnerProgressId);
+
+        Task<double> materialCompletionPercentage(Guid learnerId, Guid materialId);
+        // Task<LearnerProgressViewModel> GetProgressById(Guid learnerProgressId);
     }
 }

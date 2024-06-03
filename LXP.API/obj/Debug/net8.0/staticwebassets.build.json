@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GE3lSuytwHJDFAyjIP7wPG9c8lgkxP5Uz1sBEnywvbE=",
+  "Hash": "c5P9zy3EKqqbBb/frcS5Xe9TpX3posPZR/qW+g67mTw=",
   "Source": "LXP.Api",
   "BasePath": "_content/LXP.Api",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CourseMaterial\\37afa81b-cb40-4626-b8b8-2b6630491b26_1757800-sd_640_360_25fps 2.mp4"
+    },
+    {
+      "Identity": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\4b128658-d5de-43cc-b1ab-61f5c023b52c_1757800-sd_640_360_25fps 2.mp4",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseMaterial/4b128658-d5de-43cc-b1ab-61f5c023b52c_1757800-sd_640_360_25fps 2.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseMaterial\\4b128658-d5de-43cc-b1ab-61f5c023b52c_1757800-sd_640_360_25fps 2.mp4"
     },
     {
       "Identity": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png",
@@ -186,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\16dfea6c-5531-4772-ad75-7c421f8357b3_thumbnai.jpeg",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/16dfea6c-5531-4772-ad75-7c421f8357b3_thumbnai.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\16dfea6c-5531-4772-ad75-7c421f8357b3_thumbnai.jpeg"
     },
     {
       "Identity": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1bbee7b0-e5a5-4ad9-bcf6-d83f967eeed9_test.png",
@@ -1212,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png"
+    },
+    {
+      "Identity": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg",
+      "SourceId": "LXP.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\",
+      "BasePath": "_content/LXP.Api",
+      "RelativePath": "CourseThumbnailImages/f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg"
     },
     {
       "Identity": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\LearnerProfileImages\\12000.jpg",

@@ -1344,3 +1344,168 @@ System.InvalidOperationException: A second operation was started on this context
 2024-06-03 11:06:02.304 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api) in 4.8802ms
 2024-06-03 11:06:02.306 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
 2024-06-03 11:06:02.308 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/5297a580-806f-4854-83f4-ed1216544c53 - 200 null application/json; charset=utf-8 28.3494ms
+2024-06-03 12:58:02.891 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 12:58:02.965 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 12:58:02.970 +05:30 [INF] Hosting environment: Development
+2024-06-03 12:58:02.976 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 12:58:05.292 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 12:58:06.480 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1198.3892ms
+2024-06-03 12:58:06.553 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 12:58:06.557 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 12:58:06.589 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 36.4797ms
+2024-06-03 12:58:06.975 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 417.6209ms
+2024-06-03 12:58:07.038 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 12:58:07.380 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 341.9112ms
+2024-06-03 12:59:47.998 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/material - multipart/form-data; boundary=----WebKitFormBoundaryU0RBfLqiSASiexSA 4164627
+2024-06-03 12:59:48.051 +05:30 [INF] CORS policy execution successful.
+2024-06-03 12:59:48.060 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 12:59:48.069 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-06-03 12:59:48.112 +05:30 [INF] Route matched with {action = "AddMaterial", controller = "Material"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddMaterial(LXP.Common.ViewModels.MaterialViewModel) on controller LXP.Api.Controllers.MaterialController (LXP.Api).
+2024-06-03 12:59:53.504 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 12:59:53.587 +05:30 [INF] Executed action LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api) in 5449.4015ms
+2024-06-03 12:59:53.596 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.MaterialController.AddMaterial (LXP.Api)'
+2024-06-03 12:59:53.610 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/material - 200 null application/json; charset=utf-8 5612.0576ms
+2024-06-03 14:12:55.370 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 14:12:55.407 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 14:12:55.412 +05:30 [INF] Hosting environment: Development
+2024-06-03 14:12:55.413 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 14:12:56.319 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 14:12:56.922 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 614.6676ms
+2024-06-03 14:12:56.962 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 14:12:56.968 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 14:12:56.971 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.455ms
+2024-06-03 14:12:57.007 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 38.1801ms
+2024-06-03 14:12:57.055 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 14:12:57.191 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.9462ms
+2024-06-03 14:15:32.841 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/learnerprogress - application/json 244
+2024-06-03 14:15:32.875 +05:30 [INF] CORS policy execution successful.
+2024-06-03 14:15:32.881 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 14:15:32.887 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api)'
+2024-06-03 14:15:32.930 +05:30 [INF] Route matched with {action = "MaterialProgress", controller = "LearnerProgress"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MaterialProgress(LXP.Common.ViewModels.LearnerProgressViewModel) on controller LXP.Api.Controllers.LearnerProgressController (LXP.Api).
+2024-06-03 14:15:33.209 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-03 14:15:33.259 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api) in 319.8563ms
+2024-06-03 14:15:33.263 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api)'
+2024-06-03 14:15:33.264 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/learnerprogress - 400 null application/problem+json; charset=utf-8 425.6703ms
+2024-06-03 14:16:24.300 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/learnerprogress - application/json 244
+2024-06-03 14:16:24.318 +05:30 [INF] CORS policy execution successful.
+2024-06-03 14:16:24.327 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api)'
+2024-06-03 14:16:24.330 +05:30 [INF] Route matched with {action = "MaterialProgress", controller = "LearnerProgress"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MaterialProgress(LXP.Common.ViewModels.LearnerProgressViewModel) on controller LXP.Api.Controllers.LearnerProgressController (LXP.Api).
+2024-06-03 14:16:24.341 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-03 14:16:24.345 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api) in 9.9783ms
+2024-06-03 14:16:24.348 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api)'
+2024-06-03 14:16:24.350 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/learnerprogress - 400 null application/problem+json; charset=utf-8 50.3747ms
+2024-06-03 14:17:38.474 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/learnerprogress - application/json 247
+2024-06-03 14:17:38.487 +05:30 [INF] CORS policy execution successful.
+2024-06-03 14:17:38.488 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api)'
+2024-06-03 14:17:38.490 +05:30 [INF] Route matched with {action = "MaterialProgress", controller = "LearnerProgress"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MaterialProgress(LXP.Common.ViewModels.LearnerProgressViewModel) on controller LXP.Api.Controllers.LearnerProgressController (LXP.Api).
+2024-06-03 14:17:42.080 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api) in 3587.9721ms
+2024-06-03 14:17:42.087 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api)'
+2024-06-03 14:17:42.243 +05:30 [ERR] An error occurred while saving the entity changes. See the inner exception for details.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`lxp`.`learner_progress`, CONSTRAINT `FK_learner_progress_learners_learner_id` FOREIGN KEY (`learner_id`) REFERENCES `learners` (`learner_id`) ON DELETE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 894
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 483
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 357
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 350
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at LXP.Data.Repository.LearnerProgressRepository.LearnerProgress(LearnerProgress learnerProgress) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\LearnerProgressRepository.cs:line 25
+   at LXP.Core.Services.LearnerProgressService.Progress(LearnerProgressViewModel learnerProgress) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\LearnerProgressService.cs:line 47
+   at LXP.Api.Controllers.LearnerProgressController.MaterialProgress(LearnerProgressViewModel learnerProgress) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\LearnerProgressController.cs:line 27
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 14:17:42.702 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/learnerprogress - 500 null application/json 4228.8508ms
+2024-06-03 14:18:31.249 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 14:18:31.283 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 14:18:31.286 +05:30 [INF] Hosting environment: Development
+2024-06-03 14:18:31.287 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 14:18:34.830 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 14:18:35.186 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 357.6691ms
+2024-06-03 14:18:35.219 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 14:18:35.222 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 14:18:35.225 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.6053ms
+2024-06-03 14:18:35.256 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.0552ms
+2024-06-03 14:18:35.302 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 14:18:35.442 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 140.1411ms
+2024-06-03 14:20:15.755 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/learnerprogress - application/json 246
+2024-06-03 14:20:15.779 +05:30 [INF] CORS policy execution successful.
+2024-06-03 14:20:15.783 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 14:20:15.788 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api)'
+2024-06-03 14:20:15.821 +05:30 [INF] Route matched with {action = "MaterialProgress", controller = "LearnerProgress"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MaterialProgress(LXP.Common.ViewModels.LearnerProgressViewModel) on controller LXP.Api.Controllers.LearnerProgressController (LXP.Api).
+2024-06-03 14:20:32.535 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2024-06-03 14:20:32.546 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api) in 16714.661ms
+2024-06-03 14:20:32.549 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialProgress (LXP.Api)'
+2024-06-03 14:20:32.553 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/learnerprogress - 200 0 null 16798.0639ms
+2024-06-03 14:21:34.553 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/learnerprogressStatus?learnerId=59c19f71-d83e-4ca4-a076-e785a9c41cad&materialId=3a35a8db-98e6-44c3-b88e-dbcd6be443da - null 0
+2024-06-03 14:21:34.576 +05:30 [INF] CORS policy execution successful.
+2024-06-03 14:21:34.578 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialCompleted (LXP.Api)'
+2024-06-03 14:21:34.585 +05:30 [INF] Route matched with {action = "MaterialCompleted", controller = "LearnerProgress"}. Executing controller action with signature System.Threading.Tasks.Task MaterialCompleted(System.Guid, System.Guid) on controller LXP.Api.Controllers.LearnerProgressController (LXP.Api).
+2024-06-03 14:21:34.664 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerProgressController.MaterialCompleted (LXP.Api) in 75.456ms
+2024-06-03 14:21:34.666 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialCompleted (LXP.Api)'
+2024-06-03 14:21:34.670 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/learnerprogressStatus?learnerId=59c19f71-d83e-4ca4-a076-e785a9c41cad&materialId=3a35a8db-98e6-44c3-b88e-dbcd6be443da - 200 0 null 116.875ms
+2024-06-03 16:42:51.288 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 16:42:51.333 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 16:42:51.337 +05:30 [INF] Hosting environment: Development
+2024-06-03 16:42:51.338 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 16:42:52.496 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 16:42:53.456 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 971.537ms
+2024-06-03 16:42:53.504 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 16:42:53.504 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 16:42:53.514 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.4832ms
+2024-06-03 16:42:53.559 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.6766ms
+2024-06-03 16:42:53.608 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 16:42:53.988 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 380.5641ms
+2024-06-03 16:43:53.880 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/learnerprogressPercentage?learnerId=59c19f71-d83e-4ca4-a076-e785a9c41cad&materialId=3a35a8db-98e6-44c3-b88e-dbcd6be443da - null 0
+2024-06-03 16:43:53.918 +05:30 [INF] CORS policy execution successful.
+2024-06-03 16:43:53.923 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 16:43:53.936 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialPercentage (LXP.Api)'
+2024-06-03 16:43:53.985 +05:30 [INF] Route matched with {action = "MaterialPercentage", controller = "LearnerProgress"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MaterialPercentage(System.Guid, System.Guid) on controller LXP.Api.Controllers.LearnerProgressController (LXP.Api).
+2024-06-03 16:43:57.668 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2024-06-03 16:43:57.705 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerProgressController.MaterialPercentage (LXP.Api) in 3706.8828ms
+2024-06-03 16:43:57.712 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialPercentage (LXP.Api)'
+2024-06-03 16:43:57.720 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/learnerprogressPercentage?learnerId=59c19f71-d83e-4ca4-a076-e785a9c41cad&materialId=3a35a8db-98e6-44c3-b88e-dbcd6be443da - 200 null application/json; charset=utf-8 3840.1486ms
+2024-06-03 16:50:57.579 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 16:50:57.687 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 16:50:57.721 +05:30 [INF] Hosting environment: Development
+2024-06-03 16:50:57.725 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 16:51:02.416 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 16:51:03.208 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 801.1283ms
+2024-06-03 16:51:03.300 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 16:51:03.301 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 16:51:03.310 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.7347ms
+2024-06-03 16:51:03.565 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 264.3181ms
+2024-06-03 16:51:03.660 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 16:51:04.019 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 359.4434ms
+2024-06-03 16:52:45.545 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/learner/learnerprogressPercentage?learnerId=59c19f71-d83e-4ca4-a076-e785a9c41cad&materialId=3a35a8db-98e6-44c3-b88e-dbcd6be443da - null 0
+2024-06-03 16:52:45.579 +05:30 [INF] CORS policy execution successful.
+2024-06-03 16:52:45.582 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 16:52:45.590 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialPercentage (LXP.Api)'
+2024-06-03 16:52:45.630 +05:30 [INF] Route matched with {action = "MaterialPercentage", controller = "LearnerProgress"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MaterialPercentage(System.Guid, System.Guid) on controller LXP.Api.Controllers.LearnerProgressController (LXP.Api).
+2024-06-03 16:52:50.225 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Double'.
+2024-06-03 16:52:50.251 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerProgressController.MaterialPercentage (LXP.Api) in 4613.6838ms
+2024-06-03 16:52:50.256 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerProgressController.MaterialPercentage (LXP.Api)'
+2024-06-03 16:52:50.267 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/learner/learnerprogressPercentage?learnerId=59c19f71-d83e-4ca4-a076-e785a9c41cad&materialId=3a35a8db-98e6-44c3-b88e-dbcd6be443da - 200 null application/json; charset=utf-8 4722.8079ms

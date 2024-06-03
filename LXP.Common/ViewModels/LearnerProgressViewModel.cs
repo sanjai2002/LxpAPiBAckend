@@ -20,7 +20,7 @@ namespace LXP.Common.ViewModels
 
         public TimeOnly WatchTime { get; set; }
 
-        public TimeOnly TotalTime { get; set; }
+        //public TimeOnly TotalTime { get; set; }
 
        
 

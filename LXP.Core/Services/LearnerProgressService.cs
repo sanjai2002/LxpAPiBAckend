@@ -42,7 +42,10 @@ namespace LXP.Core.Services
                 IsWatched = false
 
             };
+
             
+
+
 
             await _learnerProgressRepository.LearnerProgress(progress);
             
@@ -73,10 +76,25 @@ namespace LXP.Core.Services
 
         }
 
-       //public async  Task<LearnerProgressViewModel> GetProgressById(Guid learnerProgressId)
-       // {
-       //    LearnerProgressViewModel  progress = await _learnerProgressRepository.GetLearnerProgressById(learnerProgressId);
-       //     return progress;
-       // }
+        public async Task<double>  materialCompletionPercentage(Guid learnerId, Guid materialId)
+        {
+            var learnerProgress =await _learnerProgressRepository.GetLearnerProgressById(learnerId, materialId);
+            TimeSpan timeSpan_total = learnerProgress.TotalTime.ToTimeSpan();
+            double totaltime = timeSpan_total.TotalHours;
+
+            TimeSpan timeSpan_watch = learnerProgress.WatchTime.ToTimeSpan();
+            double watchtime = timeSpan_watch.TotalHours;
+
+            double percentage=(watchtime/totaltime)*100;
+            return percentage;
+
+
+        }
+
+        //public async  Task<LearnerProgressViewModel> GetProgressById(Guid learnerProgressId)
+        // {
+        //    LearnerProgressViewModel  progress = await _learnerProgressRepository.GetLearnerProgressById(learnerProgressId);
+        //     return progress;
+        // }
     }
 }

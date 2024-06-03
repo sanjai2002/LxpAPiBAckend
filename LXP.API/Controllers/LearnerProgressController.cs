@@ -36,6 +36,13 @@ namespace LXP.Api.Controllers
             await _Progress.materialCompletion(learnerId,materialId);
         }
 
+        [HttpPost("/lxp/learner/learnerprogressPercentage")]
+        public async Task<IActionResult> MaterialPercentage(Guid learnerId, Guid materialId)
+        {
+           double percentage= await _Progress.materialCompletionPercentage(learnerId, materialId);
+            return Ok(percentage);
+        }
+
 
     }
 }
