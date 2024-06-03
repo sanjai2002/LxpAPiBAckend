@@ -18,9 +18,9 @@ public class CourseViewModelValidator : AbstractValidator<CourseViewModel>
         RuleFor(course => course.Description)
             .NotEmpty().WithMessage("Description is required");
 
-        RuleFor(course => course.Duration)
-             .GreaterThan(0).WithMessage("Duration must be greater than 0")
-             .Must(BeInDecimalForm).WithMessage("Duration must be in decimal form");
+        //RuleFor(course => course.Duration)
+        //     .GreaterThan(0).WithMessage("Duration must be greater than 0")
+        //     .Must(BeInDecimalForm).WithMessage("Duration must be in decimal form");
 
         //RuleFor(course => course.Thumbnailimage)
         //    .Must(BeAValidSize).WithMessage("Image must be less than 250kb")

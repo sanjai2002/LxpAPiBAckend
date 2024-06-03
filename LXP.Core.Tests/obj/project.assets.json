@@ -7284,23 +7284,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\laevi.antony\\.nuget\\packages\\": {},
+    "C:\\Users\\asha.dharmaraj\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Capstone LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
       "projectName": "LXP.Core.Tests",
-      "projectPath": "D:\\Capstone LXP\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
-      "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-      "outputPath": "D:\\Capstone LXP\\LXP.Core.Tests\\obj\\",
+      "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+      "packagesPath": "C:\\Users\\asha.dharmaraj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Core.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asha.dharmaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7309,14 +7309,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Capstone LXP\\LXP.Core\\LXP.Core.csproj": {
-              "projectPath": "D:\\Capstone LXP\\LXP.Core\\LXP.Core.csproj"
+            "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Core\\LXP.Core.csproj": {
+              "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Core\\LXP.Core.csproj"
             }
           }
         }
@@ -7368,7 +7369,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

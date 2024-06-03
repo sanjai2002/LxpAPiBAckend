@@ -1,0 +1,1346 @@
+2024-06-03 09:53:52.289 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 09:53:52.395 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 09:53:52.398 +05:30 [INF] Hosting environment: Development
+2024-06-03 09:53:52.400 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 09:53:57.107 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 09:53:58.685 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1586.7456ms
+2024-06-03 09:53:58.723 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 09:53:58.746 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 09:53:58.764 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 40.8604ms
+2024-06-03 09:53:58.946 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 199.969ms
+2024-06-03 09:53:59.009 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 09:53:59.368 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 359.1661ms
+2024-06-03 09:58:05.179 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 09:58:05.184 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 09:58:05.228 +05:30 [INF] CORS policy execution successful.
+2024-06-03 09:58:05.228 +05:30 [INF] CORS policy execution successful.
+2024-06-03 09:58:05.233 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 09:58:05.239 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 09:58:05.239 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 09:58:05.278 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 09:58:05.278 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 09:58:06.082 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 790.9564ms
+2024-06-03 09:58:06.087 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 09:58:06.124 +05:30 [ERR] An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+System.InvalidOperationException: An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 09:58:06.512 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 1333.5921ms
+2024-06-03 09:58:06.519 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 09:58:06.528 +05:30 [INF] CORS policy execution successful.
+2024-06-03 09:58:06.529 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 09:58:06.532 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 09:58:06.690 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 152.2896ms
+2024-06-03 09:58:06.693 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 09:58:06.731 +05:30 [ERR] An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+System.InvalidOperationException: An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 09:58:06.767 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 247.408ms
+2024-06-03 09:58:06.774 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 09:58:06.780 +05:30 [INF] CORS policy execution successful.
+2024-06-03 09:58:06.782 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 09:58:06.784 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 09:58:06.953 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 161.1389ms
+2024-06-03 09:58:06.962 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 09:58:07.005 +05:30 [ERR] An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+System.InvalidOperationException: An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 09:58:07.036 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 262.2265ms
+2024-06-03 09:58:09.318 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 09:58:09.365 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 4084.4136ms
+2024-06-03 09:58:09.373 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 09:58:09.381 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 4197.0824ms
+2024-06-03 09:58:58.229 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/category - null null
+2024-06-03 09:58:58.240 +05:30 [INF] CORS policy execution successful.
+2024-06-03 09:58:58.243 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/category - 204 null null 42.8888ms
+2024-06-03 09:59:47.864 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 09:59:47.873 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 09:59:47.875 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 09:59:47.962 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 09:59:47.970 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 91.2295ms
+2024-06-03 09:59:47.977 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 09:59:47.979 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 114.7801ms
+2024-06-03 10:01:32.963 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:01:32.981 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:01:32.983 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:01:33.023 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:01:33.026 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 40.0487ms
+2024-06-03 10:01:33.029 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:01:33.034 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 73.0468ms
+2024-06-03 10:03:05.860 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:03:05.895 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:03:05.919 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:03:05.921 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:03:05.922 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:03:05.923 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:03:05.925 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:03:05.927 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:03:06.120 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 187.6121ms
+2024-06-03 10:03:06.122 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:03:06.124 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:03:06.148 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:03:06.149 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 220.2327ms
+2024-06-03 10:03:06.163 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:03:06.164 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 268.4896ms
+2024-06-03 10:03:06.164 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 306.1652ms
+2024-06-03 10:03:06.168 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:03:06.175 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:03:06.176 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:03:06.178 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:03:06.189 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:03:06.192 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 10.8007ms
+2024-06-03 10:03:06.193 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:03:06.194 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:03:06.198 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:03:06.199 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 30.9352ms
+2024-06-03 10:03:06.200 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:03:06.206 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:03:06.217 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:03:06.220 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 10.931ms
+2024-06-03 10:03:06.222 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:03:06.223 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 29.8669ms
+2024-06-03 10:09:00.102 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 10:09:00.143 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 10:09:00.144 +05:30 [INF] Hosting environment: Development
+2024-06-03 10:09:00.146 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 10:09:01.400 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 10:09:01.844 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 448.8067ms
+2024-06-03 10:09:02.056 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 10:09:02.057 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 10:09:02.064 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.2698ms
+2024-06-03 10:09:02.098 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.1822ms
+2024-06-03 10:09:02.179 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 10:09:02.403 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 223.9834ms
+2024-06-03 10:10:54.294 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:10:54.294 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:10:54.340 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:10:54.340 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:10:54.344 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 10:10:54.351 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:10:54.351 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:10:54.387 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:10:54.389 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:10:55.023 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 624.6013ms
+2024-06-03 10:10:55.029 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:10:55.079 +05:30 [ERR] An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+System.InvalidOperationException: An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:10:55.441 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 1148.4156ms
+2024-06-03 10:10:55.453 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:10:55.473 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:10:55.475 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:10:55.478 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:10:55.644 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 160.9002ms
+2024-06-03 10:10:55.648 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:10:55.692 +05:30 [ERR] An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+System.InvalidOperationException: An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:10:55.728 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 275.6951ms
+2024-06-03 10:10:55.737 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:10:55.743 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:10:55.746 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:10:55.748 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:10:55.916 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 164.8548ms
+2024-06-03 10:10:55.920 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:10:55.962 +05:30 [ERR] An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+System.InvalidOperationException: An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:10:55.993 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 253.2402ms
+2024-06-03 10:10:58.377 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:10:58.423 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 4032.4776ms
+2024-06-03 10:10:58.426 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:10:58.431 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 4137.6855ms
+2024-06-03 10:20:40.290 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 10:20:40.335 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 10:20:40.339 +05:30 [INF] Hosting environment: Development
+2024-06-03 10:20:40.343 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 10:20:41.680 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 10:20:42.449 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 775.7901ms
+2024-06-03 10:20:42.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 10:20:42.503 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 10:20:42.525 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 22.1649ms
+2024-06-03 10:20:42.566 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.5915ms
+2024-06-03 10:20:42.630 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 10:20:43.050 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 419.8457ms
+2024-06-03 10:22:26.638 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:22:26.642 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:22:26.673 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:22:26.673 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:22:26.676 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 10:22:26.683 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:22:26.683 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:22:26.717 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:22:26.718 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:22:27.445 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 714.0369ms
+2024-06-03 10:22:27.448 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:22:27.487 +05:30 [ERR] An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+System.InvalidOperationException: An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:22:27.897 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 1255.334ms
+2024-06-03 10:22:27.901 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:22:27.916 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:22:27.920 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:22:27.924 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:22:28.064 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 137.9516ms
+2024-06-03 10:22:28.068 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:22:28.103 +05:30 [ERR] An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+System.InvalidOperationException: An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:22:28.144 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 242.6752ms
+2024-06-03 10:22:30.650 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:22:30.692 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 3971.0014ms
+2024-06-03 10:22:30.698 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:22:30.702 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 4069.9552ms
+2024-06-03 10:23:14.187 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:23:14.208 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:23:14.215 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:23:14.293 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:23:14.304 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 84.9957ms
+2024-06-03 10:23:14.319 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:23:14.323 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 136.1781ms
+2024-06-03 10:23:24.952 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:23:24.952 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:23:24.964 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:23:24.966 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:23:24.969 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:23:24.971 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:23:24.973 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:23:24.975 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:23:24.992 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:23:25.010 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 29.9454ms
+2024-06-03 10:23:25.012 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:23:25.013 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:23:25.029 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:23:25.031 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 79.5087ms
+2024-06-03 10:23:25.032 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:23:25.041 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:23:25.043 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:23:25.048 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 61.888ms
+2024-06-03 10:23:25.050 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:23:25.052 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 99.926ms
+2024-06-03 10:23:25.055 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:23:25.058 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 12.7035ms
+2024-06-03 10:23:25.059 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:23:25.061 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 49.3622ms
+2024-06-03 10:23:39.765 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:23:39.770 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:23:39.773 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5199/lxp/course/category - 204 null null 7.5504ms
+2024-06-03 10:23:39.780 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course/category - application/json 37
+2024-06-03 10:23:39.787 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:23:39.809 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.AddCategory (LXP.Api)'
+2024-06-03 10:23:39.824 +05:30 [INF] Route matched with {action = "AddCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCategory(LXP.Common.ViewModels.CourseCategoryViewModel) on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:23:40.357 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:23:40.360 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.AddCategory (LXP.Api) in 530.86ms
+2024-06-03 10:23:40.366 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.AddCategory (LXP.Api)'
+2024-06-03 10:23:40.368 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 588.1234ms
+2024-06-03 10:23:40.383 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:23:40.396 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:23:40.398 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:23:40.400 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:23:40.432 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:23:40.443 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 32.656ms
+2024-06-03 10:23:40.447 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:23:40.456 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 73.1966ms
+2024-06-03 10:25:18.336 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:25:18.347 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:25:18.348 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:25:18.352 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:25:18.352 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:25:18.367 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:25:18.374 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:25:18.380 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:25:18.383 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:25:18.386 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 23.4976ms
+2024-06-03 10:25:18.387 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:25:18.388 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 90.7807ms
+2024-06-03 10:25:18.390 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:25:18.397 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 14.1788ms
+2024-06-03 10:25:18.398 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:25:18.400 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:25:18.404 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 51.4349ms
+2024-06-03 10:25:18.411 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:25:18.415 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:25:18.417 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:25:18.437 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:25:18.443 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 13.8279ms
+2024-06-03 10:25:18.445 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:25:18.446 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 46.2264ms
+2024-06-03 10:25:45.756 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundaryBvAM1ff3K4UmrpeR 9114
+2024-06-03 10:25:45.771 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:25:45.776 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:25:45.787 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:25:59.085 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 10:25:59.157 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 10:25:59.179 +05:30 [INF] Hosting environment: Development
+2024-06-03 10:25:59.191 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 10:26:00.399 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 10:26:00.951 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 555.4603ms
+2024-06-03 10:26:01.022 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 10:26:01.023 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 10:26:01.030 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.2471ms
+2024-06-03 10:26:01.068 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.9724ms
+2024-06-03 10:26:01.147 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 10:26:01.384 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 236.6647ms
+2024-06-03 10:26:35.961 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:26:35.963 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:26:35.973 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:26:35.973 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:26:35.976 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 10:26:35.984 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:26:35.984 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:26:36.010 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:26:36.014 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:26:36.313 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 282.7935ms
+2024-06-03 10:26:36.319 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:26:36.324 +05:30 [ERR] An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+System.InvalidOperationException: An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:26:36.518 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 554.41ms
+2024-06-03 10:26:36.520 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:26:36.536 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:26:36.538 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:26:36.540 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:26:36.554 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 5.6672ms
+2024-06-03 10:26:36.559 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:26:36.564 +05:30 [ERR] An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+System.InvalidOperationException: An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:26:36.592 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 72.0741ms
+2024-06-03 10:26:38.621 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:26:38.660 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 2642.9618ms
+2024-06-03 10:26:38.664 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:26:38.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 2709.9462ms
+2024-06-03 10:26:58.969 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:26:58.969 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:26:58.976 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:26:58.982 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:26:58.985 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:26:58.989 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:26:58.992 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:26:58.995 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:26:59.041 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:26:59.050 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 46.4192ms
+2024-06-03 10:26:59.056 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:26:59.061 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 91.5093ms
+2024-06-03 10:26:59.099 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:26:59.111 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 94.3086ms
+2024-06-03 10:26:59.113 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:26:59.116 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:26:59.122 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:26:59.123 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 153.1281ms
+2024-06-03 10:26:59.123 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:26:59.131 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:26:59.153 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:26:59.161 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 18.5911ms
+2024-06-03 10:26:59.167 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:26:59.172 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 58.6423ms
+2024-06-03 10:27:12.973 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:27:12.974 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:27:12.980 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:27:12.985 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:27:12.985 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:27:12.988 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:27:12.989 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:27:12.990 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:27:13.008 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:27:13.014 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 17.8322ms
+2024-06-03 10:27:13.017 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:27:13.020 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 46.7727ms
+2024-06-03 10:27:13.023 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 24.3222ms
+2024-06-03 10:27:13.026 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:27:13.028 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:27:13.057 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 82.6557ms
+2024-06-03 10:27:13.058 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:27:13.073 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:27:13.074 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:27:13.076 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:27:13.090 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:27:13.093 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 12.3275ms
+2024-06-03 10:27:13.096 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:27:13.097 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 39.1011ms
+2024-06-03 10:27:18.415 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:27:18.416 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:27:18.420 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:27:18.427 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:27:18.429 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:27:18.431 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:27:18.432 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:27:18.435 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:27:18.448 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:27:18.449 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 10.0914ms
+2024-06-03 10:27:18.450 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:27:18.451 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:27:18.453 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 9.158ms
+2024-06-03 10:27:18.454 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 38.4158ms
+2024-06-03 10:27:18.454 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:27:18.456 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:27:18.473 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:27:18.475 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 58.406ms
+2024-06-03 10:27:18.476 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:27:18.483 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:27:18.492 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:27:18.494 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 7.8219ms
+2024-06-03 10:27:18.495 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:27:18.497 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 42.977ms
+2024-06-03 10:27:53.545 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundaryz2BradgXGjlF9Yjn 9128
+2024-06-03 10:27:53.552 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:27:53.554 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:27:53.562 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:27:53.844 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 266.3314ms
+2024-06-03 10:27:53.846 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:27:53.849 +05:30 [ERR] Value cannot be null. (Parameter 'input')
+System.ArgumentNullException: Value cannot be null. (Parameter 'input')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Guid.Parse(String input)
+   at LXP.Core.Services.CourseServices.AddCourse(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseServices.cs:line 39
+   at LXP.Api.Controllers.CourseController.AddCourseDetails(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseController.cs:line 35
+   at lambda_method151(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:27:53.870 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 500 null application/json 324.1837ms
+2024-06-03 10:29:58.178 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:29:58.187 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:29:58.217 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:29:58.219 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:29:58.220 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:29:58.221 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:29:58.223 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:29:58.225 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:29:58.233 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 2.1059ms
+2024-06-03 10:29:58.235 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:29:58.236 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:29:58.253 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:29:58.268 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 40.2061ms
+2024-06-03 10:29:58.269 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 81.6273ms
+2024-06-03 10:29:58.269 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:29:58.272 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:29:58.276 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 97.7998ms
+2024-06-03 10:29:58.280 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:29:58.283 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:29:58.285 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:29:58.296 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:29:58.298 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 10.7743ms
+2024-06-03 10:29:58.300 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:29:58.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 30.4499ms
+2024-06-03 10:30:29.805 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundarywIBJh7fygAnogsw8 9116
+2024-06-03 10:30:29.810 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:30:29.812 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:30:29.815 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:30:29.831 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 13.0363ms
+2024-06-03 10:30:29.842 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:30:29.859 +05:30 [ERR] Value cannot be null. (Parameter 'input')
+System.ArgumentNullException: Value cannot be null. (Parameter 'input')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Guid.Parse(String input)
+   at LXP.Core.Services.CourseServices.AddCourse(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseServices.cs:line 39
+   at LXP.Api.Controllers.CourseController.AddCourseDetails(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseController.cs:line 35
+   at lambda_method151(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:30:29.922 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 500 null application/json 116.8459ms
+2024-06-03 10:30:46.440 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundaryAI2GtWQNnWrcuRvW 145
+2024-06-03 10:30:46.448 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:30:46.450 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:30:46.456 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:30:46.466 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-03 10:30:46.494 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 35.5054ms
+2024-06-03 10:30:46.500 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:30:46.506 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 400 null application/problem+json; charset=utf-8 65.696ms
+2024-06-03 10:31:58.296 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundaryYwvaz6EKMKp2lTqr 9116
+2024-06-03 10:31:58.302 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:31:58.304 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:31:58.308 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:31:58.315 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 3.9015ms
+2024-06-03 10:31:58.317 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:31:58.318 +05:30 [ERR] Value cannot be null. (Parameter 'input')
+System.ArgumentNullException: Value cannot be null. (Parameter 'input')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Guid.Parse(String input)
+   at LXP.Core.Services.CourseServices.AddCourse(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseServices.cs:line 39
+   at LXP.Api.Controllers.CourseController.AddCourseDetails(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseController.cs:line 35
+   at lambda_method151(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:31:58.347 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 500 null application/json 50.9537ms
+2024-06-03 10:33:27.498 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course?Title=yrftughj&Level=4458502b-d345-4783-b775-2e3c4521198d&Category=865da3a2-4c1e-4c62-972a-eb74e5384750&Description=etrdgyuhj&CreatedBy=asha&Duration=12%3A00 - multipart/form-data; boundary=----WebKitFormBoundary6wLonuvqnBKmsoUA 8389
+2024-06-03 10:33:27.513 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:33:27.514 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:33:27.518 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:33:28.664 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:33:28.691 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 1159.8543ms
+2024-06-03 10:33:28.692 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:33:28.694 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course?Title=yrftughj&Level=4458502b-d345-4783-b775-2e3c4521198d&Category=865da3a2-4c1e-4c62-972a-eb74e5384750&Description=etrdgyuhj&CreatedBy=asha&Duration=12%3A00 - 200 null application/json; charset=utf-8 1196.2216ms
+2024-06-03 10:35:35.692 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:35:35.693 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:35:35.701 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:35:35.706 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:35:35.707 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:35:35.710 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:35:35.712 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:35:35.713 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:35:35.721 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 2.2128ms
+2024-06-03 10:35:35.724 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:35:35.724 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:35:35.726 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:35:35.729 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 12.4613ms
+2024-06-03 10:35:35.757 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 63.9078ms
+2024-06-03 10:35:35.759 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:35:35.759 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:35:35.768 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 76.344ms
+2024-06-03 10:35:35.772 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:35:35.779 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:35:35.781 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:35:35.789 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:35:35.791 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 7.6928ms
+2024-06-03 10:35:35.793 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:35:35.794 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 35.1738ms
+2024-06-03 10:36:23.209 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundaryRNjQDzrtUcTheYY3 9125
+2024-06-03 10:36:23.214 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:36:23.216 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:36:23.217 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:36:23.228 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 5.3581ms
+2024-06-03 10:36:23.235 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:36:23.238 +05:30 [ERR] Value cannot be null. (Parameter 'input')
+System.ArgumentNullException: Value cannot be null. (Parameter 'input')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Guid.Parse(String input)
+   at LXP.Core.Services.CourseServices.AddCourse(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseServices.cs:line 39
+   at LXP.Api.Controllers.CourseController.AddCourseDetails(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseController.cs:line 35
+   at lambda_method151(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:36:23.259 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 500 null application/json 49.8403ms
+2024-06-03 10:37:43.176 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-03 10:37:43.213 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-03 10:37:43.216 +05:30 [INF] Hosting environment: Development
+2024-06-03 10:37:43.219 +05:30 [INF] Content root path: C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api
+2024-06-03 10:37:46.726 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-03 10:37:47.167 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 447.7185ms
+2024-06-03 10:37:47.195 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-03 10:37:47.203 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-03 10:37:47.204 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.2474ms
+2024-06-03 10:37:47.267 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.1396ms
+2024-06-03 10:37:47.309 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-03 10:37:47.621 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 311.9566ms
+2024-06-03 10:38:06.114 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundarytqAzVm1INSIPXLAP 9125
+2024-06-03 10:38:06.133 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:38:06.138 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-03 10:38:06.148 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:38:06.197 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:38:30.783 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 24568.7639ms
+2024-06-03 10:38:30.788 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:38:30.811 +05:30 [ERR] Value cannot be null. (Parameter 'input')
+System.ArgumentNullException: Value cannot be null. (Parameter 'input')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Guid.Parse(String input)
+   at LXP.Core.Services.CourseServices.AddCourse(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseServices.cs:line 39
+   at LXP.Api.Controllers.CourseController.AddCourseDetails(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseController.cs:line 35
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:38:31.108 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 500 null application/json 24993.873ms
+2024-06-03 10:40:15.999 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:40:16.014 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:40:16.027 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:16.030 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:40:16.033 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:16.034 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:16.044 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:40:16.044 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:40:16.335 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:40:16.393 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 344.7797ms
+2024-06-03 10:40:16.396 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:16.398 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:40:16.399 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 386.2105ms
+2024-06-03 10:40:16.413 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:16.420 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:16.422 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:40:16.425 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:40:16.433 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 380.7655ms
+2024-06-03 10:40:16.436 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:40:16.439 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 440.4919ms
+2024-06-03 10:40:16.439 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:40:16.446 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 18.7051ms
+2024-06-03 10:40:16.448 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:16.450 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 53.0327ms
+2024-06-03 10:40:20.516 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundarygCHrkc325BBts9At 9125
+2024-06-03 10:40:20.523 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:20.525 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:40:20.527 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:40:22.859 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 2312.6131ms
+2024-06-03 10:40:22.863 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:40:22.885 +05:30 [ERR] Value cannot be null. (Parameter 'input')
+System.ArgumentNullException: Value cannot be null. (Parameter 'input')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Guid.Parse(String input)
+   at LXP.Core.Services.CourseServices.AddCourse(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseServices.cs:line 39
+   at LXP.Api.Controllers.CourseController.AddCourseDetails(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseController.cs:line 35
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:40:22.909 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 500 null application/json 2393.467ms
+2024-06-03 10:40:50.997 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:40:51.001 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:40:51.010 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:51.014 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:51.015 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:40:51.020 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:51.021 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:40:51.024 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:40:51.211 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 179.5545ms
+2024-06-03 10:40:51.214 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:51.249 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:40:51.268 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 267.2813ms
+2024-06-03 10:40:51.269 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:40:51.270 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:40:51.277 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:51.279 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 252.3801ms
+2024-06-03 10:40:51.280 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:51.282 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:40:51.284 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:40:51.286 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 288.5217ms
+2024-06-03 10:40:51.297 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:40:51.300 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 11.8176ms
+2024-06-03 10:40:51.303 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:51.305 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 36.017ms
+2024-06-03 10:40:53.993 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:40:53.997 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:40:54.001 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:54.006 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:54.007 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:40:54.010 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:54.012 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:40:54.013 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:40:54.141 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:40:54.202 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 185.8256ms
+2024-06-03 10:40:54.203 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 181.5921ms
+2024-06-03 10:40:54.208 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:40:54.211 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:54.213 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 219.3702ms
+2024-06-03 10:40:54.249 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:40:54.270 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 272.5942ms
+2024-06-03 10:40:54.271 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:40:54.281 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:40:54.283 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:54.285 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:40:54.296 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:40:54.299 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 10.8394ms
+2024-06-03 10:40:54.301 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:40:54.303 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 32.0793ms
+2024-06-03 10:41:11.994 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 10:41:11.996 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:41:11.999 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:41:12.001 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:41:12.002 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:41:12.004 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:41:12.007 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 10:41:12.009 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:41:12.028 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:41:12.032 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 19.3205ms
+2024-06-03 10:41:12.036 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 10:41:12.038 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 44.3189ms
+2024-06-03 10:41:12.049 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:41:12.051 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 31.9741ms
+2024-06-03 10:41:12.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 10:41:12.053 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:41:12.057 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:41:12.058 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 61.7363ms
+2024-06-03 10:41:12.059 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:41:12.066 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 10:41:12.076 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 10:41:12.078 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 10.0065ms
+2024-06-03 10:41:12.080 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 10:41:12.083 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 30.7149ms
+2024-06-03 10:41:28.123 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundaryt39Tc67icI2FajYY 9125
+2024-06-03 10:41:28.130 +05:30 [INF] CORS policy execution successful.
+2024-06-03 10:41:28.131 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:41:28.133 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 10:41:30.273 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 2127.9913ms
+2024-06-03 10:41:30.278 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 10:41:30.301 +05:30 [ERR] Value cannot be null. (Parameter 'input')
+System.ArgumentNullException: Value cannot be null. (Parameter 'input')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.Guid.Parse(String input)
+   at LXP.Core.Services.CourseServices.AddCourse(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseServices.cs:line 39
+   at LXP.Api.Controllers.CourseController.AddCourseDetails(CourseViewModel course) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseController.cs:line 35
+   at lambda_method3(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 10:41:30.336 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 500 null application/json 2214.2227ms
+2024-06-03 11:00:44.994 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 11:00:45.004 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:00:45.015 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:45.021 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:45.023 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:00:45.024 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:45.026 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 11:00:45.028 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:00:45.197 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 161.2775ms
+2024-06-03 11:00:45.202 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:45.234 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 11:00:45.248 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 243.1209ms
+2024-06-03 11:00:45.251 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:00:45.265 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:45.266 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:45.268 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:00:45.384 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 112.3528ms
+2024-06-03 11:00:45.388 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:45.388 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:45.423 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 11:00:45.423 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 392.3006ms
+2024-06-03 11:00:45.436 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:00:45.437 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 184.9879ms
+2024-06-03 11:00:45.438 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 443.9991ms
+2024-06-03 11:00:48.986 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 11:00:48.988 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:00:48.991 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:48.997 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:48.998 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:00:49.002 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:49.006 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 11:00:49.008 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:00:49.034 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:49.036 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:49.037 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 23.3346ms
+2024-06-03 11:00:49.038 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 19.3099ms
+2024-06-03 11:00:49.039 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:00:49.040 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:00:49.044 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:49.048 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:49.050 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 63.8583ms
+2024-06-03 11:00:49.051 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 62.8867ms
+2024-06-03 11:00:49.054 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:49.070 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:00:49.084 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:49.087 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 10.583ms
+2024-06-03 11:00:49.090 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:49.092 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 52.6981ms
+2024-06-03 11:00:50.990 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 11:00:50.995 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:00:50.996 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:51.000 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:51.000 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:00:51.001 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:51.002 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 11:00:51.004 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:00:51.019 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:51.021 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:51.022 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 15.1485ms
+2024-06-03 11:00:51.023 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 13.7601ms
+2024-06-03 11:00:51.024 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:00:51.025 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:00:51.026 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:51.027 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 37.4755ms
+2024-06-03 11:00:51.031 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:51.033 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 38.2084ms
+2024-06-03 11:00:51.039 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:51.044 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:00:51.056 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:51.058 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 9.0811ms
+2024-06-03 11:00:51.059 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:51.061 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 36.449ms
+2024-06-03 11:00:52.978 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 11:00:52.980 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:00:52.989 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:53.001 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:53.003 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:00:53.008 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:53.012 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 11:00:53.015 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:00:53.036 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:53.039 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:53.041 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 19.7352ms
+2024-06-03 11:00:53.043 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 16.1324ms
+2024-06-03 11:00:53.045 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:00:53.047 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:00:53.050 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:53.057 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:00:53.059 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 80.2133ms
+2024-06-03 11:00:53.061 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 80.4388ms
+2024-06-03 11:00:53.063 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:53.082 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:00:53.095 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:00:53.099 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 12.0744ms
+2024-06-03 11:00:53.101 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:00:53.103 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 58.249ms
+2024-06-03 11:04:30.943 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-03 11:04:30.954 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:04:30.970 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:04:30.974 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:04:30.975 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:04:30.976 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:04:30.978 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-03 11:04:30.980 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:04:31.129 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:04:31.201 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 217.4435ms
+2024-06-03 11:04:31.203 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 211.0438ms
+2024-06-03 11:04:31.205 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-03 11:04:31.207 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:04:31.209 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 200 null application/json; charset=utf-8 265.9721ms
+2024-06-03 11:04:31.238 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at LXP.Data.IRepository.CourseLevelRepository.GetAllCourseLevel() in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\Repository\CourseLevelRepository.cs:line 22
+   at LXP.Core.Services.CourseLevelServices.GetAllCourseLevel(String CreatedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Core\Services\CourseLevelServices.cs:line 23
+   at LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel(String accessedBy) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Controllers\CourseLevelController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-03 11:04:31.273 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 500 null application/json 318.962ms
+2024-06-03 11:04:31.274 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - null null
+2024-06-03 11:04:31.286 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:04:31.289 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:04:31.295 +05:30 [INF] Route matched with {action = "GetAllCourseLevel", controller = "CourseLevel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCourseLevel(System.String) on controller LXP.Api.Controllers.CourseLevelController (LXP.Api).
+2024-06-03 11:04:31.334 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:04:31.335 +05:30 [INF] Executed action LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api) in 34.3235ms
+2024-06-03 11:04:31.337 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseLevelController.GetAllCourseLevel (LXP.Api)'
+2024-06-03 11:04:31.340 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/courselevel/ash - 200 null application/json; charset=utf-8 65.8868ms
+2024-06-03 11:06:00.635 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5199/lxp/course - multipart/form-data; boundary=----WebKitFormBoundaryRIlvTP0LxH1VYDm1 9055
+2024-06-03 11:06:00.663 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:06:00.666 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 11:06:00.670 +05:30 [INF] Route matched with {action = "AddCourseDetails", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCourseDetails(LXP.Common.ViewModels.CourseViewModel) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 11:06:02.065 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:06:02.101 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api) in 1427.5974ms
+2024-06-03 11:06:02.107 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.AddCourseDetails (LXP.Api)'
+2024-06-03 11:06:02.113 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/lxp/course - 200 null application/json; charset=utf-8 1477.819ms
+2024-06-03 11:06:02.150 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/5297a580-806f-4854-83f4-ed1216544c53 - null null
+2024-06-03 11:06:02.154 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:06:02.156 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-06-03 11:06:02.165 +05:30 [INF] Route matched with {action = "GetCourseDetailsByCourseId", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseDetailsByCourseId(System.String) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 11:06:02.191 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:06:02.194 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api) in 24.8901ms
+2024-06-03 11:06:02.195 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/5297a580-806f-4854-83f4-ed1216544c53 - null null
+2024-06-03 11:06:02.197 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-06-03 11:06:02.203 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:06:02.206 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/5297a580-806f-4854-83f4-ed1216544c53 - 200 null application/json; charset=utf-8 56.0298ms
+2024-06-03 11:06:02.208 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-06-03 11:06:02.214 +05:30 [INF] Route matched with {action = "GetCourseDetailsByCourseId", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseDetailsByCourseId(System.String) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 11:06:02.219 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:06:02.221 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/wwwroot/CourseThumbnailImages/f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg - null null
+2024-06-03 11:06:02.222 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/5297a580-806f-4854-83f4-ed1216544c53 - null null
+2024-06-03 11:06:02.221 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api) in 5.4319ms
+2024-06-03 11:06:02.240 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:06:02.242 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-06-03 11:06:02.244 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-06-03 11:06:02.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/5297a580-806f-4854-83f4-ed1216544c53 - 200 null application/json; charset=utf-8 51.4629ms
+2024-06-03 11:06:02.248 +05:30 [INF] Route matched with {action = "GetCourseDetailsByCourseId", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseDetailsByCourseId(System.String) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 11:06:02.260 +05:30 [INF] Sending file. Request path: '/f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg'. Physical path: 'C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Api\wwwroot\CourseThumbnailImages\f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg'
+2024-06-03 11:06:02.275 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:06:02.276 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/wwwroot/CourseThumbnailImages/f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg - 200 8192 image/jpeg 55.3626ms
+2024-06-03 11:06:02.279 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api) in 6.8071ms
+2024-06-03 11:06:02.280 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/5297a580-806f-4854-83f4-ed1216544c53 - null null
+2024-06-03 11:06:02.286 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-06-03 11:06:02.290 +05:30 [INF] CORS policy execution successful.
+2024-06-03 11:06:02.291 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/5297a580-806f-4854-83f4-ed1216544c53 - 200 null application/json; charset=utf-8 69.3509ms
+2024-06-03 11:06:02.292 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-06-03 11:06:02.296 +05:30 [INF] Route matched with {action = "GetCourseDetailsByCourseId", controller = "Course"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCourseDetailsByCourseId(System.String) on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-03 11:06:02.301 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-03 11:06:02.304 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api) in 4.8802ms
+2024-06-03 11:06:02.306 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetCourseDetailsByCourseId (LXP.Api)'
+2024-06-03 11:06:02.308 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/5297a580-806f-4854-83f4-ed1216544c53 - 200 null application/json; charset=utf-8 28.3494ms

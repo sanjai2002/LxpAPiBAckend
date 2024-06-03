@@ -12,7 +12,7 @@
 
         public string Description { get; set; }
 
-        public decimal Duration { get; set; }
+        public TimeOnly Duration { get; set; }
 
         public string Thumbnail { get; set; }
 

@@ -230,3 +230,21 @@ D:\Capstone LXP\LXP.Data\obj\Debug\net8.0\refint\LXP.Data.dll
 D:\Capstone LXP\LXP.Data\obj\Debug\net8.0\LXP.Data.pdb
 D:\Capstone LXP\LXP.Data\obj\Debug\net8.0\LXP.Data.genruntimeconfig.cache
 D:\Capstone LXP\LXP.Data\obj\Debug\net8.0\ref\LXP.Data.dll
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\bin\Debug\net8.0\LXP.Data.deps.json
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\bin\Debug\net8.0\LXP.Data.runtimeconfig.json
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\bin\Debug\net8.0\LXP.Data.dll
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\bin\Debug\net8.0\LXP.Data.pdb
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\bin\Debug\net8.0\LXP.Common.dll
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\bin\Debug\net8.0\LXP.Common.pdb
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.AssemblyReference.cache
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.AssemblyInfoInputs.cache
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.AssemblyInfo.cs
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.CoreCompileInputs.cache
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.sourcelink.json
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.CopyComplete
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.dll
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\refint\LXP.Data.dll
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.pdb
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\LXP.Data.genruntimeconfig.cache
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Data\obj\Debug\net8.0\ref\LXP.Data.dll

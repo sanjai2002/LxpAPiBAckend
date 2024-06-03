@@ -37,7 +37,7 @@ namespace LXP.Common.ViewModels
         ///</Summary>
         ///<example>10.00</example>
 
-        public decimal Duration { get; set; }
+        public TimeOnly Duration { get; set; }
 
         ///<Summary>
         ///Course Thumbnail

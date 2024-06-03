@@ -28,7 +28,7 @@ namespace LXP.Core.Services
             _contextAccessor = httpContextAccessor;
             var _configCourseMaterial = new MapperConfiguration(cfg => cfg.CreateMap<Material, MaterialListViewModel>().ReverseMap());
             _courseMaterialMapper = new Mapper(_configCourseMaterial);
-
+            
 
         }
         public async Task<MaterialListViewModel> AddMaterial(MaterialViewModel material)

@@ -9,5 +9,7 @@ namespace LXP.Data.IRepository
         Task<bool> AnyMaterialByMaterialNameAndTopic(string materialName, Topic topic);
         Task<Material> GetMaterialByMaterialNameAndTopic(string materialName, Topic topic);
 
+        Task<Material> GetMaterialById(Guid materialId);
+
     }
 }

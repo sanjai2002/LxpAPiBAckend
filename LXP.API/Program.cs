@@ -60,7 +60,9 @@ builder.Services.AddScoped<ILearnerServices, LearnerServices>();
 builder.Services.AddScoped<ILearnerRepository, LearnerRepository>();
 
 builder.Services.AddScoped<LXPDbContext>();
-
+//Learner Progress
+builder.Services.AddScoped<ILearnerProgressRepository, LearnerProgressRepository>();
+builder.Services.AddScoped<ILearnerProgressService, LearnerProgressService>();
 
 
 //Quiz 
@@ -137,7 +139,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpContextAccessor();
-
+//builder.Services.AddCors();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificationOrigin",
+        builder => builder.WithOrigins("http://localhost:3000/")
+        .AllowAnyHeader()
+         .AllowAnyOrigin()
+       .AllowAnyMethod());
+}
+);
 
 var app = builder.Build();
 
@@ -165,7 +176,7 @@ app.UseStaticFiles(new StaticFileOptions
     FileProvider = new PhysicalFileProvider(Path.Combine(app.Environment.WebRootPath, "CourseMaterial")),
     RequestPath = "/wwwroot/CourseMaterial"
 });
-app.UseCors("_myAllowSpecificOrigins");
+app.UseCors("AllowSpecificationOrigin");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

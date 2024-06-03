@@ -165,3 +165,16 @@ D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
 D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
 D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
 D:\Capstone LXP\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+C:\Users\asha.dharmaraj\Desktop\Capstone_CourseModule\MergedBackend_1\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll

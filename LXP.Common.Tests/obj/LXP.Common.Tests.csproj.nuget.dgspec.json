@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Capstone LXP\\LXP.Common.Tests\\LXP.Common.Tests.csproj": {}
+    "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common.Tests\\LXP.Common.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Capstone LXP\\LXP.Common.Tests\\LXP.Common.Tests.csproj": {
+    "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common.Tests\\LXP.Common.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Capstone LXP\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
         "projectName": "LXP.Common.Tests",
-        "projectPath": "D:\\Capstone LXP\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
-        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\Capstone LXP\\LXP.Common.Tests\\obj\\",
+        "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
+        "packagesPath": "C:\\Users\\asha.dharmaraj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asha.dharmaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj"
+              "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common\\LXP.Common.csproj"
               }
             }
           }
@@ -85,24 +86,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj": {
+    "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\Capstone LXP\\LXP.Common\\LXP.Common.csproj",
-        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\Capstone LXP\\LXP.Common\\obj\\",
+        "projectPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common\\LXP.Common.csproj",
+        "packagesPath": "C:\\Users\\asha.dharmaraj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\asha.dharmaraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -111,6 +112,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -154,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
