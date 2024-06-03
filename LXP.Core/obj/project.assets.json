@@ -8403,23 +8403,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\laevi.antony\\.nuget\\packages\\": {},
+    "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Sprint5Admin-Lxp\\LXP.Core\\LXP.Core.csproj",
+      "projectUniqueName": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Core\\LXP.Core.csproj",
       "projectName": "LXP.Core",
-      "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Core\\LXP.Core.csproj",
-      "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-      "outputPath": "D:\\Sprint5Admin-Lxp\\LXP.Core\\obj\\",
+      "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Core\\LXP.Core.csproj",
+      "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+      "outputPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -8434,8 +8434,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj": {
-              "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj"
+            "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Data\\LXP.Data.csproj": {
+              "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Data\\LXP.Data.csproj"
             }
           }
         }

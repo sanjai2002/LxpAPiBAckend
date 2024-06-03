@@ -16,9 +16,15 @@ namespace LXP.Data.IRepository
         public List<Learner> GetNoOfLearners();
         public List<Course> GetNoOfCourse();
         public List<Learner> GetNoOfActiveLearners();
-        public List<string> GetHighestEnrolledCourse();
+        IEnumerable<TopLearnersViewModel> GetTopLearner();
+        IEnumerable<HighestEnrolledCourseViewModel> GetHighestEnrolledCourse();
 
-        public List<string> GetTopLearners();
-        public List<string> GetFeedbackresponses();
+        IEnumerable<RecentFeedbackViewModel> GetRecentfeedbackResponses();
+
+
+        //public List<string> GetHighestEnrolledCourse();
+
+        //public List<string> GetTopLearners();
+        //public List<string> GetFeedbackresponses();
     }
 }

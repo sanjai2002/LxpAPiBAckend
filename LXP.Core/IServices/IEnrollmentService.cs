@@ -13,9 +13,6 @@ namespace LXP.Core.IServices
         Task<bool> Addenroll(EnrollmentViewModel enrollment);
 
         object GetCourseandTopicsByLearnerId(Guid learnerId);
-        public IEnumerable<EnrollmentReportViewModel> GetEnrollmentsReport();
-        public IEnumerable<EnrollmentReportViewModel> GetEnrolledInprogressLearnerbyCourseId(Guid courseId);
-        public IEnumerable<EnrollmentReportViewModel> GetEnrolledCompletedLearnerbyCourseId (Guid courseId);
 
 
     }

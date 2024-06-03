@@ -15,12 +15,12 @@ namespace LXP.Api.Controllers
     {
         private readonly IQuizService _quizService;
         private readonly IQuizFeedbackService _quizFeedbackService;
-        private readonly IQuizReportServices _quizReportServices;
-        public QuizController(IQuizService quizService, IQuizFeedbackService quizFeedbackService, IQuizReportServices quizReportServices)
+ 
+        public QuizController(IQuizService quizService, IQuizFeedbackService quizFeedbackService)
         {
             _quizService = quizService;
             _quizFeedbackService = quizFeedbackService;
-            _quizReportServices = quizReportServices;
+            
         }
 
         /// <summary>
@@ -175,16 +175,6 @@ namespace LXP.Api.Controllers
             return NoContent();
         }
 
-        /// <summary>
-        /// Report for Quiz
-        /// </summary>
-        [HttpGet("QuizReport")]
-
-        public IActionResult GetQuizReport()
-        {
-            var report = _quizReportServices.GetQuizReports();
-            return Ok(CreateSuccessResponse(report));
-        }
     }
 }
 

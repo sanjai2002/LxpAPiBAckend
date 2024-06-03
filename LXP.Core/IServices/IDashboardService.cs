@@ -12,5 +12,12 @@ namespace LXP.Core.IServices
         public string GetMostEnrolledCourse();
 
         public AdminDashboardViewModel GetAdminDashboardDetails();
+        IEnumerable<TopLearnersViewModel> GetTopLearner();
+        IEnumerable<HighestEnrolledCourseViewModel> GetHighestEnrolledCourse();
+
+        IEnumerable<RecentFeedbackViewModel> GetRecentfeedbackResponses();
+
+
+
     }
 }

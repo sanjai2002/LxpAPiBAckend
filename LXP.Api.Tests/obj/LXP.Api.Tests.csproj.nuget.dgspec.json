@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Sprint5Admin-Lxp\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {}
+    "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Sprint5Admin-Lxp\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {
+    "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api.Tests\\LXP.Api.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sprint5Admin-Lxp\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+        "projectUniqueName": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
         "projectName": "LXP.Api.Tests",
-        "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
-        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\Sprint5Admin-Lxp\\LXP.Api.Tests\\obj\\",
+        "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Sprint5Admin-Lxp\\LXP.Api\\LXP.Api.csproj": {
-                "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Api\\LXP.Api.csproj"
+              "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api\\LXP.Api.csproj": {
+                "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api\\LXP.Api.csproj"
               }
             }
           }
@@ -89,20 +89,20 @@
         }
       }
     },
-    "D:\\Sprint5Admin-Lxp\\LXP.Api\\LXP.Api.csproj": {
+    "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api\\LXP.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sprint5Admin-Lxp\\LXP.Api\\LXP.Api.csproj",
+        "projectUniqueName": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api\\LXP.Api.csproj",
         "projectName": "LXP.Api",
-        "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Api\\LXP.Api.csproj",
-        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\Sprint5Admin-Lxp\\LXP.Api\\obj\\",
+        "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api\\LXP.Api.csproj",
+        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -117,8 +117,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Sprint5Admin-Lxp\\LXP.Core\\LXP.Core.csproj": {
-                "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Core\\LXP.Core.csproj"
+              "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Core\\LXP.Core.csproj": {
+                "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Core\\LXP.Core.csproj"
               }
             }
           }
@@ -203,20 +203,20 @@
         }
       }
     },
-    "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj": {
+    "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Common\\LXP.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj",
+        "projectUniqueName": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Common\\LXP.Common.csproj",
         "projectName": "LXP.Common",
-        "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj",
-        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\Sprint5Admin-Lxp\\LXP.Common\\obj\\",
+        "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Common\\LXP.Common.csproj",
+        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -272,20 +272,20 @@
         }
       }
     },
-    "D:\\Sprint5Admin-Lxp\\LXP.Core\\LXP.Core.csproj": {
+    "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Core\\LXP.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sprint5Admin-Lxp\\LXP.Core\\LXP.Core.csproj",
+        "projectUniqueName": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Core\\LXP.Core.csproj",
         "projectName": "LXP.Core",
-        "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Core\\LXP.Core.csproj",
-        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\Sprint5Admin-Lxp\\LXP.Core\\obj\\",
+        "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Core\\LXP.Core.csproj",
+        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -300,8 +300,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj": {
-                "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj"
+              "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Data\\LXP.Data.csproj": {
+                "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Data\\LXP.Data.csproj"
               }
             }
           }
@@ -349,20 +349,20 @@
         }
       }
     },
-    "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj": {
+    "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Data\\LXP.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj",
+        "projectUniqueName": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Data\\LXP.Data.csproj",
         "projectName": "LXP.Data",
-        "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Data\\LXP.Data.csproj",
-        "packagesPath": "C:\\Users\\laevi.antony\\.nuget\\packages\\",
-        "outputPath": "D:\\Sprint5Admin-Lxp\\LXP.Data\\obj\\",
+        "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Data\\LXP.Data.csproj",
+        "packagesPath": "C:\\Users\\sanjai.harikrishnan\\.nuget\\packages\\",
+        "outputPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\laevi.antony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sanjai.harikrishnan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -377,8 +377,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj": {
-                "projectPath": "D:\\Sprint5Admin-Lxp\\LXP.Common\\LXP.Common.csproj"
+              "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Common\\LXP.Common.csproj": {
+                "projectPath": "D:\\LXP_Capstrone project\\Sprint5\\Backend code\\LXP.Common\\LXP.Common.csproj"
               }
             }
           }

@@ -97,5 +97,26 @@ namespace LXP.Api.Controllers
         }
 
 
+        [HttpGet("/lxp/admin/GetTopLearners")]
+        public IActionResult GetTopLearner()
+        {
+            var GetTopLearners = _dashboardService.GetTopLearner();
+            return Ok(CreateSuccessResponse(GetTopLearners));
+        }
+
+        [HttpGet("/lxp/admin/GetHighestEnrolledCourse")]
+        public IActionResult GetHighestEnrolledCourse()
+        {
+            var GetHighestEnrolledCourse = _dashboardService.GetHighestEnrolledCourse();
+            return Ok(CreateSuccessResponse(GetHighestEnrolledCourse));
+        }
+
+        [HttpGet("/lxp/admin/GetRecentfeedbackResponses")]
+        public IActionResult GetRecentfeedbackResponses()
+        {
+            var GetRecentfeedbackResponses = _dashboardService.GetRecentfeedbackResponses();
+            return Ok(CreateSuccessResponse(GetRecentfeedbackResponses));
+        }
+
     }
 }

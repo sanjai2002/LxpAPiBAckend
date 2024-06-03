@@ -17,7 +17,7 @@ namespace LXP.Data.Repository
         private readonly LXPDbContext _lXPDbContext;
         private readonly IWebHostEnvironment _environment;
         private readonly IHttpContextAccessor _contextAccessor;
-        public CourseRepository(LXPDbContext lXPDbContext, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
+        public CourseRepository(LXPDbContext lXPDbContext,IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
         {
             _lXPDbContext = lXPDbContext;
             _environment = environment;
@@ -95,7 +95,6 @@ namespace LXP.Data.Repository
                           ModifiedAt = c.ModifiedAt.ToString(),
                       })
                       .ToList();
-
         }
 
         public IEnumerable<CourseDetailsViewModel> GetLimitedCourse()

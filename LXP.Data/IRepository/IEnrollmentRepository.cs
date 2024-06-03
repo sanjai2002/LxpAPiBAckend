@@ -1,5 +1,4 @@
 ﻿using LXP.Common.Entities;
-using LXP.Common.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,12 +14,5 @@ namespace LXP.Data.IRepository
         bool AnyEnrollmentByLearnerAndCourse(Guid learnerId, Guid courseId);
 
         object GetCourseandTopicsByLearnerId(Guid learnerId);
-        public IEnumerable<EnrollmentReportViewModel> GetEnrollmentReport();
-          public IEnumerable<EnrollmentReportViewModel>GetEnrolledInprogressLearnerbyCourseId(Guid courseId);
-        public IEnumerable<EnrollmentReportViewModel> GetEnrolledCompletedLearnerbyCourseId(Guid courseId);
-
-
-
     }
-
 }

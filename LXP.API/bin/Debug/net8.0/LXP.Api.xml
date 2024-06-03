@@ -226,11 +226,6 @@
             <response code="204">No content on successful deletion.</response>
             <response code="404">Not found if no quiz exists with the provided ID.</response>
         </member>
-        <member name="M:LXP.Api.Controllers.QuizController.GetQuizReport">
-            <summary>
-            Report for Quiz
-            </summary>
-        </member>
         <member name="M:LXP.Api.Controllers.QuizFeedbackController.AddFeedbackQuestion(LXP.Common.ViewModels.QuizFeedbackQuestionViewModel.QuizfeedbackquestionViewModel)">
             <summary>
             Add a new feedback question
@@ -343,6 +338,21 @@
             <response code="200">Quiz question details.</response>
             <response code="404">Quiz question not found.</response>
             <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizReportController.GetQuizReport">
+            <summary>
+            Report for Quiz
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizReportController.GetPassdLearnersList(System.Guid)">
+            <summary>
+            GetPassdLearnersList
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizReportController.GetFailedLearnersList(System.Guid)">
+            <summary>
+            GetFailedLearnersList
+            </summary>
         </member>
         <member name="M:LXP.Api.Controllers.RegistrationController.Registration(LXP.Common.ViewModels.RegisterUserViewModel)">
             <summary>

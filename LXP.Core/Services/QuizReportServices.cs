@@ -17,9 +17,23 @@ namespace LXP.Core.Services
             _quizReportRepository = quizReportRepository;
         }
 
+
         public IEnumerable<QuizReportViewModel> GetQuizReports()
         {
             return _quizReportRepository.GetQuizReports();
+        }
+
+        public IEnumerable<QuizScorelearnerViewModel> GetPassdLearnersList(Guid Quizid)
+        {
+            //double Passmark = _quizReportRepository.FindPassmark(Quizid);
+
+            return  _quizReportRepository.GetPassdLearnersList(Quizid);
+
+        }
+
+        public IEnumerable<QuizScorelearnerViewModel> GetFailedLearnersList(Guid Quizid)
+        {
+            return _quizReportRepository.GetFailedLearnersList(Quizid);
         }
     }
 }
