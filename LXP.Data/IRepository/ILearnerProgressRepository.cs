@@ -12,8 +12,12 @@ namespace LXP.Data.IRepository
     {
         Task LearnerProgress(LearnerProgress learnerProgress);
 
-        Task<LearnerProgress> GetLearnerProgressById(Guid learnerId,Guid materialId);
+        Task<LearnerProgress> GetLearnerProgressById(Guid learnerId,Guid courseId);
+        Task<LearnerProgress> GetLearnerProgressByMaterialId(Guid learnerId, Guid materialId);
 
-      void UpdateLearnerProgress(LearnerProgress progress);
+        void UpdateLearnerProgress(LearnerProgress progress);
+
+        Task<List<LearnerProgress>> GetMaterialByTopic(Guid topicId,Guid learnerId);
+
     }
 }

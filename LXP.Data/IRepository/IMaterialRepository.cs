@@ -10,6 +10,7 @@ namespace LXP.Data.IRepository
         Task<Material> GetMaterialByMaterialNameAndTopic(string materialName, Topic topic);
 
         Task<Material> GetMaterialById(Guid materialId);
+        Task<List<Material>> GetMaterialsByTopic(Guid topic);
 
     }
 }

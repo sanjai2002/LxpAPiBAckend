@@ -37,7 +37,10 @@ namespace LXP.Data.Repository
         {
             return await _lXPDbContext.Materials.FirstOrDefaultAsync(material => material.MaterialId == materialId);
         }
-
+      public async Task<List<Material>> GetMaterialsByTopic(Guid topic)
+        {
+            return await _lXPDbContext.Materials.Where(material=>material.TopicId == topic).ToListAsync();
+        }
 
 
 

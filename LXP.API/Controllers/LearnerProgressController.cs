@@ -1,4 +1,5 @@
 ﻿using LXP.Common.Constants;
+using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using Microsoft.AspNetCore.Http;
@@ -29,19 +30,30 @@ namespace LXP.Api.Controllers
             
            
         }
-
-        [HttpPost("/lxp/learner/learnerprogressStatus")]
-        public async Task MaterialCompleted(Guid learnerId,Guid materialId)
+        
+        //[HttpPost("/lxp/learner/learnerprogressStatus")]
+        //public async Task MaterialCompleted(Guid learnerId,Guid courseId)
+        //{
+        //    await _Progress.materialCompletion(learnerId,courseId);
+        //}
+        [HttpPost("/lxp/learner/learnerprogressWatchTime")]
+        public async Task<IActionResult> MaterialWatchTime(Guid learnerId,Guid materialId,TimeOnly watchtime)
         {
-            await _Progress.materialCompletion(learnerId,materialId);
-        }
-
-        [HttpPost("/lxp/learner/learnerprogressPercentage")]
-        public async Task<IActionResult> MaterialPercentage(Guid learnerId, Guid materialId)
-        {
-           double percentage= await _Progress.materialCompletionPercentage(learnerId, materialId);
+           double percentage= await _Progress.materialWatchTime(learnerId, materialId, watchtime);
             return Ok(percentage);
         }
+
+
+
+
+        //[HttpPost("/lxp/learner/learnerprogressPercentage")]
+        //public async Task<IActionResult> MaterialPercentage(Guid learnerId, Guid courseId)
+        //{
+
+        //   double percentage= await _Progress.materialCompletionPercentage(learnerId, courseId);
+        //    return Ok(percentage);
+        //}
+
 
 
     }

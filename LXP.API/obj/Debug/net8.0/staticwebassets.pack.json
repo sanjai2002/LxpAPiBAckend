@@ -5,12 +5,40 @@
       "PackagePath": "staticwebassets\\CourseMaterial\\04dbd3c6-d467-4f32-9365-194ac5d1753c_Captone-Flow Diagram.pdf"
     },
     {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\22b79c9f-b759-4815-bcb6-6060b35e4bfa_1757800-sd_640_360_25fps 2.mp4",
+      "PackagePath": "staticwebassets\\CourseMaterial\\22b79c9f-b759-4815-bcb6-6060b35e4bfa_1757800-sd_640_360_25fps 2.mp4"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\28971e2d-3c6b-44f4-93c5-6494f6162ec6_Untitled.pdf",
+      "PackagePath": "staticwebassets\\CourseMaterial\\28971e2d-3c6b-44f4-93c5-6494f6162ec6_Untitled.pdf"
+    },
+    {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\37afa81b-cb40-4626-b8b8-2b6630491b26_1757800-sd_640_360_25fps 2.mp4",
       "PackagePath": "staticwebassets\\CourseMaterial\\37afa81b-cb40-4626-b8b8-2b6630491b26_1757800-sd_640_360_25fps 2.mp4"
     },
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\4b128658-d5de-43cc-b1ab-61f5c023b52c_1757800-sd_640_360_25fps 2.mp4",
       "PackagePath": "staticwebassets\\CourseMaterial\\4b128658-d5de-43cc-b1ab-61f5c023b52c_1757800-sd_640_360_25fps 2.mp4"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\4bf4baa0-a9dc-4e10-80bb-5ec5a1aa03f7_Template 1.pptx",
+      "PackagePath": "staticwebassets\\CourseMaterial\\4bf4baa0-a9dc-4e10-80bb-5ec5a1aa03f7_Template 1.pptx"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\b5c70b50-71a1-4879-8337-1b3b98d77c93_1757800-sd_640_360_25fps 2.mp4",
+      "PackagePath": "staticwebassets\\CourseMaterial\\b5c70b50-71a1-4879-8337-1b3b98d77c93_1757800-sd_640_360_25fps 2.mp4"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\b668e1a4-2b21-4ae1-8be9-2304ac03c916_1757800-sd_640_360_25fps 2.mp4",
+      "PackagePath": "staticwebassets\\CourseMaterial\\b668e1a4-2b21-4ae1-8be9-2304ac03c916_1757800-sd_640_360_25fps 2.mp4"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\be21aebc-6825-4359-a2ab-e0362840befa_Audio.mp3",
+      "PackagePath": "staticwebassets\\CourseMaterial\\be21aebc-6825-4359-a2ab-e0362840befa_Audio.mp3"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\c861e087-8040-40e4-a81c-9133c80fbad3_W3H Analysis 1.docx",
+      "PackagePath": "staticwebassets\\CourseMaterial\\c861e087-8040-40e4-a81c-9133c80fbad3_W3H Analysis 1.docx"
     },
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png",
@@ -115,6 +143,10 @@
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\5a68caa0-56c1-4a5b-a497-465e3c1e373d_angular1.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\5a68caa0-56c1-4a5b-a497-465e3c1e373d_angular1.png"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\684f57ac-bcfc-4554-b673-abb849843c84_thumbnai.jpeg",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\684f57ac-bcfc-4554-b673-abb849843c84_thumbnai.jpeg"
     },
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\6d3fc033-6e8a-4153-bb1e-c1a8a8d75594_html.jfif",
@@ -263,6 +295,10 @@
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\f454782a-bb6c-4c68-aa64-51b82f2408cf_thumbnai.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f51368a6-f350-4bd6-81f4-3eab57e7cd6b_undraw_Collaborators_re_hont.png",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\f51368a6-f350-4bd6-81f4-3eab57e7cd6b_undraw_Collaborators_re_hont.png"
     },
     {
       "Id": "C:\\Users\\asha.dharmaraj\\Desktop\\Capstone_CourseModule\\MergedBackend_1\\LXP.Api\\wwwroot\\LearnerProfileImages\\12000.jpg",

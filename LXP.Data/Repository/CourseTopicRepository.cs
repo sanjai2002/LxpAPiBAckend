@@ -83,5 +83,14 @@ namespace LXP.Data.Repository
 
             return await _lXPDbContext.SaveChangesAsync();
         }
+
+       public async Task<List<Topic>> GetTopicsbycouresId(Guid courseId)
+        {
+            return await _lXPDbContext.Topics.Where(topic=>topic.CourseId==courseId).ToListAsync();
+        }
+        public async Task<List<LearnerProgress>> GetTopicsbyLearnerId(Guid courseId, Guid LearnerId)
+        {
+            return await _lXPDbContext.LearnerProgresses.Where(learner=>learner.CourseId==courseId && learner.LearnerId==LearnerId).ToListAsync();
+        }
     }
 }

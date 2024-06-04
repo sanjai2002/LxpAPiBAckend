@@ -11,6 +11,8 @@ namespace LXP.Data.IRepository
 
         Task<int> UpdateCourseTopic(Topic topic);
         Task<Topic> GetTopicByTopicId(Guid topicId);
+        Task<List<Topic>> GetTopicsbycouresId(Guid courseId);
+        Task<List<LearnerProgress>> GetTopicsbyLearnerId(Guid courseId,Guid LearnerId);
 
 
     }
