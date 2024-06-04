@@ -17,7 +17,8 @@ namespace LXP.Data.IRepository
         object GetCourseandTopicsByLearnerId(Guid learnerId);
         public IEnumerable<EnrollmentReportViewModel> GetEnrollmentReport();
         public IEnumerable<EnrolledUserViewModel> GetEnrolledUser(Guid courseId);
-        public IEnumerable<EnrolledUserViewModel> GetCompletedUser (Guid courseId);
+        public IEnumerable<EnrollmentReportViewModel> GetEnrolledInprogressLearnerbyCourseId(Guid courseId);
+        public IEnumerable<EnrollmentReportViewModel> GetEnrolledCompletedLearnerbyCourseId(Guid courseId);
 
     }
 }

@@ -16,41 +16,7 @@ namespace LXP.Api.Controllers
         {
             _dashboardService = dashboardService;
         }
-        ///<summary>
-        ///getting total number of learners
-        ///</summary>
-        ///<response code="200">Success</response>
-        ///<response code="500">Internal server Error</response>
-        [HttpGet]
-        public IActionResult GetTotalLearners()
-        {
-            var total_learners = _dashboardService.GetDashboardLearnerList();
-            return Ok(CreateSuccessResponse(total_learners.Count()));
-        }
-        ///<summary>
-        ///getting total number of courses
-        ///</summary>
-        ///<response code="200">Success</response>
-        ///<response code="500">Internal server Error</response>
-        [HttpGet]
-        public ActionResult GetTotalCourses()
-        {
-            var total_courses = _dashboardService.GetDashboardCoursesList();
-            return Ok(CreateSuccessResponse(total_courses.Count()));
-        }
-
-        ///<summary>
-        ///getting total number of enrollments
-        ///</summary>
-        ///<response code="200">Success</response>
-        ///<response code="500">Internal server Error</response>
-        [HttpGet]
-        public ActionResult GetTotalEnrollments()
-        {
-            var total_enrollments = _dashboardService.GetDashboardEnrollmentList();
-            return Ok(CreateSuccessResponse(total_enrollments.Count()));
-        }
-
+        
         ///<summary>
         ///getting total number of enrollments according to month
         ///</summary>
@@ -94,6 +60,27 @@ namespace LXP.Api.Controllers
         {
             var admin = _dashboardService.GetAdminDashboardDetails();
             return Ok(CreateSuccessResponse(admin));
+        }
+
+        [HttpGet("/lxp/admin/GetTopLearners")]
+        public IActionResult GetTopLearner()
+        {
+            var GetTopLearners = _dashboardService.GetTopLearner();
+            return Ok(CreateSuccessResponse(GetTopLearners));
+        }
+
+        [HttpGet("/lxp/admin/GetHighestEnrolledCourse")]
+        public IActionResult GetHighestEnrolledCourse()
+        {
+            var GetHighestEnrolledCourse = _dashboardService.GetHighestEnrolledCourse();
+            return Ok(CreateSuccessResponse(GetHighestEnrolledCourse));
+        }
+
+        [HttpGet("/lxp/admin/GetRecentfeedbackResponses")]
+        public IActionResult GetRecentfeedbackResponses()
+        {
+            var GetRecentfeedbackResponses = _dashboardService.GetRecentfeedbackResponses();
+            return Ok(CreateSuccessResponse(GetRecentfeedbackResponses));
         }
 
 

@@ -67,11 +67,19 @@ namespace LXP.Api.Controllers
             return Ok(CreateSuccessResponse(enrolledusers));
         }
 
-        [HttpGet("lxp/enrollment/course/complete/{courseId}")]
-        public IActionResult GetCompletedUsers(Guid courseId)
+        [HttpGet("lxp/enrollment/Inprogress/LearnerList")]
+
+        public IActionResult GetInProgressLearnerList(Guid courseId)
         {
-            var enrolledusers = _enrollmentService.GetCompletedUsers(courseId);
-            return Ok(CreateSuccessResponse(enrolledusers));
+            var users = _enrollmentService.GetEnrolledInprogressLearnerbyCourseId(courseId);
+            return Ok(CreateSuccessResponse(users));
+        }
+
+        [HttpGet("lxp/enrollment/Completed/LearnerList")]
+        public IActionResult GetCompletedLearnerList(Guid courseId)
+        {
+            var users = _enrollmentService.GetEnrolledCompletedLearnerbyCourseId(courseId);
+            return Ok(CreateSuccessResponse(users));
         }
 
     }

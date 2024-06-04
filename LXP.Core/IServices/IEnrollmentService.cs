@@ -16,6 +16,8 @@ namespace LXP.Core.IServices
 
         public IEnumerable<EnrollmentReportViewModel> GetEnrollmentsReport();
         public IEnumerable<EnrolledUserViewModel> GetEnrolledUsers(Guid courseId);
-        public IEnumerable<EnrolledUserViewModel> GetCompletedUsers(Guid courseId);
+        public IEnumerable<EnrollmentReportViewModel> GetEnrolledInprogressLearnerbyCourseId(Guid courseId);
+        public IEnumerable<EnrollmentReportViewModel> GetEnrolledCompletedLearnerbyCourseId(Guid courseId);
+
     }
 }

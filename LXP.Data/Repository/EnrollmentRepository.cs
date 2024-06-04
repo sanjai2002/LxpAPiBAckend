@@ -118,7 +118,7 @@ namespace LXP.Data.Repository
                 .Select(x => new EnrolledUserViewModel
                 {
                     LearnerId = x.LearnerId,
-                    Name = x.Learner.Email,
+                    Name = x.Learner.LearnerProfiles.First().FirstName +" "+ x.Learner.LearnerProfiles.First().LastName,
                     ProfilePhoto = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
                              _contextAccessor.HttpContext.Request.Scheme,
                              _contextAccessor.HttpContext.Request.Host,
@@ -129,22 +129,44 @@ namespace LXP.Data.Repository
             return users;
         }
 
-        public IEnumerable<EnrolledUserViewModel> GetCompletedUser(Guid courseId)
+        public IEnumerable<EnrollmentReportViewModel> GetEnrolledCompletedLearnerbyCourseId(Guid courseId)
         {
-            var users = _lXPDbContext.Enrollments
-               .Where(x => x.CourseId == courseId && x.CompletedStatus == 1)
-               .Select(x => new EnrolledUserViewModel
-               {
-                   LearnerId = x.LearnerId,
-                   Name = x.Learner.Email,
-                   ProfilePhoto = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
-                            _contextAccessor.HttpContext.Request.Scheme,
-                            _contextAccessor.HttpContext.Request.Host,
-                            _contextAccessor.HttpContext.Request.PathBase,
-                            x.Learner.LearnerProfiles.First().ProfilePhoto),
-                   Status = x.CompletedStatus,
-               });
-            return users;
+            var CompletedLearner = _lXPDbContext.Enrollments
+                .Where(e => e.CourseId == courseId && e.CompletedStatus == 1)
+                .GroupBy(e => e.LearnerId)
+                .Select(e => new EnrollmentReportViewModel
+                {
+                    CourseId = e.First().CourseId,
+                    LearnerId = e.Key,
+                    LearnerName = e.First().Learner.LearnerProfiles.First().FirstName,
+                    ProfilePhoto = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
+                                                                                _contextAccessor.HttpContext!.Request.Scheme,
+                                                                                _contextAccessor.HttpContext.Request.Host,
+                                                                                _contextAccessor.HttpContext.Request.PathBase,
+                                                                                e.First().Learner.LearnerProfiles.First().ProfilePhoto)
+                })
+                .ToList();
+            return CompletedLearner;
+        }
+
+        public IEnumerable<EnrollmentReportViewModel> GetEnrolledInprogressLearnerbyCourseId(Guid courseId)
+        {
+            var InprogressLearner = _lXPDbContext.Enrollments
+                .Where(e => e.CourseId == courseId && e.CompletedStatus != 1)
+                .GroupBy(e => e.LearnerId)
+                .Select(e => new EnrollmentReportViewModel
+                {
+                    CourseId = e.First().CourseId,
+                    LearnerId = e.Key,
+                    LearnerName = e.First().Learner.LearnerProfiles.First().FirstName,
+                    ProfilePhoto = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
+                                                                                _contextAccessor.HttpContext!.Request.Scheme,
+                                                                                _contextAccessor.HttpContext.Request.Host,
+                                                                                _contextAccessor.HttpContext.Request.PathBase,
+                                                                                e.First().Learner.LearnerProfiles.First().ProfilePhoto)
+                })
+                .ToList();
+            return InprogressLearner;
         }
     }
 }

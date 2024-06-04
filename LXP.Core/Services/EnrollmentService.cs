@@ -96,9 +96,17 @@ namespace LXP.Core.Services
         {
             return _enrollmentRepository.GetEnrollmentReport();
         }
-        public IEnumerable<EnrolledUserViewModel> GetCompletedUsers(Guid courseId)
+
+        public IEnumerable<EnrollmentReportViewModel> GetEnrolledCompletedLearnerbyCourseId(Guid courseId)
         {
-            return _enrollmentRepository.GetCompletedUser(courseId);
+            return _enrollmentRepository.GetEnrolledCompletedLearnerbyCourseId(courseId);
+        }
+
+
+
+        public IEnumerable<EnrollmentReportViewModel> GetEnrolledInprogressLearnerbyCourseId(Guid courseId)
+        {
+            return _enrollmentRepository.GetEnrolledInprogressLearnerbyCourseId(courseId);
         }
     }
 

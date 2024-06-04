@@ -100,27 +100,6 @@
             <response code="200">Success</response>
             <response code="405">Internal server Error</response>
         </member>
-        <member name="M:LXP.Api.Controllers.DashboardController.GetTotalLearners">
-            <summary>
-            getting total number of learners
-            </summary>
-            <response code="200">Success</response>
-            <response code="500">Internal server Error</response>
-        </member>
-        <member name="M:LXP.Api.Controllers.DashboardController.GetTotalCourses">
-            <summary>
-            getting total number of courses
-            </summary>
-            <response code="200">Success</response>
-            <response code="500">Internal server Error</response>
-        </member>
-        <member name="M:LXP.Api.Controllers.DashboardController.GetTotalEnrollments">
-            <summary>
-            getting total number of enrollments
-            </summary>
-            <response code="200">Success</response>
-            <response code="500">Internal server Error</response>
-        </member>
         <member name="M:LXP.Api.Controllers.DashboardController.GetEnrollmentMonth">
             <summary>
             getting total number of enrollments according to month
@@ -343,6 +322,21 @@
             <response code="200">Quiz question details.</response>
             <response code="404">Quiz question not found.</response>
             <response code="500">Internal server error.</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizReportController.GetQuizReport">
+            <summary>
+            Report for Quiz
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizReportController.GetPassdLearnersList(System.Guid)">
+            <summary>
+            GetPassdLearnersList
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.QuizReportController.GetFailedLearnersList(System.Guid)">
+            <summary>
+            GetFailedLearnersList
+            </summary>
         </member>
         <member name="M:LXP.Api.Controllers.RegistrationController.Registration(LXP.Common.ViewModels.RegisterUserViewModel)">
             <summary>

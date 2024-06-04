@@ -77,12 +77,27 @@ namespace LXP.Core.Services
                 NoOfLearners = _dashboardRepository.GetNoOfLearners().Count(),
                 NoOfCourse = _dashboardRepository.GetNoOfCourse().Count(),
                 NoOfActiveLearners = _dashboardRepository.GetNoOfActiveLearners().Count(),
-                HighestEnrolledCourse = _dashboardRepository.GetHighestEnrolledCourse(),
-                GetTopLearners = _dashboardRepository.GetTopLearners(),
-                GetTopFeedback = _dashboardRepository.GetFeedbackresponses(),
+                //HighestEnrolledCourse = _dashboardRepository.GetHighestEnrolledCourse(),
+                //GetTopLearners = _dashboardRepository.GetTopLearners(),
+                //GetTopFeedback = _dashboardRepository.GetFeedbackresponses(),
             };
             return AdminDashboard;
 
+        }
+
+        public IEnumerable<TopLearnersViewModel> GetTopLearner()
+        {
+            return _dashboardRepository.GetTopLearner();
+        }
+
+        public IEnumerable<HighestEnrolledCourseViewModel> GetHighestEnrolledCourse()
+        {
+            return _dashboardRepository.GetHighestEnrolledCourse();
+        }
+
+        public IEnumerable<RecentFeedbackViewModel> GetRecentfeedbackResponses()
+        {
+            return _dashboardRepository.GetRecentfeedbackResponses();
         }
 
     }

@@ -3,15 +3,21 @@ using LXP.Common.ViewModels;
 using LXP.Data.IRepository;
 using System.Data.Entity;
 using LXP.Common.Entities;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 
 namespace LXP.Data.Repository
 {
     public class DashboardRepository : IDashboardRepository
     {
         private readonly LXPDbContext _lXPDbContext;
-        public DashboardRepository(LXPDbContext lXPDbContext)
+        private readonly IWebHostEnvironment _environment;
+        private readonly IHttpContextAccessor _contextAccessor;
+        public DashboardRepository(LXPDbContext lXPDbContext, IWebHostEnvironment environment, IHttpContextAccessor httpContextAccessor)
         {
             _lXPDbContext = lXPDbContext;
+            _environment = environment;
+            _contextAccessor = httpContextAccessor;
         }
 
         public IEnumerable<DashboardCourseViewModel> GetTotalCourses()
@@ -127,28 +133,6 @@ namespace LXP.Data.Repository
             return topLearnersWithNames;
         }
 
-        public List<string> GetHighestEnrolledCourse()
-        {
-            var TopEnrolledCourses = _lXPDbContext.Enrollments
-                .GroupBy(e => e.CourseId)
-                .OrderByDescending(g => g.Count())
-                .Select(g => new { CourseId = g.Key, Count = g.Count() })
-                .Take(3)
-                .ToList();
-            var courseNames = new List<string>();
-            foreach (var course in TopEnrolledCourses)
-            {
-                var courseName = _lXPDbContext.Courses
-                    .Where(c => c.CourseId == course.CourseId)
-                    .Select(c => c.Title)
-                    .FirstOrDefault();
-                if (!string.IsNullOrEmpty(courseName))
-                {
-                    courseNames.Add(courseName);
-                }
-            }
-            return courseNames;
-        }
 
         public List<string> GetFeedbackresponses()
         {
@@ -161,6 +145,74 @@ namespace LXP.Data.Repository
 
             return feedbackResponses;
         }
+
+        public IEnumerable<TopLearnersViewModel> GetTopLearner()
+        {
+            var topLearners = _lXPDbContext.Enrollments
+              .GroupBy(e => e.LearnerId)
+              .OrderByDescending(g => g.Count())
+              .Take(3)
+              .Select(g => new TopLearnersViewModel
+              {
+                  Learnerid = g.Key,
+                  LearnerName = g.First().Learner.LearnerProfiles.First().FirstName + " " + g.First().Learner.LearnerProfiles.First().LastName,
+                  ProfilePhoto = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
+
+                                           _contextAccessor.HttpContext.Request.Scheme,
+                                           _contextAccessor.HttpContext.Request.Host,
+                                           _contextAccessor.HttpContext.Request.PathBase, g.First().Learner.LearnerProfiles.First().ProfilePhoto)
+              }).ToList();
+            return topLearners;
+        }
+
+        public IEnumerable<HighestEnrolledCourseViewModel> GetHighestEnrolledCourse()
+        {
+            var HighestEnrolledCourses = _lXPDbContext.Enrollments
+                .GroupBy(e => e.CourseId)
+                .OrderByDescending(g => g.Count())
+                .Take(3)
+                .Select(g => new HighestEnrolledCourseViewModel
+                {
+                    Courseid = g.Key,
+                    CourseName = g.First().Course.Title,
+                    Thumbnailimage = String.Format("{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
+
+                                           _contextAccessor.HttpContext.Request.Scheme,
+                                           _contextAccessor.HttpContext.Request.Host,
+                                           _contextAccessor.HttpContext.Request.PathBase, g.First().Course.Thumbnail),
+                    Learnerscount = g.Count(),
+
+                }).ToList();
+            return HighestEnrolledCourses;
+        }
+
+        public IEnumerable<RecentFeedbackViewModel> GetRecentfeedbackResponses()
+        {
+            var RecentfeedbackResponses = _lXPDbContext.Feedbackresponses
+              .OrderByDescending(e => e.GeneratedAt)
+              .Where(p => p.Response != "")
+              .Take(3)
+              .Select(g => new RecentFeedbackViewModel
+              {
+                  Feedbackresponse = g.Response,
+                  Topicfeedbackquestions = g.TopicFeedbackQuestion!.Question,
+                  FeedbackresponseId = g.FeedbackresponseId,
+                  DateoftheResponse = (DateTime)g.GeneratedAt!,
+                  TopicName = g.TopicFeedbackQuestion!.Topic.Name,
+                  Coursename = g.TopicFeedbackQuestion.Topic.Course.Title,
+                  Learnerid = g.LearnerId,
+                  LearnerName = g.Learner.LearnerProfiles.First().FirstName + " " + g.Learner.LearnerProfiles.First().LastName,
+                  Profilephoto = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
+
+                                           _contextAccessor.HttpContext.Request.Scheme,
+                                           _contextAccessor.HttpContext.Request.Host,
+                                           _contextAccessor.HttpContext.Request.PathBase, g.Learner.LearnerProfiles.First().ProfilePhoto)
+              })
+              .ToList();
+            return RecentfeedbackResponses;
+
+        }
+
 
     }
 }

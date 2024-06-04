@@ -37,6 +37,21 @@ namespace LXP.Common.ViewModels
 
         public int CompletedUsers { get; set; }
 
+        ///<summary>
+        ///Learner Id
+        ///</summary>
+
+        public Guid LearnerId { get; set; }
+
+        ///<summary>
+        ///LearnerName
+        /// </summary>
+        public string LearnerName { get; set; }
+
+        ///<summary>
+        ///Profile photo
+        /// </summary>
+        public string? ProfilePhoto { get; set; }
     }
 
 }
