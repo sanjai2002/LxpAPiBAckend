@@ -10,5 +10,6 @@ namespace LXP.Common.ViewModels
         public int NoOfPassedUsers { get; set; }
         public int NoOfFailedUsers { get;set; }
         public float AverageScore { get; set; }
+        public Guid QuizId { get; set; }
     }
 }

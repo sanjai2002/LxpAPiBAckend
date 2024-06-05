@@ -224,5 +224,11 @@ namespace LXP.Data.Repository
                 .ToList();
           return years;
         }
+
+        public List<Learner> GetNoOfInActiveLearners()
+        {
+            DateTime OneMonthAgo = DateTime.Now.AddMonths(-1);
+            return _lXPDbContext.Learners.Where(Learner => Learner.Role != "Admin" && Learner.UserLastLogin < OneMonthAgo).ToList();
+        }
     }
 }

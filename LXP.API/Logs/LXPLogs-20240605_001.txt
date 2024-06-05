@@ -290,3 +290,125 @@ System.IO.IOException: Failed to bind to address http://127.0.0.1:5199: address 
 2024-06-05 15:25:29.036 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 61.2388ms
 2024-06-05 15:25:29.040 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
 2024-06-05 15:25:29.044 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 91.7585ms
+2024-06-05 15:28:32.426 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 15:28:32.472 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 15:28:32.480 +05:30 [INF] Hosting environment: Development
+2024-06-05 15:28:32.487 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 15:28:34.156 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 15:28:34.470 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 316.6544ms
+2024-06-05 15:28:34.492 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 15:28:34.496 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 15:28:34.502 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.8676ms
+2024-06-05 15:28:34.523 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.2305ms
+2024-06-05 15:28:34.661 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 15:28:34.815 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 153.6509ms
+2024-06-05 15:28:51.983 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - null null
+2024-06-05 15:28:52.019 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 15:28:52.030 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 15:28:52.072 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 15:28:56.172 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 15:28:56.239 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 4142.2109ms
+2024-06-05 15:28:56.256 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 15:28:56.261 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - 200 null application/json; charset=utf-8 4277.3939ms
+2024-06-05 15:29:09.022 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 15:29:09.037 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 15:29:09.046 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 15:29:09.494 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 15:29:09.510 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 456.3591ms
+2024-06-05 15:29:09.514 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 15:29:09.517 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 495.2251ms
+2024-06-05 15:41:49.351 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 15:41:49.381 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 30.1856ms
+2024-06-05 15:41:49.411 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 15:41:49.412 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 15:41:49.419 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.8111ms
+2024-06-05 15:41:49.467 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.5112ms
+2024-06-05 15:41:49.782 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 15:41:49.929 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.6722ms
+2024-06-05 15:43:10.880 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 15:43:10.910 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 30.4997ms
+2024-06-05 15:43:10.947 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 15:43:10.948 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 15:43:10.971 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 22.3644ms
+2024-06-05 15:43:10.972 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.9578ms
+2024-06-05 15:43:11.237 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 15:43:11.438 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 201.5375ms
+2024-06-05 15:48:29.853 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - null null
+2024-06-05 15:48:29.887 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 15:48:29.894 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 15:48:29.947 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 15:48:29.955 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 55.3938ms
+2024-06-05 15:48:29.961 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 15:48:29.964 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - 200 null application/json; charset=utf-8 111.1958ms
+2024-06-05 16:02:35.306 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 16:02:35.343 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 36.7087ms
+2024-06-05 16:02:35.381 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 16:02:35.390 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.9543ms
+2024-06-05 16:02:35.381 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 16:02:35.422 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.885ms
+2024-06-05 16:02:35.835 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 16:02:35.912 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.1497ms
+2024-06-05 16:11:48.731 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 16:11:48.755 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 24.3268ms
+2024-06-05 16:11:48.819 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 16:11:48.819 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 16:11:48.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.2508ms
+2024-06-05 16:11:48.856 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 36.2696ms
+2024-06-05 16:11:49.543 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 16:11:49.640 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.9023ms
+2024-06-05 16:12:03.896 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 16:12:03.918 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 21.7038ms
+2024-06-05 16:12:03.949 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 16:12:03.949 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 16:12:03.967 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 18.3697ms
+2024-06-05 16:12:03.970 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 20.957ms
+2024-06-05 16:12:04.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 16:12:04.513 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.9506ms
+2024-06-05 16:15:12.207 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 16:15:12.220 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 12.7309ms
+2024-06-05 16:15:12.244 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 16:15:12.245 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 16:15:12.247 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 3.4878ms
+2024-06-05 16:15:12.259 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.1778ms
+2024-06-05 16:15:12.887 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 16:15:12.967 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.5429ms
+2024-06-05 16:20:15.481 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 16:20:15.536 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 16:20:15.544 +05:30 [INF] Hosting environment: Development
+2024-06-05 16:20:15.552 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 16:20:15.639 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 16:20:16.410 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 771.8383ms
+2024-06-05 16:20:16.422 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 16:20:16.426 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 16:20:16.434 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 12.0963ms
+2024-06-05 16:20:16.486 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.2649ms
+2024-06-05 16:20:17.164 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 16:20:17.330 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.2717ms
+2024-06-05 16:20:31.439 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 16:20:31.464 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 24.806ms
+2024-06-05 16:20:31.490 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 16:20:31.492 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 16:20:31.514 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 22.6117ms
+2024-06-05 16:20:31.533 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 42.4388ms
+2024-06-05 16:20:31.802 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 16:20:31.928 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 125.9671ms
+2024-06-05 16:21:28.092 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 16:21:28.163 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 16:21:28.165 +05:30 [INF] Hosting environment: Development
+2024-06-05 16:21:28.167 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 16:21:29.874 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 16:21:30.476 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 608.5542ms
+2024-06-05 16:21:30.510 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 16:21:30.515 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 16:21:30.522 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.4202ms
+2024-06-05 16:21:30.554 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.2812ms
+2024-06-05 16:21:30.659 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 16:21:30.880 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 221.3083ms
+2024-06-05 16:22:55.164 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 16:22:55.214 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 16:22:55.226 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 16:22:55.273 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 16:23:01.223 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 16:23:01.292 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 5995.2919ms
+2024-06-05 16:23:01.298 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 16:23:01.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 6138.0836ms

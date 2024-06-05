@@ -36,6 +36,7 @@ namespace LXP.Data.Repository
                     CourseName = q.courseName,
                     TopicName = q.topicName,
                     QuizName = q.quizName,
+                    QuizId = q.QuizId,
                     NoOfPassedUsers = _lXPDbContext.LearnerAttempts
                         .Where(attempt => attempt.QuizId == q.QuizId)
                         .GroupBy(attempt => attempt.LearnerId)
