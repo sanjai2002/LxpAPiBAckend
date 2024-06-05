@@ -17,6 +17,9 @@ namespace LXP.Data.IRepository
         public List<Course> GetNoOfCourse();
         public List<Learner> GetNoOfActiveLearners();
 
+        public List<Learner> GetNoOfInActiveLearners();
+
+
         public List<string> GetTopLearners();
         public List<string> GetFeedbackresponses();
 

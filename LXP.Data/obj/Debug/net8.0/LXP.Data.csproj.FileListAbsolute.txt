@@ -284,3 +284,21 @@ D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Data\obj\Debug\net8.0\refint\LXP.Data.
 D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Data\obj\Debug\net8.0\LXP.Data.pdb
 D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Data\obj\Debug\net8.0\LXP.Data.genruntimeconfig.cache
 D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Data\obj\Debug\net8.0\ref\LXP.Data.dll
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\bin\Debug\net8.0\LXP.Data.deps.json
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\bin\Debug\net8.0\LXP.Data.runtimeconfig.json
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\bin\Debug\net8.0\LXP.Data.dll
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\bin\Debug\net8.0\LXP.Data.pdb
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\bin\Debug\net8.0\LXP.Common.dll
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\bin\Debug\net8.0\LXP.Common.pdb
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.AssemblyReference.cache
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.AssemblyInfoInputs.cache
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.AssemblyInfo.cs
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.CoreCompileInputs.cache
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.sourcelink.json
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.csproj.CopyComplete
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.dll
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\refint\LXP.Data.dll
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.pdb
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\LXP.Data.genruntimeconfig.cache
+C:\Users\kavin.senthil\Desktop\Newbackendforintegrartion\LXP.Data\obj\Debug\net8.0\ref\LXP.Data.dll
