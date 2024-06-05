@@ -100,7 +100,7 @@
             <response code="200">Success</response>
             <response code="405">Internal server Error</response>
         </member>
-        <member name="M:LXP.Api.Controllers.DashboardController.GetEnrollmentMonth">
+        <member name="M:LXP.Api.Controllers.DashboardController.GetEnrollmentMonth(System.String)">
             <summary>
             getting total number of enrollments according to month
             </summary>

@@ -23,9 +23,9 @@ namespace LXP.Api.Controllers
         ///<response code="200">Success</response>
         ///<response code="500">Internal server Error</response>
         [HttpGet]
-        public ActionResult GetEnrollmentMonth()
+        public ActionResult GetEnrollmentMonth(string year)
         {
-            var total_month_wise = _dashboardService.GetMonthEnrollmentList();
+            var total_month_wise = _dashboardService.GetMonthEnrollmentList(year);
             return Ok(CreateSuccessResponse(total_month_wise));
         }
 

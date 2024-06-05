@@ -5,6 +5,7 @@ using System.Data.Entity;
 using LXP.Common.Entities;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.VisualBasic;
 
 namespace LXP.Data.Repository
 {
@@ -57,10 +58,11 @@ namespace LXP.Data.Repository
                  .ToList();
         }
 
-        public IEnumerable<DashboardEnrollmentViewModel> GetMonthWiseEnrollments()
+        public IEnumerable<DashboardEnrollmentViewModel> GetMonthWiseEnrollments(string year)
         {
             //DateOnly StartDate = '20-01-2010';
             //DateOnly EndDate = DateOnly.FromDateTime(DateTime.Now);
+
             return _lXPDbContext.Enrollments
                 .Select(x => new DashboardEnrollmentViewModel
                 {
@@ -69,6 +71,7 @@ namespace LXP.Data.Repository
                     LearnerId = x.LearnerId,
                     EnrollmentDate = x.EnrollmentDate,
                 })
+                .Where(x=>x.EnrollmentDate.Year.ToString() == year)
                 .ToList();
         }
 

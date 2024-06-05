@@ -1,0 +1,237 @@
+2024-06-05 12:09:48.103 +05:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5199: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+ ---> System.Net.Sockets.SocketException (10048): Only one usage of each socket address (protocol/network address/port) is normally permitted.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2024-06-05 12:11:03.988 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 12:11:04.042 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 12:11:04.044 +05:30 [INF] Hosting environment: Development
+2024-06-05 12:11:04.046 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 12:11:09.205 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:11:10.452 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1260.2801ms
+2024-06-05 12:11:10.472 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:11:10.472 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:11:10.485 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 12.4743ms
+2024-06-05 12:11:10.568 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 95.3453ms
+2024-06-05 12:11:10.674 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:11:11.156 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 481.3564ms
+2024-06-05 12:11:19.262 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - null null
+2024-06-05 12:11:19.288 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 12:11:19.304 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:11:19.359 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 12:11:44.800 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 12:11:44.841 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 25466.8745ms
+2024-06-05 12:11:44.847 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:11:44.850 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - 200 null application/json; charset=utf-8 25587.6586ms
+2024-06-05 12:13:48.589 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 12:13:48.645 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 12:13:48.650 +05:30 [INF] Hosting environment: Development
+2024-06-05 12:13:48.655 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 12:13:53.243 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:13:54.182 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 934.7816ms
+2024-06-05 12:13:54.206 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:13:54.206 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:13:54.217 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.4511ms
+2024-06-05 12:13:54.305 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 98.9688ms
+2024-06-05 12:13:54.395 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:13:54.872 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 476.4395ms
+2024-06-05 12:14:13.253 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - null null
+2024-06-05 12:14:13.286 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 12:14:13.297 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:14:13.346 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 12:14:50.095 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 12:14:50.174 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 36798.0134ms
+2024-06-05 12:14:50.186 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:14:50.190 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - 200 null application/json; charset=utf-8 36936.9939ms
+2024-06-05 12:17:19.011 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 12:17:19.063 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 12:17:19.072 +05:30 [INF] Hosting environment: Development
+2024-06-05 12:17:19.074 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 12:17:20.946 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:17:22.143 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1204.6904ms
+2024-06-05 12:17:22.183 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:17:22.183 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:17:22.202 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 18.3551ms
+2024-06-05 12:17:22.275 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.1495ms
+2024-06-05 12:17:22.373 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:17:22.867 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 493.8022ms
+2024-06-05 12:17:33.709 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - null null
+2024-06-05 12:17:33.748 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 12:17:33.761 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:17:33.812 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 12:17:56.838 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 12:17:56.881 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 23052.4089ms
+2024-06-05 12:17:56.894 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:17:56.904 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - 200 null application/json; charset=utf-8 23195.2931ms
+2024-06-05 12:29:24.182 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 12:29:24.230 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 12:29:24.233 +05:30 [INF] Hosting environment: Development
+2024-06-05 12:29:24.234 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 12:29:28.828 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:29:29.234 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 414.7509ms
+2024-06-05 12:29:29.264 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:29:29.264 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:29:29.271 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.0354ms
+2024-06-05 12:29:29.314 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 51.1628ms
+2024-06-05 12:29:29.414 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:29:29.891 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 477.7336ms
+2024-06-05 12:29:42.132 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2002 - null null
+2024-06-05 12:29:42.174 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 12:29:42.186 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:29:42.237 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 12:29:47.352 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 12:29:47.434 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 5169.9676ms
+2024-06-05 12:29:47.442 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:29:47.449 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2002 - 200 null application/json; charset=utf-8 5317.074ms
+2024-06-05 12:29:52.583 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2023 - null null
+2024-06-05 12:29:52.616 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:29:52.627 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 12:29:52.691 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 12:29:52.706 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 61.2034ms
+2024-06-05 12:29:52.717 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:29:52.722 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2023 - 200 null application/json; charset=utf-8 138.856ms
+2024-06-05 12:30:14.922 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - null null
+2024-06-05 12:30:14.953 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:30:14.960 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 12:30:14.987 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 12:30:14.996 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 23.6456ms
+2024-06-05 12:30:15.005 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:30:15.012 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - 200 null application/json; charset=utf-8 91.3277ms
+2024-06-05 12:33:51.869 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - null null
+2024-06-05 12:33:51.881 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:33:51.890 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 12:33:51.909 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 12:33:51.917 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 17.5047ms
+2024-06-05 12:33:51.921 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:33:51.924 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - 200 null application/json; charset=utf-8 65.2862ms
+2024-06-05 14:28:39.165 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 14:28:39.215 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 14:28:39.218 +05:30 [INF] Hosting environment: Development
+2024-06-05 14:28:39.220 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 14:28:41.891 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 14:28:42.405 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 521.5134ms
+2024-06-05 14:28:42.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 14:28:42.433 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 14:28:42.448 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 16.5017ms
+2024-06-05 14:28:42.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.236ms
+2024-06-05 14:28:42.705 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 14:28:42.924 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 218.7253ms
+2024-06-05 14:28:55.071 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2023 - null null
+2024-06-05 14:28:55.105 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 14:28:55.113 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:28:55.138 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 14:28:57.392 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 14:28:57.424 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 2271.7278ms
+2024-06-05 14:28:57.431 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:28:57.438 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2023 - 200 null application/json; charset=utf-8 2366.4457ms
+2024-06-05 14:34:37.781 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 14:34:37.845 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 14:34:37.853 +05:30 [INF] Hosting environment: Development
+2024-06-05 14:34:37.861 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 14:34:39.849 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 14:34:40.412 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 569.0733ms
+2024-06-05 14:34:40.446 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 14:34:40.455 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 14:34:40.460 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 13.6389ms
+2024-06-05 14:34:40.523 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.0244ms
+2024-06-05 14:34:41.047 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 14:34:41.373 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 326.2804ms
+2024-06-05 14:35:25.159 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - null null
+2024-06-05 14:35:25.194 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 14:35:25.208 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:35:25.254 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 14:35:29.340 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 14:35:29.416 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 4148.7262ms
+2024-06-05 14:35:29.423 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:35:29.433 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - 200 null application/json; charset=utf-8 4273.7683ms
+2024-06-05 14:36:28.028 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 14:36:28.063 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 35.5858ms
+2024-06-05 14:36:28.078 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 14:36:28.078 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 14:36:28.086 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.9678ms
+2024-06-05 14:36:28.112 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 34.9203ms
+2024-06-05 14:36:28.294 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 14:36:28.440 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 145.7475ms
+2024-06-05 14:36:59.771 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - null null
+2024-06-05 14:36:59.796 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:36:59.806 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 14:36:59.840 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 14:36:59.853 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 42.8096ms
+2024-06-05 14:36:59.858 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:36:59.865 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - 200 null application/json; charset=utf-8 93.6917ms
+2024-06-05 14:37:08.746 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 14:37:08.757 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 10.4849ms
+2024-06-05 14:37:08.794 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 14:37:08.796 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 14:37:08.805 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.8196ms
+2024-06-05 14:37:08.808 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 13.289ms
+2024-06-05 14:37:09.527 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 14:37:09.750 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 223.3424ms
+2024-06-05 14:37:24.474 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - null null
+2024-06-05 14:37:24.493 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:37:24.503 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 14:37:24.528 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 14:37:24.543 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 28.0406ms
+2024-06-05 14:37:24.550 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:37:24.556 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - 200 null application/json; charset=utf-8 81.2243ms
+2024-06-05 14:38:30.046 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 14:38:30.097 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 14:38:30.103 +05:30 [INF] Hosting environment: Development
+2024-06-05 14:38:30.107 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 14:38:30.210 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 14:38:30.596 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 386.2614ms
+2024-06-05 14:38:30.624 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 14:38:30.624 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 14:38:30.634 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 10.7139ms
+2024-06-05 14:38:30.661 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.1155ms
+2024-06-05 14:38:31.348 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 14:38:31.517 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 169.1965ms
+2024-06-05 14:38:47.865 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 14:38:47.920 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 14:38:47.923 +05:30 [INF] Hosting environment: Development
+2024-06-05 14:38:47.924 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 14:38:47.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 14:38:48.298 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 341.1931ms
+2024-06-05 14:38:48.304 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 14:38:48.310 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 14:38:48.314 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.4376ms
+2024-06-05 14:38:48.357 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.9972ms
+2024-06-05 14:38:48.480 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 14:38:48.616 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.5576ms
+2024-06-05 14:39:14.701 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2023 - null null
+2024-06-05 14:39:14.734 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 14:39:14.749 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:39:14.799 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 14:39:18.940 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 14:39:19.013 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 4186.793ms
+2024-06-05 14:39:19.017 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:39:19.021 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2023 - 200 null application/json; charset=utf-8 4319.3186ms
+2024-06-05 14:41:10.203 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - null null
+2024-06-05 14:41:10.234 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:41:10.238 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth(System.String) on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 14:41:10.281 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 14:41:10.296 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 47.7779ms
+2024-06-05 14:41:10.309 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 14:41:10.319 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - 200 null application/json; charset=utf-8 116.067ms
+2024-06-05 14:43:55.913 +05:30 [INF] Application is shutting down...

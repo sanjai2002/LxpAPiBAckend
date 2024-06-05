@@ -1,0 +1,1069 @@
+2024-06-05 09:11:32.037 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 09:11:32.071 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 09:11:32.073 +05:30 [INF] Hosting environment: Development
+2024-06-05 09:11:32.074 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 09:11:33.868 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 09:11:34.468 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 606.4197ms
+2024-06-05 09:11:34.480 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 09:11:34.487 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 09:11:34.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.6834ms
+2024-06-05 09:11:34.530 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.0021ms
+2024-06-05 09:11:34.785 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 09:11:34.939 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 155.1384ms
+2024-06-05 09:30:25.968 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 09:30:26.001 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 09:30:26.004 +05:30 [INF] Hosting environment: Development
+2024-06-05 09:30:26.005 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 09:30:28.988 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 09:30:29.325 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 341.7207ms
+2024-06-05 09:30:29.336 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 09:30:29.342 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.5479ms
+2024-06-05 09:30:29.350 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 09:30:29.384 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 33.8609ms
+2024-06-05 09:30:29.468 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 09:30:29.598 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.5739ms
+2024-06-05 09:40:13.827 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-05 09:40:13.827 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 09:40:13.837 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:13.837 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:13.841 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 09:40:13.845 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 09:40:13.845 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-05 09:40:13.857 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 09:40:13.857 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-05 09:40:14.148 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 282.2597ms
+2024-06-05 09:40:14.151 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-05 09:40:14.152 +05:30 [ERR] An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+System.InvalidOperationException: An attempt was made to use the context instance while it is being configured. A DbContext instance cannot be used inside 'OnConfiguring' since it is still being configured at this point. This can happen if a second operation is started on this context instance before a previous operation completed. Any instance members are not guaranteed to be thread safe.
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IAsyncEnumerable<TEntity>.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at LXP.Data.Repository.CategoryRepository.GetAllCategory() in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Data\Repository\CategoryRepository.cs:line 26
+   at LXP.Core.Services.CategoryServices.GetAllCategory() in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Core\Services\CategoryServices.cs:line 52
+   at LXP.Api.Controllers.CategoryController.GetAllCategory() in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api\Controllers\CategoryController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-05 09:40:14.460 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 500 null application/json 632.8159ms
+2024-06-05 09:40:14.464 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/course/category - null null
+2024-06-05 09:40:14.468 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:14.469 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-05 09:40:14.470 +05:30 [INF] Route matched with {action = "GetAllCategory", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategory() on controller LXP.Api.Controllers.CategoryController (LXP.Api).
+2024-06-05 09:40:14.473 +05:30 [INF] Executed action LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api) in 1.2189ms
+2024-06-05 09:40:14.474 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CategoryController.GetAllCategory (LXP.Api)'
+2024-06-05 09:40:14.475 +05:30 [ERR] An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+System.InvalidOperationException: An attempt was made to use the model while it was being created. A DbContext instance cannot be used inside 'OnModelCreating' in any way that makes use of the model that is being created.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IAsyncEnumerable<TEntity>.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at LXP.Data.Repository.CategoryRepository.GetAllCategory() in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Data\Repository\CategoryRepository.cs:line 26
+   at LXP.Core.Services.CategoryServices.GetAllCategory() in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Core\Services\CategoryServices.cs:line 52
+   at LXP.Api.Controllers.CategoryController.GetAllCategory() in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api\Controllers\CategoryController.cs:line 28
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-05 09:40:14.484 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/course/category - 500 null application/json 19.8817ms
+2024-06-05 09:40:15.728 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:15.770 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 1911.5926ms
+2024-06-05 09:40:15.772 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 09:40:15.772 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 09:40:15.776 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 1949.2676ms
+2024-06-05 09:40:15.777 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:15.779 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 09:40:15.780 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 09:40:15.788 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:15.790 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 8.789ms
+2024-06-05 09:40:15.790 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 09:40:15.791 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 19.5002ms
+2024-06-05 09:40:27.311 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:27.314 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:27.315 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:27.316 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:27.402 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:27.409 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 90.1663ms
+2024-06-05 09:40:27.412 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:27.412 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:27.416 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:27.417 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 105.5811ms
+2024-06-05 09:40:27.418 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:27.420 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:27.424 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:27.426 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 3.9831ms
+2024-06-05 09:40:27.427 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:27.427 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:27.428 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 16.1889ms
+2024-06-05 09:40:27.431 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:27.433 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:27.434 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:27.438 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:27.439 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 4.3029ms
+2024-06-05 09:40:27.440 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:27.440 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:27.441 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 13.6736ms
+2024-06-05 09:40:27.442 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:27.444 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:27.445 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:27.448 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:27.449 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 3.0305ms
+2024-06-05 09:40:27.450 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:27.451 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 10.6631ms
+2024-06-05 09:40:31.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - null null
+2024-06-05 09:40:31.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:31.427 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.429 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.430 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.432 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.436 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.436 +05:30 [INF] Route matched with {action = "GetAllLearnerDetailsByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearnerDetailsByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.470 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.474 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.507 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 68.6951ms
+2024-06-05 09:40:31.509 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.510 +05:30 [ERR] The program executed an instruction that was thought to be unreachable.
+System.Diagnostics.UnreachableException: The program executed an instruction that was thought to be unreachable.
+   at Pomelo.EntityFrameworkCore.MySql.Query.ExpressionVisitors.Internal.MySqlSqlTranslatingExpressionVisitor.CallBaseVisitMethodCall(MethodCallExpression methodCallExpression)
+   at Pomelo.EntityFrameworkCore.MySql.Query.ExpressionVisitors.Internal.MySqlSqlTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor.TranslateInternal(Expression expression, Boolean applyDefaultTypeMapping)
+   at Microsoft.EntityFrameworkCore.Query.RelationalSqlTranslatingExpressionVisitor.Translate(Expression expression, Boolean applyDefaultTypeMapping)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.TranslateExpression(Expression expression, Boolean applyDefaultTypeMapping)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.CreateJoinPredicate(Expression outerKey, Expression innerKey)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.CreateJoinPredicate(ShapedQueryExpression outer, LambdaExpression outerKeySelector, ShapedQueryExpression inner, LambdaExpression innerKeySelector)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.TranslateJoin(ShapedQueryExpression outer, ShapedQueryExpression inner, LambdaExpression outerKeySelector, LambdaExpression innerKeySelector, LambdaExpression resultSelector)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-05 09:40:31.528 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 500 null application/json 102.9457ms
+2024-06-05 09:40:31.531 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:31.534 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.535 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.535 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.539 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.550 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 13.0757ms
+2024-06-05 09:40:31.553 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.555 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-05 09:40:31.569 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 500 null application/json 38.3357ms
+2024-06-05 09:40:31.575 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:31.577 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.577 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.578 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.580 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.580 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - null null
+2024-06-05 09:40:31.582 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api) in 142.9992ms
+2024-06-05 09:40:31.582 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.584 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.584 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.586 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - 200 null application/json; charset=utf-8 161.4706ms
+2024-06-05 09:40:31.586 +05:30 [INF] Route matched with {action = "GetAllLearnerDetailsByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearnerDetailsByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.591 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.591 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 11.8958ms
+2024-06-05 09:40:31.592 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:31.593 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.594 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api) in 3.8871ms
+2024-06-05 09:40:31.595 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.596 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.595 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 20.7128ms
+2024-06-05 09:40:31.598 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.598 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/wwwroot/LearnerProfileImages/kavin.jfif - null null
+2024-06-05 09:40:31.599 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - 200 null application/json; charset=utf-8 18.5252ms
+2024-06-05 09:40:31.601 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - null null
+2024-06-05 09:40:31.602 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.605 +05:30 [INF] The file /kavin.jfif was not modified
+2024-06-05 09:40:31.607 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.609 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.609 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/wwwroot/LearnerProfileImages/kavin.jfif - 304 null image/pjpeg 11.1968ms
+2024-06-05 09:40:31.610 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.612 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 3.5328ms
+2024-06-05 09:40:31.613 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:31.613 +05:30 [INF] Route matched with {action = "GetAllLearnerDetailsByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearnerDetailsByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.613 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.615 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.617 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.617 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 25.1114ms
+2024-06-05 09:40:31.618 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.621 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api) in 4.1226ms
+2024-06-05 09:40:31.621 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - null null
+2024-06-05 09:40:31.622 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.622 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.624 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.626 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.626 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - 200 null application/json; charset=utf-8 24.9349ms
+2024-06-05 09:40:31.626 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.629 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 3.7147ms
+2024-06-05 09:40:31.629 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:31.629 +05:30 [INF] Route matched with {action = "GetAllLearnerDetailsByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearnerDetailsByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.630 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.632 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.633 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.634 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 20.9495ms
+2024-06-05 09:40:31.634 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.637 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api) in 4.1558ms
+2024-06-05 09:40:31.638 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.639 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.640 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.640 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - 200 null application/json; charset=utf-8 18.9658ms
+2024-06-05 09:40:31.643 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 3.2267ms
+2024-06-05 09:40:31.644 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:31.644 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.646 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.646 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 16.7294ms
+2024-06-05 09:40:31.647 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.649 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.651 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.653 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 2.739ms
+2024-06-05 09:40:31.654 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:31.654 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.656 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:31.657 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 12.956ms
+2024-06-05 09:40:31.657 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.660 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:31.661 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:31.664 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 2.7218ms
+2024-06-05 09:40:31.665 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:31.665 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 11.3269ms
+2024-06-05 09:40:33.139 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:33.143 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:33.143 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:33.144 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:33.150 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:33.153 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 6.6101ms
+2024-06-05 09:40:33.154 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:33.154 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:33.155 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 16.016ms
+2024-06-05 09:40:33.156 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:33.158 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:33.159 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:33.162 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:33.163 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.7279ms
+2024-06-05 09:40:33.164 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:33.164 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:33.166 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:33.166 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 12.4909ms
+2024-06-05 09:40:33.167 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:33.170 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:33.172 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:33.173 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.3275ms
+2024-06-05 09:40:33.174 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:33.174 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:33.174 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 10.3358ms
+2024-06-05 09:40:33.175 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:33.178 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:33.178 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:33.181 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:33.182 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.3489ms
+2024-06-05 09:40:33.183 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:33.184 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 10.0474ms
+2024-06-05 09:40:35.592 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - null null
+2024-06-05 09:40:35.592 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:35.594 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.596 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.597 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.598 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.600 +05:30 [INF] Route matched with {action = "GetAllLearnerDetailsByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearnerDetailsByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.601 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.603 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.604 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.606 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 2.3514ms
+2024-06-05 09:40:35.607 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api) in 4.3334ms
+2024-06-05 09:40:35.607 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - null null
+2024-06-05 09:40:35.608 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.608 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.610 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.611 +05:30 [ERR] A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWriteAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(Stream utf8Json, T rootValue, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-05 09:40:35.611 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - 200 null application/json; charset=utf-8 19.6825ms
+2024-06-05 09:40:35.612 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.622 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 500 null application/json 30.2929ms
+2024-06-05 09:40:35.624 +05:30 [INF] Route matched with {action = "GetAllLearnerDetailsByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearnerDetailsByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.626 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:35.627 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.628 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.630 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.630 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.630 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api) in 3.7292ms
+2024-06-05 09:40:35.631 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - null null
+2024-06-05 09:40:35.632 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.633 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.635 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.636 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - 200 null application/json; charset=utf-8 29.1052ms
+2024-06-05 09:40:35.637 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.637 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 5.0863ms
+2024-06-05 09:40:35.639 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:35.639 +05:30 [INF] Route matched with {action = "GetAllLearnerDetailsByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearnerDetailsByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.640 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.641 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.642 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.643 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 16.992ms
+2024-06-05 09:40:35.643 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.645 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api) in 3.1093ms
+2024-06-05 09:40:35.646 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - null null
+2024-06-05 09:40:35.646 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.647 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.649 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.650 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.651 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - 200 null application/json; charset=utf-8 19.473ms
+2024-06-05 09:40:35.651 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.653 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 3.3485ms
+2024-06-05 09:40:35.654 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:35.654 +05:30 [INF] Route matched with {action = "GetAllLearnerDetailsByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearnerDetailsByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.655 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.656 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.658 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.658 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 19.4497ms
+2024-06-05 09:40:35.659 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.661 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api) in 3.162ms
+2024-06-05 09:40:35.663 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearnerDetailsByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.663 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.664 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/learnerdetails - 200 null application/json; charset=utf-8 18.0246ms
+2024-06-05 09:40:35.665 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.668 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 3.5663ms
+2024-06-05 09:40:35.669 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:35.670 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.671 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.671 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 17.5095ms
+2024-06-05 09:40:35.672 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.674 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.675 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.677 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 2.1775ms
+2024-06-05 09:40:35.678 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:35.678 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.679 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.680 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 10.8166ms
+2024-06-05 09:40:35.680 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.683 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.684 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.687 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 2.4178ms
+2024-06-05 09:40:35.687 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:35.688 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.689 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.689 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 11.7409ms
+2024-06-05 09:40:35.690 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.692 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.694 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.697 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 2.8346ms
+2024-06-05 09:40:35.697 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - null null
+2024-06-05 09:40:35.698 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.699 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:35.700 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 12.3995ms
+2024-06-05 09:40:35.700 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.702 +05:30 [INF] Route matched with {action = "GetLearnerEntrolledcourseByLearnerId", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerEntrolledcourseByLearnerId(System.Guid) on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:35.704 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:35.706 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api) in 2.3509ms
+2024-06-05 09:40:35.706 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerEntrolledcourseByLearnerId (LXP.Api)'
+2024-06-05 09:40:35.707 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/49ee0ef9-3000-4c0c-8db7-dff5bc36272b/entrolledcourse - 200 null application/json; charset=utf-8 9.5995ms
+2024-06-05 09:40:37.285 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:37.287 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:37.288 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:37.290 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:37.294 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:37.295 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 4.0102ms
+2024-06-05 09:40:37.297 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:37.298 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:37.299 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 14.0158ms
+2024-06-05 09:40:37.302 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:37.304 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:37.305 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:37.307 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:37.308 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.2796ms
+2024-06-05 09:40:37.309 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:37.309 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:37.310 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 11.6808ms
+2024-06-05 09:40:37.311 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:37.314 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:37.314 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:37.317 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:37.318 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.4195ms
+2024-06-05 09:40:37.319 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:40:37.319 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:37.321 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:37.321 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 12.2935ms
+2024-06-05 09:40:37.322 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:37.324 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:37.327 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:37.327 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.2549ms
+2024-06-05 09:40:37.328 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:40:37.329 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 9.4546ms
+2024-06-05 09:40:43.694 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:40:43.695 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:43.695 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:40:43.697 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:43.711 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:43.717 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 17.1377ms
+2024-06-05 09:40:43.718 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:40:43.718 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:40:43.719 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 25.7612ms
+2024-06-05 09:40:43.721 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:43.723 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:40:43.724 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:43.726 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:43.727 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.0824ms
+2024-06-05 09:40:43.728 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:40:43.728 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:40:43.730 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:43.730 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 11.8597ms
+2024-06-05 09:40:43.731 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:40:43.733 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:43.735 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:43.736 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.2111ms
+2024-06-05 09:40:43.737 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:40:43.737 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:40:43.738 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:40:43.739 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 11.063ms
+2024-06-05 09:40:43.740 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:40:43.742 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:40:43.744 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:40:43.745 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 1.6799ms
+2024-06-05 09:40:43.745 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:40:43.746 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 9.042ms
+2024-06-05 09:41:24.891 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 09:41:24.892 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:41:24.893 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:41:24.894 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 09:41:25.042 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:41:25.048 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 151.962ms
+2024-06-05 09:41:25.050 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 09:41:25.051 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:41:25.056 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:41:25.057 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 165.731ms
+2024-06-05 09:41:25.057 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:41:25.060 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 09:41:25.064 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:41:25.065 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 3.7329ms
+2024-06-05 09:41:25.066 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 09:41:25.066 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:41:25.067 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:41:25.068 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 18.3512ms
+2024-06-05 09:41:25.069 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:41:25.071 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 09:41:25.076 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:41:25.077 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 4.2227ms
+2024-06-05 09:41:25.077 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:41:25.078 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 09:41:25.078 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 12.5785ms
+2024-06-05 09:41:25.080 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:41:25.082 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:41:25.082 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 09:41:25.086 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:41:25.087 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 3.1205ms
+2024-06-05 09:41:25.088 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:41:25.089 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 10.9374ms
+2024-06-05 09:42:10.736 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:42:10.740 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:10.741 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:10.742 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:42:10.745 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:10.746 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 3.0094ms
+2024-06-05 09:42:10.748 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:10.748 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:42:10.749 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 13.2873ms
+2024-06-05 09:42:10.751 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:10.754 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:10.755 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:42:10.759 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:10.760 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.746ms
+2024-06-05 09:42:10.761 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:10.761 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:42:10.761 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 13.232ms
+2024-06-05 09:42:10.762 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:10.764 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:10.765 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:42:10.767 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:10.768 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 1.9009ms
+2024-06-05 09:42:10.769 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:42:10.769 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:10.770 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:10.771 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 10.6981ms
+2024-06-05 09:42:10.772 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:10.774 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:42:10.777 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:10.778 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.4227ms
+2024-06-05 09:42:10.780 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:10.781 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 12.0663ms
+2024-06-05 09:42:11.837 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 09:42:11.839 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:11.840 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:42:11.841 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 09:42:11.845 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:11.846 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 3.198ms
+2024-06-05 09:42:11.847 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:42:11.847 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 09:42:11.848 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 11.2781ms
+2024-06-05 09:42:11.850 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:11.853 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:42:11.853 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 09:42:11.859 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:11.860 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 3.5161ms
+2024-06-05 09:42:11.861 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 09:42:11.861 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:42:11.863 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:11.863 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 16.3055ms
+2024-06-05 09:42:11.864 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:42:11.866 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 09:42:11.869 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:11.870 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 2.4412ms
+2024-06-05 09:42:11.871 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - null null
+2024-06-05 09:42:11.871 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:42:11.875 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:11.875 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 14.2608ms
+2024-06-05 09:42:11.876 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:42:11.879 +05:30 [INF] Route matched with {action = "AdminDashboard", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AdminDashboard() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 09:42:11.883 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:11.883 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api) in 3.0952ms
+2024-06-05 09:42:11.885 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.AdminDashboard (LXP.Api)'
+2024-06-05 09:42:11.886 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/admin/DashboardDetails - 200 null application/json; charset=utf-8 14.1801ms
+2024-06-05 09:42:12.843 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:42:12.844 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:12.845 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:12.845 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:42:12.848 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:12.849 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 1.9296ms
+2024-06-05 09:42:12.849 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:42:12.849 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:12.851 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:12.851 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 8.2356ms
+2024-06-05 09:42:12.852 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:12.855 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:42:12.858 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:12.859 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.5163ms
+2024-06-05 09:42:12.860 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:42:12.860 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:12.862 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:12.862 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 12.7748ms
+2024-06-05 09:42:12.863 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:12.867 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:42:12.870 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:12.872 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 3.3196ms
+2024-06-05 09:42:12.873 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:12.874 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:42:12.874 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 14.091ms
+2024-06-05 09:42:12.875 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:42:12.877 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:12.878 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:42:12.881 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:42:12.882 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.1076ms
+2024-06-05 09:42:12.883 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:42:12.884 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 10.4131ms
+2024-06-05 09:48:08.940 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:08.943 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:08.944 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:08.945 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:08.962 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:08.963 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 15.5146ms
+2024-06-05 09:48:08.965 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:08.965 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:08.966 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 26.1696ms
+2024-06-05 09:48:08.968 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:08.970 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:08.971 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:08.973 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:08.974 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 1.8779ms
+2024-06-05 09:48:08.975 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:08.975 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:08.975 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 10.3378ms
+2024-06-05 09:48:08.977 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:08.979 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:08.979 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:08.982 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:08.983 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.1607ms
+2024-06-05 09:48:08.983 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:08.984 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:08.985 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:08.986 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 11.3834ms
+2024-06-05 09:48:08.987 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:08.989 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:08.991 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:08.992 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.0335ms
+2024-06-05 09:48:08.993 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:08.993 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 9.805ms
+2024-06-05 09:48:18.105 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:48:18.108 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:18.108 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:48:18.109 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:18.113 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:18.114 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.8714ms
+2024-06-05 09:48:18.115 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:48:18.116 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:48:18.116 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 10.9274ms
+2024-06-05 09:48:18.118 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:18.120 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:48:18.121 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:18.123 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:18.125 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.1745ms
+2024-06-05 09:48:18.126 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:48:18.126 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:48:18.128 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:18.128 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 12.6232ms
+2024-06-05 09:48:18.129 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:48:18.132 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:18.134 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:18.135 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.2771ms
+2024-06-05 09:48:18.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-05 09:48:18.137 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:48:18.138 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:18.139 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 12.4103ms
+2024-06-05 09:48:18.139 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:48:18.141 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:18.144 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:18.145 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 2.366ms
+2024-06-05 09:48:18.146 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-05 09:48:18.147 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 10.2646ms
+2024-06-05 09:48:24.133 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-06-05 09:48:24.137 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:24.137 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 09:48:24.141 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-06-05 09:48:24.147 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:24.204 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 61.5318ms
+2024-06-05 09:48:24.206 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-06-05 09:48:24.207 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 09:48:24.211 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:24.213 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 79.716ms
+2024-06-05 09:48:24.214 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 09:48:24.219 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-06-05 09:48:24.221 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:24.223 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 2.9791ms
+2024-06-05 09:48:24.224 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-06-05 09:48:24.226 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:24.224 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 09:48:24.226 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 09:48:24.227 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 20.3495ms
+2024-06-05 09:48:24.228 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-06-05 09:48:24.233 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:24.235 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 5.0233ms
+2024-06-05 09:48:24.236 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 09:48:24.237 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 13.2945ms
+2024-06-05 09:48:24.236 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-06-05 09:48:24.240 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:24.241 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 09:48:24.241 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-06-05 09:48:24.242 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:24.244 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 2.0104ms
+2024-06-05 09:48:24.245 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 09:48:24.246 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 9.517ms
+2024-06-05 09:48:48.337 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:48.341 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:48.343 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:48.345 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:48.348 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:48.348 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.1015ms
+2024-06-05 09:48:48.349 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:48.349 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:48.350 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 13.3419ms
+2024-06-05 09:48:48.352 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:48.356 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:48.358 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:48.362 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:48.363 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.6495ms
+2024-06-05 09:48:48.364 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:48.364 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:48.366 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:48.367 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 17.4882ms
+2024-06-05 09:48:48.367 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:48.370 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:48.372 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:48.373 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.0552ms
+2024-06-05 09:48:48.374 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:48.374 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:48.375 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:48.376 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 11.9895ms
+2024-06-05 09:48:48.376 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:48.378 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:48.381 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:48.381 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 1.7949ms
+2024-06-05 09:48:48.382 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:48.382 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 8.8503ms
+2024-06-05 09:48:54.054 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:54.059 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:54.059 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:54.060 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:54.062 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:54.063 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.4001ms
+2024-06-05 09:48:54.064 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:54.064 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:54.065 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 11.677ms
+2024-06-05 09:48:54.068 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:54.072 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:54.072 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:54.075 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:54.076 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.3205ms
+2024-06-05 09:48:54.077 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:54.077 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:54.078 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:54.079 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 14.5626ms
+2024-06-05 09:48:54.079 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:54.082 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:54.085 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:54.087 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.9114ms
+2024-06-05 09:48:54.087 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:48:54.088 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:54.089 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:48:54.090 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 12.9829ms
+2024-06-05 09:48:54.090 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:54.093 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:48:54.096 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:48:54.096 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.2459ms
+2024-06-05 09:48:54.097 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:48:54.098 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 10.7654ms
+2024-06-05 09:49:10.157 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:49:10.163 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:49:10.163 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:49:10.164 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:49:10.167 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:49:10.168 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.9651ms
+2024-06-05 09:49:10.169 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:49:10.169 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:49:10.170 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 12.8739ms
+2024-06-05 09:49:10.171 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:49:10.175 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:49:10.177 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:49:10.181 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:49:10.182 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 2.2241ms
+2024-06-05 09:49:10.183 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:49:10.183 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:49:10.184 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:49:10.185 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 15.8984ms
+2024-06-05 09:49:10.185 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:49:10.188 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:49:10.190 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:49:10.191 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 1.9841ms
+2024-06-05 09:49:10.191 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - null null
+2024-06-05 09:49:10.191 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:49:10.193 +05:30 [INF] CORS policy execution successful.
+2024-06-05 09:49:10.193 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 10.1801ms
+2024-06-05 09:49:10.194 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:49:10.196 +05:30 [INF] Route matched with {action = "GetLearnerReport", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerReport() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-05 09:49:10.198 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 09:49:10.199 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api) in 1.8697ms
+2024-06-05 09:49:10.200 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetLearnerReport (LXP.Api)'
+2024-06-05 09:49:10.201 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learnerReport - 200 null application/json; charset=utf-8 9.5985ms
+2024-06-05 10:10:09.281 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Enrollment/lxp/enrollment/course/c5a98f65-7317-4b75-836a-bb1bf74b7495 - null null
+2024-06-05 10:10:09.298 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.EnrollmentController.GetEnrolledUsers (LXP.Api)'
+2024-06-05 10:10:09.305 +05:30 [INF] Route matched with {action = "GetEnrolledUsers", controller = "Enrollment"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetEnrolledUsers(System.Guid) on controller LXP.Api.Controllers.EnrollmentController (LXP.Api).
+2024-06-05 10:10:09.319 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 10:10:09.361 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.GetEnrolledUsers (LXP.Api) in 49.2582ms
+2024-06-05 10:10:09.363 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.GetEnrolledUsers (LXP.Api)'
+2024-06-05 10:10:09.364 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Enrollment/lxp/enrollment/course/c5a98f65-7317-4b75-836a-bb1bf74b7495 - 200 null application/json; charset=utf-8 82.5716ms
+2024-06-05 10:10:09.462 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/favicon.ico - null null
+2024-06-05 10:10:09.463 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/favicon.ico - 404 0 null 1.6414ms
+2024-06-05 10:10:09.466 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5199/favicon.ico, Response status code: 404
+2024-06-05 10:10:14.015 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 10:10:14.021 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 6.0996ms
+2024-06-05 10:10:14.038 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 10:10:14.041 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 3.3604ms
+2024-06-05 10:10:14.038 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 10:10:14.058 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.1805ms
+2024-06-05 10:10:14.149 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 10:10:14.193 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 44.8174ms
+2024-06-05 10:17:41.894 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/QuizReport/QuizReport - null null
+2024-06-05 10:17:41.904 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizReportController.GetQuizReport (LXP.Api)'
+2024-06-05 10:17:41.921 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "QuizReport"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizReportController (LXP.Api).
+2024-06-05 10:17:41.934 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 10:17:41.995 +05:30 [INF] Executed action LXP.Api.Controllers.QuizReportController.GetQuizReport (LXP.Api) in 62.7593ms
+2024-06-05 10:17:42.000 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizReportController.GetQuizReport (LXP.Api)'
+2024-06-05 10:17:42.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/QuizReport/QuizReport - 200 null application/json; charset=utf-8 109.9245ms
+2024-06-05 11:23:22.970 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 11:23:22.998 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 28.0687ms
+2024-06-05 11:23:23.016 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 11:23:23.018 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 11:23:23.025 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.66ms
+2024-06-05 11:23:23.050 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 31.8705ms
+2024-06-05 11:23:23.245 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 11:23:23.462 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 217.286ms
+2024-06-05 11:27:35.006 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 11:27:35.023 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:27:35.027 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:27:35.041 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 11:27:35.115 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:27:35.127 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 70.0166ms
+2024-06-05 11:27:35.133 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 11:27:35.135 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:27:35.148 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:27:35.158 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 152.3181ms
+2024-06-05 11:27:35.166 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:27:35.187 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 11:27:35.227 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:27:35.240 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 16.102ms
+2024-06-05 11:27:35.243 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 11:27:35.258 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:27:35.289 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:27:35.294 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 161.1944ms
+2024-06-05 11:27:35.305 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:27:35.361 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 11:27:35.389 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:27:35.396 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 11.3258ms
+2024-06-05 11:27:35.397 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 11:27:35.401 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:27:35.420 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:27:35.429 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 185.7421ms
+2024-06-05 11:27:35.435 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:27:35.462 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 11:27:35.481 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:27:35.491 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 13.4094ms
+2024-06-05 11:27:35.494 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:27:35.499 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 102.1338ms
+2024-06-05 11:27:38.217 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-06-05 11:27:38.228 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:27:38.236 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 11:27:38.253 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-06-05 11:27:38.263 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:27:38.285 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 22.862ms
+2024-06-05 11:27:38.286 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-06-05 11:27:38.289 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 11:27:38.298 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:27:38.301 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 83.7459ms
+2024-06-05 11:27:38.308 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 11:27:38.333 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-06-05 11:27:38.344 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:27:38.359 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 16.4252ms
+2024-06-05 11:27:38.363 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-06-05 11:27:38.365 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 11:27:38.386 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:27:38.402 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 116.1244ms
+2024-06-05 11:27:38.408 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 11:27:38.438 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-06-05 11:27:38.447 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:27:38.456 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 9.1616ms
+2024-06-05 11:27:38.457 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - null null
+2024-06-05 11:27:38.470 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 11:27:38.491 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:27:38.504 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 140.6462ms
+2024-06-05 11:27:38.507 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 11:27:38.549 +05:30 [INF] Route matched with {action = "GetQuizReport", controller = "Quiz"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetQuizReport() on controller LXP.Api.Controllers.QuizController (LXP.Api).
+2024-06-05 11:27:38.565 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:27:38.580 +05:30 [INF] Executed action LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api) in 15.5691ms
+2024-06-05 11:27:38.582 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.QuizController.GetQuizReport (LXP.Api)'
+2024-06-05 11:27:38.588 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Quiz/QuizReport - 200 null application/json; charset=utf-8 130.7696ms
+2024-06-05 11:34:09.383 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 11:34:09.396 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:34:09.405 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:34:09.415 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 11:34:09.462 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:34:09.468 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 36.0098ms
+2024-06-05 11:34:09.473 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 11:34:09.474 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:34:09.489 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:34:09.497 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 113.6823ms
+2024-06-05 11:34:09.501 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:34:09.523 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 11:34:09.544 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:34:09.549 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 8.0717ms
+2024-06-05 11:34:09.551 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 11:34:09.556 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:34:09.571 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:34:09.575 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 101.613ms
+2024-06-05 11:34:09.580 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:34:09.605 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 11:34:09.615 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:34:09.623 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 10.713ms
+2024-06-05 11:34:09.626 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - null null
+2024-06-05 11:34:09.628 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:34:09.636 +05:30 [INF] CORS policy execution successful.
+2024-06-05 11:34:09.639 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 88.4313ms
+2024-06-05 11:34:09.645 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:34:09.665 +05:30 [INF] Route matched with {action = "GetAllCourse", controller = "Course"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCourse() on controller LXP.Api.Controllers.CourseController (LXP.Api).
+2024-06-05 11:34:09.677 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 11:34:09.683 +05:30 [INF] Executed action LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api) in 9.4537ms
+2024-06-05 11:34:09.691 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.CourseController.GetAllCourse (LXP.Api)'
+2024-06-05 11:34:09.700 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Course/lxp/GetAllCourse - 200 null application/json; charset=utf-8 74.3842ms
+2024-06-05 12:04:25.496 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - null null
+2024-06-05 12:04:25.506 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:04:25.520 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 12:04:25.586 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 12:04:25.600 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 73.6752ms
+2024-06-05 12:04:25.605 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:04:25.609 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - 200 null application/json; charset=utf-8 113.3015ms
+2024-06-05 12:08:37.365 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:08:37.394 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 28.8418ms
+2024-06-05 12:08:37.437 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:08:37.438 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:08:37.447 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.2333ms
+2024-06-05 12:08:37.464 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.4365ms
+2024-06-05 12:08:38.209 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:08:38.302 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.912ms
+2024-06-05 12:09:11.410 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:09:11.420 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 10.0702ms
+2024-06-05 12:09:11.449 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:09:11.449 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:09:11.458 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 8.3757ms
+2024-06-05 12:09:11.470 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.5958ms
+2024-06-05 12:09:12.348 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:09:12.437 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 89.1124ms
+2024-06-05 12:09:48.101 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-05 12:09:48.152 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-05 12:09:48.157 +05:30 [INF] Hosting environment: Development
+2024-06-05 12:09:48.157 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-05 12:09:49.302 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:09:49.915 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 614.1017ms
+2024-06-05 12:09:50.126 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:09:50.143 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 16.9054ms
+2024-06-05 12:09:50.179 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:09:50.200 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:09:50.203 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 23.7385ms
+2024-06-05 12:09:50.255 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.0738ms
+2024-06-05 12:09:50.396 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:09:50.527 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:09:50.536 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 8.2751ms
+2024-06-05 12:09:50.559 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:09:50.560 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:09:50.566 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 7.2028ms
+2024-06-05 12:09:50.577 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 17.4295ms
+2024-06-05 12:09:50.583 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 187.5517ms
+2024-06-05 12:09:50.664 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:09:50.719 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 54.9964ms
+2024-06-05 12:09:50.939 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:09:50.943 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 4.3162ms
+2024-06-05 12:09:51.010 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:09:51.010 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:09:51.016 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 6.3277ms
+2024-06-05 12:09:51.018 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.0793ms
+2024-06-05 12:09:51.114 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:09:51.188 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.9722ms
+2024-06-05 12:09:51.189 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:09:51.223 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 33.6129ms
+2024-06-05 12:09:51.387 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:09:51.388 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:09:51.393 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.5779ms
+2024-06-05 12:09:51.394 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.5596ms
+2024-06-05 12:09:51.464 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:09:51.510 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.299ms
+2024-06-05 12:09:51.703 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:09:51.708 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 4.7596ms
+2024-06-05 12:09:51.787 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:09:51.787 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:09:51.792 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 5.4727ms
+2024-06-05 12:09:51.793 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 6.5063ms
+2024-06-05 12:09:51.858 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:09:51.920 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 62.0486ms
+2024-06-05 12:09:52.106 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-05 12:09:52.110 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 4.6286ms
+2024-06-05 12:09:52.207 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-05 12:09:52.207 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-05 12:09:52.211 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 4.532ms
+2024-06-05 12:09:52.212 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.0118ms
+2024-06-05 12:09:52.270 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-05 12:09:52.320 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 49.7466ms
+2024-06-05 12:10:24.185 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - null null
+2024-06-05 12:10:24.209 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-05 12:10:24.216 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:10:24.226 +05:30 [INF] Route matched with {action = "GetEnrollmentMonth", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetEnrollmentMonth() on controller LXP.Api.Controllers.DashboardController (LXP.Api).
+2024-06-05 12:10:25.881 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-05 12:10:25.907 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 1669.1484ms
+2024-06-05 12:10:25.918 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
+2024-06-05 12:10:25.929 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth - 200 null application/json; charset=utf-8 1743.7065ms

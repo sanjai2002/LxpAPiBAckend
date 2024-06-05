@@ -27,14 +27,15 @@ namespace LXP.Core.Services
             return _dashboardRepository.GetTotalEnrollments();
         }
 
-        public Array GetMonthEnrollmentList()
+        public Array GetMonthEnrollmentList(string year)
         {
-            var list = _dashboardRepository.GetMonthWiseEnrollments().ToList();
+            string[] month = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct","Nov","Dec"];
+            var list = _dashboardRepository.GetMonthWiseEnrollments(year).ToList();
+            Console.WriteLine(list);
             var query = from c in list
                         group c by c.EnrollmentDate.Month into g
-                        select new { EnrollMonth = g.Key, EnrollCount = g.Count() };
-            Console.WriteLine(query);
-            var output = query.ToList();
+                        select new { EnrollMonth = month[g.Key-1], EnrollCount = g.Count() };
+            var output = query.ToList();    
             return output.ToArray();
             //var groupedlist = from s in list
             //                  group s by s.EnrollmentDate.Month;

@@ -8,7 +8,7 @@ namespace LXP.Data.IRepository
         IEnumerable<DashboardLearnerViewModel> GetTotalLearners();
         IEnumerable<DashboardCourseViewModel> GetTotalCourses();
         IEnumerable<DashboardEnrollmentViewModel> GetTotalEnrollments();
-        IEnumerable<DashboardEnrollmentViewModel> GetMonthWiseEnrollments();
+        IEnumerable<DashboardEnrollmentViewModel> GetMonthWiseEnrollments(string year);
         IEnumerable<DashboardCourseViewModel> GetCourseCreated();
         IEnumerable<DashboardEnrollmentViewModel> GetMoreEnrolledCourse();
 
