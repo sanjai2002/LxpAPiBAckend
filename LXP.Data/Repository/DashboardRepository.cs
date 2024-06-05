@@ -216,6 +216,13 @@ namespace LXP.Data.Repository
 
         }
 
-
+        public List<string> GetEnrolledYears()
+        {
+         var years = _lXPDbContext.Enrollments
+                .Select(p=>p.EnrollmentDate.Year.ToString())
+                .Distinct()
+                .ToList();
+          return years;
+        }
     }
 }
