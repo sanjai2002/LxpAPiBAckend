@@ -31,20 +31,13 @@ namespace LXP.Core.Services
         {
             string[] month = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept", "Oct","Nov","Dec"];
             var list = _dashboardRepository.GetMonthWiseEnrollments(year).ToList();
-            Console.WriteLine(list);
             var query = from c in list
+                        orderby c.EnrollmentDate.Month
                         group c by c.EnrollmentDate.Month into g
                         select new { EnrollMonth = month[g.Key-1], EnrollCount = g.Count() };
-            var output = query.ToList();    
+
+            var output = query.ToList();
             return output.ToArray();
-            //var groupedlist = from s in list
-            //                  group s by s.EnrollmentDate.Month;
-            //IEnumerable<string> groupedEnrollments = list
-            //    .GroupBy(s=>s.EnrollmentDate.Month.ToString())
-            //    .Select(grouping => string.Format("Type: {0} Count: {1}", grouping.Key, grouping.Count()));
-            //Console.WriteLine(groupedEnrollments);
-            //Console.WriteLine(groupedEnrollments.GetType());
-            //Console.WriteLine(groupedlist);
         }
 
         public Array GetCourseCreatedList()
