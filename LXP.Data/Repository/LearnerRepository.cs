@@ -75,14 +75,15 @@ namespace LXP.Data.Repository
 
         public IEnumerable<AllLearnersViewModel> GetLearners()
         {
+
             return _lXPDbContext.LearnerProfiles
                            .Select(c => new AllLearnersViewModel
                            {
-
                                LearnerID = c.LearnerId,
                                LearnerName = c.FirstName + " " + c.LastName,
                                Email = c.Learner.Email,
                                LastLogin = c.Learner.UserLastLogin,
+                               LearnerStatus = c.Learner.UserLastLogin > DateTime.Now.AddMonths(-1) ? true: false,
                            }
 
            ).ToList();

@@ -197,3 +197,23 @@
 2024-06-07 14:47:55.344 +05:30 [INF] Executed action LXP.Api.Controllers.EnrollmentController.GetCompletedLearnerList (LXP.Api) in 12.8683ms
 2024-06-07 14:47:55.346 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.EnrollmentController.GetCompletedLearnerList (LXP.Api)'
 2024-06-07 14:47:55.349 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Enrollment/lxp/enrollment/Completed/LearnerList?courseId=c5a98f65-7317-4b75-836a-bb1bf74b7495 - 200 null application/json; charset=utf-8 47.0842ms
+2024-06-07 16:00:02.596 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-07 16:00:02.645 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-07 16:00:02.646 +05:30 [INF] Hosting environment: Development
+2024-06-07 16:00:02.647 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-07 16:00:08.049 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-07 16:00:09.324 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1290.7112ms
+2024-06-07 16:00:09.361 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-07 16:00:09.361 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-07 16:00:09.373 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.8909ms
+2024-06-07 16:00:09.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.1029ms
+2024-06-07 16:00:09.580 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-07 16:00:10.024 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 444.6192ms
+2024-06-07 16:00:18.381 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - null null
+2024-06-07 16:00:18.422 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-07 16:00:18.436 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-07 16:00:18.476 +05:30 [INF] Route matched with {action = "GetAllLearners", controller = "Learner"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllLearners() on controller LXP.Api.Controllers.LearnerController (LXP.Api).
+2024-06-07 16:00:23.288 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-07 16:00:23.385 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api) in 4886.7168ms
+2024-06-07 16:00:23.394 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerController.GetAllLearners (LXP.Api)'
+2024-06-07 16:00:23.402 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/getalllearnerdetails - 200 null application/json; charset=utf-8 5020.8153ms
