@@ -14,6 +14,7 @@ namespace LXP.Common.ViewModels
         public int TotalNoofQuizAttempts { get; set; }
         public int LearnerAttempts { get; set; }
         public float Score { get; set; }
+        public string EmailId {  get; set; }
 
 
     }

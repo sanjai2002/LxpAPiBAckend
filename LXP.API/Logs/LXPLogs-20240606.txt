@@ -34,3 +34,15 @@
 2024-06-06 09:05:45.493 +05:30 [INF] Executed action LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api) in 9867.5291ms
 2024-06-06 09:05:45.499 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.DashboardController.GetEnrollmentMonth (LXP.Api)'
 2024-06-06 09:05:45.503 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/api/Dashboard/GetEnrollmentMonth?year=2024 - 200 null application/json; charset=utf-8 9940.0137ms
+2024-06-06 09:10:33.302 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-06 09:10:33.357 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-06 09:10:33.363 +05:30 [INF] Hosting environment: Development
+2024-06-06 09:10:33.370 +05:30 [INF] Content root path: D:\SKV\Capstone\Sprint 5\Work\Backend\LXP.Api
+2024-06-06 09:10:35.324 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-06 09:10:36.738 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1425.8934ms
+2024-06-06 09:10:36.766 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-06 09:10:36.766 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-06 09:10:36.775 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 9.7027ms
+2024-06-06 09:10:36.857 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.4115ms
+2024-06-06 09:10:36.980 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-06 09:10:37.436 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 456.1307ms

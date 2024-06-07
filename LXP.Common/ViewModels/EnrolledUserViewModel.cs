@@ -12,5 +12,10 @@ namespace LXP.Common.ViewModels
         public string Name { get; set; }
         public string ProfilePhoto { get; set; }
         public sbyte Status { get; set; }
+
+        ///<summary>
+        ///Email ID
+        /// </summary>
+        public string? EmailId { get; set; }
     }
 }

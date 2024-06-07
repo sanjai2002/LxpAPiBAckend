@@ -52,6 +52,12 @@ namespace LXP.Common.ViewModels
         ///Profile photo
         /// </summary>
         public string? ProfilePhoto { get; set; }
+
+
+        ///<summary>
+        ///Email ID
+        /// </summary>
+        public string? EmailId { get; set; }
     }
 
 }

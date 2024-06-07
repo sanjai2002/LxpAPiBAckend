@@ -72,7 +72,8 @@ namespace LXP.Data.Repository
 
                                            _contextAccessor.HttpContext.Request.Scheme,
                                            _contextAccessor.HttpContext.Request.Host,
-                                           _contextAccessor.HttpContext.Request.PathBase, m.First().Learner.LearnerProfiles.First().ProfilePhoto)
+                                           _contextAccessor.HttpContext.Request.PathBase, m.First().Learner.LearnerProfiles.First().ProfilePhoto),
+                    EmailId = m.First().Learner.Email,
                 })
                 .ToList();
             return attempts;
@@ -94,7 +95,8 @@ namespace LXP.Data.Repository
                     Profilephoto = String.Format("{0}://{1}{2}/wwwroot/LearnerProfileImages/{3}",
                                            _contextAccessor.HttpContext.Request.Scheme,
                                            _contextAccessor.HttpContext.Request.Host,
-                                           _contextAccessor.HttpContext.Request.PathBase, m.First().Learner.LearnerProfiles.First().ProfilePhoto)
+                                           _contextAccessor.HttpContext.Request.PathBase, m.First().Learner.LearnerProfiles.First().ProfilePhoto),
+                    EmailId = m.First().Learner.Email,
                 })
                 .ToList();
             return attempts;

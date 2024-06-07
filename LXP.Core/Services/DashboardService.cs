@@ -35,7 +35,6 @@ namespace LXP.Core.Services
                         orderby c.EnrollmentDate.Month
                         group c by c.EnrollmentDate.Month into g
                         select new { EnrollMonth = month[g.Key-1], EnrollCount = g.Count() };
-
             var output = query.ToList();
             return output.ToArray();
         }

@@ -125,6 +125,7 @@ namespace LXP.Data.Repository
                              _contextAccessor.HttpContext.Request.PathBase,
                              x.Learner.LearnerProfiles.First().ProfilePhoto),
                     Status = x.CompletedStatus,
+                    EmailId = x.Learner.Email,
                 });
             return users;
         }
@@ -143,7 +144,8 @@ namespace LXP.Data.Repository
                                                                                 _contextAccessor.HttpContext!.Request.Scheme,
                                                                                 _contextAccessor.HttpContext.Request.Host,
                                                                                 _contextAccessor.HttpContext.Request.PathBase,
-                                                                                e.First().Learner.LearnerProfiles.First().ProfilePhoto)
+                                                                                e.First().Learner.LearnerProfiles.First().ProfilePhoto),
+                    EmailId = e.First().Learner.Email,
                 })
                 .ToList();
             return CompletedLearner;
@@ -163,7 +165,8 @@ namespace LXP.Data.Repository
                                                                                 _contextAccessor.HttpContext!.Request.Scheme,
                                                                                 _contextAccessor.HttpContext.Request.Host,
                                                                                 _contextAccessor.HttpContext.Request.PathBase,
-                                                                                e.First().Learner.LearnerProfiles.First().ProfilePhoto)
+                                                                                e.First().Learner.LearnerProfiles.First().ProfilePhoto),
+                    EmailId = e.First().Learner.Email,
                 })
                 .ToList();
             return InprogressLearner;
