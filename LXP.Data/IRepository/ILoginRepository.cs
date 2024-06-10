@@ -22,6 +22,7 @@ namespace LXP.Data.IRepository
 
 
         public Task UpdateLearnerPassword(string Email, string Password);
+        public Task UpdateLearnerLastLogin(string Email);
 
         //public  Task UpdatePassword(Learner learner);
 

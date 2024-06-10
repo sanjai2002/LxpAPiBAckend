@@ -77,9 +77,9 @@ namespace LXP.Core.Services
 
                     message.AccountStatus = getlearners.AccountStatus;
                     message.GetLearnerId = getlearners.LearnerId;
-
                     if (checkpassword)
                     {
+                        await _repository.UpdateLearnerLastLogin(loginmodel.Email);
                         loginRole = new LoginRole();
 
                         {

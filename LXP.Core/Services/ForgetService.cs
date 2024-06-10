@@ -27,11 +27,8 @@ namespace LXP.Core.Services
 
                 string password = RandomPassword.Randompasswordgenerator();
                 string encryptPassword = Encryption.ComputePasswordToSha256Hash(password);
-
                 _repository.UpdateLearnerPassword(Email, encryptPassword);
-
                 EmailGenerator.Sendpassword(password, Email);
-
                 return true;
             }
 

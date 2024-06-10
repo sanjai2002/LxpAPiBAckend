@@ -55,6 +55,18 @@ namespace LXP.Data.Repository
             await _dbcontext.SaveChangesAsync();
         }
 
+        public async Task UpdateLearnerLastLogin(string Email)
+        {
+            var learners = await _dbcontext.Learners.FirstOrDefaultAsync(learners => learners.Email == Email);
+
+            if (learners != null)
+            {
+                learners.UserLastLogin = DateTime.Now;
+                _dbcontext.Learners.Update(learners);
+                await _dbcontext.SaveChangesAsync();
+            }
+
+        }
 
         //public async Task UpdatePassword(Learner learner)
         //{
