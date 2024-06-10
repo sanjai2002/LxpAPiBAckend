@@ -1,9 +1,9 @@
-﻿using LXP.Common.ViewModels;
+﻿using System;
+using System.Threading.Tasks;
+using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Threading.Tasks;
 
 namespace LXP.Api.Controllers
 {
@@ -51,7 +51,13 @@ namespace LXP.Api.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, CreateFailureResponse($"An error occurred while importing quiz data: {ex.Message}", 500));
+                return StatusCode(
+                    500,
+                    CreateFailureResponse(
+                        $"An error occurred while importing quiz data: {ex.Message}",
+                        500
+                    )
+                );
             }
         }
 
@@ -65,7 +71,9 @@ namespace LXP.Api.Controllers
         {
             if (file == null || file.Length == 0)
             {
-                return BadRequest(CreateFailureResponse("The file is required and cannot be empty.", 400));
+                return BadRequest(
+                    CreateFailureResponse("The file is required and cannot be empty.", 400)
+                );
             }
 
             if (quizId == Guid.Empty)
@@ -84,7 +92,7 @@ namespace LXP.Api.Controllers
 //using Microsoft.AspNetCore.Http;
 //using Microsoft.AspNetCore.Mvc;
 //using System;
-//using System.Threading.Tasks; 
+//using System.Threading.Tasks;
 
 //namespace LXP.Api.controllers
 //{

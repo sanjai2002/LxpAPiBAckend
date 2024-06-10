@@ -24,11 +24,16 @@ namespace LXP.Api.Controllers
         ///<param name="quizQuestionDto">The details of the quiz question to add.</param>
         ///<response code="200">Quiz question added successfully.</response>
         ///<response code="500">Internal server error.</response>
-        
+
         [HttpPost("AddQuestion")]
-        public async Task<IActionResult> AddQuestion([FromBody] QuizQuestionViewModel quizQuestionDto)
+        public async Task<IActionResult> AddQuestion(
+            [FromBody] QuizQuestionViewModel quizQuestionDto
+        )
         {
-            var result = await _quizQuestionService.AddQuestionAsync(quizQuestionDto, quizQuestionDto.Options);
+            var result = await _quizQuestionService.AddQuestionAsync(
+                quizQuestionDto,
+                quizQuestionDto.Options
+            );
             return Ok(CreateSuccessResponse(result));
         }
 
@@ -40,15 +45,24 @@ namespace LXP.Api.Controllers
         ///<response code="200">Quiz question updated successfully.</response>
         ///<response code="404">Quiz question not found.</response>
         ///<response code="500">Internal server error.</response>
-        
+
         [HttpPut("UpdateQuestion")]
-        public async Task<IActionResult> UpdateQuestion(Guid quizQuestionId, [FromBody] QuizQuestionViewModel quizQuestionDto)
+        public async Task<IActionResult> UpdateQuestion(
+            Guid quizQuestionId,
+            [FromBody] QuizQuestionViewModel quizQuestionDto
+        )
         {
             var existingQuestion = await _quizQuestionService.GetQuestionByIdAsync(quizQuestionId);
             if (existingQuestion == null)
-                return NotFound(CreateFailureResponse($"Quiz question with ID {quizQuestionId} not found.", 404));
+                return NotFound(
+                    CreateFailureResponse($"Quiz question with ID {quizQuestionId} not found.", 404)
+                );
 
-            var result = await _quizQuestionService.UpdateQuestionAsync(quizQuestionId, quizQuestionDto, quizQuestionDto.Options);
+            var result = await _quizQuestionService.UpdateQuestionAsync(
+                quizQuestionId,
+                quizQuestionDto,
+                quizQuestionDto.Options
+            );
             return Ok(CreateSuccessResponse(result));
         }
 
@@ -64,7 +78,9 @@ namespace LXP.Api.Controllers
         {
             var existingQuestion = await _quizQuestionService.GetQuestionByIdAsync(quizQuestionId);
             if (existingQuestion == null)
-                return NotFound(CreateFailureResponse($"Quiz question with ID {quizQuestionId} not found.", 404));
+                return NotFound(
+                    CreateFailureResponse($"Quiz question with ID {quizQuestionId} not found.", 404)
+                );
 
             var result = await _quizQuestionService.DeleteQuestionAsync(quizQuestionId);
             return Ok(CreateSuccessResponse(result));
@@ -101,10 +117,11 @@ namespace LXP.Api.Controllers
         {
             var result = await _quizQuestionService.GetAllQuestionsByQuizIdAsync(quizId);
             if (result == null || !result.Any())
-                return NotFound(CreateFailureResponse($"No quiz questions found for quiz ID {quizId}.", 404));
+                return NotFound(
+                    CreateFailureResponse($"No quiz questions found for quiz ID {quizId}.", 404)
+                );
             return Ok(CreateSuccessResponse(result));
         }
-
 
         ///<summary>
         ///Retrieve a quiz question by its ID.
@@ -118,7 +135,9 @@ namespace LXP.Api.Controllers
         {
             var result = await _quizQuestionService.GetQuestionByIdAsync(quizQuestionId);
             if (result == null)
-                return NotFound(CreateFailureResponse($"Quiz question with ID {quizQuestionId} not found.", 404));
+                return NotFound(
+                    CreateFailureResponse($"Quiz question with ID {quizQuestionId} not found.", 404)
+                );
             return Ok(CreateSuccessResponse(result));
         }
     }
@@ -178,7 +197,7 @@ namespace LXP.Api.Controllers
 //        {
 //            var result = _quizQuestionService.AddQuestion(quizQuestionDto, quizQuestionDto.Options);
 //            return Ok(result);
-//        }        
+//        }
 //        [HttpPut("UpdateQuestion")]
 //        public IActionResult UpdateQuestion(Guid quizQuestionId, [FromBody] QuizQuestionDto quizQuestionDto)
 //        {
@@ -213,7 +232,7 @@ namespace LXP.Api.Controllers
 //            var result = _quizQuestionService.GetQuestionById(quizQuestionId);
 //            if (result == null)
 //            {
-//                return NotFound(); 
+//                return NotFound();
 //            }
 //            return Ok(result);
 //        }

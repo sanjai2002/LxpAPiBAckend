@@ -1,20 +1,36 @@
-﻿
+﻿using LXP.Common.Entities;
 using LXP.Common.ViewModels.QuizViewModel;
-
 
 namespace LXP.Data.IRepository
 {
     public interface IQuizRepository
     {
-        QuizViewModel GetQuizById(Guid quizId);
-        IEnumerable<QuizViewModel> GetAllQuizzes();
-        void CreateQuiz(QuizViewModel quiz, Guid TopicId);
-        void UpdateQuiz(QuizViewModel quiz);
-        void DeleteQuiz(Guid quizId);
-      
-        Guid? GetQuizIdByTopicId(Guid topicId);
+        Quiz GetQuizById(Guid quizId);
+        IEnumerable<Quiz> GetAllQuizzes();
+        void AddQuiz(Quiz quiz);
+        void UpdateQuiz(Quiz quiz);
+        void DeleteQuiz(Quiz quiz);
+        Topic GetTopicById(Guid topicId);
+        Quiz GetQuizByTopicId(Guid topicId);
     }
 }
+
+// using LXP.Common.ViewModels.QuizViewModel;
+
+
+// namespace LXP.Data.IRepository
+// {
+//     public interface IQuizRepository
+//     {
+//         QuizViewModel GetQuizById(Guid quizId);
+//         IEnumerable<QuizViewModel> GetAllQuizzes();
+//         void CreateQuiz(QuizViewModel quiz, Guid TopicId);
+//         void UpdateQuiz(QuizViewModel quiz);
+//         void DeleteQuiz(Guid quizId);
+      
+//         Guid? GetQuizIdByTopicId(Guid topicId);
+//     }
+// }
 // Task<Quiz> GetQuizByNameAsync(string name);
 //using LXP.Common.DTO;
 //using System;

@@ -1,43 +1,22 @@
 ﻿
-
-
+using LXP.Common.Entities;
 using LXP.Common.ViewModels.TopicFeedbackQuestionViemModel;
-
 
 namespace LXP.Data.IRepository
 {
     public interface ITopicFeedbackRepository
     {
-        IEnumerable<TopicFeedbackQuestionNoViewModel> GetAllFeedbackQuestions();
-        TopicFeedbackQuestionNoViewModel GetFeedbackQuestionById(Guid id);
-
-        bool AddFeedbackQuestion(TopicFeedbackQuestionViewModel question, List<FeedbackOptionDTO> options);
-        bool DeleteFeedbackQuestion(Guid id);
-        bool UpdateFeedbackQuestion(Guid id, TopicFeedbackQuestionViewModel question, List<FeedbackOptionDTO> options);
-        IEnumerable<TopicFeedbackQuestionNoViewModel> GetFeedbackQuestionsByTopicId(Guid topicId);
-
+        void AddFeedbackQuestion(Topicfeedbackquestion questionEntity);
+        void AddFeedbackQuestionOptions(List<Feedbackquestionsoption> options);
+        List<TopicFeedbackQuestionNoViewModel> GetAllFeedbackQuestions();
+        List<TopicFeedbackQuestionNoViewModel> GetFeedbackQuestionsByTopicId(Guid topicId);
+        int GetNextFeedbackQuestionNo(Guid topicId);
+        TopicFeedbackQuestionNoViewModel GetFeedbackQuestionById(Guid topicFeedbackQuestionId);
+        void UpdateFeedbackQuestion(Topicfeedbackquestion questionEntity);
+        void RemoveFeedbackQuestion(Topicfeedbackquestion questionEntity);
+        void RemoveFeedbackQuestionOptions(List<Feedbackquestionsoption> options);
+        void ReorderQuestionNos(Guid topicId, int deletedQuestionNo);
+        List<Feedbackquestionsoption> GetFeedbackQuestionOptionsById(Guid topicFeedbackQuestionId);
+        Topicfeedbackquestion GetTopicFeedbackQuestionEntityById(Guid topicFeedbackQuestionId);
     }
 }
-
-//using LXP.Common.DTO;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
-
-//namespace LXP.Data.IRepository
-//{
-//    public interface ITopicFeedbackRepository
-//    {
-//        IEnumerable<TopicFeedbackQuestionNoDTO> GetAllFeedbackQuestions();
-//        TopicFeedbackQuestionNoDTO GetFeedbackQuestionById(Guid id);
-//        void AddFeedbackResponse(TopicFeedbackResponseDTO feedbackResponse);
-//       // bool AddFeedbackQuestion(TopicFeedbackQuestionDTO question, List<FeedbackOptionDTO> options);
-//        bool DeleteFeedbackQuestion(Guid id);
-//        bool UpdateFeedbackQuestion(Guid id, TopicFeedbackQuestionDTO question, List<FeedbackOptionDTO> options);
-//        IEnumerable<TopicFeedbackQuestionNoDTO> GetFeedbackQuestionsByTopicId(Guid topicId);
-
-//        bool AddFeedbackQuestion(TopicFeedbackQuestionDTO question, List<FeedbackOptionDTO> options, Guid topicId);
-//    }
-//}

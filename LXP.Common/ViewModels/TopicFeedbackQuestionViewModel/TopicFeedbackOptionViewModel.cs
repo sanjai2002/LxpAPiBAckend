@@ -1,16 +1,7 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LXP.Common.ViewModels.TopicFeedbackQuestionViemModel
+﻿namespace LXP.Common.ViewModels.TopicFeedbackQuestionViemModel
 {
-    public class FeedbackOptionDTO
+    public class TopicFeedbackQuestionsOptionViewModel
     {
-        //public Guid OptionId { get; set; }
-        public string? OptionText { get; set; }
-        // Add any other properties you need
+        public string OptionText { get; set; } = null!;
     }
 }

@@ -236,27 +236,24 @@ namespace LXP.Data.Repository
                         throw new InvalidOperationException("Question type cannot be modified.");
                     }
 
-                    // Validate options based on question type
-                    if (!ValidateOptionsByFeedbackQuestionType(existingQuestion.QuestionType, options))
-                    {
-                        throw new ArgumentException("Invalid options for the given question type.");
-                    }
-
                     // Update the question details
                     existingQuestion.Question = quizfeedbackquestionDto.Question;
                     existingQuestion.ModifiedAt = DateTime.UtcNow;
                     existingQuestion.ModifiedBy = "Admin";
                     _dbContext.SaveChanges();
 
-                    // Remove existing options if question type is MultiChoiceQuestion
+                    // Handle options only if the question type is MCQ
                     if (existingQuestion.QuestionType == FeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
                     {
+                        if (!ValidateOptionsByFeedbackQuestionType(existingQuestion.QuestionType, options))
+                        {
+                            throw new ArgumentException("Invalid options for the given question type.");
+                        }
+
                         var existingOptions = _dbContext.Feedbackquestionsoptions.Where(o => o.QuizFeedbackQuestionId == quizFeedbackQuestionId).ToList();
                         _dbContext.Feedbackquestionsoptions.RemoveRange(existingOptions);
                         _dbContext.SaveChanges();
 
-                        // Add new options
-                        // Add
                         if (options != null && options.Count > 0)
                         {
                             foreach (var option in options)

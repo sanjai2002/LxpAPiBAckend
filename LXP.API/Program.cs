@@ -103,6 +103,8 @@ builder.Services.AddScoped<IMaterialTypeServices, MaterialTypeServices>();
 
 
 
+builder.Services.AddScoped<IQuizEngineRepository, QuizEngineRepository>();
+builder.Services.AddScoped<IQuizEngineService, QuizEngineService>();
 
 builder.Services.AddScoped<IProfilePasswordHistoryRepository, ProfilePasswordHistoryRepository>();
 builder.Services.AddScoped<ICourseLevelServices, CourseLevelServices>();
@@ -150,7 +152,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddHttpContextAccessor();
-
+builder.Services.AddMemoryCache();
 
 var app = builder.Build();
 

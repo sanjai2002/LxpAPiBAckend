@@ -1,6 +1,4 @@
-﻿
-using LXP.Common.ViewModels.QuizViewModel;
-
+﻿using LXP.Common.ViewModels.QuizViewModel;
 
 namespace LXP.Core.IServices
 {
@@ -8,13 +6,31 @@ namespace LXP.Core.IServices
     {
         QuizViewModel GetQuizById(Guid quizId);
         IEnumerable<QuizViewModel> GetAllQuizzes();
-        void CreateQuiz(QuizViewModel quiz, Guid TopicId);
+        void CreateQuiz(QuizViewModel quiz, Guid topicId);
         void UpdateQuiz(QuizViewModel quiz);
         void DeleteQuiz(Guid quizId);
         Guid? GetQuizIdByTopicId(Guid topicId);
-
     }
 }
+
+
+
+// using LXP.Common.ViewModels.QuizViewModel;
+
+
+// namespace LXP.Core.IServices
+// {
+//     public interface IQuizService
+//     {
+//         QuizViewModel GetQuizById(Guid quizId);
+//         IEnumerable<QuizViewModel> GetAllQuizzes();
+//         void CreateQuiz(QuizViewModel quiz, Guid TopicId);
+//         void UpdateQuiz(QuizViewModel quiz);
+//         void DeleteQuiz(Guid quizId);
+//         Guid? GetQuizIdByTopicId(Guid topicId);
+
+//     }
+// }
 //using LXP.Common.DTO;
 //using System;
 //using System.Collections.Generic;

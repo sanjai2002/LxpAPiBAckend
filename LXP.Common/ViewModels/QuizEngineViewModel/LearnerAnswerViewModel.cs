@@ -1,6 +1,6 @@
 ﻿namespace LXP.Common.ViewModels.QuizEngineViewModel
 {
-    public class LearnerAnswerDTO
+    public class LearnerAnswerViewModel
     {
         public Guid LearnerAnswerId { get; set; }
         public Guid LearnerAttemptId { get; set; }

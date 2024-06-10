@@ -1,16 +1,28 @@
-﻿using LXP.Common.ViewModels.QuizEngineViewModel;
-using System;
-using System.Collections.Generic;
+using LXP.Common.ViewModels.QuizEngineViewModel;
 
-public interface IQuizEngineService
+namespace LXP.Core.IServices
 {
-  
-    ViewQuizDetailsViewModel GetQuizById(Guid quizId);
-    IEnumerable<QEQuizQuestionViewModel> GetQuestionsForQuiz(Guid quizId);
-    Guid StartQuizAttempt(Guid learnerId, Guid quizId);
-    void SubmitAnswer(AnswerSubmissionModel answerSubmissionModel);
-    LearnerAttemptDetailsViewModel GetQuizAttemptDetails(Guid attemptId);
-    Guid RetakeQuiz(Guid learnerId, Guid quizId);
+    public interface IQuizEngineService
+    {
+        
+        Task<ViewQuizDetailsViewModel> GetQuizByIdAsync(Guid quizId);
+        Task<IEnumerable<QuizEngineQuestionViewModel>> GetQuestionsForQuizAsync(Guid quizId);
+        Task<Guid> StartQuizAttemptAsync(Guid learnerId, Guid quizId);
+        Task SubmitAnswerAsync(AnswerSubmissionModel answerSubmissionModel);
+        Task<Guid> RetakeQuizAsync(Guid learnerId, Guid quizId);
+        Task<ViewQuizDetailsViewModel> GetQuizDetailsByTopicIdAsync(Guid topicId);
+        Task SubmitQuizAttemptAsync(Guid attemptId);
 
-    ViewQuizDetailsViewModel GetQuizDetailsByTopicId(Guid topicId);
+
+        //
+        Task<LearnerQuizAttemptViewModel> GetLearnerQuizAttemptAsync(Guid attemptId);
+        Task<LearnerQuizAttemptResultViewModel> GetLearnerQuizAttemptResultAsync(Guid attemptId);
+        //new batch
+        Task SubmitAnswerBatchAsync(AnswerSubmissionBatchModel model);
+        //cache
+       Task CacheAnswersAsync(CachedAnswerSubmissionModel model);
+       Task SubmitCachedAnswersAsync(Guid learnerAttemptId);
+    }
+
+
 }
