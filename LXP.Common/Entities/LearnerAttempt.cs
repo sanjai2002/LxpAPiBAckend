@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 namespace LXP.Common.Entities;
+
 public partial class LearnerAttempt
 {
     public Guid LearnerAttemptId { get; set; }

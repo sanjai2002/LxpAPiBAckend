@@ -36,5 +36,8 @@ namespace LXP.Data.IRepository
         Task<List<LearnerProfile>> GetAllLearnerProfile();
         LearnerProfile GetLearnerprofileDetailsByLearnerprofileId(Guid ProfileId);
         Task UpdateProfile(LearnerProfile learnerProfile);
+        Guid GetProfileId(Guid learnerId);
+
+        Task<LearnerProfile> GetProfileByLearnerId(Guid learnerId);
     }
 }

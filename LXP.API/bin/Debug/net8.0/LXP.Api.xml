@@ -136,6 +136,11 @@
             Forget Password with Random passwordgenerator that sends to user Email 
             </summary>
         </member>
+        <member name="M:LXP.Api.Controllers.LearnerAttemptController.GetScoreByTopicIdAndLearnerId(System.String,System.String)">
+            <summary>
+             Getting score by Topic Id and Learner ID  ---------------Ruban code    
+            </summary>
+        </member>
         <member name="M:LXP.Api.Controllers.LearnerController.GetAllLearners">
             <summary>
             Getting All learners 

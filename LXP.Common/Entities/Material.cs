@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 namespace LXP.Common.Entities;
 
 public partial class Material
@@ -14,7 +15,7 @@ public partial class Material
 
     public string FilePath { get; set; } = null!;
 
-    public decimal Duration { get; set; }
+    public TimeOnly Duration { get; set; }
 
     public bool IsActive { get; set; }
 

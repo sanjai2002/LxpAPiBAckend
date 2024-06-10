@@ -2464,3 +2464,23 @@ System.InvalidOperationException: A second operation was started on this context
 2024-06-10 16:15:09.658 +05:30 [INF] Executed action LXP.Api.Controllers.LoginController.LoginLearner (LXP.Api) in 34.8086ms
 2024-06-10 16:15:09.660 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LoginController.LoginLearner (LXP.Api)'
 2024-06-10 16:15:09.662 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5199/api/Login/LoginLearner - 200 null application/json; charset=utf-8 67.2009ms
+2024-06-10 17:37:15.492 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-10 17:37:15.550 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-10 17:37:15.552 +05:30 [INF] Hosting environment: Development
+2024-06-10 17:37:15.555 +05:30 [INF] Content root path: D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api
+2024-06-10 17:37:18.788 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-10 17:37:20.561 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1785.7561ms
+2024-06-10 17:37:20.592 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-10 17:37:20.592 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-10 17:37:20.603 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 11.9812ms
+2024-06-10 17:37:20.680 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 88.5704ms
+2024-06-10 17:37:20.816 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-10 17:37:21.317 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 500.8329ms
+2024-06-10 17:37:48.600 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-10 17:37:48.661 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 61.1181ms
+2024-06-10 17:37:48.680 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-10 17:37:48.682 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-10 17:37:48.699 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 16.6727ms
+2024-06-10 17:37:48.733 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.4405ms
+2024-06-10 17:37:48.839 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-10 17:37:49.013 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 174.5012ms

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+
 namespace LXP.Common.Entities;
+
 public partial class QuestionOption
 {
     public Guid QuestionOptionId { get; set; }

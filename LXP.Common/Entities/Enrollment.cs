@@ -25,6 +25,8 @@ public partial class Enrollment
 
     public DateTime? ModifiedAt { get; set; }
 
+    public decimal? CourseCompletionPercentage { get; set; }
+
     public virtual Course Course { get; set; } = null!;
 
     public virtual Learner Learner { get; set; } = null!;

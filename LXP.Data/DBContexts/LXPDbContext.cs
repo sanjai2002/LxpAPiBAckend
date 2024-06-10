@@ -90,7 +90,9 @@ public partial class LXPDbContext : DbContext
                 .HasColumnName("created_at");
             entity.Property(e => e.CreatedBy).HasColumnName("created_by");
             entity.Property(e => e.Description).HasColumnName("description");
-            entity.Property(e => e.Duration).HasColumnName("duration");
+            entity.Property(e => e.Duration)
+                .HasColumnType("time")
+                .HasColumnName("duration");
             entity.Property(e => e.IsActive).HasColumnName("is_active");
             entity.Property(e => e.IsAvailable).HasColumnName("is_available");
             entity.Property(e => e.LevelId)
@@ -172,6 +174,7 @@ public partial class LXPDbContext : DbContext
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
             entity.Property(e => e.CompletedStatus).HasColumnName("completed_status");
+            entity.Property(e => e.CourseCompletionPercentage).HasPrecision(10, 2);
             entity.Property(e => e.CourseId)
                 .HasColumnName("course_id")
                 .UseCollation("ascii_general_ci")
@@ -459,6 +462,9 @@ public partial class LXPDbContext : DbContext
                 .HasColumnName("course_id")
                 .UseCollation("ascii_general_ci")
                 .HasCharSet("ascii");
+            entity.Property(e => e.CourseWatchtime)
+                .HasDefaultValueSql("_utf8mb4\\'00:00:00\\'")
+                .HasColumnType("time");
             entity.Property(e => e.IsWatched).HasColumnName("is_watched");
             entity.Property(e => e.LearnerId)
                 .HasColumnName("learner_id")
@@ -506,7 +512,9 @@ public partial class LXPDbContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("created_at");
             entity.Property(e => e.CreatedBy).HasColumnName("created_by");
-            entity.Property(e => e.Duration).HasColumnName("duration");
+            entity.Property(e => e.Duration)
+                .HasColumnType("time")
+                .HasColumnName("duration");
             entity.Property(e => e.FilePath).HasColumnName("file_path");
             entity.Property(e => e.IsActive).HasColumnName("is_active");
             entity.Property(e => e.IsAvailable).HasColumnName("is_available");

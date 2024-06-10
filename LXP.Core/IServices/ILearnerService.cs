@@ -19,6 +19,7 @@ namespace LXP.Core.IServices
         //Task<List<Learner>>Updateall
 
         Learner GetLearnerById(string id);
+        Task<LearnerAndProfileViewModel> LearnerGetLearnerById(string id);
     }
 }
 

@@ -217,3 +217,16 @@ D:\SKV\Capstone\Integration Sprint 6\Backend\Admin\LXP.Common\obj\Debug\net8.0\L
 D:\SKV\Capstone\Integration Sprint 6\Backend\Admin\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\Admin\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
 D:\SKV\Capstone\Integration Sprint 6\Backend\Admin\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\bin\Debug\net8.0\LXP.Common.deps.json
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\bin\Debug\net8.0\LXP.Common.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\bin\Debug\net8.0\LXP.Common.pdb
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.AssemblyInfo.cs
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.sourcelink.json
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\refint\LXP.Common.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\LXP.Common.pdb
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Common\obj\Debug\net8.0\ref\LXP.Common.dll

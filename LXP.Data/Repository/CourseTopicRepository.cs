@@ -64,5 +64,28 @@ namespace LXP.Data.Repository
         {
             return await _lXPDbContext.Topics.FindAsync(topicId);
         }
+
+        public async Task<Topic> GetTopicDetailsByTopicNameAndCourse(string topicName, Guid courseId)
+        {
+            return await _lXPDbContext.Topics.SingleAsync(topic => topic.Name == topicName && topic.CourseId == courseId);
+
+        }
+
+        public async Task<int> UpdateCourseTopic(Topic topic)
+        {
+            _lXPDbContext.Topics.Update(topic);
+
+            return await _lXPDbContext.SaveChangesAsync();
+        }
+
+        public async Task<List<Topic>> GetTopicsbycouresId(Guid courseId)
+        {
+            return await _lXPDbContext.Topics.Where(topic => topic.CourseId == courseId).ToListAsync();
+        }
+
+        public async Task<List<LearnerProgress>> GetTopicsbyLearnerId(Guid courseId, Guid LearnerId)
+        {
+            return await _lXPDbContext.LearnerProgresses.Where(learner => learner.CourseId == courseId && learner.LearnerId == LearnerId).ToListAsync();
+        }
     }
 }

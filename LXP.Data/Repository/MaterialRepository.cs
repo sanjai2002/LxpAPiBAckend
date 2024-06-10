@@ -38,12 +38,17 @@ namespace LXP.Data.Repository
             return _lXPDbContext.Materials.Include(material=>material.MaterialType).Include(material=>material.Topic).Where(material=>material.IsActive==true&&material.Topic==topic&& material.MaterialType==materialType).Include(material => material.Topic).Include(material => material.MaterialType).ToList();
 
         }
+        public async Task<Material> GetMaterialById(Guid materialId)
+        {
+            return await _lXPDbContext.Materials.FirstOrDefaultAsync(material => material.MaterialId == materialId);
+        }
+        public async Task<List<Material>> GetMaterialsByTopic(Guid topic)
+        {
+            return await _lXPDbContext.Materials.Where(material => material.TopicId == topic).ToListAsync();
+        }
 
-        
 
-        
 
-      
 
 
     }

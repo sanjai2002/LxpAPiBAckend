@@ -266,5 +266,30 @@ namespace LXP.Core.Services
 
         }
 
+        public async Task<LearnerAndProfileViewModel> LearnerGetLearnerById(string id)
+        {
+            var learnerId = Guid.Parse(id);
+            var learner = _learnerRepository.GetLearnerDetailsByLearnerId(learnerId);
+            var profile = await _profileRepository.GetProfileByLearnerId(learnerId);
+
+
+            var result = new LearnerAndProfileViewModel
+            {
+                Email = learner.Email,
+                Role = learner.Role,
+
+
+                FirstName = profile.FirstName,
+                LastName = profile.LastName,
+                Dob = profile.Dob.ToString(),
+                Gender = profile.Gender,
+                ContactNumber = profile.ContactNumber,
+                Stream = profile.Stream,
+
+            };
+
+            return result;
+        }
+
     }
 }

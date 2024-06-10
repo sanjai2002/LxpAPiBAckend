@@ -19,7 +19,7 @@ namespace LXP.Common.ViewModels
 
         public IFormFile Material { get; set; }
 
-        public decimal Duration { get; set; }
+        public TimeOnly Duration { get; set; }
 
         
         public string CreatedBy { get; set; } 

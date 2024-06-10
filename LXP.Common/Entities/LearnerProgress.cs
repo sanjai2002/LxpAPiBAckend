@@ -19,7 +19,9 @@ public partial class LearnerProgress
 
     public TimeOnly TotalTime { get; set; }
 
-    public bool IsWatched { get; set; }
+    public sbyte IsWatched { get; set; }
+
+    public TimeOnly CourseWatchtime { get; set; }
 
     public virtual Course Course { get; set; } = null!;
 

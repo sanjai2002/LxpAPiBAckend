@@ -13,6 +13,8 @@ namespace LXP.Data.IRepository
         Task AddMaterial(Material material);    //add
         Task<bool> AnyMaterialByMaterialNameAndTopic(string materialName,Topic topic);   
         Task<Material> GetMaterialByMaterialNameAndTopic(string materialName, Topic topic);
+        Task<Material> GetMaterialById(Guid materialId);
+        Task<List<Material>> GetMaterialsByTopic(Guid topic);
 
     }
 }

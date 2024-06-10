@@ -63,6 +63,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LXP.Common.Entities;
 using System.Runtime.InteropServices;
+using Microsoft.EntityFrameworkCore;
 
 namespace LXP.Data.Repository
 {
@@ -108,7 +109,19 @@ namespace LXP.Data.Repository
             _LXPDbContext.Entry(learnerProfile).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             await _LXPDbContext.SaveChangesAsync();
         }
+        public Guid GetProfileId(Guid learnerId)
+        {
+            return _LXPDbContext.LearnerProfiles
+                 .Where(x => x.LearnerId == learnerId)
+                 .Select(x => x.ProfileId)
+                 .FirstOrDefault();
 
+        }
+
+        public async Task<LearnerProfile> GetProfileByLearnerId(Guid learnerId)
+        {
+            return await _LXPDbContext.LearnerProfiles.FirstOrDefaultAsync(profile => profile.LearnerId == learnerId);
+        }
 
     }
 }

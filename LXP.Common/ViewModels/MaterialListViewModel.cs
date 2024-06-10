@@ -18,7 +18,7 @@ namespace LXP.Common.ViewModels
 
         public string FilePath { get; set; } = null!;
 
-        public decimal Duration { get; set; }
+        public TimeOnly Duration { get; set; }
 
         public bool IsActive { get; set; }
 

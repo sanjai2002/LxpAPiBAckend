@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dB6qEORrtU5PrbT2rOZZzGtGTn7EsonBHQOQwofA3ks=",
+  "Hash": "X/VOQ/gmAS7LTX8NoqsIgnf7a3gaeDQe+BRMZ9QgTGY=",
   "Source": "LXP.Api",
   "BasePath": "_content/LXP.Api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "LXP.Api\\wwwroot",
       "Source": "LXP.Api",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseMaterial\\04dbd3c6-d467-4f32-9365-194ac5d1753c_Captone-Flow Diagram.pdf",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseMaterial\\04dbd3c6-d467-4f32-9365-194ac5d1753c_Captone-Flow Diagram.pdf",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseMaterial/04dbd3c6-d467-4f32-9365-194ac5d1753c_Captone-Flow Diagram.pdf",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\CourseMaterial\\04dbd3c6-d467-4f32-9365-194ac5d1753c_Captone-Flow Diagram.pdf"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseMaterial/d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\04a5fade-45c9-4c71-80c6-88c52bb760fd_React1.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\04a5fade-45c9-4c71-80c6-88c52bb760fd_React1.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/04a5fade-45c9-4c71-80c6-88c52bb760fd_React1.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\04a5fade-45c9-4c71-80c6-88c52bb760fd_React1.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0e6e14d9-1b7a-4786-af04-54c669a5db58_test.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0e6e14d9-1b7a-4786-af04-54c669a5db58_test.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/0e6e14d9-1b7a-4786-af04-54c669a5db58_test.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\0e6e14d9-1b7a-4786-af04-54c669a5db58_test.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0ecfc1ce-0ab3-4387-8470-c92501dec2eb_js.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0ecfc1ce-0ab3-4387-8470-c92501dec2eb_js.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/0ecfc1ce-0ab3-4387-8470-c92501dec2eb_js.jfif",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\0ecfc1ce-0ab3-4387-8470-c92501dec2eb_js.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1bbee7b0-e5a5-4ad9-bcf6-d83f967eeed9_test.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1bbee7b0-e5a5-4ad9-bcf6-d83f967eeed9_test.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/1bbee7b0-e5a5-4ad9-bcf6-d83f967eeed9_test.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\1bbee7b0-e5a5-4ad9-bcf6-d83f967eeed9_test.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1bf69292-1abf-4693-a098-13d7ffbd53b8_Active.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1bf69292-1abf-4693-a098-13d7ffbd53b8_Active.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/1bf69292-1abf-4693-a098-13d7ffbd53b8_Active.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\1bf69292-1abf-4693-a098-13d7ffbd53b8_Active.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1c7a506f-a2dd-4b43-9bf7-f64a26f8d5b4_react.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1c7a506f-a2dd-4b43-9bf7-f64a26f8d5b4_react.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/1c7a506f-a2dd-4b43-9bf7-f64a26f8d5b4_react.jfif",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\1c7a506f-a2dd-4b43-9bf7-f64a26f8d5b4_react.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\24bcb106-4a94-48d4-ab41-4b24d7aa93ae_2.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\24bcb106-4a94-48d4-ab41-4b24d7aa93ae_2.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/24bcb106-4a94-48d4-ab41-4b24d7aa93ae_2.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\24bcb106-4a94-48d4-ab41-4b24d7aa93ae_2.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\27d75d9e-2940-46cc-9d73-517192d5149f_oops.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\27d75d9e-2940-46cc-9d73-517192d5149f_oops.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/27d75d9e-2940-46cc-9d73-517192d5149f_oops.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\27d75d9e-2940-46cc-9d73-517192d5149f_oops.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2a3b72cd-560d-4769-9d0e-37d1ea83a336_2.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2a3b72cd-560d-4769-9d0e-37d1ea83a336_2.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/2a3b72cd-560d-4769-9d0e-37d1ea83a336_2.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\2a3b72cd-560d-4769-9d0e-37d1ea83a336_2.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2ae1f28d-16c1-4d7b-9af6-eea0c6fa1063_html.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2ae1f28d-16c1-4d7b-9af6-eea0c6fa1063_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/2ae1f28d-16c1-4d7b-9af6-eea0c6fa1063_html.jfif",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\2ae1f28d-16c1-4d7b-9af6-eea0c6fa1063_html.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2dc05f88-8295-4422-b15f-2949cb81700b_html.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2dc05f88-8295-4422-b15f-2949cb81700b_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/2dc05f88-8295-4422-b15f-2949cb81700b_html.jfif",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\2dc05f88-8295-4422-b15f-2949cb81700b_html.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2f5351e3-46c0-474d-b189-8a00605578c5_C#.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2f5351e3-46c0-474d-b189-8a00605578c5_C#.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/2f5351e3-46c0-474d-b189-8a00605578c5_C#.jfif",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\2f5351e3-46c0-474d-b189-8a00605578c5_C#.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\31ec408f-787b-42ad-bf9b-e0a1274f0251_image (4).png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\31ec408f-787b-42ad-bf9b-e0a1274f0251_image (4).png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/31ec408f-787b-42ad-bf9b-e0a1274f0251_image (4).png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\31ec408f-787b-42ad-bf9b-e0a1274f0251_image (4).png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\3263ab63-549a-41fe-83b0-00f59731ce0f_java.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\3263ab63-549a-41fe-83b0-00f59731ce0f_java.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/3263ab63-549a-41fe-83b0-00f59731ce0f_java.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\3263ab63-549a-41fe-83b0-00f59731ce0f_java.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\33906549-ef2d-4fcb-b465-c599ae5e7c6c_agile.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\33906549-ef2d-4fcb-b465-c599ae5e7c6c_agile.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/33906549-ef2d-4fcb-b465-c599ae5e7c6c_agile.png",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\33906549-ef2d-4fcb-b465-c599ae5e7c6c_agile.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\3e1680ce-bf1c-4b65-9c9e-d39cd7c2e023_C#.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\3e1680ce-bf1c-4b65-9c9e-d39cd7c2e023_C#.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/3e1680ce-bf1c-4b65-9c9e-d39cd7c2e023_C#.jfif",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\3e1680ce-bf1c-4b65-9c9e-d39cd7c2e023_C#.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\45743d31-aa31-4c14-9d62-9a1c16d88012_deliver.jpg",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\45743d31-aa31-4c14-9d62-9a1c16d88012_deliver.jpg",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/45743d31-aa31-4c14-9d62-9a1c16d88012_deliver.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\45743d31-aa31-4c14-9d62-9a1c16d88012_deliver.jpg"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\4d7a27af-0827-4dce-ba22-c138b6c4d937_C#sss.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\4d7a27af-0827-4dce-ba22-c138b6c4d937_C#sss.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/4d7a27af-0827-4dce-ba22-c138b6c4d937_C#sss.jfif",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\4d7a27af-0827-4dce-ba22-c138b6c4d937_C#sss.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\5a68caa0-56c1-4a5b-a497-465e3c1e373d_angular1.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\5a68caa0-56c1-4a5b-a497-465e3c1e373d_angular1.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/5a68caa0-56c1-4a5b-a497-465e3c1e373d_angular1.png",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\5a68caa0-56c1-4a5b-a497-465e3c1e373d_angular1.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\6d3fc033-6e8a-4153-bb1e-c1a8a8d75594_html.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\6d3fc033-6e8a-4153-bb1e-c1a8a8d75594_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/6d3fc033-6e8a-4153-bb1e-c1a8a8d75594_html.jfif",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\6d3fc033-6e8a-4153-bb1e-c1a8a8d75594_html.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\783266c6-23f4-4f38-867d-e70cbb69c495_test.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\783266c6-23f4-4f38-867d-e70cbb69c495_test.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/783266c6-23f4-4f38-867d-e70cbb69c495_test.png",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\783266c6-23f4-4f38-867d-e70cbb69c495_test.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\7b2c518c-5deb-4e74-bd0c-f9f3ddbd24b7_oops.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\7b2c518c-5deb-4e74-bd0c-f9f3ddbd24b7_oops.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/7b2c518c-5deb-4e74-bd0c-f9f3ddbd24b7_oops.png",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\7b2c518c-5deb-4e74-bd0c-f9f3ddbd24b7_oops.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\7ca75b42-62c8-46fe-8427-64b0455f3dba_mysql.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\7ca75b42-62c8-46fe-8427-64b0455f3dba_mysql.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/7ca75b42-62c8-46fe-8427-64b0455f3dba_mysql.png",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\7ca75b42-62c8-46fe-8427-64b0455f3dba_mysql.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\7d761452-9c5f-4ec7-b1ed-ec37333b0750_C#.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\7d761452-9c5f-4ec7-b1ed-ec37333b0750_C#.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/7d761452-9c5f-4ec7-b1ed-ec37333b0750_C#.jfif",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\7d761452-9c5f-4ec7-b1ed-ec37333b0750_C#.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\8e3d7741-6443-4c0b-95e3-ef761f02bdb6_html.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\8e3d7741-6443-4c0b-95e3-ef761f02bdb6_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/8e3d7741-6443-4c0b-95e3-ef761f02bdb6_html.jfif",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\8e3d7741-6443-4c0b-95e3-ef761f02bdb6_html.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\9a68b3b0-e3b5-4577-8473-62c669245a85_C#.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\9a68b3b0-e3b5-4577-8473-62c669245a85_C#.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/9a68b3b0-e3b5-4577-8473-62c669245a85_C#.jfif",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\9a68b3b0-e3b5-4577-8473-62c669245a85_C#.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\9ee0f8d0-7e53-485c-9c24-79c68d60395f_agile.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\9ee0f8d0-7e53-485c-9c24-79c68d60395f_agile.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/9ee0f8d0-7e53-485c-9c24-79c68d60395f_agile.png",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\9ee0f8d0-7e53-485c-9c24-79c68d60395f_agile.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a3cfe1e8-4fb4-480e-89c1-6a5dc45fd33a_angular1.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a3cfe1e8-4fb4-480e-89c1-6a5dc45fd33a_angular1.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/a3cfe1e8-4fb4-480e-89c1-6a5dc45fd33a_angular1.png",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\a3cfe1e8-4fb4-480e-89c1-6a5dc45fd33a_angular1.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a67c9519-28e1-4ffa-8440-3c0b4e86ea3c_js.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a67c9519-28e1-4ffa-8440-3c0b4e86ea3c_js.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/a67c9519-28e1-4ffa-8440-3c0b4e86ea3c_js.jfif",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\a67c9519-28e1-4ffa-8440-3c0b4e86ea3c_js.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a7cb4f59-027e-4b78-aa86-a113223e1123_image (4).png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a7cb4f59-027e-4b78-aa86-a113223e1123_image (4).png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/a7cb4f59-027e-4b78-aa86-a113223e1123_image (4).png",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\a7cb4f59-027e-4b78-aa86-a113223e1123_image (4).png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a8f8ad7b-1519-4856-ab8a-4aa819bbdc77_Eco education-rafiki.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a8f8ad7b-1519-4856-ab8a-4aa819bbdc77_Eco education-rafiki.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/a8f8ad7b-1519-4856-ab8a-4aa819bbdc77_Eco education-rafiki.png",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\a8f8ad7b-1519-4856-ab8a-4aa819bbdc77_Eco education-rafiki.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\acfb5289-9486-46e7-aae0-5acd9a6b28d7_html.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\acfb5289-9486-46e7-aae0-5acd9a6b28d7_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/acfb5289-9486-46e7-aae0-5acd9a6b28d7_html.jfif",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\acfb5289-9486-46e7-aae0-5acd9a6b28d7_html.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\af114fe5-c0b3-494c-bb8a-a41e4a34f363_csscourse.jpg",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\af114fe5-c0b3-494c-bb8a-a41e4a34f363_csscourse.jpg",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/af114fe5-c0b3-494c-bb8a-a41e4a34f363_csscourse.jpg",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\af114fe5-c0b3-494c-bb8a-a41e4a34f363_csscourse.jpg"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\b3ac4c46-1a09-4c69-b1b0-050c2014df5e_C#.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\b3ac4c46-1a09-4c69-b1b0-050c2014df5e_C#.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/b3ac4c46-1a09-4c69-b1b0-050c2014df5e_C#.jfif",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\b3ac4c46-1a09-4c69-b1b0-050c2014df5e_C#.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\bf5b770e-c5b2-499b-a4a3-fa609d2e20ea_java.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\bf5b770e-c5b2-499b-a4a3-fa609d2e20ea_java.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/bf5b770e-c5b2-499b-a4a3-fa609d2e20ea_java.png",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\bf5b770e-c5b2-499b-a4a3-fa609d2e20ea_java.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c3428ad2-9ffa-4808-8988-18ea22acda73_html.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c3428ad2-9ffa-4808-8988-18ea22acda73_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/c3428ad2-9ffa-4808-8988-18ea22acda73_html.jfif",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\c3428ad2-9ffa-4808-8988-18ea22acda73_html.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c3765e23-0784-4844-947e-bcf314b99c17_React1.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c3765e23-0784-4844-947e-bcf314b99c17_React1.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/c3765e23-0784-4844-947e-bcf314b99c17_React1.png",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\c3765e23-0784-4844-947e-bcf314b99c17_React1.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c6167da4-fef9-4b12-bcbc-268d45d2c3ad_test.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c6167da4-fef9-4b12-bcbc-268d45d2c3ad_test.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/c6167da4-fef9-4b12-bcbc-268d45d2c3ad_test.png",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\c6167da4-fef9-4b12-bcbc-268d45d2c3ad_test.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c8de83ed-9e93-479f-9bfa-5163fd3dd86c_css.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c8de83ed-9e93-479f-9bfa-5163fd3dd86c_css.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/c8de83ed-9e93-479f-9bfa-5163fd3dd86c_css.png",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\c8de83ed-9e93-479f-9bfa-5163fd3dd86c_css.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d4e6895d-b631-425c-827c-be2d19888c25_image (4).png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d4e6895d-b631-425c-827c-be2d19888c25_image (4).png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/d4e6895d-b631-425c-827c-be2d19888c25_image (4).png",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\d4e6895d-b631-425c-827c-be2d19888c25_image (4).png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d7fc7d19-9de2-41af-9198-949892a353bf_image (4).png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d7fc7d19-9de2-41af-9198-949892a353bf_image (4).png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/d7fc7d19-9de2-41af-9198-949892a353bf_image (4).png",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\d7fc7d19-9de2-41af-9198-949892a353bf_image (4).png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d84810d7-4b96-47b0-8c2c-66f4761d4cd5_images.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d84810d7-4b96-47b0-8c2c-66f4761d4cd5_images.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/d84810d7-4b96-47b0-8c2c-66f4761d4cd5_images.png",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\d84810d7-4b96-47b0-8c2c-66f4761d4cd5_images.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d9eb04de-0f26-4442-86ab-b8c2f09538f4_react.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d9eb04de-0f26-4442-86ab-b8c2f09538f4_react.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/d9eb04de-0f26-4442-86ab-b8c2f09538f4_react.jfif",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\d9eb04de-0f26-4442-86ab-b8c2f09538f4_react.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\db7b04a6-2ca7-4e20-8d1c-87b3f5462dd7_deliver.jpg",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\db7b04a6-2ca7-4e20-8d1c-87b3f5462dd7_deliver.jpg",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/db7b04a6-2ca7-4e20-8d1c-87b3f5462dd7_deliver.jpg",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\db7b04a6-2ca7-4e20-8d1c-87b3f5462dd7_deliver.jpg"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\dcc88a1b-f22a-4db4-a907-baf23d9ad0da_Active.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\dcc88a1b-f22a-4db4-a907-baf23d9ad0da_Active.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/dcc88a1b-f22a-4db4-a907-baf23d9ad0da_Active.png",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\dcc88a1b-f22a-4db4-a907-baf23d9ad0da_Active.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\e1b95b88-d0c9-4a64-a5bc-8b577abe3f88_html.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\e1b95b88-d0c9-4a64-a5bc-8b577abe3f88_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/e1b95b88-d0c9-4a64-a5bc-8b577abe3f88_html.jfif",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\e1b95b88-d0c9-4a64-a5bc-8b577abe3f88_html.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\eaa9cbca-9440-46f3-a71a-26d7831ad935_Milo.jpg",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\eaa9cbca-9440-46f3-a71a-26d7831ad935_Milo.jpg",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/eaa9cbca-9440-46f3-a71a-26d7831ad935_Milo.jpg",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\eaa9cbca-9440-46f3-a71a-26d7831ad935_Milo.jpg"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\ebb0860e-98ca-4e72-9409-1e55fbb4a7eb_Eco education-rafiki.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\ebb0860e-98ca-4e72-9409-1e55fbb4a7eb_Eco education-rafiki.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/ebb0860e-98ca-4e72-9409-1e55fbb4a7eb_Eco education-rafiki.png",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\ebb0860e-98ca-4e72-9409-1e55fbb4a7eb_Eco education-rafiki.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\ed21ce31-b535-43f6-a64f-73ff560d58dd_cobol.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\ed21ce31-b535-43f6-a64f-73ff560d58dd_cobol.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/ed21ce31-b535-43f6-a64f-73ff560d58dd_cobol.png",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\ed21ce31-b535-43f6-a64f-73ff560d58dd_cobol.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f1e66adb-e2a2-4de3-b61c-eaf8dd33ce62_html.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f1e66adb-e2a2-4de3-b61c-eaf8dd33ce62_html.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/f1e66adb-e2a2-4de3-b61c-eaf8dd33ce62_html.jfif",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\f1e66adb-e2a2-4de3-b61c-eaf8dd33ce62_html.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "CourseThumbnailImages/f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "Images/7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\12000.jpg",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\12000.jpg",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/12000.jpg",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\12000.jpg"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\4802eb25-3e8a-4a2f-8898-e5575d4ee1c3_404 error with people holding the numbers.gif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\4802eb25-3e8a-4a2f-8898-e5575d4ee1c3_404 error with people holding the numbers.gif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/4802eb25-3e8a-4a2f-8898-e5575d4ee1c3_404 error with people holding the numbers.gif",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\4802eb25-3e8a-4a2f-8898-e5575d4ee1c3_404 error with people holding the numbers.gif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\asha.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\asha.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/asha.jfif",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\asha.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\cff310f0-fd07-46c6-a3a7-d6b89976701e_sanjai.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\cff310f0-fd07-46c6-a3a7-d6b89976701e_sanjai.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/cff310f0-fd07-46c6-a3a7-d6b89976701e_sanjai.png",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\cff310f0-fd07-46c6-a3a7-d6b89976701e_sanjai.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\Harini.png",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\Harini.png",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/Harini.png",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\Harini.png"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\kavin.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\kavin.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/kavin.jfif",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\kavin.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\Laevi.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\Laevi.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/Laevi.jfif",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\Laevi.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\mano.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\mano.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/mano.jfif",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\mano.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\nithya.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\nithya.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/nithya.jfif",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\nithya.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\priya.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\priya.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/priya.jfif",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\priya.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\rajkumar.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\rajkumar.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/rajkumar.jfif",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\rajkumar.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\ruban.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\ruban.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/ruban.jfif",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\LearnerProfileImages\\ruban.jfif"
     },
     {
-      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\LearnerProfileImages\\sneha.jfif",
+      "Identity": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\LearnerProfileImages\\sneha.jfif",
       "SourceId": "LXP.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\Admin\\LXP.Api\\wwwroot\\",
+      "ContentRoot": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Api\\wwwroot\\",
       "BasePath": "_content/LXP.Api",
       "RelativePath": "LearnerProfileImages/sneha.jfif",
       "AssetKind": "All",
