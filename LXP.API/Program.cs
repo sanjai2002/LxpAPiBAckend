@@ -61,6 +61,13 @@ builder.Services.AddScoped<IUserReportRepository, UserReportRepository>();
 //Learner
 builder.Services.AddScoped<ILearnerServices, LearnerServices>();
 builder.Services.AddScoped<ILearnerRepository, LearnerRepository>();
+builder.Services.AddScoped<ILearnerDashboardService, LearnerDashboardService>();
+builder.Services.AddScoped<ILearnerDashboardRepository, LearnerDashboardRepository>();
+builder.Services.AddScoped<ILearnerAttemptServices, LearnerAttemptServices>();
+builder.Services.AddScoped<ILearnerAttemptRepository, LearnerAttemptRepository>();
+builder.Services.AddScoped<ILearnerProgressRepository, LearnerProgressRepository>();
+builder.Services.AddScoped<ILearnerProgressService, LearnerProgressService>();
+
 
 builder.Services.AddScoped<LXPDbContext>();
 

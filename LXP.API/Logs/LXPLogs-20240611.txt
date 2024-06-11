@@ -1,0 +1,69 @@
+2024-06-11 09:01:22.587 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-11 09:01:22.738 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 09:01:22.741 +05:30 [INF] Hosting environment: Development
+2024-06-11 09:01:22.750 +05:30 [INF] Content root path: D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api
+2024-06-11 09:01:32.126 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-11 09:01:33.439 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-bundle.js - null null
+2024-06-11 09:01:33.439 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-standalone-preset.js - null null
+2024-06-11 09:01:33.439 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui.css - null null
+2024-06-11 09:01:33.440 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1325.7088ms
+2024-06-11 09:01:33.486 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-11 09:01:33.480 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-11 09:01:33.504 +05:30 [INF] The file /swagger-ui-bundle.js was not modified
+2024-06-11 09:01:33.504 +05:30 [INF] The file /swagger-ui.css was not modified
+2024-06-11 09:01:33.504 +05:30 [INF] The file /swagger-ui-standalone-preset.js was not modified
+2024-06-11 09:01:33.522 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui.css - 304 null text/css 83.3485ms
+2024-06-11 09:01:33.541 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-standalone-preset.js - 304 null text/javascript 102.0051ms
+2024-06-11 09:01:33.522 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/swagger-ui-bundle.js - 304 null text/javascript 83.1029ms
+2024-06-11 09:01:33.524 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 44.3171ms
+2024-06-11 09:01:33.616 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 136.9839ms
+2024-06-11 09:01:34.000 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-11 09:01:34.474 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 473.6567ms
+2024-06-11 09:02:11.414 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/LearnerDashboard/49ee0ef9-3000-4c0c-8db7-dff5bc36272b - null null
+2024-06-11 09:02:11.476 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-11 09:02:11.490 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerDashboardController.GetLearnerDashboard (LXP.Api)'
+2024-06-11 09:02:11.557 +05:30 [INF] Route matched with {action = "GetLearnerDashboard", controller = "LearnerDashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerDashboard(System.Guid) on controller LXP.Api.Controllers.LearnerDashboardController (LXP.Api).
+2024-06-11 09:02:11.588 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerDashboardController.GetLearnerDashboard (LXP.Api) in 10.7185ms
+2024-06-11 09:02:11.593 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerDashboardController.GetLearnerDashboard (LXP.Api)'
+2024-06-11 09:02:11.740 +05:30 [ERR] Unable to resolve service for type 'LXP.Core.IServices.ILearnerDashboardService' while attempting to activate 'LXP.Api.Controllers.LearnerDashboardController'.
+System.InvalidOperationException: Unable to resolve service for type 'LXP.Core.IServices.ILearnerDashboardService' while attempting to activate 'LXP.Api.Controllers.LearnerDashboardController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method4(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at GlobalExceptionHandlerMiddleware.InvokeAsync(HttpContext context) in D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api\Interceptors\GlobalExceptionHandlerMiddleware.cs:line 23
+2024-06-11 09:02:12.405 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/LearnerDashboard/49ee0ef9-3000-4c0c-8db7-dff5bc36272b - 500 null application/json 990.9927ms
+2024-06-11 09:04:19.327 +05:30 [INF] Now listening on: http://localhost:5199
+2024-06-11 09:04:19.392 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-11 09:04:19.396 +05:30 [INF] Hosting environment: Development
+2024-06-11 09:04:19.398 +05:30 [INF] Content root path: D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api
+2024-06-11 09:04:27.056 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/index.html - null null
+2024-06-11 09:04:28.165 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/index.html - 200 null text/html;charset=utf-8 1131.5452ms
+2024-06-11 09:04:28.197 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - null null
+2024-06-11 09:04:28.202 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/_vs/browserLink - null null
+2024-06-11 09:04:28.225 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 28.2531ms
+2024-06-11 09:04:28.323 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.9183ms
+2024-06-11 09:04:28.839 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - null null
+2024-06-11 09:04:29.332 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 496.3162ms
+2024-06-11 09:04:46.989 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/LearnerDashboard/49ee0ef9-3000-4c0c-8db7-dff5bc36272b - null null
+2024-06-11 09:04:47.019 +05:30 [WRN] Failed to determine the https port for redirect.
+2024-06-11 09:04:47.033 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerDashboardController.GetLearnerDashboard (LXP.Api)'
+2024-06-11 09:04:47.106 +05:30 [INF] Route matched with {action = "GetLearnerDashboard", controller = "LearnerDashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerDashboard(System.Guid) on controller LXP.Api.Controllers.LearnerDashboardController (LXP.Api).
+2024-06-11 09:04:52.867 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-11 09:04:52.928 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerDashboardController.GetLearnerDashboard (LXP.Api) in 5834.3314ms
+2024-06-11 09:04:52.937 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerDashboardController.GetLearnerDashboard (LXP.Api)'
+2024-06-11 09:04:52.945 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/LearnerDashboard/49ee0ef9-3000-4c0c-8db7-dff5bc36272b - 200 null application/json; charset=utf-8 5990.5707ms
+2024-06-11 09:05:08.673 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5199/lxp/learner/LearnerDashboard/a2b7a936-9809-4128-bc3e-e69a1dc48d3b - null null
+2024-06-11 09:05:08.694 +05:30 [INF] Executing endpoint 'LXP.Api.Controllers.LearnerDashboardController.GetLearnerDashboard (LXP.Api)'
+2024-06-11 09:05:08.698 +05:30 [INF] Route matched with {action = "GetLearnerDashboard", controller = "LearnerDashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetLearnerDashboard(System.Guid) on controller LXP.Api.Controllers.LearnerDashboardController (LXP.Api).
+2024-06-11 09:05:08.730 +05:30 [INF] Executing OkObjectResult, writing value of type 'LXP.Common.ViewModels.APIResponse'.
+2024-06-11 09:05:08.739 +05:30 [INF] Executed action LXP.Api.Controllers.LearnerDashboardController.GetLearnerDashboard (LXP.Api) in 30.8754ms
+2024-06-11 09:05:08.745 +05:30 [INF] Executed endpoint 'LXP.Api.Controllers.LearnerDashboardController.GetLearnerDashboard (LXP.Api)'
+2024-06-11 09:05:08.756 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5199/lxp/learner/LearnerDashboard/a2b7a936-9809-4128-bc3e-e69a1dc48d3b - 200 null application/json; charset=utf-8 83.1288ms
