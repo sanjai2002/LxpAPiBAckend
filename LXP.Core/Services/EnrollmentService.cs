@@ -108,6 +108,18 @@ namespace LXP.Core.Services
         {
             return _enrollmentRepository.GetEnrolledInprogressLearnerbyCourseId(courseId);
         }
+
+        public async Task<bool> DeleteEnrollment(Guid enrollmentId)
+        {
+            var enrollment = _enrollmentRepository.FindEnrollmentId(enrollmentId);
+            if (enrollment != null)
+            {
+
+                _enrollmentRepository.DeleteEnrollment(enrollment);
+                return true;
+            }
+            return false;
+        }
     }
 
 

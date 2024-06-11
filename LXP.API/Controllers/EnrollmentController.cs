@@ -82,5 +82,17 @@ namespace LXP.Api.Controllers
             return Ok(CreateSuccessResponse(users));
         }
 
+        [HttpDelete("lxp/enroll/delete/{enrollmentId}")]
+        public async Task<IActionResult> DeleteEnrollment(Guid enrollmentId)
+        {
+            bool enrollment = await _enrollmentService.DeleteEnrollment(enrollmentId);
+
+            if (enrollment == true)
+            {
+                return Ok(CreateSuccessResponse(enrollment));
+            }
+            return Ok(CreateFailureResponse("Enrollment Id is not found", 400));
+        }
+
     }
 }

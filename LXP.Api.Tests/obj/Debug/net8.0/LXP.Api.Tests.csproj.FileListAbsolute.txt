@@ -3306,7 +3306,6 @@ D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\n
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\LXP.Api.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\LXP.Common.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\LXP.Core.dll
@@ -3328,3 +3327,12 @@ D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\obj\Debug\n
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\obj\Debug\net8.0\LXP.Api.Tests.pdb
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\obj\Debug\net8.0\LXP.Api.Tests.genruntimeconfig.cache
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\obj\Debug\net8.0\ref\LXP.Api.Tests.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\Spire.Pdf.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\HarfBuzzSharp.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\Spire.Doc.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\Spire.Presentation.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll

@@ -100,6 +100,11 @@
             <response code="200">Success</response>
             <response code="405">Internal server Error</response>
         </member>
+        <member name="M:LXP.Api.Controllers.CourseController.GetAllCourseDetails">
+            <summary>
+            Fetch all the course
+            </summary>
+        </member>
         <member name="M:LXP.Api.Controllers.DashboardController.GetEnrollmentMonth(System.String)">
             <summary>
             getting total number of enrollments according to month
@@ -388,6 +393,11 @@
         <member name="M:LXP.Api.Controllers.RegistrationController.VerifyOTP(System.String,System.String)">
             <summary>
             verifying the OTP by entering the email Id
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.LearnerGetLearnerById(System.String)">
+            <summary>
+            Fetching particular Learner details and Profile details using Learner Id
             </summary>
         </member>
         <member name="M:LXP.Api.Controllers.TopicFeedbackController.AddFeedbackQuestion(LXP.Common.ViewModels.TopicFeedbackQuestionViemModel.TopicFeedbackQuestionViewModel)">

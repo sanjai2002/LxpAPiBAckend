@@ -230,5 +230,21 @@ namespace LXP.Core.Services
         {
             return _courseRepository.GetLimitedCourse();
         }
+
+        public IEnumerable<CourseListViewModel> GetAllCourseDetails()
+        {
+            return _courseRepository.GetAllCourseDetails();
+        }
+
+
+        public async Task<dynamic> GetAllCourseDetailsByLearnerId(string learnerId)
+        {
+
+            Guid LearnerId = Guid.Parse(learnerId);
+            var Courses = _courseRepository.GetAllCourseDetailsByLearnerId(LearnerId);
+            return Courses;
+
+
+        }
     }
 }

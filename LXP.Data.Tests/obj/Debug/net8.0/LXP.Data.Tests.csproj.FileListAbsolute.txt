@@ -3284,7 +3284,6 @@ D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
@@ -3315,10 +3314,7 @@ D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\LXP.Common.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\LXP.Data.dll
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\LXP.Data.pdb
@@ -3335,3 +3331,15 @@ D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\obj\Debug\
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\obj\Debug\net8.0\LXP.Data.Tests.pdb
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\obj\Debug\net8.0\LXP.Data.Tests.genruntimeconfig.cache
 D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\obj\Debug\net8.0\ref\LXP.Data.Tests.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\Spire.Doc.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\Spire.Pdf.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\HarfBuzzSharp.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\Spire.Presentation.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\osx\native\libHarfBuzzSharp.dylib
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win-arm64\native\libHarfBuzzSharp.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win-x64\native\libHarfBuzzSharp.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win-x86\native\libHarfBuzzSharp.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll

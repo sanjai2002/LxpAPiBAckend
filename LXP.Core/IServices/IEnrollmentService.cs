@@ -19,5 +19,7 @@ namespace LXP.Core.IServices
         public IEnumerable<EnrollmentReportViewModel> GetEnrolledInprogressLearnerbyCourseId(Guid courseId);
         public IEnumerable<EnrollmentReportViewModel> GetEnrolledCompletedLearnerbyCourseId(Guid courseId);
 
+        Task<bool> DeleteEnrollment(Guid enrollmentId);
+
     }
 }

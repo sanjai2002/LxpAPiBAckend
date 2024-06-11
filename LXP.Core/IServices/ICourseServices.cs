@@ -22,5 +22,8 @@ namespace LXP.Core.IServices
 
         IEnumerable<CourseDetailsViewModel> GetAllCourse();
         IEnumerable<CourseDetailsViewModel> GetLimitedCourse();
+        IEnumerable<CourseListViewModel> GetAllCourseDetails();
+
+        Task<dynamic> GetAllCourseDetailsByLearnerId(string learnerId);
     }
 }

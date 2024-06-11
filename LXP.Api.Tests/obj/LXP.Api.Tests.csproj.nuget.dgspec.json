@@ -175,6 +175,10 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Spire.Doc": {
+              "target": "Package",
+              "version": "[12.6.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.1, )"
@@ -400,6 +404,14 @@
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"
+            },
+            "FreeSpire.Doc": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "FreeSpire.Presentation": {
+              "target": "Package",
+              "version": "[7.8.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

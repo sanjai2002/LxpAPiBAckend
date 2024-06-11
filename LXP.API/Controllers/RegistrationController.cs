@@ -383,6 +383,16 @@ namespace LXP.Api.Controllers
 
             return Ok("Password updated successfully");
         }
+
+        ///<summary>
+        ///Fetching particular Learner details and Profile details using Learner Id
+        ///</summary>
+        [HttpGet("/lxp/view/getlearner/{id}")]
+        public async Task<IActionResult> LearnerGetLearnerById(string id)
+        {
+            var learnerWithProfile = await _learnerServices.LearnerGetLearnerById(id);
+            return Ok(CreateSuccessResponse(learnerWithProfile));
+        }
     }
 }
 

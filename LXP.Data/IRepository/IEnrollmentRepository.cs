@@ -20,5 +20,8 @@ namespace LXP.Data.IRepository
         public IEnumerable<EnrollmentReportViewModel> GetEnrolledInprogressLearnerbyCourseId(Guid courseId);
         public IEnumerable<EnrollmentReportViewModel> GetEnrolledCompletedLearnerbyCourseId(Guid courseId);
 
+        Enrollment FindEnrollmentId(Guid enrollmentId);
+        Task DeleteEnrollment(Enrollment enrollment);
+
     }
 }

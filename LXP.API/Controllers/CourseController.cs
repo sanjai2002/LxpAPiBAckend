@@ -131,6 +131,25 @@ namespace LXP.Api.Controllers
             return Ok(CreateSuccessResponse(course));
         }
 
+        ///<summary>
+        ///Fetch all the course
+        ///</summary>
 
+        [HttpGet("/lxp/view/course")]
+
+        public IActionResult GetAllCourseDetails()
+        {
+            var course = _courseServices.GetAllCourseDetails();
+            return Ok(CreateSuccessResponse(course));
+
+        }
+
+        [HttpGet("/lxp/view/Getallcoursebylearnerid/{learnerId}")]
+
+        public async Task<IActionResult> GetAllCourseDetailsByLearnerId(string learnerId)
+        {
+            var Courses = _courseServices.GetAllCourseDetailsByLearnerId(learnerId);
+            return Ok(CreateSuccessResponse(Courses));
+        }
     }
 }

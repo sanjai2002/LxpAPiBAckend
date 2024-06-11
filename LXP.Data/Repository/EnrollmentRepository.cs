@@ -6,8 +6,11 @@ using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using Spire.Presentation;
+using Spire.Doc;
 
 namespace LXP.Data.Repository
 {
@@ -171,5 +174,53 @@ namespace LXP.Data.Repository
                 .ToList();
             return InprogressLearner;
         }
+
+        public Enrollment FindEnrollmentId(Guid enrollmentId)
+        {
+            return _lXPDbContext.Enrollments.Find(enrollmentId);
+        }
+
+        public async Task DeleteEnrollment(Enrollment enrollment)
+        {
+            _lXPDbContext.Enrollments.Remove(enrollment);
+            await _lXPDbContext.SaveChangesAsync();
+
+        }
+        public static string ConvertPptToPdf(string pptFilePath, IWebHostEnvironment environment, IHttpContextAccessor contextAccessor)
+        {
+            // Assuming 'pptFilePath' is a relative path like "CourseMaterial/file.pptx"
+            string webRootPath = environment.WebRootPath;
+
+            // Correct the file path by removing the URL part and ensuring proper separators
+            string correctedFilePath = pptFilePath.Replace("http://localhost:5199/wwwroot/", "").Replace("/", "\\");
+            string fullFilePath = Path.Combine(webRootPath, correctedFilePath);
+
+            // Check if the file exists
+            if (!File.Exists(fullFilePath))
+            {
+                throw new FileNotFoundException($"The file was not found: {fullFilePath}");
+            }
+            // Initialize a new Presentation object
+            Presentation presentation = new Presentation();
+
+            // Load the PPT file
+            presentation.LoadFromFile(fullFilePath);
+
+            // Define the output PDF file path
+            string pdfFilePath = Path.ChangeExtension(fullFilePath, ".pdf");
+
+
+            // Save the presentation as a PDF
+            presentation.SaveToFile(pdfFilePath, Spire.Presentation.FileFormat.PDF);
+
+            // Return the relative path for the PDF to be used as a URL
+            string relativePdfPath = pdfFilePath.Replace(webRootPath, "").Replace("\\", "/");
+            return $"{contextAccessor.HttpContext.Request.Scheme}://{contextAccessor.HttpContext.Request.Host}{contextAccessor.HttpContext.Request.PathBase}/wwwroot{relativePdfPath}";
+        }
+
+
+       
+
+
     }
 }
