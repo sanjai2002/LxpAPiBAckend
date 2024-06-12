@@ -141,7 +141,7 @@
             Forget Password with Random passwordgenerator that sends to user Email 
             </summary>
         </member>
-        <member name="M:LXP.Api.Controllers.LearnerAttemptController.GetScoreByTopicIdAndLearnerId(System.String,System.String)">
+        <member name="M:LXP.Api.Controllers.LearnerAttemptController.GetScoreByTopicIdAndLearnerId(System.String)">
             <summary>
              Getting score by Topic Id and Learner ID  ---------------Ruban code    
             </summary>
@@ -169,6 +169,28 @@
             <summary>
             Login for Leaners along with their Role (Admin and User)
             </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.MaterialController.UpdateMaterial(LXP.Common.ViewModels.MaterialUpdateViewModel)">
+            <summary>
+             updating the material
+            </summary>
+              ///<response code="200">Success</response>
+            <response code="422">Sourse is already exists</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.MaterialController.DeleteCourseMaterial(System.String)">
+            <summary>
+             deleting the material using materialId
+            </summary>
+                    /// ///<response code="200">Success</response>
+            <response code="500">Internal server Error</response>
+        </member>
+        <member name="M:LXP.Api.Controllers.MaterialController.GetMaterialByMaterialId(System.String)">
+            <summary>
+             getting the particular material using materialId
+            </summary>
+             ///<response code="200">Success</response>
+            <response code="500">Internal server Error</response>
         </member>
         <member name="T:LXP.Api.Controllers.QuizController">
             <summary>
@@ -398,6 +420,11 @@
         <member name="M:LXP.Api.Controllers.RegistrationController.LearnerGetLearnerById(System.String)">
             <summary>
             Fetching particular Learner details and Profile details using Learner Id
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.GetProfile(System.Guid)">
+            <summary>
+            Get profile id by learner id Ruban
             </summary>
         </member>
         <member name="M:LXP.Api.Controllers.TopicFeedbackController.AddFeedbackQuestion(LXP.Common.ViewModels.TopicFeedbackQuestionViemModel.TopicFeedbackQuestionViewModel)">

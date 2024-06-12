@@ -22,9 +22,9 @@ namespace LXP.Api.Controllers
         /// </summary>
         
         [HttpGet]
-        public IActionResult GetScoreByTopicIdAndLearnerId(string TopicId,string LearnerId)
+        public IActionResult GetScoreByTopicIdAndLearnerId(string LearnerId)
         {
-            return Ok(CreateSuccessResponse(_services.GetScoreByTopicIdAndLernerId(TopicId,LearnerId)));
+            return Ok(CreateSuccessResponse(_services.GetScoreByTopicIdAndLernerId(LearnerId)));
         }
 
 

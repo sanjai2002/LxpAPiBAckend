@@ -34,15 +34,19 @@ namespace LXP.Api.Controllers
 
 
         //}
-
-
         [HttpPost("/lxp/course/learner/learnerprogress")]
-
         public async Task<IActionResult> MaterialProgress(ProgressViewModel learnerProgress)
         {
             var result = await _Progress.LearnerProgress(learnerProgress);
             return Ok(result);
         }
+        [HttpGet("/lxp/course/learner/learnerprogress/watchtime")]
+        public async Task<IActionResult> GetLearnerProgressByLearnerIdAndMaterialId(string LearnerId, string MaterialId)
+        {
+            return Ok(CreateSuccessResponse(await _Progress.GetLearnerProgressByLearnerIdAndMaterialId(LearnerId, MaterialId)));
+        }
+
+        
 
 
 
@@ -51,12 +55,12 @@ namespace LXP.Api.Controllers
         //{
         //    await _Progress.CalculateMaterialCompletionPercentageAsync(learnerId, courseId);
         //}
-        [HttpPost("/lxp/learner/learnerprogressWatchTime")]
-        public async Task<IActionResult> MaterialWatchTime(Guid learnerId, Guid materialId, TimeOnly watchtime)
-        {
-            double percentage = await _Progress.materialWatchTime(learnerId, materialId, watchtime);
-            return Ok(percentage);
-        }
+        //[HttpPost("/lxp/learner/learnerprogressWatchTime")]
+        //public async Task<IActionResult> MaterialWatchTime(Guid learnerId, Guid materialId, TimeOnly watchtime)
+        //{
+        //    var percentage = await _Progress.materialWatchTime(learnerId, materialId, watchtime);
+        //    return Ok(percentage);
+        //}
 
         [HttpPost("calculate-course-completion/{learnerId}")]
         public async Task<IActionResult> CalculateCourseCompletion(Guid learnerId)

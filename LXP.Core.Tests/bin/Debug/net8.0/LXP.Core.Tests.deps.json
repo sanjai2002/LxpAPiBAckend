@@ -153,6 +153,10 @@
           "lib/net6.0/Spire.Pdf.dll": {
             "assemblyVersion": "8.7.9.0",
             "fileVersion": "8.7.9.1360"
+          },
+          "lib/net6.0/Spire.Presentation.dll": {
+            "assemblyVersion": "7.8.0.0",
+            "fileVersion": "7.8.0.6350"
           }
         }
       },
@@ -994,19 +998,6 @@
           }
         }
       },
-      "Spire.Presentation/9.5.3": {
-        "dependencies": {
-          "System.Drawing.Common": "7.0.0",
-          "System.Security.Cryptography.Xml": "6.0.0",
-          "System.Text.Encoding.CodePages": "8.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/Spire.Presentation.dll": {
-            "assemblyVersion": "9.5.3.0",
-            "fileVersion": "9.5.3.6350"
-          }
-        }
-      },
       "System.Buffers/4.5.1": {},
       "System.CodeDom/4.7.0": {
         "runtime": {
@@ -1424,6 +1415,8 @@
       "LXP.Common/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "11.3.0",
+          "FreeSpire.Doc": "12.2.0",
+          "FreeSpire.Presentation": "7.8.0",
           "Microsoft.AspNetCore.Http": "2.2.2"
         },
         "runtime": {
@@ -1452,8 +1445,7 @@
           "Microsoft.EntityFrameworkCore.Relational": "8.0.2",
           "MySql.EntityFrameworkCore": "8.0.0",
           "Pomelo.EntityFrameworkCore.MySql": "8.0.0",
-          "Serilog.AspNetCore": "8.0.1",
-          "Spire.Presentation": "9.5.3"
+          "Serilog.AspNetCore": "8.0.1"
         },
         "runtime": {
           "LXP.Data.dll": {}
@@ -2040,13 +2032,6 @@
       "sha512": "sha512-uwV5hdhWPwUH1szhO8PJpFiahqXmzPzJT/sOijH/kFgUx+cyoDTMM8MHD0adw9+Iem6itoibbUXHYslzXsLEAg==",
       "path": "serilog.sinks.file/5.0.0",
       "hashPath": "serilog.sinks.file.5.0.0.nupkg.sha512"
-    },
-    "Spire.Presentation/9.5.3": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-yx++LD1aZJR8aEo8U79dUh8iNkZsRECx6YVDwwhVm5dV6I5u5pvVTSui2N2SChjiDDQH9KN8/Lza9IApnHjWbg==",
-      "path": "spire.presentation/9.5.3",
-      "hashPath": "spire.presentation.9.5.3.nupkg.sha512"
     },
     "System.Buffers/4.5.1": {
       "type": "package",

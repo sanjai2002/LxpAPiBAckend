@@ -33,6 +33,10 @@ namespace LXP.Data.Repository
         {
             return _lXPDbContext.CourseCategories.Find(categoryId);
         }
+        public CourseCategory GetCategoryByCategoryName(string categoryName)
+        {
+            return _lXPDbContext.CourseCategories.First(category => category.Category == categoryName);
+        }
 
     }
 }

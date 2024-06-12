@@ -8,7 +8,7 @@ namespace LXP.Core.IServices
 {
     public interface  ILearnerAttemptServices
     {
-        object GetScoreByTopicIdAndLernerId(string topicId, string LearnerId);
+        object GetScoreByTopicIdAndLernerId( string LearnerId);
 
         object GetScoreByLearnerId(string LearnerId);
     }

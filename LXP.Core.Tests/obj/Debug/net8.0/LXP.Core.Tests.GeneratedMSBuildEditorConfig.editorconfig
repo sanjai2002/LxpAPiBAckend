@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LXP.Core.Tests
-build_property.ProjectDir = D:\SKV\Capstone\Integration Sprint 6\Backend\QuizAdmin\LXP.Core.Tests\
+build_property.ProjectDir = D:\SKV\Capstone\Integration Sprint 6\Backend\AllIntegrate\Integrationchecking\LXP.Core.Tests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -34,24 +34,40 @@ namespace LXP.Core.Services
             _enrollmentRepository = enrollmentRepository;
             _courseRepository = courseRepository;
         }
-
-
+        public async Task<bool> LearnerProgress(ProgressViewModel learnerProgress)
+        {
+            var material = await _materialRepository.GetMaterialById(learnerProgress.MaterialId);
+            var topic = await _courseTopicRepository.GetTopicByTopicId(material.TopicId);
+            var course = _courseRepository.GetCourseDetailsByCourseId(topic.CourseId);
+            LearnerProgressViewModel learnerProgressViewModel = new LearnerProgressViewModel()
+            {
+                MaterialId = material.MaterialId,
+                TopicId = topic.TopicId,
+                CourseId = course.CourseId,
+                WatchTime = learnerProgress.WatchTime,
+                LearnerId = learnerProgress.LearnerId
+            };
+            if (!await _learnerProgressRepository.AnyLearnerProgressByLearnerIdAndMaterialId(learnerProgress.LearnerId, material.MaterialId))
+            {
+                return await Progress(learnerProgressViewModel);
+            }
+            return await UpdateProgress(learnerProgress.LearnerId, material.MaterialId, learnerProgress.WatchTime);
+        }
+        public async Task<LearnerProgress> GetLearnerProgressByLearnerIdAndMaterialId(string LearnerId, string MaterialId)
+        {
+            return await _learnerProgressRepository.GetLearnerProgressByLearnerIdAndMaterialId(Guid.Parse(LearnerId), Guid.Parse(MaterialId));
+        }
         public async Task<bool> Progress(LearnerProgressViewModel learnerProgress)
         {
             var material = await _materialRepository.GetMaterialById(learnerProgress.MaterialId);
-
-
             double totalCoursetime = await CourseTotalTime(learnerProgress.CourseId);
             int Coursehours = (int)totalCoursetime;
             int CourseMinutes = (int)((totalCoursetime - Coursehours) * 60);
             TimeOnly CourseDuration = new TimeOnly(Coursehours, CourseMinutes);
-
             double totalCourseWatchtime = await CourseWatchTime(learnerProgress.CourseId, learnerProgress.LearnerId);
             int CourseWatchhours = (int)totalCourseWatchtime;
             int CourseWatchMinutes = (int)((totalCourseWatchtime - CourseWatchhours) * 60);
             TimeOnly CourseWatchDuration = new TimeOnly(CourseWatchhours, CourseWatchMinutes);
-
-
             LearnerProgress progress = new LearnerProgress()
             {
                 LearnerProgressId = new Guid(),
@@ -63,104 +79,45 @@ namespace LXP.Core.Services
                 TotalTime = CourseDuration,
                 IsWatched = 0,
                 CourseWatchtime = CourseWatchDuration
-
-
-
-
             };
-
-
-
-
-
             await _learnerProgressRepository.LearnerProgress(progress);
-
-
             return true;
-
-            //double watchTimeInMinutes = progress.WatchTime.Hour * 60 + progress.WatchTime.Minute;
-            //double totalTimeInMinutes = progress.TotalTime.Hour * 60 + progress.TotalTime.Minute;
-
-            //double percentage = (watchTimeInMinutes / totalTimeInMinutes) * 100;
-            //return percentage;
-
         }
-
-        public async Task<double> materialCompletion(Guid learnerId, Guid courseId)
+        public async Task<bool> materialCompletion(Guid learnerId, Guid courseId)
         {
             var learnerProgress = await _learnerProgressRepository.GetLearnerProgressById(learnerId, courseId);
-
             double totalCourseWatchtime = await CourseWatchTime(learnerProgress.CourseId, learnerProgress.LearnerId);
-
             int CourseWatchhours = (int)totalCourseWatchtime;
             int CourseWatchMinutes = (int)((totalCourseWatchtime - CourseWatchhours) * 60);
             TimeOnly CourseWatchDuration = new TimeOnly(CourseWatchhours, CourseWatchMinutes);
-
             if (learnerProgress.CourseWatchtime == learnerProgress.TotalTime)
             {
-
-
                 learnerProgress.IsWatched = 1;
-
-
             }
             else
             {
                 learnerProgress.CourseWatchtime = CourseWatchDuration;
                 if (learnerProgress.CourseWatchtime == learnerProgress.TotalTime)
                 {
-
-
                     learnerProgress.IsWatched = 1;
-
-
                 }
-
             }
             _learnerProgressRepository.UpdateLearnerProgress(learnerProgress);
-            return await materialCompletionPercentage(learnerId, courseId);
-
+            return true;
         }
-
-        public async Task<double> materialWatchTime(Guid learnerId, Guid materialId, TimeOnly watchtime)
+        public async Task<bool> UpdateProgress(Guid learnerId, Guid materialId, TimeOnly watchtime)
         {
             var learnermaterial = await _learnerProgressRepository.GetLearnerProgressByMaterialId(learnerId, materialId);
-            // var learnerCourse = await _learnerProgressRepository.GetLearnerProgressById(learnerId,learnermaterial.CourseId);
-
-
-
-
-
             learnermaterial.WatchTime = watchtime;
-
             _learnerProgressRepository.UpdateLearnerProgress(learnermaterial);
-
-            double percentage = await materialCompletion(learnerId, learnermaterial.CourseId);
-            return percentage;
-
-        }
-
-        public async Task<double> materialCompletionPercentage(Guid learnerId, Guid courseId)
-        {
-            var learnerProgress = await _learnerProgressRepository.GetLearnerProgressById(learnerId, courseId);
-            TimeSpan timeSpan_total = learnerProgress.TotalTime.ToTimeSpan();
-            double totaltime = timeSpan_total.TotalHours;
-
-            TimeSpan timeSpan_watch = learnerProgress.CourseWatchtime.ToTimeSpan();
-            double watchtime = timeSpan_watch.TotalHours;
-
-            double percentage = (watchtime / totaltime) * 100;
-            return percentage;
-
-
+            await materialCompletion(learnerId, learnermaterial.CourseId);
+            return true;
         }
 
         public async Task<double> TopicTotalTime(Guid topicId)
         {
             var material = await _materialRepository.GetMaterialsByTopic(topicId);
-
             double totalDuration = material.Sum(m => m.Duration.ToTimeSpan().TotalHours);
-
             return totalDuration;
         }
         public async Task<double> CourseTotalTime(Guid courseId)
@@ -172,12 +129,39 @@ namespace LXP.Core.Services
                 Guid topicId = topics.TopicId;
                 double topicDuration = await TopicTotalTime(topicId);
                 courseTotalDuration += topicDuration;
-
             }
             return courseTotalDuration;
-
-
         }
+
+        public async Task<double> CourseWatchTime(Guid courseId, Guid learnerId)
+        {
+            var topic = await _courseTopicRepository.GetTopicsbyLearnerId(courseId, learnerId);
+            double courseWatchDuration = 0;
+            courseWatchDuration = topic.Sum(x => x.WatchTime.ToTimeSpan().TotalHours);
+            //Console.WriteLine(courseWatchDuration);
+            return courseWatchDuration;
+        }
+
+
+
+      
+
+        //public async Task<double> materialCompletionPercentage(Guid learnerId, Guid courseId)
+        //{
+        //    var learnerProgress = await _learnerProgressRepository.GetLearnerProgressById(learnerId, courseId);
+        //    TimeSpan timeSpan_total = learnerProgress.TotalTime.ToTimeSpan();
+        //    double totaltime = timeSpan_total.TotalHours;
+
+        //    TimeSpan timeSpan_watch = learnerProgress.CourseWatchtime.ToTimeSpan();
+        //    double watchtime = timeSpan_watch.TotalHours;
+
+        //    double percentage = (watchtime / totaltime) * 100;
+        //    return percentage;
+
+
+        //}
+
+        
         public async Task<double> TopicWatchTime(Guid topicId, Guid learnerId)
         {
             var materials = await _learnerProgressRepository.GetMaterialByTopic(topicId, learnerId);
@@ -195,16 +179,7 @@ namespace LXP.Core.Services
             return watchDuration;
 
         }
-        public async Task<double> CourseWatchTime(Guid courseId, Guid learnerId)
-        {
-            var topic = await _courseTopicRepository.GetTopicsbyLearnerId(courseId, learnerId);
-            double courseWatchDuration = 0;
-
-            courseWatchDuration = topic.Sum(x => x.WatchTime.ToTimeSpan().TotalHours);
-            //Console.WriteLine(courseWatchDuration);
-            return courseWatchDuration;
-        }
-
+       
         //public async  Task<LearnerProgressViewModel> GetProgressById(Guid learnerProgressId)
         // {
         //    LearnerProgressViewModel  progress = await _learnerProgressRepository.GetLearnerProgressById(learnerProgressId);
@@ -222,28 +197,6 @@ namespace LXP.Core.Services
             return enrollment?.CourseCompletionPercentage;
         }
 
-        public async Task<dynamic> LearnerProgress(ProgressViewModel learnerProgress)
-        {
-            var material = await _materialRepository.GetMaterialById(learnerProgress.MaterialId);
-            var topic = await _courseTopicRepository.GetTopicByTopicId(material.TopicId);
-            var course = _courseRepository.GetCourseDetailsByCourseId(topic.CourseId);
-            LearnerProgressViewModel learnerProgressViewModel = new LearnerProgressViewModel()
-            {
-                MaterialId = material.MaterialId,
-                TopicId = topic.TopicId,
-                CourseId = course.CourseId,
-                WatchTime = learnerProgress.WatchTime,
-                LearnerId = learnerProgress.LearnerId
-            };
-            if (!await _learnerProgressRepository.AnyLearnerProgressByLearnerIdAndMaterialId(learnerProgress.LearnerId, material.MaterialId))
-            {
-                return await Progress(learnerProgressViewModel);
-            }
-            return await materialWatchTime(learnerProgress.LearnerId, material.MaterialId, learnerProgress.WatchTime);
-
-
-
-        }
-
+        
     }
 }

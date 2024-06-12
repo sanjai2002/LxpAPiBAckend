@@ -2503,6 +2503,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "FluentValidation.AspNetCore": "11.3.0",
+          "FreeSpire.Doc": "12.2.0",
+          "FreeSpire.Presentation": "7.8.0",
           "Microsoft.AspNetCore.Http": "2.2.2"
         },
         "compile": {
@@ -7545,11 +7547,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+      "projectUniqueName": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\AllIntegrate\\Integrationchecking\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
       "projectName": "LXP.Core.Tests",
-      "projectPath": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+      "projectPath": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\AllIntegrate\\Integrationchecking\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
       "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
-      "outputPath": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Core.Tests\\obj\\",
+      "outputPath": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\AllIntegrate\\Integrationchecking\\LXP.Core.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7570,8 +7572,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Core\\LXP.Core.csproj": {
-              "projectPath": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\QuizAdmin\\LXP.Core\\LXP.Core.csproj"
+            "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\AllIntegrate\\Integrationchecking\\LXP.Core\\LXP.Core.csproj": {
+              "projectPath": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\AllIntegrate\\Integrationchecking\\LXP.Core\\LXP.Core.csproj"
             }
           }
         }

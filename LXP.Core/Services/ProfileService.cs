@@ -147,5 +147,11 @@ namespace LXP.Core.Services
         }
 
 
+        public Guid GetprofileId(Guid learnerId)
+        {
+            return _profileRepository.GetProfileId(learnerId);
+        }
+
+
     }
 }

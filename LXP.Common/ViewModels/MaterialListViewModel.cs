@@ -30,6 +30,6 @@ namespace LXP.Common.ViewModels
 
         public string? ModifiedBy { get; set; } = null;
 
-        public string? ModifiedAt { get; set; } = null!;
+        public DateTime? ModifiedAt { get; set; }=null;
     }
 }

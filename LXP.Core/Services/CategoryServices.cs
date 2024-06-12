@@ -28,12 +28,7 @@ namespace LXP.Core.Services
         public async Task<bool> AddCategory(CourseCategoryViewModel category)
         {
             bool isCategoryExists = await _categoryRepository.AnyCategoryByCategoryName(category.Category);
-            if(isCategoryExists)
-            {
-                return false;
-                
-            }
-            else
+            if (!isCategoryExists)
             {
                 CourseCategory courseCategory = new CourseCategory()
                 {
@@ -42,8 +37,13 @@ namespace LXP.Core.Services
                     CreatedAt = DateTime.Now,
                     CreatedBy = category.CreatedBy
                 };
-                _categoryRepository.AddCategory(courseCategory);
+                await _categoryRepository.AddCategory(courseCategory);
                 return true;
+            }
+            else
+            {
+                return false;
+
             }
 
         }
@@ -52,6 +52,10 @@ namespace LXP.Core.Services
             List<CourseCategoryListViewModel> category = _categoryMapper.Map<List<CourseCategory>, List<CourseCategoryListViewModel>>(await _categoryRepository.GetAllCategory());
             return category;
         }
-
+        public Task<CourseCategoryListViewModel> GetCategoryByCategoryName(string categoryName)
+        {
+            CourseCategoryListViewModel category = _categoryMapper.Map<CourseCategory, CourseCategoryListViewModel>(_categoryRepository.GetCategoryByCategoryName(categoryName));
+            return Task.FromResult(category);
+        }
     }
 }

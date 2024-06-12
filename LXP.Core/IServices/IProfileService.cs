@@ -34,5 +34,7 @@ namespace LXP.Core.IServices
         LearnerProfile GetLearnerProfileById(string id);
 
         Task UpdateProfile(UpdateProfileViewModel model);
+
+        Guid GetprofileId(Guid learnerId);
     }
 }

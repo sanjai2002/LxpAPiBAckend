@@ -1994,6 +1994,8 @@
       "LXP.Common/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "11.3.0",
+          "FreeSpire.Doc": "12.2.0",
+          "FreeSpire.Presentation": "7.8.0",
           "Microsoft.AspNetCore.Http": "2.2.2"
         },
         "runtime": {

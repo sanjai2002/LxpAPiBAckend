@@ -12,6 +12,7 @@ using LXP.Services.IServices;
 using Microsoft.Extensions.FileProviders;
 using OfficeOpenXml;
 using Serilog;
+using LXP.Api.Interceptors;
 using System.Reflection;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -93,8 +94,6 @@ builder.Services.AddScoped<IQuizReportRepository, QuizReportRepository>();
 builder.Services.AddScoped<IFeedbackResponseRepository, FeedbackResponseRepository>();
 builder.Services.AddScoped<IFeedbackResponseService,FeedbackResponseService>();
 
-builder.Services.AddScoped<ICategoryServices, CategoryServices>();
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddSingleton<LXPDbContext>();
 builder.Services.AddScoped<ILearnerRepository, LearnerRepository>();
 builder.Services.AddScoped<IProfileRepository, ProfileRepository>();
@@ -103,25 +102,12 @@ builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<IPasswordHistoryService, PasswordHistoryService>();
 builder.Services.AddScoped<IPasswordHistoryRepository, PasswordHistoryRepository>();
 
-builder.Services.AddScoped<IMaterialServices, MaterialServices>();
-builder.Services.AddScoped<IMaterialRepository, MaterialRepository>();
-builder.Services.AddScoped<IMaterialTypeRepository, MaterialTypeRepository>();
-builder.Services.AddScoped<IMaterialTypeServices, MaterialTypeServices>();
-
-
-
-builder.Services.AddScoped<IQuizEngineRepository, QuizEngineRepository>();
-builder.Services.AddScoped<IQuizEngineService, QuizEngineService>();
 
 builder.Services.AddScoped<IProfilePasswordHistoryRepository, ProfilePasswordHistoryRepository>();
-builder.Services.AddScoped<ICourseLevelServices, CourseLevelServices>();
-builder.Services.AddScoped<ICourseLevelRepository, CourseLevelRepository>();
-builder.Services.AddScoped<ICourseTopicRepository, CourseTopicRepository>();
-builder.Services.AddScoped<ICourseTopicServices, CourseTopicServices>();
-builder.Services.AddScoped<ICourseRepository, CourseRepository>();
+
 builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 builder.Services.AddScoped<IEnrollmentRepository, EnrollmentRepository>();
-builder.Services.AddScoped<ICourseServices, CourseServices>();
+
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddScoped<IEmailService, EmailService>();
 
@@ -136,10 +122,10 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
-//builder.Services.AddMvc(options =>
-//{
-//    options.Filters.Add<ApiExceptionInterceptor>();
-//});
+builder.Services.AddMvc(options =>
+{
+    options.Filters.Add<ApiExceptionInterceptor>();
+});
 
 builder.Services.AddControllers()
     .AddFluentValidation(v =>

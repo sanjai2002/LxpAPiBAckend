@@ -109,6 +109,9 @@ namespace LXP.Data.Repository
             _LXPDbContext.Entry(learnerProfile).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             await _LXPDbContext.SaveChangesAsync();
         }
+
+
+
         public Guid GetProfileId(Guid learnerId)
         {
             return _LXPDbContext.LearnerProfiles

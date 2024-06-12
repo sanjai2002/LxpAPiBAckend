@@ -19,6 +19,14 @@ namespace LXP.Data.Repository
             await _context.LearnerProgresses.AddAsync(learnerProgress);
             await _context.SaveChangesAsync();
         }
+        public async Task<bool> AnyLearnerProgressByLearnerIdAndMaterialId(Guid LearnerId, Guid MaterialId)
+        {
+            return await _context.LearnerProgresses.AnyAsync(learnerProgress => learnerProgress.MaterialId == MaterialId && learnerProgress.LearnerId == LearnerId);
+        }
+        public async Task<LearnerProgress> GetLearnerProgressByLearnerIdAndMaterialId(Guid LearnerId, Guid MaterialId)
+        {
+            return await _context.LearnerProgresses.FirstAsync(learnerProgress => learnerProgress.MaterialId == MaterialId && learnerProgress.LearnerId == LearnerId);
+        }
 
         public async Task<LearnerProgress> GetLearnerProgressById(Guid learnerId, Guid courseId)
         {
@@ -262,9 +270,6 @@ namespace LXP.Data.Repository
         }
 
 
-        public async Task<bool> AnyLearnerProgressByLearnerIdAndMaterialId(Guid LearnerId, Guid MaterialId)
-        {
-            return await _context.LearnerProgresses.AnyAsync(learnerProgress => learnerProgress.MaterialId == MaterialId && learnerProgress.LearnerId == LearnerId);
-        }
+       
     }
 }

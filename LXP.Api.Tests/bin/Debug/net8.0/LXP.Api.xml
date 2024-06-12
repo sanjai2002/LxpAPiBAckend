@@ -141,7 +141,7 @@
             Forget Password with Random passwordgenerator that sends to user Email 
             </summary>
         </member>
-        <member name="M:LXP.Api.Controllers.LearnerAttemptController.GetScoreByTopicIdAndLearnerId(System.String,System.String)">
+        <member name="M:LXP.Api.Controllers.LearnerAttemptController.GetScoreByTopicIdAndLearnerId(System.String)">
             <summary>
              Getting score by Topic Id and Learner ID  ---------------Ruban code    
             </summary>
@@ -398,6 +398,11 @@
         <member name="M:LXP.Api.Controllers.RegistrationController.LearnerGetLearnerById(System.String)">
             <summary>
             Fetching particular Learner details and Profile details using Learner Id
+            </summary>
+        </member>
+        <member name="M:LXP.Api.Controllers.RegistrationController.GetProfile(System.Guid)">
+            <summary>
+            Get profile id by learner id Ruban
             </summary>
         </member>
         <member name="M:LXP.Api.Controllers.TopicFeedbackController.AddFeedbackQuestion(LXP.Common.ViewModels.TopicFeedbackQuestionViemModel.TopicFeedbackQuestionViewModel)">

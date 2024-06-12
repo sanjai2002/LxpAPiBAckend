@@ -20,9 +20,9 @@ namespace LXP.Core.Services
         }
 
 
-       public  object GetScoreByTopicIdAndLernerId (string topicId, string LearnerId)
+       public  object GetScoreByTopicIdAndLernerId ( string LearnerId)
         {
-            return _repository.GetScoreByTopicIdAndLernerId(Guid.Parse(topicId), Guid.Parse(LearnerId));
+            return _repository.GetScoreByTopicIdAndLernerId( Guid.Parse(LearnerId));
 
 
         }

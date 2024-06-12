@@ -9,7 +9,7 @@ namespace LXP.Data.IRepository
 {
     public interface  ILearnerAttemptRepository
     {
-        object GetScoreByTopicIdAndLernerId (Guid topicId, Guid LearnerId);
+        object GetScoreByTopicIdAndLernerId ( Guid LearnerId);
 
         object GetScoreByLearnerId(Guid LearnerId);
     }

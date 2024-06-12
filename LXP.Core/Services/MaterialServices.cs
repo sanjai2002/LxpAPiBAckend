@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Google.Protobuf.WellKnownTypes;
 using LXP.Common.Entities;
+using LXP.Common.Utils;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
@@ -115,7 +116,8 @@ namespace LXP.Core.Services
                     IsAvailable = item.IsAvailable,
                     CreatedAt = item.CreatedAt,
                     CreatedBy = item.CreatedBy,
-                    ModifiedAt = item.ModifiedAt.ToString(),
+                    ModifiedAt = item.ModifiedAt,
+                    //ModifiedAt = item.ModifiedAt.ToString(),
                     ModifiedBy = item.ModifiedBy
 
 
@@ -138,12 +140,16 @@ namespace LXP.Core.Services
                 TopicName = material.Topic.Name,
                 MaterialType = material.MaterialType.Type,
                 Name = material.Name,
-                FilePath = material.FilePath,
+                FilePath = String.Format("{0}://{1}{2}/wwwroot/CourseMaterial/{3}",
+                                             _contextAccessor.HttpContext.Request.Scheme,
+                                             _contextAccessor.HttpContext.Request.Host,
+                                             _contextAccessor.HttpContext.Request.PathBase,
+                                             material.FilePath),
                 Duration = material.Duration,
                 IsActive = material.IsActive,
                 IsAvailable = material.IsAvailable,
                 CreatedAt = material.CreatedAt,
-                ModifiedAt = material.ModifiedAt.ToString(),
+                ModifiedAt = material.ModifiedAt,
                 ModifiedBy = material.ModifiedBy,
                 CreatedBy = material.CreatedBy
 
@@ -152,6 +158,121 @@ namespace LXP.Core.Services
 
 
 
+
+            };
+            return materialView;
+        }
+        public async Task<bool> SoftDeleteMaterial(string materialId)
+        {
+
+            Material material = await _materialRepository.GetMaterialByMaterialId(Guid.Parse(materialId));
+            material.IsActive = false;
+            bool isMaterialDeleted = await _materialRepository.UpdateMaterial(material) > 0 ? true : false;
+            if (isMaterialDeleted)
+            {
+                return true;
+            }
+            return false;
+
+        }
+        public async Task<bool> UpdateMaterial(MaterialUpdateViewModel material)
+        {
+            Material existMaterial = await _materialRepository.GetMaterialByMaterialId(Guid.Parse(material.MaterialId));
+            List<Material> materialListByTopic = await _materialRepository.GetMaterialsByTopic(existMaterial.TopicId);
+            materialListByTopic.Remove(existMaterial);
+            bool isMaterialNameAlradyExist = materialListByTopic.Any(materials => materials.Name == material.Name);
+            if (!isMaterialNameAlradyExist)
+            {
+                var uniqueFileName = $"{Guid.NewGuid()} _{material.Material.FileName}";
+                var uploadsFolder = Path.Combine(_environment.WebRootPath, "CourseMaterial");
+                var filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await material.Material.CopyToAsync(stream);
+                }
+
+                existMaterial.Name = material.Name;
+                existMaterial.FilePath = uniqueFileName;
+                existMaterial.ModifiedBy = material.ModifiedBy;
+                existMaterial.ModifiedAt = DateTime.Now;
+                bool isMaterialUpdated = await _materialRepository.UpdateMaterial(existMaterial) > 0 ? true : false;
+                return isMaterialUpdated;
+            }
+            else
+            {
+                return false;
+            }
+
+            //if (existingMaterial.MaterialType.MaterialTypeId != Guid.Parse(material.MaterialId))
+            //{
+            //    MaterialType materialType = _materialTypeRepository.GetMaterialTypeByMaterialTypeId(Guid.Parse(material.MaterialId));
+            //    existingMaterial.MaterialType = materialType;
+            //}
+            //}
+
+
+
+
+
+
+            //existingMaterial.ModifiedAt = DateTime.Now;
+            //existingMaterial.Duration = material.Duration;
+            //existingMaterial.IsActive = material.IsActive;
+            //existingMaterial.IsAvailable = material.IsAvailable;
+
+
+
+        }
+
+        public async Task<MaterialListViewModel> GetMaterialDetailsByMaterialId(string materialId)
+        {
+            Material material = await _materialRepository.GetMaterialByMaterialId(Guid.Parse(materialId));
+            MaterialListViewModel materialView = new MaterialListViewModel()
+            {
+                MaterialId = material.MaterialId,
+                TopicName = material.Topic.Name,
+                MaterialType = material.MaterialType.Type,
+                Name = material.Name,
+                FilePath = FileConversion.Conversion(material.MaterialType.Type, String.Format("{0}://{1}{2}/wwwroot/CourseMaterial/{3}",
+                                             _contextAccessor.HttpContext.Request.Scheme,
+                                             _contextAccessor.HttpContext.Request.Host,
+                                             _contextAccessor.HttpContext.Request.PathBase,
+                                             material.FilePath), _environment,
+                                                            _contextAccessor),
+                Duration = material.Duration,
+                IsActive = material.IsActive,
+                IsAvailable = material.IsAvailable,
+                CreatedAt = material.CreatedAt,
+                ModifiedAt = material.ModifiedAt,
+                ModifiedBy = material.ModifiedBy,
+                CreatedBy = material.CreatedBy
+
+            };
+            return materialView;
+        }
+        public async Task<MaterialListViewModel> GetMaterialDetailsByMaterialIdWithoutPDFConversionForUpdate(string materialId)
+        {
+            Material material = await _materialRepository.GetMaterialByMaterialId(Guid.Parse(materialId));
+            MaterialListViewModel materialView = new MaterialListViewModel()
+            {
+                MaterialId = material.MaterialId,
+                TopicName = material.Topic.Name,
+                MaterialType = material.MaterialType.Type,
+                Name = material.Name,
+                FilePath = String.Format("{0}://{1}{2}/wwwroot/CourseMaterial/{3}",
+                                             _contextAccessor.HttpContext.Request.Scheme,
+                                             _contextAccessor.HttpContext.Request.Host,
+                                             _contextAccessor.HttpContext.Request.PathBase,
+                                             material.FilePath, _environment,
+                                                            _contextAccessor),
+                Duration = material.Duration,
+                IsActive = material.IsActive,
+                IsAvailable = material.IsAvailable,
+                CreatedAt = material.CreatedAt,
+                ModifiedAt = material.ModifiedAt,
+                ModifiedBy = material.ModifiedBy,
+                CreatedBy = material.CreatedBy
 
             };
             return materialView;

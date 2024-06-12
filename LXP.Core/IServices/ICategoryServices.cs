@@ -12,6 +12,7 @@ namespace LXP.Core.IServices
     {
         Task<bool> AddCategory(CourseCategoryViewModel category);
         Task<List<CourseCategoryListViewModel>> GetAllCategory();
+        Task<CourseCategoryListViewModel> GetCategoryByCategoryName(string categoryName);
 
     }
 }

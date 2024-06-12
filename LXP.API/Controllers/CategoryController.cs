@@ -2,6 +2,8 @@
 using LXP.Core.IServices;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using LXP.Common.Constants;
+using System.Net;
 
 namespace LXP.Api.Controllers
 {
@@ -45,7 +47,7 @@ namespace LXP.Api.Controllers
             }
             else
             {
-                return Ok(CreateFailureResponse("Category is alreay exists", 422));
+                return Ok(CreateFailureResponse(MessageConstants.MsgAlreadyExists, (int)HttpStatusCode.PreconditionFailed));
             }
         }
     }

@@ -46,7 +46,16 @@ namespace LXP.Data.Repository
         {
             return await _lXPDbContext.Materials.Where(material => material.TopicId == topic).ToListAsync();
         }
-
+        public async Task<Material> GetMaterialByMaterialId(Guid materialId)
+        {
+            return await _lXPDbContext.Materials.Include(material => material.MaterialType).Include(material => material.Topic).FirstAsync(material => material.MaterialId == materialId);
+        }
+        //end 
+        public async Task<int> UpdateMaterial(Material material)
+        {
+            _lXPDbContext.Materials.Update(material);
+            return await _lXPDbContext.SaveChangesAsync();
+        }
 
 
 

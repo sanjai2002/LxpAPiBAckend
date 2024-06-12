@@ -9,6 +9,7 @@ using System.Net;
 using System.Collections.Concurrent;
 using System.Collections;
 using LXP.Common.Constants;
+using System.Runtime.InteropServices;
 
 namespace LXP.Api.Controllers
 {
@@ -393,6 +394,25 @@ namespace LXP.Api.Controllers
             var learnerWithProfile = await _learnerServices.LearnerGetLearnerById(id);
             return Ok(CreateSuccessResponse(learnerWithProfile));
         }
+
+
+
+
+
+        ///<summary>
+        ///Get profile id by learner id Ruban
+        ///</summary>
+        [HttpGet("GetProfileId/{learnerId}")]
+
+        public Guid GetProfile(Guid learnerId)
+
+        {
+
+            return _profileService.GetprofileId(learnerId);
+
+        }
+
+
     }
 }
 
