@@ -37,9 +37,5 @@ public class CourseViewModelValidator : AbstractValidator<CourseViewModel>
         return validFileTypes.Contains(file.ContentType);
     }
 
-    private bool BeInDecimalForm(decimal duration)
-    {
-        // Check if the duration has a fractional part
-        return duration % 1 != 0;
-    }
+    
 }

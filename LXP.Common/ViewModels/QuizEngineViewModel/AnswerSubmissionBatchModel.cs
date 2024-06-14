@@ -6,4 +6,3 @@ namespace LXP.Common.ViewModels.QuizEngineViewModel
             new List<AnswerSubmissionModel>();
     }
 }
-// code for batch

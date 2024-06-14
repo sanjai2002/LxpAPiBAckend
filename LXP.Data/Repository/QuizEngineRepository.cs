@@ -52,14 +52,14 @@ namespace LXP.Data.Repository
         {
             var quiz = await _dbContext.Quizzes.FindAsync(quizId);
             if (quiz == null)
-                return null; // or throw an exception if you prefer
+                return null;
 
             var existingAttempts = await _dbContext.LearnerAttempts.CountAsync(a =>
                 a.LearnerId == learnerId && a.QuizId == quizId
             );
 
             if (quiz.AttemptsAllowed.HasValue && existingAttempts >= quiz.AttemptsAllowed)
-                return null; // Return null to indicate maximum attempts reached
+                return null;
 
             var attempt = new LearnerAttempt
             {
@@ -499,7 +499,6 @@ namespace LXP.Data.Repository
                 _dbContext.LearnerAnswers.Add(learnerAnswer);
             }
 
-            // Save changes
             await _dbContext.SaveChangesAsync();
         }
     }

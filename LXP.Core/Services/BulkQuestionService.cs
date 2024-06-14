@@ -53,7 +53,7 @@ namespace LXP.Core.Services
                     {
                         string type = worksheet.Cells[row, 2].Value?.ToString();
 
-                        if (type == "MCQ" || type == "TF" || type == "MSQ")
+                        if (type == "MCQ" || type == "T/F" || type == "MSQ")
                         {
                             BulkQuizQuestionViewModel quizQuestion = new BulkQuizQuestionViewModel
                             {
@@ -74,7 +74,7 @@ namespace LXP.Core.Services
                                 if (!ValidateMCQOptions(quizQuestion))
                                     continue;
                             }
-                            else if (type == "TF")
+                            else if (type == "T/F")
                             {
                                 quizQuestion.Options = ExtractOptions(worksheet, row, 4, 2);
                                 quizQuestion.CorrectOptions = ExtractOptions(worksheet, row, 12, 1);
@@ -176,7 +176,7 @@ namespace LXP.Core.Services
         private bool ValidateQuestionType(BulkQuizQuestionViewModel quizQuestion)
         {
             return quizQuestion.QuestionType == "MCQ"
-                || quizQuestion.QuestionType == "TF"
+                || quizQuestion.QuestionType == "T/F"
                 || quizQuestion.QuestionType == "MSQ";
         }
 
