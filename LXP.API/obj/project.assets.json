@@ -10611,23 +10611,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gokul.jawahar\\.nuget\\packages\\": {},
+    "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Relevantz.LXP\\LXP.Api\\LXP.Api.csproj",
+      "projectUniqueName": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\FinalQuizChanged\\Quiz\\LXP.Api\\LXP.Api.csproj",
       "projectName": "LXP.Api",
-      "projectPath": "D:\\Relevantz.LXP\\LXP.Api\\LXP.Api.csproj",
-      "packagesPath": "C:\\Users\\gokul.jawahar\\.nuget\\packages\\",
-      "outputPath": "D:\\Relevantz.LXP\\LXP.Api\\obj\\",
+      "projectPath": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\FinalQuizChanged\\Quiz\\LXP.Api\\LXP.Api.csproj",
+      "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
+      "outputPath": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\FinalQuizChanged\\Quiz\\LXP.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gokul.jawahar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kathirvel.selvam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10636,15 +10636,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Relevantz.LXP\\LXP.Core\\LXP.Core.csproj": {
-              "projectPath": "D:\\Relevantz.LXP\\LXP.Core\\LXP.Core.csproj"
+            "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\FinalQuizChanged\\Quiz\\LXP.Core\\LXP.Core.csproj": {
+              "projectPath": "D:\\SKV\\Capstone\\Integration Sprint 6\\Backend\\FinalQuizChanged\\Quiz\\LXP.Core\\LXP.Core.csproj"
             }
           }
         }
