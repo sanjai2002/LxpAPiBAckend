@@ -21,7 +21,7 @@ jobs:
       with:
         dotnet-version: 8.0.100
     - name: Restore dependencies
-      run: dotnet restore LxpApiBackend.sln
+      run: dotnet restore LXP.sln
     - name: Build
       run: dotnet build LXP.sln --no-restore
     - name: Test
