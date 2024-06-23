@@ -1,6 +1,12 @@
 name: Greetings
 
-on: [pull_request_target, issues]
+on:
+  pull_request_target:
+  issues:
+  issue_comment:
+  pull_request_review:
+  push:
+  workflow_dispatch:
 
 jobs:
   greeting:
@@ -9,8 +15,32 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - uses: actions/first-interaction@v1
+    - name: Greet on issue creation
+      if: github.event_name == 'issues'
+      uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Message that will be displayed on users' first issue"
-        pr-message: "Message that will be displayed on users' first pull request"
+        issue-message: 'Hello there! 👋 Welcome to the project! Thank you and congrats 🎉 for opening your very first issue in this project. Relevantz.LXp values all contributions and contributors. You have done well. 🤘'
+
+    - name: Greet on pull request creation
+      if: github.event_name == 'pull_request_target'
+      uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        pr-message: 'Hello there! 👋 We appreciate your contribution to the project! You have opened a Pull Request for Relevantz.LXp, which is your first one here. Congratulations! 🎉 Our team will review it soon. Stay tuned!'
+
+    - name: Welcome on push
+      if: github.event_name == 'push'
+      run: echo "Thank you for your contribution to the project!"
+
+    - name: Guide on issue comment
+      if: github.event_name == 'issue_comment'
+      run: echo "Thank you for your comment. If you have any questions, feel free to ask!"
+
+    - name: Thank on pull request review
+      if: github.event_name == 'pull_request_review'
+      run: echo "Thank you for reviewing this pull request. Your feedback is greatly appreciated!"
+
+    - name: Welcome on workflow dispatch
+      if: github.event_name == 'workflow_dispatch'
+      run: echo "Welcome to the project! We're glad to have you here."
