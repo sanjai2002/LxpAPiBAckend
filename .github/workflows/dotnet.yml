@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore LxpApiBackend.sln
     - name: Build
-      run: dotnet build LxpApiBackend.sln --no-restore
+      run: dotnet build LXP.sln --no-restore
     - name: Test
-      run: dotnet test LxpApiBackend.sln --no-build --verbosity normal
+      run: dotnet test LXP.sln --no-build --verbosity normal
