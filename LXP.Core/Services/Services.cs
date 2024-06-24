@@ -1,10 +1,16 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using System.Text;
+using AutoMapper;
 using AutoMapper;
 using LXP.Common.Entities;
 using LXP.Common.Utils;
+using LXP.Common.Utils;
+using LXP.Common.ViewModels;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
+using LXP.Core.IServices;
+using LXP.Data.IRepository;
 using LXP.Data.IRepository;
 
 namespace LXP.Core.Services
@@ -120,13 +126,12 @@ namespace LXP.Core.Services
             }
         }
 
-        public async Task<ResultUpdatePassword> UpdatePassword(UpdatePassword updatePassword)
+        public async Task<bool> UpdatePassword(UpdatePassword updatePassword)
         {
             var learner = await _repository.LearnerByEmailAndPassword(
                 updatePassword.Email,
                 Encryption.ComputePasswordToSha256Hash(updatePassword.OldPassword)
             );
-            var result = new ResultUpdatePassword();
 
             if (
                 learner.Password
@@ -138,12 +143,12 @@ namespace LXP.Core.Services
                 );
                 learner.Password = encryptNewPassword;
                 await _repository.UpdatePassword(learner);
-                result.success = true;
-                return result;
+
+                return true;
             }
             else
             {
-                return result;
+                return false;
             }
         }
     }

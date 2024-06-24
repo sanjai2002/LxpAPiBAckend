@@ -5,6 +5,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dto\**" />
+    <EmbeddedResource Remove="Dto\**" />
+    <None Remove="Dto\**" />
+  </ItemGroup>
 	
   <ItemGroup>
 	  <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
@@ -12,9 +18,5 @@
 	  <PackageReference Include="FreeSpire.Presentation" Version="7.8.0" />
 	  <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
 </ItemGroup>
-	
-  <ItemGroup>
-    <Folder Include="Dto\" />
-  </ItemGroup>
 
 </Project>

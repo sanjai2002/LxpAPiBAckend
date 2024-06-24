@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TFUW3nrxtKRfN6ZP2Ytl7oGb4KBMpDZl07ObnYV8u0dD+evCgyH8/DfAjf9HZedJ/OxpmDHfi+5eDvLkWqxWqg==",
+  "dgSpecHash": "HmN9xkNPPn+IFAULwFgIpvpqBdMXjlPlpU2zyF19NnJbIGO93dbEK8MlKljLsXNZ8tXPO/ZAMpqyzHf7PwGpVQ==",
   "success": true,
-  "projectFilePath": "D:\\backend\\LXP.API\\LXP.Api.csproj",
+  "projectFilePath": "D:\\backend\\LXP.Api\\LXP.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gokul.jawahar\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\gokul.jawahar\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",

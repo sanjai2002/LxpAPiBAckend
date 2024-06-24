@@ -1,4 +1,5 @@
 ﻿using LXP.Common.Entities;
+using LXP.Common.Entities;
 
 namespace LXP.Data.IRepository
 {
@@ -13,9 +14,13 @@ namespace LXP.Data.IRepository
 
 
         //public Task UpdateLearnerPassword(string Email, string Password);
+        //  Task<bool> Changecoursestatus(Coursestatus status);
 
-        public void UpdatePassword(Learner learner);
-
-        Task<Learner> LearnerByEmailAndPassword(string Email, string Password);
+        public Task UpdatePasswordAsync(Learner learner);
+        Task<Learner> LearnerByEmailAndPasswordAsync(string email, string password);
     }
+
+    // public void LearnerByEmailAndPasswordAsync(Learner learner);
+
+    // Learner UpdatePasswordAsync(string Email, string Password);
 }

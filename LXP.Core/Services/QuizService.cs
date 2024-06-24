@@ -68,24 +68,6 @@ namespace LXP.Core.Services
             }
         }
 
-        //public void DeleteQuiz(Guid quizId)
-        //{
-        //    var quizEntity = _quizRepository.GetQuizById(quizId);
-        //    if (quizEntity != null)
-        //    {
-        //        var quizFeedbackQuestions = _quizRepository.GetQuizFeedbackQuestionsByQuizId(quizId);
-        //        _quizFeedbackService.DeleteFeedbackQuestionsByQuizId(quizId);
-
-
-        //        foreach (var question in quizFeedbackQuestions)
-        //        {
-        //            _feedbackResponseRepository.DeleteFeedbackResponsesByQuizQuestionId(question.QuizFeedbackQuestionId);
-        //        }
-
-        //        _quizRepository.DeleteQuiz(quizEntity);
-        //    }
-        //}
-
         public void DeleteQuiz(Guid quizId)
         {
             var quizEntity = _quizRepository.GetQuizById(quizId);
@@ -167,6 +149,16 @@ namespace LXP.Core.Services
                 throw new Exception("PassMark must be a positive integer.");
             if (quiz.AttemptsAllowed.HasValue && quiz.AttemptsAllowed <= 0)
                 throw new Exception("AttemptsAllowed must be null or a positive integer.");
+        }
+
+        public QuizAvailabilityViewModel CheckQuizAvailability(Guid topicId)
+        {
+            var quiz = _quizRepository.GetQuizByTopicId(topicId);
+            return new QuizAvailabilityViewModel
+            {
+                TopicId = topicId,
+                IsQuizAvailable = quiz != null
+            };
         }
     }
 }

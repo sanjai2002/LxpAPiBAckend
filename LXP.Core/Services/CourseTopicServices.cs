@@ -81,7 +81,10 @@ namespace LXP.Core.Services
 
         public async Task<CourseTopicListViewModel> AddCourseTopic(CourseTopicViewModel courseTopic)
         {
-            bool isTopicExists = _courseTopicRepository.AnyTopicByTopicName(courseTopic.Name);
+            bool isTopicExists = _courseTopicRepository.AnyTopicByTopicNameAndCourseId(
+                courseTopic.Name,
+                Guid.Parse(courseTopic.CourseId)
+            );
             Guid courseId = Guid.Parse((courseTopic.CourseId));
             Course course = _courseRepository.GetCourseDetailsByCourseId(courseId);
             if (!isTopicExists)

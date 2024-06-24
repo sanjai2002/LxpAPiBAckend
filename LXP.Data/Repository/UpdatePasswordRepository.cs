@@ -1,5 +1,8 @@
 ﻿using LXP.Common.Entities;
+using LXP.Common.Entities;
 using LXP.Data.IRepository;
+using LXP.Data.IRepository;
+using Microsoft.EntityFrameworkCore;
 
 namespace LXP.Data.Repository
 {
@@ -12,18 +15,17 @@ namespace LXP.Data.Repository
             _dbcontext = dbcontext;
         }
 
-        public async Task<Learner> LearnerByEmailAndPassword(string Email, string Password)
+        public async Task<Learner> LearnerByEmailAndPasswordAsync(string email, string password)
         {
-            return _dbcontext.Learners.FirstOrDefault(learner =>
-                learner.Email == Email && learner.Password == Password
+            return await _dbcontext.Learners.FirstOrDefaultAsync(learner =>
+                learner.Email == email && learner.Password == password
             );
         }
 
-        public void UpdatePassword(Learner learner)
+        public async Task UpdatePasswordAsync(Learner learner)
         {
             _dbcontext.Learners.Update(learner);
-
-            _dbcontext.SaveChangesAsync();
+            await _dbcontext.SaveChangesAsync();
         }
     }
 }

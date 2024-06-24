@@ -57,7 +57,8 @@ namespace LXP.Data.Repository
 
                     topic.TopicId,
 
-                    course.CourseId
+                    course.CourseId,
+                    quiz.PassMark
                 } into grouped
 
                 select new
@@ -74,7 +75,8 @@ namespace LXP.Data.Repository
 
                     grouped.Key.TopicId,
 
-                    grouped.Key.CourseId
+                    grouped.Key.CourseId,
+                    grouped.Key.PassMark
                 };
 
             return result;

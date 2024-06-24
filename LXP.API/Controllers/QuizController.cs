@@ -138,5 +138,12 @@ namespace LXP.Api.Controllers
 
             return NoContent();
         }
+
+        [HttpGet("CheckQuizAvailability/{topicId}")]
+        public IActionResult CheckQuizAvailability(Guid topicId)
+        {
+            var result = _quizService.CheckQuizAvailability(topicId);
+            return Ok(result);
+        }
     }
 }

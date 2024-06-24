@@ -9,7 +9,7 @@ namespace LXP.Data.IRepository
         Task AddCourseTopic(Topic topic);
         bool AnyTopicByTopicName(string topicName);
         Task<Topic> GetTopicDetailsByTopicNameAndCourse(string topicName, Guid courseId);
-
+        bool AnyTopicByTopicNameAndCourseId(string topicName, Guid courseId);
         Task<int> UpdateCourseTopic(Topic topic);
         object GetAllTopicDetailsByCourseId(string courseId);
         Task<Topic> GetTopicByTopicId(Guid topicId);

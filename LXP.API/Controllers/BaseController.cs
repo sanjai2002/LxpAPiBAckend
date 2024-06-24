@@ -1,5 +1,4 @@
-﻿// BaseController.cs
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Net;
 using LXP.Common.Constants;
 using LXP.Common.ViewModels;

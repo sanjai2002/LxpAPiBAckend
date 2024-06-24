@@ -24,7 +24,7 @@ namespace LXP.Core.Services
             var normalizedQuestionType = quizfeedbackquestion.QuestionType.ToUpper();
 
             // Ensure no options are saved for descriptive questions
-            if (normalizedQuestionType == QuizFeedbackQuestionTypes.DescriptiveQuestion.ToUpper())
+            if (normalizedQuestionType == FeedbackQuestionTypes.DescriptiveQuestion.ToUpper())
             {
                 options = null;
             }
@@ -54,7 +54,7 @@ namespace LXP.Core.Services
 
             // Save the options only if the question type is MCQ
             if (
-                normalizedQuestionType == QuizFeedbackQuestionTypes.MultiChoiceQuestion.ToUpper()
+                normalizedQuestionType == FeedbackQuestionTypes.MultiChoiceQuestion.ToUpper()
                 && options != null
                 && options.Count > 0
             )
@@ -145,8 +145,7 @@ namespace LXP.Core.Services
 
             // Handle options only if the question type is MCQ
             if (
-                existingQuestion.QuestionType
-                == QuizFeedbackQuestionTypes.MultiChoiceQuestion.ToUpper()
+                existingQuestion.QuestionType == FeedbackQuestionTypes.MultiChoiceQuestion.ToUpper()
             )
             {
                 if (!ValidateOptionsByFeedbackQuestionType(existingQuestion.QuestionType, options))
@@ -240,7 +239,7 @@ namespace LXP.Core.Services
         {
             questionType = questionType.ToUpper();
 
-            if (questionType == QuizFeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
+            if (questionType == FeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
             {
                 return options != null && options.Count >= 2 && options.Count <= 5;
             }

@@ -8,9 +8,4 @@
 
         public string? NewPassword { get; set; }
     }
-
-    public class ResultUpdatePassword
-    {
-        public bool success { get; set; }
-    }
 }

@@ -1,5 +1,4 @@
-﻿using LXP.Common.Entities;
-using LXP.Common.Utils;
+﻿using LXP.Common.Utils;
 using LXP.Common.ViewModels;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
@@ -15,31 +14,25 @@ namespace LXP.Core.Services
             _repository = repository;
         }
 
-        public async Task<ResultUpdatePassword> UpdatePassword(UpdatePassword updatePassword)
+        public async Task<bool> UpdatePassword(UpdatePassword updatePassword)
         {
-            Learner learner = await _repository.LearnerByEmailAndPassword(
+            var learner = await _repository.LearnerByEmailAndPasswordAsync(
                 updatePassword.Email,
                 Encryption.ComputePasswordToSha256Hash(updatePassword.OldPassword)
             );
-            var result = new ResultUpdatePassword();
 
-            if (
-                learner.Password
-                == Encryption.ComputePasswordToSha256Hash(updatePassword.OldPassword)
-            )
+            if (learner == null)
             {
-                string encryptNewPassword = Encryption.ComputePasswordToSha256Hash(
-                    updatePassword.NewPassword
-                );
-                learner.Password = encryptNewPassword;
-                _repository.UpdatePassword(learner);
-                result.success = true;
-                return result;
+                return false;
             }
-            else
-            {
-                return result;
-            }
+
+            string encryptNewPassword = Encryption.ComputePasswordToSha256Hash(
+                updatePassword.NewPassword
+            );
+            learner.Password = encryptNewPassword;
+
+            await _repository.UpdatePasswordAsync(learner);
+            return true;
         }
     }
 }

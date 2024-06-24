@@ -93,7 +93,7 @@ namespace LXP.Services
 
             Guid? optionId = null;
 
-            if (question.QuestionType == QuizFeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
+            if (question.QuestionType == FeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
             {
                 if (string.IsNullOrEmpty(feedbackResponse.OptionText))
                     throw new ArgumentException("Option text must be provided for MCQ responses.");
@@ -166,7 +166,7 @@ namespace LXP.Services
 
             Guid? optionId = null;
 
-            if (question.QuestionType == TopicFeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
+            if (question.QuestionType == FeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
             {
                 if (string.IsNullOrEmpty(feedbackResponse.OptionText))
                     throw new ArgumentException("Option text must be provided for MCQ responses.");

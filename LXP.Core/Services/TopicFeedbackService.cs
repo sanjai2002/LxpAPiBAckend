@@ -22,7 +22,7 @@ namespace LXP.Core.Services
         {
             var normalizedQuestionType = topicFeedbackQuestion.QuestionType.ToUpper();
 
-            if (normalizedQuestionType == TopicFeedbackQuestionTypes.DescriptiveQuestion.ToUpper())
+            if (normalizedQuestionType == FeedbackQuestionTypes.DescriptiveQuestion.ToUpper())
             {
                 options = null;
             }
@@ -47,7 +47,7 @@ namespace LXP.Core.Services
 
             _topicFeedbackRepository.AddFeedbackQuestion(questionEntity);
 
-            if (normalizedQuestionType == TopicFeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
+            if (normalizedQuestionType == FeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
             {
                 if (options != null && options.Count > 0)
                 {
@@ -108,7 +108,7 @@ namespace LXP.Core.Services
 
                 if (
                     existingQuestion.QuestionType
-                    == TopicFeedbackQuestionTypes.MultiChoiceQuestion.ToUpper()
+                    == FeedbackQuestionTypes.MultiChoiceQuestion.ToUpper()
                 )
                 {
                     if (
@@ -217,7 +217,7 @@ namespace LXP.Core.Services
         {
             questionType = questionType.ToUpper();
 
-            if (questionType == TopicFeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
+            if (questionType == FeedbackQuestionTypes.MultiChoiceQuestion.ToUpper())
             {
                 return options != null && options.Count >= 2 && options.Count <= 5;
             }

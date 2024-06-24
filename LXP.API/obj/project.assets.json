@@ -10617,11 +10617,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\backend\\LXP.API\\LXP.Api.csproj",
+      "projectUniqueName": "D:\\backend\\LXP.Api\\LXP.Api.csproj",
       "projectName": "LXP.Api",
-      "projectPath": "D:\\backend\\LXP.API\\LXP.Api.csproj",
+      "projectPath": "D:\\backend\\LXP.Api\\LXP.Api.csproj",
       "packagesPath": "C:\\Users\\gokul.jawahar\\.nuget\\packages\\",
-      "outputPath": "D:\\backend\\LXP.API\\obj\\",
+      "outputPath": "D:\\backend\\LXP.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

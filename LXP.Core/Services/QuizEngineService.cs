@@ -1,24 +1,16 @@
 using LXP.Common.ViewModels.QuizEngineViewModel;
 using LXP.Core.IServices;
 using LXP.Data.IRepository;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Logging;
 
 namespace LXP.Core.Services
 {
     public class QuizEngineService : IQuizEngineService
     {
         private readonly IQuizEngineRepository _quizEngineRepository;
-        private readonly ILogger<QuizEngineService> _logger;
 
-        public QuizEngineService(
-            IQuizEngineRepository quizEngineRepository,
-            ILogger<QuizEngineService> logger
-        )
+        public QuizEngineService(IQuizEngineRepository quizEngineRepository)
         {
             _quizEngineRepository = quizEngineRepository;
-
-            _logger = logger;
         }
 
         public async Task<ViewQuizDetailsViewModel> GetQuizByIdAsync(Guid quizId)
@@ -150,10 +142,6 @@ namespace LXP.Core.Services
                     optionId
                 );
             }
-
-            _logger.LogInformation(
-                $"Answer submitted for attempt {answerSubmissionModel.LearnerAttemptId}, question {answerSubmissionModel.QuizQuestionId}"
-            );
         }
 
         public async Task<LearnerPassStatusViewModel> CheckLearnerPassStatusAsync(
@@ -178,51 +166,21 @@ namespace LXP.Core.Services
             var attempt = await _quizEngineRepository.GetLearnerAttemptByIdAsync(attemptId);
             if (attempt == null)
                 throw new KeyNotFoundException($"Learner attempt with ID {attemptId} not found.");
-
             var quiz = await _quizEngineRepository.GetQuizByIdAsync(attempt.QuizId);
             if (quiz == null)
                 throw new KeyNotFoundException($"Quiz with ID {attempt.QuizId} not found.");
-
             var totalQuestions = (
                 await _quizEngineRepository.GetQuestionsForQuizAsync(quiz.QuizId)
             ).Count();
-
-            // Add a small delay to ensure all answers are saved
-            await Task.Delay(500);
-
             var existingAnswers = await _quizEngineRepository.GetLearnerAnswersForAttemptAsync(
                 attemptId
             );
-
-            // Implement a retry mechanism if the count doesn't match
-            int retryCount = 0;
-            while (
-                existingAnswers.Select(a => a.QuizQuestionId).Distinct().Count() != totalQuestions
-                && retryCount < 3
-            )
-            {
-                _logger.LogWarning(
-                    $"Attempt {attemptId}: Mismatch in answer count. Retrying... (Attempt {retryCount + 1})"
-                );
-                await Task.Delay(500);
-                existingAnswers = await _quizEngineRepository.GetLearnerAnswersForAttemptAsync(
-                    attemptId
-                );
-                retryCount++;
-            }
-
             if (existingAnswers.Select(a => a.QuizQuestionId).Distinct().Count() != totalQuestions)
                 throw new InvalidOperationException(
                     "You need to answer all the questions in the quiz before submitting the quiz attempt."
                 );
-
-            _logger.LogInformation(
-                $"Attempt {attemptId}: Found {existingAnswers.Count()} answers for {totalQuestions} questions"
-            );
-
-            var individualQuestionMarks = 100.0f / totalQuestions;
+            var individualQuestionMarks = 100.0f / totalQuestions; //newly added
             float finalScore = 0;
-
             foreach (var answer in existingAnswers)
             {
                 var isAnswerCorrect = await _quizEngineRepository.IsQuestionOptionCorrectAsync(
@@ -245,14 +203,8 @@ namespace LXP.Core.Services
                         }
                     }
                 );
-                _logger.LogInformation(
-                    $"Attempt {attemptId}: Processed question {answer.QuizQuestionId}, score: {questionScore}"
-                );
                 finalScore += questionScore;
             }
-
-            _logger.LogInformation($"Attempt {attemptId}: Final score calculated: {finalScore}");
-
             attempt.Score = (float)Math.Round(finalScore);
             attempt.EndTime = DateTime.Now;
             await _quizEngineRepository.UpdateLearnerAttemptAsync(attempt);
@@ -369,3 +321,56 @@ namespace LXP.Core.Services
         }
     }
 }
+
+
+//private async Task<float> CalculateQuestionScore(
+//    Guid quizQuestionId,
+//    bool isAnswerCorrect,
+//    float individualQuestionMarks,
+//    AnswerSubmissionModel answerSubmissionModel
+//)
+//{
+//    var questionType = await _quizEngineRepository.GetQuestionTypeByIdAsync(quizQuestionId);
+//    switch (questionType)
+//    {
+//        case "MCQ":
+//        case "T/F":
+//            return isAnswerCorrect ? individualQuestionMarks : 0;
+
+//        case "MSQ":
+//            var correctOptions =
+//                await _quizEngineRepository.GetCorrectOptionsForQuestionAsync(
+//                    quizQuestionId
+//                );
+//            var correctOptionCount = correctOptions.Count();
+//            var selectedOptions = answerSubmissionModel
+//                .SelectedOptions.Select(o => o.ToString())
+//                .ToList();
+//            var correctlySelectedOptions = selectedOptions
+//                .Intersect(correctOptions)
+//                .Count();
+//            var incorrectlySelectedOptions = selectedOptions.Except(correctOptions).Count();
+
+//            if (
+//                correctlySelectedOptions == correctOptionCount
+//                && incorrectlySelectedOptions == 0
+//            )
+//            {
+//                return individualQuestionMarks; // All correct options selected and no incorrect options
+//            }
+//            else if (correctlySelectedOptions > 0 && incorrectlySelectedOptions == 0)
+//            {
+//                var partialMark =
+//                    (individualQuestionMarks / correctOptionCount)
+//                    * correctlySelectedOptions;
+//                return partialMark; // Partial marks for partially correct answer and no incorrect options
+//            }
+//            else
+//            {
+//                return 0; // No marks for incorrect answer or selecting more options than correct options
+//            }
+
+//        default:
+//            return 0;
+//    }
+//}
