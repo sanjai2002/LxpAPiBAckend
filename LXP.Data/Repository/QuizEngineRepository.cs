@@ -183,25 +183,6 @@ namespace LXP.Data.Repository
                 .ToListAsync();
         }
 
-        // public async Task<IEnumerable<QuizEngineQuestionViewModel>> GetQuestionsForQuizAsync(
-        //     Guid quizId
-        // )
-        // {
-        //     return await _dbContext
-        //         .QuizQuestions.Where(q => q.QuizId == quizId)
-        //         .Select(q => new QuizEngineQuestionViewModel
-        //         {
-        //             QuizQuestionId = q.QuizQuestionId,
-        //             Question = q.Question,
-        //             QuestionType = q.QuestionType,
-        //             QuestionNo = q.QuestionNo,
-        //             Options = _dbContext
-        //                 .QuestionOptions.Where(o => o.QuizQuestionId == q.QuizQuestionId)
-        //                 .Select(o => new QuizEngineOptionViewModel { Option = o.Option })
-        //                 .ToList()
-        //         })
-        //         .ToListAsync();
-        // }
         public async Task<IEnumerable<QuizEngineQuestionViewModel>> GetQuestionsForQuizAsync(
             Guid quizId
         )
@@ -495,3 +476,79 @@ namespace LXP.Data.Repository
         }
     }
 }
+
+
+
+
+/*Atomic code
+ *
+ * public async Task SubmitQuizAttemptAsync(Guid attemptId)
+{
+    using var transaction = await _quizEngineRepository.BeginTransactionAsync();
+    try
+    {
+        var attempt = await _quizEngineRepository.GetLearnerAttemptByIdAsync(attemptId);
+        if (attempt == null)
+            throw new KeyNotFoundException($"Learner attempt with ID {attemptId} not found.");
+        
+        var quiz = await _quizEngineRepository.GetQuizByIdAsync(attempt.QuizId);
+        if (quiz == null)
+            throw new KeyNotFoundException($"Quiz with ID {attempt.QuizId} not found.");
+        
+        var questions = await _quizEngineRepository.GetQuestionsForQuizAsync(quiz.QuizId);
+        var totalQuestions = questions.Count();
+        var existingAnswers = await _quizEngineRepository.GetLearnerAnswersForAttemptAsync(attemptId);
+        
+        var distinctAnsweredQuestions = existingAnswers.Select(a => a.QuizQuestionId).Distinct().Count();
+        
+        if (distinctAnsweredQuestions != totalQuestions)
+        {
+            throw new InvalidOperationException(
+                $"Expected {totalQuestions} answered questions, but found {distinctAnsweredQuestions}. " +
+                "You need to answer all the questions in the quiz before submitting the quiz attempt.");
+        }
+
+        var individualQuestionMarks = 100.0f / totalQuestions;
+        float finalScore = 0;
+
+        foreach (var question in questions)
+        {
+            var answer = existingAnswers.FirstOrDefault(a => a.QuizQuestionId == question.QuizQuestionId);
+            if (answer == null)
+            {
+                throw new InvalidOperationException($"No answer found for question {question.QuizQuestionId}");
+            }
+
+            var isAnswerCorrect = await _quizEngineRepository.IsQuestionOptionCorrectAsync(
+                answer.QuizQuestionId,
+                answer.QuestionOptionId
+            );
+            var questionScore = await CalculateQuestionScore(
+                answer.QuizQuestionId,
+                isAnswerCorrect,
+                individualQuestionMarks,
+                new AnswerSubmissionModel
+                {
+                    LearnerAttemptId = attemptId,
+                    QuizQuestionId = answer.QuizQuestionId,
+                    SelectedOptions = new List<string>
+                    {
+                        await _quizEngineRepository.GetOptionTextByIdAsync(answer.QuestionOptionId)
+                    }
+                }
+            );
+            finalScore += questionScore;
+        }
+
+        attempt.Score = (float)Math.Round(finalScore);
+        attempt.EndTime = DateTime.Now;
+        await _quizEngineRepository.UpdateLearnerAttemptAsync(attempt);
+
+        await transaction.CommitAsync();
+    }
+    catch (Exception)
+    {
+        await transaction.RollbackAsync();
+        throw;
+    }
+}*/

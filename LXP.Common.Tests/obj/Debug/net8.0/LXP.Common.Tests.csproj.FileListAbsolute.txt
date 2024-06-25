@@ -2434,7 +2434,6 @@ D:\backend\LXP.Common.Tests\bin\Debug\net8.0\Microsoft.TestPlatform.Utilities.dl
 D:\backend\LXP.Common.Tests\bin\Debug\net8.0\Microsoft.VisualStudio.TestPlatform.Common.dll
 D:\backend\LXP.Common.Tests\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\backend\LXP.Common.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\backend\LXP.Common.Tests\bin\Debug\net8.0\NuGet.Frameworks.dll
 D:\backend\LXP.Common.Tests\bin\Debug\net8.0\nunit.framework.dll
 D:\backend\LXP.Common.Tests\bin\Debug\net8.0\System.Drawing.Common.dll
 D:\backend\LXP.Common.Tests\bin\Debug\net8.0\System.Security.Permissions.dll
@@ -2526,3 +2525,5 @@ D:\backend\LXP.Common.Tests\obj\Debug\net8.0\refint\LXP.Common.Tests.dll
 D:\backend\LXP.Common.Tests\obj\Debug\net8.0\LXP.Common.Tests.pdb
 D:\backend\LXP.Common.Tests\obj\Debug\net8.0\LXP.Common.Tests.genruntimeconfig.cache
 D:\backend\LXP.Common.Tests\obj\Debug\net8.0\ref\LXP.Common.Tests.dll
+D:\backend\LXP.Common.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_LXP.Common.Tests
+D:\backend\LXP.Common.Tests\bin\Debug\net8.0\nunit.framework.legacy.dll

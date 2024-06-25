@@ -3965,7 +3965,6 @@ D:\backend\LXP.Api.Tests\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\MySqlConnector.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
-D:\backend\LXP.Api.Tests\bin\Debug\net8.0\NuGet.Frameworks.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\nunit.framework.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\OfficeOpenXml.Core.ExcelPackage.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
@@ -4072,7 +4071,6 @@ D:\backend\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
-D:\backend\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\LXP.Api.dll
 D:\backend\LXP.Api.Tests\bin\Debug\net8.0\LXP.Common.dll
@@ -4095,3 +4093,6 @@ D:\backend\LXP.Api.Tests\obj\Debug\net8.0\refint\LXP.Api.Tests.dll
 D:\backend\LXP.Api.Tests\obj\Debug\net8.0\LXP.Api.Tests.pdb
 D:\backend\LXP.Api.Tests\obj\Debug\net8.0\LXP.Api.Tests.genruntimeconfig.cache
 D:\backend\LXP.Api.Tests\obj\Debug\net8.0\ref\LXP.Api.Tests.dll
+D:\backend\LXP.Api.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_LXP.Api.Tests
+D:\backend\LXP.Api.Tests\bin\Debug\net8.0\nunit.framework.legacy.dll
+D:\backend\LXP.Api.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll

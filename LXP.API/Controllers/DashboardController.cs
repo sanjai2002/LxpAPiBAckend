@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LXP.Api.Controllers
 {
-    [Route("api/[controller]/[action]")]
-    [ApiController]
     ///<summary>
     /// Details required for Dashboard
     ///</summary>
+    [Route("api/[controller]/[action]")]
+    [ApiController]
     public class DashboardController : BaseController
     {
         private readonly IDashboardService _dashboardService;

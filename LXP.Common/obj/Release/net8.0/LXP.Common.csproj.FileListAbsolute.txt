@@ -1,0 +1,13 @@
+D:\backend\LXP.Common\bin\Release\net8.0\LXP.Common.deps.json
+D:\backend\LXP.Common\bin\Release\net8.0\LXP.Common.dll
+D:\backend\LXP.Common\bin\Release\net8.0\LXP.Common.pdb
+D:\backend\LXP.Common\obj\Release\net8.0\LXP.Common.csproj.AssemblyReference.cache
+D:\backend\LXP.Common\obj\Release\net8.0\LXP.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\backend\LXP.Common\obj\Release\net8.0\LXP.Common.AssemblyInfoInputs.cache
+D:\backend\LXP.Common\obj\Release\net8.0\LXP.Common.AssemblyInfo.cs
+D:\backend\LXP.Common\obj\Release\net8.0\LXP.Common.csproj.CoreCompileInputs.cache
+D:\backend\LXP.Common\obj\Release\net8.0\LXP.Common.sourcelink.json
+D:\backend\LXP.Common\obj\Release\net8.0\LXP.Common.dll
+D:\backend\LXP.Common\obj\Release\net8.0\refint\LXP.Common.dll
+D:\backend\LXP.Common\obj\Release\net8.0\LXP.Common.pdb
+D:\backend\LXP.Common\obj\Release\net8.0\ref\LXP.Common.dll

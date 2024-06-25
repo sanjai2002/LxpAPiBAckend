@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LXP.Api.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     ///<summary>
     ///Category of the course
     ///</summary>
+    [Route("api/[controller]")]
+    [ApiController]
     public class CategoryController : BaseController
     {
         private readonly ICategoryServices _categoryServices;

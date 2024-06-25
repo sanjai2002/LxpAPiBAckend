@@ -69,6 +69,11 @@
             <param name="quizId">The unique identifier of the quiz to which the data belongs.</param>
             <returns>A validation response if validation fails, otherwise null.</returns>
         </member>
+        <member name="T:LXP.Api.Controllers.CategoryController">
+            <summary>
+            Category of the course
+            </summary>
+        </member>
         <member name="M:LXP.Api.Controllers.CategoryController.GetAllCategory">
             <summary>
             getting all category name and its id
@@ -108,6 +113,11 @@
         <member name="M:LXP.Api.Controllers.CourseController.GetAllCourseDetails">
             <summary>
             Fetch all the course
+            </summary>
+        </member>
+        <member name="T:LXP.Api.Controllers.DashboardController">
+            <summary>
+             Details required for Dashboard
             </summary>
         </member>
         <member name="M:LXP.Api.Controllers.DashboardController.GetEnrollmentMonth(System.String)">
@@ -169,6 +179,11 @@
             Enrolled course details by learner id
             </summary>
             <response code="200">Success</response>
+        </member>
+        <member name="T:LXP.Api.Controllers.LearnerProgressController">
+            <summary>
+            Learner Video progress
+            </summary>
         </member>
         <member name="M:LXP.Api.Controllers.LoginController.LoginLearner(LXP.Common.ViewModels.LoginModel)">
             <summary>

@@ -3963,7 +3963,6 @@ D:\backend\LXP.Data.Tests\bin\Debug\net8.0\MySql.Data.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\MySqlConnector.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\Newtonsoft.Json.dll
-D:\backend\LXP.Data.Tests\bin\Debug\net8.0\NuGet.Frameworks.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\nunit.framework.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\Serilog.dll
@@ -4088,7 +4087,6 @@ D:\backend\LXP.Data.Tests\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\Syste
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-D:\backend\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\LXP.Common.dll
 D:\backend\LXP.Data.Tests\bin\Debug\net8.0\LXP.Data.dll
@@ -4106,3 +4104,6 @@ D:\backend\LXP.Data.Tests\obj\Debug\net8.0\refint\LXP.Data.Tests.dll
 D:\backend\LXP.Data.Tests\obj\Debug\net8.0\LXP.Data.Tests.pdb
 D:\backend\LXP.Data.Tests\obj\Debug\net8.0\LXP.Data.Tests.genruntimeconfig.cache
 D:\backend\LXP.Data.Tests\obj\Debug\net8.0\ref\LXP.Data.Tests.dll
+D:\backend\LXP.Data.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_LXP.Data.Tests
+D:\backend\LXP.Data.Tests\bin\Debug\net8.0\nunit.framework.legacy.dll
+D:\backend\LXP.Data.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll

@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LXP.Api.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     ///<summary>
     ///Learner Video progress
     ///</summary>
+    [Route("api/[controller]")]
+    [ApiController]
     public class LearnerProgressController : BaseController
     {
         //private readonly ILearnerProgressService _learnerProgressService;
