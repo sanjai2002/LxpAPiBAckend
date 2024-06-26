@@ -212,16 +212,17 @@ namespace LXP.Core.Services
         //     return progress;
         // }
 
-        public async Task CalculateAndUpdateCourseCompletionAsync(Guid learnerId)
-        {
-            await _learnerProgressRepository.CalculateAndUpdateCourseCompletionAsync(learnerId);
-        }
+        //public async Task CalculateAndUpdateCourseCompletionAsync(Guid learnerId)
+        //{
+        //    await _learnerProgressRepository.CalculateAndUpdateCourseCompletionAsync(learnerId);
+        //}
 
         public async Task<decimal?> GetCourseCompletionPercentageAsync(
             Guid learnerId,
             Guid enrollmentId
         )
         {
+            await _learnerProgressRepository.CalculateAndUpdateCourseCompletionAsync(learnerId);
             var enrollment = await _learnerProgressRepository.GetEnrollmentByIdAsync(
                 learnerId,
                 enrollmentId

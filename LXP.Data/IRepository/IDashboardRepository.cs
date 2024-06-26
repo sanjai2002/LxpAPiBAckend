@@ -21,5 +21,6 @@ namespace LXP.Data.IRepository
         IEnumerable<HighestEnrolledCourseViewModel> GetHighestEnrolledCourse();
         IEnumerable<RecentFeedbackViewModel> GetRecentfeedbackResponses();
         public List<string> GetEnrolledYears();
+        public IEnumerable<CourseWiseViewModel> GetEnrollmentCourse();
     }
 }

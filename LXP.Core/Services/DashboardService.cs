@@ -110,5 +110,10 @@ namespace LXP.Core.Services
         {
             return _dashboardRepository.GetRecentfeedbackResponses();
         }
+
+        public Array GetCourseWiseEnrollmentsCount()
+        {
+            return _dashboardRepository.GetEnrollmentCourse().ToArray();
+        }
     }
 }

@@ -250,5 +250,22 @@ namespace LXP.Data.Repository
                 )
                 .ToList();
         }
+        public IEnumerable<CourseWiseViewModel> GetEnrollmentCourse()
+        {
+            var topLearners = _lXPDbContext
+                   .Enrollments.GroupBy(e => e.CourseId)
+                   .Select(g => new CourseWiseViewModel
+                   {
+                       CourseId = g.Key,
+                       Count = g.Count(),
+                       CourseName = g.First().Course.Title,
+                   })
+                   .ToList();
+            foreach (var learner in topLearners)
+            {
+                Console.WriteLine("hi" + learner.CourseId);
+            };
+            return topLearners;
+        }
     }
 }

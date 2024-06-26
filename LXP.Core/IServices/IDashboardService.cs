@@ -15,5 +15,6 @@ namespace LXP.Core.IServices
         IEnumerable<TopLearnersViewModel> GetTopLearner();
         IEnumerable<HighestEnrolledCourseViewModel> GetHighestEnrolledCourse();
         IEnumerable<RecentFeedbackViewModel> GetRecentfeedbackResponses();
+        public Array GetCourseWiseEnrollmentsCount();
     }
 }

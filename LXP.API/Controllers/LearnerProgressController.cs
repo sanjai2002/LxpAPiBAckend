@@ -63,31 +63,31 @@ namespace LXP.Api.Controllers
         //    return Ok(percentage);
         //}
 
-        [HttpPost("calculate-course-completion/{learnerId}")]
-        public async Task<IActionResult> CalculateCourseCompletion(Guid learnerId)
-        {
-            try
-            {
-                await _Progress.CalculateAndUpdateCourseCompletionAsync(learnerId);
-                return Ok(
-                    new
-                    {
-                        Message = "Course completion percentage calculated and updated successfully."
-                    }
-                );
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(
-                    500,
-                    new
-                    {
-                        Message = "An error occurred while calculating the course completion.",
-                        Details = ex.Message
-                    }
-                );
-            }
-        }
+        //[HttpPost("calculate-course-completion/{learnerId}")]
+        //public async Task<IActionResult> CalculateCourseCompletion(Guid learnerId)
+        //{
+        //    try
+        //    {
+        //        await _Progress.CalculateAndUpdateCourseCompletionAsync(learnerId);
+        //        return Ok(
+        //            new
+        //            {
+        //                Message = "Course completion percentage calculated and updated successfully."
+        //            }
+        //        );
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return StatusCode(
+        //            500,
+        //            new
+        //            {
+        //                Message = "An error occurred while calculating the course completion.",
+        //                Details = ex.Message
+        //            }
+        //        );
+        //    }
+        //}
 
         [HttpGet("course-completion-percentage/{learnerId}/{enrollmentId}")]
         public async Task<IActionResult> GetCourseCompletionPercentage(

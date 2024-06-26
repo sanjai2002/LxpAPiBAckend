@@ -82,5 +82,12 @@ namespace LXP.Api.Controllers
             var GetRecentfeedbackResponses = _dashboardService.GetRecentfeedbackResponses();
             return Ok(CreateSuccessResponse(GetRecentfeedbackResponses));
         }
+
+        [HttpGet("/lxp/admin/GetCourseWiseEnrollmentsCount")]
+        public IActionResult GetCourseWiseEnrollmentsCount()
+        {
+            var GetCourseWiseEnrollmentsCount = _dashboardService.GetCourseWiseEnrollmentsCount();
+            return Ok(CreateSuccessResponse(GetCourseWiseEnrollmentsCount));
+        }
     }
 }

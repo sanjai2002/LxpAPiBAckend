@@ -9466,11 +9466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Backend\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+      "projectUniqueName": "D:\\backend\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
       "projectName": "LXP.Core.Tests",
-      "projectPath": "D:\\Backend\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
+      "projectPath": "D:\\backend\\LXP.Core.Tests\\LXP.Core.Tests.csproj",
       "packagesPath": "C:\\Users\\gokul.jawahar\\.nuget\\packages\\",
-      "outputPath": "D:\\Backend\\LXP.Core.Tests\\obj\\",
+      "outputPath": "D:\\backend\\LXP.Core.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9492,8 +9492,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Backend\\LXP.Core\\LXP.Core.csproj": {
-              "projectPath": "D:\\Backend\\LXP.Core\\LXP.Core.csproj"
+            "D:\\backend\\LXP.Core\\LXP.Core.csproj": {
+              "projectPath": "D:\\backend\\LXP.Core\\LXP.Core.csproj"
             }
           }
         }

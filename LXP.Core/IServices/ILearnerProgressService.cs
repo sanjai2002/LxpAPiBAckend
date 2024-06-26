@@ -19,7 +19,7 @@ namespace LXP.Core.IServices
         Task<double> TopicWatchTime(Guid topicId, Guid learnerId);
         Task<double> CourseWatchTime(Guid courseId, Guid learnerId);
 
-        Task CalculateAndUpdateCourseCompletionAsync(Guid learnerId);
+        //Task CalculateAndUpdateCourseCompletionAsync(Guid learnerId);
 
         Task<decimal?> GetCourseCompletionPercentageAsync(Guid learnerId, Guid enrollmentId);
         Task<LearnerProgress> GetLearnerProgressByLearnerIdAndMaterialId(
