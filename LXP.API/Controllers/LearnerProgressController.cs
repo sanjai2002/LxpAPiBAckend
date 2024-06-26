@@ -19,15 +19,6 @@ namespace LXP.Api.Controllers
             _Progress = Progress;
         }
 
-        //[HttpPost("/lxp/course/learnerprogress")]
-
-        //public async Task<IActionResult> MaterialProgress(LearnerProgressViewModel learnerProgress)
-        //{
-        //    await _Progress.Progress(learnerProgress);
-        //    return Ok();
-
-
-        //}
         [HttpPost("/lxp/course/learner/learnerprogress")]
         public async Task<IActionResult> MaterialProgress(ProgressViewModel learnerProgress)
         {
