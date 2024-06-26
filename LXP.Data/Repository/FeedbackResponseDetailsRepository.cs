@@ -233,7 +233,7 @@ namespace LXP.Data.Repository
                     Response = r.Response ?? "N/A",
                     OptionText = r.OptionText ?? "N/A",
                     LearnerName = r.LearnerName ?? "N/A",
-                    TopicName = r.TopicName ?? "N" // Include Topic Name
+                    TopicName = r.TopicName ?? "N/A" // Include Topic Name
                 })
                 .ToList();
         }
