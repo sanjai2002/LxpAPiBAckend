@@ -5652,23 +5652,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gokul.jawahar\\.nuget\\packages\\": {},
+    "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Backend\\LXP.Data.Tests\\LXP.Data.Tests.csproj",
+      "projectUniqueName": "d:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.Data.Tests\\LXP.Data.Tests.csproj",
       "projectName": "LXP.Data.Tests",
-      "projectPath": "D:\\Backend\\LXP.Data.Tests\\LXP.Data.Tests.csproj",
-      "packagesPath": "C:\\Users\\gokul.jawahar\\.nuget\\packages\\",
-      "outputPath": "D:\\Backend\\LXP.Data.Tests\\obj\\",
+      "projectPath": "d:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.Data.Tests\\LXP.Data.Tests.csproj",
+      "packagesPath": "C:\\Users\\kathirvel.selvam\\.nuget\\packages\\",
+      "outputPath": "d:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.Data.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\gokul.jawahar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kathirvel.selvam\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5677,15 +5677,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Backend\\LXP.Data\\LXP.Data.csproj": {
-              "projectPath": "D:\\Backend\\LXP.Data\\LXP.Data.csproj"
+            "d:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.Data\\LXP.Data.csproj": {
+              "projectPath": "d:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.Data\\LXP.Data.csproj"
             }
           }
         }

@@ -1,311 +1,335 @@
 {
   "Files": [
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseMaterial\\04dbd3c6-d467-4f32-9365-194ac5d1753c_Captone-Flow Diagram.pdf",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseMaterial\\04dbd3c6-d467-4f32-9365-194ac5d1753c_Captone-Flow Diagram.pdf",
       "PackagePath": "staticwebassets\\CourseMaterial\\04dbd3c6-d467-4f32-9365-194ac5d1753c_Captone-Flow Diagram.pdf"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png",
       "PackagePath": "staticwebassets\\CourseMaterial\\d13c7f07-2ec0-4a93-9e49-30607e74b8b0_css.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\04a5fade-45c9-4c71-80c6-88c52bb760fd_React1.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\04a5fade-45c9-4c71-80c6-88c52bb760fd_React1.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\04a5fade-45c9-4c71-80c6-88c52bb760fd_React1.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\05df4acf-c9c8-4a0f-8554-ddd8e5e2907c_2.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0e6e14d9-1b7a-4786-af04-54c669a5db58_test.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\0e6e14d9-1b7a-4786-af04-54c669a5db58_test.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\0e6e14d9-1b7a-4786-af04-54c669a5db58_test.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\0ec0b0a8-985e-4d32-b5e8-e415fe7af09e_Eco education-rafiki.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\0ecfc1ce-0ab3-4387-8470-c92501dec2eb_js.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\0ecfc1ce-0ab3-4387-8470-c92501dec2eb_js.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\0ecfc1ce-0ab3-4387-8470-c92501dec2eb_js.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\14a96554-a8fd-4259-bc0f-1e9242f2cbff_html.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1bbee7b0-e5a5-4ad9-bcf6-d83f967eeed9_test.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\1bbee7b0-e5a5-4ad9-bcf6-d83f967eeed9_test.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\1bbee7b0-e5a5-4ad9-bcf6-d83f967eeed9_test.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1bf69292-1abf-4693-a098-13d7ffbd53b8_Active.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\1bf69292-1abf-4693-a098-13d7ffbd53b8_Active.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\1bf69292-1abf-4693-a098-13d7ffbd53b8_Active.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\1c7a506f-a2dd-4b43-9bf7-f64a26f8d5b4_react.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\1c7a506f-a2dd-4b43-9bf7-f64a26f8d5b4_react.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\1c7a506f-a2dd-4b43-9bf7-f64a26f8d5b4_react.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\24bcb106-4a94-48d4-ab41-4b24d7aa93ae_2.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\24bcb106-4a94-48d4-ab41-4b24d7aa93ae_2.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\24bcb106-4a94-48d4-ab41-4b24d7aa93ae_2.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\27d75d9e-2940-46cc-9d73-517192d5149f_oops.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\27d75d9e-2940-46cc-9d73-517192d5149f_oops.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\27d75d9e-2940-46cc-9d73-517192d5149f_oops.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2a3b72cd-560d-4769-9d0e-37d1ea83a336_2.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\2a3b72cd-560d-4769-9d0e-37d1ea83a336_2.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\2a3b72cd-560d-4769-9d0e-37d1ea83a336_2.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2ae1f28d-16c1-4d7b-9af6-eea0c6fa1063_html.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\2ae1f28d-16c1-4d7b-9af6-eea0c6fa1063_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\2ae1f28d-16c1-4d7b-9af6-eea0c6fa1063_html.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2dc05f88-8295-4422-b15f-2949cb81700b_html.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\2dc05f88-8295-4422-b15f-2949cb81700b_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\2dc05f88-8295-4422-b15f-2949cb81700b_html.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\2f5351e3-46c0-474d-b189-8a00605578c5_C#.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\2f5351e3-46c0-474d-b189-8a00605578c5_C#.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\2f5351e3-46c0-474d-b189-8a00605578c5_C#.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\31ec408f-787b-42ad-bf9b-e0a1274f0251_image (4).png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\31ec408f-787b-42ad-bf9b-e0a1274f0251_image (4).png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\31ec408f-787b-42ad-bf9b-e0a1274f0251_image (4).png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\3263ab63-549a-41fe-83b0-00f59731ce0f_java.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\3263ab63-549a-41fe-83b0-00f59731ce0f_java.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\3263ab63-549a-41fe-83b0-00f59731ce0f_java.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\33906549-ef2d-4fcb-b465-c599ae5e7c6c_agile.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\33906549-ef2d-4fcb-b465-c599ae5e7c6c_agile.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\33906549-ef2d-4fcb-b465-c599ae5e7c6c_agile.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\3e1680ce-bf1c-4b65-9c9e-d39cd7c2e023_C#.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\3e1680ce-bf1c-4b65-9c9e-d39cd7c2e023_C#.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\3e1680ce-bf1c-4b65-9c9e-d39cd7c2e023_C#.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\41096eab-84c8-40eb-ab7b-d60f60c84688_Annotation 2023-08-02 113450.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\45743d31-aa31-4c14-9d62-9a1c16d88012_deliver.jpg",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\45743d31-aa31-4c14-9d62-9a1c16d88012_deliver.jpg",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\45743d31-aa31-4c14-9d62-9a1c16d88012_deliver.jpg"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\4d7a27af-0827-4dce-ba22-c138b6c4d937_C#sss.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\4d7a27af-0827-4dce-ba22-c138b6c4d937_C#sss.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\4d7a27af-0827-4dce-ba22-c138b6c4d937_C#sss.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\5a2e9c86-74d0-437d-8d10-6874a4c5a49a_2.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\5a68caa0-56c1-4a5b-a497-465e3c1e373d_angular1.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\5a68caa0-56c1-4a5b-a497-465e3c1e373d_angular1.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\5a68caa0-56c1-4a5b-a497-465e3c1e373d_angular1.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\6d3fc033-6e8a-4153-bb1e-c1a8a8d75594_html.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\6d3fc033-6e8a-4153-bb1e-c1a8a8d75594_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\6d3fc033-6e8a-4153-bb1e-c1a8a8d75594_html.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\783266c6-23f4-4f38-867d-e70cbb69c495_test.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\6f41eff6-93a7-4f51-939c-51b906542b46_azure.jpeg",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\6f41eff6-93a7-4f51-939c-51b906542b46_azure.jpeg"
+    },
+    {
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\783266c6-23f4-4f38-867d-e70cbb69c495_test.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\783266c6-23f4-4f38-867d-e70cbb69c495_test.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\7b2c518c-5deb-4e74-bd0c-f9f3ddbd24b7_oops.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\7b2c518c-5deb-4e74-bd0c-f9f3ddbd24b7_oops.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\7b2c518c-5deb-4e74-bd0c-f9f3ddbd24b7_oops.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\7ca75b42-62c8-46fe-8427-64b0455f3dba_mysql.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\7ca75b42-62c8-46fe-8427-64b0455f3dba_mysql.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\7ca75b42-62c8-46fe-8427-64b0455f3dba_mysql.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\7d761452-9c5f-4ec7-b1ed-ec37333b0750_C#.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\7d761452-9c5f-4ec7-b1ed-ec37333b0750_C#.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\7d761452-9c5f-4ec7-b1ed-ec37333b0750_C#.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\8e3d7741-6443-4c0b-95e3-ef761f02bdb6_html.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\8e3d7741-6443-4c0b-95e3-ef761f02bdb6_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\8e3d7741-6443-4c0b-95e3-ef761f02bdb6_html.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\9a68b3b0-e3b5-4577-8473-62c669245a85_C#.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\9a68b3b0-e3b5-4577-8473-62c669245a85_C#.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\9a68b3b0-e3b5-4577-8473-62c669245a85_C#.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\9ee0f8d0-7e53-485c-9c24-79c68d60395f_agile.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\9ee0f8d0-7e53-485c-9c24-79c68d60395f_agile.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\9ee0f8d0-7e53-485c-9c24-79c68d60395f_agile.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a3cfe1e8-4fb4-480e-89c1-6a5dc45fd33a_angular1.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\a3cfe1e8-4fb4-480e-89c1-6a5dc45fd33a_angular1.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\a3cfe1e8-4fb4-480e-89c1-6a5dc45fd33a_angular1.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\a40d38fe-b1fe-4be2-b4c0-283a62388247_Annotation 2023-08-02 113450.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a67c9519-28e1-4ffa-8440-3c0b4e86ea3c_js.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\a67c9519-28e1-4ffa-8440-3c0b4e86ea3c_js.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\a67c9519-28e1-4ffa-8440-3c0b4e86ea3c_js.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a7cb4f59-027e-4b78-aa86-a113223e1123_image (4).png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\a7cb4f59-027e-4b78-aa86-a113223e1123_image (4).png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\a7cb4f59-027e-4b78-aa86-a113223e1123_image (4).png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\a8f8ad7b-1519-4856-ab8a-4aa819bbdc77_Eco education-rafiki.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\a8f8ad7b-1519-4856-ab8a-4aa819bbdc77_Eco education-rafiki.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\a8f8ad7b-1519-4856-ab8a-4aa819bbdc77_Eco education-rafiki.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\acfb5289-9486-46e7-aae0-5acd9a6b28d7_html.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\acfb5289-9486-46e7-aae0-5acd9a6b28d7_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\acfb5289-9486-46e7-aae0-5acd9a6b28d7_html.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\af114fe5-c0b3-494c-bb8a-a41e4a34f363_csscourse.jpg",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\af114fe5-c0b3-494c-bb8a-a41e4a34f363_csscourse.jpg",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\af114fe5-c0b3-494c-bb8a-a41e4a34f363_csscourse.jpg"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\b3ac4c46-1a09-4c69-b1b0-050c2014df5e_C#.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\b3ac4c46-1a09-4c69-b1b0-050c2014df5e_C#.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\b3ac4c46-1a09-4c69-b1b0-050c2014df5e_C#.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\bf5b770e-c5b2-499b-a4a3-fa609d2e20ea_java.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\bc490f63-df56-4c32-84c9-73a7a03f7188_azure.jpeg",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\bc490f63-df56-4c32-84c9-73a7a03f7188_azure.jpeg"
+    },
+    {
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\bf5b770e-c5b2-499b-a4a3-fa609d2e20ea_java.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\bf5b770e-c5b2-499b-a4a3-fa609d2e20ea_java.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\bfa8bdef-95b1-48c0-bb04-dde81b882c60_Annotation 2023-08-01 144515.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c3428ad2-9ffa-4808-8988-18ea22acda73_html.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\c3428ad2-9ffa-4808-8988-18ea22acda73_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\c3428ad2-9ffa-4808-8988-18ea22acda73_html.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c3765e23-0784-4844-947e-bcf314b99c17_React1.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\c3765e23-0784-4844-947e-bcf314b99c17_React1.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\c3765e23-0784-4844-947e-bcf314b99c17_React1.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c6167da4-fef9-4b12-bcbc-268d45d2c3ad_test.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\c6167da4-fef9-4b12-bcbc-268d45d2c3ad_test.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\c6167da4-fef9-4b12-bcbc-268d45d2c3ad_test.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\c8de83ed-9e93-479f-9bfa-5163fd3dd86c_css.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\c8de83ed-9e93-479f-9bfa-5163fd3dd86c_css.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\c8de83ed-9e93-479f-9bfa-5163fd3dd86c_css.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\d41ca5d5-7694-46b3-ab3a-4d168cdfda86_Annotation 2023-08-01 144515.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d4e6895d-b631-425c-827c-be2d19888c25_image (4).png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\d4e6895d-b631-425c-827c-be2d19888c25_image (4).png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\d4e6895d-b631-425c-827c-be2d19888c25_image (4).png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d7fc7d19-9de2-41af-9198-949892a353bf_image (4).png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\d7fc7d19-9de2-41af-9198-949892a353bf_image (4).png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\d7fc7d19-9de2-41af-9198-949892a353bf_image (4).png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d84810d7-4b96-47b0-8c2c-66f4761d4cd5_images.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\d84810d7-4b96-47b0-8c2c-66f4761d4cd5_images.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\d84810d7-4b96-47b0-8c2c-66f4761d4cd5_images.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d9356234-ae2b-480c-8f97-21a0fb1ae83a_logo.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\d9356234-ae2b-480c-8f97-21a0fb1ae83a_logo.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\d9356234-ae2b-480c-8f97-21a0fb1ae83a_logo.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\d9eb04de-0f26-4442-86ab-b8c2f09538f4_react.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\d9eb04de-0f26-4442-86ab-b8c2f09538f4_react.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\d9eb04de-0f26-4442-86ab-b8c2f09538f4_react.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\db7b04a6-2ca7-4e20-8d1c-87b3f5462dd7_deliver.jpg",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\db7b04a6-2ca7-4e20-8d1c-87b3f5462dd7_deliver.jpg",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\db7b04a6-2ca7-4e20-8d1c-87b3f5462dd7_deliver.jpg"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\dcc88a1b-f22a-4db4-a907-baf23d9ad0da_Active.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\dcc88a1b-f22a-4db4-a907-baf23d9ad0da_Active.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\dcc88a1b-f22a-4db4-a907-baf23d9ad0da_Active.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\e1b95b88-d0c9-4a64-a5bc-8b577abe3f88_html.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\e0cfdd92-8cd2-4433-9dd2-561b94079386_AWS.png",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\e0cfdd92-8cd2-4433-9dd2-561b94079386_AWS.png"
+    },
+    {
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\e1b95b88-d0c9-4a64-a5bc-8b577abe3f88_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\e1b95b88-d0c9-4a64-a5bc-8b577abe3f88_html.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\eaa9cbca-9440-46f3-a71a-26d7831ad935_Milo.jpg",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\eaa9cbca-9440-46f3-a71a-26d7831ad935_Milo.jpg",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\eaa9cbca-9440-46f3-a71a-26d7831ad935_Milo.jpg"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\ebb0860e-98ca-4e72-9409-1e55fbb4a7eb_Eco education-rafiki.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\ebb0860e-98ca-4e72-9409-1e55fbb4a7eb_Eco education-rafiki.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\ebb0860e-98ca-4e72-9409-1e55fbb4a7eb_Eco education-rafiki.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\ed21ce31-b535-43f6-a64f-73ff560d58dd_cobol.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\ed21ce31-b535-43f6-a64f-73ff560d58dd_cobol.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\ed21ce31-b535-43f6-a64f-73ff560d58dd_cobol.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f1e66adb-e2a2-4de3-b61c-eaf8dd33ce62_html.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\f1e66adb-e2a2-4de3-b61c-eaf8dd33ce62_html.jfif",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\f1e66adb-e2a2-4de3-b61c-eaf8dd33ce62_html.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png",
       "PackagePath": "staticwebassets\\CourseThumbnailImages\\f34cb0ce-ee36-48fc-ae41-7ad15908f1ee_test.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\CourseThumbnailImages\\f82902a8-630b-4862-982d-87170fe834fd_AWS.png",
+      "PackagePath": "staticwebassets\\CourseThumbnailImages\\f82902a8-630b-4862-982d-87170fe834fd_AWS.png"
+    },
+    {
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png",
       "PackagePath": "staticwebassets\\Images\\7ad2244e-0a92-4ecb-b946-813e8f7f7473_smile.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\12000.jpg",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\12000.jpg",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\12000.jpg"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\4802eb25-3e8a-4a2f-8898-e5575d4ee1c3_404 error with people holding the numbers.gif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\4802eb25-3e8a-4a2f-8898-e5575d4ee1c3_404 error with people holding the numbers.gif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\4802eb25-3e8a-4a2f-8898-e5575d4ee1c3_404 error with people holding the numbers.gif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\9f91eb62-4b83-4ff2-a3a2-0b666f603cf2_d76627b1-71c6-4b72-b1c8-9520be4b6b2f.jpg",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\8d48dca6-7860-4f17-8552-1235e82ea40d_Kathir.jpg",
+      "PackagePath": "staticwebassets\\LearnerProfileImages\\8d48dca6-7860-4f17-8552-1235e82ea40d_Kathir.jpg"
+    },
+    {
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\9f91eb62-4b83-4ff2-a3a2-0b666f603cf2_d76627b1-71c6-4b72-b1c8-9520be4b6b2f.jpg",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\9f91eb62-4b83-4ff2-a3a2-0b666f603cf2_d76627b1-71c6-4b72-b1c8-9520be4b6b2f.jpg"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\Harini.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\Harini.png",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\Harini.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\Laevi.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\Laevi.jfif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\Laevi.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\asha.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\asha.jfif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\asha.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\cff310f0-fd07-46c6-a3a7-d6b89976701e_sanjai.png",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\cff310f0-fd07-46c6-a3a7-d6b89976701e_sanjai.png",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\cff310f0-fd07-46c6-a3a7-d6b89976701e_sanjai.png"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\kavin.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\dc5357ee-a485-4692-8bc4-319aeb036ba7_Kathir.jpg",
+      "PackagePath": "staticwebassets\\LearnerProfileImages\\dc5357ee-a485-4692-8bc4-319aeb036ba7_Kathir.jpg"
+    },
+    {
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\kavin.jfif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\kavin.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\mano.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\mano.jfif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\mano.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\nithya.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\nithya.jfif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\nithya.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\priya.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\priya.jfif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\priya.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\rajkumar.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\rajkumar.jfif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\rajkumar.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\ruban.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\ruban.jfif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\ruban.jfif"
     },
     {
-      "Id": "D:\\Backend\\LXP.Api\\wwwroot\\LearnerProfileImages\\sneha.jfif",
+      "Id": "D:\\SKV\\Capstone\\Final Integration\\17062024\\Backend\\26062024UPDATE\\LXP.API\\wwwroot\\LearnerProfileImages\\sneha.jfif",
       "PackagePath": "staticwebassets\\LearnerProfileImages\\sneha.jfif"
     },
     {
