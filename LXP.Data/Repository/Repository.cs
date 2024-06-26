@@ -38,13 +38,21 @@ namespace LXP.Data.Repository
             return await _dbcontext.Learners.FirstOrDefaultAsync(learner => learner.Email == Email);
         }
 
+
+
         public async Task UpdateLearnerPassword(string Email, string Password)
         {
             Learner learner = await GetLearnerByEmail(Email);
             learner.Password = Password;
+            PasswordHistory passwordHistory = await _dbcontext.PasswordHistories.FirstOrDefaultAsync(password => password.LearnerId == learner.LearnerId);
+            passwordHistory.OldPassword = passwordHistory.NewPassword;
+            passwordHistory.NewPassword = Password;
+            _dbcontext.PasswordHistories.Update(passwordHistory);
             _dbcontext.Learners.Update(learner);
             await _dbcontext.SaveChangesAsync();
         }
+
+
 
         public async Task UpdatePassword(Learner learner)
         {
