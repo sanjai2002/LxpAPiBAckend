@@ -154,6 +154,75 @@ namespace LXP.Data.Repository
                 .ToList();
         }
 
+        //public async Task<dynamic> GetAllCourseDetailsByLearnerId(Guid learnerId)
+        //{
+        //    var query =
+        //        from course in _lXPDbContext.Courses
+        //        join enrollment in _lXPDbContext.Enrollments
+        //            on new { course.CourseId, LearnerId = learnerId } equals new
+        //            {
+        //                enrollment.CourseId,
+        //                enrollment.LearnerId
+        //            }
+        //            into enrollments
+        //        from enrollment in enrollments.DefaultIfEmpty()
+        //        where course.IsAvailable && course.IsActive
+        //        orderby course.CourseId, enrollment.EnrollmentId
+        //        select new
+        //        {
+        //            CourseId = course.CourseId,
+        //            Catagory = course.Category.Category,
+        //            Level = course.Level.Level,
+        //            Title = course.Title,
+        //            Description = course.Description,
+        //            Duration = course.Duration,
+        //            Thumbnailimage = String.Format(
+        //                "{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}", //name changed
+        //                _contextAccessor.HttpContext.Request.Scheme,
+        //                _contextAccessor.HttpContext.Request.Host,
+        //                _contextAccessor.HttpContext.Request.PathBase,
+        //                course.Thumbnail
+        //            ),
+        //            CreatedBy = "Admin",
+        //            CreatedAt = new DateTime(),
+        //            IsActive = true,
+        //            IsAvailable = true,
+        //            ModifiedAt = new DateTime(),
+        //            ModifiedBy = "Admin",
+
+        //            EnrollStatus = enrollment.EnrollStatus == null
+        //                ? false
+        //                : enrollment.EnrollStatus,
+        //        };
+
+        //    //var query = from course in _lXPDbContext.Courses
+        //    //            join enrollment in _lXPDbContext.Enrollments
+        //    //            on new { course.CourseId, LearnerId = learnerId } equals new { enrollment.CourseId, enrollment.LearnerId }
+        //    //            into enrollments
+        //    //            from enrollment in enrollments.DefaultIfEmpty()
+        //    //            where course.IsAvailable && course.IsActive
+        //    //            orderby course.CourseId, enrollment?.EnrollmentId ?? 0 // Handle nullable EnrollmentId
+        //    //            select new
+        //    //            {
+        //    //                Course = course,
+        //    //                EnrollmentId = enrollment?.EnrollmentId ?? 0, // Handle nullable EnrollmentId
+        //    //                LearnerId = enrollment.LearnerId,
+        //    //                EnrollmentDate = enrollment.EnrollmentDate,
+        //    //                EnrollStatus = enrollment.EnrollStatus,
+        //    //                EnrollRequestStatus = enrollment.EnrollRequestStatus,
+        //    //                EnrollmentCreatedBy = enrollment.CreatedBy,
+        //    //                EnrollmentCreatedAt = enrollment.CreatedAt,
+        //    //                EnrollmentModifiedBy = enrollment.ModifiedBy,
+        //    //                EnrollmentModifiedAt = enrollment.ModifiedAt                                          // Other fields...
+        //    //            };
+
+        //    //return query.ToList();
+
+
+        //    // Execute the query or further manipulate the results as needed
+        //    return query.ToList();
+        //}
+
         public async Task<dynamic> GetAllCourseDetailsByLearnerId(Guid learnerId)
         {
             var query =
@@ -167,33 +236,70 @@ namespace LXP.Data.Repository
                     into enrollments
                 from enrollment in enrollments.DefaultIfEmpty()
                 where course.IsAvailable && course.IsActive
-                orderby course.CourseId, enrollment.EnrollmentId
+                orderby course.CreatedAt descending, course.CourseId, enrollment.EnrollmentId // Added 'descending' for CreatedAt
                 select new
                 {
                     CourseId = course.CourseId,
-                    Catagory = course.Category.Category,
+                    Category = course.Category.Category,
                     Level = course.Level.Level,
                     Title = course.Title,
                     Description = course.Description,
                     Duration = course.Duration,
                     Thumbnailimage = String.Format(
-                        "{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}", //name changed
+                        "{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}",
                         _contextAccessor.HttpContext.Request.Scheme,
                         _contextAccessor.HttpContext.Request.Host,
                         _contextAccessor.HttpContext.Request.PathBase,
                         course.Thumbnail
                     ),
-                    CreatedBy = "Admin",
-                    CreatedAt = new DateTime(),
+                    CreatedBy = course.CreatedBy,
+                    CreatedAt = course.CreatedAt,
                     IsActive = true,
                     IsAvailable = true,
-                    ModifiedAt = new DateTime(),
-                    ModifiedBy = "Admin",
-
+                    ModifiedAt = course.ModifiedAt,
+                    ModifiedBy = course.ModifiedBy,
                     EnrollStatus = enrollment.EnrollStatus == null
-                        ? false
-                        : enrollment.EnrollStatus,
+                            ? false
+                            : enrollment.EnrollStatus
                 };
+
+            //from course in _lXPDbContext.Courses
+            //join enrollment in _lXPDbContext.Enrollments
+            //    on new { course.CourseId, LearnerId = learnerId } equals new
+            //    {
+            //        enrollment.CourseId,
+            //        enrollment.LearnerId
+            //    }
+            //    into enrollments
+            //from enrollment in enrollments.DefaultIfEmpty()
+            //where course.IsAvailable && course.IsActive
+            //orderby course.CourseId, enrollment.EnrollmentId
+            //select new
+            //{
+            //    CourseId = course.CourseId,
+            //    Catagory = course.Category.Category,
+            //    Level = course.Level.Level,
+            //    Title = course.Title,
+            //    Description = course.Description,
+            //    Duration = course.Duration,
+            //    Thumbnailimage = String.Format(
+            //        "{0}://{1}{2}/wwwroot/CourseThumbnailImages/{3}", //name changed
+            //        _contextAccessor.HttpContext.Request.Scheme,
+            //        _contextAccessor.HttpContext.Request.Host,
+            //        _contextAccessor.HttpContext.Request.PathBase,
+            //        course.Thumbnail
+            //    ),
+            //    CreatedBy = course.CreatedBy,
+            //    CreatedAt = course.CreatedAt,
+            //    IsActive = true,
+            //    IsAvailable = true,
+            //    ModifiedAt = course.ModifiedAt,
+            //    ModifiedBy = course.ModifiedBy,
+
+            //    EnrollStatus = enrollment.EnrollStatus == null
+            //        ? false
+            //        : enrollment.EnrollStatus,
+            //};
 
             //var query = from course in _lXPDbContext.Courses
             //            join enrollment in _lXPDbContext.Enrollments

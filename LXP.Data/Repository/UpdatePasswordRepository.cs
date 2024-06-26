@@ -1,7 +1,5 @@
 ﻿using LXP.Common.Entities;
-
 using LXP.Data.IRepository;
-
 using Microsoft.EntityFrameworkCore;
 
 namespace LXP.Data.Repository
@@ -24,7 +22,10 @@ namespace LXP.Data.Repository
 
         public async Task UpdatePasswordAsync(Learner learner)
         {
-            PasswordHistory passwordHistory = await _dbcontext.PasswordHistories.FirstOrDefaultAsync(password => password.LearnerId == learner.LearnerId);
+            PasswordHistory passwordHistory =
+                await _dbcontext.PasswordHistories.FirstOrDefaultAsync(password =>
+                    password.LearnerId == learner.LearnerId
+                );
             passwordHistory.OldPassword = passwordHistory.NewPassword;
             passwordHistory.NewPassword = learner.Password;
             _dbcontext.PasswordHistories.Update(passwordHistory);
@@ -33,4 +34,3 @@ namespace LXP.Data.Repository
         }
     }
 }
-
