@@ -2112,9 +2112,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Backend\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
+      "projectUniqueName": "D:\\backend\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
       "projectName": "LXP.Common.Tests",
-      "projectPath": "D:\\Backend\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
+      "projectPath": "D:\\backend\\LXP.Common.Tests\\LXP.Common.Tests.csproj",
       "packagesPath": "C:\\Users\\gokul.jawahar\\.nuget\\packages\\",
       "outputPath": "D:\\Backend\\LXP.Common.Tests\\obj\\",
       "projectStyle": "PackageReference",
@@ -2138,8 +2138,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Backend\\LXP.Common\\LXP.Common.csproj": {
-              "projectPath": "D:\\Backend\\LXP.Common\\LXP.Common.csproj"
+            "D:\\backend\\LXP.Common\\LXP.Common.csproj": {
+              "projectPath": "D:\\backend\\LXP.Common\\LXP.Common.csproj"
             }
           }
         }

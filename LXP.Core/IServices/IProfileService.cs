@@ -1,7 +1,4 @@
-﻿
-
-
-using LXP.Common.Entities;
+﻿using LXP.Common.Entities;
 using LXP.Common.ViewModels;
 
 namespace LXP.Core.IServices

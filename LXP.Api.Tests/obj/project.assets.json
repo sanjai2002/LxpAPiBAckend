@@ -10204,9 +10204,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Backend\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+      "projectUniqueName": "D:\\backend\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
       "projectName": "LXP.Api.Tests",
-      "projectPath": "D:\\Backend\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
+      "projectPath": "D:\\backend\\LXP.Api.Tests\\LXP.Api.Tests.csproj",
       "packagesPath": "C:\\Users\\gokul.jawahar\\.nuget\\packages\\",
       "outputPath": "D:\\Backend\\LXP.Api.Tests\\obj\\",
       "projectStyle": "PackageReference",
@@ -10230,8 +10230,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Backend\\LXP.Api\\LXP.Api.csproj": {
-              "projectPath": "D:\\Backend\\LXP.Api\\LXP.Api.csproj"
+            "D:\\backend\\LXP.Api\\LXP.Api.csproj": {
+              "projectPath": "D:\\backend\\LXP.Api\\LXP.Api.csproj"
             }
           }
         }
