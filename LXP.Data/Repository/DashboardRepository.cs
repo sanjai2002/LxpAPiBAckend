@@ -253,7 +253,7 @@ namespace LXP.Data.Repository
 
         public IEnumerable<CourseWiseViewModel> GetEnrollmentCourse()
         {
-            var topLearners = _lXPDbContext
+            var courses = _lXPDbContext
                    .Enrollments.GroupBy(e => e.CourseId)
                    .Select(g => new CourseWiseViewModel
                    {
@@ -262,11 +262,7 @@ namespace LXP.Data.Repository
                        CourseName = g.First().Course.Title,
                    })
                    .ToList();
-            foreach (var learner in topLearners)
-            {
-                Console.WriteLine("hi" + learner.CourseId);
-            };
-            return topLearners;
+            return courses;
         }
     }
 }
