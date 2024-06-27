@@ -258,9 +258,7 @@ namespace LXP.Data.Repository
                     IsAvailable = true,
                     ModifiedAt = course.ModifiedAt,
                     ModifiedBy = course.ModifiedBy,
-                    EnrollStatus = enrollment.EnrollStatus == null
-                            ? false
-                            : enrollment.EnrollStatus
+                    EnrollStatus = enrollment.EnrollStatus == null ? false : enrollment.EnrollStatus
                 };
 
             //from course in _lXPDbContext.Courses
