@@ -1,5 +1,4 @@
 ﻿using LXP.Common.Entities;
-using LXP.Common.Entities;
 
 namespace LXP.Data.IRepository
 {

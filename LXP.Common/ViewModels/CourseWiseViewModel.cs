@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.AspNetCore.Http;
-
-namespace LXP.Common.ViewModels
+﻿namespace LXP.Common.ViewModels
 {
     public class CourseWiseViewModel
     {

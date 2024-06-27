@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LXP.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+281df82f91dd3b02518469477d02d1fc1e2d2c77")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4e503a13e36158bd98dab2ebacfd41ecb014651")]
 [assembly: System.Reflection.AssemblyProductAttribute("LXP.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LXP.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
