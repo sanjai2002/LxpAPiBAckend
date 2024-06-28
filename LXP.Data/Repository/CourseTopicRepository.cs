@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using LXP.Common.Entities;
+﻿using LXP.Common.Entities;
 using LXP.Data.IRepository;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 
 namespace LXP.Data.Repository
 {
@@ -165,14 +165,18 @@ namespace LXP.Data.Repository
 
         public async Task<List<LearnerProgress>> GetTopicsbyLearnerId(Guid courseId, Guid LearnerId)
         {
-                       try
-              {
-                  return await _lXPDbContext.LearnerProgresses.Where(learner => learner.CourseId == courseId && learner.LearnerId == LearnerId).ToListAsync();
-              }
-              catch (Exception ex)
-              {
-                  throw ex;
-              }
+            try
+            {
+                return await _lXPDbContext
+                    .LearnerProgresses.Where(learner =>
+                        learner.CourseId == courseId && learner.LearnerId == LearnerId
+                    )
+                    .ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public List<Topic> GetAllTopics()
