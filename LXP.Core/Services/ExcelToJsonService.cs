@@ -37,6 +37,7 @@ namespace LXP.Core.Services
                     {
                         var questionType = worksheet.Cells[row, 2].Value?.ToString();
                         var question = worksheet.Cells[row, 3].Value?.ToString();
+                        question = question.Replace("\n", " ").Replace("\r", "");//added this to remove unwanted lines in questions 
                         if (string.IsNullOrEmpty(questionType) || string.IsNullOrEmpty(question))
                             continue;
 
