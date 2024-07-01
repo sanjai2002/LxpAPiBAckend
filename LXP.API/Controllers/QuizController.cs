@@ -66,8 +66,6 @@ namespace LXP.Api.Controllers
                 Duration = request.Duration,
                 PassMark = request.PassMark,
                 AttemptsAllowed = request.AttemptsAllowed,
-                // CreatedBy = "System",
-                // CreatedAt = DateTime.Now
             };
 
             _quizService.CreateQuiz(quiz, request.TopicId);
@@ -137,13 +135,6 @@ namespace LXP.Api.Controllers
             _quizService.DeleteQuiz(quizId);
 
             return NoContent();
-        }
-
-        [HttpGet("CheckQuizAvailability/{topicId}")]
-        public IActionResult CheckQuizAvailability(Guid topicId)
-        {
-            var result = _quizService.CheckQuizAvailability(topicId);
-            return Ok(result);
         }
     }
 }

@@ -10,7 +10,5 @@ namespace LXP.Core.IServices
         void UpdateQuiz(QuizViewModel quiz);
         void DeleteQuiz(Guid quizId);
         Guid? GetQuizIdByTopicId(Guid topicId);
-
-        QuizAvailabilityViewModel CheckQuizAvailability(Guid topicId);
     }
 }

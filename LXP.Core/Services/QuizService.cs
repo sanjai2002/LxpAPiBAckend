@@ -145,20 +145,10 @@ namespace LXP.Core.Services
                 throw new Exception("NameOfQuiz cannot be null or empty.");
             if (quiz.Duration <= 0)
                 throw new Exception("Duration must be a positive integer.");
-            if (quiz.PassMark <= 0)
-                throw new Exception("PassMark must be a positive integer.");
+            if (quiz.PassMark <= 0 && quiz.PassMark <= 100)
+                throw new Exception("PassMark must be a positive integer.and less than or equal to 100");
             if (quiz.AttemptsAllowed.HasValue && quiz.AttemptsAllowed <= 0)
                 throw new Exception("AttemptsAllowed must be null or a positive integer.");
-        }
-
-        public QuizAvailabilityViewModel CheckQuizAvailability(Guid topicId)
-        {
-            var quiz = _quizRepository.GetQuizByTopicId(topicId);
-            return new QuizAvailabilityViewModel
-            {
-                TopicId = topicId,
-                IsQuizAvailable = quiz != null
-            };
         }
     }
 }
