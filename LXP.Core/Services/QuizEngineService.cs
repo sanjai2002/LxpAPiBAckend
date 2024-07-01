@@ -224,14 +224,14 @@ namespace LXP.Core.Services
             var existingAnswers = await _quizEngineRepository.GetLearnerAnswersForAttemptAsync(
                 attemptId
             );
-            if (
-                existingAnswers == null
-                || existingAnswers.Select(a => a.QuizQuestionId).Distinct().Count()
-                    != totalQuestions
-            )
-                throw new InvalidOperationException(
-                    "You need to answer all the questions in the quiz before submitting the quiz attempt."
-                );
+            // if (
+            //     existingAnswers == null
+            //     || existingAnswers.Select(a => a.QuizQuestionId).Distinct().Count()
+            //         != totalQuestions
+            // )
+            //     throw new InvalidOperationException(
+            //         "You need to answer all the questions in the quiz before submitting the quiz attempt."
+            //     );
             var individualQuestionMarks = 100.0f / totalQuestions;
             float finalScore = 0;
             foreach (var answer in existingAnswers)
