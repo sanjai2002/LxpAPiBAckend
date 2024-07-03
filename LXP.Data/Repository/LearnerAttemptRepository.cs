@@ -14,71 +14,52 @@ namespace LXP.Data.Repository
 
         public object GetScoreByTopicIdAndLernerId(Guid LearnerId)
         {
-            //var result = from attempt in _dbcontext.LearnerAttempts
-            //             join quiz in _dbcontext.Quizzes on attempt.QuizId equals quiz.QuizId
-            //             join topic in _dbcontext.Topics on quiz.TopicId equals topic.TopicId
-            //             join course in _dbcontext.Courses on topic.CourseId equals course.CourseId
-            //             where attempt.LearnerId == LearnerId &&
-            //                   topic.TopicId == topicId
-            //             select new
-            //             {
-            //                 Score=attempt.Score,
-            //                 CourseTitle=course.Title,
-            //                 LearnerId=attempt.LearnerId,
-            //                 TopicName=topic.Name,
-            //                 TopicId=topic.TopicId,
-            //                 CourseId=course.CourseId,
-            //                 PassMark = quiz.PassMark,
-            //                 Createdat=quiz.CreatedAt
-
-            //             };
-
-
-            var result =
-                from attempt in _dbcontext.LearnerAttempts
-
-                join quiz in _dbcontext.Quizzes on attempt.QuizId equals quiz.QuizId
-
-                join topic in _dbcontext.Topics on quiz.TopicId equals topic.TopicId
-
-                join course in _dbcontext.Courses on topic.CourseId equals course.CourseId
-
-                where attempt.LearnerId == LearnerId
-
-                group attempt.Score by new
-                {
-                    quiz.QuizId,
-
-                    CourseName = course.Title,
-
-                    attempt.LearnerId,
-
-                    TopicName = topic.Name,
-
-                    topic.TopicId,
-
-                    course.CourseId,
-                    quiz.PassMark
-                } into grouped
-
-                select new
-                {
-                    Score = grouped.Sum(),
-
-                    grouped.Key.QuizId,
-
-                    grouped.Key.TopicName,
-
-                    grouped.Key.LearnerId,
-
-                    grouped.Key.CourseName,
-
-                    grouped.Key.TopicId,
-
-                    grouped.Key.CourseId,
-                    grouped.Key.PassMark
-                };
-
+                var result =
+                 from attempt in _dbcontext.LearnerAttempts
+             
+                 join quiz in _dbcontext.Quizzes on attempt.QuizId equals quiz.QuizId
+             
+                 join topic in _dbcontext.Topics on quiz.TopicId equals topic.TopicId
+             
+                 join course in _dbcontext.Courses on topic.CourseId equals course.CourseId
+             
+                 where attempt.LearnerId == LearnerId
+             
+                 group attempt.Score by new
+                 {
+                     quiz.QuizId,
+             
+                     CourseName = course.Title,
+             
+                     attempt.LearnerId,
+             
+                     TopicName = topic.Name,
+             
+                     topic.TopicId,
+             
+                     course.CourseId,
+                     quiz.PassMark
+                 } into grouped
+             
+                 select new
+                 {
+                    Score = grouped.Max(),
+             
+                     grouped.Key.QuizId,
+             
+                     grouped.Key.TopicName,
+             
+                     grouped.Key.LearnerId,
+             
+                     grouped.Key.CourseName,
+             
+                     grouped.Key.TopicId,
+             
+                     grouped.Key.CourseId,
+                     grouped.Key.PassMark
+                 };
+            result = result.Where(r => r.Score >= r.PassMark);
+             
             return result;
         }
 
