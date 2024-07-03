@@ -44,7 +44,7 @@ namespace LXP.Data.Repository
                 select new
                 {
                     enrollmentid = enrollment.EnrollmentId,
-                    completedStatus=enrollment.CompletedStatus
+                    completedStatus=enrollment.CompletedStatus,
                     enrolledCourseId = enrollment.CourseId,
                     enrolledCoursename = enrollment.Course.Title,
                     enrolledcoursedescription = enrollment.Course.Description,
